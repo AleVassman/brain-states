@@ -199,7 +199,7 @@ for (const [side, shift] of [['l', 0], ['r', 1]]) {
 
 // ---- Head (decoration) ---------------------------------------------------------------------------
 const headMask = readNifti(`${CACHE}/colin27/colin27_t1_tal_lin_headmask.nii`);
-const head = await meshFrom(headMask, (v) => v > 0.5, 30000);
+const head = await meshFrom(headMask, (v) => v > 0.5, 6000);
 console.log(`head ${head.indices.length / 3} triangles`);
 
 mkdirSync(OUT, { recursive: true });
