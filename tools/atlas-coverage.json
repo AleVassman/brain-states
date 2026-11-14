@@ -1,0 +1,5 @@
+{
+  "unavailable": {
+    "pag": "Source chosen (Harvard AAN atlas v2.0, CC0) but its host blocks automated downloads. Download AAN_PAG_MNI152_1mm_v2p0.nii by hand into tools/cache/aan/ and re-run this script."
+  }
+}

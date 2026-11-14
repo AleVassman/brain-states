@@ -1,0 +1,534 @@
+[
+ {
+  "id": "amygdala-l",
+  "group": "amygdala",
+  "name": "Left amygdala",
+  "hemisphere": "l",
+  "centroid": [
+   0.2301,
+   -0.1895,
+   -0.0245
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "amygdala-r",
+  "group": "amygdala",
+  "name": "Right amygdala",
+  "hemisphere": "r",
+  "centroid": [
+   -0.2756,
+   -0.1931,
+   -0.0107
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "hippocampus-l",
+  "group": "hippocampus",
+  "name": "Left hippocampus",
+  "hemisphere": "l",
+  "centroid": [
+   0.2476,
+   -0.1188,
+   -0.2246
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "hippocampus-r",
+  "group": "hippocampus",
+  "name": "Right hippocampus",
+  "hemisphere": "r",
+  "centroid": [
+   -0.2945,
+   -0.1208,
+   -0.2149
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "thalamus-l",
+  "group": "thalamus",
+  "name": "Left thalamus",
+  "hemisphere": "l",
+  "centroid": [
+   0.1291,
+   0.0505,
+   -0.1832
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "thalamus-r",
+  "group": "thalamus",
+  "name": "Right thalamus",
+  "hemisphere": "r",
+  "centroid": [
+   -0.1213,
+   0.0478,
+   -0.1733
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "nucleus-accumbens-l",
+  "group": "nucleus-accumbens",
+  "name": "Left nucleus accumbens",
+  "hemisphere": "l",
+  "centroid": [
+   0.0774,
+   -0.0773,
+   0.1227
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "nucleus-accumbens-r",
+  "group": "nucleus-accumbens",
+  "name": "Right nucleus accumbens",
+  "hemisphere": "r",
+  "centroid": [
+   -0.1022,
+   -0.0756,
+   0.1241
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "insula-l",
+  "group": "insula",
+  "name": "Left insula",
+  "hemisphere": "l",
+  "centroid": [
+   0.3491,
+   0.0167,
+   0.0494
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "insula-r",
+  "group": "insula",
+  "name": "Right insula",
+  "hemisphere": "r",
+  "centroid": [
+   -0.3922,
+   0.0031,
+   0.0452
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "sgacc-l",
+  "group": "sgacc",
+  "name": "Left subgenual anterior cingulate",
+  "hemisphere": "l",
+  "centroid": [
+   0.0362,
+   -0.06,
+   0.3038
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "sgacc-r",
+  "group": "sgacc",
+  "name": "Right subgenual anterior cingulate",
+  "hemisphere": "r",
+  "centroid": [
+   -0.0598,
+   -0.0492,
+   0.3129
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "pgacc-l",
+  "group": "pgacc",
+  "name": "Left pregenual anterior cingulate",
+  "hemisphere": "l",
+  "centroid": [
+   0.0446,
+   0.0671,
+   0.4317
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "pgacc-r",
+  "group": "pgacc",
+  "name": "Right pregenual anterior cingulate",
+  "hemisphere": "r",
+  "centroid": [
+   -0.0933,
+   0.1223,
+   0.4277
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "dacc-l",
+  "group": "dacc",
+  "name": "Left dorsal anterior cingulate (supracallosal)",
+  "hemisphere": "l",
+  "centroid": [
+   0.0331,
+   0.2256,
+   0.248
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "dacc-r",
+  "group": "dacc",
+  "name": "Right dorsal anterior cingulate (supracallosal)",
+  "hemisphere": "r",
+  "centroid": [
+   -0.084,
+   0.2067,
+   0.2702
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "mpfc-l",
+  "group": "mpfc",
+  "name": "Left medial prefrontal cortex (medial superior frontal gyrus)",
+  "hemisphere": "l",
+  "centroid": [
+   0.0467,
+   0.2914,
+   0.4739
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "mpfc-r",
+  "group": "mpfc",
+  "name": "Right medial prefrontal cortex (medial superior frontal gyrus)",
+  "hemisphere": "r",
+  "centroid": [
+   -0.0925,
+   0.2843,
+   0.4903
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "vmpfc-l",
+  "group": "vmpfc",
+  "name": "Left ventromedial prefrontal cortex (medial orbital gyrus and gyrus rectus)",
+  "hemisphere": "l",
+  "centroid": [
+   0.0494,
+   -0.1517,
+   0.429
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "vmpfc-r",
+  "group": "vmpfc",
+  "name": "Right ventromedial prefrontal cortex (medial orbital gyrus and gyrus rectus)",
+  "hemisphere": "r",
+  "centroid": [
+   -0.0841,
+   -0.141,
+   0.4248
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "dlpfc-l",
+  "group": "dlpfc",
+  "name": "Left dorsolateral prefrontal cortex (middle frontal gyrus)",
+  "hemisphere": "l",
+  "centroid": [
+   0.3503,
+   0.2944,
+   0.3237
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "dlpfc-r",
+  "group": "dlpfc",
+  "name": "Right dorsolateral prefrontal cortex (middle frontal gyrus)",
+  "hemisphere": "r",
+  "centroid": [
+   -0.3927,
+   0.2882,
+   0.3238
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "vlpfc-l",
+  "group": "vlpfc",
+  "name": "Left ventrolateral prefrontal cortex (inferior frontal gyrus)",
+  "hemisphere": "l",
+  "centroid": [
+   0.4524,
+   0.0948,
+   0.2454
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "vlpfc-r",
+  "group": "vlpfc",
+  "name": "Right ventrolateral prefrontal cortex (inferior frontal gyrus)",
+  "hemisphere": "r",
+  "centroid": [
+   -0.4968,
+   0.1054,
+   0.2448
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "ofc-l",
+  "group": "ofc",
+  "name": "Left orbitofrontal cortex",
+  "hemisphere": "l",
+  "centroid": [
+   0.2429,
+   -0.1915,
+   0.3446
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "ofc-r",
+  "group": "ofc",
+  "name": "Right orbitofrontal cortex",
+  "hemisphere": "r",
+  "centroid": [
+   -0.2837,
+   -0.1914,
+   0.3681
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "pcc-precuneus-l",
+  "group": "pcc-precuneus",
+  "name": "Left posterior cingulate and precuneus",
+  "hemisphere": "l",
+  "centroid": [
+   0.0681,
+   0.4343,
+   -0.563
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "pcc-precuneus-r",
+  "group": "pcc-precuneus",
+  "name": "Right posterior cingulate and precuneus",
+  "hemisphere": "r",
+  "centroid": [
+   -0.0995,
+   0.3982,
+   -0.5649
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "vta-l",
+  "group": "vta",
+  "name": "Left ventral tegmental area",
+  "hemisphere": "l",
+  "centroid": [
+   0.0306,
+   -0.1759,
+   -0.2083
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "vta-r",
+  "group": "vta",
+  "name": "Right ventral tegmental area",
+  "hemisphere": "r",
+  "centroid": [
+   -0.0486,
+   -0.1754,
+   -0.2083
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "cortex-l",
+  "group": "cortex",
+  "name": "Left cerebral cortex",
+  "hemisphere": "l",
+  "centroid": [
+   0.2971,
+   0.1892,
+   -0.1877
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "cortex-r",
+  "group": "cortex",
+  "name": "Right cerebral cortex",
+  "hemisphere": "r",
+  "centroid": [
+   -0.3443,
+   0.1851,
+   -0.1779
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "cerebellum",
+  "group": "context",
+  "name": "Cerebellum",
+  "hemisphere": "mid",
+  "centroid": [
+   -0.0255,
+   -0.3516,
+   -0.6109
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "brainstem",
+  "group": "context",
+  "name": "Brainstem (outline)",
+  "hemisphere": "mid",
+  "centroid": [
+   -0.001,
+   -0.3677,
+   -0.2667
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Colin27 average brain (McConnell BIC, 1998)"
+ },
+ {
+  "id": "hypothalamus-r",
+  "group": "hypothalamus",
+  "name": "Right hypothalamus",
+  "hemisphere": "r",
+  "centroid": [
+   -0.0416,
+   -0.1169,
+   -0.037
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Neudorfer et al. 2020 hypothalamic region atlas (MNI152b, 0.5 mm)"
+ },
+ {
+  "id": "hypothalamus-l",
+  "group": "hypothalamus",
+  "name": "Left hypothalamus",
+  "hemisphere": "l",
+  "centroid": [
+   0.0454,
+   -0.1188,
+   -0.0395
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Neudorfer et al. 2020 hypothalamic region atlas (MNI152b, 0.5 mm)"
+ },
+ {
+  "id": "bnst-r",
+  "group": "bnst",
+  "name": "Right bed nucleus of the stria terminalis",
+  "hemisphere": "r",
+  "centroid": [
+   -0.0613,
+   -0.0111,
+   0.0289
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Neudorfer et al. 2020 hypothalamic region atlas (MNI152b, 0.5 mm)"
+ },
+ {
+  "id": "bnst-l",
+  "group": "bnst",
+  "name": "Left bed nucleus of the stria terminalis",
+  "hemisphere": "l",
+  "centroid": [
+   0.0668,
+   -0.0102,
+   0.0211
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Neudorfer et al. 2020 hypothalamic region atlas (MNI152b, 0.5 mm)"
+ }
+]
