@@ -6,7 +6,34 @@
     <title>Brain States</title>
   </head>
   <body>
-    <canvas id="stage"></canvas>
+    <canvas id="stage" aria-label="3D brain. Drag to rotate, scroll to zoom, click a region to read about it."></canvas>
+
+    <div id="ui">
+      <header class="top">
+        <h1>Brain States</h1>
+        <button id="about-open" type="button">About the science</button>
+      </header>
+
+      <aside class="panel left">
+        <h2>States</h2>
+        <ul id="state-list"></ul>
+        <label class="toggle" id="typical-label">
+          <input type="checkbox" id="typical-toggle" />
+          <span>Typical response</span>
+        </label>
+        <p class="hint" id="typical-note"></p>
+      </aside>
+
+      <aside class="panel right" id="side-panel" aria-live="polite"></aside>
+
+      <footer class="bottom">
+        <p id="banner" hidden></p>
+        <p id="caption" aria-live="polite"></p>
+        <div id="timeline"></div>
+      </footer>
+    </div>
+
+    <dialog id="about"></dialog>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

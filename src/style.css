@@ -1,11 +1,12 @@
 :root {
   --bg: #05070d;
   --ink: #d7e3f4;
-  --ink-dim: #7f93b0;
+  --ink-dim: #8fa3c0;
   --cool: #3fa9ff;
   --warm: #ff6a3d;
-  --panel: rgba(10, 16, 28, 0.72);
-  --line: rgba(120, 160, 220, 0.18);
+  --violet: #9a7bd8;
+  --panel: rgba(8, 13, 24, 0.74);
+  --line: rgba(120, 160, 220, 0.2);
   color-scheme: dark;
 }
 
@@ -22,7 +23,7 @@ body {
   color: var(--ink);
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   font-size: 14px;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 #stage {
@@ -45,6 +46,381 @@ body {
   place-items: center;
   padding: 24px;
   text-align: center;
-  color: var(--ink);
   font-size: 16px;
+}
+
+/* The interface floats over the brain. Only the panels themselves catch the mouse. */
+#ui {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 220px 1fr 320px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'top top top'
+    'left . right'
+    'bottom bottom bottom';
+  gap: 12px;
+  padding: 14px 16px;
+  pointer-events: none;
+}
+
+#ui > * {
+  pointer-events: auto;
+  min-height: 0;
+}
+
+.top {
+  grid-area: top;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none !important;
+}
+
+.top > * {
+  pointer-events: auto;
+}
+
+h1 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 16px 0 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  color: var(--cool);
+}
+
+button {
+  font: inherit;
+  color: var(--ink);
+  background: rgba(63, 169, 255, 0.08);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: rgba(63, 169, 255, 0.18);
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--cool);
+  outline-offset: 2px;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+  backdrop-filter: blur(6px);
+  align-self: start;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}
+
+#state-list {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.state {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.state.selected {
+  border-color: var(--cool);
+  background: rgba(63, 169, 255, 0.2);
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.toggle:has(input:disabled) {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.hint,
+.timeline-note {
+  color: var(--ink-dim);
+  font-size: 12px;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0 6px 8px 0;
+  padding: 1px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 11px;
+  color: var(--ink-dim);
+  white-space: nowrap;
+}
+
+.state .badge {
+  margin: 0;
+  align-self: flex-start;
+}
+
+.badge.confidence.established {
+  color: #8fe3b0;
+  border-color: rgba(143, 227, 176, 0.4);
+}
+
+.badge.confidence.mixed {
+  color: #f2c879;
+  border-color: rgba(242, 200, 121, 0.4);
+}
+
+.badge.confidence.debated {
+  color: #f09a8a;
+  border-color: rgba(240, 154, 138, 0.4);
+}
+
+.caveat {
+  border-left: 2px solid var(--violet);
+  padding-left: 10px;
+  color: var(--ink-dim);
+}
+
+.errors {
+  margin: 0;
+  padding-left: 18px;
+  color: #f09a8a;
+  font-size: 12px;
+  word-break: break-word;
+}
+
+.citations {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.citation-title {
+  font-weight: 600;
+}
+
+.citation-meta {
+  color: var(--ink-dim);
+  font-size: 12px;
+}
+
+.citation blockquote {
+  margin: 6px 0;
+  padding-left: 10px;
+  border-left: 2px solid var(--line);
+  color: var(--ink-dim);
+  font-size: 12.5px;
+}
+
+.citation-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.citation-links .badge {
+  margin: 0;
+}
+
+.bottom {
+  grid-area: bottom;
+  max-width: 1100px;
+  width: 100%;
+  justify-self: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px 8px;
+  backdrop-filter: blur(6px);
+}
+
+#banner {
+  margin: 0 0 6px;
+  color: #f2c879;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+#caption {
+  min-height: 3em;
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.timeline-row {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.play {
+  width: 44px;
+  flex: none;
+  font-size: 13px;
+}
+
+.track {
+  position: relative;
+  flex: 1;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.phases {
+  display: flex;
+  height: 100%;
+}
+
+.phase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-left-width: 0;
+  background: rgba(63, 169, 255, 0.05);
+  overflow: hidden;
+}
+
+.phase:first-child {
+  border-left-width: 1px;
+  border-radius: 6px 0 0 6px;
+}
+
+.phase:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.phase.reconstructed {
+  border-top: 2px dashed var(--violet);
+}
+
+.phase.current {
+  background: rgba(63, 169, 255, 0.16);
+}
+
+.phase-name {
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.phase-scale {
+  font-size: 11px;
+  color: var(--ink-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.handle {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--warm);
+  box-shadow: 0 0 8px var(--warm);
+  pointer-events: none;
+}
+
+#timeline.disabled .track {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.timeline-note {
+  margin: 6px 0 0;
+}
+
+dialog {
+  width: min(680px, 92vw);
+  max-height: 86vh;
+  padding: 22px 26px;
+  color: var(--ink);
+  background: #0a1120;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+dialog::backdrop {
+  background: rgba(2, 4, 9, 0.7);
+}
+
+dialog .credits {
+  white-space: pre-wrap;
+  font: inherit;
+  font-size: 12px;
+  color: var(--ink-dim);
+}
+
+dialog .close {
+  margin-top: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
 }

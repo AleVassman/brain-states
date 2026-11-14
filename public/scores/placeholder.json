@@ -1,0 +1,393 @@
+{
+ "id": "placeholder",
+ "title": "Placeholder - not real science",
+ "placeholder": true,
+ "description": "Made-up values used to build and test the player. Nothing here is a research finding.",
+ "caveat": "Everything in this episode is invented. It exists only to exercise the interface.",
+ "durationSeconds": 24,
+ "phases": [
+  {
+   "id": "trigger",
+   "name": "Trigger",
+   "timescale": "under a second",
+   "start": 0,
+   "end": 0.15,
+   "caption": "PLACEHOLDER: something sets the episode off.",
+   "typicalCaption": "PLACEHOLDER: the same trigger, in a typical brain."
+  },
+  {
+   "id": "alarm",
+   "name": "Alarm",
+   "timescale": "seconds",
+   "start": 0.15,
+   "end": 0.45,
+   "caption": "PLACEHOLDER: alarm regions flare.",
+   "typicalCaption": "PLACEHOLDER: alarm regions respond.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "PLACEHOLDER",
+      "year": 2000,
+      "title": "PLACEHOLDER - not a real source",
+      "doi": "10.0000/placeholder",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "PLACEHOLDER - this sentence does not come from any paper."
+     }
+    ]
+   }
+  },
+  {
+   "id": "control",
+   "name": "Control response",
+   "timescale": "seconds to minutes",
+   "start": 0.45,
+   "end": 0.75,
+   "caption": "PLACEHOLDER: control regions respond weakly.",
+   "typicalCaption": "PLACEHOLDER: control regions step in.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "PLACEHOLDER rationale."
+   }
+  },
+  {
+   "id": "aftermath",
+   "name": "Aftermath",
+   "timescale": "minutes to hours",
+   "start": 0.75,
+   "end": 1,
+   "caption": "PLACEHOLDER: the alarm lingers.",
+   "typicalCaption": "PLACEHOLDER: things settle.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "PLACEHOLDER rationale."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "amygdala",
+    "explanation": "PLACEHOLDER. Invented alarm response.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "PLACEHOLDER",
+      "year": 2000,
+      "title": "PLACEHOLDER - not a real source",
+      "doi": "10.0000/placeholder",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "PLACEHOLDER - this sentence does not come from any paper."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.1,
+      "v": 0.1
+     },
+     {
+      "t": 0.3,
+      "v": 1
+     },
+     {
+      "t": 0.75,
+      "v": 0.9
+     },
+     {
+      "t": 1,
+      "v": 0.6
+     }
+    ]
+   },
+   {
+    "region": "insula",
+    "explanation": "PLACEHOLDER. Invented body-signal response.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "PLACEHOLDER",
+      "year": 2000,
+      "title": "PLACEHOLDER - not a real source",
+      "doi": "10.0000/placeholder",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "PLACEHOLDER - this sentence does not come from any paper."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.2,
+      "v": 0.2
+     },
+     {
+      "t": 0.4,
+      "v": 0.7
+     },
+     {
+      "t": 1,
+      "v": 0.4
+     }
+    ]
+   },
+   {
+    "region": "dlpfc",
+    "explanation": "PLACEHOLDER. Invented weak control.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "PLACEHOLDER",
+      "year": 2000,
+      "title": "PLACEHOLDER - not a real source",
+      "doi": "10.0000/placeholder",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "PLACEHOLDER - this sentence does not come from any paper."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.45,
+      "v": 0
+     },
+     {
+      "t": 0.6,
+      "v": -0.6
+     },
+     {
+      "t": 1,
+      "v": -0.4
+     }
+    ]
+   },
+   {
+    "region": "sgacc",
+    "explanation": "PLACEHOLDER. Invented lingering activity.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "PLACEHOLDER",
+      "year": 2000,
+      "title": "PLACEHOLDER - not a real source",
+      "doi": "10.0000/placeholder",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "PLACEHOLDER - this sentence does not come from any paper."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.5,
+      "v": 0.3
+     },
+     {
+      "t": 0.9,
+      "v": 0.8
+     },
+     {
+      "t": 1,
+      "v": 0.8
+     }
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "from": "amygdala",
+    "to": "mpfc",
+    "explanation": "PLACEHOLDER. Invented weakened regulation.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "PLACEHOLDER",
+      "year": 2000,
+      "title": "PLACEHOLDER - not a real source",
+      "doi": "10.0000/placeholder",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "PLACEHOLDER - this sentence does not come from any paper."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.45,
+      "v": 0
+     },
+     {
+      "t": 0.7,
+      "v": -0.8
+     },
+     {
+      "t": 1,
+      "v": -0.6
+     }
+    ]
+   },
+   {
+    "from": "amygdala",
+    "to": "insula",
+    "explanation": "PLACEHOLDER. Invented strengthened alarm loop.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "PLACEHOLDER",
+      "year": 2000,
+      "title": "PLACEHOLDER - not a real source",
+      "doi": "10.0000/placeholder",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "PLACEHOLDER - this sentence does not come from any paper."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.3,
+      "v": 1
+     },
+     {
+      "t": 1,
+      "v": 0.5
+     }
+    ]
+   }
+  ]
+ },
+ "typical": {
+  "regions": [
+   {
+    "region": "amygdala",
+    "explanation": "PLACEHOLDER. Invented brief response.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "PLACEHOLDER",
+      "year": 2000,
+      "title": "PLACEHOLDER - not a real source",
+      "doi": "10.0000/placeholder",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "PLACEHOLDER - this sentence does not come from any paper."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.1,
+      "v": 0.1
+     },
+     {
+      "t": 0.3,
+      "v": 0.7
+     },
+     {
+      "t": 0.6,
+      "v": 0.2
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "dlpfc",
+    "explanation": "PLACEHOLDER. Invented effective control.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "PLACEHOLDER",
+      "year": 2000,
+      "title": "PLACEHOLDER - not a real source",
+      "doi": "10.0000/placeholder",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "PLACEHOLDER - this sentence does not come from any paper."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.45,
+      "v": 0.1
+     },
+     {
+      "t": 0.6,
+      "v": 0.7
+     },
+     {
+      "t": 1,
+      "v": 0.1
+     }
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "from": "amygdala",
+    "to": "mpfc",
+    "explanation": "PLACEHOLDER. Invented effective regulation.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "PLACEHOLDER",
+      "year": 2000,
+      "title": "PLACEHOLDER - not a real source",
+      "doi": "10.0000/placeholder",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "PLACEHOLDER - this sentence does not come from any paper."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.45,
+      "v": 0.2
+     },
+     {
+      "t": 0.65,
+      "v": 0.9
+     },
+     {
+      "t": 1,
+      "v": 0.1
+     }
+    ]
+   }
+  ]
+ }
+}

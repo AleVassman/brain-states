@@ -33,7 +33,7 @@ const FRAGMENT = /* glsl */ `
     float p = fract(vAlong * 2.0 - uPhase);
     float pulse = exp(-pow(min(p, 1.0 - p) * 14.0, 2.0)) * uPulse;
     float dash = mix(1.0, step(0.55, fract(vAlong * 22.0)), uDashed);
-    float glow = uLine * uOpacity * dash + pulse * 1.6;
+    float glow = uLine * uOpacity * dash * 0.6 + pulse * 0.8;
     gl_FragColor = vec4(uColor * glow, 1.0);
   }
 `;
