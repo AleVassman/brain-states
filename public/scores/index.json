@@ -1,8 +1,8 @@
 [
  {
-  "id": "placeholder",
-  "title": "Placeholder (not real science)",
-  "file": "placeholder.json",
+  "id": "depression",
+  "title": "Depression",
+  "file": "depression.json",
   "reviewed": false
  },
  {
@@ -12,15 +12,15 @@
   "reviewed": false
  },
  {
-  "id": "borderline",
-  "title": "Borderline",
-  "file": "borderline.json",
-  "reviewed": false
- },
- {
   "id": "anger",
   "title": "Anger",
   "file": "anger.json",
+  "reviewed": false
+ },
+ {
+  "id": "borderline",
+  "title": "Borderline",
+  "file": "borderline.json",
   "reviewed": false
  }
 ]

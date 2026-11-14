@@ -1,0 +1,797 @@
+{
+ "id": "depression",
+ "title": "Depression: a setback and the loop that follows",
+ "description": "During a depressive episode, something goes wrong: a setback, or a painful thought about oneself. The episode follows what happens next: a stronger response to the bad news, a turn inward into going over it again and again, and difficulty leaving that loop. The typical response shows the same setback in a brain that is not depressed. Unlike the other states, this one does not start from a neutral baseline: some differences are already there at rest.",
+ "caveat": "Depression is not a spike but a state lasting weeks or months, and no scan has followed a ruminating brain through a loop over minutes or hours. What the research gives is separate snapshots: how the depressed brain differs at rest, how it responds to negative pictures and to rewards, and which regions are active when healthy volunteers are asked to ruminate. Stitching these into \"setback, then turning inward, then staying stuck\" is a reconstruction, and the order of every step is inferred. The picture is also contested: one large pooled analysis found no consistent differences in brain activity at all, and the largest study of resting connectivity found the default mode network less connected in depression, not more, mainly in people with recurrent depression and those on medication. Depression also varies widely between people.",
+ "durationSeconds": 44,
+ "phases": [
+  {
+   "id": "rest",
+   "name": "At rest",
+   "timescale": "the background state, over weeks",
+   "start": 0,
+   "end": 0.12,
+   "caption": "Before anything happens, there are already differences. The subgenual cingulate, deep in the front of the brain, is more active at rest, and it is more tightly linked to the network the brain uses for self-focused thought.",
+   "typicalCaption": "Before anything happens: an ordinary resting brain, active but in balance."
+  },
+  {
+   "id": "setback",
+   "name": "A setback",
+   "timescale": "seconds",
+   "start": 0.12,
+   "end": 0.32,
+   "caption": "Something goes wrong. The amygdala, insula and dorsal anterior cingulate respond more strongly to the bad news than in a brain that is not depressed, and the dorsolateral prefrontal cortex, a control region, responds less.",
+   "typicalCaption": "Something goes wrong. The amygdala and anterior cingulate respond, as they do to anything negative.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "The studies compare the response to negative pictures with the response to neutral ones. Using that as \"the moment of a setback\" in a continuous episode is an inference."
+   }
+  },
+  {
+   "id": "inward",
+   "name": "Turning inward",
+   "timescale": "minutes",
+   "start": 0.32,
+   "end": 0.64,
+   "caption": "Attention turns inward, to going over what happened and what it says about oneself. The default mode network, the regions active in self-focused thought, comes forward, working closely with the subgenual cingulate.",
+   "typicalCaption": "A few moments of going over what happened. The same self-focused network is active here too; rumination is something every brain does.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "That rumination follows a negative event is how rumination is defined, not something measured in a scanner. The regions come from studies in which healthy volunteers were asked to ruminate."
+   }
+  },
+  {
+   "id": "stuck",
+   "name": "Staying there",
+   "timescale": "minutes to hours, recurring over weeks",
+   "start": 0.64,
+   "end": 1,
+   "caption": "The loop is hard to leave, and comes round again. Meanwhile good things land more faintly: the striatum, part of the reward system, responds less when something goes well.",
+   "typicalCaption": "Attention returns to the outside world and the brain settles back to rest.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "That rumination lasts longer and recurs in depression is a clinical observation. No brain scan has followed a loop over hours, so its persistence here is assumed from behaviour, and the blunted reward response comes from separate studies of winning and losing."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "sgacc",
+    "explanation": "More active at rest during depression than in people who are not depressed, and more active in the depressed phase than after recovery in the same people. This is among the most consistent findings in depression research.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "Hamilton JP, Farmer M, Fogelman P, Gotlib IH",
+      "year": 2015,
+      "title": "Depressive Rumination, the Default-Mode Network, and the Dark Matter of Clinical Neuroscience.",
+      "doi": "10.1016/j.biopsych.2015.02.020",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
+     },
+     {
+      "authors": "Drevets WC, Savitz J, Trimble M",
+      "year": 2008,
+      "title": "The subgenual anterior cingulate cortex in mood disorders.",
+      "doi": "10.1017/s1092852900013754",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "researchers consistently show that the sgACC metabolism is elevated in the depressed phase relative to the remitted phase of the same MDD subjects"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0.45
+     },
+     {
+      "t": 0.32,
+      "v": 0.5
+     },
+     {
+      "t": 0.5,
+      "v": 0.7
+     },
+     {
+      "t": 0.64,
+      "v": 0.6
+     },
+     {
+      "t": 0.8,
+      "v": 0.7
+     },
+     {
+      "t": 1,
+      "v": 0.5
+     }
+    ]
+   },
+   {
+    "region": "amygdala",
+    "explanation": "Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis found no consistent differences in brain activity in depression at all.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Hamilton JP, Etkin A, Furman DJ, Lemus MG, Johnson RF, Gotlib IH",
+      "year": 2012,
+      "title": "Functional neuroimaging of major depressive disorder: a meta-analysis and new integration of base line activation and neural response data.",
+      "doi": "10.1176/appi.ajp.2012.11071105",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "The analysis of neural response studies using negative stimuli showed greater response in the amygdala, insula, and dorsal anterior cingulate cortex and lower response in the dorsal striatum and dorsolateral prefrontal cortex in individuals with major depressive disorder than in healthy subjects."
+     },
+     {
+      "authors": "Müller VI, Cieslik EC, Serbanescu I, Laird AR, Fox PT, Eickhoff SB",
+      "year": 2017,
+      "title": "Altered Brain Activity in Unipolar Depression Revisited: Meta-analyses of Neuroimaging Studies.",
+      "doi": "10.1001/jamapsychiatry.2016.2783",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Overall analyses across cognitive processing experiments (P > .29) and across emotional processing experiments (P > .47) revealed no significant results."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.12,
+      "v": 0.05
+     },
+     {
+      "t": 0.24,
+      "v": 0.75
+     },
+     {
+      "t": 0.45,
+      "v": 0.45
+     },
+     {
+      "t": 0.7,
+      "v": 0.35
+     },
+     {
+      "t": 1,
+      "v": 0.25
+     }
+    ]
+   },
+   {
+    "region": "insula",
+    "explanation": "Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis found no consistent differences.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Hamilton JP, Etkin A, Furman DJ, Lemus MG, Johnson RF, Gotlib IH",
+      "year": 2012,
+      "title": "Functional neuroimaging of major depressive disorder: a meta-analysis and new integration of base line activation and neural response data.",
+      "doi": "10.1176/appi.ajp.2012.11071105",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "The analysis of neural response studies using negative stimuli showed greater response in the amygdala, insula, and dorsal anterior cingulate cortex and lower response in the dorsal striatum and dorsolateral prefrontal cortex in individuals with major depressive disorder than in healthy subjects."
+     },
+     {
+      "authors": "Müller VI, Cieslik EC, Serbanescu I, Laird AR, Fox PT, Eickhoff SB",
+      "year": 2017,
+      "title": "Altered Brain Activity in Unipolar Depression Revisited: Meta-analyses of Neuroimaging Studies.",
+      "doi": "10.1001/jamapsychiatry.2016.2783",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Overall analyses across cognitive processing experiments (P > .29) and across emotional processing experiments (P > .47) revealed no significant results."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.12,
+      "v": 0.05
+     },
+     {
+      "t": 0.26,
+      "v": 0.65
+     },
+     {
+      "t": 0.5,
+      "v": 0.4
+     },
+     {
+      "t": 1,
+      "v": 0.25
+     }
+    ]
+   },
+   {
+    "region": "dacc",
+    "explanation": "Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis found no consistent differences.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Hamilton JP, Etkin A, Furman DJ, Lemus MG, Johnson RF, Gotlib IH",
+      "year": 2012,
+      "title": "Functional neuroimaging of major depressive disorder: a meta-analysis and new integration of base line activation and neural response data.",
+      "doi": "10.1176/appi.ajp.2012.11071105",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "The analysis of neural response studies using negative stimuli showed greater response in the amygdala, insula, and dorsal anterior cingulate cortex and lower response in the dorsal striatum and dorsolateral prefrontal cortex in individuals with major depressive disorder than in healthy subjects."
+     },
+     {
+      "authors": "Müller VI, Cieslik EC, Serbanescu I, Laird AR, Fox PT, Eickhoff SB",
+      "year": 2017,
+      "title": "Altered Brain Activity in Unipolar Depression Revisited: Meta-analyses of Neuroimaging Studies.",
+      "doi": "10.1001/jamapsychiatry.2016.2783",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Overall analyses across cognitive processing experiments (P > .29) and across emotional processing experiments (P > .47) revealed no significant results."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.12,
+      "v": 0.05
+     },
+     {
+      "t": 0.26,
+      "v": 0.6
+     },
+     {
+      "t": 0.5,
+      "v": 0.35
+     },
+     {
+      "t": 1,
+      "v": 0.2
+     }
+    ]
+   },
+   {
+    "region": "dlpfc",
+    "explanation": "A control region that responds less to negative material than in people who are not depressed. At rest, the wider control network it belongs to is also less tightly connected. A later, larger pooled analysis of activity found no consistent differences.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Hamilton JP, Etkin A, Furman DJ, Lemus MG, Johnson RF, Gotlib IH",
+      "year": 2012,
+      "title": "Functional neuroimaging of major depressive disorder: a meta-analysis and new integration of base line activation and neural response data.",
+      "doi": "10.1176/appi.ajp.2012.11071105",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "The analysis of neural response studies using negative stimuli showed greater response in the amygdala, insula, and dorsal anterior cingulate cortex and lower response in the dorsal striatum and dorsolateral prefrontal cortex in individuals with major depressive disorder than in healthy subjects."
+     },
+     {
+      "authors": "Kaiser RH, Andrews-Hanna JR, Wager TD, Pizzagalli DA",
+      "year": 2015,
+      "title": "Large-Scale Network Dysfunction in Major Depressive Disorder: A Meta-analysis of Resting-State Functional Connectivity.",
+      "doi": "10.1001/jamapsychiatry.2015.0071",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "MDD was characterized by hypoconnectivity within the frontoparietal network (FN), a set of regions involved in cognitive control of attention and emotion regulation"
+     },
+     {
+      "authors": "Müller VI, Cieslik EC, Serbanescu I, Laird AR, Fox PT, Eickhoff SB",
+      "year": 2017,
+      "title": "Altered Brain Activity in Unipolar Depression Revisited: Meta-analyses of Neuroimaging Studies.",
+      "doi": "10.1001/jamapsychiatry.2016.2783",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Overall analyses across cognitive processing experiments (P > .29) and across emotional processing experiments (P > .47) revealed no significant results."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": -0.15
+     },
+     {
+      "t": 0.12,
+      "v": -0.15
+     },
+     {
+      "t": 0.28,
+      "v": -0.55
+     },
+     {
+      "t": 0.64,
+      "v": -0.45
+     },
+     {
+      "t": 1,
+      "v": -0.35
+     }
+    ]
+   },
+   {
+    "region": "mpfc",
+    "explanation": "Part of the default mode network, active during rumination in studies of healthy volunteers. In depression this network is not reliably more active at rest; what differs is how it is connected. Its staying active for longer here is assumed from how long rumination lasts in depression, not measured.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Zhou HX, Chen X, Shen YQ, Li L, Chen NX, Zhu ZC, Castellanos FX, Yan CG",
+      "year": 2020,
+      "title": "Rumination and the default mode network: Meta-analysis of brain imaging studies and implications for depression.",
+      "doi": "10.1016/j.neuroimage.2019.116287",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Results confirm the suspected association between rumination and DMN activation, specifically implicating the DMN core regions and the dorsal medial prefrontal cortex subsystem."
+     },
+     {
+      "authors": "Hamilton JP, Farmer M, Fogelman P, Gotlib IH",
+      "year": 2015,
+      "title": "Depressive Rumination, the Default-Mode Network, and the Dark Matter of Clinical Neuroscience.",
+      "doi": "10.1016/j.biopsych.2015.02.020",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.32,
+      "v": 0.1
+     },
+     {
+      "t": 0.44,
+      "v": 0.7
+     },
+     {
+      "t": 0.54,
+      "v": 0.5
+     },
+     {
+      "t": 0.64,
+      "v": 0.75
+     },
+     {
+      "t": 0.74,
+      "v": 0.5
+     },
+     {
+      "t": 0.86,
+      "v": 0.7
+     },
+     {
+      "t": 1,
+      "v": 0.55
+     }
+    ]
+   },
+   {
+    "region": "pcc-precuneus",
+    "explanation": "A core part of the default mode network, active during rumination in studies of healthy volunteers. Its staying active for longer here is assumed from how long rumination lasts in depression, not measured.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Zhou HX, Chen X, Shen YQ, Li L, Chen NX, Zhu ZC, Castellanos FX, Yan CG",
+      "year": 2020,
+      "title": "Rumination and the default mode network: Meta-analysis of brain imaging studies and implications for depression.",
+      "doi": "10.1016/j.neuroimage.2019.116287",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Results confirm the suspected association between rumination and DMN activation, specifically implicating the DMN core regions and the dorsal medial prefrontal cortex subsystem."
+     },
+     {
+      "authors": "Hamilton JP, Farmer M, Fogelman P, Gotlib IH",
+      "year": 2015,
+      "title": "Depressive Rumination, the Default-Mode Network, and the Dark Matter of Clinical Neuroscience.",
+      "doi": "10.1016/j.biopsych.2015.02.020",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.32,
+      "v": 0.1
+     },
+     {
+      "t": 0.46,
+      "v": 0.65
+     },
+     {
+      "t": 0.56,
+      "v": 0.45
+     },
+     {
+      "t": 0.66,
+      "v": 0.7
+     },
+     {
+      "t": 0.76,
+      "v": 0.45
+     },
+     {
+      "t": 0.88,
+      "v": 0.65
+     },
+     {
+      "t": 1,
+      "v": 0.5
+     }
+    ]
+   },
+   {
+    "region": "nucleus-accumbens",
+    "explanation": "The striatum, part of the reward system, responds less in depression when something good happens, in a pooled analysis of reward studies. It is drawn here on the nucleus accumbens, the striatum's lower front part; the finding is for the striatum more broadly. A separate pooled analysis found no consistent differences for positive material.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Keren H, O'Callaghan G, Vidal-Ribas P, Buzzell GA, Brotman MA, Leibenluft E, Pan PM, Meffert L, Kaiser A, Wolke S, Pine DS, Stringaris A",
+      "year": 2018,
+      "title": "Reward Processing in Depression: A Conceptual and Meta-Analytic Review Across fMRI and EEG Studies.",
+      "doi": "10.1176/appi.ajp.2018.17101124",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Analysis of fMRI studies revealed significantly reduced striatal activation in depressed compared with healthy individuals during reward feedback."
+     },
+     {
+      "authors": "Müller VI, Cieslik EC, Serbanescu I, Laird AR, Fox PT, Eickhoff SB",
+      "year": 2017,
+      "title": "Altered Brain Activity in Unipolar Depression Revisited: Meta-analyses of Neuroimaging Studies.",
+      "doi": "10.1001/jamapsychiatry.2016.2783",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Overall analyses across cognitive processing experiments (P > .29) and across emotional processing experiments (P > .47) revealed no significant results."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": -0.2
+     },
+     {
+      "t": 0.64,
+      "v": -0.25
+     },
+     {
+      "t": 0.8,
+      "v": -0.6
+     },
+     {
+      "t": 1,
+      "v": -0.4
+     }
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "from": "sgacc",
+    "to": "mpfc",
+    "explanation": "The subgenual cingulate is more tightly linked to the default mode network in depression, and the tighter the link, the more a person tends to ruminate. The largest study of resting connectivity found the opposite within the default mode network: less connection, mainly in recurrent depression and with medication.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Hamilton JP, Farmer M, Fogelman P, Gotlib IH",
+      "year": 2015,
+      "title": "Depressive Rumination, the Default-Mode Network, and the Dark Matter of Clinical Neuroscience.",
+      "doi": "10.1016/j.biopsych.2015.02.020",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "depressed individuals are characterized by reliably increased connectivity of the sgPFC and the MDT with the DMN, where levels of connectivity between the sgPFC and DMN in MDD often predict levels of rumination in depression"
+     },
+     {
+      "authors": "Yan CG, Chen X, Li L, Castellanos FX, Bai TJ, et al.",
+      "year": 2019,
+      "title": "Reduced default mode network functional connectivity in patients with recurrent major depressive disorder.",
+      "doi": "10.1073/pnas.1900390116",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "we found decreased default mode network functional connectivity in depressed patients, driven by patients with recurrent depression, and associated with current medication treatment but not with disease duration"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0.4
+     },
+     {
+      "t": 0.32,
+      "v": 0.45
+     },
+     {
+      "t": 0.5,
+      "v": 0.85
+     },
+     {
+      "t": 0.64,
+      "v": 0.7
+     },
+     {
+      "t": 0.82,
+      "v": 0.85
+     },
+     {
+      "t": 1,
+      "v": 0.6
+     }
+    ]
+   },
+   {
+    "from": "sgacc",
+    "to": "pcc-precuneus",
+    "explanation": "The subgenual cingulate is more tightly linked to the default mode network in depression, and the tighter the link, the more a person tends to ruminate. The largest study of resting connectivity found less connection within the default mode network, not more.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Hamilton JP, Farmer M, Fogelman P, Gotlib IH",
+      "year": 2015,
+      "title": "Depressive Rumination, the Default-Mode Network, and the Dark Matter of Clinical Neuroscience.",
+      "doi": "10.1016/j.biopsych.2015.02.020",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "depressed individuals are characterized by reliably increased connectivity of the sgPFC and the MDT with the DMN, where levels of connectivity between the sgPFC and DMN in MDD often predict levels of rumination in depression"
+     },
+     {
+      "authors": "Yan CG, Chen X, Li L, Castellanos FX, Bai TJ, et al.",
+      "year": 2019,
+      "title": "Reduced default mode network functional connectivity in patients with recurrent major depressive disorder.",
+      "doi": "10.1073/pnas.1900390116",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "we found decreased default mode network functional connectivity in depressed patients, driven by patients with recurrent depression, and associated with current medication treatment but not with disease duration"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0.4
+     },
+     {
+      "t": 0.32,
+      "v": 0.45
+     },
+     {
+      "t": 0.5,
+      "v": 0.85
+     },
+     {
+      "t": 0.64,
+      "v": 0.7
+     },
+     {
+      "t": 0.82,
+      "v": 0.85
+     },
+     {
+      "t": 1,
+      "v": 0.6
+     }
+    ]
+   },
+   {
+    "from": "mpfc",
+    "to": "pcc-precuneus",
+    "explanation": "A pooled analysis found the default mode network more tightly connected within itself in depression. The largest single study since found it less connected, mainly in people with recurrent depression and those taking medication. Both are shown in the sources; the line is drawn for the earlier, pooled finding.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Kaiser RH, Andrews-Hanna JR, Wager TD, Pizzagalli DA",
+      "year": 2015,
+      "title": "Large-Scale Network Dysfunction in Major Depressive Disorder: A Meta-analysis of Resting-State Functional Connectivity.",
+      "doi": "10.1001/jamapsychiatry.2015.0071",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "MDD was also associated with hyperconnectivity within the default network (DN), a network believed to support internally-oriented and self-referential thought"
+     },
+     {
+      "authors": "Yan CG, Chen X, Li L, Castellanos FX, Bai TJ, et al.",
+      "year": 2019,
+      "title": "Reduced default mode network functional connectivity in patients with recurrent major depressive disorder.",
+      "doi": "10.1073/pnas.1900390116",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "we found decreased default mode network functional connectivity in depressed patients, driven by patients with recurrent depression, and associated with current medication treatment but not with disease duration"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0.3
+     },
+     {
+      "t": 0.32,
+      "v": 0.35
+     },
+     {
+      "t": 0.5,
+      "v": 0.6
+     },
+     {
+      "t": 1,
+      "v": 0.45
+     }
+    ]
+   }
+  ]
+ },
+ "typical": {
+  "regions": [
+   {
+    "region": "amygdala",
+    "explanation": "Responds to something negative, as part of the ordinary response, and settles.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "Ruocco AC, Amirthavasagam S, Choi-Kain LW, McMain SF",
+      "year": 2013,
+      "title": "Neural correlates of negative emotionality in borderline personality disorder: an activation-likelihood-estimation meta-analysis.",
+      "doi": "10.1016/j.biopsych.2012.07.014",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Healthy control subjects activated a well-characterized network of brain regions associated with processing negative emotions that included the anterior cingulate cortex and amygdala."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.12,
+      "v": 0.05
+     },
+     {
+      "t": 0.24,
+      "v": 0.45
+     },
+     {
+      "t": 0.45,
+      "v": 0.15
+     },
+     {
+      "t": 0.7,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "dacc",
+    "explanation": "The anterior cingulate responds to something negative, as part of the ordinary response, and settles.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "Ruocco AC, Amirthavasagam S, Choi-Kain LW, McMain SF",
+      "year": 2013,
+      "title": "Neural correlates of negative emotionality in borderline personality disorder: an activation-likelihood-estimation meta-analysis.",
+      "doi": "10.1016/j.biopsych.2012.07.014",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Healthy control subjects activated a well-characterized network of brain regions associated with processing negative emotions that included the anterior cingulate cortex and amygdala."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.12,
+      "v": 0.05
+     },
+     {
+      "t": 0.26,
+      "v": 0.4
+     },
+     {
+      "t": 0.5,
+      "v": 0.15
+     },
+     {
+      "t": 0.7,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "mpfc",
+    "explanation": "Active when healthy volunteers are asked to ruminate. That the activity ends sooner than in depression is assumed from behaviour, not measured.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Zhou HX, Chen X, Shen YQ, Li L, Chen NX, Zhu ZC, Castellanos FX, Yan CG",
+      "year": 2020,
+      "title": "Rumination and the default mode network: Meta-analysis of brain imaging studies and implications for depression.",
+      "doi": "10.1016/j.neuroimage.2019.116287",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Results confirm the suspected association between rumination and DMN activation, specifically implicating the DMN core regions and the dorsal medial prefrontal cortex subsystem."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.32,
+      "v": 0.1
+     },
+     {
+      "t": 0.44,
+      "v": 0.55
+     },
+     {
+      "t": 0.6,
+      "v": 0.25
+     },
+     {
+      "t": 0.75,
+      "v": 0.05
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "pcc-precuneus",
+    "explanation": "Active when healthy volunteers are asked to ruminate. That the activity ends sooner than in depression is assumed from behaviour, not measured.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Zhou HX, Chen X, Shen YQ, Li L, Chen NX, Zhu ZC, Castellanos FX, Yan CG",
+      "year": 2020,
+      "title": "Rumination and the default mode network: Meta-analysis of brain imaging studies and implications for depression.",
+      "doi": "10.1016/j.neuroimage.2019.116287",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Results confirm the suspected association between rumination and DMN activation, specifically implicating the DMN core regions and the dorsal medial prefrontal cortex subsystem."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.32,
+      "v": 0.1
+     },
+     {
+      "t": 0.46,
+      "v": 0.5
+     },
+     {
+      "t": 0.62,
+      "v": 0.2
+     },
+     {
+      "t": 0.76,
+      "v": 0.05
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ }
+}

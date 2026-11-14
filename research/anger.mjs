@@ -7,7 +7,6 @@ const sorellaExperience = cite(
   'Anger experience analysis resulted in the bilateral activations of the insula and the ventrolateral prefrontal cortex',
 );
 const sorellaPerception = cite('sorella2021', 'Anger perception analysis resulted in significant activation in the amygdala');
-const sorellaDebate = cite('sorella2021', 'The neural bases of anger are still a matter of debate.');
 const densonAnger = cite(
   'denson2009',
   'Activity in the dorsal anterior cingulate cortex was positively related to self-reported feelings of anger and individual differences in general aggression.',
@@ -194,9 +193,6 @@ const score = {
   },
   typical: null,
 };
-
-// Kept with the episode so the claims sheet records it, although no track cites it directly.
-void sorellaDebate;
 
 writeScore(score, {
   indexTitle: 'Anger',
