@@ -134,4 +134,39 @@ export const SOURCES = {
     kind: 'study',
     pmid: '22404662',
   },
+
+  // ---- anger ----------------------------------------------------------------------------------
+  sorella2021: {
+    authors: 'Sorella S, Grecucci A, Piretti L, Job R',
+    year: 2021,
+    title: 'Do anger perception and the experience of anger share common neural mechanisms? Coordinate-based meta-analytic evidence of similar and different mechanisms from functional neuroimaging studies.',
+    doi: '10.1016/j.neuroimage.2021.117777',
+    kind: 'meta-analysis',
+    pmid: '33503484',
+  },
+  denson2009: {
+    authors: 'Denson TF, Pedersen WC, Ronquillo J, Nandy AS',
+    year: 2009,
+    title: 'The angry brain: neural correlates of anger, angry rumination, and aggressive personality.',
+    doi: '10.1162/jocn.2009.21051',
+    kind: 'study',
+    pmid: '18578600',
+  },
+  coccaro2007: {
+    authors: 'Coccaro EF, McCloskey MS, Fitzgerald DA, Phan KL',
+    year: 2007,
+    title: 'Amygdala and orbitofrontal reactivity to social threat in individuals with impulsive aggression.',
+    doi: '10.1016/j.biopsych.2006.08.024',
+    kind: 'study',
+    pmid: '17210136',
+  },
+  blair2012: {
+    authors: 'Blair RJR',
+    year: 2012,
+    title: 'Considering anger from a cognitive neuroscience perspective.',
+    doi: '10.1002/wcs.154',
+    kind: 'review',
+    pmid: '22267973',
+    pmcid: 'PMC3260787',
+  },
 };
