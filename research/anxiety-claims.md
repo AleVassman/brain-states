@@ -29,9 +29,9 @@ The findings come from different kinds of study that were never run as one exper
 
 ### **amygdala** — Mixed evidence
 
-Claim: Responds to the possible threat and, on average, more strongly than in people without an anxiety disorder. How fast it responds, and by what route, is disputed: electrode recordings found responses to fearful faces within about 74 milliseconds, but other researchers argue the cortex does more of this early work than the fast-route account allows. Whole-brain analyses also often fail to detect the amygdala, so its size here is uncertain.
+Claim: Responds to the possible threat and, on average, more strongly than in people without an anxiety disorder. How fast it responds, and by what route, is disputed: electrode recordings found responses to fearful faces within about 74 milliseconds, but other researchers argue the cortex does more of this early work than the fast-route account allows. Whole-brain analyses also often fail to detect the amygdala, so its size here is uncertain. It follows the same time course as in the typical brain, only larger: the sources read do not say whether it lasts longer.
 
-On screen: peaks above baseline (0.9), ends above baseline (0.6).
+On screen: peaks above baseline (0.9), ends at baseline (0).
 
 - Etkin A, Wager TD (2007). Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia. doi:10.1176/appi.ajp.2007.07030504 — meta-analysis, full-text
   > "Patients with any of the three disorders consistently showed greater activity than matched comparison subjects in the amygdala and insula"
@@ -44,7 +44,7 @@ On screen: peaks above baseline (0.9), ends above baseline (0.6).
 
 ### **insula** — Well established
 
-Claim: More active than in people without an anxiety disorder. The insula tracks the internal state of the body, and it is the most consistent finding across both diagnosed anxiety and anxiety induced in healthy volunteers. It also stays more active when people with anxiety or mood disorders try to rethink something upsetting.
+Claim: More active than in people without an anxiety disorder. The insula tracks the internal state of the body, and a pooled analysis found it more active in both diagnosed anxiety and anxiety induced in healthy volunteers. It is also more active when people with anxiety or mood disorders try to rethink something upsetting.
 
 On screen: peaks above baseline (0.9), ends above baseline (0.7).
 
@@ -59,16 +59,16 @@ On screen: peaks above baseline (0.9), ends above baseline (0.7).
 
 Claim: A cluster spanning the cingulate and medial frontal cortex is more active in both diagnosed and induced anxiety. The analysis does not pin the location down to this exact structure; it is drawn on the dorsal anterior cingulate as the nearest named region.
 
-On screen: peaks above baseline (0.7), ends above baseline (0.5).
+On screen: peaks above baseline (0.7), ends above baseline (0.1).
 
 - Chavanne AV, Robinson OJ (2021). The Overlapping Neurobiology of Induced and Pathological Anxiety: A Meta-Analysis of Functional Neural Activation. doi:10.1176/appi.ajp.2020.19111153 — meta-analysis, full-text
   > "both showed increased activation in the bilateral insula (xyz=44,14,-14 and xyz=-38,20,-8;k=2102 and k=1305 respectively) and cingulate cortex/medial prefrontal cortex"
 
 ### **bnst** — Still debated
 
-Claim: Holds a sustained response while a threat stays uncertain. The clearest evidence is from rodents, and little is known about it in people. Brain-scan studies in people do show a persistent response here during uncertain waiting, but the tidy split between a fast amygdala and a slow bed nucleus is contested: in monkeys, both are tied to sustained anxiety.
+Claim: Holds a sustained response while a threat stays uncertain. The clearest evidence is from rodents, and little is known about it in people. Brain-scan studies in people do show a persistent response here during uncertain waiting, but the tidy split between a fast amygdala and a slow bed nucleus is contested: in monkeys, both are tied to sustained anxiety. It is drawn exactly as in the typical brain, because the sources read report no difference in anxiety disorders.
 
-On screen: peaks above baseline (0.75), ends above baseline (0.65).
+On screen: peaks above baseline (0.5), ends at baseline (0.05).
 
 - Shackman AJ, Fox AS (2016). Contributions of the Central Extended Amygdala to Fear and Anxiety. doi:10.1523/jneurosci.0982-16.2016 — review, full-text
   > "the BST shows a persistent hemodynamic response during the uncertain anticipation of noxious reinforcers, such as shock or aversive images, whereas the dorsal amygdala shows more transient responses"
@@ -172,7 +172,7 @@ On screen: peaks above baseline (0.65), ends above baseline (0.2).
 
 Claim: Stronger communication between the amygdala and the ventromedial prefrontal cortex at rest goes with lower reported anxiety. Shown here at its ordinary level.
 
-On screen: peaks above baseline (0.2), ends above baseline (0.2).
+On screen: peaks at baseline (0), ends at baseline (0).
 
 - Kim MJ, Loucks RA, Palmer AL, Brown AC, Solomon KM, Marchante AN, Whalen PJ (2011). The structural and functional connectivity of the amygdala: from normal emotion to pathological anxiety. doi:10.1016/j.bbr.2011.04.025 — review, full-text
   > "functional coupling of the amygdala and vmPFC at rest, predicts beneficial outcomes in terms of reported anxiety"

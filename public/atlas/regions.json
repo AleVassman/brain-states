@@ -95,7 +95,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The reward findings cited for this region are for the striatum as a whole, of which this is the lower front part."
  },
  {
   "id": "nucleus-accumbens-r",
@@ -109,7 +110,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The reward findings cited for this region are for the striatum as a whole, of which this is the lower front part."
  },
  {
   "id": "insula-l",
@@ -207,7 +209,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border."
  },
  {
   "id": "dacc-r",
@@ -221,7 +224,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border."
  },
  {
   "id": "mpfc-l",
@@ -235,7 +239,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border."
  },
  {
   "id": "mpfc-r",
@@ -249,7 +254,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border."
  },
  {
   "id": "vmpfc-l",
@@ -263,7 +269,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border."
  },
  {
   "id": "vmpfc-r",
@@ -277,7 +284,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border."
  },
  {
   "id": "dlpfc-l",
@@ -291,7 +299,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border."
  },
  {
   "id": "dlpfc-r",
@@ -305,7 +314,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border."
  },
  {
   "id": "vlpfc-l",
@@ -319,7 +329,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border."
  },
  {
   "id": "vlpfc-r",
@@ -333,7 +344,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border."
  },
  {
   "id": "ofc-l",

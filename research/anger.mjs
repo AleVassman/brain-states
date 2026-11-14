@@ -82,7 +82,7 @@ const score = {
       start: 0.4,
       end: 0.72,
       caption:
-        'The feeling of anger itself. The insula, on both sides, is the most consistent finding, together with the ventrolateral prefrontal cortex; activity in the dorsal anterior cingulate rises with how angry people say they feel.',
+        'The feeling of anger itself. The insula, on both sides, and the ventrolateral prefrontal cortex are the main findings of the one pooled analysis of feeling angry; activity in the dorsal anterior cingulate rises with how angry people say they feel.',
       order: {
         kind: 'reconstructed',
         rationale:
@@ -125,8 +125,8 @@ const score = {
       {
         region: 'insula',
         explanation:
-          'Active on both sides when people feel angry: the main finding of a pooled analysis of studies of the experience of anger. The insula tracks the internal state of the body. Its activity after a provocation also predicted how much people went on to dwell on it.',
-        confidence: 'established',
+          'Active on both sides when people feel angry: the main finding of a pooled analysis of studies of the experience of anger, read as an abstract only. The insula tracks the internal state of the body. In one study, its activity after a provocation also predicted how much people went on to dwell on it. Marked mixed because it rests on one pooled analysis in a field its authors describe as still debated.',
+        confidence: 'mixed',
         citations: [sorellaExperience, densonPredict],
         keyframes: kf(0, 0, 0.12, 0.05, 0.4, 0.35, 0.58, 0.85, 0.72, 0.75, 1, 0.5),
       },

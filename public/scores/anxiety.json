@@ -1,7 +1,7 @@
 {
  "id": "anxiety",
  "title": "Anxiety: responding to a possible threat",
- "description": "Something that might be a threat appears, and it stays uncertain for a while. The episode follows the response in a brain with an anxiety disorder; the typical response shows the same moment in a brain without one. The same regions take part in both. What differs is how strongly they respond, how long they stay engaged, and how much the control regions step in.",
+ "description": "Something that might be a threat appears, and it stays uncertain for a while. The episode follows the response in a brain with an anxiety disorder; the typical response shows the same moment in a brain without one. The same regions take part in both. What the research supports is a difference in how strongly some of them respond and in how much the control regions step in. Whether the response also lasts longer in an anxiety disorder was not covered by the sources read, so the two brains follow the same time course here.",
  "caveat": "The findings come from different kinds of study that were never run as one experiment: group comparisons of people with social anxiety, phobia, PTSD and other anxiety disorders; studies of healthy volunteers waiting for an unpredictable shock; recordings from electrodes in the amygdala; and studies where people were asked to rethink an upsetting image. Joining them into one continuous episode is a reconstruction. \"Anxiety disorder\" here is an average over several different diagnoses, which differ from one another. The hypothalamus and the body's stress hormones are left out because none of the sources read for this episode measured them in people.",
  "durationSeconds": 36,
  "phases": [
@@ -11,8 +11,8 @@
    "timescale": "a fraction of a second",
    "start": 0,
    "end": 0.14,
-   "caption": "Something that might be a threat appears. The amygdala reacts within a fraction of a second, before there has been time to think it over.",
-   "typicalCaption": "Something that might be a threat appears. The amygdala reacts quickly here too: this first response is ordinary and useful."
+   "caption": "Something that might be a threat appears. The amygdala is among the first regions to react, possibly within a fraction of a second; how fast, and by what route, is disputed.",
+   "typicalCaption": "Something that might be a threat appears. The amygdala is among the first regions to react here too: this first response is ordinary."
   },
   {
    "id": "alarm",
@@ -33,8 +33,8 @@
    "timescale": "seconds to minutes",
    "start": 0.42,
    "end": 0.72,
-   "caption": "The threat stays uncertain. A small structure next to the amygdala, the bed nucleus of the stria terminalis, holds a sustained response, and the alarm regions stay engaged rather than settling.",
-   "typicalCaption": "While things stay uncertain the bed nucleus of the stria terminalis holds a sustained response, as the amygdala's own response fades.",
+   "caption": "The threat stays uncertain. A small structure deep in the front of the brain, the bed nucleus of the stria terminalis, holds a sustained response while the amygdala's own response fades. This is known mostly from animal studies, and no difference from the typical brain is shown at this step because none was found in the sources read.",
+   "typicalCaption": "While things stay uncertain the bed nucleus of the stria terminalis holds a sustained response, as the amygdala's own response fades. This is known mostly from animal studies.",
    "order": {
     "kind": "timed",
     "citations": [
@@ -56,7 +56,7 @@
    "timescale": "minutes",
    "start": 0.72,
    "end": 1,
-   "caption": "The frontal control regions that help rethink a situation are recruited less than in a typical brain, the insula stays active, and the alarm is slow to come down.",
+   "caption": "The frontal control regions that help rethink a situation are recruited less than in a typical brain, and the insula is more active while trying.",
    "typicalCaption": "Frontal control regions engage as the situation is reappraised, and the amygdala quietens. The episode settles.",
    "order": {
     "kind": "reconstructed",
@@ -68,7 +68,7 @@
   "regions": [
    {
     "region": "amygdala",
-    "explanation": "Responds to the possible threat and, on average, more strongly than in people without an anxiety disorder. How fast it responds, and by what route, is disputed: electrode recordings found responses to fearful faces within about 74 milliseconds, but other researchers argue the cortex does more of this early work than the fast-route account allows. Whole-brain analyses also often fail to detect the amygdala, so its size here is uncertain.",
+    "explanation": "Responds to the possible threat and, on average, more strongly than in people without an anxiety disorder. How fast it responds, and by what route, is disputed: electrode recordings found responses to fearful faces within about 74 milliseconds, but other researchers argue the cortex does more of this early work than the fast-route account allows. Whole-brain analyses also often fail to detect the amygdala, so its size here is uncertain. It follows the same time course as in the typical brain, only larger: the sources read do not say whether it lasts longer.",
     "confidence": "mixed",
     "citations": [
      {
@@ -115,29 +115,29 @@
      },
      {
       "t": 0.05,
-      "v": 0.25
+      "v": 0.3
      },
      {
       "t": 0.2,
       "v": 0.9
      },
      {
-      "t": 0.42,
-      "v": 0.85
+      "t": 0.5,
+      "v": 0.45
      },
      {
-      "t": 0.72,
-      "v": 0.75
+      "t": 0.8,
+      "v": 0.22
      },
      {
       "t": 1,
-      "v": 0.6
+      "v": 0
      }
     ]
    },
    {
     "region": "insula",
-    "explanation": "More active than in people without an anxiety disorder. The insula tracks the internal state of the body, and it is the most consistent finding across both diagnosed anxiety and anxiety induced in healthy volunteers. It also stays more active when people with anxiety or mood disorders try to rethink something upsetting.",
+    "explanation": "More active than in people without an anxiety disorder. The insula tracks the internal state of the body, and a pooled analysis found it more active in both diagnosed anxiety and anxiety induced in healthy volunteers. It is also more active when people with anxiety or mood disorders try to rethink something upsetting.",
     "confidence": "established",
     "citations": [
      {
@@ -221,17 +221,17 @@
      },
      {
       "t": 0.72,
-      "v": 0.6
+      "v": 0.5
      },
      {
       "t": 1,
-      "v": 0.5
+      "v": 0.1
      }
     ]
    },
    {
     "region": "bnst",
-    "explanation": "Holds a sustained response while a threat stays uncertain. The clearest evidence is from rodents, and little is known about it in people. Brain-scan studies in people do show a persistent response here during uncertain waiting, but the tidy split between a fast amygdala and a slow bed nucleus is contested: in monkeys, both are tied to sustained anxiety.",
+    "explanation": "Holds a sustained response while a threat stays uncertain. The clearest evidence is from rodents, and little is known about it in people. Brain-scan studies in people do show a persistent response here during uncertain waiting, but the tidy split between a fast amygdala and a slow bed nucleus is contested: in monkeys, both are tied to sustained anxiety. It is drawn exactly as in the typical brain, because the sources read report no difference in anxiety disorders.",
     "confidence": "debated",
     "citations": [
      {
@@ -273,11 +273,15 @@
      },
      {
       "t": 0.55,
-      "v": 0.75
+      "v": 0.5
+     },
+     {
+      "t": 0.8,
+      "v": 0.3
      },
      {
       "t": 1,
-      "v": 0.65
+      "v": 0.05
      }
     ]
    },
@@ -671,11 +675,11 @@
     "keyframes": [
      {
       "t": 0,
-      "v": 0.2
+      "v": 0
      },
      {
       "t": 1,
-      "v": 0.2
+      "v": 0
      }
     ]
    }

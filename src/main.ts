@@ -66,9 +66,11 @@ async function start() {
   let panelKey = '';
 
   const panelView = (): PanelView => {
-    if (selectedRegion) return { kind: 'region', region: selectedRegion, score: player.score, variant: player.variant };
+    if (selectedRegion) {
+      return { kind: 'region', region: selectedRegion, score: player.score, variant: player.variant, regions: atlas.regions };
+    }
     if (loadError) return { kind: 'errors', ...loadError };
-    if (player.score) return { kind: 'state', score: player.score };
+    if (player.score) return { kind: 'state', score: player.score, variant: player.variant, regions: atlas.regions };
     return { kind: 'empty' };
   };
 
@@ -106,6 +108,7 @@ async function start() {
 
   typicalToggle.addEventListener('change', () => {
     player.setVariant(typicalToggle.checked ? 'typical' : 'condition');
+    typicalToggle.blur(); // so the space bar goes back to play and pause
   });
 
   // ---- States ------------------------------------------------------------------------------
@@ -119,6 +122,8 @@ async function start() {
   const picker = createStatePicker(byId('state-list'), entries, async (entry) => {
     const mine = ++request;
     picker.setSelected(entry.id);
+    // Hand the keyboard back to the page, so the space bar plays instead of pressing this button again.
+    if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
     selectedRegion = null;
     const result = await loadScore(entry.file, regionNames);
     if (mine !== request) return; // a later pick overtook this one
@@ -147,6 +152,7 @@ async function start() {
 
   window.addEventListener('keydown', (event) => {
     if (event.code !== 'Space' || !player.score) return;
+    if (byId<HTMLDialogElement>('about').open) return;
     if (event.target instanceof HTMLElement && ['BUTTON', 'INPUT', 'A'].includes(event.target.tagName)) return;
     event.preventDefault();
     if (player.playing) player.pause();

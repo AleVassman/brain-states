@@ -81,6 +81,8 @@ export interface RegionInfo {
   kind: 'mesh' | 'marker';
   approximate: boolean;
   radius?: number;
+  /** Set when the drawn shape is larger than the area it stands for (a whole gyrus for a functional area). */
+  extentNote?: string;
   source: string;
 }
 

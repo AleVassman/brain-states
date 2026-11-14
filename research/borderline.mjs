@@ -73,7 +73,7 @@ const score = {
       start: 0.12,
       end: 0.4,
       caption:
-        'The emotional response builds. The insula and the posterior cingulate respond more than in a typical brain, and the dorsolateral prefrontal cortex, a control region, responds less. Whether the amygdala responds more or less is disputed.',
+        'The emotional response builds. The insula and the posterior cingulate respond more than in a typical brain, and the dorsolateral prefrontal cortex, a control region, responds less. Whether the amygdala responds more or less is disputed, so it is drawn the same as in a typical brain at this step.',
       typicalCaption:
         'The emotional response builds. The amygdala and the anterior cingulate respond, as they do to anything upsetting.',
       order: {
@@ -115,10 +115,10 @@ const score = {
       {
         region: 'amygdala',
         explanation:
-          'The most disputed finding. One pooled analysis found the left amygdala more active than in people without the condition, mainly in people not taking medication. Another found it less active. The largest found no consistent difference. What single studies do show is a difference in timing: the response is slower to return to baseline and does not shrink when the same upsetting picture is shown again.',
+          'The most disputed finding. One pooled analysis found the left amygdala more active than in people without the condition, mainly in people not taking medication. Another found it less active. The largest found no consistent difference. What single studies do show is a difference in timing: the response is slower to return to baseline and does not shrink when the same upsetting picture is shown again. Because the size of the response is disputed, it is drawn rising to the same height as in the typical brain; only the slower return differs.',
         confidence: 'debated',
         citations: [schulzeMain, schulzeMedication, ruoccoLess, degasperiNull, hazlettSlow, hazlettRepeated, kamphausenNoDecrease],
-        keyframes: kf(0, 0, 0.12, 0.15, 0.32, 0.75, 0.55, 0.75, 0.74, 0.65, 1, 0.4),
+        keyframes: kf(0, 0, 0.12, 0.15, 0.3, 0.6, 0.55, 0.58, 0.74, 0.5, 1, 0.3),
       },
       {
         region: 'insula',

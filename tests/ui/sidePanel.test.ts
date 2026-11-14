@@ -22,7 +22,9 @@ describe('regionPanelContent', () => {
   });
 
   it('says so when the region is not part of the state, instead of showing an empty panel', () => {
-    const c = regionPanelContent(mpfc, validScore(), 'condition');
+    const s = validScore();
+    s.condition.connections = [];
+    const c = regionPanelContent(mpfc, s, 'condition');
     expect(c.title).toBe('Medial prefrontal cortex');
     expect(c.body).toBe("Not part of this state's documented pattern.");
     expect(c.confidence).toBeNull();
@@ -63,5 +65,38 @@ describe('regionPanelContent', () => {
 
   it('names where the geometry comes from', () => {
     expect(regionPanelContent(amygdalaL, validScore(), 'condition').source).toBe('test');
+  });
+});
+
+describe('connections in the side panel', () => {
+  it('lists the connections that end at a region, by region id or group', async () => {
+    const { connectionsTouching } = await import('../../src/ui/panelContent');
+    const touching = connectionsTouching(mpfc, validScore(), 'condition');
+    expect(touching).toHaveLength(1);
+    expect(touching[0].explanation).toBe('Regulation weakens.');
+    expect(connectionsTouching(amygdalaL, validScore(), 'condition')).toHaveLength(1);
+  });
+
+  it('lists none for the typical variant when it has no connections', async () => {
+    const { connectionsTouching } = await import('../../src/ui/panelContent');
+    expect(connectionsTouching(mpfc, validScore(), 'typical')).toEqual([]);
+  });
+
+  it('does not call a region "not part of the pattern" when a drawn connection ends at it', () => {
+    const c = regionPanelContent(mpfc, validScore(), 'condition');
+    expect(c.body).toBe('No change in activity is documented for this region in this state, but a connection shown here ends at it.');
+  });
+
+  it('names a connection end by its structure, without left or right', async () => {
+    const { regionLabel } = await import('../../src/ui/panelContent');
+    expect(regionLabel('amygdala', REGIONS)).toBe('Amygdala');
+    expect(regionLabel('amygdala-r', REGIONS)).toBe('Right amygdala');
+    expect(regionLabel('nowhere', REGIONS)).toBe('nowhere');
+  });
+
+  it('passes on a note about a region drawn larger than the area it stands for', () => {
+    const standIn: RegionInfo = { ...mpfc, extentNote: 'Shown as the whole gyrus.' };
+    expect(regionPanelContent(standIn, validScore(), 'condition').extentNote).toBe('Shown as the whole gyrus.');
+    expect(regionPanelContent(amygdalaL, validScore(), 'condition').extentNote).toBeNull();
   });
 });

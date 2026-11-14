@@ -11,7 +11,7 @@
    "timescale": "the background state, over weeks",
    "start": 0,
    "end": 0.12,
-   "caption": "Before anything happens, there are already differences. The subgenual cingulate, deep in the front of the brain, is more active at rest, and it is more tightly linked to the network the brain uses for self-focused thought.",
+   "caption": "Before anything happens, there are already differences. The subgenual cingulate, deep in the front of the brain, is more active at rest, and in most studies it is more tightly linked to the network the brain uses for self-focused thought.",
    "typicalCaption": "Before anything happens: an ordinary resting brain, active but in balance."
   },
   {
@@ -58,7 +58,7 @@
   "regions": [
    {
     "region": "sgacc",
-    "explanation": "More active at rest during depression than in people who are not depressed, and more active in the depressed phase than after recovery in the same people. This is among the most consistent findings in depression research.",
+    "explanation": "More active at rest during depression than in people who are not depressed, and more active in the depressed phase than after recovery in the same people. This rests on pooled findings of resting blood flow. It is drawn at a steady raised level: the sources read do not say whether it rises further during rumination.",
     "confidence": "established",
     "citations": [
      {
@@ -68,7 +68,7 @@
       "doi": "10.1016/j.biopsych.2015.02.020",
       "kind": "review",
       "access": "full-text",
-      "quote": "while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
+      "quote": "We also present meta-analytic findings that, while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
      },
      {
       "authors": "Drevets WC, Savitz J, Trimble M",
@@ -86,24 +86,8 @@
       "v": 0.45
      },
      {
-      "t": 0.32,
-      "v": 0.5
-     },
-     {
-      "t": 0.5,
-      "v": 0.7
-     },
-     {
-      "t": 0.64,
-      "v": 0.6
-     },
-     {
-      "t": 0.8,
-      "v": 0.7
-     },
-     {
       "t": 1,
-      "v": 0.5
+      "v": 0.45
      }
     ]
    },
@@ -254,7 +238,7 @@
    },
    {
     "region": "dlpfc",
-    "explanation": "A control region that responds less to negative material than in people who are not depressed. At rest, the wider control network it belongs to is also less tightly connected. A later, larger pooled analysis of activity found no consistent differences.",
+    "explanation": "A control region that responds less to negative material than in people who are not depressed. At rest, the wider control network it belongs to is also less tightly connected, which is a finding about connection, not activity, so the region is drawn at baseline until the setback. A later, larger pooled analysis of activity found no consistent differences.",
     "confidence": "mixed",
     "citations": [
      {
@@ -288,23 +272,27 @@
     "keyframes": [
      {
       "t": 0,
-      "v": -0.15
+      "v": 0
      },
      {
       "t": 0.12,
-      "v": -0.15
+      "v": 0
      },
      {
       "t": 0.28,
       "v": -0.55
      },
      {
-      "t": 0.64,
-      "v": -0.45
+      "t": 0.5,
+      "v": -0.3
+     },
+     {
+      "t": 0.75,
+      "v": -0.1
      },
      {
       "t": 1,
-      "v": -0.35
+      "v": 0
      }
     ]
    },
@@ -329,7 +317,7 @@
       "doi": "10.1016/j.biopsych.2015.02.020",
       "kind": "review",
       "access": "full-text",
-      "quote": "while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
+      "quote": "We also present meta-analytic findings that, while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
      }
     ],
     "keyframes": [
@@ -388,7 +376,7 @@
       "doi": "10.1016/j.biopsych.2015.02.020",
       "kind": "review",
       "access": "full-text",
-      "quote": "while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
+      "quote": "We also present meta-analytic findings that, while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
      }
     ],
     "keyframes": [
@@ -428,7 +416,7 @@
    },
    {
     "region": "nucleus-accumbens",
-    "explanation": "The striatum, part of the reward system, responds less in depression when something good happens, in a pooled analysis of reward studies. It is drawn here on the nucleus accumbens, the striatum's lower front part; the finding is for the striatum more broadly. A separate pooled analysis found no consistent differences for positive material.",
+    "explanation": "The striatum, part of the reward system, responds less in depression when something good happens, in a pooled analysis of reward studies. It is drawn here on the nucleus accumbens, the striatum's lower front part; the finding is for the striatum more broadly. A separate pooled analysis found no consistent differences for positive material. It is drawn at baseline until something good happens, because the finding is about the response to reward, not about rest.",
     "confidence": "mixed",
     "citations": [
      {
@@ -447,17 +435,17 @@
       "doi": "10.1001/jamapsychiatry.2016.2783",
       "kind": "meta-analysis",
       "access": "full-text",
-      "quote": "Overall analyses across cognitive processing experiments (P > .29) and across emotional processing experiments (P > .47) revealed no significant results."
+      "quote": "Similarly, no convergence was found in analyses investigating positive (all P > .15), negative (all P > .76), or memory (all P > .48) processes."
      }
     ],
     "keyframes": [
      {
       "t": 0,
-      "v": -0.2
+      "v": 0
      },
      {
       "t": 0.64,
-      "v": -0.25
+      "v": 0
      },
      {
       "t": 0.8,
@@ -465,7 +453,7 @@
      },
      {
       "t": 1,
-      "v": -0.4
+      "v": -0.3
      }
     ]
    }

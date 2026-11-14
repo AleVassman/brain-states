@@ -17,6 +17,11 @@ const NEUDORFER = 'Neudorfer et al. 2020 hypothalamic region atlas (MNI152b, 0.5
 const AAN = 'Harvard Ascending Arousal Network Atlas v2.0 (MNI152, 1 mm)';
 const COLIN = 'Colin27 average brain (McConnell BIC, 1998)';
 
+const GYRUS_NOTE =
+  'Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border.';
+const STRIATUM_NOTE =
+  'The reward findings cited for this region are for the striatum as a whole, of which this is the lower front part.';
+
 const range = (from, to, step = 1) => {
   const out = [];
   for (let i = from; i <= to; i += step) out.push(i);
@@ -29,15 +34,15 @@ const AAL_REGIONS = [
   { group: 'amygdala', name: 'amygdala', labels: [45], tris: 2500 },
   { group: 'hippocampus', name: 'hippocampus', labels: [41], tris: 3000 },
   { group: 'thalamus', name: 'thalamus', labels: range(121, 149, 2), tris: 3000 },
-  { group: 'nucleus-accumbens', name: 'nucleus accumbens', labels: [157], tris: 1200 },
+  { group: 'nucleus-accumbens', note: STRIATUM_NOTE, name: 'nucleus accumbens', labels: [157], tris: 1200 },
   { group: 'insula', name: 'insula', labels: [33], tris: 4000 },
   { group: 'sgacc', name: 'subgenual anterior cingulate', labels: [151], tris: 1500 },
   { group: 'pgacc', name: 'pregenual anterior cingulate', labels: [153], tris: 2000 },
-  { group: 'dacc', name: 'dorsal anterior cingulate (supracallosal)', labels: [155], tris: 2500 },
-  { group: 'mpfc', name: 'medial prefrontal cortex (medial superior frontal gyrus)', labels: [19], tris: 5000 },
-  { group: 'vmpfc', name: 'ventromedial prefrontal cortex (medial orbital gyrus and gyrus rectus)', labels: [21, 23], tris: 3000 },
-  { group: 'dlpfc', name: 'dorsolateral prefrontal cortex (middle frontal gyrus)', labels: [5], tris: 6000 },
-  { group: 'vlpfc', name: 'ventrolateral prefrontal cortex (inferior frontal gyrus)', labels: [7, 9, 11], tris: 6000 },
+  { group: 'dacc', note: GYRUS_NOTE, name: 'dorsal anterior cingulate (supracallosal)', labels: [155], tris: 2500 },
+  { group: 'mpfc', note: GYRUS_NOTE, name: 'medial prefrontal cortex (medial superior frontal gyrus)', labels: [19], tris: 5000 },
+  { group: 'vmpfc', note: GYRUS_NOTE, name: 'ventromedial prefrontal cortex (medial orbital gyrus and gyrus rectus)', labels: [21, 23], tris: 3000 },
+  { group: 'dlpfc', note: GYRUS_NOTE, name: 'dorsolateral prefrontal cortex (middle frontal gyrus)', labels: [5], tris: 6000 },
+  { group: 'vlpfc', note: GYRUS_NOTE, name: 'ventrolateral prefrontal cortex (inferior frontal gyrus)', labels: [7, 9, 11], tris: 6000 },
   { group: 'ofc', name: 'orbitofrontal cortex', labels: [25, 27, 29, 31], tris: 4000 },
   { group: 'pcc-precuneus', name: 'posterior cingulate and precuneus', labels: [39, 71], tris: 6000 },
   { group: 'vta', name: 'ventral tegmental area', labels: [159], tris: 600 },
@@ -131,6 +136,7 @@ for (const r of AAL_REGIONS) {
     const mesh = await meshFrom(aal, (v) => set.has(v), r.tris);
     if (!mesh) throw new Error(`AAL3 has no voxels for ${r.group}-${side}`);
     add(`${r.group}-${side}`, r.group, `${side === 'l' ? 'Left' : 'Right'} ${r.name}`, side, AAL, mesh);
+    if (r.note) regions[regions.length - 1].extentNote = r.note;
   }
 }
 for (const [side, shift] of [['l', 0], ['r', 1]]) {

@@ -29,9 +29,9 @@ This is the least settled of the four episodes, and every region in it is marked
 
 ### **amygdala** — Still debated
 
-Claim: The most disputed finding. One pooled analysis found the left amygdala more active than in people without the condition, mainly in people not taking medication. Another found it less active. The largest found no consistent difference. What single studies do show is a difference in timing: the response is slower to return to baseline and does not shrink when the same upsetting picture is shown again.
+Claim: The most disputed finding. One pooled analysis found the left amygdala more active than in people without the condition, mainly in people not taking medication. Another found it less active. The largest found no consistent difference. What single studies do show is a difference in timing: the response is slower to return to baseline and does not shrink when the same upsetting picture is shown again. Because the size of the response is disputed, it is drawn rising to the same height as in the typical brain; only the slower return differs.
 
-On screen: peaks above baseline (0.75), ends above baseline (0.4).
+On screen: peaks above baseline (0.6), ends above baseline (0.3).
 
 - Schulze L, Schmahl C, Niedtfeld I (2016). Neural Correlates of Disturbed Emotion Processing in Borderline Personality Disorder: A Multimodal Meta-Analysis. doi:10.1016/j.biopsych.2015.03.027 — meta-analysis, abstract-only
   > "BPD patients showed relatively increased activation of the left amygdala and posterior cingulate cortex, along with blunted responses of the bilateral dorsolateral prefrontal cortex"

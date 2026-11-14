@@ -4,7 +4,7 @@ import { cite, kf, writeScore } from './lib.mjs';
 
 const hamiltonSgRest = cite(
   'hamilton2015',
-  'while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN',
+  'We also present meta-analytic findings that, while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN',
 );
 const hamiltonConnectivity = cite(
   'hamilton2015',
@@ -33,6 +33,10 @@ const hamiltonNegative = cite(
 const mullerNull = cite(
   'muller2017',
   'Overall analyses across cognitive processing experiments (P > .29) and across emotional processing experiments (P > .47) revealed no significant results.',
+);
+const mullerPositive = cite(
+  'muller2017',
+  'Similarly, no convergence was found in analyses investigating positive (all P > .15), negative (all P > .76), or memory (all P > .48) processes.',
 );
 const kerenReward = cite(
   'keren2018',
@@ -63,7 +67,7 @@ const score = {
       start: 0,
       end: 0.12,
       caption:
-        'Before anything happens, there are already differences. The subgenual cingulate, deep in the front of the brain, is more active at rest, and it is more tightly linked to the network the brain uses for self-focused thought.',
+        'Before anything happens, there are already differences. The subgenual cingulate, deep in the front of the brain, is more active at rest, and in most studies it is more tightly linked to the network the brain uses for self-focused thought.',
       typicalCaption: 'Before anything happens: an ordinary resting brain, active but in balance.',
     },
     {
@@ -117,10 +121,10 @@ const score = {
       {
         region: 'sgacc',
         explanation:
-          'More active at rest during depression than in people who are not depressed, and more active in the depressed phase than after recovery in the same people. This is among the most consistent findings in depression research.',
+          'More active at rest during depression than in people who are not depressed, and more active in the depressed phase than after recovery in the same people. This rests on pooled findings of resting blood flow. It is drawn at a steady raised level: the sources read do not say whether it rises further during rumination.',
         confidence: 'established',
         citations: [hamiltonSgRest, drevetsPhase],
-        keyframes: kf(0, 0.45, 0.32, 0.5, 0.5, 0.7, 0.64, 0.6, 0.8, 0.7, 1, 0.5),
+        keyframes: kf(0, 0.45, 1, 0.45),
       },
       {
         region: 'amygdala',
@@ -149,10 +153,10 @@ const score = {
       {
         region: 'dlpfc',
         explanation:
-          'A control region that responds less to negative material than in people who are not depressed. At rest, the wider control network it belongs to is also less tightly connected. A later, larger pooled analysis of activity found no consistent differences.',
+          'A control region that responds less to negative material than in people who are not depressed. At rest, the wider control network it belongs to is also less tightly connected, which is a finding about connection, not activity, so the region is drawn at baseline until the setback. A later, larger pooled analysis of activity found no consistent differences.',
         confidence: 'mixed',
         citations: [hamiltonNegative, kaiserControl, mullerNull],
-        keyframes: kf(0, -0.15, 0.12, -0.15, 0.28, -0.55, 0.64, -0.45, 1, -0.35),
+        keyframes: kf(0, 0, 0.12, 0, 0.28, -0.55, 0.5, -0.3, 0.75, -0.1, 1, 0),
       },
       {
         region: 'mpfc',
@@ -173,10 +177,10 @@ const score = {
       {
         region: 'nucleus-accumbens',
         explanation:
-          'The striatum, part of the reward system, responds less in depression when something good happens, in a pooled analysis of reward studies. It is drawn here on the nucleus accumbens, the striatum\'s lower front part; the finding is for the striatum more broadly. A separate pooled analysis found no consistent differences for positive material.',
+          'The striatum, part of the reward system, responds less in depression when something good happens, in a pooled analysis of reward studies. It is drawn here on the nucleus accumbens, the striatum\'s lower front part; the finding is for the striatum more broadly. A separate pooled analysis found no consistent differences for positive material. It is drawn at baseline until something good happens, because the finding is about the response to reward, not about rest.',
         confidence: 'mixed',
-        citations: [kerenReward, mullerNull],
-        keyframes: kf(0, -0.2, 0.64, -0.25, 0.8, -0.6, 1, -0.4),
+        citations: [kerenReward, mullerPositive],
+        keyframes: kf(0, 0, 0.64, 0, 0.8, -0.6, 1, -0.3),
       },
     ],
     connections: [

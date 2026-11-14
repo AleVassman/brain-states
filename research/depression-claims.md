@@ -29,12 +29,12 @@ Depression is not a spike but a state lasting weeks or months, and no scan has f
 
 ### **sgacc** — Well established
 
-Claim: More active at rest during depression than in people who are not depressed, and more active in the depressed phase than after recovery in the same people. This is among the most consistent findings in depression research.
+Claim: More active at rest during depression than in people who are not depressed, and more active in the depressed phase than after recovery in the same people. This rests on pooled findings of resting blood flow. It is drawn at a steady raised level: the sources read do not say whether it rises further during rumination.
 
-On screen: peaks above baseline (0.7), ends above baseline (0.5).
+On screen: peaks above baseline (0.45), ends above baseline (0.45).
 
 - Hamilton JP, Farmer M, Fogelman P, Gotlib IH (2015). Depressive Rumination, the Default-Mode Network, and the Dark Matter of Clinical Neuroscience. doi:10.1016/j.biopsych.2015.02.020 — review, full-text
-  > "while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
+  > "We also present meta-analytic findings that, while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
 - Drevets WC, Savitz J, Trimble M (2008). The subgenual anterior cingulate cortex in mood disorders. doi:10.1017/s1092852900013754 — review, full-text
   > "researchers consistently show that the sgACC metabolism is elevated in the depressed phase relative to the remitted phase of the same MDD subjects"
 
@@ -73,9 +73,9 @@ On screen: peaks above baseline (0.6), ends above baseline (0.2).
 
 ### **dlpfc** — Mixed evidence
 
-Claim: A control region that responds less to negative material than in people who are not depressed. At rest, the wider control network it belongs to is also less tightly connected. A later, larger pooled analysis of activity found no consistent differences.
+Claim: A control region that responds less to negative material than in people who are not depressed. At rest, the wider control network it belongs to is also less tightly connected, which is a finding about connection, not activity, so the region is drawn at baseline until the setback. A later, larger pooled analysis of activity found no consistent differences.
 
-On screen: peaks below baseline (-0.55), ends below baseline (-0.35).
+On screen: peaks below baseline (-0.55), ends at baseline (0).
 
 - Hamilton JP, Etkin A, Furman DJ, Lemus MG, Johnson RF, Gotlib IH (2012). Functional neuroimaging of major depressive disorder: a meta-analysis and new integration of base line activation and neural response data. doi:10.1176/appi.ajp.2012.11071105 — meta-analysis, full-text
   > "The analysis of neural response studies using negative stimuli showed greater response in the amygdala, insula, and dorsal anterior cingulate cortex and lower response in the dorsal striatum and dorsolateral prefrontal cortex in individuals with major depressive disorder than in healthy subjects."
@@ -93,7 +93,7 @@ On screen: peaks above baseline (0.75), ends above baseline (0.55).
 - Zhou HX, Chen X, Shen YQ, Li L, Chen NX, Zhu ZC, Castellanos FX, Yan CG (2020). Rumination and the default mode network: Meta-analysis of brain imaging studies and implications for depression. doi:10.1016/j.neuroimage.2019.116287 — meta-analysis, abstract-only
   > "Results confirm the suspected association between rumination and DMN activation, specifically implicating the DMN core regions and the dorsal medial prefrontal cortex subsystem."
 - Hamilton JP, Farmer M, Fogelman P, Gotlib IH (2015). Depressive Rumination, the Default-Mode Network, and the Dark Matter of Clinical Neuroscience. doi:10.1016/j.biopsych.2015.02.020 — review, full-text
-  > "while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
+  > "We also present meta-analytic findings that, while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
 
 ### **pcc-precuneus** — Mixed evidence
 
@@ -104,18 +104,18 @@ On screen: peaks above baseline (0.7), ends above baseline (0.5).
 - Zhou HX, Chen X, Shen YQ, Li L, Chen NX, Zhu ZC, Castellanos FX, Yan CG (2020). Rumination and the default mode network: Meta-analysis of brain imaging studies and implications for depression. doi:10.1016/j.neuroimage.2019.116287 — meta-analysis, abstract-only
   > "Results confirm the suspected association between rumination and DMN activation, specifically implicating the DMN core regions and the dorsal medial prefrontal cortex subsystem."
 - Hamilton JP, Farmer M, Fogelman P, Gotlib IH (2015). Depressive Rumination, the Default-Mode Network, and the Dark Matter of Clinical Neuroscience. doi:10.1016/j.biopsych.2015.02.020 — review, full-text
-  > "while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
+  > "We also present meta-analytic findings that, while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
 
 ### **nucleus-accumbens** — Mixed evidence
 
-Claim: The striatum, part of the reward system, responds less in depression when something good happens, in a pooled analysis of reward studies. It is drawn here on the nucleus accumbens, the striatum's lower front part; the finding is for the striatum more broadly. A separate pooled analysis found no consistent differences for positive material.
+Claim: The striatum, part of the reward system, responds less in depression when something good happens, in a pooled analysis of reward studies. It is drawn here on the nucleus accumbens, the striatum's lower front part; the finding is for the striatum more broadly. A separate pooled analysis found no consistent differences for positive material. It is drawn at baseline until something good happens, because the finding is about the response to reward, not about rest.
 
-On screen: peaks below baseline (-0.6), ends below baseline (-0.4).
+On screen: peaks below baseline (-0.6), ends below baseline (-0.3).
 
 - Keren H, O'Callaghan G, Vidal-Ribas P, Buzzell GA, Brotman MA, Leibenluft E, Pan PM, Meffert L, Kaiser A, Wolke S, Pine DS, Stringaris A (2018). Reward Processing in Depression: A Conceptual and Meta-Analytic Review Across fMRI and EEG Studies. doi:10.1176/appi.ajp.2018.17101124 — meta-analysis, full-text
   > "Analysis of fMRI studies revealed significantly reduced striatal activation in depressed compared with healthy individuals during reward feedback."
 - Müller VI, Cieslik EC, Serbanescu I, Laird AR, Fox PT, Eickhoff SB (2017). Altered Brain Activity in Unipolar Depression Revisited: Meta-analyses of Neuroimaging Studies. doi:10.1001/jamapsychiatry.2016.2783 — meta-analysis, full-text
-  > "Overall analyses across cognitive processing experiments (P > .29) and across emotional processing experiments (P > .47) revealed no significant results."
+  > "Similarly, no convergence was found in analyses investigating positive (all P > .15), negative (all P > .76), or memory (all P > .48) processes."
 
 ### **sgacc → mpfc** (connection) — Mixed evidence
 

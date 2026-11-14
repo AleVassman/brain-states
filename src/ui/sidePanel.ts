@@ -1,6 +1,6 @@
-import type { Citation, Confidence, RegionInfo, Score, VariantName } from '../score/types';
+import type { Citation, Confidence, ConnectionTrack, RegionInfo, Score, VariantName } from '../score/types';
 import { el } from './dom';
-import { regionPanelContent } from './panelContent';
+import { connectionsTouching, regionLabel, regionPanelContent } from './panelContent';
 
 export const CONFIDENCE_LABEL: Record<Confidence, string> = {
   established: 'Well established',
@@ -17,8 +17,8 @@ const KIND_LABEL: Record<Citation['kind'], string> = {
 export type PanelView =
   | { kind: 'empty' }
   | { kind: 'errors'; title: string; errors: string[] }
-  | { kind: 'state'; score: Score }
-  | { kind: 'region'; region: RegionInfo; score: Score | null; variant: VariantName };
+  | { kind: 'state'; score: Score; variant: VariantName; regions: RegionInfo[] }
+  | { kind: 'region'; region: RegionInfo; score: Score | null; variant: VariantName; regions: RegionInfo[] };
 
 export function citationNode(c: Citation): HTMLElement {
   return el('li', { class: 'citation' }, [
@@ -32,9 +32,44 @@ export function citationNode(c: Citation): HTMLElement {
   ]);
 }
 
+const confidenceBadge = (confidence: Confidence) =>
+  el('span', { class: `badge confidence ${confidence}`, text: CONFIDENCE_LABEL[confidence] });
+
+const sources = (citations: Citation[]) => el('ul', { class: 'citations' }, citations.map(citationNode));
+
+/** One connection line: what it joins, how sure the claim is, what it means, and its sources. */
+function connectionNode(track: ConnectionTrack, regions: RegionInfo[]): HTMLElement {
+  return el('div', { class: 'connection' }, [
+    el('div', { class: 'connection-title', text: `${regionLabel(track.from, regions)} → ${regionLabel(track.to, regions)}` }),
+    confidenceBadge(track.confidence),
+    el('p', { text: track.explanation }),
+    sources(track.citations),
+  ]);
+}
+
+/** How each step of the episode is known: timed by a study, or reconstructed with a stated reason. */
+function orderNodes(score: Score): HTMLElement[] {
+  return score.phases.slice(1).map((phase) => {
+    const order = phase.order;
+    if (order?.kind === 'timed') {
+      return el('div', { class: 'connection' }, [
+        el('div', { class: 'connection-title', text: phase.name }),
+        el('span', { class: 'badge', text: 'Order timed by a study' }),
+        sources(order.citations),
+      ]);
+    }
+    return el('div', { class: 'connection' }, [
+      el('div', { class: 'connection-title', text: phase.name }),
+      el('span', { class: 'badge', text: 'Order reconstructed' }),
+      el('p', { text: order?.kind === 'reconstructed' ? order.rationale : '' }),
+    ]);
+  });
+}
+
 /** Replaces the side panel's contents with one of its four views. */
 export function renderSidePanel(root: HTMLElement, view: PanelView): void {
   root.replaceChildren();
+  root.scrollTop = 0;
   if (view.kind === 'empty') {
     root.append(
       el('h2', { text: 'Pick a state' }),
@@ -51,6 +86,7 @@ export function renderSidePanel(root: HTMLElement, view: PanelView): void {
     return;
   }
   if (view.kind === 'state') {
+    const variant = view.variant === 'typical' ? view.score.typical : view.score.condition;
     root.append(
       el('h2', { text: view.score.title }),
       el('p', { text: view.score.description }),
@@ -58,19 +94,31 @@ export function renderSidePanel(root: HTMLElement, view: PanelView): void {
       el('p', { class: 'caveat', text: view.score.caveat }),
       el('p', { class: 'hint', text: 'Click a glowing region to see what it is doing and the studies behind it.' }),
     );
+    if (variant && variant.connections.length > 0) {
+      root.append(
+        el('h3', { text: 'The lines between regions' }),
+        ...variant.connections.map((track) => connectionNode(track, view.regions)),
+      );
+    }
+    root.append(el('h3', { text: 'How the order of events is known' }), ...orderNodes(view.score));
     return;
   }
+
   const content = regionPanelContent(view.region, view.score, view.variant);
-  root.append(
-    el('h2', { text: content.title }),
-    content.approximate ? el('span', { class: 'badge', text: 'Approximate location' }) : '',
-    content.confidence
-      ? el('span', { class: `badge confidence ${content.confidence}`, text: CONFIDENCE_LABEL[content.confidence] })
-      : '',
-    el('p', { text: content.body }),
-  );
-  if (content.citations.length > 0) {
-    root.append(el('h3', { text: 'Sources' }), el('ul', { class: 'citations' }, content.citations.map(citationNode)));
+  root.append(el('h2', { text: content.title }));
+  if (content.approximate) root.append(el('span', { class: 'badge', text: 'Approximate location' }));
+  if (content.extentNote) root.append(el('span', { class: 'badge', text: 'Approximate extent' }));
+  if (content.confidence) root.append(confidenceBadge(content.confidence));
+  root.append(el('p', { text: content.body }));
+  if (content.citations.length > 0) root.append(el('h3', { text: 'Sources' }), sources(content.citations));
+
+  const touching = connectionsTouching(view.region, view.score, view.variant);
+  if (touching.length > 0) {
+    root.append(
+      el('h3', { text: 'Lines that end here' }),
+      ...touching.map((track) => connectionNode(track, view.regions)),
+    );
   }
+  if (content.extentNote) root.append(el('p', { class: 'hint', text: content.extentNote }));
   root.append(el('p', { class: 'hint', text: `Shape from: ${content.source}.` }));
 }

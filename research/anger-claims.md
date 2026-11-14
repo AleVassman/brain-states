@@ -49,9 +49,9 @@ On screen: peaks above baseline (0.55), ends above baseline (0.15).
 - Blair RJR (2012). Considering anger from a cognitive neuroscience perspective. doi:10.1002/wcs.154 — review, full-text
   > "This neural system, amygdala-hypothalamus-periaqueductal gray is thought to mediate reactive aggression in humans also"
 
-### **insula** — Well established
+### **insula** — Mixed evidence
 
-Claim: Active on both sides when people feel angry: the main finding of a pooled analysis of studies of the experience of anger. The insula tracks the internal state of the body. Its activity after a provocation also predicted how much people went on to dwell on it.
+Claim: Active on both sides when people feel angry: the main finding of a pooled analysis of studies of the experience of anger, read as an abstract only. The insula tracks the internal state of the body. In one study, its activity after a provocation also predicted how much people went on to dwell on it. Marked mixed because it rests on one pooled analysis in a field its authors describe as still debated.
 
 On screen: peaks above baseline (0.85), ends above baseline (0.5).
 
