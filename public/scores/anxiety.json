@@ -1,0 +1,684 @@
+{
+ "id": "anxiety",
+ "title": "Anxiety: responding to a possible threat",
+ "description": "Something that might be a threat appears, and it stays uncertain for a while. The episode follows the response in a brain with an anxiety disorder; the typical response shows the same moment in a brain without one. The same regions take part in both. What differs is how strongly they respond, how long they stay engaged, and how much the control regions step in.",
+ "caveat": "The findings come from different kinds of study that were never run as one experiment: group comparisons of people with social anxiety, phobia, PTSD and other anxiety disorders; studies of healthy volunteers waiting for an unpredictable shock; recordings from electrodes in the amygdala; and studies where people were asked to rethink an upsetting image. Joining them into one continuous episode is a reconstruction. \"Anxiety disorder\" here is an average over several different diagnoses, which differ from one another. The hypothalamus and the body's stress hormones are left out because none of the sources read for this episode measured them in people.",
+ "durationSeconds": 36,
+ "phases": [
+  {
+   "id": "trigger",
+   "name": "A possible threat",
+   "timescale": "a fraction of a second",
+   "start": 0,
+   "end": 0.14,
+   "caption": "Something that might be a threat appears. The amygdala reacts within a fraction of a second, before there has been time to think it over.",
+   "typicalCaption": "Something that might be a threat appears. The amygdala reacts quickly here too: this first response is ordinary and useful."
+  },
+  {
+   "id": "alarm",
+   "name": "Alarm",
+   "timescale": "seconds",
+   "start": 0.14,
+   "end": 0.42,
+   "caption": "The alarm spreads. The insula, which tracks the state of the body, and the cingulate and medial frontal cortex respond strongly, and the amygdala responds more than it would in a typical brain.",
+   "typicalCaption": "The insula and the cingulate and medial frontal cortex join in. The pattern is the same as in an anxiety disorder, only smaller.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "Electrode recordings put the first amygdala response under a tenth of a second, while the wider response is measured with brain scans that cannot resolve events faster than seconds. That the amygdala leads is an inference; the order among the insula and cingulate is unknown."
+   }
+  },
+  {
+   "id": "apprehension",
+   "name": "Waiting, not knowing",
+   "timescale": "seconds to minutes",
+   "start": 0.42,
+   "end": 0.72,
+   "caption": "The threat stays uncertain. A small structure next to the amygdala, the bed nucleus of the stria terminalis, holds a sustained response, and the alarm regions stay engaged rather than settling.",
+   "typicalCaption": "While things stay uncertain the bed nucleus of the stria terminalis holds a sustained response, as the amygdala's own response fades.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Shackman AJ, Fox AS",
+      "year": 2016,
+      "title": "Contributions of the Central Extended Amygdala to Fear and Anxiety.",
+      "doi": "10.1523/jneurosci.0982-16.2016",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "the BST shows a persistent hemodynamic response during the uncertain anticipation of noxious reinforcers, such as shock or aversive images, whereas the dorsal amygdala shows more transient responses"
+     }
+    ]
+   }
+  },
+  {
+   "id": "regulation",
+   "name": "Regulation",
+   "timescale": "minutes",
+   "start": 0.72,
+   "end": 1,
+   "caption": "The frontal control regions that help rethink a situation are recruited less than in a typical brain, the insula stays active, and the alarm is slow to come down.",
+   "typicalCaption": "Frontal control regions engage as the situation is reappraised, and the amygdala quietens. The episode settles.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "Deliberate rethinking takes seconds and, in the studies that measure it, people are asked to do it after the upsetting image has appeared. Placing it last follows that design; in life, regulation can begin earlier and overlap with the alarm."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "amygdala",
+    "explanation": "Responds to the possible threat and, on average, more strongly than in people without an anxiety disorder. How fast it responds, and by what route, is disputed: electrode recordings found responses to fearful faces within about 74 milliseconds, but other researchers argue the cortex does more of this early work than the fast-route account allows. Whole-brain analyses also often fail to detect the amygdala, so its size here is uncertain.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Etkin A, Wager TD",
+      "year": 2007,
+      "title": "Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia.",
+      "doi": "10.1176/appi.ajp.2007.07030504",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Patients with any of the three disorders consistently showed greater activity than matched comparison subjects in the amygdala and insula"
+     },
+     {
+      "authors": "Méndez-Bértolo C, Moratti S, Toledano R, Lopez-Sosa F, Martínez-Alvarez R, Mah YH, Vuilleumier P, Gil-Nagel A, Strange BA",
+      "year": 2016,
+      "title": "A fast pathway for fear in human amygdala.",
+      "doi": "10.1038/nn.4324",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "fast amygdala responses, beginning 74-ms post-stimulus onset, to fearful, but not neutral or happy, facial expressions"
+     },
+     {
+      "authors": "Pessoa L, Adolphs R",
+      "year": 2010,
+      "title": "Emotion processing and the amygdala: from a 'low road' to 'many roads' of evaluating biological significance.",
+      "doi": "10.1038/nrn2920",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "we propose an alternative view that assigns a larger role to cortical processing of affective visual information"
+     },
+     {
+      "authors": "Chavanne AV, Robinson OJ",
+      "year": 2021,
+      "title": "The Overlapping Neurobiology of Induced and Pathological Anxiety: A Meta-Analysis of Functional Neural Activation.",
+      "doi": "10.1176/appi.ajp.2020.19111153",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "our results for the most part did not reflect amygdala activation or deactivation, which are often reported in region-of-interest analyses only"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.05,
+      "v": 0.25
+     },
+     {
+      "t": 0.2,
+      "v": 0.9
+     },
+     {
+      "t": 0.42,
+      "v": 0.85
+     },
+     {
+      "t": 0.72,
+      "v": 0.75
+     },
+     {
+      "t": 1,
+      "v": 0.6
+     }
+    ]
+   },
+   {
+    "region": "insula",
+    "explanation": "More active than in people without an anxiety disorder. The insula tracks the internal state of the body, and it is the most consistent finding across both diagnosed anxiety and anxiety induced in healthy volunteers. It also stays more active when people with anxiety or mood disorders try to rethink something upsetting.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "Etkin A, Wager TD",
+      "year": 2007,
+      "title": "Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia.",
+      "doi": "10.1176/appi.ajp.2007.07030504",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Patients with any of the three disorders consistently showed greater activity than matched comparison subjects in the amygdala and insula"
+     },
+     {
+      "authors": "Chavanne AV, Robinson OJ",
+      "year": 2021,
+      "title": "The Overlapping Neurobiology of Induced and Pathological Anxiety: A Meta-Analysis of Functional Neural Activation.",
+      "doi": "10.1176/appi.ajp.2020.19111153",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "both showed increased activation in the bilateral insula (xyz=44,14,-14 and xyz=-38,20,-8;k=2102 and k=1305 respectively) and cingulate cortex/medial prefrontal cortex"
+     },
+     {
+      "authors": "Picó-Pérez M, Radua J, Steward T, Menchón JM, Soriano-Mas C",
+      "year": 2017,
+      "title": "Emotion regulation in mood and anxiety disorders: A meta-analysis of fMRI cognitive reappraisal studies.",
+      "doi": "10.1016/j.pnpbp.2017.06.001",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "they presented increased activation in regions that may be associated with the emotional experience (i.e., insula, cerebellum, precentral and inferior occipital gyri)"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.14,
+      "v": 0.15
+     },
+     {
+      "t": 0.36,
+      "v": 0.9
+     },
+     {
+      "t": 0.72,
+      "v": 0.8
+     },
+     {
+      "t": 1,
+      "v": 0.7
+     }
+    ]
+   },
+   {
+    "region": "dacc",
+    "explanation": "A cluster spanning the cingulate and medial frontal cortex is more active in both diagnosed and induced anxiety. The analysis does not pin the location down to this exact structure; it is drawn on the dorsal anterior cingulate as the nearest named region.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Chavanne AV, Robinson OJ",
+      "year": 2021,
+      "title": "The Overlapping Neurobiology of Induced and Pathological Anxiety: A Meta-Analysis of Functional Neural Activation.",
+      "doi": "10.1176/appi.ajp.2020.19111153",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "both showed increased activation in the bilateral insula (xyz=44,14,-14 and xyz=-38,20,-8;k=2102 and k=1305 respectively) and cingulate cortex/medial prefrontal cortex"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.14,
+      "v": 0.1
+     },
+     {
+      "t": 0.38,
+      "v": 0.7
+     },
+     {
+      "t": 0.72,
+      "v": 0.6
+     },
+     {
+      "t": 1,
+      "v": 0.5
+     }
+    ]
+   },
+   {
+    "region": "bnst",
+    "explanation": "Holds a sustained response while a threat stays uncertain. The clearest evidence is from rodents, and little is known about it in people. Brain-scan studies in people do show a persistent response here during uncertain waiting, but the tidy split between a fast amygdala and a slow bed nucleus is contested: in monkeys, both are tied to sustained anxiety.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Shackman AJ, Fox AS",
+      "year": 2016,
+      "title": "Contributions of the Central Extended Amygdala to Fear and Anxiety.",
+      "doi": "10.1523/jneurosci.0982-16.2016",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "the BST shows a persistent hemodynamic response during the uncertain anticipation of noxious reinforcers, such as shock or aversive images, whereas the dorsal amygdala shows more transient responses"
+     },
+     {
+      "authors": "Shackman AJ, Fox AS",
+      "year": 2016,
+      "title": "Contributions of the Central Extended Amygdala to Fear and Anxiety.",
+      "doi": "10.1523/jneurosci.0982-16.2016",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "metabolic activity in both the amygdala and the BST is associated with heightened signs of fear and anxiety"
+     },
+     {
+      "authors": "Avery SN, Clauss JA, Blackford JU",
+      "year": 2016,
+      "title": "The Human BNST: Functional Role in Anxiety and Addiction.",
+      "doi": "10.1038/npp.2015.185",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "Rodent studies provide compelling evidence that the BNST plays a central role in sustained threat monitoring, a form of adaptive anxiety, and in the withdrawal and relapse stages of addiction; however, little is known about the role of BNST in humans."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.3,
+      "v": 0.05
+     },
+     {
+      "t": 0.55,
+      "v": 0.75
+     },
+     {
+      "t": 1,
+      "v": 0.65
+     }
+    ]
+   },
+   {
+    "region": "dlpfc",
+    "explanation": "Part of the frontal and parietal network that people use to rethink an upsetting situation. In people with anxiety or mood disorders this network is recruited less than in healthy volunteers. This finding pools anxiety with mood disorders and comes from a paper whose full text was not available.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Picó-Pérez M, Radua J, Steward T, Menchón JM, Soriano-Mas C",
+      "year": 2017,
+      "title": "Emotion regulation in mood and anxiety disorders: A meta-analysis of fMRI cognitive reappraisal studies.",
+      "doi": "10.1016/j.pnpbp.2017.06.001",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "patients with mood and anxiety disorders recruited the regulatory fronto-parietal network involved in cognitive reappraisal to a lesser extent in comparison to healthy controls"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.72,
+      "v": 0
+     },
+     {
+      "t": 0.86,
+      "v": 0.2
+     },
+     {
+      "t": 1,
+      "v": 0.15
+     }
+    ]
+   },
+   {
+    "region": "vlpfc",
+    "explanation": "Part of the same control network as the dorsolateral prefrontal cortex, and likewise recruited less during rethinking in people with anxiety or mood disorders.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Picó-Pérez M, Radua J, Steward T, Menchón JM, Soriano-Mas C",
+      "year": 2017,
+      "title": "Emotion regulation in mood and anxiety disorders: A meta-analysis of fMRI cognitive reappraisal studies.",
+      "doi": "10.1016/j.pnpbp.2017.06.001",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "patients with mood and anxiety disorders recruited the regulatory fronto-parietal network involved in cognitive reappraisal to a lesser extent in comparison to healthy controls"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.72,
+      "v": 0
+     },
+     {
+      "t": 0.86,
+      "v": 0.2
+     },
+     {
+      "t": 1,
+      "v": 0.15
+     }
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "from": "amygdala",
+    "to": "vmpfc",
+    "explanation": "Communication between the amygdala and the ventromedial prefrontal cortex tends to be weaker in more anxious people. The evidence is from brains at rest, not during an episode, and the clearest patient finding is in social anxiety with the neighbouring orbitofrontal cortex.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Kim MJ, Loucks RA, Palmer AL, Brown AC, Solomon KM, Marchante AN, Whalen PJ",
+      "year": 2011,
+      "title": "The structural and functional connectivity of the amygdala: from normal emotion to pathological anxiety.",
+      "doi": "10.1016/j.bbr.2011.04.025",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "functional coupling of the amygdala and vmPFC at rest, predicts beneficial outcomes in terms of reported anxiety"
+     },
+     {
+      "authors": "Kim MJ, Loucks RA, Palmer AL, Brown AC, Solomon KM, Marchante AN, Whalen PJ",
+      "year": 2011,
+      "title": "The structural and functional connectivity of the amygdala: from normal emotion to pathological anxiety.",
+      "doi": "10.1016/j.bbr.2011.04.025",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "SAD patients had markedly reduced functional connectivity between the left amygdala and the medial orbitofrontal cortex"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": -0.3
+     },
+     {
+      "t": 0.42,
+      "v": -0.4
+     },
+     {
+      "t": 0.8,
+      "v": -0.6
+     },
+     {
+      "t": 1,
+      "v": -0.5
+     }
+    ]
+   }
+  ]
+ },
+ "typical": {
+  "regions": [
+   {
+    "region": "amygdala",
+    "explanation": "Responds to the possible threat in healthy volunteers too, then fades: during uncertain waiting its response is transient. It quietens further when the situation is rethought.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "Etkin A, Wager TD",
+      "year": 2007,
+      "title": "Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia.",
+      "doi": "10.1176/appi.ajp.2007.07030504",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "we also observed consistent amygdala activation during fear conditioning in healthy subjects"
+     },
+     {
+      "authors": "Shackman AJ, Fox AS",
+      "year": 2016,
+      "title": "Contributions of the Central Extended Amygdala to Fear and Anxiety.",
+      "doi": "10.1523/jneurosci.0982-16.2016",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "the BST shows a persistent hemodynamic response during the uncertain anticipation of noxious reinforcers, such as shock or aversive images, whereas the dorsal amygdala shows more transient responses"
+     },
+     {
+      "authors": "Buhle JT, Silvers JA, Wager TD, Lopez R, Onyemekwu C, Kober H, Weber J, Ochsner KN",
+      "year": 2014,
+      "title": "Cognitive reappraisal of emotion: a meta-analysis of human neuroimaging studies.",
+      "doi": "10.1093/cercor/bht154",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "reappraisal was consistently associated with bilateral amygdala modulation, but no change was observed in other regions related to emotional responding"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.05,
+      "v": 0.2
+     },
+     {
+      "t": 0.2,
+      "v": 0.6
+     },
+     {
+      "t": 0.5,
+      "v": 0.3
+     },
+     {
+      "t": 0.8,
+      "v": 0.15
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "insula",
+    "explanation": "More active while healthy volunteers wait for an unpredictable threat, then settles as the threat passes.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "Chavanne AV, Robinson OJ",
+      "year": 2021,
+      "title": "The Overlapping Neurobiology of Induced and Pathological Anxiety: A Meta-Analysis of Functional Neural Activation.",
+      "doi": "10.1176/appi.ajp.2020.19111153",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "both showed increased activation in the bilateral insula (xyz=44,14,-14 and xyz=-38,20,-8;k=2102 and k=1305 respectively) and cingulate cortex/medial prefrontal cortex"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.14,
+      "v": 0.1
+     },
+     {
+      "t": 0.36,
+      "v": 0.5
+     },
+     {
+      "t": 0.72,
+      "v": 0.35
+     },
+     {
+      "t": 1,
+      "v": 0.05
+     }
+    ]
+   },
+   {
+    "region": "dacc",
+    "explanation": "A cluster spanning the cingulate and medial frontal cortex is more active while healthy volunteers wait for an unpredictable threat. Drawn on the dorsal anterior cingulate as the nearest named region.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Chavanne AV, Robinson OJ",
+      "year": 2021,
+      "title": "The Overlapping Neurobiology of Induced and Pathological Anxiety: A Meta-Analysis of Functional Neural Activation.",
+      "doi": "10.1176/appi.ajp.2020.19111153",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "both showed increased activation in the bilateral insula (xyz=44,14,-14 and xyz=-38,20,-8;k=2102 and k=1305 respectively) and cingulate cortex/medial prefrontal cortex"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.14,
+      "v": 0.05
+     },
+     {
+      "t": 0.38,
+      "v": 0.4
+     },
+     {
+      "t": 0.72,
+      "v": 0.3
+     },
+     {
+      "t": 1,
+      "v": 0.05
+     }
+    ]
+   },
+   {
+    "region": "bnst",
+    "explanation": "Holds a sustained response while healthy volunteers wait in uncertainty, as the amygdala's response fades. Much of what is known comes from rodents.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Shackman AJ, Fox AS",
+      "year": 2016,
+      "title": "Contributions of the Central Extended Amygdala to Fear and Anxiety.",
+      "doi": "10.1523/jneurosci.0982-16.2016",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "the BST shows a persistent hemodynamic response during the uncertain anticipation of noxious reinforcers, such as shock or aversive images, whereas the dorsal amygdala shows more transient responses"
+     },
+     {
+      "authors": "Avery SN, Clauss JA, Blackford JU",
+      "year": 2016,
+      "title": "The Human BNST: Functional Role in Anxiety and Addiction.",
+      "doi": "10.1038/npp.2015.185",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "Rodent studies provide compelling evidence that the BNST plays a central role in sustained threat monitoring, a form of adaptive anxiety, and in the withdrawal and relapse stages of addiction; however, little is known about the role of BNST in humans."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.3,
+      "v": 0.05
+     },
+     {
+      "t": 0.55,
+      "v": 0.5
+     },
+     {
+      "t": 0.8,
+      "v": 0.3
+     },
+     {
+      "t": 1,
+      "v": 0.05
+     }
+    ]
+   },
+   {
+    "region": "dlpfc",
+    "explanation": "One of the control regions that reliably become active when healthy volunteers rethink an upsetting situation.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "Buhle JT, Silvers JA, Wager TD, Lopez R, Onyemekwu C, Kober H, Weber J, Ochsner KN",
+      "year": 2014,
+      "title": "Cognitive reappraisal of emotion: a meta-analysis of human neuroimaging studies.",
+      "doi": "10.1093/cercor/bht154",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "the implementation of reappraisal consistently activated cognitive control regions, including dmPFC, dlPFC, vlPFC, and posterior parietal lobe"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.72,
+      "v": 0.05
+     },
+     {
+      "t": 0.86,
+      "v": 0.65
+     },
+     {
+      "t": 1,
+      "v": 0.2
+     }
+    ]
+   },
+   {
+    "region": "vlpfc",
+    "explanation": "One of the control regions that reliably become active when healthy volunteers rethink an upsetting situation.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "Buhle JT, Silvers JA, Wager TD, Lopez R, Onyemekwu C, Kober H, Weber J, Ochsner KN",
+      "year": 2014,
+      "title": "Cognitive reappraisal of emotion: a meta-analysis of human neuroimaging studies.",
+      "doi": "10.1093/cercor/bht154",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "the implementation of reappraisal consistently activated cognitive control regions, including dmPFC, dlPFC, vlPFC, and posterior parietal lobe"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.72,
+      "v": 0.05
+     },
+     {
+      "t": 0.86,
+      "v": 0.65
+     },
+     {
+      "t": 1,
+      "v": 0.2
+     }
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "from": "amygdala",
+    "to": "vmpfc",
+    "explanation": "Stronger communication between the amygdala and the ventromedial prefrontal cortex at rest goes with lower reported anxiety. Shown here at its ordinary level.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Kim MJ, Loucks RA, Palmer AL, Brown AC, Solomon KM, Marchante AN, Whalen PJ",
+      "year": 2011,
+      "title": "The structural and functional connectivity of the amygdala: from normal emotion to pathological anxiety.",
+      "doi": "10.1016/j.bbr.2011.04.025",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "functional coupling of the amygdala and vmPFC at rest, predicts beneficial outcomes in terms of reported anxiety"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0.2
+     },
+     {
+      "t": 1,
+      "v": 0.2
+     }
+    ]
+   }
+  ]
+ }
+}
