@@ -9,6 +9,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { readNifti, voxelToMm } from './lib/nifti.mjs';
 import { blur, simplify, surfaceNets, toGlb } from './lib/mesh.mjs';
+import { fullHead, FULL_HEAD_PATH } from './lib/head.mjs';
 
 const CACHE = 'tools/cache';
 const OUT = 'public/atlas';
@@ -206,11 +207,22 @@ for (const [side, shift] of [['l', 0], ['r', 1]]) {
 // ---- Head (decoration) ---------------------------------------------------------------------------
 const headMask = readNifti(`${CACHE}/colin27/colin27_t1_tal_lin_headmask.nii`);
 const head = await meshFrom(headMask, (v) => v > 0.5, 6000);
-console.log(`head ${head.indices.length / 3} triangles`);
+// Colin27 stops at the upper lip. Where the full head scan has been downloaded, use it instead,
+// fitted to the Colin27 skull, so the face, chin and neck are there.
+const full = await fullHead(head.positions);
+const headMesh = full ?? head;
+if (full) {
+  console.log(
+    `head: full head scan, fitted to the Colin27 skull (scale ${full.fit.s.toFixed(3)}, up ${full.fit.ty.toFixed(3)}, ` +
+      `forward ${full.fit.tz.toFixed(3)}, mean gap ${(full.fit.cost * 100).toFixed(1)} mm), ${full.indices.length / 3} triangles`,
+  );
+} else {
+  console.log(`head: Colin27 outline only (${FULL_HEAD_PATH} not found), ${head.indices.length / 3} triangles`);
+}
 
 mkdirSync(OUT, { recursive: true });
 writeFileSync(`${OUT}/brain.glb`, toGlb(meshes));
-writeFileSync(`${OUT}/head.glb`, toGlb([{ name: 'head', positions: head.positions, indices: head.indices }]));
+writeFileSync(`${OUT}/head.glb`, toGlb([{ name: 'head', positions: headMesh.positions, indices: headMesh.indices }]));
 writeFileSync(`${OUT}/regions.json`, JSON.stringify(regions.map((r) => ({ ...r, name: cap(r.name) })), null, 1) + '\n');
 writeFileSync('tools/atlas-coverage.json', JSON.stringify({ unavailable }, null, 2) + '\n');
 

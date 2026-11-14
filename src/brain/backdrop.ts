@@ -11,7 +11,7 @@ const HEAD_VERTEX = /* glsl */ `
   uniform float uScale;
   varying float vFade;
   void main() {
-    vFade = smoothstep(-0.74, -0.58, position.y);
+    vFade = smoothstep(-1.76, -1.25, position.y);
     vec4 mv = modelViewMatrix * vec4(position, 1.0);
     gl_PointSize = max(1.0, uSize * uScale / -mv.z);
     gl_Position = projectionMatrix * mv;
@@ -55,7 +55,7 @@ export class Backdrop {
       const lines = new THREE.LineSegments(new THREE.WireframeGeometry(atlas.head.geometry), headMaterial(0.07, false));
       lines.renderOrder = 0;
       stage.scene.add(lines);
-      this.headPoints = headMaterial(0.3, true, 0.009);
+      this.headPoints = headMaterial(0.13, true, 0.009);
       const dots = new THREE.Points(atlas.head.geometry, this.headPoints);
       dots.renderOrder = 0;
       stage.scene.add(dots);

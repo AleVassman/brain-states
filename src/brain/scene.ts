@@ -23,7 +23,7 @@ export const WEBGL_MESSAGE = 'This needs WebGL, which your browser or graphics d
 
 const BACKGROUND = 0x05070d;
 /** Roughly the middle of the head, in scene units. */
-const FOCUS = new THREE.Vector3(0, 0.02, -0.12);
+const FOCUS = new THREE.Vector3(0, -0.22, -0.1);
 
 export function createStage(canvas: HTMLCanvasElement): Stage | { error: string } {
   let context: WebGL2RenderingContext | null = null;
@@ -49,7 +49,7 @@ export function createStage(canvas: HTMLCanvasElement): Stage | { error: string 
   scene.background = new THREE.Color(BACKGROUND);
   const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 100);
   // From the brain's left and slightly in front: the face points to screen-left.
-  camera.position.set(5.6, 0.6, 1.9);
+  camera.position.set(6.7, 0.35, 2.3);
 
   const controls = new OrbitControls(camera, canvas);
   controls.target.copy(FOCUS);
@@ -57,7 +57,7 @@ export function createStage(canvas: HTMLCanvasElement): Stage | { error: string 
   controls.dampingFactor = 0.08;
   controls.enablePan = false;
   controls.minDistance = 1.6;
-  controls.maxDistance = 9;
+  controls.maxDistance = 11;
   controls.rotateSpeed = 0.7;
   controls.update();
 

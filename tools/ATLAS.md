@@ -28,7 +28,15 @@ the episodes need is built. Checked on 2026-11-14.
 - **Cite:** Edlow B, Kinney H (2023). Harvard Ascending Arousal Network Atlas – Version 2.0 [Dataset]. Dryad. doi:10.5061/dryad.zw3r228d2
 - **Status: NOT YET BUILT.** Dryad blocks automated downloads. Download the file by hand in a browser, save it to `tools/cache/aan/`, and re-run the build. Until then the periaqueductal grey is absent and no score may refer to it.
 
-### Colin27 — head outline and brainstem outline (context only)
+### Lee Perry-Smith head scan — the head (decoration only)
+
+- **What:** `LeePerrySmith.glb`, "Infinite, 3D Head Scan" by Lee Perry-Smith.
+- **Download:** https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/models/gltf/LeePerrySmith/LeePerrySmith.glb into `tools/cache/head/`
+- **Licence:** Creative Commons Attribution 3.0 Unported (the `LeePerrySmith_License.txt` beside it; credits www.triplegangers.com and http://www.ir-ltd.net/).
+- **Why:** the Colin27 scan stops at the upper lip, so a head made from it has no chin or neck.
+- **How it is placed:** one uniform scale and a shift up/down and front/back, chosen by the build so that the model's skull lies as close as possible to the Colin27 skull (mean gap about 6 mm at the last build). It is a different person's head, so the fit is approximate; the design exempts the head from the accuracy rules. If the file is missing, the build falls back to the Colin27 outline.
+
+### Colin27 — brainstem outline, and the reference the head is fitted to
 
 - **What:** Colin27 1998 average, files `colin27_t1_tal_lin_headmask.nii` and `colin27_t1_tal_lin_mask.nii` (1 mm, same grid as AAL3).
 - **Download:** http://packages.bic.mni.mcgill.ca/mni-models/colin27/mni_colin27_1998_nifti.zip (from https://www.bic.mni.mcgill.ca/ServicesAtlases/Colin27)
@@ -70,7 +78,7 @@ Context only (drawn faintly, never the target of a score):
 | `cortex-l`, `cortex-r` | Union of every AAL3 cerebral cortex label, per hemisphere |
 | `cerebellum` | AAL3 labels 95–120 |
 | `brainstem` | Colin27 brain mask inside the box x ±14, y −50…−10, z −62…−8 mm, where AAL3 has no cortical or subcortical label. A rough outline for orientation, not an anatomical segmentation. |
-| `head` (in `head.glb`) | Colin27 head mask |
+| `head` (in `head.glb`) | Lee Perry-Smith head scan fitted to the Colin27 head mask (or the Colin27 mask itself if the scan is absent) |
 
 Considered and not used: AAL3's locus coeruleus (too few voxels to mesh), the Brainnetome atlas (non-commercial terms could not be read on its own site), Harvard-Oxford (licence tied to FSL's).
 
