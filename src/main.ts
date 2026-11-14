@@ -1,6 +1,7 @@
 import './style.css';
 import { loadAtlas } from './brain/atlas';
 import { Backdrop } from './brain/backdrop';
+import { ConnectionLayer } from './brain/connections';
 import { RegionLayer } from './brain/regions';
 import { createStage } from './brain/scene';
 
@@ -25,10 +26,11 @@ async function start() {
   const atlas = await loadAtlas();
   const backdrop = new Backdrop(stage, atlas);
   const regions = new RegionLayer(stage, atlas);
+  const connections = new ConnectionLayer(stage, atlas.regions);
 
   if (import.meta.env.DEV) {
     // For poking at the scene from the browser console while developing.
-    (window as unknown as { __brain: unknown }).__brain = { stage, regions, atlas };
+    (window as unknown as { __brain: unknown }).__brain = { stage, regions, connections, atlas };
   }
 
   window.addEventListener('resize', () => stage.resize());
@@ -51,6 +53,7 @@ async function start() {
       stage.setQuality(qualitySteps[quality]);
     }
     regions.update(dt);
+    connections.update(dt);
     backdrop.update(dt);
     stage.render(dt);
     requestAnimationFrame(loop);
