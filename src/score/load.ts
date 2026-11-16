@@ -1,9 +1,14 @@
 import { validateScore, type ValidationResult } from './validate';
 
+/** Which group a state is listed under. */
+export type ScoreCategory = 'psychological' | 'physical';
+
 export interface ScoreIndexEntry {
   id: string;
   title: string;
   file: string;
+  /** Missing on older lists; treated as psychological. */
+  category?: ScoreCategory;
   /** False until the owner has read this state's claims and sources. */
   reviewed: boolean;
 }

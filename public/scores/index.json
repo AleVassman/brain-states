@@ -3,48 +3,84 @@
   "id": "depression",
   "title": "Depression",
   "file": "depression.json",
-  "reviewed": false
+  "reviewed": false,
+  "category": "psychological"
  },
  {
   "id": "anxiety",
   "title": "Anxiety",
   "file": "anxiety.json",
-  "reviewed": false
+  "reviewed": false,
+  "category": "psychological"
  },
  {
   "id": "panic",
   "title": "Panic attack",
   "file": "panic.json",
-  "reviewed": false
+  "reviewed": false,
+  "category": "psychological"
  },
  {
   "id": "stress",
   "title": "Acute stress",
   "file": "stress.json",
-  "reviewed": false
+  "reviewed": false,
+  "category": "psychological"
  },
  {
   "id": "anger",
   "title": "Anger",
   "file": "anger.json",
-  "reviewed": false
+  "reviewed": false,
+  "category": "psychological"
  },
  {
   "id": "borderline",
   "title": "Borderline",
   "file": "borderline.json",
-  "reviewed": false
+  "reviewed": false,
+  "category": "psychological"
  },
  {
   "id": "dissociation",
   "title": "Dissociation",
   "file": "dissociation.json",
-  "reviewed": false
+  "reviewed": false,
+  "category": "psychological"
  },
  {
   "id": "reward",
   "title": "Joy and reward",
   "file": "reward.json",
+  "reviewed": false,
+  "category": "psychological"
+ },
+ {
+  "id": "migraine",
+  "title": "Migraine attack",
+  "file": "migraine.json",
+  "category": "physical",
+  "reviewed": false
+ },
+ {
+  "id": "seizure",
+  "title": "Epileptic seizure",
+  "file": "seizure.json",
+  "category": "physical",
+  "reviewed": false
+ },
+ {
+  "id": "infection",
+  "title": "Infection and fever",
+  "file": "infection.json",
+  "category": "physical",
+  "reviewed": false
+ },
+ {
+  "id": "alzheimers",
+  "title": "Alzheimer's disease",
+  "file": "alzheimers.json",
+  "category": "physical",
   "reviewed": false
  }
 ]

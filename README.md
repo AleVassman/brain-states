@@ -1,8 +1,10 @@
 # Brain States
 
-An interactive 3D brain that plays researched "episodes" of eight states —
-depression, anxiety, panic, acute stress, anger, borderline personality
-disorder, dissociation, and joy and reward — and shows
+An interactive 3D brain that plays researched "episodes" of twelve states in
+two groups — psychological states (depression, anxiety, panic, acute stress,
+anger, borderline personality disorder, dissociation, joy and reward) and
+physical illnesses (migraine, epileptic seizure, infection, Alzheimer's
+disease) — and shows
 which regions and connections change, with the studies behind every claim.
 
 It is a personal hobby project. It is a reconstruction from published
@@ -72,6 +74,9 @@ npm run verify:quotes
 ```bash
 npm test
 ```
+
+To list a state under "Physical illnesses", pass `category: 'physical'` to
+`writeScore`; the default is the psychological group.
 
 A state shows "awaiting review" in the app until its entry in
 `public/scores/index.json` has `"reviewed": true`. Set that only after reading

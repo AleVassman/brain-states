@@ -69,6 +69,11 @@ Added beyond the design's list, because the research pass is likely to want them
 | `pgacc` | AAL3 ACC_pre (153/154), pregenual anterior cingulate |
 | `vmpfc` | AAL3 Frontal_Med_Orb (21/22) + Rectus (23/24) |
 | `vta` | AAL3 VTA (159/160) |
+| `visual-cortex` | AAL3 Calcarine (47/48) + Cuneus (49/50) + Lingual (51/52) |
+| `parahippocampal` | AAL3 ParaHippocampal (43/44) |
+| `lateral-temporal` | AAL3 Temporal_Sup (85/86) + Temporal_Mid (89/90) + Temporal_Inf (93/94) |
+| `inferior-parietal` | AAL3 Parietal_Inf (65/66) + SupraMarginal (67/68) + Angular (69/70) |
+| `substantia-nigra` | AAL3 SN_pc (161/162) + SN_pr (163/164) |
 | `caudate` | AAL3 Caudate (75/76) |
 | `putamen` | AAL3 Putamen (77/78) |
 | `bnst` | Neudorfer labels 33/34 |

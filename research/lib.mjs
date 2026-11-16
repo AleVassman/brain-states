@@ -98,7 +98,8 @@ function claimsSheet(score, notes) {
   return lines.join('\n');
 }
 
-export function writeScore(score, { indexTitle, notes } = {}) {
+/** `category` is the group the state is listed under: 'psychological' (default) or 'physical'. */
+export function writeScore(score, { indexTitle, notes, category = 'psychological' } = {}) {
   writeFileSync(`public/scores/${score.id}.json`, JSON.stringify(score, null, 1) + '\n');
   writeFileSync(`research/${score.id}-claims.md`, claimsSheet(score, notes) + '\n');
 
@@ -107,9 +108,10 @@ export function writeScore(score, { indexTitle, notes } = {}) {
   const existing = index.find((e) => e.id === score.id);
   if (existing) {
     existing.title = indexTitle ?? score.title;
+    existing.category = category;
     existing.file = `${score.id}.json`;
   } else {
-    index.push({ id: score.id, title: indexTitle ?? score.title, file: `${score.id}.json`, reviewed: false });
+    index.push({ id: score.id, title: indexTitle ?? score.title, file: `${score.id}.json`, category, reviewed: false });
   }
   writeFileSync(indexPath, JSON.stringify(index, null, 1) + '\n');
   console.log(`wrote ${score.id}: ${score.condition.regions.length} region tracks, ${score.condition.connections.length} connections`);

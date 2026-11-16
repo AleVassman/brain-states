@@ -438,6 +438,154 @@
   "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
  },
  {
+  "id": "visual-cortex-l",
+  "group": "visual-cortex",
+  "name": "Left visual cortex (calcarine cortex, cuneus and lingual gyrus)",
+  "hemisphere": "l",
+  "centroid": [
+   0.093,
+   0.0603,
+   -0.7681
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Several gyri at the back of the brain are drawn together as the visual cortex. Findings shown on it are often for one visual area within it."
+ },
+ {
+  "id": "visual-cortex-r",
+  "group": "visual-cortex",
+  "name": "Right visual cortex (calcarine cortex, cuneus and lingual gyrus)",
+  "hemisphere": "r",
+  "centroid": [
+   -0.1572,
+   0.0687,
+   -0.7392
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Several gyri at the back of the brain are drawn together as the visual cortex. Findings shown on it are often for one visual area within it."
+ },
+ {
+  "id": "parahippocampal-l",
+  "group": "parahippocampal",
+  "name": "Left parahippocampal gyrus (includes the entorhinal cortex)",
+  "hemisphere": "l",
+  "centroid": [
+   0.2099,
+   -0.2242,
+   -0.1779
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The whole parahippocampal gyrus is drawn. Findings shown on it are often for the entorhinal cortex, which is its front part."
+ },
+ {
+  "id": "parahippocampal-r",
+  "group": "parahippocampal",
+  "name": "Right parahippocampal gyrus (includes the entorhinal cortex)",
+  "hemisphere": "r",
+  "centroid": [
+   -0.2565,
+   -0.2224,
+   -0.168
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The whole parahippocampal gyrus is drawn. Findings shown on it are often for the entorhinal cortex, which is its front part."
+ },
+ {
+  "id": "lateral-temporal-l",
+  "group": "lateral-temporal",
+  "name": "Left lateral temporal cortex (superior, middle and inferior temporal gyri)",
+  "hemisphere": "l",
+  "centroid": [
+   0.5305,
+   -0.0843,
+   -0.3089
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Several neighbouring gyri are drawn together. Findings shown here are for this general area, not for every part of it."
+ },
+ {
+  "id": "lateral-temporal-r",
+  "group": "lateral-temporal",
+  "name": "Right lateral temporal cortex (superior, middle and inferior temporal gyri)",
+  "hemisphere": "r",
+  "centroid": [
+   -0.5664,
+   -0.0767,
+   -0.3261
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Several neighbouring gyri are drawn together. Findings shown here are for this general area, not for every part of it."
+ },
+ {
+  "id": "inferior-parietal-l",
+  "group": "inferior-parietal",
+  "name": "Left inferior parietal cortex (inferior parietal, supramarginal and angular gyri)",
+  "hemisphere": "l",
+  "centroid": [
+   0.4629,
+   0.3804,
+   -0.4803
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Several neighbouring gyri are drawn together. Findings shown here are for this general area, not for every part of it."
+ },
+ {
+  "id": "inferior-parietal-r",
+  "group": "inferior-parietal",
+  "name": "Right inferior parietal cortex (inferior parietal, supramarginal and angular gyri)",
+  "hemisphere": "r",
+  "centroid": [
+   -0.5069,
+   0.3807,
+   -0.4705
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "Several neighbouring gyri are drawn together. Findings shown here are for this general area, not for every part of it."
+ },
+ {
+  "id": "substantia-nigra-l",
+  "group": "substantia-nigra",
+  "name": "Left substantia nigra",
+  "hemisphere": "l",
+  "centroid": [
+   0.091,
+   -0.1407,
+   -0.1649
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "substantia-nigra-r",
+  "group": "substantia-nigra",
+  "name": "Right substantia nigra",
+  "hemisphere": "r",
+  "centroid": [
+   -0.1027,
+   -0.1422,
+   -0.1613
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
   "id": "caudate-l",
   "group": "caudate",
   "name": "Left caudate nucleus (dorsal striatum)",

@@ -159,12 +159,22 @@ a:focus-visible {
   grid-area: right;
 }
 
-#state-list {
+#state-list,
+.state-group {
   list-style: none;
-  margin: 0 0 14px;
+  margin: 0;
   padding: 0;
   display: grid;
   gap: 6px;
+}
+
+#state-list {
+  margin-bottom: 14px;
+  gap: 14px;
+}
+
+.group-heading {
+  margin: 0 0 6px;
 }
 
 .state {

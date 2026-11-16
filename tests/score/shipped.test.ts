@@ -42,6 +42,10 @@ describe('shipped scores', () => {
         expect(result.ok ? [] : result.errors).toEqual([]);
       });
 
+      it('is listed under one of the two groups', () => {
+        expect(['psychological', 'physical']).toContain(entry.category);
+      });
+
       it('has the id its index entry says', () => {
         const score = JSON.parse(readFileSync(path, 'utf8')) as Score;
         expect(score.id).toBe(entry.id);

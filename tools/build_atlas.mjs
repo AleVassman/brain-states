@@ -22,6 +22,12 @@ const GYRUS_NOTE =
   'Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border.';
 const STRIATUM_NOTE =
   'Some findings shown on this region are for the striatum as a whole or its ventral part, of which this is the lower front part.';
+const VISUAL_NOTE =
+  'Several gyri at the back of the brain are drawn together as the visual cortex. Findings shown on it are often for one visual area within it.';
+const PARAHIPPOCAMPAL_NOTE =
+  'The whole parahippocampal gyrus is drawn. Findings shown on it are often for the entorhinal cortex, which is its front part.';
+const BROAD_NOTE =
+  'Several neighbouring gyri are drawn together. Findings shown here are for this general area, not for every part of it.';
 const INSULA_NOTE = 'The whole insula is drawn. Most findings shown on it are for its front part.';
 const OFC_NOTE = 'The whole orbitofrontal cortex is drawn. Findings shown on it are often for one part of it.';
 const PCC_NOTE =
@@ -54,6 +60,11 @@ const AAL_REGIONS = [
   { group: 'ofc', note: OFC_NOTE, name: 'orbitofrontal cortex', labels: [25, 27, 29, 31], tris: 4000 },
   { group: 'pcc-precuneus', note: PCC_NOTE, name: 'posterior cingulate and precuneus', labels: [39, 71], tris: 6000 },
   { group: 'vta', name: 'ventral tegmental area', labels: [159], tris: 600 },
+  { group: 'visual-cortex', name: 'visual cortex (calcarine cortex, cuneus and lingual gyrus)', labels: [47, 49, 51], tris: 5000, note: VISUAL_NOTE },
+  { group: 'parahippocampal', name: 'parahippocampal gyrus (includes the entorhinal cortex)', labels: [43], tris: 2500, note: PARAHIPPOCAMPAL_NOTE },
+  { group: 'lateral-temporal', name: 'lateral temporal cortex (superior, middle and inferior temporal gyri)', labels: [85, 89, 93], tris: 6000, note: BROAD_NOTE },
+  { group: 'inferior-parietal', name: 'inferior parietal cortex (inferior parietal, supramarginal and angular gyri)', labels: [65, 67, 69], tris: 5000, note: BROAD_NOTE },
+  { group: 'substantia-nigra', name: 'substantia nigra', labels: [161, 163], tris: 500 },
   { group: 'caudate', name: 'caudate nucleus (dorsal striatum)', labels: [75], tris: 2500 },
   { group: 'putamen', name: 'putamen (dorsal striatum)', labels: [77], tris: 2500 },
 ];
