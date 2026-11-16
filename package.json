@@ -8,7 +8,7 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "scores": "node research/depression.mjs && node research/anxiety.mjs && node research/anger.mjs && node research/borderline.mjs",
+    "scores": "node research/depression.mjs && node research/anxiety.mjs && node research/panic.mjs && node research/stress.mjs && node research/anger.mjs && node research/borderline.mjs && node research/dissociation.mjs && node research/reward.mjs",
     "verify:quotes": "node tools/research/verify_quotes.mjs",
     "atlas": "node tools/build_atlas.mjs"
   },

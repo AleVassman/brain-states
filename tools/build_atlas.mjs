@@ -23,6 +23,9 @@ const GYRUS_NOTE =
 const STRIATUM_NOTE =
   'The reward findings cited for this region are for the striatum as a whole, of which this is the lower front part.';
 
+const BRAINSTEM_NOTE =
+  'A rough outline of the whole brainstem, cut from a brain scan with a simple box. Findings shown on it are for the brainstem in general, or for small nuclei inside it that are not drawn separately.';
+
 const range = (from, to, step = 1) => {
   const out = [];
   for (let i = from; i <= to; i += step) out.push(i);
@@ -47,6 +50,8 @@ const AAL_REGIONS = [
   { group: 'ofc', name: 'orbitofrontal cortex', labels: [25, 27, 29, 31], tris: 4000 },
   { group: 'pcc-precuneus', name: 'posterior cingulate and precuneus', labels: [39, 71], tris: 6000 },
   { group: 'vta', name: 'ventral tegmental area', labels: [159], tris: 600 },
+  { group: 'caudate', name: 'caudate nucleus (dorsal striatum)', labels: [75], tris: 2500 },
+  { group: 'putamen', name: 'putamen (dorsal striatum)', labels: [77], tris: 2500 },
 ];
 
 // Everything AAL3 labels as cerebral cortex (left labels), for the see-through outer brain.
@@ -165,7 +170,8 @@ for (const [side, shift] of [['l', 0], ['r', 1]]) {
     return label === 0 || label >= 159;
   };
   const mesh = await meshFrom(mask, inside, 5000);
-  add('brainstem', 'context', 'Brainstem (outline)', 'mid', COLIN, mesh);
+  add('brainstem-mid', 'brainstem', 'Brainstem (rough outline)', 'mid', COLIN, mesh);
+  regions[regions.length - 1].extentNote = BRAINSTEM_NOTE;
 }
 
 // ---- Hypothalamus and BNST ---------------------------------------------------------------------

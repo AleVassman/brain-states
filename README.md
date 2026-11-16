@@ -1,7 +1,8 @@
 # Brain States
 
-An interactive 3D brain that plays researched "episodes" of four states —
-depression, anxiety, anger and borderline personality disorder — and shows
+An interactive 3D brain that plays researched "episodes" of eight states —
+depression, anxiety, panic, acute stress, anger, borderline personality
+disorder, dissociation, and joy and reward — and shows
 which regions and connections change, with the studies behind every claim.
 
 It is a personal hobby project. It is a reconstruction from published

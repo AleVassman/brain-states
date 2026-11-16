@@ -69,6 +69,8 @@ Added beyond the design's list, because the research pass is likely to want them
 | `pgacc` | AAL3 ACC_pre (153/154), pregenual anterior cingulate |
 | `vmpfc` | AAL3 Frontal_Med_Orb (21/22) + Rectus (23/24) |
 | `vta` | AAL3 VTA (159/160) |
+| `caudate` | AAL3 Caudate (75/76) |
+| `putamen` | AAL3 Putamen (77/78) |
 | `bnst` | Neudorfer labels 33/34 |
 
 Context only (drawn faintly, never the target of a score):
@@ -77,7 +79,7 @@ Context only (drawn faintly, never the target of a score):
 |---|---|
 | `cortex-l`, `cortex-r` | Union of every AAL3 cerebral cortex label, per hemisphere |
 | `cerebellum` | AAL3 labels 95–120 |
-| `brainstem` | Colin27 brain mask inside the box x ±14, y −50…−10, z −62…−8 mm, where AAL3 has no cortical or subcortical label. A rough outline for orientation, not an anatomical segmentation. |
+| `brainstem-mid` (group `brainstem`) | Colin27 brain mask inside the box x ±14, y −50…−10, z −62…−8 mm, where AAL3 has no cortical or subcortical label. A rough outline, not an anatomical segmentation. Episodes may light it for findings about the brainstem in general; the app then shows an "Approximate extent" badge. |
 | `head` (in `head.glb`) | Lee Perry-Smith head scan fitted to the Colin27 head mask (or the Colin27 mask itself if the scan is absent) |
 
 Considered and not used: AAL3's locus coeruleus (too few voxels to mesh), the Brainnetome atlas (non-commercial terms could not be read on its own site), Harvard-Oxford (licence tied to FSL's).

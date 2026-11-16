@@ -10,7 +10,7 @@ const REQUIRED_GROUPS = [
   'dacc', 'sgacc', 'mpfc', 'dlpfc', 'vlpfc', 'ofc', 'pcc-precuneus', 'pag',
 ];
 /** Structures that sit on the midline and so have one mesh, not a left/right pair. */
-const MIDLINE_GROUPS = ['pag'];
+const MIDLINE_GROUPS = ['pag', 'brainstem'];
 
 function regions(): RegionInfo[] {
   return JSON.parse(readFileSync(`${ATLAS_DIR}/regions.json`, 'utf8'));

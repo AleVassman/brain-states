@@ -12,6 +12,18 @@
   "reviewed": false
  },
  {
+  "id": "panic",
+  "title": "Panic attack",
+  "file": "panic.json",
+  "reviewed": false
+ },
+ {
+  "id": "stress",
+  "title": "Acute stress",
+  "file": "stress.json",
+  "reviewed": false
+ },
+ {
   "id": "anger",
   "title": "Anger",
   "file": "anger.json",
@@ -21,6 +33,18 @@
   "id": "borderline",
   "title": "Borderline",
   "file": "borderline.json",
+  "reviewed": false
+ },
+ {
+  "id": "dissociation",
+  "title": "Dissociation",
+  "file": "dissociation.json",
+  "reviewed": false
+ },
+ {
+  "id": "reward",
+  "title": "Joy and reward",
+  "file": "reward.json",
   "reviewed": false
  }
 ]

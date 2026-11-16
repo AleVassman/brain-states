@@ -432,6 +432,62 @@
   "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
  },
  {
+  "id": "caudate-l",
+  "group": "caudate",
+  "name": "Left caudate nucleus (dorsal striatum)",
+  "hemisphere": "l",
+  "centroid": [
+   0.1217,
+   0.1066,
+   0.0856
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "caudate-r",
+  "group": "caudate",
+  "name": "Right caudate nucleus (dorsal striatum)",
+  "hemisphere": "r",
+  "centroid": [
+   -0.1575,
+   0.1008,
+   0.1001
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "putamen-l",
+  "group": "putamen",
+  "name": "Left putamen (dorsal striatum)",
+  "hemisphere": "l",
+  "centroid": [
+   0.2389,
+   0.007,
+   0.02
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "putamen-r",
+  "group": "putamen",
+  "name": "Right putamen (dorsal striatum)",
+  "hemisphere": "r",
+  "centroid": [
+   -0.2801,
+   0.0071,
+   0.0317
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
   "id": "cortex-l",
   "group": "cortex",
   "name": "Left cerebral cortex",
@@ -474,9 +530,9 @@
   "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
  },
  {
-  "id": "brainstem",
-  "group": "context",
-  "name": "Brainstem (outline)",
+  "id": "brainstem-mid",
+  "group": "brainstem",
+  "name": "Brainstem (rough outline)",
   "hemisphere": "mid",
   "centroid": [
    -0.001,
@@ -485,7 +541,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Colin27 average brain (McConnell BIC, 1998)"
+  "source": "Colin27 average brain (McConnell BIC, 1998)",
+  "extentNote": "A rough outline of the whole brainstem, cut from a brain scan with a simple box. Findings shown on it are for the brainstem in general, or for small nuclei inside it that are not drawn separately."
  },
  {
   "id": "hypothalamus-r",
