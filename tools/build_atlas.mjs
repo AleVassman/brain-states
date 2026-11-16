@@ -21,10 +21,14 @@ const COLIN = 'Colin27 average brain (McConnell BIC, 1998)';
 const GYRUS_NOTE =
   'Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border.';
 const STRIATUM_NOTE =
-  'The reward findings cited for this region are for the striatum as a whole, of which this is the lower front part.';
+  'Some findings shown on this region are for the striatum as a whole or its ventral part, of which this is the lower front part.';
+const INSULA_NOTE = 'The whole insula is drawn. Most findings shown on it are for its front part.';
+const OFC_NOTE = 'The whole orbitofrontal cortex is drawn. Findings shown on it are often for one part of it.';
+const PCC_NOTE =
+  'The posterior cingulate and the precuneus are drawn together. Findings shown on them are often for the posterior cingulate alone.';
 
 const BRAINSTEM_NOTE =
-  'A rough outline of the whole brainstem, cut from a brain scan with a simple box. Findings shown on it are for the brainstem in general, or for small nuclei inside it that are not drawn separately.';
+  'A rough outline of the whole brainstem, cut from a brain scan with a simple box; unlike the other regions it is not from an atlas. Findings shown on it are for the brainstem in general, or for small nuclei inside it that are not drawn separately.';
 
 const range = (from, to, step = 1) => {
   const out = [];
@@ -39,7 +43,7 @@ const AAL_REGIONS = [
   { group: 'hippocampus', name: 'hippocampus', labels: [41], tris: 3000 },
   { group: 'thalamus', name: 'thalamus', labels: range(121, 149, 2), tris: 3000 },
   { group: 'nucleus-accumbens', note: STRIATUM_NOTE, name: 'nucleus accumbens', labels: [157], tris: 1200 },
-  { group: 'insula', name: 'insula', labels: [33], tris: 4000 },
+  { group: 'insula', note: INSULA_NOTE, name: 'insula', labels: [33], tris: 4000 },
   { group: 'sgacc', name: 'subgenual anterior cingulate', labels: [151], tris: 1500 },
   { group: 'pgacc', name: 'pregenual anterior cingulate', labels: [153], tris: 2000 },
   { group: 'dacc', note: GYRUS_NOTE, name: 'dorsal anterior cingulate (supracallosal)', labels: [155], tris: 2500 },
@@ -47,8 +51,8 @@ const AAL_REGIONS = [
   { group: 'vmpfc', note: GYRUS_NOTE, name: 'ventromedial prefrontal cortex (medial orbital gyrus and gyrus rectus)', labels: [21, 23], tris: 3000 },
   { group: 'dlpfc', note: GYRUS_NOTE, name: 'dorsolateral prefrontal cortex (middle frontal gyrus)', labels: [5], tris: 6000 },
   { group: 'vlpfc', note: GYRUS_NOTE, name: 'ventrolateral prefrontal cortex (inferior frontal gyrus)', labels: [7, 9, 11], tris: 6000 },
-  { group: 'ofc', name: 'orbitofrontal cortex', labels: [25, 27, 29, 31], tris: 4000 },
-  { group: 'pcc-precuneus', name: 'posterior cingulate and precuneus', labels: [39, 71], tris: 6000 },
+  { group: 'ofc', note: OFC_NOTE, name: 'orbitofrontal cortex', labels: [25, 27, 29, 31], tris: 4000 },
+  { group: 'pcc-precuneus', note: PCC_NOTE, name: 'posterior cingulate and precuneus', labels: [39, 71], tris: 6000 },
   { group: 'vta', name: 'ventral tegmental area', labels: [159], tris: 600 },
   { group: 'caudate', name: 'caudate nucleus (dorsal striatum)', labels: [75], tris: 2500 },
   { group: 'putamen', name: 'putamen (dorsal striatum)', labels: [77], tris: 2500 },
@@ -156,9 +160,10 @@ for (const [side, shift] of [['l', 0], ['r', 1]]) {
   add('cerebellum', 'context', 'Cerebellum', 'mid', AAL, mesh);
 }
 
-// ---- Brainstem outline, for context only -----------------------------------------------------
+// ---- Brainstem outline -------------------------------------------------------------------------
 // Colin27 brain mask, restricted to the brainstem's bounding box in MNI space and to voxels
-// AAL3 leaves unlabelled. It is a see-through outline, never a target for a score.
+// AAL3 leaves unlabelled. It is a rough outline, not an atlas region. Scores may light it for findings about
+// "the brainstem" in general; the panel then shows that the shape is approximate.
 {
   const mask = readNifti(`${CACHE}/colin27/colin27_t1_tal_lin_mask.nii`);
   const [nx, ny] = aal.dims;

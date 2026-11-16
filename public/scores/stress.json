@@ -2,7 +2,7 @@
  "id": "stress",
  "title": "Acute stress: under pressure",
  "description": "Being put on the spot: timed, judged, expected to perform. The episode follows the first alert, the shift of resources towards vigilance, the hormone response that follows, and the return to balance. Acute stress is an ordinary response that every brain has, not a condition, so there is no \"typical response\" to compare it with. This is short-lived stress; long-lasting stress is a different matter and is not shown.",
- "caveat": "The first step, activity in the insula and the inferior frontal gyrus, is found by two pooled analyses and is the firm part. The rest is less settled. The shift from a control network to a vigilance network and back is a framework its authors propose, built partly on animal work. The hormone step rests on one study, and its finding runs against intuition: in people whose stress hormone rose, the hippocampus, hypothalamus and other regions became less active on the scan, although the hypothalamus is the structure that starts the hormone response. A scan signal going down does not mean every cell in a region is quieter, and the authors read the drop as a brake being released. Scanner stress tasks, such as timed arithmetic with critical feedback, are also a mild stand-in for real pressure.",
+ "caveat": "The first step, activity in the insula and the inferior frontal gyrus, is found by two pooled analyses and is the firm part. The rest is less settled. The shift from a control network to a vigilance network and back is a framework its authors propose, built partly on animal work. The hormone step rests on one study, and its finding runs against intuition: in people whose stress hormone rose, the hippocampus, hypothalamus and other regions became less active on the scan, although the hypothalamus is the structure that starts the hormone response. A scan signal going down does not mean every cell in a region is quieter, and the authors propose that the drop is part of how the stress response starts. Scanner stress tasks, such as timed arithmetic with critical feedback, are also a mild stand-in for real pressure.",
  "durationSeconds": 36,
  "phases": [
   {
@@ -19,7 +19,7 @@
    "timescale": "seconds to minutes",
    "start": 0.12,
    "end": 0.45,
-   "caption": "The front of the insula and the inferior frontal gyrus become active, the most reliable sign of stress in brain scans. Resources are thought to shift towards vigilance and away from the control regions, and the ventral striatum, part of the reward system, becomes less active.",
+   "caption": "The front of the insula and the inferior frontal gyrus become active, the finding the two pooled analyses read here agree on, and the ventral striatum, part of the reward system, becomes less active under social pressure. A proposed framework adds that resources shift towards vigilance and away from control regions; that shift is not drawn because the sources read did not measure it.",
    "order": {
     "kind": "reconstructed",
     "rationale": "The pooled analyses average over whole stress tasks lasting minutes and do not say what comes first. Placing these changes at the start follows the proposed framework in which vigilance rises as soon as stress begins."
@@ -43,7 +43,7 @@
    "timescale": "tens of minutes to hours",
    "start": 0.78,
    "end": 1,
-   "caption": "The pressure is over. The balance is proposed to swing back: vigilance eases and the control regions recover.",
+   "caption": "The pressure is over and activity returns towards rest. A proposed framework says the balance between vigilance and control swings back at this point; that has not been timed in people.",
    "order": {
     "kind": "reconstructed",
     "rationale": "The reversal after stress is part of a proposed framework. No source read for this episode timed it in people."
@@ -54,7 +54,7 @@
   "regions": [
    {
     "region": "insula",
-    "explanation": "The front of the insula is active under stress in two separate pooled analyses, for both social pressure and physical stressors such as pain. It is the most reliable finding in brain scans of stress.",
+    "explanation": "The front of the insula is active under stress in two separate pooled analyses. One of them found it for both social pressure and physical stressors such as pain; the other covered social pressure only.",
     "confidence": "established",
     "citations": [
      {
@@ -101,7 +101,7 @@
    },
    {
     "region": "vlpfc",
-    "explanation": "The inferior frontal gyrus is active under stress in two separate pooled analyses, for both social pressure and physical stressors.",
+    "explanation": "The inferior frontal gyrus is active under stress in two separate pooled analyses. One of them found it for both social pressure and physical stressors; the other covered social pressure only.",
     "confidence": "established",
     "citations": [
      {
@@ -194,59 +194,8 @@
     ]
    },
    {
-    "region": "dlpfc",
-    "explanation": "Part of the control network. A proposed framework holds that acute stress shifts resources to a vigilance network at this network's expense, and stress is known to impair the abilities the prefrontal cortex supports. Neither source read here measured this region becoming less active in people, so the dimming is an inference.",
-    "confidence": "debated",
-    "citations": [
-     {
-      "authors": "Hermans EJ, Henckens MJ, Joëls M, Fernández G",
-      "year": 2014,
-      "title": "Dynamic adaptation of large-scale brain networks in response to acute stressors.",
-      "doi": "10.1016/j.tins.2014.03.006",
-      "kind": "review",
-      "access": "abstract-only",
-      "quote": "exposure to acute stress prompts a reallocation of resources to a salience network, promoting fear and vigilance, at the cost of an executive control network"
-     },
-     {
-      "authors": "Arnsten AF",
-      "year": 2009,
-      "title": "Stress signalling pathways that impair prefrontal cortex structure and function.",
-      "doi": "10.1038/nrn2648",
-      "kind": "review",
-      "access": "abstract-only",
-      "quote": "Even quite mild acute uncontrollable stress can cause a rapid and dramatic loss of prefrontal cognitive abilities"
-     }
-    ],
-    "keyframes": [
-     {
-      "t": 0,
-      "v": 0
-     },
-     {
-      "t": 0.12,
-      "v": 0
-     },
-     {
-      "t": 0.38,
-      "v": -0.4
-     },
-     {
-      "t": 0.78,
-      "v": -0.35
-     },
-     {
-      "t": 0.92,
-      "v": 0.15
-     },
-     {
-      "t": 1,
-      "v": 0.05
-     }
-    ]
-   },
-   {
     "region": "hippocampus",
-    "explanation": "Became less active during social stress in people whose stress hormone rose, and the bigger the hormone rise, the bigger the drop. From one study, read as an abstract. The authors propose the hippocampus normally holds the stress response back, so its quietening lets the response start.",
+    "explanation": "Became less active during social stress in people whose stress hormone rose, and the bigger the hormone rise, the bigger the drop. From one study, read as an abstract, whose authors propose that this reduction is essential for starting the stress response. A pooled analysis notes that findings for the hippocampus under stress have been inconsistent.",
     "confidence": "mixed",
     "citations": [
      {
@@ -266,6 +215,15 @@
       "kind": "study",
       "access": "abstract-only",
       "quote": "the degree of deactivation in the hippocampus was correlated with the release of cortisol in response to the stress task"
+     },
+     {
+      "authors": "Kogler L, Müller VI, Chang A, Eickhoff SB, Fox PT, Gur RC, Derntl B",
+      "year": 2015,
+      "title": "Psychosocial versus physiological stress - Meta-analyses on deactivations and activations of the neural correlates of stress reactions.",
+      "doi": "10.1016/j.neuroimage.2015.06.059",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "inconsistent results regarding activation and deactivation have been reported, particularly in brain regions such as the hippocampus/amygdala, the anterior cingulate cortex (ACC) and prefrontal areas"
      }
     ],
     "keyframes": [
@@ -279,15 +237,15 @@
      },
      {
       "t": 0.55,
-      "v": -0.6
-     },
-     {
-      "t": 0.78,
       "v": -0.5
      },
      {
+      "t": 0.78,
+      "v": -0.45
+     },
+     {
       "t": 1,
-      "v": -0.05
+      "v": 0
      }
     ]
    },
@@ -335,11 +293,11 @@
      },
      {
       "t": 0.55,
-      "v": -0.4
+      "v": -0.5
      },
      {
       "t": 0.78,
-      "v": -0.35
+      "v": -0.45
      },
      {
       "t": 1,
@@ -349,7 +307,7 @@
    },
    {
     "region": "vmpfc",
-    "explanation": "The medial orbitofrontal cortex became less active during social stress in people whose stress hormone rose. From one study, read as an abstract, which reported the same for the anterior cingulate.",
+    "explanation": "The medial orbitofrontal cortex became less active during social stress in people whose stress hormone rose. From one study, read as an abstract, which reported the same for the anterior cingulate. A pooled analysis notes that findings for prefrontal areas under stress have been inconsistent. The three regions from this study are drawn dimming equally; the study does not rank them.",
     "confidence": "mixed",
     "citations": [
      {
@@ -360,6 +318,15 @@
       "kind": "study",
       "access": "abstract-only",
       "quote": "We observed a profound deactivation of limbic system components including hippocampus, hypothalamus, medio-orbitofrontal cortex and anterior cingulate cortex in subjects who reacted to the stressor with a significant increase of the endocrine stress marker cortisol."
+     },
+     {
+      "authors": "Kogler L, Müller VI, Chang A, Eickhoff SB, Fox PT, Gur RC, Derntl B",
+      "year": 2015,
+      "title": "Psychosocial versus physiological stress - Meta-analyses on deactivations and activations of the neural correlates of stress reactions.",
+      "doi": "10.1016/j.neuroimage.2015.06.059",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "inconsistent results regarding activation and deactivation have been reported, particularly in brain regions such as the hippocampus/amygdala, the anterior cingulate cortex (ACC) and prefrontal areas"
      }
     ],
     "keyframes": [
@@ -377,7 +344,7 @@
      },
      {
       "t": 0.78,
-      "v": -0.4
+      "v": -0.45
      },
      {
       "t": 1,

@@ -44,9 +44,9 @@ const score = {
   id: 'dissociation',
   title: 'Dissociation: detaching when something is overwhelming',
   description:
-    'A reminder of something traumatic, or stress that is too much, and instead of a surge of feeling there is distance: feeling unreal, detached, numb. The leading account is that the brain\'s regulating regions clamp down too hard on the emotional ones. It is the opposite pattern to being flooded by emotion, where those same regulating regions do too little. There is no "typical response" to compare with, because this is one of two different responses to the same kind of trigger.',
+    'A reminder of something traumatic, or stress that is too much, and instead of a surge of feeling there is distance: feeling unreal, detached, numb. A proposed account is that the brain\'s regulating regions act more strongly than usual on the emotional ones. It is the opposite pattern to being flooded by emotion, where those same regulating regions are less active. There is no "typical response" to compare with, because this is one of two different responses to the same kind of trigger.',
   caveat:
-    'The clamp-down account comes mainly from small studies of people with post-traumatic stress disorder listening to accounts of their own trauma, summarised in one review. It is a proposal: more activity in regulating regions alongside less in emotional ones is consistent with suppression, but that does not prove one causes the other. A later systematic review concluded that dissociation cannot be pinned to a few regions and differs with the kind of symptoms, and a pilot study in borderline personality disorder found the insula more active with dissociation, not less. How an episode ends has not been studied; the last phase is an assumption. Dissociation in borderline personality disorder may not match the pattern found in trauma studies.',
+    'This account comes mainly from small studies of people with post-traumatic stress disorder listening to accounts of their own trauma, summarised in one review. It is a proposal: more activity in regulating regions alongside less in emotional ones is consistent with suppression, but that does not prove one causes the other. A later systematic review concluded that dissociation cannot be pinned to a few regions and differs with the kind of symptoms, and a pilot study in borderline personality disorder found the insula more active with dissociation, not less. How an episode ends has not been studied; the last phase is an assumption. Dissociation in borderline personality disorder may not match the pattern found in trauma studies.',
   durationSeconds: 34,
   phases: [
     {
@@ -59,7 +59,7 @@ const score = {
     },
     {
       id: 'clamp',
-      name: 'Clamping down',
+      name: 'Regulation rises',
       timescale: 'seconds',
       start: 0.14,
       end: 0.42,
@@ -78,7 +78,7 @@ const score = {
       start: 0.42,
       end: 0.78,
       caption:
-        'Feeling drops away. The more active the medial prefrontal cortex, the less active the amygdala; the stronger the detachment, the quieter the front of the right insula, which normally carries the felt state of the body. Pain is felt less.',
+        'Feeling drops away. The more active the medial prefrontal cortex, the less active the amygdala; the stronger the detachment, the quieter the front of the right insula, which normally carries the felt state of the body. Both findings come from single small studies.',
       order: {
         kind: 'reconstructed',
         rationale:
@@ -119,18 +119,18 @@ const score = {
       {
         region: 'amygdala',
         explanation:
-          'In one study of people with post-traumatic stress after road accidents, the more active the dissociation-related part of the medial prefrontal cortex was, the less active the amygdala. This is read as the regulating regions suppressing the emotional ones, which is an interpretation. The opposite pattern, too little regulation, is found in people who are flooded by the memory instead.',
-        confidence: 'mixed',
+          'In one study of people with post-traumatic stress after road accidents, the more active the dissociation-related part of the medial prefrontal cortex was, the less active the amygdala. This is read as the regulating regions suppressing the emotional ones, which is an interpretation. The opposite pattern, too little regulation, is found in people who are flooded by the memory instead. A single-study finding with a proposed explanation.',
+        confidence: 'debated',
         citations: [laniusAmygdala, laniusInhibition, laniusOpposite],
-        keyframes: kf(0, 0, 0.1, 0.3, 0.3, 0.1, 0.5, -0.55, 0.78, -0.5, 1, -0.1),
+        keyframes: kf(0, 0, 0.3, 0, 0.5, -0.5, 0.78, -0.45, 1, 0),
       },
       {
         region: 'insula-r',
         explanation:
-          'The front of the right insula was less active the stronger the dissociative response to a trauma reminder. The evidence conflicts: a pilot study in borderline personality disorder with post-traumatic stress found the insula more active with higher dissociation scores, and that study had no comparison group.',
+          'The front of the right insula was less active the stronger the dissociative response to a trauma reminder. The evidence conflicts: a pilot study in borderline personality disorder with post-traumatic stress found the insula more active with higher dissociation scores, and that study had no comparison group. In that same small study, people felt pain less after listening to a script that brought on dissociation.',
         confidence: 'debated',
-        citations: [laniusCorrelation, ludascherInsula, ludascherLimit],
-        keyframes: kf(0, 0, 0.14, 0.15, 0.32, 0, 0.52, -0.5, 0.78, -0.45, 1, -0.1),
+        citations: [laniusCorrelation, ludascherInsula, ludascherLimit, ludascherPain],
+        keyframes: kf(0, 0, 0.32, 0, 0.52, -0.5, 0.78, -0.45, 1, 0),
       },
     ],
     connections: [
@@ -138,8 +138,8 @@ const score = {
         from: 'mpfc',
         to: 'amygdala',
         explanation:
-          'An opposing link: in one study, the more active this part of the medial prefrontal cortex, the less active the amygdala. The line shows that the two move together in opposite directions; that the first is suppressing the second is the proposed explanation, not a measurement.',
-        confidence: 'mixed',
+          'Moving in opposite directions: in one study, the more active this part of the medial prefrontal cortex, the less active the amygdala. The line marks that opposing relationship, not closer cooperation. That the first is suppressing the second is the proposed explanation, not a measurement.',
+        confidence: 'debated',
         citations: [laniusAmygdala, laniusInhibition],
         keyframes: kf(0, 0, 0.14, 0.1, 0.45, 0.75, 0.78, 0.7, 1, 0.1),
       },
@@ -148,13 +148,11 @@ const score = {
   typical: null,
 };
 
-void ludascherPain;
-
 writeScore(score, {
   indexTitle: 'Dissociation',
   notes: [
     'No typical-response comparison. The informative contrast in the literature is between two responses to a trauma reminder, dissociating and being flooded, not between a condition and a typical brain. The flooded pattern is described in the amygdala text and not drawn.',
-    'Reduced pain sensitivity during dissociation is from Ludäscher et al. 2010 ("Dissociative psychopathology scores were significantly higher and pain sensitivity was lower after the dissociation-inducing script was read compared with the neutral script."), a pilot study in borderline personality disorder without a comparison group. It is mentioned in a caption, not drawn.',
+    'Reduced pain sensitivity during dissociation is from Ludäscher et al. 2010 ("Dissociative psychopathology scores were significantly higher and pain sensitivity was lower after the dissociation-inducing script was read compared with the neutral script."), a pilot study in borderline personality disorder without a comparison group. It is mentioned in the right insula text, with its quote, and not drawn.',
     'Not drawn: the dorsolateral prefrontal cortex, superior frontal regions, posterior association areas and basal ganglia named by Roydeva & Reinders 2021. The abstract lists them as markers without saying whether they are more or less active, so no direction could be shown.',
     'The review of dissociation in borderline personality disorder specifically (Krause-Utz et al. 2017) could not be downloaded, so the episode does not claim the trauma-study pattern holds in borderline personality disorder.',
     'Read as abstracts only: Roydeva & Reinders 2021, Lotfinia et al. 2020.',

@@ -10,6 +10,11 @@ const oldhamOutcome = cite(
   'oldham2018',
   'the contrast of reward outcome (contrast RO) showed a large cluster in the ventral striatum which extended into the subcallosal, followed by another large cluster in the OFC/vmPFC, and a smaller clusters in the dorsal PCC and amygdala cortex',
 );
+const oldhamWaitVsOutcome = cite(
+  'oldham2018',
+  'for (i) reward anticipation versus reward receipt (contrast RA‐RO), activity of the caudate/dorsal striatum, supplementary motor area, thalamus and right anterior insula',
+);
+const berridgeActivated = cite('berridge2015', 'mesolimbic dopamine systems that are activated by many reward-related stimuli');
 const oldhamNoVmpfc = cite(
   'oldham2018',
   'The anticipation of an outcome did not recruit the OFC/vmPFC area in our study, which contrasts previous results',
@@ -66,7 +71,7 @@ const score = {
       timescale: 'a second or two',
       start: 0,
       end: 0.12,
-      caption: 'A sign that something good may be on its way. Dopamine neurons in the midbrain, which respond to reward-related signals, send their output up to the striatum.',
+      caption: 'A sign that something good may be on its way. Dopamine neurons in the midbrain respond to reward-related signals and send their output up to the striatum; this first step is known mainly from animals.',
     },
     {
       id: 'anticipation',
@@ -75,8 +80,12 @@ const score = {
       start: 0.12,
       end: 0.45,
       caption:
-        'The wait. A group of deep regions is active together: the striatum, including the nucleus accumbens, the thalamus and the amygdala. This is wanting, not yet enjoying.',
-      order: { kind: 'timed', citations: [oldhamAnticipation] },
+        'The wait. A group of deep regions is active together: the striatum, including the nucleus accumbens, the thalamus and the amygdala, along with the front of the insula. This is wanting, not yet enjoying.',
+      order: {
+        kind: 'reconstructed',
+        rationale:
+          'The scanner task does not separate the cue from the wait, and the midbrain step rests on anatomy and animal work. Showing the cue first is an inference.',
+      },
     },
     {
       id: 'outcome',
@@ -86,7 +95,11 @@ const score = {
       end: 0.72,
       caption:
         'The good thing happens. The ventral striatum responds again, now joined by the orbitofrontal and ventromedial prefrontal cortex, which track how much something is worth, and the posterior cingulate.',
-      order: { kind: 'timed', citations: [oldhamOutcome] },
+      order: {
+        kind: 'reconstructed',
+        rationale:
+          'The wait comes before the outcome because the task is built that way, and the pooled analysis reports the two parts separately. No source timed the regions against each other.',
+      },
     },
     {
       id: 'enjoyment',
@@ -108,31 +121,25 @@ const score = {
       {
         region: 'vta',
         explanation:
-          'The midbrain source of the dopamine neurons that run up to the nucleus accumbens. This system is activated by reward-related signals. It was long described as the brain\'s pleasure system, but the researchers cited here argue that dopamine is needed for wanting a reward, not for enjoying it.',
-        confidence: 'mixed',
-        citations: [berridgeMesolimbic, berridgeDopamine],
+          'The midbrain source of the dopamine neurons that run up to the nucleus accumbens. This system is activated by reward-related signals. Evidence for what it does comes mainly from animals; it is too small to measure reliably in most human scans, and its rise at the cue is drawn on that basis. It was long described as the brain\'s pleasure system, but the researchers cited here argue that dopamine is needed for wanting a reward, not for enjoying it.',
+        confidence: 'debated',
+        citations: [berridgeMesolimbic, berridgeActivated, berridgeDopamine],
         keyframes: kf(0, 0, 0.06, 0.6, 0.3, 0.5, 0.5, 0.5, 0.75, 0.2, 1, 0),
       },
       {
         region: 'nucleus-accumbens',
         explanation:
-          'The ventral striatum, active both while people wait for a reward and when it arrives. This is the most consistent finding in reward research. It is not specific to good things: a similar cluster responds when people expect a loss. In animals, activity here also tracks how much a taste is liked.',
+          'The ventral striatum, active both while people wait for a reward and when it arrives. This is the most consistent finding in reward research. It is not specific to good things: a similar cluster responds when people expect a loss. In other animals, activity here may also track how much a taste is liked.',
         confidence: 'established',
-        citations: [oldhamAnticipation, oldhamOutcome, sescousseCommon, oldhamLoss],
+        citations: [oldhamAnticipation, oldhamOutcome, sescousseCommon, oldhamLoss, berridgeAnimals],
         keyframes: kf(0, 0, 0.1, 0.3, 0.3, 0.85, 0.45, 0.7, 0.55, 0.9, 0.75, 0.5, 1, 0.1),
       },
       {
         region: 'caudate',
-        explanation: 'Part of the dorsal striatum, active together with the ventral striatum while people wait for a reward.',
-        confidence: 'established',
-        citations: [oldhamAnticipation],
-        keyframes: kf(0, 0, 0.12, 0.2, 0.32, 0.65, 0.5, 0.4, 0.75, 0.1, 1, 0),
-      },
-      {
-        region: 'putamen',
-        explanation: 'Part of the dorsal striatum, active together with the ventral striatum while people wait for a reward.',
-        confidence: 'established',
-        citations: [oldhamAnticipation],
+        explanation:
+          'The dorsal striatum is active together with the ventral striatum while people wait for a reward, and more during the wait than at the outcome. From one pooled analysis, which names the caudate; the putamen, the other part of the dorsal striatum, is not named separately and is not drawn.',
+        confidence: 'mixed',
+        citations: [oldhamAnticipation, oldhamWaitVsOutcome],
         keyframes: kf(0, 0, 0.12, 0.2, 0.32, 0.65, 0.5, 0.4, 0.75, 0.1, 1, 0),
       },
       {
@@ -140,8 +147,8 @@ const score = {
         explanation:
           'Part of the deep cluster active while people wait for a reward, and part of the network that responds when money, food or erotic rewards arrive. It responds to expected losses too.',
         confidence: 'established',
-        citations: [oldhamAnticipation, sescousseCommon, oldhamLoss],
-        keyframes: kf(0, 0, 0.12, 0.2, 0.32, 0.6, 0.55, 0.5, 0.75, 0.15, 1, 0),
+        citations: [oldhamAnticipation, oldhamWaitVsOutcome, sescousseCommon, oldhamLoss],
+        keyframes: kf(0, 0, 0.12, 0.2, 0.32, 0.6, 0.55, 0.4, 0.75, 0.15, 1, 0),
       },
       {
         region: 'amygdala',
@@ -178,10 +185,10 @@ const score = {
       {
         region: 'insula',
         explanation:
-          'The front of the insula is part of the network that responds when rewards arrive, more strongly for food and erotic rewards than for money. It is not specific to good things: its activity rises with both positive and negative value.',
+          'The front of the insula is more active during the wait than at the outcome, on the right side, and is also part of the network that responds when rewards arrive. It is not specific to good things: its activity shows a mixture of positive and negative effects of value.',
         confidence: 'mixed',
-        citations: [sescousseCommon, bartraPcc, lindquistGeneral],
-        keyframes: kf(0, 0, 0.45, 0.05, 0.58, 0.5, 0.85, 0.35, 1, 0.05),
+        citations: [oldhamWaitVsOutcome, sescousseCommon, bartraPcc, lindquistGeneral],
+        keyframes: kf(0, 0, 0.12, 0.15, 0.32, 0.55, 0.55, 0.4, 0.85, 0.25, 1, 0.05),
       },
     ],
     connections: [
@@ -189,8 +196,8 @@ const score = {
         from: 'vta',
         to: 'nucleus-accumbens',
         explanation:
-          'The mesolimbic dopamine pathway, running from the midbrain up to the nucleus accumbens. This is a real nerve pathway, known from anatomy; its strength over the episode is drawn to follow the wanting phase and is not a measurement.',
-        confidence: 'mixed',
+          'The mesolimbic dopamine pathway, running from the midbrain up to the nucleus accumbens. This is a real nerve pathway, known from anatomy; its strength over the episode is drawn to follow the wanting phase, on evidence mainly from animals, and is not a measurement.',
+        confidence: 'debated',
         citations: [berridgeMesolimbic, berridgeDopamine],
         keyframes: kf(0, 0, 0.06, 0.5, 0.3, 0.8, 0.5, 0.6, 0.75, 0.2, 1, 0),
       },
@@ -198,8 +205,6 @@ const score = {
   },
   typical: null,
 };
-
-void berridgeAnimals;
 
 writeScore(score, {
   indexTitle: 'Joy and reward',

@@ -39,7 +39,7 @@ const SECTIONS: { heading: string; paragraphs: string[] }[] = [
   {
     heading: 'Where the shapes come from',
     paragraphs: [
-      'Region shapes and positions come from published brain atlases, not from drawing. Some areas named in research, such as the dorsolateral prefrontal cortex, are functional areas without a sharp anatomical border; they are shown using the gyrus that atlases use to stand in for them, which is larger than the area itself. Regions marked "approximate location" are placed from published coordinates.',
+      'Region shapes and positions come from published brain atlases, not from drawing, with one exception: the brainstem is a rough outline cut from a brain scan. Some areas named in research, such as the dorsolateral prefrontal cortex, are functional areas without a sharp anatomical border; they are shown using the gyrus that atlases use to stand in for them, which is larger than the area itself. Regions marked "approximate location" are placed from published coordinates.',
     ],
   },
   {

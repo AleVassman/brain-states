@@ -11,7 +11,7 @@
    "timescale": "a second or two",
    "start": 0,
    "end": 0.12,
-   "caption": "A sign that something good may be on its way. Dopamine neurons in the midbrain, which respond to reward-related signals, send their output up to the striatum."
+   "caption": "A sign that something good may be on its way. Dopamine neurons in the midbrain respond to reward-related signals and send their output up to the striatum; this first step is known mainly from animals."
   },
   {
    "id": "anticipation",
@@ -19,20 +19,10 @@
    "timescale": "seconds",
    "start": 0.12,
    "end": 0.45,
-   "caption": "The wait. A group of deep regions is active together: the striatum, including the nucleus accumbens, the thalamus and the amygdala. This is wanting, not yet enjoying.",
+   "caption": "The wait. A group of deep regions is active together: the striatum, including the nucleus accumbens, the thalamus and the amygdala, along with the front of the insula. This is wanting, not yet enjoying.",
    "order": {
-    "kind": "timed",
-    "citations": [
-     {
-      "authors": "Oldham S, Murawski C, Fornito A, Youssef G, Yücel M, Lorenzetti V",
-      "year": 2018,
-      "title": "The anticipation and outcome phases of reward and loss processing: A neuroimaging meta-analysis of the monetary incentive delay task.",
-      "doi": "10.1002/hbm.24184",
-      "kind": "meta-analysis",
-      "access": "full-text",
-      "quote": "The result of reward anticipation (contrast RA) revealed a large cluster of brain regions around the striatal‐thalamic regions of the brain, encompassing the ventral, including the nucleus accumbens (NAcc), and the dorsal striatum, extending to the bilateral amygdala"
-     }
-    ]
+    "kind": "reconstructed",
+    "rationale": "The scanner task does not separate the cue from the wait, and the midbrain step rests on anatomy and animal work. Showing the cue first is an inference."
    }
   },
   {
@@ -43,18 +33,8 @@
    "end": 0.72,
    "caption": "The good thing happens. The ventral striatum responds again, now joined by the orbitofrontal and ventromedial prefrontal cortex, which track how much something is worth, and the posterior cingulate.",
    "order": {
-    "kind": "timed",
-    "citations": [
-     {
-      "authors": "Oldham S, Murawski C, Fornito A, Youssef G, Yücel M, Lorenzetti V",
-      "year": 2018,
-      "title": "The anticipation and outcome phases of reward and loss processing: A neuroimaging meta-analysis of the monetary incentive delay task.",
-      "doi": "10.1002/hbm.24184",
-      "kind": "meta-analysis",
-      "access": "full-text",
-      "quote": "the contrast of reward outcome (contrast RO) showed a large cluster in the ventral striatum which extended into the subcallosal, followed by another large cluster in the OFC/vmPFC, and a smaller clusters in the dorsal PCC and amygdala cortex"
-     }
-    ]
+    "kind": "reconstructed",
+    "rationale": "The wait comes before the outcome because the task is built that way, and the pooled analysis reports the two parts separately. No source timed the regions against each other."
    }
   },
   {
@@ -74,8 +54,8 @@
   "regions": [
    {
     "region": "vta",
-    "explanation": "The midbrain source of the dopamine neurons that run up to the nucleus accumbens. This system is activated by reward-related signals. It was long described as the brain's pleasure system, but the researchers cited here argue that dopamine is needed for wanting a reward, not for enjoying it.",
-    "confidence": "mixed",
+    "explanation": "The midbrain source of the dopamine neurons that run up to the nucleus accumbens. This system is activated by reward-related signals. Evidence for what it does comes mainly from animals; it is too small to measure reliably in most human scans, and its rise at the cue is drawn on that basis. It was long described as the brain's pleasure system, but the researchers cited here argue that dopamine is needed for wanting a reward, not for enjoying it.",
+    "confidence": "debated",
     "citations": [
      {
       "authors": "Berridge KC, Kringelbach ML",
@@ -85,6 +65,15 @@
       "kind": "review",
       "access": "full-text",
       "quote": "The mesolimbic system contains dopamine neurons originating in or near the ventral tegmental area (VTA) of the midbrain, which chiefly ascend to the NAc or ventral striatum, as well as to amygdala, prefrontal cortex and neostriatum."
+     },
+     {
+      "authors": "Berridge KC, Kringelbach ML",
+      "year": 2015,
+      "title": "Pleasure systems in the brain.",
+      "doi": "10.1016/j.neuron.2015.02.018",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "mesolimbic dopamine systems that are activated by many reward-related stimuli"
      },
      {
       "authors": "Berridge KC, Kringelbach ML",
@@ -125,7 +114,7 @@
    },
    {
     "region": "nucleus-accumbens",
-    "explanation": "The ventral striatum, active both while people wait for a reward and when it arrives. This is the most consistent finding in reward research. It is not specific to good things: a similar cluster responds when people expect a loss. In animals, activity here also tracks how much a taste is liked.",
+    "explanation": "The ventral striatum, active both while people wait for a reward and when it arrives. This is the most consistent finding in reward research. It is not specific to good things: a similar cluster responds when people expect a loss. In other animals, activity here may also track how much a taste is liked.",
     "confidence": "established",
     "citations": [
      {
@@ -163,6 +152,15 @@
       "kind": "meta-analysis",
       "access": "full-text",
       "quote": "loss anticipation (contrast LA) also showed a cluster of increased likelihood of activation in striatal‐thalamic‐amygdala regions"
+     },
+     {
+      "authors": "Berridge KC, Kringelbach ML",
+      "year": 2015,
+      "title": "Pleasure systems in the brain.",
+      "doi": "10.1016/j.neuron.2015.02.018",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "Subcortically, there is evidence from other animals that such selective hedonic changes also may be tracked by activity in nucleus accumbens and ventral pallidum"
      }
     ],
     "keyframes": [
@@ -198,8 +196,8 @@
    },
    {
     "region": "caudate",
-    "explanation": "Part of the dorsal striatum, active together with the ventral striatum while people wait for a reward.",
-    "confidence": "established",
+    "explanation": "The dorsal striatum is active together with the ventral striatum while people wait for a reward, and more during the wait than at the outcome. From one pooled analysis, which names the caudate; the putamen, the other part of the dorsal striatum, is not named separately and is not drawn.",
+    "confidence": "mixed",
     "citations": [
      {
       "authors": "Oldham S, Murawski C, Fornito A, Youssef G, Yücel M, Lorenzetti V",
@@ -209,40 +207,7 @@
       "kind": "meta-analysis",
       "access": "full-text",
       "quote": "The result of reward anticipation (contrast RA) revealed a large cluster of brain regions around the striatal‐thalamic regions of the brain, encompassing the ventral, including the nucleus accumbens (NAcc), and the dorsal striatum, extending to the bilateral amygdala"
-     }
-    ],
-    "keyframes": [
-     {
-      "t": 0,
-      "v": 0
      },
-     {
-      "t": 0.12,
-      "v": 0.2
-     },
-     {
-      "t": 0.32,
-      "v": 0.65
-     },
-     {
-      "t": 0.5,
-      "v": 0.4
-     },
-     {
-      "t": 0.75,
-      "v": 0.1
-     },
-     {
-      "t": 1,
-      "v": 0
-     }
-    ]
-   },
-   {
-    "region": "putamen",
-    "explanation": "Part of the dorsal striatum, active together with the ventral striatum while people wait for a reward.",
-    "confidence": "established",
-    "citations": [
      {
       "authors": "Oldham S, Murawski C, Fornito A, Youssef G, Yücel M, Lorenzetti V",
       "year": 2018,
@@ -250,7 +215,7 @@
       "doi": "10.1002/hbm.24184",
       "kind": "meta-analysis",
       "access": "full-text",
-      "quote": "The result of reward anticipation (contrast RA) revealed a large cluster of brain regions around the striatal‐thalamic regions of the brain, encompassing the ventral, including the nucleus accumbens (NAcc), and the dorsal striatum, extending to the bilateral amygdala"
+      "quote": "for (i) reward anticipation versus reward receipt (contrast RA‐RO), activity of the caudate/dorsal striatum, supplementary motor area, thalamus and right anterior insula"
      }
     ],
     "keyframes": [
@@ -295,6 +260,15 @@
       "quote": "The result of reward anticipation (contrast RA) revealed a large cluster of brain regions around the striatal‐thalamic regions of the brain, encompassing the ventral, including the nucleus accumbens (NAcc), and the dorsal striatum, extending to the bilateral amygdala"
      },
      {
+      "authors": "Oldham S, Murawski C, Fornito A, Youssef G, Yücel M, Lorenzetti V",
+      "year": 2018,
+      "title": "The anticipation and outcome phases of reward and loss processing: A neuroimaging meta-analysis of the monetary incentive delay task.",
+      "doi": "10.1002/hbm.24184",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "for (i) reward anticipation versus reward receipt (contrast RA‐RO), activity of the caudate/dorsal striatum, supplementary motor area, thalamus and right anterior insula"
+     },
+     {
       "authors": "Sescousse G, Caldú X, Segura B, Dreher JC",
       "year": 2013,
       "title": "Processing of primary and secondary rewards: a quantitative meta-analysis and review of human functional neuroimaging studies.",
@@ -328,7 +302,7 @@
      },
      {
       "t": 0.55,
-      "v": 0.5
+      "v": 0.4
      },
      {
       "t": 0.75,
@@ -583,9 +557,18 @@
    },
    {
     "region": "insula",
-    "explanation": "The front of the insula is part of the network that responds when rewards arrive, more strongly for food and erotic rewards than for money. It is not specific to good things: its activity rises with both positive and negative value.",
+    "explanation": "The front of the insula is more active during the wait than at the outcome, on the right side, and is also part of the network that responds when rewards arrive. It is not specific to good things: its activity shows a mixture of positive and negative effects of value.",
     "confidence": "mixed",
     "citations": [
+     {
+      "authors": "Oldham S, Murawski C, Fornito A, Youssef G, Yücel M, Lorenzetti V",
+      "year": 2018,
+      "title": "The anticipation and outcome phases of reward and loss processing: A neuroimaging meta-analysis of the monetary incentive delay task.",
+      "doi": "10.1002/hbm.24184",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "for (i) reward anticipation versus reward receipt (contrast RA‐RO), activity of the caudate/dorsal striatum, supplementary motor area, thalamus and right anterior insula"
+     },
      {
       "authors": "Sescousse G, Caldú X, Segura B, Dreher JC",
       "year": 2013,
@@ -620,16 +603,20 @@
       "v": 0
      },
      {
-      "t": 0.45,
-      "v": 0.05
+      "t": 0.12,
+      "v": 0.15
      },
      {
-      "t": 0.58,
-      "v": 0.5
+      "t": 0.32,
+      "v": 0.55
+     },
+     {
+      "t": 0.55,
+      "v": 0.4
      },
      {
       "t": 0.85,
-      "v": 0.35
+      "v": 0.25
      },
      {
       "t": 1,
@@ -642,8 +629,8 @@
    {
     "from": "vta",
     "to": "nucleus-accumbens",
-    "explanation": "The mesolimbic dopamine pathway, running from the midbrain up to the nucleus accumbens. This is a real nerve pathway, known from anatomy; its strength over the episode is drawn to follow the wanting phase and is not a measurement.",
-    "confidence": "mixed",
+    "explanation": "The mesolimbic dopamine pathway, running from the midbrain up to the nucleus accumbens. This is a real nerve pathway, known from anatomy; its strength over the episode is drawn to follow the wanting phase, on evidence mainly from animals, and is not a measurement.",
+    "confidence": "debated",
     "citations": [
      {
       "authors": "Berridge KC, Kringelbach ML",

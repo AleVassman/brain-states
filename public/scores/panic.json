@@ -1,8 +1,8 @@
 {
  "id": "panic",
  "title": "Panic attack: an alarm from inside the body",
- "description": "A panic attack is a sudden surge of intense fear with strong bodily sensations, often with no outside danger. The episode follows the kind of attack that can be studied: one set off in a scanner by breathing air with extra carbon dioxide, which gives a feeling of not getting enough air. It shows the response in someone with panic disorder; the typical response shows the same breathing test in someone without it.",
- "caveat": "Spontaneous panic attacks are almost never caught in a scanner, so this episode is built from attacks provoked with carbon dioxide, from scans of people with panic disorder doing other tasks, from a classic model based on fear learning in animals, and from one study of healthy volunteers being chased by a virtual predator. These were never one experiment. The role of the amygdala is disputed: the classic model puts it at the centre, later reviews find it less consistently than predicted, and three people with no working amygdala had panic attacks when given carbon dioxide. The brainstem is drawn as a rough outline of the whole structure because the small nuclei thought to be involved are not in the brain model. How an attack subsides has not been studied in scans.",
+ "description": "A panic attack is a sudden surge of intense fear with strong bodily sensations, often with no outside danger. The episode follows the kind of attack that can be studied: one set off in a scanner by breathing air with extra carbon dioxide, which gives a feeling of not getting enough air, in someone with panic disorder. Very little about panic is settled, and only two regions are drawn changing. There is no \"typical response\" to compare with: the one study that compared groups reported a single difference, described in the brainstem text.",
+ "caveat": "Spontaneous panic attacks are almost never caught in a scanner, so this episode is built from attacks provoked with carbon dioxide, from reviews of scans of people with panic disorder doing other tasks, from a classic model based on fear learning in animals, and from one study of healthy volunteers being chased by a virtual predator. These were never one experiment. The role of the amygdala is unresolved: the classic model puts it at the centre, later reviews find it less consistently than predicted, and three people with no working amygdala had panic attacks when given carbon dioxide, more readily than other people, which suggests the amygdala may normally hold panic back. The brainstem is drawn as a rough outline of the whole structure because the small nuclei thought to be involved are not in the brain model. How an attack subsides has not been studied in scans.",
  "durationSeconds": 34,
  "phases": [
   {
@@ -11,8 +11,7 @@
    "timescale": "seconds",
    "start": 0,
    "end": 0.14,
-   "caption": "It starts inside the body: here, carbon dioxide building up in the blood. The brainstem, which monitors breathing, responds more strongly than in someone without panic disorder.",
-   "typicalCaption": "Carbon dioxide builds up in the blood. The brainstem, which monitors breathing, responds, but less strongly."
+   "caption": "It starts inside the body: here, carbon dioxide building up in the blood. In one study the brainstem, which monitors breathing, responded more strongly in people with panic disorder than in others."
   },
   {
    "id": "alarm",
@@ -20,8 +19,7 @@
    "timescale": "seconds",
    "start": 0.14,
    "end": 0.42,
-   "caption": "The sensation is felt and read as danger. The front of the insula, which carries the felt state of the body, becomes more active the worse the breathing feels, and the cingulate cortex joins in. The amygdala is shown, but its part is disputed.",
-   "typicalCaption": "The front of the insula becomes more active the more uncomfortable the breathing feels. This happens in everyone.",
+   "caption": "The sensation is felt. The front of the insula, which carries the felt state of the body, becomes more active the worse the breathing feels; this was true of everyone studied, with or without panic disorder. Reviews also find the cingulate cortex behaving differently in panic disorder, without settling on how.",
    "order": {
     "kind": "reconstructed",
     "rationale": "The breathing study averaged over two minutes of carbon dioxide and did not time the regions against each other. That the brainstem signal comes before the felt alarm is an inference from the body signal being the trigger."
@@ -33,8 +31,7 @@
    "timescale": "minutes",
    "start": 0.42,
    "end": 0.76,
-   "caption": "At the height of the fear, activity is thought to shift down from the front of the brain to the midbrain, as it does in healthy volunteers when a threat closes in. In animals, signals from the amygdala to the hypothalamus and brainstem drive the racing heart and fast breathing.",
-   "typicalCaption": "The discomfort stays uncomfortable but does not turn into panic.",
+   "caption": "The height of the fear. In healthy volunteers facing a threat that closes in, activity shifts towards the midbrain, part of the brainstem; whether the same happens in panic is not known. In animals, the hypothalamus and brainstem drive the racing heart and fast breathing of fear.",
    "order": {
     "kind": "reconstructed",
     "rationale": "The shift towards the midbrain was measured in healthy volunteers as a virtual predator approached, not during panic. Using it for the peak of a panic attack is an analogy."
@@ -47,7 +44,6 @@
    "start": 0.76,
    "end": 1,
    "caption": "The attack passes. What the brain does as it subsides has not been studied in scans; this last part is an assumption.",
-   "typicalCaption": "Normal air again, and the response settles.",
    "order": {
     "kind": "reconstructed",
     "rationale": "No source read for this episode followed the end of a panic attack. The return to baseline is assumed."
@@ -58,7 +54,7 @@
   "regions": [
    {
     "region": "brainstem",
-    "explanation": "More active in people with panic disorder than in others when they breathe air with extra carbon dioxide, in one study read as an abstract. A review also lists the brainstem in the network that behaves differently in panic disorder. In healthy volunteers, a midbrain area inside the brainstem, the periaqueductal grey, becomes active as a threat closes in and more so the greater the dread; it is not drawn separately.",
+    "explanation": "More active in people with panic disorder than in others when they breathe air with extra carbon dioxide, in one study read as an abstract. A review also lists the brainstem in the network that behaves differently in panic disorder. In healthy volunteers, a midbrain area inside the brainstem, the periaqueductal grey, becomes active as a threat closes in, more so the greater the dread; that is not a panic finding and the area is not drawn separately.",
     "confidence": "mixed",
     "citations": [
      {
@@ -112,12 +108,8 @@
       "v": 0.7
      },
      {
-      "t": 0.55,
-      "v": 0.9
-     },
-     {
       "t": 0.76,
-      "v": 0.75
+      "v": 0.7
      },
      {
       "t": 1,
@@ -127,7 +119,7 @@
    },
    {
     "region": "insula",
-    "explanation": "The front of the insula became more active the more uncomfortable breathing felt, in people with and without panic disorder. Reviews include the insula in the network that behaves differently in panic disorder.",
+    "explanation": "The front of the insula became more active the more uncomfortable breathing felt, in people with and without panic disorder alike: no difference between the groups was reported. Reviews include the insula in the network that behaves differently in panic disorder.",
     "confidence": "mixed",
     "citations": [
      {
@@ -169,11 +161,7 @@
      },
      {
       "t": 0.36,
-      "v": 0.8
-     },
-     {
-      "t": 0.6,
-      "v": 0.85
+      "v": 0.7
      },
      {
       "t": 0.76,
@@ -186,59 +174,8 @@
     ]
    },
    {
-    "region": "dacc",
-    "explanation": "Reviews of scans in panic disorder find the anterior and middle cingulate cortex behaving differently, without settling on a direction for an attack itself. Drawn more active, following its rise in other alarm states; this direction is an assumption.",
-    "confidence": "debated",
-    "citations": [
-     {
-      "authors": "Sobanski T, Wagner G",
-      "year": 2017,
-      "title": "Functional neuroanatomy in panic disorder: Status quo of the research.",
-      "doi": "10.5498/wjp.v7.i1.12",
-      "kind": "review",
-      "access": "abstract-only",
-      "quote": "recent functional studies suggest abnormal activation mainly in an extended fear network comprising brainstem, anterior and midcingulate cortex (ACC and MCC), insula, and lateral as well as medial parts of the prefrontal cortex"
-     },
-     {
-      "authors": "Dresler T, Guhn A, Tupak SV, Ehlis AC, Herrmann MJ, Fallgatter AJ, Deckert J, Domschke K",
-      "year": 2013,
-      "title": "Revise the revised? New dimensions of the neuroanatomical hypothesis of panic disorder.",
-      "doi": "10.1007/s00702-012-0811-1",
-      "kind": "review",
-      "access": "abstract-only",
-      "quote": "The assumption of a generally hyperactive amygdala in PD seems to apply more to state than trait characteristics of PD, and involvement of further areas in the fear circuit, such as anterior cingulate and insula, is suggested."
-     }
-    ],
-    "keyframes": [
-     {
-      "t": 0,
-      "v": 0
-     },
-     {
-      "t": 0.14,
-      "v": 0.1
-     },
-     {
-      "t": 0.38,
-      "v": 0.6
-     },
-     {
-      "t": 0.6,
-      "v": 0.65
-     },
-     {
-      "t": 0.76,
-      "v": 0.5
-     },
-     {
-      "t": 1,
-      "v": 0.05
-     }
-    ]
-   },
-   {
     "region": "amygdala",
-    "explanation": "The classic model of panic puts the amygdala at the centre, by analogy with fear learning in animals, and says so as speculation. Later reviews find it less consistently than that model predicts, and more during an anxious state than as a lasting trait. Three people with no working amygdala on either side still had panic attacks when given carbon dioxide, so it is not needed for this kind of panic.",
+    "explanation": "Drawn at baseline, because the sources disagree on what it does. The classic model of panic puts the amygdala at the centre, by analogy with fear learning in animals, and says so as speculation. Later reviews find it less consistently than that model predicts. Three people with no working amygdala on either side had panic attacks when given carbon dioxide, and did so more readily than other people, which the authors take to suggest that the amygdala may normally hold panic back.",
     "confidence": "debated",
     "citations": [
      {
@@ -276,145 +213,6 @@
       "kind": "study",
       "access": "full-text",
       "quote": "these results indicate that the amygdala is not required for fear and panic evoked by CO2 inhalation"
-     }
-    ],
-    "keyframes": [
-     {
-      "t": 0,
-      "v": 0
-     },
-     {
-      "t": 0.14,
-      "v": 0.1
-     },
-     {
-      "t": 0.38,
-      "v": 0.5
-     },
-     {
-      "t": 0.6,
-      "v": 0.55
-     },
-     {
-      "t": 0.76,
-      "v": 0.4
-     },
-     {
-      "t": 1,
-      "v": 0.05
-     }
-    ]
-   },
-   {
-    "region": "hypothalamus",
-    "explanation": "In animals, signals from the amygdala to the hypothalamus and brainstem produce the bodily signs of fear, such as a racing heart. That the same happens in a human panic attack is the classic model's speculation.",
-    "confidence": "debated",
-    "citations": [
-     {
-      "authors": "Gorman JM, Kent JM, Sullivan GM, Coplan JD",
-      "year": 2000,
-      "title": "Neuroanatomical hypothesis of panic disorder, revised.",
-      "doi": "10.1176/appi.ajp.157.4.493",
-      "kind": "review",
-      "access": "abstract-only",
-      "quote": "Projections from the amygdala to hypothalamic and brainstem sites explain many of the observed signs of conditioned fear responses."
-     },
-     {
-      "authors": "Gorman JM, Kent JM, Sullivan GM, Coplan JD",
-      "year": 2000,
-      "title": "Neuroanatomical hypothesis of panic disorder, revised.",
-      "doi": "10.1176/appi.ajp.157.4.493",
-      "kind": "review",
-      "access": "abstract-only",
-      "quote": "It is speculated that a similar network is involved in panic disorder."
-     }
-    ],
-    "keyframes": [
-     {
-      "t": 0,
-      "v": 0
-     },
-     {
-      "t": 0.3,
-      "v": 0.05
-     },
-     {
-      "t": 0.5,
-      "v": 0.5
-     },
-     {
-      "t": 0.76,
-      "v": 0.4
-     },
-     {
-      "t": 1,
-      "v": 0
-     }
-    ]
-   },
-   {
-    "region": "vmpfc",
-    "explanation": "In healthy volunteers chased by a virtual predator, activity moved away from the ventromedial prefrontal cortex as the threat closed in. Drawn dimming at the peak by analogy; this was not measured during panic.",
-    "confidence": "debated",
-    "citations": [
-     {
-      "authors": "Mobbs D, Petrovic P, Marchant JL, Hassabis D, Weiskopf N, Seymour B, Dolan RJ, Frith CD",
-      "year": 2007,
-      "title": "When fear is near: threat imminence elicits prefrontal-periaqueductal gray shifts in humans.",
-      "doi": "10.1126/science.1144298",
-      "kind": "study",
-      "access": "full-text",
-      "quote": "as the virtual predator grew closer, brain activity shifted from the ventromedial prefrontal cortex to the periaqueductal gray"
-     }
-    ],
-    "keyframes": [
-     {
-      "t": 0,
-      "v": 0
-     },
-     {
-      "t": 0.3,
-      "v": 0.1
-     },
-     {
-      "t": 0.55,
-      "v": -0.45
-     },
-     {
-      "t": 0.76,
-      "v": -0.35
-     },
-     {
-      "t": 1,
-      "v": 0
-     }
-    ]
-   }
-  ],
-  "connections": [
-   {
-    "from": "amygdala",
-    "to": "hypothalamus",
-    "explanation": "A pathway known from animals, in which the amygdala drives the hypothalamus to produce the bodily signs of fear. Its part in human panic is speculation, and panic can occur without the amygdala.",
-    "confidence": "debated",
-    "citations": [
-     {
-      "authors": "Gorman JM, Kent JM, Sullivan GM, Coplan JD",
-      "year": 2000,
-      "title": "Neuroanatomical hypothesis of panic disorder, revised.",
-      "doi": "10.1176/appi.ajp.157.4.493",
-      "kind": "review",
-      "access": "abstract-only",
-      "quote": "Projections from the amygdala to hypothalamic and brainstem sites explain many of the observed signs of conditioned fear responses."
-     },
-     {
-      "authors": "Gorman JM, Kent JM, Sullivan GM, Coplan JD",
-      "year": 2000,
-      "title": "Neuroanatomical hypothesis of panic disorder, revised.",
-      "doi": "10.1176/appi.ajp.157.4.493",
-      "kind": "review",
-      "access": "abstract-only",
-      "quote": "It is speculated that a similar network is involved in panic disorder."
      },
      {
       "authors": "Feinstein JS, Buzza C, Hurlemann R, Follmer RL, Dahdaleh NS, Coryell WH, Welsh MJ, Tranel D, Wemmie JA",
@@ -423,7 +221,42 @@
       "doi": "10.1038/nn.3323",
       "kind": "study",
       "access": "full-text",
-      "quote": "these results indicate that the amygdala is not required for fear and panic evoked by CO2 inhalation"
+      "quote": "the higher rate of panic attacks in the amygdala-lesion patients suggests that an intact amygdala may normally inhibit panic"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "hypothalamus",
+    "explanation": "Evidence mainly from animals: there, signals reaching the hypothalamus and brainstem produce the bodily signs of fear, such as a racing heart. That the same happens in a human panic attack is the classic model's speculation, and nothing read for this episode measured it in people.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Gorman JM, Kent JM, Sullivan GM, Coplan JD",
+      "year": 2000,
+      "title": "Neuroanatomical hypothesis of panic disorder, revised.",
+      "doi": "10.1176/appi.ajp.157.4.493",
+      "kind": "review",
+      "access": "abstract-only",
+      "quote": "Projections from the amygdala to hypothalamic and brainstem sites explain many of the observed signs of conditioned fear responses."
+     },
+     {
+      "authors": "Gorman JM, Kent JM, Sullivan GM, Coplan JD",
+      "year": 2000,
+      "title": "Neuroanatomical hypothesis of panic disorder, revised.",
+      "doi": "10.1176/appi.ajp.157.4.493",
+      "kind": "review",
+      "access": "abstract-only",
+      "quote": "It is speculated that a similar network is involved in panic disorder."
      }
     ],
     "keyframes": [
@@ -437,86 +270,6 @@
      },
      {
       "t": 0.5,
-      "v": 0.6
-     },
-     {
-      "t": 0.76,
-      "v": 0.4
-     },
-     {
-      "t": 1,
-      "v": 0
-     }
-    ]
-   }
-  ]
- },
- "typical": {
-  "regions": [
-   {
-    "region": "brainstem",
-    "explanation": "Responds to carbon dioxide in people without panic disorder too, but less than in people with it. The size of the difference drawn is illustrative.",
-    "confidence": "mixed",
-    "citations": [
-     {
-      "authors": "Goossens L, Leibold N, Peeters R, Esquivel G, Knuts I, Backes W, Marcelis M, Hofman P, Griez E, Schruers K",
-      "year": 2014,
-      "title": "Brainstem response to hypercapnia: a symptom provocation study into the pathophysiology of panic disorder.",
-      "doi": "10.1177/0269881114527363",
-      "kind": "study",
-      "access": "abstract-only",
-      "quote": "Patients show increased brainstem activation in response to hypercapnia compared to controls and divers."
-     }
-    ],
-    "keyframes": [
-     {
-      "t": 0,
-      "v": 0
-     },
-     {
-      "t": 0.08,
-      "v": 0.2
-     },
-     {
-      "t": 0.3,
-      "v": 0.3
-     },
-     {
-      "t": 0.76,
-      "v": 0.3
-     },
-     {
-      "t": 1,
-      "v": 0
-     }
-    ]
-   },
-   {
-    "region": "insula",
-    "explanation": "The front of the insula became more active the more uncomfortable breathing felt, in every group studied.",
-    "confidence": "mixed",
-    "citations": [
-     {
-      "authors": "Goossens L, Leibold N, Peeters R, Esquivel G, Knuts I, Backes W, Marcelis M, Hofman P, Griez E, Schruers K",
-      "year": 2014,
-      "title": "Brainstem response to hypercapnia: a symptom provocation study into the pathophysiology of panic disorder.",
-      "doi": "10.1177/0269881114527363",
-      "kind": "study",
-      "access": "abstract-only",
-      "quote": "Subjective feelings of breathing discomfort were positively correlated with brain activation in the anterior insula in all groups."
-     }
-    ],
-    "keyframes": [
-     {
-      "t": 0,
-      "v": 0
-     },
-     {
-      "t": 0.14,
-      "v": 0.15
-     },
-     {
-      "t": 0.36,
       "v": 0.45
      },
      {
@@ -531,5 +284,6 @@
    }
   ],
   "connections": []
- }
+ },
+ "typical": null
 }

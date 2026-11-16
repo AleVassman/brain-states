@@ -7,12 +7,13 @@ sentence that supports it. Activity values are qualitative: direction and rough 
 
 ## What is reconstruction in this episode
 
-The first step, activity in the insula and the inferior frontal gyrus, is found by two pooled analyses and is the firm part. The rest is less settled. The shift from a control network to a vigilance network and back is a framework its authors propose, built partly on animal work. The hormone step rests on one study, and its finding runs against intuition: in people whose stress hormone rose, the hippocampus, hypothalamus and other regions became less active on the scan, although the hypothalamus is the structure that starts the hormone response. A scan signal going down does not mean every cell in a region is quieter, and the authors read the drop as a brake being released. Scanner stress tasks, such as timed arithmetic with critical feedback, are also a mild stand-in for real pressure.
+The first step, activity in the insula and the inferior frontal gyrus, is found by two pooled analyses and is the firm part. The rest is less settled. The shift from a control network to a vigilance network and back is a framework its authors propose, built partly on animal work. The hormone step rests on one study, and its finding runs against intuition: in people whose stress hormone rose, the hippocampus, hypothalamus and other regions became less active on the scan, although the hypothalamus is the structure that starts the hormone response. A scan signal going down does not mean every cell in a region is quieter, and the authors propose that the drop is part of how the stress response starts. Scanner stress tasks, such as timed arithmetic with critical feedback, are also a mild stand-in for real pressure.
 
 ## Notes from the research pass
 
 - No typical-response comparison: acute stress is an ordinary response, not a condition.
 - The recovery phase rests on Hermans et al. 2014 ("After stress subsides, resource allocation to these two networks reverses"), a proposed framework read as an abstract. It is marked reconstructed.
+- The control regions are not drawn dimming. The proposed shift away from them (Hermans et al. 2014: "at the cost of an executive control network") and the known loss of prefrontal abilities under stress (Arnsten 2009) are described in a caption, but no source read measured the regions themselves becoming less active.
 - The amygdala is not drawn. The pooled analyses read here did not report it as a consistent finding under stress, although the vigilance-network framework includes it.
 - The hypothalamus paradox is real in the literature and is left visible: the region that starts the hormone response showed a lower scan signal in the one human study read (Pruessner et al. 2008).
 - No lines are drawn: none of the sources read reports a specific connection changing under stress.
@@ -29,7 +30,7 @@ The first step, activity in the insula and the inferior frontal gyrus, is found 
 
 ### **insula** — Well established
 
-Claim: The front of the insula is active under stress in two separate pooled analyses, for both social pressure and physical stressors such as pain. It is the most reliable finding in brain scans of stress.
+Claim: The front of the insula is active under stress in two separate pooled analyses. One of them found it for both social pressure and physical stressors such as pain; the other covered social pressure only.
 
 On screen: peaks above baseline (0.8), ends above baseline (0.1).
 
@@ -40,7 +41,7 @@ On screen: peaks above baseline (0.8), ends above baseline (0.1).
 
 ### **vlpfc** — Well established
 
-Claim: The inferior frontal gyrus is active under stress in two separate pooled analyses, for both social pressure and physical stressors.
+Claim: The inferior frontal gyrus is active under stress in two separate pooled analyses. One of them found it for both social pressure and physical stressors; the other covered social pressure only.
 
 On screen: peaks above baseline (0.75), ends above baseline (0.1).
 
@@ -60,33 +61,24 @@ On screen: peaks below baseline (-0.55), ends at baseline (0).
 - Kogler L, Müller VI, Chang A, Eickhoff SB, Fox PT, Gur RC, Derntl B (2015). Psychosocial versus physiological stress - Meta-analyses on deactivations and activations of the neural correlates of stress reactions. doi:10.1016/j.neuroimage.2015.06.059 — meta-analysis, full-text
   > "deactivation during psychosocial stress compared to activation during physiological stress showed significantly more convergence in the ventral part of the striatum"
 
-### **dlpfc** — Still debated
-
-Claim: Part of the control network. A proposed framework holds that acute stress shifts resources to a vigilance network at this network's expense, and stress is known to impair the abilities the prefrontal cortex supports. Neither source read here measured this region becoming less active in people, so the dimming is an inference.
-
-On screen: peaks below baseline (-0.4), ends at baseline (0.05).
-
-- Hermans EJ, Henckens MJ, Joëls M, Fernández G (2014). Dynamic adaptation of large-scale brain networks in response to acute stressors. doi:10.1016/j.tins.2014.03.006 — review, abstract-only
-  > "exposure to acute stress prompts a reallocation of resources to a salience network, promoting fear and vigilance, at the cost of an executive control network"
-- Arnsten AF (2009). Stress signalling pathways that impair prefrontal cortex structure and function. doi:10.1038/nrn2648 — review, abstract-only
-  > "Even quite mild acute uncontrollable stress can cause a rapid and dramatic loss of prefrontal cognitive abilities"
-
 ### **hippocampus** — Mixed evidence
 
-Claim: Became less active during social stress in people whose stress hormone rose, and the bigger the hormone rise, the bigger the drop. From one study, read as an abstract. The authors propose the hippocampus normally holds the stress response back, so its quietening lets the response start.
+Claim: Became less active during social stress in people whose stress hormone rose, and the bigger the hormone rise, the bigger the drop. From one study, read as an abstract, whose authors propose that this reduction is essential for starting the stress response. A pooled analysis notes that findings for the hippocampus under stress have been inconsistent.
 
-On screen: peaks below baseline (-0.6), ends at baseline (-0.05).
+On screen: peaks below baseline (-0.5), ends at baseline (0).
 
 - Pruessner JC, Dedovic K, Khalili-Mahani N, Engert V, Pruessner M, Buss C, Renwick R, Dagher A, Meaney MJ, Lupien S (2008). Deactivation of the limbic system during acute psychosocial stress: evidence from positron emission tomography and functional magnetic resonance imaging studies. doi:10.1016/j.biopsych.2007.04.041 — study, abstract-only
   > "We observed a profound deactivation of limbic system components including hippocampus, hypothalamus, medio-orbitofrontal cortex and anterior cingulate cortex in subjects who reacted to the stressor with a significant increase of the endocrine stress marker cortisol."
 - Pruessner JC, Dedovic K, Khalili-Mahani N, Engert V, Pruessner M, Buss C, Renwick R, Dagher A, Meaney MJ, Lupien S (2008). Deactivation of the limbic system during acute psychosocial stress: evidence from positron emission tomography and functional magnetic resonance imaging studies. doi:10.1016/j.biopsych.2007.04.041 — study, abstract-only
   > "the degree of deactivation in the hippocampus was correlated with the release of cortisol in response to the stress task"
+- Kogler L, Müller VI, Chang A, Eickhoff SB, Fox PT, Gur RC, Derntl B (2015). Psychosocial versus physiological stress - Meta-analyses on deactivations and activations of the neural correlates of stress reactions. doi:10.1016/j.neuroimage.2015.06.059 — meta-analysis, full-text
+  > "inconsistent results regarding activation and deactivation have been reported, particularly in brain regions such as the hippocampus/amygdala, the anterior cingulate cortex (ACC) and prefrontal areas"
 
 ### **hypothalamus** — Still debated
 
 Claim: The starting point of the body's main stress-hormone system. The one human study read here found it less active on the scan in people whose stress hormone rose, which is the opposite of what its role would suggest. It is drawn dimmer, following that measurement; a scan signal going down does not show what the hormone-releasing cells themselves are doing.
 
-On screen: peaks below baseline (-0.4), ends at baseline (0).
+On screen: peaks below baseline (-0.5), ends at baseline (0).
 
 - Dedovic K, Duchesne A, Andrews J, Engert V, Pruessner JC (2009). The brain and the stress axis: the neural correlates of cortisol regulation in response to stress. doi:10.1016/j.neuroimage.2009.05.074 — review, abstract-only
   > "The hypothalamic-pituitary-adrenal (HPA) axis is the major endocrine stress axis of the human organism."
@@ -97,12 +89,14 @@ On screen: peaks below baseline (-0.4), ends at baseline (0).
 
 ### **vmpfc** — Mixed evidence
 
-Claim: The medial orbitofrontal cortex became less active during social stress in people whose stress hormone rose. From one study, read as an abstract, which reported the same for the anterior cingulate.
+Claim: The medial orbitofrontal cortex became less active during social stress in people whose stress hormone rose. From one study, read as an abstract, which reported the same for the anterior cingulate. A pooled analysis notes that findings for prefrontal areas under stress have been inconsistent. The three regions from this study are drawn dimming equally; the study does not rank them.
 
 On screen: peaks below baseline (-0.5), ends at baseline (0).
 
 - Pruessner JC, Dedovic K, Khalili-Mahani N, Engert V, Pruessner M, Buss C, Renwick R, Dagher A, Meaney MJ, Lupien S (2008). Deactivation of the limbic system during acute psychosocial stress: evidence from positron emission tomography and functional magnetic resonance imaging studies. doi:10.1016/j.biopsych.2007.04.041 — study, abstract-only
   > "We observed a profound deactivation of limbic system components including hippocampus, hypothalamus, medio-orbitofrontal cortex and anterior cingulate cortex in subjects who reacted to the stressor with a significant increase of the endocrine stress marker cortisol."
+- Kogler L, Müller VI, Chang A, Eickhoff SB, Fox PT, Gur RC, Derntl B (2015). Psychosocial versus physiological stress - Meta-analyses on deactivations and activations of the neural correlates of stress reactions. doi:10.1016/j.neuroimage.2015.06.059 — meta-analysis, full-text
+  > "inconsistent results regarding activation and deactivation have been reported, particularly in brain regions such as the hippocampus/amygdala, the anterior cingulate cortex (ACC) and prefrontal areas"
 
 ## The typical response
 

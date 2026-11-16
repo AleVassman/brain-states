@@ -96,7 +96,7 @@
   "kind": "mesh",
   "approximate": false,
   "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
-  "extentNote": "The reward findings cited for this region are for the striatum as a whole, of which this is the lower front part."
+  "extentNote": "Some findings shown on this region are for the striatum as a whole or its ventral part, of which this is the lower front part."
  },
  {
   "id": "nucleus-accumbens-r",
@@ -111,7 +111,7 @@
   "kind": "mesh",
   "approximate": false,
   "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
-  "extentNote": "The reward findings cited for this region are for the striatum as a whole, of which this is the lower front part."
+  "extentNote": "Some findings shown on this region are for the striatum as a whole or its ventral part, of which this is the lower front part."
  },
  {
   "id": "insula-l",
@@ -125,7 +125,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The whole insula is drawn. Most findings shown on it are for its front part."
  },
  {
   "id": "insula-r",
@@ -139,7 +140,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The whole insula is drawn. Most findings shown on it are for its front part."
  },
  {
   "id": "sgacc-l",
@@ -359,7 +361,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The whole orbitofrontal cortex is drawn. Findings shown on it are often for one part of it."
  },
  {
   "id": "ofc-r",
@@ -373,7 +376,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The whole orbitofrontal cortex is drawn. Findings shown on it are often for one part of it."
  },
  {
   "id": "pcc-precuneus-l",
@@ -387,7 +391,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The posterior cingulate and the precuneus are drawn together. Findings shown on them are often for the posterior cingulate alone."
  },
  {
   "id": "pcc-precuneus-r",
@@ -401,7 +406,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The posterior cingulate and the precuneus are drawn together. Findings shown on them are often for the posterior cingulate alone."
  },
  {
   "id": "vta-l",
@@ -542,7 +548,7 @@
   "kind": "mesh",
   "approximate": false,
   "source": "Colin27 average brain (McConnell BIC, 1998)",
-  "extentNote": "A rough outline of the whole brainstem, cut from a brain scan with a simple box. Findings shown on it are for the brainstem in general, or for small nuclei inside it that are not drawn separately."
+  "extentNote": "A rough outline of the whole brainstem, cut from a brain scan with a simple box; unlike the other regions it is not from an atlas. Findings shown on it are for the brainstem in general, or for small nuclei inside it that are not drawn separately."
  },
  {
   "id": "hypothalamus-r",
