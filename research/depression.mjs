@@ -38,6 +38,26 @@ const mullerPositive = cite(
   'muller2017',
   'Similarly, no convergence was found in analyses investigating positive (all P > .15), negative (all P > .76), or memory (all P > .48) processes.',
 );
+const mullerThalamus = cite(
+  'muller2017',
+  'the analyses across experiments of negative emotional processing revealed significant convergence in the left thalamus extending into hippocampus',
+);
+const hamiltonChallenged = cite(
+  'hamilton2012',
+  'even the neural findings that are considered most foundational in the neuroscience of depression, such as higher than normal baseline activity in the subgenual anterior cingulate cortex (6) and low activation in the dorsolateral prefrontal cortex (7), have not gone unchallenged',
+);
+const drevetsReduced = cite(
+  'drevets2008',
+  'although relative to controls, the depressed MDD and bipolar disorder subjects showed metabolic activity that appeared reduced in the sgACC',
+);
+const hamiltonDmn = cite(
+  'hamilton2015',
+  'the DMN need not be overactive, only functionally united with sgPFC to contribute to depressive rumination',
+);
+const kerenCaudate = cite(
+  'keren2018',
+  'the peak of activity difference between healthy volunteers and depressed subjects is in the caudate, rather than in the nucleus accumbens',
+);
 const kerenReward = cite(
   'keren2018',
   'Analysis of fMRI studies revealed significantly reduced striatal activation in depressed compared with healthy individuals during reward feedback.',
@@ -57,7 +77,7 @@ const score = {
   description:
     'During a depressive episode, something goes wrong: a setback, or a painful thought about oneself. The episode follows what happens next: a stronger response to the bad news, a turn inward into going over it again and again, and difficulty leaving that loop. The typical response shows the same setback in a brain that is not depressed. Unlike the other states, this one does not start from a neutral baseline: some differences are already there at rest.',
   caveat:
-    'Depression is not a spike but a state lasting weeks or months, and no scan has followed a ruminating brain through a loop over minutes or hours. What the research gives is separate snapshots: how the depressed brain differs at rest, how it responds to negative pictures and to rewards, and which regions are active when healthy volunteers are asked to ruminate. Stitching these into "setback, then turning inward, then staying stuck" is a reconstruction, and the order of every step is inferred. The picture is also contested: one large pooled analysis found no consistent differences in brain activity at all, and the largest study of resting connectivity found the default mode network less connected in depression, not more, mainly in people with recurrent depression and those on medication. Depression also varies widely between people.',
+    'Depression is not a spike but a state lasting weeks or months, and no scan has followed a ruminating brain through a loop over minutes or hours. What the research gives is separate snapshots: how the depressed brain differs at rest, how it responds to negative pictures and to rewards, and which regions are active when healthy volunteers are asked to ruminate. Stitching these into "setback, then turning inward, then staying stuck" is a reconstruction, and the order of every step is inferred. The picture is also contested: one large pooled analysis of task studies found no consistent differences in task-related activity, with one small exception, and the largest study of resting connectivity found the default mode network less connected in depression, not more, mainly in people with recurrent depression and those on medication. Depression also varies widely between people.',
   durationSeconds: 44,
   phases: [
     {
@@ -121,39 +141,39 @@ const score = {
       {
         region: 'sgacc',
         explanation:
-          'More active at rest during depression than in people who are not depressed, and more active in the depressed phase than after recovery in the same people. This rests on pooled findings of resting blood flow. It is drawn at a steady raised level: the sources read do not say whether it rises further during rumination.',
-        confidence: 'established',
-        citations: [hamiltonSgRest, drevetsPhase],
+          'More active at rest during depression than in people who are not depressed, and more active in the depressed phase than after recovery in the same people. This rests on pooled findings of resting blood flow, but even this foundational finding has been challenged: without correcting for the region being smaller in depression, its activity can appear reduced. It is drawn at a steady raised level: the sources read do not say whether it rises further during rumination.',
+        confidence: 'mixed',
+        citations: [hamiltonSgRest, drevetsPhase, drevetsReduced, hamiltonChallenged],
         keyframes: kf(0, 0.45, 1, 0.45),
       },
       {
         region: 'amygdala',
         explanation:
-          'Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis found no consistent differences in brain activity in depression at all.',
+          'Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis of task studies found no consistent differences in task-related activity, apart from one cluster in the left thalamus reaching into the hippocampus. It returns to rest on the same time course as in the typical brain: the studies measured the size of the response, not how long it lasts.',
         confidence: 'mixed',
-        citations: [hamiltonNegative, mullerNull],
-        keyframes: kf(0, 0, 0.12, 0.05, 0.24, 0.75, 0.45, 0.45, 0.7, 0.35, 1, 0.25),
+        citations: [hamiltonNegative, mullerNull, mullerThalamus],
+        keyframes: kf(0, 0, 0.12, 0.05, 0.24, 0.75, 0.45, 0.25, 0.7, 0, 1, 0),
       },
       {
         region: 'insula',
         explanation:
-          'Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis found no consistent differences.',
+          'Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis of task studies found no consistent differences. It returns to rest on the same time course as in the typical brain.',
         confidence: 'mixed',
         citations: [hamiltonNegative, mullerNull],
-        keyframes: kf(0, 0, 0.12, 0.05, 0.26, 0.65, 0.5, 0.4, 1, 0.25),
+        keyframes: kf(0, 0, 0.12, 0.05, 0.26, 0.65, 0.5, 0.2, 0.7, 0, 1, 0),
       },
       {
         region: 'dacc',
         explanation:
-          'Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis found no consistent differences.',
+          'Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis of task studies found no consistent differences. It returns to rest on the same time course as in the typical brain.',
         confidence: 'mixed',
         citations: [hamiltonNegative, mullerNull],
-        keyframes: kf(0, 0, 0.12, 0.05, 0.26, 0.6, 0.5, 0.35, 1, 0.2),
+        keyframes: kf(0, 0, 0.12, 0.05, 0.26, 0.6, 0.5, 0.15, 0.7, 0, 1, 0),
       },
       {
         region: 'dlpfc',
         explanation:
-          'A control region that responds less to negative material than in people who are not depressed. At rest, the wider control network it belongs to is also less tightly connected, which is a finding about connection, not activity, so the region is drawn at baseline until the setback. A later, larger pooled analysis of activity found no consistent differences.',
+          'A control region that responds less to negative material than in people who are not depressed. At rest, the wider control network it belongs to is also less tightly connected, which is a finding about connection, not activity, so the region is drawn at baseline until the setback. A later, larger pooled analysis of task studies found no consistent differences.',
         confidence: 'mixed',
         citations: [hamiltonNegative, kaiserControl, mullerNull],
         keyframes: kf(0, 0, 0.12, 0, 0.28, -0.55, 0.5, -0.3, 0.75, -0.1, 1, 0),
@@ -161,25 +181,25 @@ const score = {
       {
         region: 'mpfc',
         explanation:
-          'Part of the default mode network, active during rumination in studies of healthy volunteers. In depression this network is not reliably more active at rest; what differs is how it is connected. Its staying active for longer here is assumed from how long rumination lasts in depression, not measured.',
+          'Part of the default mode network, active during rumination in studies of healthy volunteers. In depression this network need not be more active; what differs is how it is connected. It is drawn reaching the same level as in the typical brain. Its coming round again and staying active for longer is assumed from how long rumination lasts in depression, not measured.',
         confidence: 'mixed',
-        citations: [zhouRumination, hamiltonSgRest],
-        keyframes: kf(0, 0, 0.32, 0.1, 0.44, 0.7, 0.54, 0.5, 0.64, 0.75, 0.74, 0.5, 0.86, 0.7, 1, 0.55),
+        citations: [zhouRumination, hamiltonSgRest, hamiltonDmn],
+        keyframes: kf(0, 0, 0.32, 0.1, 0.44, 0.55, 0.54, 0.4, 0.64, 0.55, 0.74, 0.4, 0.86, 0.55, 1, 0.45),
       },
       {
         region: 'pcc-precuneus',
         explanation:
-          'A core part of the default mode network, active during rumination in studies of healthy volunteers. Its staying active for longer here is assumed from how long rumination lasts in depression, not measured.',
+          'A core part of the default mode network, active during rumination in studies of healthy volunteers. In depression this network need not be more active, so it is drawn reaching the same level as in the typical brain. Its coming round again and staying active for longer is assumed from how long rumination lasts in depression, not measured.',
         confidence: 'mixed',
-        citations: [zhouRumination, hamiltonSgRest],
-        keyframes: kf(0, 0, 0.32, 0.1, 0.46, 0.65, 0.56, 0.45, 0.66, 0.7, 0.76, 0.45, 0.88, 0.65, 1, 0.5),
+        citations: [zhouRumination, hamiltonSgRest, hamiltonDmn],
+        keyframes: kf(0, 0, 0.32, 0.1, 0.46, 0.5, 0.56, 0.35, 0.66, 0.5, 0.76, 0.35, 0.88, 0.5, 1, 0.4),
       },
       {
-        region: 'nucleus-accumbens',
+        region: 'caudate',
         explanation:
-          'The striatum, part of the reward system, responds less in depression when something good happens, in a pooled analysis of reward studies. It is drawn here on the nucleus accumbens, the striatum\'s lower front part; the finding is for the striatum more broadly. A separate pooled analysis found no consistent differences for positive material. It is drawn at baseline until something good happens, because the finding is about the response to reward, not about rest.',
+          'The striatum, part of the reward system, responds less in depression when something good happens, in a pooled analysis of reward studies. The peak of the difference was in the caudate, not the nucleus accumbens, so it is drawn on the caudate. A separate pooled analysis found no consistent differences for positive material. It is drawn at baseline until something good happens, because the finding is about the response to reward, not about rest.',
         confidence: 'mixed',
-        citations: [kerenReward, mullerPositive],
+        citations: [kerenReward, kerenCaudate, mullerPositive],
         keyframes: kf(0, 0, 0.64, 0, 0.8, -0.6, 1, -0.3),
       },
     ],
@@ -256,7 +276,7 @@ writeScore(score, {
     'The design hypothesis "default mode network over-engaged" is only half supported. Hamilton et al. (2015) report that the default mode network is not reliably more active at rest in depression; the reliable differences are the subgenual cingulate\'s activity and its connectivity with that network. The episode follows that.',
     'Contrary evidence is cited on the tracks it bears on: Müller et al. (2017) found no convergent activity differences across 99 experiments; Yan et al. (2019, 1,300 patients) found reduced, not increased, default mode connectivity.',
     'The "loop that fails to exit" is the least supported part. No source measured rumination persisting in the scanner; it is marked reconstructed in the timeline and stated as an assumption in the affected regions.',
-    'The reward finding is for "striatal activation" (Keren et al. 2018). The atlas build has no caudate or putamen, so it is drawn on the nucleus accumbens and the text says so.',
+    'The reward finding is for "striatal activation" (Keren et al. 2018), with its peak in the caudate; it is drawn on the caudate.',
     'The typical variant has few regions: the sources report differences between groups, and only the ordinary response to negative material and rumination in healthy volunteers could be cited directly.',
     'Read as abstract only: Zhou 2020 (and Ruocco 2013, used for the typical response).',
   ],

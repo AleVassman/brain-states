@@ -133,17 +133,7 @@ const score = {
         keyframes: kf(0, 0, 0.32, 0, 0.52, -0.5, 0.78, -0.45, 1, 0),
       },
     ],
-    connections: [
-      {
-        from: 'mpfc',
-        to: 'amygdala',
-        explanation:
-          'Moving in opposite directions: in one study, the more active this part of the medial prefrontal cortex, the less active the amygdala. The line marks that opposing relationship, not closer cooperation. That the first is suppressing the second is the proposed explanation, not a measurement.',
-        confidence: 'debated',
-        citations: [laniusAmygdala, laniusInhibition],
-        keyframes: kf(0, 0, 0.14, 0.1, 0.45, 0.75, 0.78, 0.7, 1, 0.1),
-      },
-    ],
+    connections: [],
   },
   typical: null,
 };
@@ -151,6 +141,7 @@ const score = {
 writeScore(score, {
   indexTitle: 'Dissociation',
   notes: [
+    'No line is drawn between the medial prefrontal cortex and the amygdala. The finding is that one is more active as the other is less, which a bright line would show as the two working together; it is described in the amygdala text instead.',
     'No typical-response comparison. The informative contrast in the literature is between two responses to a trauma reminder, dissociating and being flooded, not between a condition and a typical brain. The flooded pattern is described in the amygdala text and not drawn.',
     'Reduced pain sensitivity during dissociation is from Ludäscher et al. 2010 ("Dissociative psychopathology scores were significantly higher and pain sensitivity was lower after the dissociation-inducing script was read compared with the neutral script."), a pilot study in borderline personality disorder without a comparison group. It is mentioned in the right insula text, with its quote, and not drawn.',
     'Not drawn: the dorsolateral prefrontal cortex, superior frontal regions, posterior association areas and basal ganglia named by Roydeva & Reinders 2021. The abstract lists them as markers without saying whether they are more or less active, so no direction could be shown.',

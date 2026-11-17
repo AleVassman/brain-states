@@ -557,6 +557,7 @@ export const SOURCES = {
     doi: '10.1016/j.biopsych.2009.03.007',
     kind: 'study',
     pmid: '19409533',
+    pmcid: 'PMC2885492',
   },
   brydon2008: {
     authors: 'Brydon L, Harrison NA, Walker C, Steptoe A, Critchley HD',
@@ -573,6 +574,7 @@ export const SOURCES = {
     doi: '10.1016/j.biopsych.2010.06.010',
     kind: 'study',
     pmid: '20719303',
+    pmcid: 'PMC3025604',
   },
   dantzer2008: {
     authors: "Dantzer R, O'Connor JC, Freund GG, Johnson RW, Kelley KW",
@@ -589,6 +591,7 @@ export const SOURCES = {
     doi: '10.1016/j.neubiorev.2018.07.013',
     kind: 'meta-analysis',
     pmid: '30067939',
+    pmcid: 'PMC6363360',
   },
   saper2012: {
     authors: 'Saper CB, Romanovsky AA, Scammell TE',
@@ -597,6 +600,7 @@ export const SOURCES = {
     doi: '10.1038/nn.3159',
     kind: 'review',
     pmid: '22837039',
+    pmcid: 'PMC3748818',
   },
 
   // ---- Alzheimer's disease --------------------------------------------------------------------

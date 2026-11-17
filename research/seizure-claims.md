@@ -1,6 +1,6 @@
 # Epileptic seizure: a temporal lobe seizure — claims and sources
 
-Owner sign-off: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/seizure.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.

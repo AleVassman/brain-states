@@ -1,6 +1,6 @@
 # Dissociation: detaching when something is overwhelming — claims and sources
 
-Owner sign-off: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/dissociation.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
@@ -11,6 +11,7 @@ This account comes mainly from small studies of people with post-traumatic stres
 
 ## Notes from the research pass
 
+- No line is drawn between the medial prefrontal cortex and the amygdala. The finding is that one is more active as the other is less, which a bright line would show as the two working together; it is described in the amygdala text instead.
 - No typical-response comparison. The informative contrast in the literature is between two responses to a trauma reminder, dissociating and being flooded, not between a condition and a typical brain. The flooded pattern is described in the amygdala text and not drawn.
 - Reduced pain sensitivity during dissociation is from Ludäscher et al. 2010 ("Dissociative psychopathology scores were significantly higher and pain sensitivity was lower after the dissociation-inducing script was read compared with the neutral script."), a pilot study in borderline personality disorder without a comparison group. It is mentioned in the right insula text, with its quote, and not drawn.
 - Not drawn: the dorsolateral prefrontal cortex, superior frontal regions, posterior association areas and basal ganglia named by Roydeva & Reinders 2021. The abstract lists them as markers without saying whether they are more or less active, so no direction could be shown.
@@ -81,17 +82,6 @@ On screen: peaks below baseline (-0.5), ends at baseline (0).
   > "The main limitation of this pilot study is the absence of a control group."
 - Ludäscher P, Valerius G, Stiglmayr C, Mauchnik J, Lanius RA, Bohus M, Schmahl C (2010). Pain sensitivity and neural processing during dissociative states in patients with borderline personality disorder with and without comorbid posttraumatic stress disorder: a pilot study. doi:10.1503/jpn.090022 — study, full-text
   > "Dissociative psychopathology scores were significantly higher and pain sensitivity was lower after the dissociation-inducing script was read compared with the neutral script."
-
-### **mpfc → amygdala** (connection) — Still debated
-
-Claim: Moving in opposite directions: in one study, the more active this part of the medial prefrontal cortex, the less active the amygdala. The line marks that opposing relationship, not closer cooperation. That the first is suppressing the second is the proposed explanation, not a measurement.
-
-On screen: peaks above baseline (0.75), ends above baseline (0.1).
-
-- Lanius RA, Vermetten E, Loewenstein RJ, Brand B, Schmahl C, Bremner JD, Spiegel D (2010). Emotion modulation in PTSD: Clinical and neurobiological evidence for a dissociative subtype. doi:10.1176/appi.ajp.2009.09081168 — review, full-text
-  > "the medial prefrontal cortex cluster that was positively correlated with state dissociative symptoms was negatively correlated with amygdala activity during script-driven imagery"
-- Lanius RA, Vermetten E, Loewenstein RJ, Brand B, Schmahl C, Bremner JD, Spiegel D (2010). Emotion modulation in PTSD: Clinical and neurobiological evidence for a dissociative subtype. doi:10.1176/appi.ajp.2009.09081168 — review, full-text
-  > "increased activation of medial prefrontal structures is consistent with hyperinhibition of those same limbic regions in states of pathological emotional overmodulation"
 
 ## The typical response
 

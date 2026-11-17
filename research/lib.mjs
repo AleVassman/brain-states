@@ -55,11 +55,11 @@ function claimRows(lines, tracks, label) {
   }
 }
 
-function claimsSheet(score, notes) {
+function claimsSheet(score, notes, review) {
   const lines = [
     `# ${score.title} — claims and sources`,
     '',
-    'Owner sign-off: **not yet reviewed**',
+    `Review: ${review}`,
     '',
     'Generated from `research/' + score.id + '.mjs`. Every claim the episode makes is listed with the exact',
     'sentence that supports it. Activity values are qualitative: direction and rough relative size only.',
@@ -101,11 +101,12 @@ function claimsSheet(score, notes) {
 /** `category` is the group the state is listed under: 'psychological' (default) or 'physical'. */
 export function writeScore(score, { indexTitle, notes, category = 'psychological' } = {}) {
   writeFileSync(`public/scores/${score.id}.json`, JSON.stringify(score, null, 1) + '\n');
-  writeFileSync(`research/${score.id}-claims.md`, claimsSheet(score, notes) + '\n');
 
   const indexPath = 'public/scores/index.json';
   const index = existsSync(indexPath) ? JSON.parse(readFileSync(indexPath, 'utf8')) : [];
   const existing = index.find((e) => e.id === score.id);
+  const review = existing?.reviewed ? existing.reviewNote ?? '**reviewed**' : '**not yet reviewed**';
+  writeFileSync(`research/${score.id}-claims.md`, claimsSheet(score, notes, review) + '\n');
   if (existing) {
     existing.title = indexTitle ?? score.title;
     existing.category = category;

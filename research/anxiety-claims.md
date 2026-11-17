@@ -1,6 +1,6 @@
 # Anxiety: responding to a possible threat — claims and sources
 
-Owner sign-off: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/anxiety.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
@@ -13,16 +13,15 @@ The findings come from different kinds of study that were never run as one exper
 
 - Dropped: the hypothalamus and stress-hormone response. The sources read mention them only as anatomical connections in animals, not as measurements in people.
 - Dropped: a specific claim that fear conditioning does not reliably activate the amygdala (Fullana et al. 2016). Only the abstract was available and it does not state this.
-- The amygdala is marked "mixed", not "well established": patients show more amygdala activity in one meta-analysis (Etkin & Wager 2007), but a later, larger whole-brain meta-analysis mostly did not detect it (Chavanne & Robinson 2021).
+- The amygdala is marked "mixed", not "well established": patients show more amygdala activity in one meta-analysis (Etkin & Wager 2007), but a later, larger whole-brain meta-analysis mostly did not detect it apart from a patient cluster that extends "to the amygdala" on the left (Chavanne & Robinson 2021).
+- The cingulate and medial frontal cluster found in both diagnosed and induced anxiety (Chavanne & Robinson 2021) is not drawn. Its peak (-12, -8, 68) lies near the supplementary motor area, not in the dorsal anterior cingulate, and by diagnosis it is driven by specific phobia, absent in panic disorder, PTSD and social anxiety, and reversed in generalised anxiety disorder.
 - Two sources were read as abstracts only: Méndez-Bértolo et al. 2016 and Picó-Pérez et al. 2017.
 
 ## Order of events
 
 1. **A possible threat** (a fraction of a second) — start of the episode.
-2. **Alarm** (seconds) — order **reconstructed**: Electrode recordings put the first amygdala response under a tenth of a second, while the wider response is measured with brain scans that cannot resolve events faster than seconds. That the amygdala leads is an inference; the order among the insula and cingulate is unknown.
-3. **Waiting, not knowing** (seconds to minutes) — order **timed**:
-   - Shackman AJ, Fox AS (2016). Contributions of the Central Extended Amygdala to Fear and Anxiety. doi:10.1523/jneurosci.0982-16.2016 — review, full-text
-     > "the BST shows a persistent hemodynamic response during the uncertain anticipation of noxious reinforcers, such as shock or aversive images, whereas the dorsal amygdala shows more transient responses"
+2. **Alarm** (seconds) — order **reconstructed**: Electrode recordings put the first amygdala response under a tenth of a second, while the wider response is measured with brain scans that cannot resolve events faster than seconds. That the amygdala leads is an inference; when the insula joins is not known.
+3. **Waiting, not knowing** (seconds to minutes) — order **reconstructed**: Some human scans find a persistent response in the bed nucleus and a brief one in the amygdala during uncertain waiting, but the review that reports them goes on to say a growing number of studies do not fit that pattern. The order drawn follows the older model and is not settled.
 4. **Regulation** (minutes) — order **reconstructed**: Deliberate rethinking takes seconds and, in the studies that measure it, people are asked to do it after the upsetting image has appeared. Placing it last follows that design; in life, regulation can begin earlier and overlap with the alarm.
 
 ## The condition
@@ -44,7 +43,7 @@ On screen: peaks above baseline (0.9), ends at baseline (0).
 
 ### **insula** — Well established
 
-Claim: More active than in people without an anxiety disorder. The insula tracks the internal state of the body, and a pooled analysis found it more active in both diagnosed anxiety and anxiety induced in healthy volunteers. It is also more active when people with anxiety or mood disorders try to rethink something upsetting.
+Claim: More active than in people without an anxiety disorder. The insula tracks the internal state of the body, and a pooled analysis found it more active in both diagnosed anxiety and anxiety induced in healthy volunteers. It is also more active when people with anxiety or mood disorders try to rethink something upsetting, which is why it stays raised at the end. One diagnosis goes the other way: in generalised anxiety disorder the insula was less active.
 
 On screen: peaks above baseline (0.9), ends above baseline (0.7).
 
@@ -54,24 +53,21 @@ On screen: peaks above baseline (0.9), ends above baseline (0.7).
   > "both showed increased activation in the bilateral insula (xyz=44,14,-14 and xyz=-38,20,-8;k=2102 and k=1305 respectively) and cingulate cortex/medial prefrontal cortex"
 - Picó-Pérez M, Radua J, Steward T, Menchón JM, Soriano-Mas C (2017). Emotion regulation in mood and anxiety disorders: A meta-analysis of fMRI cognitive reappraisal studies. doi:10.1016/j.pnpbp.2017.06.001 — meta-analysis, abstract-only
   > "they presented increased activation in regions that may be associated with the emotional experience (i.e., insula, cerebellum, precentral and inferior occipital gyri)"
-
-### **dacc** — Mixed evidence
-
-Claim: A cluster spanning the cingulate and medial frontal cortex is more active in both diagnosed and induced anxiety. The analysis does not pin the location down to this exact structure; it is drawn on the dorsal anterior cingulate as the nearest named region.
-
-On screen: peaks above baseline (0.7), ends above baseline (0.1).
-
 - Chavanne AV, Robinson OJ (2021). The Overlapping Neurobiology of Induced and Pathological Anxiety: A Meta-Analysis of Functional Neural Activation. doi:10.1176/appi.ajp.2020.19111153 — meta-analysis, full-text
-  > "both showed increased activation in the bilateral insula (xyz=44,14,-14 and xyz=-38,20,-8;k=2102 and k=1305 respectively) and cingulate cortex/medial prefrontal cortex"
+  > "In contrast to the other disorders, generalized anxiety disorder (233 patients) shows deactivation in the cingulate cortex and in bilateral insula."
 
 ### **bnst** — Still debated
 
-Claim: Holds a sustained response while a threat stays uncertain. The clearest evidence is from rodents, and little is known about it in people. Brain-scan studies in people do show a persistent response here during uncertain waiting, but the tidy split between a fast amygdala and a slow bed nucleus is contested: in monkeys, both are tied to sustained anxiety. It is drawn exactly as in the typical brain, because the sources read report no difference in anxiety disorders.
+Claim: Holds a sustained response while a threat stays uncertain. The clearest evidence is from rodents, and little is known about it in people. Brain-scan studies in people do show a persistent response here during uncertain waiting, but the tidy split between a fast amygdala and a slow bed nucleus is contested: the same review concludes that evidence from humans, monkeys and rodents refutes a strict separation, and in monkeys both are tied to sustained anxiety. It is drawn exactly as in the typical brain, because the sources read report no difference in anxiety disorders.
 
 On screen: peaks above baseline (0.5), ends at baseline (0.05).
 
 - Shackman AJ, Fox AS (2016). Contributions of the Central Extended Amygdala to Fear and Anxiety. doi:10.1523/jneurosci.0982-16.2016 — review, full-text
   > "the BST shows a persistent hemodynamic response during the uncertain anticipation of noxious reinforcers, such as shock or aversive images, whereas the dorsal amygdala shows more transient responses"
+- Shackman AJ, Fox AS (2016). Contributions of the Central Extended Amygdala to Fear and Anxiety. doi:10.1523/jneurosci.0982-16.2016 — review, full-text
+  > "On the other hand, a growing number of human imaging studies are difficult to reconcile with the early Davis model."
+- Shackman AJ, Fox AS (2016). Contributions of the Central Extended Amygdala to Fear and Anxiety. doi:10.1523/jneurosci.0982-16.2016 — review, full-text
+  > "this rapidly accumulating body of observations in humans, monkeys, and rodents refutes longstanding claims of strict phenomenological or anatomical segregation in the extended amygdala"
 - Shackman AJ, Fox AS (2016). Contributions of the Central Extended Amygdala to Fear and Anxiety. doi:10.1523/jneurosci.0982-16.2016 — review, full-text
   > "metabolic activity in both the amygdala and the BST is associated with heightened signs of fear and anxiety"
 - Avery SN, Clauss JA, Blackford JU (2016). The Human BNST: Functional Role in Anxiety and Addiction. doi:10.1038/npp.2015.185 — review, full-text
@@ -110,7 +106,7 @@ On screen: peaks below baseline (-0.6), ends below baseline (-0.5).
 
 ### **amygdala** — Well established
 
-Claim: Responds to the possible threat in healthy volunteers too, then fades: during uncertain waiting its response is transient. It quietens further when the situation is rethought.
+Claim: Responds to the possible threat in healthy volunteers too, then fades. Some studies find its response brief during uncertain waiting, though that is disputed. It quietens further when the situation is rethought.
 
 On screen: peaks above baseline (0.6), ends at baseline (0).
 
@@ -118,6 +114,8 @@ On screen: peaks above baseline (0.6), ends at baseline (0).
   > "we also observed consistent amygdala activation during fear conditioning in healthy subjects"
 - Shackman AJ, Fox AS (2016). Contributions of the Central Extended Amygdala to Fear and Anxiety. doi:10.1523/jneurosci.0982-16.2016 — review, full-text
   > "the BST shows a persistent hemodynamic response during the uncertain anticipation of noxious reinforcers, such as shock or aversive images, whereas the dorsal amygdala shows more transient responses"
+- Shackman AJ, Fox AS (2016). Contributions of the Central Extended Amygdala to Fear and Anxiety. doi:10.1523/jneurosci.0982-16.2016 — review, full-text
+  > "On the other hand, a growing number of human imaging studies are difficult to reconcile with the early Davis model."
 - Buhle JT, Silvers JA, Wager TD, Lopez R, Onyemekwu C, Kober H, Weber J, Ochsner KN (2014). Cognitive reappraisal of emotion: a meta-analysis of human neuroimaging studies. doi:10.1093/cercor/bht154 — meta-analysis, full-text
   > "reappraisal was consistently associated with bilateral amygdala modulation, but no change was observed in other regions related to emotional responding"
 
@@ -130,23 +128,16 @@ On screen: peaks above baseline (0.5), ends at baseline (0.05).
 - Chavanne AV, Robinson OJ (2021). The Overlapping Neurobiology of Induced and Pathological Anxiety: A Meta-Analysis of Functional Neural Activation. doi:10.1176/appi.ajp.2020.19111153 — meta-analysis, full-text
   > "both showed increased activation in the bilateral insula (xyz=44,14,-14 and xyz=-38,20,-8;k=2102 and k=1305 respectively) and cingulate cortex/medial prefrontal cortex"
 
-### **dacc** — Mixed evidence
-
-Claim: A cluster spanning the cingulate and medial frontal cortex is more active while healthy volunteers wait for an unpredictable threat. Drawn on the dorsal anterior cingulate as the nearest named region.
-
-On screen: peaks above baseline (0.4), ends at baseline (0.05).
-
-- Chavanne AV, Robinson OJ (2021). The Overlapping Neurobiology of Induced and Pathological Anxiety: A Meta-Analysis of Functional Neural Activation. doi:10.1176/appi.ajp.2020.19111153 — meta-analysis, full-text
-  > "both showed increased activation in the bilateral insula (xyz=44,14,-14 and xyz=-38,20,-8;k=2102 and k=1305 respectively) and cingulate cortex/medial prefrontal cortex"
-
 ### **bnst** — Still debated
 
-Claim: Holds a sustained response while healthy volunteers wait in uncertainty, as the amygdala's response fades. Much of what is known comes from rodents.
+Claim: Thought to hold a sustained response while healthy volunteers wait in uncertainty, as the amygdala's response fades. Some human scans show this, but others do not, and a strict split between the two is disputed. Much of what is known comes from rodents.
 
 On screen: peaks above baseline (0.5), ends at baseline (0.05).
 
 - Shackman AJ, Fox AS (2016). Contributions of the Central Extended Amygdala to Fear and Anxiety. doi:10.1523/jneurosci.0982-16.2016 — review, full-text
   > "the BST shows a persistent hemodynamic response during the uncertain anticipation of noxious reinforcers, such as shock or aversive images, whereas the dorsal amygdala shows more transient responses"
+- Shackman AJ, Fox AS (2016). Contributions of the Central Extended Amygdala to Fear and Anxiety. doi:10.1523/jneurosci.0982-16.2016 — review, full-text
+  > "On the other hand, a growing number of human imaging studies are difficult to reconcile with the early Davis model."
 - Avery SN, Clauss JA, Blackford JU (2016). The Human BNST: Functional Role in Anxiety and Addiction. doi:10.1038/npp.2015.185 — review, full-text
   > "Rodent studies provide compelling evidence that the BNST plays a central role in sustained threat monitoring, a form of adaptive anxiety, and in the withdrawal and relapse stages of addiction; however, little is known about the role of BNST in humans."
 

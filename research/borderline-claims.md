@@ -1,13 +1,13 @@
 # Borderline: an emotional spike and its slow return — claims and sources
 
-Owner sign-off: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/borderline.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
 
 ## What is reconstruction in this episode
 
-This is the least settled of the four episodes, and every region in it is marked as mixed or debated. Two pooled analyses disagree about whether the amygdala is more or less active, and the largest and most recent one found no consistent pattern at all across studies. The slow return to baseline comes from single studies, in which people looked at upsetting pictures in a scanner for seconds to minutes. Nothing here measures the hours that an episode can last in life, and upsetting pictures are a weak stand-in for the interpersonal events that usually set an episode off. Most participants in these studies were women, and medication appears to change the findings.
+This is one of the least settled episodes in the app, and every region in it is marked as mixed or debated. Two pooled analyses disagree about whether the amygdala is more or less active, and the largest and most recent one found no consistent pattern across all kinds of task, though when it looked only at emotion tasks it found both amygdalae more active across studies. The slow return to baseline comes from single studies, in which people looked at upsetting pictures in a scanner for seconds to minutes. Nothing here measures the hours that an episode can last in life, and upsetting pictures are a weak stand-in for the interpersonal events that usually set an episode off. Most participants in these studies were women, and medication appears to change the findings.
 
 ## Notes from the research pass
 
@@ -29,7 +29,7 @@ This is the least settled of the four episodes, and every region in it is marked
 
 ### **amygdala** — Still debated
 
-Claim: The most disputed finding. One pooled analysis found the left amygdala more active than in people without the condition, mainly in people not taking medication. Another found it less active. The largest found no consistent difference. What single studies do show is a difference in timing: the response is slower to return to baseline and does not shrink when the same upsetting picture is shown again. Because the size of the response is disputed, it is drawn rising to the same height as in the typical brain; only the slower return differs.
+Claim: The most disputed finding. One pooled analysis found the left amygdala more active than in people without the condition, mainly in people not taking medication. Another found it less active. The largest found no consistent difference across all kinds of task, but when it looked only at emotion tasks it found both amygdalae more active. What single studies do show is a difference in timing: the response is slower to return to baseline and does not shrink when the same upsetting picture is shown again. Because the size of the response is disputed, it is drawn rising to the same height as in the typical brain; only the slower return differs.
 
 On screen: peaks above baseline (0.6), ends above baseline (0.3).
 
@@ -41,6 +41,8 @@ On screen: peaks above baseline (0.6), ends above baseline (0.3).
   > "they showed less activation than control subjects in a network of regions that extended from the amygdala to the subgenual anterior cingulate and dorsolateral prefrontal cortex"
 - Degasperi G, Cristea IA, Di Rosa E, Costa C, Gentili C (2021). Parsing variability in borderline personality disorder: a meta-analysis of neuroimaging studies. doi:10.1038/s41398-021-01446-z — meta-analysis, full-text
   > "No consistent pattern of alteration in brain activity for BPD was evidenced suggesting substantial heterogeneity of processes and populations studied."
+- Degasperi G, Cristea IA, Di Rosa E, Costa C, Gentili C (2021). Parsing variability in borderline personality disorder: a meta-analysis of neuroimaging studies. doi:10.1038/s41398-021-01446-z — meta-analysis, full-text
+  > "we found significant clusters in the two amygdalae along with the anterior cingulate (ACC)/middle frontal gyrus (MFG)"
 - Hazlett EA, Zhang J, New AS, Zelmanova Y, Goldstein KE, Haznedar MM, Meyerson D, Goodman M, Siever LJ, Chu KW (2012). Potentiated amygdala response to repeated emotional pictures in borderline personality disorder. doi:10.1016/j.biopsych.2012.03.027 — study, full-text
   > "the BPD patients exhibited an overall amygdala BOLD response curve (averaged across all repeated-measures except Time) with a much slower return to baseline compared with the HC and SPD groups"
 - Hazlett EA, Zhang J, New AS, Zelmanova Y, Goldstein KE, Haznedar MM, Meyerson D, Goodman M, Siever LJ, Chu KW (2012). Potentiated amygdala response to repeated emotional pictures in borderline personality disorder. doi:10.1016/j.biopsych.2012.03.027 — study, full-text
@@ -48,9 +50,9 @@ On screen: peaks above baseline (0.6), ends above baseline (0.3).
 - Kamphausen S, Schröder P, Maier S, Bader K, Feige B, Kaller CP, Glauche V, Ohlendorf S, Tebartz van Elst L, Klöppel S, Jacob GA, Silbersweig D, Lieb K, Tüscher O (2013). Medial prefrontal dysfunction and prolonged amygdala response during instructed fear processing in borderline personality disorder. doi:10.3109/15622975.2012.665174 — study, abstract-only
   > "BPD compared to control subjects did not show fMRI signal decrease of amygdala activity or relative ventromedial prefrontal cortex (vmPFC) activity increase over time."
 
-### **insula** — Mixed evidence
+### **insula** — Still debated
 
-Claim: More active than in people without the condition when processing something upsetting, in one pooled analysis. A larger, later analysis found no consistent pattern.
+Claim: More active than in people without the condition when processing something upsetting, in one pooled analysis. The largest, later analysis found no consistent pattern across all tasks, and in one of its emotion-task analyses found the insula less active, not more. The direction is therefore disputed.
 
 On screen: peaks above baseline (0.7), ends above baseline (0.35).
 
@@ -58,6 +60,8 @@ On screen: peaks above baseline (0.7), ends above baseline (0.35).
   > "BPD patients demonstrated greater activation within the insula and posterior cingulate cortex"
 - Degasperi G, Cristea IA, Di Rosa E, Costa C, Gentili C (2021). Parsing variability in borderline personality disorder: a meta-analysis of neuroimaging studies. doi:10.1038/s41398-021-01446-z — meta-analysis, full-text
   > "No consistent pattern of alteration in brain activity for BPD was evidenced suggesting substantial heterogeneity of processes and populations studied."
+- Degasperi G, Cristea IA, Di Rosa E, Costa C, Gentili C (2021). Parsing variability in borderline personality disorder: a meta-analysis of neuroimaging studies. doi:10.1038/s41398-021-01446-z — meta-analysis, full-text
+  > "showed a significant cluster in the insula/inferior frontal gyrus for the HC > BPD contrast"
 
 ### **pcc-precuneus** — Mixed evidence
 

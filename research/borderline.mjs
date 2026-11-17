@@ -23,6 +23,14 @@ const degasperiNull = cite(
   'degasperi2021',
   'No consistent pattern of alteration in brain activity for BPD was evidenced suggesting substantial heterogeneity of processes and populations studied.',
 );
+const degasperiAmygdala = cite(
+  'degasperi2021',
+  'we found significant clusters in the two amygdalae along with the anterior cingulate (ACC)/middle frontal gyrus (MFG)',
+);
+const degasperiInsula = cite(
+  'degasperi2021',
+  'showed a significant cluster in the insula/inferior frontal gyrus for the HC > BPD contrast',
+);
 const hazlettSlow = cite(
   'hazlett2012',
   'the BPD patients exhibited an overall amygdala BOLD response curve (averaged across all repeated-measures except Time) with a much slower return to baseline compared with the HC and SPD groups',
@@ -54,7 +62,7 @@ const score = {
   description:
     'Something emotionally upsetting happens. The episode follows the response in a brain with borderline personality disorder; the typical response shows the same moment in a brain without it. What stands out most in the research is not where the response happens but how it unfolds in time: the response is slower to come back down, and it does not fade with repetition the way it usually does.',
   caveat:
-    'This is the least settled of the four episodes, and every region in it is marked as mixed or debated. Two pooled analyses disagree about whether the amygdala is more or less active, and the largest and most recent one found no consistent pattern at all across studies. The slow return to baseline comes from single studies, in which people looked at upsetting pictures in a scanner for seconds to minutes. Nothing here measures the hours that an episode can last in life, and upsetting pictures are a weak stand-in for the interpersonal events that usually set an episode off. Most participants in these studies were women, and medication appears to change the findings.',
+    'This is one of the least settled episodes in the app, and every region in it is marked as mixed or debated. Two pooled analyses disagree about whether the amygdala is more or less active, and the largest and most recent one found no consistent pattern across all kinds of task, though when it looked only at emotion tasks it found both amygdalae more active across studies. The slow return to baseline comes from single studies, in which people looked at upsetting pictures in a scanner for seconds to minutes. Nothing here measures the hours that an episode can last in life, and upsetting pictures are a weak stand-in for the interpersonal events that usually set an episode off. Most participants in these studies were women, and medication appears to change the findings.',
   durationSeconds: 40,
   phases: [
     {
@@ -115,17 +123,17 @@ const score = {
       {
         region: 'amygdala',
         explanation:
-          'The most disputed finding. One pooled analysis found the left amygdala more active than in people without the condition, mainly in people not taking medication. Another found it less active. The largest found no consistent difference. What single studies do show is a difference in timing: the response is slower to return to baseline and does not shrink when the same upsetting picture is shown again. Because the size of the response is disputed, it is drawn rising to the same height as in the typical brain; only the slower return differs.',
+          'The most disputed finding. One pooled analysis found the left amygdala more active than in people without the condition, mainly in people not taking medication. Another found it less active. The largest found no consistent difference across all kinds of task, but when it looked only at emotion tasks it found both amygdalae more active. What single studies do show is a difference in timing: the response is slower to return to baseline and does not shrink when the same upsetting picture is shown again. Because the size of the response is disputed, it is drawn rising to the same height as in the typical brain; only the slower return differs.',
         confidence: 'debated',
-        citations: [schulzeMain, schulzeMedication, ruoccoLess, degasperiNull, hazlettSlow, hazlettRepeated, kamphausenNoDecrease],
+        citations: [schulzeMain, schulzeMedication, ruoccoLess, degasperiNull, degasperiAmygdala, hazlettSlow, hazlettRepeated, kamphausenNoDecrease],
         keyframes: kf(0, 0, 0.12, 0.15, 0.3, 0.6, 0.55, 0.58, 0.74, 0.5, 1, 0.3),
       },
       {
         region: 'insula',
         explanation:
-          'More active than in people without the condition when processing something upsetting, in one pooled analysis. A larger, later analysis found no consistent pattern.',
-        confidence: 'mixed',
-        citations: [ruoccoMore, degasperiNull],
+          'More active than in people without the condition when processing something upsetting, in one pooled analysis. The largest, later analysis found no consistent pattern across all tasks, and in one of its emotion-task analyses found the insula less active, not more. The direction is therefore disputed.',
+        confidence: 'debated',
+        citations: [ruoccoMore, degasperiNull, degasperiInsula],
         keyframes: kf(0, 0, 0.12, 0.1, 0.36, 0.7, 0.74, 0.6, 1, 0.35),
       },
       {

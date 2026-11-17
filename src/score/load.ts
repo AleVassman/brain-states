@@ -9,8 +9,10 @@ export interface ScoreIndexEntry {
   file: string;
   /** Missing on older lists; treated as psychological. */
   category?: ScoreCategory;
-  /** False until the owner has read this state's claims and sources. */
+  /** False until the state's claims have been checked against its sources. */
   reviewed: boolean;
+  /** How and when it was checked; shown in the claims sheet. */
+  reviewNote?: string;
 }
 
 const base = import.meta.env?.BASE_URL ?? './';

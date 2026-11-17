@@ -1,7 +1,7 @@
 {
  "id": "anxiety",
  "title": "Anxiety: responding to a possible threat",
- "description": "Something that might be a threat appears, and it stays uncertain for a while. The episode follows the response in a brain with an anxiety disorder; the typical response shows the same moment in a brain without one. The same regions take part in both. What the research supports is a difference in how strongly some of them respond and in how much the control regions step in. Whether the response also lasts longer in an anxiety disorder was not covered by the sources read, so the two brains follow the same time course here.",
+ "description": "Something that might be a threat appears, and it stays uncertain for a while. The episode follows the response in a brain with an anxiety disorder; the typical response shows the same moment in a brain without one. The same regions take part in both. What the research supports is a difference in how strongly some of them respond and in how much the control regions step in. Whether the response also lasts longer in an anxiety disorder was not covered by the sources read, so the two brains follow the same time course here, except the insula, which stays raised while people with anxiety try to rethink the situation.",
  "caveat": "The findings come from different kinds of study that were never run as one experiment: group comparisons of people with social anxiety, phobia, PTSD and other anxiety disorders; studies of healthy volunteers waiting for an unpredictable shock; recordings from electrodes in the amygdala; and studies where people were asked to rethink an upsetting image. Joining them into one continuous episode is a reconstruction. \"Anxiety disorder\" here is an average over several different diagnoses, which differ from one another. The hypothalamus and the body's stress hormones are left out because none of the sources read for this episode measured them in people.",
  "durationSeconds": 36,
  "phases": [
@@ -20,11 +20,11 @@
    "timescale": "seconds",
    "start": 0.14,
    "end": 0.42,
-   "caption": "The alarm spreads. The insula, which tracks the state of the body, and the cingulate and medial frontal cortex respond strongly, and the amygdala responds more than it would in a typical brain.",
-   "typicalCaption": "The insula and the cingulate and medial frontal cortex join in. The pattern is the same as in an anxiety disorder, only smaller.",
+   "caption": "The alarm spreads. The insula, which tracks the state of the body, responds strongly, and the amygdala responds more than it would in a typical brain.",
+   "typicalCaption": "The insula joins in. The pattern is the same as in an anxiety disorder, only smaller.",
    "order": {
     "kind": "reconstructed",
-    "rationale": "Electrode recordings put the first amygdala response under a tenth of a second, while the wider response is measured with brain scans that cannot resolve events faster than seconds. That the amygdala leads is an inference; the order among the insula and cingulate is unknown."
+    "rationale": "Electrode recordings put the first amygdala response under a tenth of a second, while the wider response is measured with brain scans that cannot resolve events faster than seconds. That the amygdala leads is an inference; when the insula joins is not known."
    }
   },
   {
@@ -33,21 +33,11 @@
    "timescale": "seconds to minutes",
    "start": 0.42,
    "end": 0.72,
-   "caption": "The threat stays uncertain. A small structure deep in the front of the brain, the bed nucleus of the stria terminalis, holds a sustained response while the amygdala's own response fades. This is known mostly from animal studies, and no difference from the typical brain is shown at this step because none was found in the sources read.",
-   "typicalCaption": "While things stay uncertain the bed nucleus of the stria terminalis holds a sustained response, as the amygdala's own response fades. This is known mostly from animal studies.",
+   "caption": "The threat stays uncertain. A small structure deep in the front of the brain, the bed nucleus of the stria terminalis, is thought to hold a sustained response while the amygdala's own response fades. Some human scans show this, but a growing number do not, and researchers now dispute a strict split between the two. No difference from the typical brain is shown at this step because none was found in the sources read.",
+   "typicalCaption": "While things stay uncertain the bed nucleus of the stria terminalis is thought to hold a sustained response as the amygdala's own response fades. Some human scans show this; others do not, and the split is disputed.",
    "order": {
-    "kind": "timed",
-    "citations": [
-     {
-      "authors": "Shackman AJ, Fox AS",
-      "year": 2016,
-      "title": "Contributions of the Central Extended Amygdala to Fear and Anxiety.",
-      "doi": "10.1523/jneurosci.0982-16.2016",
-      "kind": "review",
-      "access": "full-text",
-      "quote": "the BST shows a persistent hemodynamic response during the uncertain anticipation of noxious reinforcers, such as shock or aversive images, whereas the dorsal amygdala shows more transient responses"
-     }
-    ]
+    "kind": "reconstructed",
+    "rationale": "Some human scans find a persistent response in the bed nucleus and a brief one in the amygdala during uncertain waiting, but the review that reports them goes on to say a growing number of studies do not fit that pattern. The order drawn follows the older model and is not settled."
    }
   },
   {
@@ -137,7 +127,7 @@
    },
    {
     "region": "insula",
-    "explanation": "More active than in people without an anxiety disorder. The insula tracks the internal state of the body, and a pooled analysis found it more active in both diagnosed anxiety and anxiety induced in healthy volunteers. It is also more active when people with anxiety or mood disorders try to rethink something upsetting.",
+    "explanation": "More active than in people without an anxiety disorder. The insula tracks the internal state of the body, and a pooled analysis found it more active in both diagnosed anxiety and anxiety induced in healthy volunteers. It is also more active when people with anxiety or mood disorders try to rethink something upsetting, which is why it stays raised at the end. One diagnosis goes the other way: in generalised anxiety disorder the insula was less active.",
     "confidence": "established",
     "citations": [
      {
@@ -166,6 +156,15 @@
       "kind": "meta-analysis",
       "access": "abstract-only",
       "quote": "they presented increased activation in regions that may be associated with the emotional experience (i.e., insula, cerebellum, precentral and inferior occipital gyri)"
+     },
+     {
+      "authors": "Chavanne AV, Robinson OJ",
+      "year": 2021,
+      "title": "The Overlapping Neurobiology of Induced and Pathological Anxiety: A Meta-Analysis of Functional Neural Activation.",
+      "doi": "10.1176/appi.ajp.2020.19111153",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "In contrast to the other disorders, generalized anxiety disorder (233 patients) shows deactivation in the cingulate cortex and in bilateral insula."
      }
     ],
     "keyframes": [
@@ -192,46 +191,8 @@
     ]
    },
    {
-    "region": "dacc",
-    "explanation": "A cluster spanning the cingulate and medial frontal cortex is more active in both diagnosed and induced anxiety. The analysis does not pin the location down to this exact structure; it is drawn on the dorsal anterior cingulate as the nearest named region.",
-    "confidence": "mixed",
-    "citations": [
-     {
-      "authors": "Chavanne AV, Robinson OJ",
-      "year": 2021,
-      "title": "The Overlapping Neurobiology of Induced and Pathological Anxiety: A Meta-Analysis of Functional Neural Activation.",
-      "doi": "10.1176/appi.ajp.2020.19111153",
-      "kind": "meta-analysis",
-      "access": "full-text",
-      "quote": "both showed increased activation in the bilateral insula (xyz=44,14,-14 and xyz=-38,20,-8;k=2102 and k=1305 respectively) and cingulate cortex/medial prefrontal cortex"
-     }
-    ],
-    "keyframes": [
-     {
-      "t": 0,
-      "v": 0
-     },
-     {
-      "t": 0.14,
-      "v": 0.1
-     },
-     {
-      "t": 0.38,
-      "v": 0.7
-     },
-     {
-      "t": 0.72,
-      "v": 0.5
-     },
-     {
-      "t": 1,
-      "v": 0.1
-     }
-    ]
-   },
-   {
     "region": "bnst",
-    "explanation": "Holds a sustained response while a threat stays uncertain. The clearest evidence is from rodents, and little is known about it in people. Brain-scan studies in people do show a persistent response here during uncertain waiting, but the tidy split between a fast amygdala and a slow bed nucleus is contested: in monkeys, both are tied to sustained anxiety. It is drawn exactly as in the typical brain, because the sources read report no difference in anxiety disorders.",
+    "explanation": "Holds a sustained response while a threat stays uncertain. The clearest evidence is from rodents, and little is known about it in people. Brain-scan studies in people do show a persistent response here during uncertain waiting, but the tidy split between a fast amygdala and a slow bed nucleus is contested: the same review concludes that evidence from humans, monkeys and rodents refutes a strict separation, and in monkeys both are tied to sustained anxiety. It is drawn exactly as in the typical brain, because the sources read report no difference in anxiety disorders.",
     "confidence": "debated",
     "citations": [
      {
@@ -242,6 +203,24 @@
       "kind": "review",
       "access": "full-text",
       "quote": "the BST shows a persistent hemodynamic response during the uncertain anticipation of noxious reinforcers, such as shock or aversive images, whereas the dorsal amygdala shows more transient responses"
+     },
+     {
+      "authors": "Shackman AJ, Fox AS",
+      "year": 2016,
+      "title": "Contributions of the Central Extended Amygdala to Fear and Anxiety.",
+      "doi": "10.1523/jneurosci.0982-16.2016",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "On the other hand, a growing number of human imaging studies are difficult to reconcile with the early Davis model."
+     },
+     {
+      "authors": "Shackman AJ, Fox AS",
+      "year": 2016,
+      "title": "Contributions of the Central Extended Amygdala to Fear and Anxiety.",
+      "doi": "10.1523/jneurosci.0982-16.2016",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "this rapidly accumulating body of observations in humans, monkeys, and rodents refutes longstanding claims of strict phenomenological or anatomical segregation in the extended amygdala"
      },
      {
       "authors": "Shackman AJ, Fox AS",
@@ -405,7 +384,7 @@
   "regions": [
    {
     "region": "amygdala",
-    "explanation": "Responds to the possible threat in healthy volunteers too, then fades: during uncertain waiting its response is transient. It quietens further when the situation is rethought.",
+    "explanation": "Responds to the possible threat in healthy volunteers too, then fades. Some studies find its response brief during uncertain waiting, though that is disputed. It quietens further when the situation is rethought.",
     "confidence": "established",
     "citations": [
      {
@@ -425,6 +404,15 @@
       "kind": "review",
       "access": "full-text",
       "quote": "the BST shows a persistent hemodynamic response during the uncertain anticipation of noxious reinforcers, such as shock or aversive images, whereas the dorsal amygdala shows more transient responses"
+     },
+     {
+      "authors": "Shackman AJ, Fox AS",
+      "year": 2016,
+      "title": "Contributions of the Central Extended Amygdala to Fear and Anxiety.",
+      "doi": "10.1523/jneurosci.0982-16.2016",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "On the other hand, a growing number of human imaging studies are difficult to reconcile with the early Davis model."
      },
      {
       "authors": "Buhle JT, Silvers JA, Wager TD, Lopez R, Onyemekwu C, Kober H, Weber J, Ochsner KN",
@@ -502,46 +490,8 @@
     ]
    },
    {
-    "region": "dacc",
-    "explanation": "A cluster spanning the cingulate and medial frontal cortex is more active while healthy volunteers wait for an unpredictable threat. Drawn on the dorsal anterior cingulate as the nearest named region.",
-    "confidence": "mixed",
-    "citations": [
-     {
-      "authors": "Chavanne AV, Robinson OJ",
-      "year": 2021,
-      "title": "The Overlapping Neurobiology of Induced and Pathological Anxiety: A Meta-Analysis of Functional Neural Activation.",
-      "doi": "10.1176/appi.ajp.2020.19111153",
-      "kind": "meta-analysis",
-      "access": "full-text",
-      "quote": "both showed increased activation in the bilateral insula (xyz=44,14,-14 and xyz=-38,20,-8;k=2102 and k=1305 respectively) and cingulate cortex/medial prefrontal cortex"
-     }
-    ],
-    "keyframes": [
-     {
-      "t": 0,
-      "v": 0
-     },
-     {
-      "t": 0.14,
-      "v": 0.05
-     },
-     {
-      "t": 0.38,
-      "v": 0.4
-     },
-     {
-      "t": 0.72,
-      "v": 0.3
-     },
-     {
-      "t": 1,
-      "v": 0.05
-     }
-    ]
-   },
-   {
     "region": "bnst",
-    "explanation": "Holds a sustained response while healthy volunteers wait in uncertainty, as the amygdala's response fades. Much of what is known comes from rodents.",
+    "explanation": "Thought to hold a sustained response while healthy volunteers wait in uncertainty, as the amygdala's response fades. Some human scans show this, but others do not, and a strict split between the two is disputed. Much of what is known comes from rodents.",
     "confidence": "debated",
     "citations": [
      {
@@ -552,6 +502,15 @@
       "kind": "review",
       "access": "full-text",
       "quote": "the BST shows a persistent hemodynamic response during the uncertain anticipation of noxious reinforcers, such as shock or aversive images, whereas the dorsal amygdala shows more transient responses"
+     },
+     {
+      "authors": "Shackman AJ, Fox AS",
+      "year": 2016,
+      "title": "Contributions of the Central Extended Amygdala to Fear and Anxiety.",
+      "doi": "10.1523/jneurosci.0982-16.2016",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "On the other hand, a growing number of human imaging studies are difficult to reconcile with the early Davis model."
      },
      {
       "authors": "Avery SN, Clauss JA, Blackford JU",

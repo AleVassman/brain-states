@@ -295,56 +295,7 @@
     ]
    }
   ],
-  "connections": [
-   {
-    "from": "mpfc",
-    "to": "amygdala",
-    "explanation": "Moving in opposite directions: in one study, the more active this part of the medial prefrontal cortex, the less active the amygdala. The line marks that opposing relationship, not closer cooperation. That the first is suppressing the second is the proposed explanation, not a measurement.",
-    "confidence": "debated",
-    "citations": [
-     {
-      "authors": "Lanius RA, Vermetten E, Loewenstein RJ, Brand B, Schmahl C, Bremner JD, Spiegel D",
-      "year": 2010,
-      "title": "Emotion modulation in PTSD: Clinical and neurobiological evidence for a dissociative subtype.",
-      "doi": "10.1176/appi.ajp.2009.09081168",
-      "kind": "review",
-      "access": "full-text",
-      "quote": "the medial prefrontal cortex cluster that was positively correlated with state dissociative symptoms was negatively correlated with amygdala activity during script-driven imagery"
-     },
-     {
-      "authors": "Lanius RA, Vermetten E, Loewenstein RJ, Brand B, Schmahl C, Bremner JD, Spiegel D",
-      "year": 2010,
-      "title": "Emotion modulation in PTSD: Clinical and neurobiological evidence for a dissociative subtype.",
-      "doi": "10.1176/appi.ajp.2009.09081168",
-      "kind": "review",
-      "access": "full-text",
-      "quote": "increased activation of medial prefrontal structures is consistent with hyperinhibition of those same limbic regions in states of pathological emotional overmodulation"
-     }
-    ],
-    "keyframes": [
-     {
-      "t": 0,
-      "v": 0
-     },
-     {
-      "t": 0.14,
-      "v": 0.1
-     },
-     {
-      "t": 0.45,
-      "v": 0.75
-     },
-     {
-      "t": 0.78,
-      "v": 0.7
-     },
-     {
-      "t": 1,
-      "v": 0.1
-     }
-    ]
-   }
-  ]
+  "connections": []
  },
  "typical": null
 }

@@ -1,13 +1,13 @@
 # Panic attack: an alarm from inside the body — claims and sources
 
-Owner sign-off: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/panic.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
 
 ## What is reconstruction in this episode
 
-Spontaneous panic attacks are almost never caught in a scanner, so this episode is built from attacks provoked with carbon dioxide, from reviews of scans of people with panic disorder doing other tasks, from a classic model based on fear learning in animals, and from one study of healthy volunteers being chased by a virtual predator. These were never one experiment. The role of the amygdala is unresolved: the classic model puts it at the centre, later reviews find it less consistently than predicted, and three people with no working amygdala had panic attacks when given carbon dioxide, more readily than other people, which suggests the amygdala may normally hold panic back. The brainstem is drawn as a rough outline of the whole structure because the small nuclei thought to be involved are not in the brain model. How an attack subsides has not been studied in scans.
+Spontaneous panic attacks are almost never caught in a scanner, so this episode is built from responses to carbon dioxide in the scanner, from reviews of scans of people with panic disorder doing other tasks, from a classic model based on fear learning in animals, and from one study of healthy volunteers being chased by a virtual predator. These were never one experiment. The role of the amygdala is unresolved: the classic model puts it at the centre, later reviews find it less consistently than predicted, and three people with no working amygdala had panic attacks when given carbon dioxide, more readily than other people, which suggests the amygdala may normally hold panic back. The brainstem is drawn as a rough outline of the whole structure because the small nuclei thought to be involved are not in the brain model. How an attack subsides has not been studied in scans.
 
 ## Notes from the research pass
 

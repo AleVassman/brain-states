@@ -22,6 +22,26 @@ const harrisonFatigue = cite(
   'harrison2009sickness',
   'activity within interoceptive brain regions also predicted individual differences in inflammation-associated but not placebo-associated fatigue and confusion',
 );
+const harrisonInsulaFull = cite(
+  'harrison2009sickness',
+  'Typhoid vaccination (compared with placebo) enhanced neural activity within brainstem (FDR p < .017), thalamus (FDR p < .013), amygdale (FDR p < .009), cingulate (FDR p < .02), and bilateral mid (FDR p < .013 and p < .017, right and left, respectively) and anterior insula',
+);
+const harrisonNoMainEffect = cite(
+  'harrison2009mood',
+  'The sACC activity reflected the interaction between processing of emotional facial expressions and inflammation-associated total mood change rather than as a main effect of processing emotional faces.',
+);
+const saperPreoptic = cite(
+  'saper2012',
+  'in rodents isoforms α and γ are strongly expressed in the median preoptic nucleus (MnPO) and are thought to mediate fever',
+);
+const eisenbergerTemperature = cite(
+  'eisenberger2010',
+  'endotoxin led to a significant increase in IL-6 and TNF-α levels, body temperature, pulse, and sickness symptoms',
+);
+const kraynakDirection = cite(
+  'kraynak2018',
+  'without regard to the direction of the activity change',
+);
 const harrisonInsulaNamed = cite(
   'harrison2009mood',
   'fatigue and psychomotor slowing were associated with corresponding changes in activity within insula (16) and substantia nigra (19)',
@@ -57,7 +77,7 @@ const score = {
   description:
     'When the body fights an infection such as flu, the tiredness, slowness, low mood and loss of interest are not just side effects. They are produced by the brain in response to signals from the immune system. The episode follows what has been measured in healthy volunteers given a vaccine or a small dose of a bacterial substance that sets off a mild, safe immune response. There is no "typical response" to compare with: this is the typical response.',
   caveat:
-    'These studies use a mild immune challenge in healthy volunteers and scan them about two hours later. That is a stand-in for a real infection. In the vaccine study, body temperature did not rise. Fever itself is part of the same brain-directed response, but the sources read do not name the brain region that sets body temperature, so nothing is drawn for it. Most findings come from two small groups of volunteers, sixteen men in one and thirty-nine people in the other, and several were seen only while people did a particular task in the scanner. A pooled analysis confirms that inflammation goes with changes in these regions but, in the part read, does not say in which direction. How the brain recovers as the infection clears was not studied.',
+    'These studies use a mild immune challenge in healthy volunteers and scan them about two hours later. That is a stand-in for a real infection. In the vaccine study body temperature did not rise, while in the endotoxin study it did. Fever is part of the same brain-directed response; in rodents it is set off in a small area of the hypothalamus, the median preoptic nucleus, which is too small to draw here, so nothing is drawn for fever. Most findings come from two small groups of volunteers, sixteen men in one and thirty-nine people in the other, and several were seen only while people did a particular task in the scanner. A pooled analysis confirms that inflammation goes with changes in these regions, without regard to their direction. How the brain recovers as the infection clears was not studied.',
   durationSeconds: 36,
   phases: [
     {
@@ -90,7 +110,7 @@ const score = {
       start: 0.5,
       end: 0.8,
       caption:
-        'Mood drops and things feel less rewarding. The more mood fell, the more active the subgenual cingulate was, and the less it worked together with the amygdala, the medial prefrontal cortex and the nucleus accumbens. The ventral striatum responded less to the prospect of a reward.',
+        'Mood drops and things feel less rewarding. The more mood fell, the more active the subgenual cingulate was in that person, and the less it worked together with the amygdala, the medial prefrontal cortex and the nucleus accumbens. The ventral striatum responded less to the prospect of a reward.',
       order: {
         kind: 'reconstructed',
         rationale:
@@ -115,25 +135,25 @@ const score = {
       {
         region: 'insula',
         explanation:
-          'Regions that represent the internal state of the body became more active under inflammation while volunteers did a demanding task, and their activity predicted how tired and foggy each person felt. The abstract of that study does not name the regions; a companion paper by the same group names the insula. A pooled analysis lists the insula among regions consistently affected by inflammation.',
+          'Regions that represent the internal state of the body became more active under inflammation while volunteers did a demanding task, and their activity predicted how tired and foggy each person felt. They included the mid and front parts of the insula on both sides. A pooled analysis lists the insula among regions consistently affected by inflammation.',
         confidence: 'mixed',
-        citations: [harrisonInteroceptive, harrisonFatigue, harrisonInsulaNamed, kraynakConsistent],
+        citations: [harrisonInteroceptive, harrisonFatigue, harrisonInsulaFull, kraynakConsistent],
         keyframes: kf(0, 0, 0.2, 0, 0.4, 0.6, 0.8, 0.6, 1, 0),
       },
       {
         region: 'sgacc',
         explanation:
-          'The more a volunteer\'s mood fell after vaccination, the more active this region was while they looked at emotional faces. The region is one implicated in depression, and the authors take this to suggest a shared basis for low mood in illness and in depression. From one study of sixteen men. It is drawn as a modest rise for simplicity: the study found this only as a link with how far each person\'s mood fell, not as an average change across everyone.',
+          'The more a volunteer\'s mood fell after vaccination, the more active this region was while they looked at emotional faces. The region is one implicated in depression, and the authors take this to suggest a shared basis for low mood in illness and in depression. From one study of sixteen men. It is drawn at rest: the study found this only as a link with how far each person\'s mood fell, not as an average rise across everyone.',
         confidence: 'mixed',
-        citations: [harrisonSgacc],
-        keyframes: kf(0, 0, 0.45, 0, 0.64, 0.3, 0.8, 0.3, 1, 0),
+        citations: [harrisonSgacc, harrisonNoMainEffect],
+        keyframes: kf(0, 0, 1, 0),
       },
       {
         region: 'nucleus-accumbens',
         explanation:
-          'Drawn on the nucleus accumbens, the main part of the ventral striatum. The finding is a weaker response to the prospect of a reward, not lower activity at rest. The ventral striatum responded less to signs of a coming reward in people given a mild immune challenge than in people given a placebo, and that weaker response accounted for part of their drop in mood. From one study of thirty-nine people. A pooled analysis lists the striatum among regions consistently affected by inflammation.',
+          'Drawn on the nucleus accumbens, the main part of the ventral striatum. The finding is a weaker response to the prospect of a reward, not lower activity at rest. The ventral striatum responded less to signs of a coming reward in people given a mild immune challenge than in people given a placebo, and that weaker response accounted for part of their drop in mood. From one study of thirty-nine people. A pooled analysis also lists the striatum, mainly the caudate and putamen, among regions affected by inflammation, without regard to direction.',
         confidence: 'mixed',
-        citations: [eisenbergerReward, kraynakConsistent],
+        citations: [eisenbergerReward, kraynakConsistent, kraynakDirection],
         keyframes: kf(0, 0, 0.45, 0, 0.64, -0.55, 0.8, -0.55, 1, 0),
       },
     ],
@@ -179,11 +199,11 @@ writeScore(score, {
   notes: [
     'The substantia nigra is not drawn. Brydon et al. 2008 report its reactivity as "markedly perturbed" and its activity as "associated with" slower reactions, without a direction that could be shown. It is mentioned in a caption.',
     'The state is listed as "Infection: feeling ill", not "Infection and fever", because fever is not shown.',
-    'Fever is not drawn. Saper et al. 2012 (abstract) say the sickness syndrome "includes fever, anorexia, sleepiness, hyperalgesia and elevated corticosteroid secretion" and that "Much of the sickness syndrome is mediated by prostaglandins acting on the brain", but the abstract names no brain region, and the volunteer studies used a challenge too mild to cause fever. The full text could not be downloaded.',
+    'Fever is not drawn. Saper et al. 2012 (full text) place the fever trigger in rodents in the median preoptic nucleus, a small part of the hypothalamus that is not in the brain model. Eisenberger et al. 2010 report that endotoxin raised body temperature; Harrison et al. 2009 report that the vaccine did not.',
     'The first phase draws no region. Dantzer et al. 2008 (abstract): "innate immune cells produce pro-inflammatory cytokines that act on the brain to cause sickness behaviour", without saying where.',
     'The hypothalamus, amygdala, hippocampus and brainstem are listed by the pooled analysis (Kraynak et al. 2018) as consistently affected by inflammation, but the abstract gives no direction, so they are not drawn.',
     'No typical-response comparison: the volunteers were healthy, so this is the ordinary response. Each study compared the immune challenge with a placebo in the same or similar people.',
     'The two Harrison 2009 papers and Brydon 2008 each describe sixteen healthy men given typhoid vaccination and appear to report the same volunteers, so they are not three independent confirmations.',
-    'Read in full: Harrison 2009 (mood). All others read as abstracts only.',
+    'Read in full: both Harrison 2009 papers, Eisenberger 2010, Kraynak 2018, Saper 2012. Read as abstracts only: Brydon 2008, Dantzer 2008.',
   ],
 });

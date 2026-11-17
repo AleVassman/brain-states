@@ -3,84 +3,96 @@
   "id": "depression",
   "title": "Depression",
   "file": "depression.json",
-  "reviewed": false,
-  "category": "psychological"
+  "reviewed": true,
+  "category": "psychological",
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "anxiety",
   "title": "Anxiety",
   "file": "anxiety.json",
-  "reviewed": false,
-  "category": "psychological"
+  "reviewed": true,
+  "category": "psychological",
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "panic",
   "title": "Panic attack",
   "file": "panic.json",
-  "reviewed": false,
-  "category": "psychological"
+  "reviewed": true,
+  "category": "psychological",
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "stress",
   "title": "Acute stress",
   "file": "stress.json",
-  "reviewed": false,
-  "category": "psychological"
+  "reviewed": true,
+  "category": "psychological",
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "anger",
   "title": "Anger",
   "file": "anger.json",
-  "reviewed": false,
-  "category": "psychological"
+  "reviewed": true,
+  "category": "psychological",
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "borderline",
   "title": "Borderline",
   "file": "borderline.json",
-  "reviewed": false,
-  "category": "psychological"
+  "reviewed": true,
+  "category": "psychological",
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "dissociation",
   "title": "Dissociation",
   "file": "dissociation.json",
-  "reviewed": false,
-  "category": "psychological"
+  "reviewed": true,
+  "category": "psychological",
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "reward",
   "title": "Joy and reward",
   "file": "reward.json",
-  "reviewed": false,
-  "category": "psychological"
+  "reviewed": true,
+  "category": "psychological",
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "migraine",
   "title": "Migraine attack",
   "file": "migraine.json",
   "category": "physical",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "seizure",
   "title": "Epileptic seizure",
   "file": "seizure.json",
   "category": "physical",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "infection",
   "title": "Infection: feeling ill",
   "file": "infection.json",
   "category": "physical",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "alzheimers",
   "title": "Alzheimer's disease",
   "file": "alzheimers.json",
   "category": "physical",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  }
 ]

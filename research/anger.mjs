@@ -50,7 +50,7 @@ const score = {
   description:
     'Someone is insulted or treated unfairly. The episode follows anger as it is experienced by people in general: the first reaction to the provocation, the feeling itself, and then either dwelling on it or reining it in. Anger is an ordinary emotion, not a condition, so there is no "typical response" to compare it with.',
   caveat:
-    'Researchers describe the brain basis of anger as still a matter of debate, and studies of it have found activity scattered widely across the brain. The deep "threat system" shown early in the episode is known mainly from animal experiments and is assumed, not shown, to work the same way in people; its third part, the periaqueductal grey, is not drawn because its shape could not be obtained for this project. The findings about feeling angry and about dwelling on it come partly from a single study in which volunteers were insulted in a scanner. Dwelling and regulating are shown together at the end, but a person may do one, the other, or both. All four sources except one review were read as abstracts only.',
+    'Researchers describe the brain basis of anger as still a matter of debate. The deep "threat system" shown early in the episode is known mainly from animal experiments and is assumed, not shown, to work the same way in people; its third part, the periaqueductal grey, is not drawn because its shape could not be obtained for this project. The findings about feeling angry and about dwelling on it come partly from a single study in which volunteers were insulted in a scanner. Dwelling and regulating are shown together at the end, but a person may do one, the other, or both. All four sources except one review were read as abstracts only.',
   durationSeconds: 36,
   phases: [
     {
@@ -68,7 +68,7 @@ const score = {
       start: 0.12,
       end: 0.4,
       caption:
-        'A deep threat system engages, running from the amygdala to the hypothalamus. In animals this is the system that drives defensive attack; it is thought, but not shown, to do the same in people.',
+        'A deep threat system engages, running from the amygdala to the hypothalamus. In animals this is the system that drives defensive attack; it is thought to do the same in people.',
       order: {
         kind: 'reconstructed',
         rationale:

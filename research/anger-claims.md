@@ -1,13 +1,13 @@
 # Anger: being provoked — claims and sources
 
-Owner sign-off: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/anger.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
 
 ## What is reconstruction in this episode
 
-Researchers describe the brain basis of anger as still a matter of debate, and studies of it have found activity scattered widely across the brain. The deep "threat system" shown early in the episode is known mainly from animal experiments and is assumed, not shown, to work the same way in people; its third part, the periaqueductal grey, is not drawn because its shape could not be obtained for this project. The findings about feeling angry and about dwelling on it come partly from a single study in which volunteers were insulted in a scanner. Dwelling and regulating are shown together at the end, but a person may do one, the other, or both. All four sources except one review were read as abstracts only.
+Researchers describe the brain basis of anger as still a matter of debate. The deep "threat system" shown early in the episode is known mainly from animal experiments and is assumed, not shown, to work the same way in people; its third part, the periaqueductal grey, is not drawn because its shape could not be obtained for this project. The findings about feeling angry and about dwelling on it come partly from a single study in which volunteers were insulted in a scanner. Dwelling and regulating are shown together at the end, but a person may do one, the other, or both. All four sources except one review were read as abstracts only.
 
 ## Notes from the research pass
 

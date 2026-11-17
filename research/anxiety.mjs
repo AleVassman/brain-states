@@ -51,6 +51,18 @@ const picoInsula = cite(
   'pico2017',
   'they presented increased activation in regions that may be associated with the emotional experience (i.e., insula, cerebellum, precentral and inferior occipital gyri)',
 );
+const shackmanContested = cite(
+  'shackman2016',
+  'On the other hand, a growing number of human imaging studies are difficult to reconcile with the early Davis model.',
+);
+const shackmanRefutes = cite(
+  'shackman2016',
+  'this rapidly accumulating body of observations in humans, monkeys, and rodents refutes longstanding claims of strict phenomenological or anatomical segregation in the extended amygdala',
+);
+const chavanneGad = cite(
+  'chavanne2021',
+  'In contrast to the other disorders, generalized anxiety disorder (233 patients) shows deactivation in the cingulate cortex and in bilateral insula.',
+);
 const kimCoupling = cite(
   'kim2011',
   'functional coupling of the amygdala and vmPFC at rest, predicts beneficial outcomes in terms of reported anxiety',
@@ -64,7 +76,7 @@ const score = {
   id: 'anxiety',
   title: 'Anxiety: responding to a possible threat',
   description:
-    'Something that might be a threat appears, and it stays uncertain for a while. The episode follows the response in a brain with an anxiety disorder; the typical response shows the same moment in a brain without one. The same regions take part in both. What the research supports is a difference in how strongly some of them respond and in how much the control regions step in. Whether the response also lasts longer in an anxiety disorder was not covered by the sources read, so the two brains follow the same time course here.',
+    'Something that might be a threat appears, and it stays uncertain for a while. The episode follows the response in a brain with an anxiety disorder; the typical response shows the same moment in a brain without one. The same regions take part in both. What the research supports is a difference in how strongly some of them respond and in how much the control regions step in. Whether the response also lasts longer in an anxiety disorder was not covered by the sources read, so the two brains follow the same time course here, except the insula, which stays raised while people with anxiety try to rethink the situation.',
   caveat:
     'The findings come from different kinds of study that were never run as one experiment: group comparisons of people with social anxiety, phobia, PTSD and other anxiety disorders; studies of healthy volunteers waiting for an unpredictable shock; recordings from electrodes in the amygdala; and studies where people were asked to rethink an upsetting image. Joining them into one continuous episode is a reconstruction. "Anxiety disorder" here is an average over several different diagnoses, which differ from one another. The hypothalamus and the body\'s stress hormones are left out because none of the sources read for this episode measured them in people.',
   durationSeconds: 36,
@@ -87,13 +99,13 @@ const score = {
       start: 0.14,
       end: 0.42,
       caption:
-        'The alarm spreads. The insula, which tracks the state of the body, and the cingulate and medial frontal cortex respond strongly, and the amygdala responds more than it would in a typical brain.',
+        'The alarm spreads. The insula, which tracks the state of the body, responds strongly, and the amygdala responds more than it would in a typical brain.',
       typicalCaption:
-        'The insula and the cingulate and medial frontal cortex join in. The pattern is the same as in an anxiety disorder, only smaller.',
+        'The insula joins in. The pattern is the same as in an anxiety disorder, only smaller.',
       order: {
         kind: 'reconstructed',
         rationale:
-          'Electrode recordings put the first amygdala response under a tenth of a second, while the wider response is measured with brain scans that cannot resolve events faster than seconds. That the amygdala leads is an inference; the order among the insula and cingulate is unknown.',
+          'Electrode recordings put the first amygdala response under a tenth of a second, while the wider response is measured with brain scans that cannot resolve events faster than seconds. That the amygdala leads is an inference; when the insula joins is not known.',
       },
     },
     {
@@ -103,10 +115,14 @@ const score = {
       start: 0.42,
       end: 0.72,
       caption:
-        "The threat stays uncertain. A small structure deep in the front of the brain, the bed nucleus of the stria terminalis, holds a sustained response while the amygdala's own response fades. This is known mostly from animal studies, and no difference from the typical brain is shown at this step because none was found in the sources read.",
+        "The threat stays uncertain. A small structure deep in the front of the brain, the bed nucleus of the stria terminalis, is thought to hold a sustained response while the amygdala's own response fades. Some human scans show this, but a growing number do not, and researchers now dispute a strict split between the two. No difference from the typical brain is shown at this step because none was found in the sources read.",
       typicalCaption:
-        "While things stay uncertain the bed nucleus of the stria terminalis holds a sustained response, as the amygdala's own response fades. This is known mostly from animal studies.",
-      order: { kind: 'timed', citations: [shackmanTimecourse] },
+        "While things stay uncertain the bed nucleus of the stria terminalis is thought to hold a sustained response as the amygdala's own response fades. Some human scans show this; others do not, and the split is disputed.",
+      order: {
+        kind: 'reconstructed',
+        rationale:
+          'Some human scans find a persistent response in the bed nucleus and a brief one in the amygdala during uncertain waiting, but the review that reports them goes on to say a growing number of studies do not fit that pattern. The order drawn follows the older model and is not settled.',
+      },
     },
     {
       id: 'regulation',
@@ -138,25 +154,17 @@ const score = {
       {
         region: 'insula',
         explanation:
-          'More active than in people without an anxiety disorder. The insula tracks the internal state of the body, and a pooled analysis found it more active in both diagnosed anxiety and anxiety induced in healthy volunteers. It is also more active when people with anxiety or mood disorders try to rethink something upsetting.',
+          'More active than in people without an anxiety disorder. The insula tracks the internal state of the body, and a pooled analysis found it more active in both diagnosed anxiety and anxiety induced in healthy volunteers. It is also more active when people with anxiety or mood disorders try to rethink something upsetting, which is why it stays raised at the end. One diagnosis goes the other way: in generalised anxiety disorder the insula was less active.',
         confidence: 'established',
-        citations: [etkinPatients, chavanneBoth, picoInsula],
+        citations: [etkinPatients, chavanneBoth, picoInsula, chavanneGad],
         keyframes: kf(0, 0, 0.14, 0.15, 0.36, 0.9, 0.72, 0.8, 1, 0.7),
-      },
-      {
-        region: 'dacc',
-        explanation:
-          'A cluster spanning the cingulate and medial frontal cortex is more active in both diagnosed and induced anxiety. The analysis does not pin the location down to this exact structure; it is drawn on the dorsal anterior cingulate as the nearest named region.',
-        confidence: 'mixed',
-        citations: [chavanneBoth],
-        keyframes: kf(0, 0, 0.14, 0.1, 0.38, 0.7, 0.72, 0.5, 1, 0.1),
       },
       {
         region: 'bnst',
         explanation:
-          'Holds a sustained response while a threat stays uncertain. The clearest evidence is from rodents, and little is known about it in people. Brain-scan studies in people do show a persistent response here during uncertain waiting, but the tidy split between a fast amygdala and a slow bed nucleus is contested: in monkeys, both are tied to sustained anxiety. It is drawn exactly as in the typical brain, because the sources read report no difference in anxiety disorders.',
+          'Holds a sustained response while a threat stays uncertain. The clearest evidence is from rodents, and little is known about it in people. Brain-scan studies in people do show a persistent response here during uncertain waiting, but the tidy split between a fast amygdala and a slow bed nucleus is contested: the same review concludes that evidence from humans, monkeys and rodents refutes a strict separation, and in monkeys both are tied to sustained anxiety. It is drawn exactly as in the typical brain, because the sources read report no difference in anxiety disorders.',
         confidence: 'debated',
-        citations: [shackmanTimecourse, shackmanBoth, averyRodent],
+        citations: [shackmanTimecourse, shackmanContested, shackmanRefutes, shackmanBoth, averyRodent],
         keyframes: kf(0, 0, 0.3, 0.05, 0.55, 0.5, 0.8, 0.3, 1, 0.05),
       },
       {
@@ -193,9 +201,9 @@ const score = {
       {
         region: 'amygdala',
         explanation:
-          'Responds to the possible threat in healthy volunteers too, then fades: during uncertain waiting its response is transient. It quietens further when the situation is rethought.',
+          'Responds to the possible threat in healthy volunteers too, then fades. Some studies find its response brief during uncertain waiting, though that is disputed. It quietens further when the situation is rethought.',
         confidence: 'established',
-        citations: [etkinHealthy, shackmanTimecourse, buhleAmygdala],
+        citations: [etkinHealthy, shackmanTimecourse, shackmanContested, buhleAmygdala],
         keyframes: kf(0, 0, 0.05, 0.2, 0.2, 0.6, 0.5, 0.3, 0.8, 0.15, 1, 0),
       },
       {
@@ -206,19 +214,11 @@ const score = {
         keyframes: kf(0, 0, 0.14, 0.1, 0.36, 0.5, 0.72, 0.35, 1, 0.05),
       },
       {
-        region: 'dacc',
-        explanation:
-          'A cluster spanning the cingulate and medial frontal cortex is more active while healthy volunteers wait for an unpredictable threat. Drawn on the dorsal anterior cingulate as the nearest named region.',
-        confidence: 'mixed',
-        citations: [chavanneBoth],
-        keyframes: kf(0, 0, 0.14, 0.05, 0.38, 0.4, 0.72, 0.3, 1, 0.05),
-      },
-      {
         region: 'bnst',
         explanation:
-          'Holds a sustained response while healthy volunteers wait in uncertainty, as the amygdala\'s response fades. Much of what is known comes from rodents.',
+          'Thought to hold a sustained response while healthy volunteers wait in uncertainty, as the amygdala\'s response fades. Some human scans show this, but others do not, and a strict split between the two is disputed. Much of what is known comes from rodents.',
         confidence: 'debated',
-        citations: [shackmanTimecourse, averyRodent],
+        citations: [shackmanTimecourse, shackmanContested, averyRodent],
         keyframes: kf(0, 0, 0.3, 0.05, 0.55, 0.5, 0.8, 0.3, 1, 0.05),
       },
       {
@@ -255,7 +255,8 @@ writeScore(score, {
   notes: [
     'Dropped: the hypothalamus and stress-hormone response. The sources read mention them only as anatomical connections in animals, not as measurements in people.',
     'Dropped: a specific claim that fear conditioning does not reliably activate the amygdala (Fullana et al. 2016). Only the abstract was available and it does not state this.',
-    'The amygdala is marked "mixed", not "well established": patients show more amygdala activity in one meta-analysis (Etkin & Wager 2007), but a later, larger whole-brain meta-analysis mostly did not detect it (Chavanne & Robinson 2021).',
+    'The amygdala is marked "mixed", not "well established": patients show more amygdala activity in one meta-analysis (Etkin & Wager 2007), but a later, larger whole-brain meta-analysis mostly did not detect it apart from a patient cluster that extends "to the amygdala" on the left (Chavanne & Robinson 2021).',
+    'The cingulate and medial frontal cluster found in both diagnosed and induced anxiety (Chavanne & Robinson 2021) is not drawn. Its peak (-12, -8, 68) lies near the supplementary motor area, not in the dorsal anterior cingulate, and by diagnosis it is driven by specific phobia, absent in panic disorder, PTSD and social anxiety, and reversed in generalised anxiety disorder.',
     'Two sources were read as abstracts only: Méndez-Bértolo et al. 2016 and Picó-Pérez et al. 2017.',
   ],
 });

@@ -1,20 +1,20 @@
 # Depression: a setback and the loop that follows — claims and sources
 
-Owner sign-off: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/depression.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
 
 ## What is reconstruction in this episode
 
-Depression is not a spike but a state lasting weeks or months, and no scan has followed a ruminating brain through a loop over minutes or hours. What the research gives is separate snapshots: how the depressed brain differs at rest, how it responds to negative pictures and to rewards, and which regions are active when healthy volunteers are asked to ruminate. Stitching these into "setback, then turning inward, then staying stuck" is a reconstruction, and the order of every step is inferred. The picture is also contested: one large pooled analysis found no consistent differences in brain activity at all, and the largest study of resting connectivity found the default mode network less connected in depression, not more, mainly in people with recurrent depression and those on medication. Depression also varies widely between people.
+Depression is not a spike but a state lasting weeks or months, and no scan has followed a ruminating brain through a loop over minutes or hours. What the research gives is separate snapshots: how the depressed brain differs at rest, how it responds to negative pictures and to rewards, and which regions are active when healthy volunteers are asked to ruminate. Stitching these into "setback, then turning inward, then staying stuck" is a reconstruction, and the order of every step is inferred. The picture is also contested: one large pooled analysis of task studies found no consistent differences in task-related activity, with one small exception, and the largest study of resting connectivity found the default mode network less connected in depression, not more, mainly in people with recurrent depression and those on medication. Depression also varies widely between people.
 
 ## Notes from the research pass
 
 - The design hypothesis "default mode network over-engaged" is only half supported. Hamilton et al. (2015) report that the default mode network is not reliably more active at rest in depression; the reliable differences are the subgenual cingulate's activity and its connectivity with that network. The episode follows that.
 - Contrary evidence is cited on the tracks it bears on: Müller et al. (2017) found no convergent activity differences across 99 experiments; Yan et al. (2019, 1,300 patients) found reduced, not increased, default mode connectivity.
 - The "loop that fails to exit" is the least supported part. No source measured rumination persisting in the scanner; it is marked reconstructed in the timeline and stated as an assumption in the affected regions.
-- The reward finding is for "striatal activation" (Keren et al. 2018). The atlas build has no caudate or putamen, so it is drawn on the nucleus accumbens and the text says so.
+- The reward finding is for "striatal activation" (Keren et al. 2018), with its peak in the caudate; it is drawn on the caudate.
 - The typical variant has few regions: the sources report differences between groups, and only the ordinary response to negative material and rumination in healthy volunteers could be cited directly.
 - Read as abstract only: Zhou 2020 (and Ruocco 2013, used for the typical response).
 
@@ -27,9 +27,9 @@ Depression is not a spike but a state lasting weeks or months, and no scan has f
 
 ## The condition
 
-### **sgacc** — Well established
+### **sgacc** — Mixed evidence
 
-Claim: More active at rest during depression than in people who are not depressed, and more active in the depressed phase than after recovery in the same people. This rests on pooled findings of resting blood flow. It is drawn at a steady raised level: the sources read do not say whether it rises further during rumination.
+Claim: More active at rest during depression than in people who are not depressed, and more active in the depressed phase than after recovery in the same people. This rests on pooled findings of resting blood flow, but even this foundational finding has been challenged: without correcting for the region being smaller in depression, its activity can appear reduced. It is drawn at a steady raised level: the sources read do not say whether it rises further during rumination.
 
 On screen: peaks above baseline (0.45), ends above baseline (0.45).
 
@@ -37,23 +37,29 @@ On screen: peaks above baseline (0.45), ends above baseline (0.45).
   > "We also present meta-analytic findings that, while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
 - Drevets WC, Savitz J, Trimble M (2008). The subgenual anterior cingulate cortex in mood disorders. doi:10.1017/s1092852900013754 — review, full-text
   > "researchers consistently show that the sgACC metabolism is elevated in the depressed phase relative to the remitted phase of the same MDD subjects"
+- Drevets WC, Savitz J, Trimble M (2008). The subgenual anterior cingulate cortex in mood disorders. doi:10.1017/s1092852900013754 — review, full-text
+  > "although relative to controls, the depressed MDD and bipolar disorder subjects showed metabolic activity that appeared reduced in the sgACC"
+- Hamilton JP, Etkin A, Furman DJ, Lemus MG, Johnson RF, Gotlib IH (2012). Functional neuroimaging of major depressive disorder: a meta-analysis and new integration of base line activation and neural response data. doi:10.1176/appi.ajp.2012.11071105 — meta-analysis, full-text
+  > "even the neural findings that are considered most foundational in the neuroscience of depression, such as higher than normal baseline activity in the subgenual anterior cingulate cortex (6) and low activation in the dorsolateral prefrontal cortex (7), have not gone unchallenged"
 
 ### **amygdala** — Mixed evidence
 
-Claim: Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis found no consistent differences in brain activity in depression at all.
+Claim: Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis of task studies found no consistent differences in task-related activity, apart from one cluster in the left thalamus reaching into the hippocampus. It returns to rest on the same time course as in the typical brain: the studies measured the size of the response, not how long it lasts.
 
-On screen: peaks above baseline (0.75), ends above baseline (0.25).
+On screen: peaks above baseline (0.75), ends at baseline (0).
 
 - Hamilton JP, Etkin A, Furman DJ, Lemus MG, Johnson RF, Gotlib IH (2012). Functional neuroimaging of major depressive disorder: a meta-analysis and new integration of base line activation and neural response data. doi:10.1176/appi.ajp.2012.11071105 — meta-analysis, full-text
   > "The analysis of neural response studies using negative stimuli showed greater response in the amygdala, insula, and dorsal anterior cingulate cortex and lower response in the dorsal striatum and dorsolateral prefrontal cortex in individuals with major depressive disorder than in healthy subjects."
 - Müller VI, Cieslik EC, Serbanescu I, Laird AR, Fox PT, Eickhoff SB (2017). Altered Brain Activity in Unipolar Depression Revisited: Meta-analyses of Neuroimaging Studies. doi:10.1001/jamapsychiatry.2016.2783 — meta-analysis, full-text
   > "Overall analyses across cognitive processing experiments (P > .29) and across emotional processing experiments (P > .47) revealed no significant results."
+- Müller VI, Cieslik EC, Serbanescu I, Laird AR, Fox PT, Eickhoff SB (2017). Altered Brain Activity in Unipolar Depression Revisited: Meta-analyses of Neuroimaging Studies. doi:10.1001/jamapsychiatry.2016.2783 — meta-analysis, full-text
+  > "the analyses across experiments of negative emotional processing revealed significant convergence in the left thalamus extending into hippocampus"
 
 ### **insula** — Mixed evidence
 
-Claim: Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis found no consistent differences.
+Claim: Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis of task studies found no consistent differences. It returns to rest on the same time course as in the typical brain.
 
-On screen: peaks above baseline (0.65), ends above baseline (0.25).
+On screen: peaks above baseline (0.65), ends at baseline (0).
 
 - Hamilton JP, Etkin A, Furman DJ, Lemus MG, Johnson RF, Gotlib IH (2012). Functional neuroimaging of major depressive disorder: a meta-analysis and new integration of base line activation and neural response data. doi:10.1176/appi.ajp.2012.11071105 — meta-analysis, full-text
   > "The analysis of neural response studies using negative stimuli showed greater response in the amygdala, insula, and dorsal anterior cingulate cortex and lower response in the dorsal striatum and dorsolateral prefrontal cortex in individuals with major depressive disorder than in healthy subjects."
@@ -62,9 +68,9 @@ On screen: peaks above baseline (0.65), ends above baseline (0.25).
 
 ### **dacc** — Mixed evidence
 
-Claim: Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis found no consistent differences.
+Claim: Responds more strongly to negative material than in people who are not depressed, in one pooled analysis. A later, larger pooled analysis of task studies found no consistent differences. It returns to rest on the same time course as in the typical brain.
 
-On screen: peaks above baseline (0.6), ends above baseline (0.2).
+On screen: peaks above baseline (0.6), ends at baseline (0).
 
 - Hamilton JP, Etkin A, Furman DJ, Lemus MG, Johnson RF, Gotlib IH (2012). Functional neuroimaging of major depressive disorder: a meta-analysis and new integration of base line activation and neural response data. doi:10.1176/appi.ajp.2012.11071105 — meta-analysis, full-text
   > "The analysis of neural response studies using negative stimuli showed greater response in the amygdala, insula, and dorsal anterior cingulate cortex and lower response in the dorsal striatum and dorsolateral prefrontal cortex in individuals with major depressive disorder than in healthy subjects."
@@ -73,7 +79,7 @@ On screen: peaks above baseline (0.6), ends above baseline (0.2).
 
 ### **dlpfc** — Mixed evidence
 
-Claim: A control region that responds less to negative material than in people who are not depressed. At rest, the wider control network it belongs to is also less tightly connected, which is a finding about connection, not activity, so the region is drawn at baseline until the setback. A later, larger pooled analysis of activity found no consistent differences.
+Claim: A control region that responds less to negative material than in people who are not depressed. At rest, the wider control network it belongs to is also less tightly connected, which is a finding about connection, not activity, so the region is drawn at baseline until the setback. A later, larger pooled analysis of task studies found no consistent differences.
 
 On screen: peaks below baseline (-0.55), ends at baseline (0).
 
@@ -86,34 +92,40 @@ On screen: peaks below baseline (-0.55), ends at baseline (0).
 
 ### **mpfc** — Mixed evidence
 
-Claim: Part of the default mode network, active during rumination in studies of healthy volunteers. In depression this network is not reliably more active at rest; what differs is how it is connected. Its staying active for longer here is assumed from how long rumination lasts in depression, not measured.
+Claim: Part of the default mode network, active during rumination in studies of healthy volunteers. In depression this network need not be more active; what differs is how it is connected. It is drawn reaching the same level as in the typical brain. Its coming round again and staying active for longer is assumed from how long rumination lasts in depression, not measured.
 
-On screen: peaks above baseline (0.75), ends above baseline (0.55).
+On screen: peaks above baseline (0.55), ends above baseline (0.45).
 
 - Zhou HX, Chen X, Shen YQ, Li L, Chen NX, Zhu ZC, Castellanos FX, Yan CG (2020). Rumination and the default mode network: Meta-analysis of brain imaging studies and implications for depression. doi:10.1016/j.neuroimage.2019.116287 — meta-analysis, abstract-only
   > "Results confirm the suspected association between rumination and DMN activation, specifically implicating the DMN core regions and the dorsal medial prefrontal cortex subsystem."
 - Hamilton JP, Farmer M, Fogelman P, Gotlib IH (2015). Depressive Rumination, the Default-Mode Network, and the Dark Matter of Clinical Neuroscience. doi:10.1016/j.biopsych.2015.02.020 — review, full-text
   > "We also present meta-analytic findings that, while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
+- Hamilton JP, Farmer M, Fogelman P, Gotlib IH (2015). Depressive Rumination, the Default-Mode Network, and the Dark Matter of Clinical Neuroscience. doi:10.1016/j.biopsych.2015.02.020 — review, full-text
+  > "the DMN need not be overactive, only functionally united with sgPFC to contribute to depressive rumination"
 
 ### **pcc-precuneus** — Mixed evidence
 
-Claim: A core part of the default mode network, active during rumination in studies of healthy volunteers. Its staying active for longer here is assumed from how long rumination lasts in depression, not measured.
+Claim: A core part of the default mode network, active during rumination in studies of healthy volunteers. In depression this network need not be more active, so it is drawn reaching the same level as in the typical brain. Its coming round again and staying active for longer is assumed from how long rumination lasts in depression, not measured.
 
-On screen: peaks above baseline (0.7), ends above baseline (0.5).
+On screen: peaks above baseline (0.5), ends above baseline (0.4).
 
 - Zhou HX, Chen X, Shen YQ, Li L, Chen NX, Zhu ZC, Castellanos FX, Yan CG (2020). Rumination and the default mode network: Meta-analysis of brain imaging studies and implications for depression. doi:10.1016/j.neuroimage.2019.116287 — meta-analysis, abstract-only
   > "Results confirm the suspected association between rumination and DMN activation, specifically implicating the DMN core regions and the dorsal medial prefrontal cortex subsystem."
 - Hamilton JP, Farmer M, Fogelman P, Gotlib IH (2015). Depressive Rumination, the Default-Mode Network, and the Dark Matter of Clinical Neuroscience. doi:10.1016/j.biopsych.2015.02.020 — review, full-text
   > "We also present meta-analytic findings that, while there is reliably increased regional cerebral blood flow in sgPFC in MDD, no such abnormality has been reliably observed in nodes of the DMN"
+- Hamilton JP, Farmer M, Fogelman P, Gotlib IH (2015). Depressive Rumination, the Default-Mode Network, and the Dark Matter of Clinical Neuroscience. doi:10.1016/j.biopsych.2015.02.020 — review, full-text
+  > "the DMN need not be overactive, only functionally united with sgPFC to contribute to depressive rumination"
 
-### **nucleus-accumbens** — Mixed evidence
+### **caudate** — Mixed evidence
 
-Claim: The striatum, part of the reward system, responds less in depression when something good happens, in a pooled analysis of reward studies. It is drawn here on the nucleus accumbens, the striatum's lower front part; the finding is for the striatum more broadly. A separate pooled analysis found no consistent differences for positive material. It is drawn at baseline until something good happens, because the finding is about the response to reward, not about rest.
+Claim: The striatum, part of the reward system, responds less in depression when something good happens, in a pooled analysis of reward studies. The peak of the difference was in the caudate, not the nucleus accumbens, so it is drawn on the caudate. A separate pooled analysis found no consistent differences for positive material. It is drawn at baseline until something good happens, because the finding is about the response to reward, not about rest.
 
 On screen: peaks below baseline (-0.6), ends below baseline (-0.3).
 
 - Keren H, O'Callaghan G, Vidal-Ribas P, Buzzell GA, Brotman MA, Leibenluft E, Pan PM, Meffert L, Kaiser A, Wolke S, Pine DS, Stringaris A (2018). Reward Processing in Depression: A Conceptual and Meta-Analytic Review Across fMRI and EEG Studies. doi:10.1176/appi.ajp.2018.17101124 — meta-analysis, full-text
   > "Analysis of fMRI studies revealed significantly reduced striatal activation in depressed compared with healthy individuals during reward feedback."
+- Keren H, O'Callaghan G, Vidal-Ribas P, Buzzell GA, Brotman MA, Leibenluft E, Pan PM, Meffert L, Kaiser A, Wolke S, Pine DS, Stringaris A (2018). Reward Processing in Depression: A Conceptual and Meta-Analytic Review Across fMRI and EEG Studies. doi:10.1176/appi.ajp.2018.17101124 — meta-analysis, full-text
+  > "the peak of activity difference between healthy volunteers and depressed subjects is in the caudate, rather than in the nucleus accumbens"
 - Müller VI, Cieslik EC, Serbanescu I, Laird AR, Fox PT, Eickhoff SB (2017). Altered Brain Activity in Unipolar Depression Revisited: Meta-analyses of Neuroimaging Studies. doi:10.1001/jamapsychiatry.2016.2783 — meta-analysis, full-text
   > "Similarly, no convergence was found in analyses investigating positive (all P > .15), negative (all P > .76), or memory (all P > .48) processes."
 

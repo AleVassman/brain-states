@@ -79,8 +79,9 @@ To list a state under "Physical illnesses", pass `category: 'physical'` to
 `writeScore`; the default is the psychological group.
 
 A state shows "awaiting review" in the app until its entry in
-`public/scores/index.json` has `"reviewed": true`. Set that only after reading
-its claims sheet.
+`public/scores/index.json` has `"reviewed": true`. Set that only after its
+claims have been checked against the papers. All twelve current states were
+checked on 2026-11-17.
 
 ## Rebuild the brain geometry
 

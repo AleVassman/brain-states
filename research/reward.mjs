@@ -108,7 +108,7 @@ const score = {
       start: 0.72,
       end: 1,
       caption:
-        'The pleasure itself. In people, activity in the orbitofrontal cortex goes with how pleasant something feels. Where pleasure is generated is known mainly from animals, and it is not the dopamine system: dopamine drives wanting more than enjoying.',
+        'The pleasure itself. In people, activity in the orbitofrontal cortex goes with how pleasant something feels. Where pleasure is generated is known mainly from animals, and the researchers cited argue it is not the dopamine system: in their view dopamine drives wanting more than enjoying.',
       order: {
         kind: 'reconstructed',
         rationale:
@@ -121,7 +121,7 @@ const score = {
       {
         region: 'vta',
         explanation:
-          'The midbrain source of the dopamine neurons that run up to the nucleus accumbens. This system is activated by reward-related signals. Evidence for what it does comes mainly from animals; it is too small to measure reliably in most human scans, and its rise at the cue is drawn on that basis. It was long described as the brain\'s pleasure system, but the researchers cited here argue that dopamine is needed for wanting a reward, not for enjoying it.',
+          'The midbrain source of the dopamine neurons that run up to the nucleus accumbens. This system is activated by reward-related signals. Evidence for what it does comes mainly from animals, and its rise at the cue is drawn on that basis. It was long described as the brain\'s pleasure system, but the researchers cited here argue that dopamine is needed for wanting a reward, not for enjoying it.',
         confidence: 'debated',
         citations: [berridgeMesolimbic, berridgeActivated, berridgeDopamine],
         keyframes: kf(0, 0, 0.06, 0.6, 0.3, 0.5, 0.5, 0.5, 0.75, 0.2, 1, 0),
@@ -129,7 +129,7 @@ const score = {
       {
         region: 'nucleus-accumbens',
         explanation:
-          'The ventral striatum, active both while people wait for a reward and when it arrives. This is the most consistent finding in reward research. It is not specific to good things: a similar cluster responds when people expect a loss. In other animals, activity here may also track how much a taste is liked.',
+          'The ventral striatum, active both while people wait for a reward and when it arrives. This is found in each of the pooled analyses read here. It is not specific to good things: a similar cluster responds when people expect a loss. In other animals, activity here may also track how much a taste is liked.',
         confidence: 'established',
         citations: [oldhamAnticipation, oldhamOutcome, sescousseCommon, oldhamLoss, berridgeAnimals],
         keyframes: kf(0, 0, 0.1, 0.3, 0.3, 0.85, 0.45, 0.7, 0.55, 0.9, 0.75, 0.5, 1, 0.1),

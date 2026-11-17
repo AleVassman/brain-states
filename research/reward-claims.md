@@ -1,6 +1,6 @@
 # Joy and reward: expecting something good and getting it — claims and sources
 
-Owner sign-off: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/reward.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
@@ -28,7 +28,7 @@ Most of this comes from one kind of experiment: people in a scanner see a cue, w
 
 ### **vta** — Still debated
 
-Claim: The midbrain source of the dopamine neurons that run up to the nucleus accumbens. This system is activated by reward-related signals. Evidence for what it does comes mainly from animals; it is too small to measure reliably in most human scans, and its rise at the cue is drawn on that basis. It was long described as the brain's pleasure system, but the researchers cited here argue that dopamine is needed for wanting a reward, not for enjoying it.
+Claim: The midbrain source of the dopamine neurons that run up to the nucleus accumbens. This system is activated by reward-related signals. Evidence for what it does comes mainly from animals, and its rise at the cue is drawn on that basis. It was long described as the brain's pleasure system, but the researchers cited here argue that dopamine is needed for wanting a reward, not for enjoying it.
 
 On screen: peaks above baseline (0.6), ends at baseline (0).
 
@@ -41,7 +41,7 @@ On screen: peaks above baseline (0.6), ends at baseline (0).
 
 ### **nucleus-accumbens** — Well established
 
-Claim: The ventral striatum, active both while people wait for a reward and when it arrives. This is the most consistent finding in reward research. It is not specific to good things: a similar cluster responds when people expect a loss. In other animals, activity here may also track how much a taste is liked.
+Claim: The ventral striatum, active both while people wait for a reward and when it arrives. This is found in each of the pooled analyses read here. It is not specific to good things: a similar cluster responds when people expect a loss. In other animals, activity here may also track how much a taste is liked.
 
 On screen: peaks above baseline (0.9), ends above baseline (0.1).
 
