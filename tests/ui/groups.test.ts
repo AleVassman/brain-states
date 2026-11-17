@@ -40,3 +40,11 @@ describe('groupEntries', () => {
     expect(groupEntries([])).toEqual([]);
   });
 });
+
+describe('groupEntries with unexpected data', () => {
+  it('still shows a state whose category is not one of the known groups', () => {
+    const odd = { id: 'odd', title: 'odd', file: 'odd.json', reviewed: false, category: 'other' } as unknown as ScoreIndexEntry;
+    const groups = groupEntries([odd]);
+    expect(groups.flatMap((g) => g.entries.map((e) => e.id))).toEqual(['odd']);
+  });
+});

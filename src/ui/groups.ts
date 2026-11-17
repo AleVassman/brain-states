@@ -12,6 +12,11 @@ const GROUPS: { category: ScoreCategory; heading: string }[] = [
   { category: 'physical', heading: 'Physical illnesses' },
 ];
 
+/** A missing or unrecognised category counts as psychological, so no state can vanish from the list. */
+function categoryOf(entry: ScoreIndexEntry): ScoreCategory {
+  return GROUPS.some((group) => group.category === entry.category) ? (entry.category as ScoreCategory) : 'psychological';
+}
+
 /**
  * Splits the list of states into its groups, keeping the order within each.
  * A state with no category counts as psychological. Empty groups are left out.
@@ -19,6 +24,6 @@ const GROUPS: { category: ScoreCategory; heading: string }[] = [
 export function groupEntries(entries: ScoreIndexEntry[]): EntryGroup[] {
   return GROUPS.map((group) => ({
     ...group,
-    entries: entries.filter((entry) => (entry.category ?? 'psychological') === group.category),
+    entries: entries.filter((entry) => categoryOf(entry) === group.category),
   })).filter((group) => group.entries.length > 0);
 }

@@ -46,6 +46,10 @@ const blumenfeldSpared = cite(
   'blumenfeld2004',
   'temporal lobe seizures in which consciousness was spared were not accompanied by these widespread CBF changes',
 );
+const blumenfeldNetwork = cite(
+  'blumenfeld2012',
+  'likely arising from long-range network effects rather than direct seizure propagation',
+);
 const blumenfeldPostictal = cite(
   'blumenfeld2012',
   'characterized by relatively spared function towards the beginning of seizures, followed by decreased responsiveness which may persists for several minutes into the postictal period',
@@ -55,7 +59,7 @@ const score = {
   id: 'seizure',
   title: 'Epileptic seizure: a temporal lobe seizure',
   description:
-    'There are many kinds of seizure. This episode shows one of the most common in adults: a seizure that begins deep in one temporal lobe and, as it spreads, takes awareness away for a minute or two. The person may stare, fumble or not respond, and often does not remember it. It is drawn starting on the left; in life it can start on either side. A seizure is abnormally intense, synchronised activity, so "more active" here does not mean working better.',
+    'There are many kinds of seizure. This episode shows a common kind: a seizure that begins deep in one temporal lobe and, as it spreads, takes awareness away for a minute or two. The person may stare, fumble or not respond. It is drawn starting on the left; in life it can start on either side. A seizure is abnormally intense, synchronised activity, so "more active" here does not mean working better.',
   caveat:
     'This is unusually well-timed evidence for this project, because seizures are recorded directly with electrodes placed in the brain before epilepsy surgery, and with blood-flow scans injected during a seizure. But those recordings come from people whose epilepsy has not responded to medication, so they may not represent everyone. Where a seizure starts differs between people, and the starting zone can reach beyond the hippocampus and amygdala. The idea that the seizure switches off the brain\'s arousal systems, which in turn quietens the frontal and parietal cortex, is the researchers\' hypothesis for why awareness is lost. What the brain does after the seizure ends is drawn as an assumption: the sources read describe the person\'s reduced responsiveness lasting several minutes, not the brain activity behind it.',
   durationSeconds: 36,
@@ -67,7 +71,7 @@ const score = {
       start: 0,
       end: 0.16,
       caption:
-        'Fast, synchronised firing begins deep in one temporal lobe, in the hippocampus, the amygdala and the cortex around them. The person may still be aware at this point.',
+        'Fast, synchronised firing begins deep in one temporal lobe, in the hippocampus, the amygdala and the cortex around them. This is abnormal firing: brighter here does not mean working better. It is drawn on the left and can start on either side. The person may still be aware at this point.',
     },
     {
       id: 'spread',
@@ -86,7 +90,7 @@ const score = {
       start: 0.4,
       end: 0.76,
       caption:
-        'Deep midline structures such as the thalamus become more active, and large areas of frontal and parietal cortex on both sides slow down, as in deep sleep. The seizure has not spread there; those areas have been quietened. This is when the person stops responding.',
+        'Deep midline structures such as the thalamus become more active, and large areas of frontal and parietal cortex on both sides slow down, as in deep sleep. The seizure itself has probably not spread there; the slowing is thought to come from its effect on distant networks. This is when the person stops responding.',
       order: { kind: 'timed', citations: [blumenfeldSequence] },
     },
     {
@@ -96,7 +100,7 @@ const score = {
       start: 0.76,
       end: 1,
       caption:
-        'The seizure stops. The person can stay confused or unresponsive for several minutes. What the brain is doing during that recovery is drawn here as a gradual return, which is an assumption.',
+        'The seizure stops. The person can stay confused or unresponsive for several minutes. The seizure activity is drawn stopping and the slowed cortex recovering gradually; both are assumptions about what the brain is doing during that recovery.',
       order: {
         kind: 'reconstructed',
         rationale:
@@ -109,7 +113,7 @@ const score = {
       {
         region: 'hippocampus-l',
         explanation:
-          'One of the deep temporal lobe structures where these seizures most often begin, according to electrode recordings in seventeen people before surgery. In every one of them more than one structure was involved at the start, and a review argues that the starting zone can extend beyond the hippocampus and amygdala.',
+          'One of the deep temporal lobe structures where these seizures most often begin, according to electrode recordings in seventeen people before surgery. The brightness stands for abnormal, synchronised firing, not for the hippocampus working better; it is drawn on the left and can be on either side. In every one of them more than one structure was involved at the start, and a review argues that the starting zone can extend beyond the hippocampus and amygdala.',
         confidence: 'mixed',
         citations: [bartolomeiMesial, bartolomeiEarly, bartolomeiSeveral, bertramBeyond],
         keyframes: kf(0, 0, 0.04, 0.9, 0.76, 1, 0.82, 0, 1, 0),
@@ -117,7 +121,7 @@ const score = {
       {
         region: 'amygdala-l',
         explanation:
-          'One of the deep temporal lobe structures involved early in these seizures. It is usually removed together with the hippocampus in epilepsy surgery, though a review argues that the starting zone can extend beyond both.',
+          'One of the deep temporal lobe structures involved early in these seizures. In people who have epilepsy surgery it is usually removed together with the hippocampus, though a review argues that the starting zone can extend beyond both.',
         confidence: 'mixed',
         citations: [bartolomeiMesial, bartolomeiSeveral, bertramBeyond],
         keyframes: kf(0, 0, 0.06, 0.8, 0.76, 1, 0.82, 0, 1, 0),
@@ -157,39 +161,29 @@ const score = {
       {
         region: 'thalamus',
         explanation:
-          'Blood flow rises in deep midline structures on both sides, including the thalamus, after it has risen in the temporal lobe. This was seen in seizures with loss of awareness and not in those where awareness was kept.',
+          'Blood flow rises in deep midline structures on both sides, including the thalamus, after it has risen in the temporal lobe. This was seen in seizures with loss of awareness and not in those where awareness was kept. The more blood flow rose in these midline structures, the more it fell in frontal and parietal association cortex. The whole thalamus is drawn; the source names midline structures such as the mediodorsal thalamus.',
         confidence: 'mixed',
-        citations: [blumenfeldSequence, blumenfeldSpared],
+        citations: [blumenfeldSequence, blumenfeldSpared, blumenfeldCorrelated],
         keyframes: kf(0, 0, 0.36, 0, 0.52, 0.7, 0.76, 0.75, 0.84, 0, 1, 0),
       },
       {
         region: 'dlpfc',
         explanation:
-          'Frontal association cortex on both sides. Blood flow there drops sharply, and electrodes record slow waves like those of deep sleep, during seizures in which awareness is lost. The seizure itself has not spread here. The researchers propose that the seizure disrupts the brain\'s arousal systems, which then stop keeping this cortex awake; that explanation is a hypothesis. Drawn on the middle frontal gyrus; the finding is for frontal association cortex generally.',
+          'Frontal association cortex on both sides. Blood flow there drops sharply, and electrodes record slow waves like those of deep sleep, during seizures in which awareness is lost. The slowing is thought likely to arise from the effect of the seizure on distant networks, not from the seizure spreading here. The researchers propose that the seizure disrupts the brain\'s arousal systems, which then stop keeping this cortex awake; that explanation is a hypothesis. Drawn on the middle frontal gyrus; the finding is for frontal association cortex generally.',
         confidence: 'mixed',
-        citations: [blumenfeldDecreases, englotSlow, englotHypothesis, blumenfeldSpared, blumenfeldPostictal],
+        citations: [blumenfeldDecreases, englotSlow, blumenfeldNetwork, englotHypothesis, blumenfeldSpared, blumenfeldPostictal],
         keyframes: kf(0, 0, 0.4, 0, 0.54, -0.7, 0.76, -0.75, 1, 0),
       },
       {
         region: 'inferior-parietal',
         explanation:
-          'Parietal association cortex on both sides. Blood flow there drops sharply, and electrodes record slow waves like those of deep sleep, during seizures in which awareness is lost. The seizure itself has not spread here.',
+          'Parietal association cortex on both sides. Blood flow there drops sharply, and electrodes record slow waves like those of deep sleep, during seizures in which awareness is lost. The slowing is thought likely to arise from the effect of the seizure on distant networks, not from the seizure spreading here.',
         confidence: 'mixed',
-        citations: [blumenfeldDecreases, englotSlow, blumenfeldSpared],
+        citations: [blumenfeldDecreases, englotSlow, blumenfeldNetwork, blumenfeldSpared],
         keyframes: kf(0, 0, 0.4, 0, 0.54, -0.7, 0.76, -0.75, 1, 0),
       },
     ],
-    connections: [
-      {
-        from: 'thalamus',
-        to: 'dlpfc',
-        explanation:
-          'Moving in opposite directions: the more blood flow rose in midline structures such as the thalamus, the more it fell in frontal and parietal association cortex. The line marks that opposing relationship, from one study, not closer cooperation.',
-        confidence: 'mixed',
-        citations: [blumenfeldCorrelated],
-        keyframes: kf(0, 0, 0.4, 0, 0.56, 0.7, 0.76, 0.7, 0.84, 0, 1, 0),
-      },
-    ],
+    connections: [],
   },
   typical: null,
 };
@@ -198,6 +192,7 @@ writeScore(score, {
   indexTitle: 'Epileptic seizure',
   category: 'physical',
   notes: [
+    'No line is drawn between the thalamus and the frontal cortex. The finding is an opposing relationship (one rises as the other falls), which a bright line would show as the two working together; it is described in the thalamus text instead.',
     'No typical-response comparison: there is no "same event in a brain without epilepsy". The informative comparison in the sources is between seizures where awareness is lost and those where it is kept, described in the text.',
     'The seizure is drawn starting on the left for clarity. It can start on either side; Englot et al. 2010 found seizures with loss of awareness "somewhat more common" with onset in the language-dominant temporal lobe.',
     'Seizure activity is drawn stopping abruptly, and the frontal and parietal cortex recovering gradually. Blumenfeld 2012 (read in full) says reduced responsiveness "may persists for several minutes into the postictal period" [sic]; the brain activity behind that recovery was not covered for temporal lobe seizures in the sources read.',

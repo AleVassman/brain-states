@@ -4,7 +4,7 @@ const SECTIONS: { heading: string; paragraphs: string[] }[] = [
   {
     heading: 'A reconstruction, not a recording',
     paragraphs: [
-      'Nobody has recorded an episode like these second by second inside a living brain. Each episode here is assembled from published studies: which regions tend to be more or less active, and which connections tend to be stronger or weaker.',
+      'Almost none of these episodes has been recorded from start to finish inside a living brain; seizures, recorded with electrodes, come closest. Each episode here is assembled from published studies: which regions tend to be more or less active, and which connections tend to be stronger or weaker.',
       'The pacing on screen is chosen so you can follow it. Each phase is labelled with its rough real-world timescale, and screen time is not proportional to real time.',
     ],
   },

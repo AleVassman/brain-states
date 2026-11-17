@@ -7,7 +7,7 @@ sentence that supports it. Activity values are qualitative: direction and rough 
 
 ## What is reconstruction in this episode
 
-Each phase here comes from a different small study: eight people whose attacks were set off with a drug, three people scanned during a visual aura, a small group scanned during spontaneous attacks, and one person scanned every morning for a month. They were never one experiment, and the order of the phases is the clinical one, not something timed in a single brain. An aura occurs in only about a third of people with migraine. The brainstem is drawn as a rough outline of the whole structure: the findings are for small areas inside it. The headache itself is carried by nerve pathways from the coverings of the brain and its blood vessels, which are not part of the brain model. The pain-free finding in the last phase comes from attacks stopped with medication, and what the brain does in the day or two after an untreated attack was not covered by the sources read.
+Each phase here comes from a different small study: eight people whose attacks were set off with a drug, three people scanned during a visual aura, people scanned during spontaneous attacks, and one person scanned every morning for a month. They were never one experiment, and the order of the phases is the clinical one, not something timed in a single brain. An aura occurs in only about a third of people with migraine. The brainstem is drawn as a rough outline of the whole structure: the findings are for small areas inside it. The headache itself is carried by nerve pathways from the coverings of the brain and its blood vessels, which are not part of the brain model. The pain-free finding in the last phase comes from attacks stopped with medication, and what the brain does in the day or two after an untreated attack was not covered by the sources read.
 
 ## Notes from the research pass
 
@@ -23,15 +23,15 @@ Each phase here comes from a different small study: eight people whose attacks w
 1. **Warning signs** (hours to days before the pain) — start of the episode.
 2. **Aura** (minutes (in about a third of people)) — order **reconstructed**: The sequence of phases is the clinical one given in reviews. The aura study recorded the wave across the visual cortex minute by minute, but no study read here followed one person from warning signs through aura to headache.
 3. **Headache** (hours) — order **reconstructed**: The sequence of phases is the clinical one given in reviews. The scans of the headache phase were not taken in the same people as the scans of the earlier phases.
-4. **After the pain** (hours to a day or more) — order **reconstructed**: The only brain finding here is from attacks ended by a drug. The gradual return to rest that is drawn is an assumption.
+4. **After the pain** (after the headache) — order **reconstructed**: The only brain finding here is from attacks ended by a drug. The gradual return to rest that is drawn is an assumption.
 
 ## The condition
 
 ### **hypothalamus** — Mixed evidence
 
-Claim: More active in the warning phase, before any pain, in eight people whose attacks were set off with a drug. In one person scanned daily for a month, its response grew over the day before each attack. It is held at the same level through the later phases because the sources read do not say what its activity does then; its working relationship with the brainstem is reported as altered during the pain.
+Claim: More active in the warning phase, before any pain, in eight people whose attacks were set off with a drug. In one person scanned daily for a month, its response to a painful stimulus grew over the day before each attack. It is drawn only for the warning phase, because the sources read do not say what its activity does afterwards; its working relationship with the brainstem is reported as altered during the pain.
 
-On screen: peaks above baseline (0.65), ends above baseline (0.1).
+On screen: peaks above baseline (0.65), ends at baseline (0).
 
 - Maniyar FH, Sprenger T, Monteith T, Schankin C, Goadsby PJ (2014). Brain activations in the premonitory phase of nitroglycerin-triggered migraine attacks. doi:10.1093/brain/awt320 — study, abstract-only
   > "We found activations in the posterolateral hypothalamus, midbrain tegmental area, periaqueductal grey, dorsal pons and various cortical areas including occipital, temporal and prefrontal cortex."
@@ -44,9 +44,9 @@ On screen: peaks above baseline (0.65), ends above baseline (0.1).
 
 ### **brainstem** — Mixed evidence
 
-Claim: Parts of the brainstem are more active in the warning phase and during the headache. During spontaneous attacks blood flow in the brainstem was raised, and it stayed raised after medication had removed the pain, which is why the brainstem has been called a possible generator of attacks; that idea is disputed. The findings are for small areas inside the brainstem, not all of it.
+Claim: Parts of the brainstem are more active in the warning phase and during the headache. During spontaneous attacks blood flow in the brainstem was raised, and it stayed raised after medication had removed the pain, which is why the brainstem has been called a possible generator of attacks; that idea is disputed. The findings are for small areas inside the brainstem, not all of it. Nothing is drawn during the aura, which the sources read do not cover for the brainstem; the finding after the pain was made straight after medication, not hours later.
 
-On screen: peaks above baseline (0.8), ends above baseline (0.1).
+On screen: peaks above baseline (0.8), ends at baseline (0).
 
 - Maniyar FH, Sprenger T, Monteith T, Schankin C, Goadsby PJ (2014). Brain activations in the premonitory phase of nitroglycerin-triggered migraine attacks. doi:10.1093/brain/awt320 — study, abstract-only
   > "We found activations in the posterolateral hypothalamus, midbrain tegmental area, periaqueductal grey, dorsal pons and various cortical areas including occipital, temporal and prefrontal cortex."
@@ -59,7 +59,7 @@ On screen: peaks above baseline (0.8), ends above baseline (0.1).
 
 ### **visual-cortex** — Mixed evidence
 
-Claim: Active in the warning phase, in one small study. During a visual aura, recorded almost continuously in three people, activity rose in one visual area, spread slowly across the visual cortex in step with what the person saw, and then fell below its starting level. During the headache, blood flow was raised in visual association cortex. The whole visual cortex is drawn rising and falling together; the real change is a wave moving across it, which this brain model cannot show.
+Claim: Active in the warning phase, in one small study. During a visual aura, recorded almost continuously in three people, activity rose in one visual area, spread slowly across the visual cortex in step with what the person saw, and then diminished. During the headache, blood flow was raised in visual association cortex. The whole visual cortex is drawn rising and falling together; the real change is a wave moving across it, which this brain model cannot show. The area where the wave began and the visual association areas lie at least partly outside the gyri drawn here.
 
 On screen: peaks above baseline (0.8), ends at baseline (0).
 

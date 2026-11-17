@@ -53,7 +53,7 @@ const score = {
   description:
     'A migraine attack is far more than a headache. It unfolds in phases over hours to days: early warning signs such as tiredness and yawning, in some people a visual aura, then the headache with its sensitivity to light and sound, and a washed-out period afterwards. The episode follows the brain through those phases in someone who has migraine. Many attacks have no aura, and not everyone has every phase.',
   caveat:
-    'Each phase here comes from a different small study: eight people whose attacks were set off with a drug, three people scanned during a visual aura, a small group scanned during spontaneous attacks, and one person scanned every morning for a month. They were never one experiment, and the order of the phases is the clinical one, not something timed in a single brain. An aura occurs in only about a third of people with migraine. The brainstem is drawn as a rough outline of the whole structure: the findings are for small areas inside it. The headache itself is carried by nerve pathways from the coverings of the brain and its blood vessels, which are not part of the brain model. The pain-free finding in the last phase comes from attacks stopped with medication, and what the brain does in the day or two after an untreated attack was not covered by the sources read.',
+    'Each phase here comes from a different small study: eight people whose attacks were set off with a drug, three people scanned during a visual aura, people scanned during spontaneous attacks, and one person scanned every morning for a month. They were never one experiment, and the order of the phases is the clinical one, not something timed in a single brain. An aura occurs in only about a third of people with migraine. The brainstem is drawn as a rough outline of the whole structure: the findings are for small areas inside it. The headache itself is carried by nerve pathways from the coverings of the brain and its blood vessels, which are not part of the brain model. The pain-free finding in the last phase comes from attacks stopped with medication, and what the brain does in the day or two after an untreated attack was not covered by the sources read.',
   durationSeconds: 44,
   phases: [
     {
@@ -63,7 +63,7 @@ const score = {
       start: 0,
       end: 0.26,
       caption:
-        'Before any pain: tiredness, yawning, food cravings. The hypothalamus, which regulates sleep, appetite and body rhythms, becomes more active, along with parts of the brainstem and the visual cortex.',
+        'Before any pain: tiredness and yawning. The hypothalamus, which regulates sleep, appetite and body rhythms, becomes more active, along with parts of the brainstem and the visual cortex.',
     },
     {
       id: 'aura',
@@ -72,7 +72,7 @@ const score = {
       start: 0.26,
       end: 0.5,
       caption:
-        'In about a third of people with migraine, some attacks bring an aura: shimmering zigzags that drift across vision. A wave of activity creeps across the visual cortex at a few millimetres a minute, leaving quieter cortex behind it.',
+        'In about a third of people with migraine, some attacks bring an aura: shimmering zigzags that drift across vision. A wave of raised signal creeps across the visual cortex at a few millimetres a minute, and the signal then diminishes along the same path.',
       order: {
         kind: 'reconstructed',
         rationale:
@@ -96,7 +96,7 @@ const score = {
     {
       id: 'after',
       name: 'After the pain',
-      timescale: 'hours to a day or more',
+      timescale: 'after the headache',
       start: 0.82,
       end: 1,
       caption:
@@ -113,26 +113,26 @@ const score = {
       {
         region: 'hypothalamus',
         explanation:
-          'More active in the warning phase, before any pain, in eight people whose attacks were set off with a drug. In one person scanned daily for a month, its response grew over the day before each attack. It is held at the same level through the later phases because the sources read do not say what its activity does then; its working relationship with the brainstem is reported as altered during the pain.',
+          'More active in the warning phase, before any pain, in eight people whose attacks were set off with a drug. In one person scanned daily for a month, its response to a painful stimulus grew over the day before each attack. It is drawn only for the warning phase, because the sources read do not say what its activity does afterwards; its working relationship with the brainstem is reported as altered during the pain.',
         confidence: 'mixed',
         citations: [maniyarActivations, schulteHypothalamus, schulteCoupling, dodickPremonitory],
-        keyframes: kf(0, 0, 0.08, 0.3, 0.22, 0.65, 0.82, 0.65, 1, 0.1),
+        keyframes: kf(0, 0, 0.08, 0.3, 0.22, 0.65, 0.3, 0, 1, 0),
       },
       {
         region: 'brainstem',
         explanation:
-          'Parts of the brainstem are more active in the warning phase and during the headache. During spontaneous attacks blood flow in the brainstem was raised, and it stayed raised after medication had removed the pain, which is why the brainstem has been called a possible generator of attacks; that idea is disputed. The findings are for small areas inside the brainstem, not all of it.',
+          'Parts of the brainstem are more active in the warning phase and during the headache. During spontaneous attacks blood flow in the brainstem was raised, and it stayed raised after medication had removed the pain, which is why the brainstem has been called a possible generator of attacks; that idea is disputed. The findings are for small areas inside the brainstem, not all of it. Nothing is drawn during the aura, which the sources read do not cover for the brainstem; the finding after the pain was made straight after medication, not hours later.',
         confidence: 'mixed',
         citations: [maniyarActivations, weillerAttack, weillerPersisted, schulteCoupling],
-        keyframes: kf(0, 0, 0.1, 0.3, 0.24, 0.5, 0.5, 0.55, 0.62, 0.8, 0.82, 0.75, 0.92, 0.6, 1, 0.1),
+        keyframes: kf(0, 0, 0.1, 0.3, 0.24, 0.5, 0.3, 0, 0.5, 0, 0.62, 0.8, 0.82, 0.75, 0.9, 0.75, 1, 0),
       },
       {
         region: 'visual-cortex',
         explanation:
-          'Active in the warning phase, in one small study. During a visual aura, recorded almost continuously in three people, activity rose in one visual area, spread slowly across the visual cortex in step with what the person saw, and then fell below its starting level. During the headache, blood flow was raised in visual association cortex. The whole visual cortex is drawn rising and falling together; the real change is a wave moving across it, which this brain model cannot show.',
+          'Active in the warning phase, in one small study. During a visual aura, recorded almost continuously in three people, activity rose in one visual area, spread slowly across the visual cortex in step with what the person saw, and then diminished. During the headache, blood flow was raised in visual association cortex. The whole visual cortex is drawn rising and falling together; the real change is a wave moving across it, which this brain model cannot show. The area where the wave began and the visual association areas lie at least partly outside the gyri drawn here.',
         confidence: 'mixed',
         citations: [maniyarActivations, hadjikhaniRise, hadjikhaniFall, dodickAura, weillerAttack],
-        keyframes: kf(0, 0, 0.12, 0.25, 0.26, 0.3, 0.33, 0.8, 0.42, -0.4, 0.5, -0.3, 0.6, 0.4, 0.82, 0.4, 1, 0),
+        keyframes: kf(0, 0, 0.12, 0.25, 0.26, 0.3, 0.33, 0.8, 0.44, 0, 0.5, 0, 0.6, 0.4, 0.82, 0.4, 1, 0),
       },
     ],
     connections: [],

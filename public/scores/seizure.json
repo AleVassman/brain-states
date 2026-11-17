@@ -1,7 +1,7 @@
 {
  "id": "seizure",
  "title": "Epileptic seizure: a temporal lobe seizure",
- "description": "There are many kinds of seizure. This episode shows one of the most common in adults: a seizure that begins deep in one temporal lobe and, as it spreads, takes awareness away for a minute or two. The person may stare, fumble or not respond, and often does not remember it. It is drawn starting on the left; in life it can start on either side. A seizure is abnormally intense, synchronised activity, so \"more active\" here does not mean working better.",
+ "description": "There are many kinds of seizure. This episode shows a common kind: a seizure that begins deep in one temporal lobe and, as it spreads, takes awareness away for a minute or two. The person may stare, fumble or not respond. It is drawn starting on the left; in life it can start on either side. A seizure is abnormally intense, synchronised activity, so \"more active\" here does not mean working better.",
  "caveat": "This is unusually well-timed evidence for this project, because seizures are recorded directly with electrodes placed in the brain before epilepsy surgery, and with blood-flow scans injected during a seizure. But those recordings come from people whose epilepsy has not responded to medication, so they may not represent everyone. Where a seizure starts differs between people, and the starting zone can reach beyond the hippocampus and amygdala. The idea that the seizure switches off the brain's arousal systems, which in turn quietens the frontal and parietal cortex, is the researchers' hypothesis for why awareness is lost. What the brain does after the seizure ends is drawn as an assumption: the sources read describe the person's reduced responsiveness lasting several minutes, not the brain activity behind it.",
  "durationSeconds": 36,
  "phases": [
@@ -11,7 +11,7 @@
    "timescale": "seconds",
    "start": 0,
    "end": 0.16,
-   "caption": "Fast, synchronised firing begins deep in one temporal lobe, in the hippocampus, the amygdala and the cortex around them. The person may still be aware at this point."
+   "caption": "Fast, synchronised firing begins deep in one temporal lobe, in the hippocampus, the amygdala and the cortex around them. This is abnormal firing: brighter here does not mean working better. It is drawn on the left and can start on either side. The person may still be aware at this point."
   },
   {
    "id": "spread",
@@ -50,7 +50,7 @@
    "timescale": "tens of seconds to a minute or two",
    "start": 0.4,
    "end": 0.76,
-   "caption": "Deep midline structures such as the thalamus become more active, and large areas of frontal and parietal cortex on both sides slow down, as in deep sleep. The seizure has not spread there; those areas have been quietened. This is when the person stops responding.",
+   "caption": "Deep midline structures such as the thalamus become more active, and large areas of frontal and parietal cortex on both sides slow down, as in deep sleep. The seizure itself has probably not spread there; the slowing is thought to come from its effect on distant networks. This is when the person stops responding.",
    "order": {
     "kind": "timed",
     "citations": [
@@ -72,7 +72,7 @@
    "timescale": "minutes",
    "start": 0.76,
    "end": 1,
-   "caption": "The seizure stops. The person can stay confused or unresponsive for several minutes. What the brain is doing during that recovery is drawn here as a gradual return, which is an assumption.",
+   "caption": "The seizure stops. The person can stay confused or unresponsive for several minutes. The seizure activity is drawn stopping and the slowed cortex recovering gradually; both are assumptions about what the brain is doing during that recovery.",
    "order": {
     "kind": "reconstructed",
     "rationale": "The sources read describe behaviour after the seizure, reduced responsiveness for several minutes, not brain activity. The gradual return to rest is assumed."
@@ -83,7 +83,7 @@
   "regions": [
    {
     "region": "hippocampus-l",
-    "explanation": "One of the deep temporal lobe structures where these seizures most often begin, according to electrode recordings in seventeen people before surgery. In every one of them more than one structure was involved at the start, and a review argues that the starting zone can extend beyond the hippocampus and amygdala.",
+    "explanation": "One of the deep temporal lobe structures where these seizures most often begin, according to electrode recordings in seventeen people before surgery. The brightness stands for abnormal, synchronised firing, not for the hippocampus working better; it is drawn on the left and can be on either side. In every one of them more than one structure was involved at the start, and a review argues that the starting zone can extend beyond the hippocampus and amygdala.",
     "confidence": "mixed",
     "citations": [
      {
@@ -148,7 +148,7 @@
    },
    {
     "region": "amygdala-l",
-    "explanation": "One of the deep temporal lobe structures involved early in these seizures. It is usually removed together with the hippocampus in epilepsy surgery, though a review argues that the starting zone can extend beyond both.",
+    "explanation": "One of the deep temporal lobe structures involved early in these seizures. In people who have epilepsy surgery it is usually removed together with the hippocampus, though a review argues that the starting zone can extend beyond both.",
     "confidence": "mixed",
     "citations": [
      {
@@ -386,7 +386,7 @@
    },
    {
     "region": "thalamus",
-    "explanation": "Blood flow rises in deep midline structures on both sides, including the thalamus, after it has risen in the temporal lobe. This was seen in seizures with loss of awareness and not in those where awareness was kept.",
+    "explanation": "Blood flow rises in deep midline structures on both sides, including the thalamus, after it has risen in the temporal lobe. This was seen in seizures with loss of awareness and not in those where awareness was kept. The more blood flow rose in these midline structures, the more it fell in frontal and parietal association cortex. The whole thalamus is drawn; the source names midline structures such as the mediodorsal thalamus.",
     "confidence": "mixed",
     "citations": [
      {
@@ -406,6 +406,15 @@
       "kind": "study",
       "access": "abstract-only",
       "quote": "temporal lobe seizures in which consciousness was spared were not accompanied by these widespread CBF changes"
+     },
+     {
+      "authors": "Blumenfeld H, McNally KA, Vanderhill SD, Paige AL, Chung R, Davis K, Norden AD, Stokking R, Studholme C, Novotny EJ, Zubal IG, Spencer SS",
+      "year": 2004,
+      "title": "Positive and negative network correlations in temporal lobe epilepsy.",
+      "doi": "10.1093/cercor/bhh048",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "The CBF decreases in frontal and parietal association cortex were strongly correlated with increases in midline structures such as the mediodorsal thalamus."
      }
     ],
     "keyframes": [
@@ -437,7 +446,7 @@
    },
    {
     "region": "dlpfc",
-    "explanation": "Frontal association cortex on both sides. Blood flow there drops sharply, and electrodes record slow waves like those of deep sleep, during seizures in which awareness is lost. The seizure itself has not spread here. The researchers propose that the seizure disrupts the brain's arousal systems, which then stop keeping this cortex awake; that explanation is a hypothesis. Drawn on the middle frontal gyrus; the finding is for frontal association cortex generally.",
+    "explanation": "Frontal association cortex on both sides. Blood flow there drops sharply, and electrodes record slow waves like those of deep sleep, during seizures in which awareness is lost. The slowing is thought likely to arise from the effect of the seizure on distant networks, not from the seizure spreading here. The researchers propose that the seizure disrupts the brain's arousal systems, which then stop keeping this cortex awake; that explanation is a hypothesis. Drawn on the middle frontal gyrus; the finding is for frontal association cortex generally.",
     "confidence": "mixed",
     "citations": [
      {
@@ -457,6 +466,15 @@
       "kind": "study",
       "access": "abstract-only",
       "quote": "We observed significantly increased delta-range 1-2 Hz slow wave activity in the bilateral frontal and parietal neocortices during complex-partial compared with simple-partial seizures."
+     },
+     {
+      "authors": "Blumenfeld H",
+      "year": 2012,
+      "title": "Impaired consciousness in epilepsy.",
+      "doi": "10.1016/s1474-4422(12)70188-6",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "likely arising from long-range network effects rather than direct seizure propagation"
      },
      {
       "authors": "Englot DJ, Yang L, Hamid H, Danielson N, Bai X, et al., Blumenfeld H",
@@ -511,7 +529,7 @@
    },
    {
     "region": "inferior-parietal",
-    "explanation": "Parietal association cortex on both sides. Blood flow there drops sharply, and electrodes record slow waves like those of deep sleep, during seizures in which awareness is lost. The seizure itself has not spread here.",
+    "explanation": "Parietal association cortex on both sides. Blood flow there drops sharply, and electrodes record slow waves like those of deep sleep, during seizures in which awareness is lost. The slowing is thought likely to arise from the effect of the seizure on distant networks, not from the seizure spreading here.",
     "confidence": "mixed",
     "citations": [
      {
@@ -531,6 +549,15 @@
       "kind": "study",
       "access": "abstract-only",
       "quote": "We observed significantly increased delta-range 1-2 Hz slow wave activity in the bilateral frontal and parietal neocortices during complex-partial compared with simple-partial seizures."
+     },
+     {
+      "authors": "Blumenfeld H",
+      "year": 2012,
+      "title": "Impaired consciousness in epilepsy.",
+      "doi": "10.1016/s1474-4422(12)70188-6",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "likely arising from long-range network effects rather than direct seizure propagation"
      },
      {
       "authors": "Blumenfeld H, McNally KA, Vanderhill SD, Paige AL, Chung R, Davis K, Norden AD, Stokking R, Studholme C, Novotny EJ, Zubal IG, Spencer SS",
@@ -566,51 +593,7 @@
     ]
    }
   ],
-  "connections": [
-   {
-    "from": "thalamus",
-    "to": "dlpfc",
-    "explanation": "Moving in opposite directions: the more blood flow rose in midline structures such as the thalamus, the more it fell in frontal and parietal association cortex. The line marks that opposing relationship, from one study, not closer cooperation.",
-    "confidence": "mixed",
-    "citations": [
-     {
-      "authors": "Blumenfeld H, McNally KA, Vanderhill SD, Paige AL, Chung R, Davis K, Norden AD, Stokking R, Studholme C, Novotny EJ, Zubal IG, Spencer SS",
-      "year": 2004,
-      "title": "Positive and negative network correlations in temporal lobe epilepsy.",
-      "doi": "10.1093/cercor/bhh048",
-      "kind": "study",
-      "access": "abstract-only",
-      "quote": "The CBF decreases in frontal and parietal association cortex were strongly correlated with increases in midline structures such as the mediodorsal thalamus."
-     }
-    ],
-    "keyframes": [
-     {
-      "t": 0,
-      "v": 0
-     },
-     {
-      "t": 0.4,
-      "v": 0
-     },
-     {
-      "t": 0.56,
-      "v": 0.7
-     },
-     {
-      "t": 0.76,
-      "v": 0.7
-     },
-     {
-      "t": 0.84,
-      "v": 0
-     },
-     {
-      "t": 1,
-      "v": 0
-     }
-    ]
-   }
-  ]
+  "connections": []
  },
  "typical": null
 }

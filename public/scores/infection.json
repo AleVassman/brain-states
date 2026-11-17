@@ -2,7 +2,7 @@
  "id": "infection",
  "title": "Infection: why being ill feels the way it does",
  "description": "When the body fights an infection such as flu, the tiredness, slowness, low mood and loss of interest are not just side effects. They are produced by the brain in response to signals from the immune system. The episode follows what has been measured in healthy volunteers given a vaccine or a small dose of a bacterial substance that sets off a mild, safe immune response. There is no \"typical response\" to compare with: this is the typical response.",
- "caveat": "These studies use a mild immune challenge in healthy volunteers and scan them two to three hours later. That is a stand-in for a real infection, and it does not produce a real fever. Fever itself is part of the same brain-directed response, but the sources read do not name the brain region that sets body temperature, so nothing is drawn for it. Most findings come from two small groups of volunteers, sixteen men in one and thirty-nine people in the other, and several were seen only while people did a particular task in the scanner. A pooled analysis confirms that inflammation goes with changes in these regions but, in the part read, does not say in which direction. How the brain recovers as the infection clears was not studied.",
+ "caveat": "These studies use a mild immune challenge in healthy volunteers and scan them about two hours later. That is a stand-in for a real infection. In the vaccine study, body temperature did not rise. Fever itself is part of the same brain-directed response, but the sources read do not name the brain region that sets body temperature, so nothing is drawn for it. Most findings come from two small groups of volunteers, sixteen men in one and thirty-nine people in the other, and several were seen only while people did a particular task in the scanner. A pooled analysis confirms that inflammation goes with changes in these regions but, in the part read, does not say in which direction. How the brain recovers as the infection clears was not studied.",
  "durationSeconds": 36,
  "phases": [
   {
@@ -28,7 +28,7 @@
   {
    "id": "mood",
    "name": "Low mood, less pleasure",
-   "timescale": "around three hours in the studies",
+   "timescale": "two to three hours in the studies",
    "start": 0.5,
    "end": 0.8,
    "caption": "Mood drops and things feel less rewarding. The more mood fell, the more active the subgenual cingulate was, and the less it worked together with the amygdala, the medial prefrontal cortex and the nucleus accumbens. The ventral striatum responded less to the prospect of a reward.",
@@ -54,7 +54,7 @@
   "regions": [
    {
     "region": "insula",
-    "explanation": "Regions that represent the internal state of the body became more active under inflammation while volunteers did a demanding task, and their activity predicted how tired and foggy each person felt. The abstract of that study does not name the regions; a later paper by the same group names the insula. A pooled analysis lists the insula among regions consistently affected by inflammation.",
+    "explanation": "Regions that represent the internal state of the body became more active under inflammation while volunteers did a demanding task, and their activity predicted how tired and foggy each person felt. The abstract of that study does not name the regions; a companion paper by the same group names the insula. A pooled analysis lists the insula among regions consistently affected by inflammation.",
     "confidence": "mixed",
     "citations": [
      {
@@ -118,73 +118,8 @@
     ]
    },
    {
-    "region": "substantia-nigra",
-    "explanation": "A small midbrain structure that supplies dopamine to the movement system. Its response was markedly disturbed after vaccination, and more activity there went with slower reactions and a stronger immune response. Drawn as more active on that basis; the first of those findings does not state a direction. A pooled analysis lists the midbrain among regions consistently affected by inflammation.",
-    "confidence": "mixed",
-    "citations": [
-     {
-      "authors": "Brydon L, Harrison NA, Walker C, Steptoe A, Critchley HD",
-      "year": 2008,
-      "title": "Peripheral inflammation is associated with altered substantia nigra activity and psychomotor slowing in humans.",
-      "doi": "10.1016/j.biopsych.2007.12.007",
-      "kind": "study",
-      "access": "abstract-only",
-      "quote": "Vaccination had no global effect on neurovascular coupling but markedly perturbed neural reactivity within substantia nigra during low-level visual stimulation."
-     },
-     {
-      "authors": "Brydon L, Harrison NA, Walker C, Steptoe A, Critchley HD",
-      "year": 2008,
-      "title": "Peripheral inflammation is associated with altered substantia nigra activity and psychomotor slowing in humans.",
-      "doi": "10.1016/j.biopsych.2007.12.007",
-      "kind": "study",
-      "access": "abstract-only",
-      "quote": "Prolonged reaction times and larger interleukin-6 responses were associated with evoked neural activity within substantia nigra."
-     },
-     {
-      "authors": "Harrison NA, Brydon L, Walker C, Gray MA, Steptoe A, Critchley HD",
-      "year": 2009,
-      "title": "Inflammation causes mood changes through alterations in subgenual cingulate activity and mesolimbic connectivity.",
-      "doi": "10.1016/j.biopsych.2009.03.015",
-      "kind": "study",
-      "access": "full-text",
-      "quote": "fatigue and psychomotor slowing were associated with corresponding changes in activity within insula (16) and substantia nigra (19)"
-     },
-     {
-      "authors": "Kraynak TE, Marsland AL, Wager TD, Gianaros PJ",
-      "year": 2018,
-      "title": "Functional neuroanatomy of peripheral inflammatory physiology: A meta-analysis of human neuroimaging studies.",
-      "doi": "10.1016/j.neubiorev.2018.07.013",
-      "kind": "meta-analysis",
-      "access": "abstract-only",
-      "quote": "revealed consistent effects in the amygdala, hippocampus, hypothalamus, striatum, insula, midbrain, and brainstem, as well as prefrontal and temporal cortices"
-     }
-    ],
-    "keyframes": [
-     {
-      "t": 0,
-      "v": 0
-     },
-     {
-      "t": 0.2,
-      "v": 0
-     },
-     {
-      "t": 0.42,
-      "v": 0.5
-     },
-     {
-      "t": 0.8,
-      "v": 0.5
-     },
-     {
-      "t": 1,
-      "v": 0
-     }
-    ]
-   },
-   {
     "region": "sgacc",
-    "explanation": "The more a volunteer's mood fell after vaccination, the more active this region was while they looked at emotional faces. The region is one implicated in depression, and the authors take this to suggest a shared basis for low mood in illness and in depression. From one study of sixteen men.",
+    "explanation": "The more a volunteer's mood fell after vaccination, the more active this region was while they looked at emotional faces. The region is one implicated in depression, and the authors take this to suggest a shared basis for low mood in illness and in depression. From one study of sixteen men. It is drawn as a modest rise for simplicity: the study found this only as a link with how far each person's mood fell, not as an average change across everyone.",
     "confidence": "mixed",
     "citations": [
      {
@@ -208,11 +143,11 @@
      },
      {
       "t": 0.64,
-      "v": 0.6
+      "v": 0.3
      },
      {
       "t": 0.8,
-      "v": 0.6
+      "v": 0.3
      },
      {
       "t": 1,
@@ -222,7 +157,7 @@
    },
    {
     "region": "nucleus-accumbens",
-    "explanation": "The ventral striatum responded less to signs of a coming reward in people given a mild immune challenge than in people given a placebo, and that weaker response accounted for part of their drop in mood. From one study of thirty-nine people. A pooled analysis lists the striatum among regions consistently affected by inflammation.",
+    "explanation": "Drawn on the nucleus accumbens, the main part of the ventral striatum. The finding is a weaker response to the prospect of a reward, not lower activity at rest. The ventral striatum responded less to signs of a coming reward in people given a mild immune challenge than in people given a placebo, and that weaker response accounted for part of their drop in mood. From one study of thirty-nine people. A pooled analysis lists the striatum among regions consistently affected by inflammation.",
     "confidence": "mixed",
     "citations": [
      {
@@ -271,8 +206,8 @@
   "connections": [
    {
     "from": "sgacc",
-    "to": "amygdala",
-    "explanation": "The more mood fell under inflammation, the less the subgenual cingulate worked together with the amygdala. From one study of sixteen men.",
+    "to": "amygdala-r",
+    "explanation": "The more mood fell under inflammation, the less the subgenual cingulate worked together with the amygdala; in the full paper this is the right amygdala. Found as a link with how far mood fell, not as an average change. From one study of sixteen men.",
     "confidence": "mixed",
     "citations": [
      {
@@ -311,7 +246,7 @@
    {
     "from": "sgacc",
     "to": "mpfc",
-    "explanation": "The more mood fell under inflammation, the less the subgenual cingulate worked together with the medial prefrontal cortex. From one study of sixteen men.",
+    "explanation": "The more mood fell under inflammation, the less the subgenual cingulate worked together with the medial prefrontal cortex. Found as a link with how far mood fell, not as an average change. From one study of sixteen men.",
     "confidence": "mixed",
     "citations": [
      {
@@ -350,7 +285,7 @@
    {
     "from": "sgacc",
     "to": "nucleus-accumbens",
-    "explanation": "The more mood fell under inflammation, the less the subgenual cingulate worked together with the nucleus accumbens. From one study of sixteen men.",
+    "explanation": "The more mood fell under inflammation, the less the subgenual cingulate worked together with the nucleus accumbens. Found as a link with how far mood fell, not as an average change. From one study of sixteen men.",
     "confidence": "mixed",
     "citations": [
      {

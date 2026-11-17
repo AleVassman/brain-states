@@ -53,26 +53,26 @@ const score = {
   description:
     "Unlike the other states, this is not an episode that comes and goes. Alzheimer's disease changes the brain slowly, over many years, and the timeline here is in stages of the disease, not minutes. It shows where the brain's activity, measured as its use of energy and its blood flow, falls first and where the fall spreads. It does not show the build-up of the two proteins, amyloid and tau, that defines the disease, nor the loss of brain tissue; those are described in the text.",
   caveat:
-    "The stages are built by comparing groups of people at different points in the disease, not by following individuals for decades, so the progression from one stage to the next is inferred. People differ in how the disease starts and how fast it moves. The brightness here stands for activity, as energy use or blood flow, while the disease is also, and first, a matter of protein build-up and of tissue loss that the brain model does not draw. The early rise in hippocampus activity comes from one small study and its authors offer it as a hypothesis. How and when the two proteins begin to build up is itself described by researchers as a hypothetical model.",
+    "The stages are built by comparing groups of people at different points in the disease, not by following individuals for decades, so the progression from one stage to the next is inferred. People differ in how the disease starts and how fast it moves. The brightness here stands for activity, as energy use or blood flow, while the disease is also a matter of protein build-up and of tissue loss that the brain model does not draw. How far activity falls at each stage is not given in the sources read, apart from one figure of about a fifth in the posterior cingulate in very early disease; the levels drawn are illustrative, and they are held steady through the later stages instead of being shown falling further. The early rise in hippocampus activity comes from one small study and its authors offer it as a hypothesis. How and when the two proteins begin to build up is itself described by researchers as a hypothetical model.",
   durationSeconds: 44,
   phases: [
     {
       id: 'silent',
       name: 'Before symptoms',
-      timescale: 'years, possibly decades',
+      timescale: 'years',
       start: 0,
       end: 0.2,
       caption:
-        'For years there is nothing to notice. Two proteins, amyloid and tau, are building up; researchers think the two may start independently. Amyloid settles in regions at the back of the brain that are busy whenever the mind is at rest. Activity is drawn unchanged here, because the sources read do not describe it at this stage.',
+        'For years there is nothing to notice. Two proteins, amyloid and tau, are building up; researchers think the two may start independently. In people with the disease, amyloid is found in regions at the back of the brain that are busy whenever the mind is at rest. Activity is drawn unchanged here, because the sources read do not describe it at this stage.',
     },
     {
       id: 'mci',
-      name: 'Memory slips',
+      name: 'Mild cognitive impairment',
       timescale: 'years',
       start: 0.2,
       end: 0.48,
       caption:
-        'Mild memory problems begin. At the back of the brain, the posterior cingulate uses noticeably less energy. In one small study the hippocampus was working harder than usual during learning, which its authors suggest may be an early phase before it declines.',
+        'A stage called mild cognitive impairment, marked by difficulty forming new memories. At the back of the brain, the posterior cingulate uses noticeably less energy. In one small study the hippocampus was working harder than usual during learning, which its authors suggest may be an early phase before it declines.',
       order: {
         kind: 'reconstructed',
         rationale:
@@ -99,7 +99,8 @@ const score = {
       timescale: 'years',
       start: 0.76,
       end: 1,
-      caption: 'In fully developed disease the changes reach further, into the middle of the frontal lobes and the thalamus.',
+      caption:
+        'In fully developed disease the changes reach further, into a network in the middle of the frontal lobes and the thalamus. The source read does not say whether that is lower activity or loss of tissue, so nothing more is drawn.',
       order: {
         kind: 'reconstructed',
         rationale: 'From a pooled analysis comparing studies of early and fully developed disease, not from following the same people.',
@@ -114,7 +115,7 @@ const score = {
           "Uses markedly less energy even in very early Alzheimer's disease, before a diagnosis can be made, and a pooled analysis finds reduced activity in the precuneus in early disease. These posterior regions are also where amyloid builds up. The same pooled analysis notes that changes here do not, on their own, tell apart those whose memory problems will progress.",
         confidence: 'established',
         citations: [minoshimaPcc, schroeterEarly, bucknerPosterior, bucknerAmyloid, schroeterUnspecific],
-        keyframes: kf(0, 0, 0.2, 0, 0.4, -0.45, 0.7, -0.7, 1, -0.85),
+        keyframes: kf(0, 0, 0.2, 0, 0.4, -0.45, 1, -0.5),
       },
       {
         region: 'inferior-parietal',
@@ -122,15 +123,15 @@ const score = {
           'Energy use and blood flow fall in the inferior parietal cortex in early disease, in a pooled analysis of 40 studies, and metabolic changes appear early across posterior and lateral parietal cortex.',
         confidence: 'established',
         citations: [schroeterEarly, bucknerPosterior],
-        keyframes: kf(0, 0, 0.3, 0, 0.56, -0.5, 0.76, -0.65, 1, -0.8),
+        keyframes: kf(0, 0, 0.3, 0, 0.56, -0.45, 1, -0.5),
       },
       {
         region: 'hippocampus',
         explanation:
-          "In one small study, the hippocampus was more active during learning in people with very mild memory problems than in people without, and less active, and smaller, in people with Alzheimer's dementia. The authors hypothesise an early phase of extra activity followed by decline. Pooled evidence for the hippocampus in early disease is for shrinkage, not for activity.",
-        confidence: 'mixed',
+          "In one small study, the hippocampus was more active during learning in people with very mild memory problems than in people without, and less active, and smaller, in people with Alzheimer's dementia. The authors hypothesise an early phase of extra activity followed by decline. Pooled evidence for the hippocampus in early disease is for shrinkage, not for activity. Marked debated because the rise is one small study and its authors' hypothesis.",
+        confidence: 'debated',
         citations: [dickersonMci, dickersonAd, dickersonHypothesis, schroeterEarly],
-        keyframes: kf(0, 0, 0.2, 0, 0.36, 0.45, 0.5, 0.2, 0.64, -0.5, 1, -0.75),
+        keyframes: kf(0, 0, 0.2, 0, 0.36, 0.4, 0.5, 0.15, 0.64, -0.4, 1, -0.5),
       },
       {
         region: 'parahippocampal',
@@ -138,23 +139,7 @@ const score = {
           "The entorhinal cortex, at the front of this gyrus, is one of the first places to shrink in early disease, and in one small study it was less active in people with Alzheimer's dementia. The dimming drawn is for that lower activity; the shrinkage, which is the better-established finding, is not something this brain model shows.",
         confidence: 'mixed',
         citations: [dickersonAd, schroeterEarly],
-        keyframes: kf(0, 0, 0.48, 0, 0.66, -0.5, 1, -0.75),
-      },
-      {
-        region: 'mpfc',
-        explanation:
-          'A pooled analysis finds that fully developed disease additionally involves a network in the middle of the frontal lobes and the thalamus. Drawn as lower activity; the abstract read does not say whether the change there is in activity or in tissue.',
-        confidence: 'mixed',
-        citations: [schroeterLate],
-        keyframes: kf(0, 0, 0.76, 0, 0.9, -0.5, 1, -0.6),
-      },
-      {
-        region: 'thalamus',
-        explanation:
-          'A pooled analysis finds that fully developed disease additionally involves a network in the middle of the frontal lobes and the thalamus. Drawn as lower activity; the abstract read does not say whether the change there is in activity or in tissue.',
-        confidence: 'mixed',
-        citations: [schroeterLate],
-        keyframes: kf(0, 0, 0.76, 0, 0.9, -0.5, 1, -0.6),
+        keyframes: kf(0, 0, 0.48, 0, 0.66, -0.4, 1, -0.5),
       },
     ],
     connections: [],
@@ -162,6 +147,7 @@ const score = {
   typical: null,
 };
 
+void schroeterLate;
 void jackOrder;
 void badhwarNetworks;
 
@@ -173,7 +159,8 @@ writeScore(score, {
     'No typical-response comparison is drawn. Every finding is already a comparison with people of similar age without the disease.',
     'Protein build-up is described in a caption and not drawn: Jack et al. 2013 ("the two major proteinopathies underlying AD biomarker changes, amyloid β (Aβ) and tau, might be initiated independently in sporadic AD"), which its authors call a hypothetical model.',
     'No lines are drawn. Badhwar et al. 2017 find "Consistent alterations in connectivity ... in the default mode, salience, and limbic networks" but the abstract gives no direction that could be shown.',
-    'The direction of change in the medial frontal cortex and thalamus in late disease is an assumption: the Schroeter et al. 2009 abstract says the network is "involved" and its analysis pooled both tissue loss and reduced energy use.',
+    'The medial frontal cortex and thalamus are not drawn. Schroeter et al. 2009 (abstract) says fully developed disease "involved additionally a frontomedian-thalamic network"; the analysis pooled tissue loss and reduced energy use, and the abstract does not say which applies there. It is described in a caption.',
+    'Depths are capped at half-dim and held steady. The only measured figure in the sources read is a 21-22% metabolic reduction in the posterior cingulate (Minoshima et al. 1997); no source read says activity keeps falling stage by stage.',
     'The classic staging of where tau spreads (Braak) was looked up but not used: it describes protein deposits in tissue, not activity.',
     'All six sources were read as abstracts only.',
   ],
