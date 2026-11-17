@@ -586,6 +586,94 @@
   "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
  },
  {
+  "id": "motor-cortex-l",
+  "group": "motor-cortex",
+  "name": "Left primary motor cortex (precentral gyrus)",
+  "hemisphere": "l",
+  "centroid": [
+   0.3843,
+   0.4914,
+   -0.0746
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The whole precentral gyrus is drawn. Findings about the premotor cortex, which lies just in front of it, are shown here only when the text says so."
+ },
+ {
+  "id": "motor-cortex-r",
+  "group": "motor-cortex",
+  "name": "Right primary motor cortex (precentral gyrus)",
+  "hemisphere": "r",
+  "centroid": [
+   -0.416,
+   0.5031,
+   -0.1005
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The whole precentral gyrus is drawn. Findings about the premotor cortex, which lies just in front of it, are shown here only when the text says so."
+ },
+ {
+  "id": "sma-l",
+  "group": "sma",
+  "name": "Left supplementary motor area",
+  "hemisphere": "l",
+  "centroid": [
+   0.0519,
+   0.5956,
+   0.0305
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "sma-r",
+  "group": "sma",
+  "name": "Right supplementary motor area",
+  "hemisphere": "r",
+  "centroid": [
+   -0.0875,
+   0.6001,
+   -0.0159
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+ },
+ {
+  "id": "somatosensory-l",
+  "group": "somatosensory",
+  "name": "Left primary touch and body-sense cortex (postcentral gyrus)",
+  "hemisphere": "l",
+  "centroid": [
+   0.424,
+   0.4696,
+   -0.2428
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The whole postcentral gyrus is drawn. Findings about the secondary somatosensory cortex, which lies below it, are not shown here."
+ },
+ {
+  "id": "somatosensory-r",
+  "group": "somatosensory",
+  "name": "Right primary touch and body-sense cortex (postcentral gyrus)",
+  "hemisphere": "r",
+  "centroid": [
+   -0.4166,
+   0.5075,
+   -0.2727
+  ],
+  "kind": "mesh",
+  "approximate": false,
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The whole postcentral gyrus is drawn. Findings about the secondary somatosensory cortex, which lies below it, are not shown here."
+ },
+ {
   "id": "caudate-l",
   "group": "caudate",
   "name": "Left caudate nucleus (dorsal striatum)",
@@ -670,8 +758,8 @@
   "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
  },
  {
-  "id": "cerebellum",
-  "group": "context",
+  "id": "cerebellum-mid",
+  "group": "cerebellum",
   "name": "Cerebellum",
   "hemisphere": "mid",
   "centroid": [
@@ -681,7 +769,8 @@
   ],
   "kind": "mesh",
   "approximate": false,
-  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)"
+  "source": "Automated Anatomical Labelling atlas 3 (AAL3v1, 1 mm)",
+  "extentNote": "The whole cerebellum is drawn as one shape. Findings shown on it are often for one side or one part."
  },
  {
   "id": "brainstem-mid",

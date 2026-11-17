@@ -22,6 +22,12 @@ const GYRUS_NOTE =
   'Shown as the whole gyrus that brain atlases use to stand in for this area. The area itself is smaller and has no sharp anatomical border.';
 const STRIATUM_NOTE =
   'Some findings shown on this region are for the striatum as a whole or its ventral part, of which this is the lower front part.';
+const MOTOR_NOTE =
+  'The whole precentral gyrus is drawn. Findings about the premotor cortex, which lies just in front of it, are shown here only when the text says so.';
+const SOMATO_NOTE =
+  'The whole postcentral gyrus is drawn. Findings about the secondary somatosensory cortex, which lies below it, are not shown here.';
+const CEREBELLUM_NOTE =
+  'The whole cerebellum is drawn as one shape. Findings shown on it are often for one side or one part.';
 const VISUAL_NOTE =
   'Several gyri at the back of the brain are drawn together as the visual cortex. Findings shown on it are often for one visual area within it.';
 const PARAHIPPOCAMPAL_NOTE =
@@ -65,6 +71,9 @@ const AAL_REGIONS = [
   { group: 'lateral-temporal', name: 'lateral temporal cortex (superior, middle and inferior temporal gyri)', labels: [85, 89, 93], tris: 6000, note: BROAD_NOTE },
   { group: 'inferior-parietal', name: 'inferior parietal cortex (inferior parietal, supramarginal and angular gyri)', labels: [65, 67, 69], tris: 5000, note: BROAD_NOTE },
   { group: 'substantia-nigra', name: 'substantia nigra', labels: [161, 163], tris: 500 },
+  { group: 'motor-cortex', name: 'primary motor cortex (precentral gyrus)', labels: [1], tris: 5000, note: MOTOR_NOTE },
+  { group: 'sma', name: 'supplementary motor area', labels: [15], tris: 3000 },
+  { group: 'somatosensory', name: 'primary touch and body-sense cortex (postcentral gyrus)', labels: [61], tris: 5000, note: SOMATO_NOTE },
   { group: 'caudate', name: 'caudate nucleus (dorsal striatum)', labels: [75], tris: 2500 },
   { group: 'putamen', name: 'putamen (dorsal striatum)', labels: [77], tris: 2500 },
 ];
@@ -168,7 +177,8 @@ for (const [side, shift] of [['l', 0], ['r', 1]]) {
 {
   const set = new Set(CEREBELLUM);
   const mesh = await meshFrom(aal, (v) => set.has(v), 16000);
-  add('cerebellum', 'context', 'Cerebellum', 'mid', AAL, mesh);
+  add('cerebellum-mid', 'cerebellum', 'Cerebellum', 'mid', AAL, mesh);
+  regions[regions.length - 1].extentNote = CEREBELLUM_NOTE;
 }
 
 // ---- Brainstem outline -------------------------------------------------------------------------

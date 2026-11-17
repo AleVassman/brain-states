@@ -74,6 +74,10 @@ Added beyond the design's list, because the research pass is likely to want them
 | `lateral-temporal` | AAL3 Temporal_Sup (85/86) + Temporal_Mid (89/90) + Temporal_Inf (93/94) |
 | `inferior-parietal` | AAL3 Parietal_Inf (65/66) + SupraMarginal (67/68) + Angular (69/70) |
 | `substantia-nigra` | AAL3 SN_pc (161/162) + SN_pr (163/164) |
+| `motor-cortex` | AAL3 Precentral (1/2) |
+| `sma` | AAL3 Supp_Motor_Area (15/16) |
+| `somatosensory` | AAL3 Postcentral (61/62) |
+| `cerebellum-mid` (group `cerebellum`) | AAL3 cerebellum labels 95–120, drawn as one shape |
 | `caudate` | AAL3 Caudate (75/76) |
 | `putamen` | AAL3 Putamen (77/78) |
 | `bnst` | Neudorfer labels 33/34 |
@@ -83,7 +87,6 @@ Context only (drawn faintly, never the target of a score):
 | Node | Built from |
 |---|---|
 | `cortex-l`, `cortex-r` | Union of every AAL3 cerebral cortex label, per hemisphere |
-| `cerebellum` | AAL3 labels 95–120 |
 | `brainstem-mid` (group `brainstem`) | Colin27 brain mask inside the box x ±14, y −50…−10, z −62…−8 mm, where AAL3 has no cortical or subcortical label. A rough outline, not an anatomical segmentation. Episodes may light it for findings about the brainstem in general; the app then shows an "Approximate extent" badge. |
 | `head` (in `head.glb`) | Lee Perry-Smith head scan fitted to the Colin27 head mask (or the Colin27 mask itself if the scan is absent) |
 

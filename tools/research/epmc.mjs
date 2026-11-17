@@ -27,7 +27,8 @@ function strip(markup) {
   return decode(
     markup
       .replace(/<(title|p|sec|abstract|body|caption|td|th|tr|label|h[1-6]|li|div|section)[^>]*>/g, '\n')
-      .replace(/<[^>]+>/g, ''),
+      // Only real tags: a "<" followed by a letter or "/". Keeps "P < .05" in abstracts.
+      .replace(/<\/?[a-zA-Z][^>]*>/g, ''),
   )
     .replace(/[ \t]+/g, ' ')
     .replace(/\n\s*\n+/g, '\n');
