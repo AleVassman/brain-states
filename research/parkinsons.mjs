@@ -80,7 +80,7 @@ const score = {
       start: 0.22,
       end: 0.55,
       caption:
-        'Dopamine-producing cells in the substantia nigra are lost, and the striatum runs short of dopamine. Tracer scans show the loss is greatest at the back of the putamen, with the caudate relatively spared. Movement becomes slower and stiffer.',
+        'Dopamine-producing cells in the substantia nigra are lost, and the striatum runs short of dopamine. Tracer scans show the loss is greatest at the back of the putamen, with the caudate relatively spared. Movement becomes slower.',
       order: {
         kind: 'reconstructed',
         rationale:
@@ -94,11 +94,11 @@ const score = {
       start: 0.55,
       end: 0.8,
       caption:
-        'With less dopamine, the circuits the striatum belongs to change their activity. In pooled scans at rest, the lentiform nucleus, which includes the putamen, and the thalamus are among the regions whose activity is lower than in people without the disease.',
+        'The circuits the striatum belongs to are also found working differently at rest. In pooled scans, local activity in the left thalamus was less coordinated than in people without the disease. (The putamen stays dimmed for dopamine loss; changes in its activity are not drawn.)',
       order: {
         kind: 'reconstructed',
         rationale:
-          'The resting-state findings come from people at varied stages and are compared with healthy people, not followed over time. Placing them after the dopamine loss is an inference from the dopamine loss being the cause.',
+          'The resting-state findings come from people at varied stages and are compared with healthy people, not followed over time. Placing them after the dopamine loss is an inference.',
       },
     },
     {
@@ -108,7 +108,7 @@ const score = {
       start: 0.8,
       end: 1,
       caption:
-        "Later, the protein deposits reach the cortex, starting in the temporal lobe and then frontal and association areas, and many symptoms beyond movement can appear. Researchers also link the cerebellum to the disease. These are described, not drawn, because the sources read give no direction of activity for them.",
+        "Later, the protein deposits reach the cortex, starting in the temporal lobe and then frontal and association areas. Many symptoms beyond movement are part of the disease, probably from early on. Researchers also link the cerebellum to the disease. These are described, not drawn, because the sources read give no direction of activity for them.",
       order: {
         kind: 'reconstructed',
         rationale: 'From post-mortem staging of protein deposits, not from activity measured over time.',
@@ -142,11 +142,11 @@ const score = {
         keyframes: kf(0, 0, 0.3, 0, 0.55, -0.35, 1, -0.45),
       },
       {
-        region: 'thalamus',
+        region: 'thalamus-l',
         explanation:
-          "In a pooled analysis of brain scans at rest, the left thalamus showed less coordinated local activity than in people without the disease. That analysis notes that earlier studies were inconsistent, and the classic model predicts the opposite kind of change in the circuit's output. Drawn as a modest dimming of activity.",
+          "In a pooled analysis of brain scans at rest, the left thalamus showed less coordinated local activity than in people without the disease. That analysis notes that earlier studies were inconsistent. The dimming here stands for reduced local coordination, a different measure from the amount of activity.",
         confidence: 'mixed',
-        citations: [guThalamus, guInconsistent, albinModel],
+        citations: [guThalamus, guInconsistent],
         keyframes: kf(0, 0, 0.55, 0, 0.7, -0.3, 1, -0.3),
       },
     ],
@@ -162,6 +162,7 @@ void braakAscending;
 void braakCortex;
 void guReduced;
 void liCerebellum;
+void albinModel;
 
 writeScore(score, {
   indexTitle: "Parkinson's disease",
@@ -170,9 +171,9 @@ writeScore(score, {
     'This state uses the episode player for stages over years; the timeline says so.',
     'The substantia nigra, putamen and caudate are dimmed to show the loss of dopamine cells and nerve endings, measured with tracer scans, not activity. The description and each explanation say this.',
     'The earliest stage (Braak et al. 2003: "lesions initially occur in the dorsal motor nucleus of the glossopharyngeal and vagal nerves and anterior olfactory nucleus") and the later spread to the cortex are described in captions, not drawn: they are protein deposits found after death.',
-    'The resting-activity pooled analysis (Gu et al. 2022, abstract) also reports reduced activity in the right "lentiform nucleus" (which includes the putamen) and in several cortical areas, and increases in others. Only the thalamus is drawn from it, to avoid mixing activity with the dopamine-loss dimming already shown on the putamen.',
+    'The resting-activity pooled analysis (Gu et al. 2022, abstract) also reports reduced activity in the right "lentiform nucleus" (which includes the putamen) and in several cortical areas, and increases in others. Only the left thalamus is drawn from it (its regional homogeneity finding), to avoid mixing activity with the dopamine-loss dimming already shown on the putamen.',
     'The cerebellum is not drawn. Li et al. 2023 (abstract) report a link with the disease without a direction of change.',
-    'The classic model (Albin et al. 1989) predicts "an increase in basal ganglia output"; that is a model of circuit activity from animal and post-mortem data, cited as contrary context for the thalamus.',
+    'The classic model of basal ganglia circuits (Albin et al. 1989) predicts "an increase in basal ganglia output" in Parkinson\'s disease; it is a model from animal and post-mortem data and is not used for any track.',
     'Read in full: Kong 2020. Read as abstracts only: Poewe 2017, Braak 2003, Gu 2022, Albin 1989, Li 2023.',
   ],
 });

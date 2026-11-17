@@ -8,7 +8,19 @@ const balikiPredict = cite(
 );
 const balikiGrey = cite(
   'baliki2012',
-  'When pain persisted (SBPp, in contrast to recovering SBP and healthy controls), brain gray matter density decreased.',
+  'When pain persisted (SBPp, in contrast to recovering SBP, and healthy controls), brain gray matter density decreased.',
+);
+const tanasescuEighteen = cite(
+  'tanasescu2016',
+  'MAC of data from eighteen eligible studies did not reveal spatially consistent activation intensity differences between CP and healthy controls.',
+);
+const tanasescuSubtle = cite(
+  'tanasescu2016',
+  'does not exclude possible subtle widespread differences in activation pattern, or differences limited to specific patient subgroups or experimental settings',
+);
+const balikiMpfc = cite(
+  'baliki2012',
+  'The NAc exhibited significantly higher positive functional connectivity (with basal ganglia and mPFC) in SBPp at baseline and at one year',
 );
 const balikiSignatures = cite('baliki2011', "We find that different chronic pain types exhibit unique anatomical 'brain signatures'.");
 const apkarianNetwork = cite(
@@ -52,9 +64,9 @@ const sharedPain = (region, explanation, confidence, citations) => ({
 const painNetwork = [
   sharedPain(
     'insula',
-    'Part of the brain\'s response to a painful touch in everyone. In people with long-lasting pain the overall pattern of response is the same as in people without it, and a pooled analysis of 266 studies found no difference in strength. Drawn the same in both.',
+    'Part of the brain\'s response to a painful touch in everyone. In a pooled analysis of many kinds of chronic pain, the overall pattern of response was the same as in people without it, and 18 direct comparisons found no consistent difference in strength; the authors note subtle differences, or differences in particular groups, cannot be ruled out. When the most painful part of the body was touched, the right insula was more often active in people with chronic pain, though not more strongly. Drawn the same in both.',
     'established',
-    [apkarianNetwork, alfarajInsula, tanasescuSimilar, tanasescuNoDiff],
+    [apkarianNetwork, alfarajInsula, tanasescuSimilar, tanasescuEighteen, tanasescuSubtle, tanasescuFocal],
   ),
   sharedPain(
     'dacc',
@@ -80,9 +92,9 @@ const score = {
   id: 'chronicpain',
   title: 'Chronic pain: when pain stays',
   description:
-    'Chronic pain is pain that lasts for months or longer, such as long-term back pain. It is not imagined: it goes with real changes in the brain. The episode follows someone whose back pain did not go away, and compares them with someone whose pain did, or who never had it. One finding stands out: the brain\'s response to a painful touch looks much the same with or without chronic pain. What differs is how certain circuits work before pain becomes chronic, and how the brain behaves between pains.',
+    'Chronic pain is pain that lasts for months or longer, such as long-term back pain. It is not imagined: it goes with real changes in the brain. The episode follows someone whose back pain did not go away, and compares them with someone whose pain did, or who never had it. One finding stands out: the brain\'s response to a painful touch looks much the same with or without chronic pain. What differs is how certain circuits work before pain becomes chronic, and how the brain behaves during an ordinary task.',
   caveat:
-    'The evidence comes from separate studies: one that followed people with recent back pain for a year, pooled analyses of how the brain responds to pain, and a study of people with chronic back pain doing a simple task. Chronic pain comes in many forms, and different types leave different traces in the brain, so this is not one pattern for everyone. An international expert group warns that brain scans cannot be used as a test for whether someone has chronic pain. The gradual loss of grey matter in people whose pain persisted is a change in tissue and is described, not drawn.',
+    'The evidence comes from separate studies: one that followed people with recent back pain for a year, pooled analyses of how the brain responds to pain, and a study of people with chronic back pain doing a simple task. Chronic pain comes in many forms, and different types leave different traces in the brain, so this is not one pattern for everyone. An international expert group warns that brain scans cannot be used as a test for whether someone has chronic pain. The loss of grey matter in people whose pain persisted is a change in tissue and is described, not drawn.',
   durationSeconds: 40,
   phases: [
     {
@@ -106,7 +118,7 @@ const score = {
       typicalCaption: 'The pain resolves.',
       order: {
         kind: 'timed',
-        citations: [balikiGrey],
+        citations: [balikiPredict, balikiGrey],
       },
     },
     {
@@ -125,7 +137,7 @@ const score = {
     },
     {
       id: 'between',
-      name: 'Between pains',
+      name: 'During a simple task',
       timescale: 'minutes',
       start: 0.8,
       end: 1,
@@ -163,10 +175,10 @@ const score = {
         from: 'nucleus-accumbens',
         to: 'mpfc',
         explanation:
-          'In people with recent back pain, a tighter link between the nucleus accumbens and the prefrontal cortex predicted that the pain would persist a year later. The authors take this to mean the circuit is involved in pain becoming chronic. The abstract says "prefrontal cortex" without saying which part; the line is drawn to the medial prefrontal cortex as an assumption. From one study.',
+          'In people with recent back pain, a tighter link between the nucleus accumbens and the medial prefrontal cortex predicted that the pain would persist a year later, and the link was still tighter at one year. The authors take this to mean the circuit is involved in pain becoming chronic. It was measured at the start and at one year; it is shown held after that, which was not measured. From one study.',
         confidence: 'mixed',
-        citations: [balikiPredict],
-        keyframes: kf(0, 0, 0.08, 0.6, 0.3, 0.6, 0.4, 0, 1, 0),
+        citations: [balikiPredict, balikiMpfc],
+        keyframes: kf(0, 0.6, 1, 0.6),
       },
     ],
   },
@@ -196,7 +208,6 @@ const score = {
 
 void balikiSignatures;
 void apkarianChronic;
-void tanasescuFocal;
 void davisNotTest;
 
 writeScore(score, {
@@ -209,6 +220,6 @@ writeScore(score, {
     'The resting network is drawn below rest during the task (quietening) in both brains, less so with chronic pain. The size of the quietening is illustrative; Baliki et al. 2008 report "reduced deactivation" without a figure in the abstract.',
     'The secondary body-sense cortex and the mid-cingulate are named in the sources but are not separate regions in the brain model.',
     'Davis et al. 2017 (abstract): "the use of brain imaging findings to support or dispute a claim of chronic pain - effectively as a pain lie detector - is not warranted". Reflected in the caveat.',
-    'Read in full: Tanasescu 2016. Read as abstracts only: Baliki 2008, 2011, 2012, Apkarian 2005, Al-Faraj 2026, Davis 2017.',
+    'Read in full: Tanasescu 2016, Baliki 2012. Read as abstracts only: Baliki 2008, 2011, Apkarian 2005, Al-Faraj 2026, Davis 2017.',
   ],
 });

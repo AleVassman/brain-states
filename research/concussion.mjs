@@ -43,9 +43,9 @@ const score = {
   id: 'concussion',
   title: 'Concussion: a blow to the head and recovery',
   description:
-    'A concussion is a mild brain injury from a blow or jolt to the head. Ordinary brain scans usually look normal, but the brain goes through an energy crisis and, for a time, works differently. The episode follows the first moments, the days after, and recovery over about a month, as seen in research on athletes and pooled studies of mild brain injury.',
+    'A concussion is a mild brain injury from a blow or jolt to the head. The brain goes through an energy crisis and, for a time, works differently. The episode follows the first moments, the days after, and recovery over about a month, as seen in research on athletes and pooled studies of mild brain injury.',
   caveat:
-    'The first two phases, the chemical surge and the energy crisis, are known mainly from animal studies, and no brain region is drawn for them because the injury affects the brain broadly. The blood-flow findings come from one study of 44 college football players, 17 of whom were scanned three times, and the activity finding from a pooled analysis of seven small studies. Blood flow is used here as a stand-in for activity. Most people recover within weeks; some take longer. Whether concussions can have lasting effects is an area of active research and is not shown here.',
+    'The first two phases, the chemical surge and the energy crisis, are known mainly from animal studies, and no brain region is drawn for them because the injury affects the brain broadly. The blood-flow findings come from one study of 44 college football players, 17 of whom were scanned three times, and the activity finding from a pooled analysis of seven small studies. In the blood-flow regions, the dimming shows lower blood flow, not measured activity. In this study, symptoms eased within a week to a month, and some athletes were slower to recover. Reduced blood flow was already found about a day after injury, earlier than the regions are drawn changing. Whether concussions can have lasting effects is an area of active research and is not shown here.',
   durationSeconds: 36,
   phases: [
     {
@@ -55,7 +55,7 @@ const score = {
       start: 0,
       end: 0.16,
       caption:
-        'The blow stretches nerve cells and sets off a surge of charged particles and the chemical messenger glutamate across their membranes. This affects the brain broadly, so no single region is drawn.',
+        'The blow sets off a sudden flow of charged particles and a release of the chemical messenger glutamate. This affects the brain broadly, so no single region is drawn.',
     },
     {
       id: 'crisis',
@@ -64,7 +64,7 @@ const score = {
       start: 0.16,
       end: 0.34,
       caption:
-        'Restoring the balance takes a great deal of energy, and the injured brain goes through a period of metabolic crisis. This is known mainly from animal studies.',
+        'This creates heavy energy demands, and the injured brain goes through a period of metabolic crisis.',
       order: {
         kind: 'reconstructed',
         rationale: 'The sequence from chemical surge to energy crisis comes from animal models, summarised in a review.',
@@ -100,7 +100,7 @@ const score = {
       {
         region: 'insula-r',
         explanation:
-          'Blood flow in the right insula was lower than in healthy athletes in the first week after concussion and recovered by about a month. In athletes who took longer to recover, blood flow in the middle of the insula was still low at one month. From one study of 44 players, 17 of them scanned three times; blood flow is used as a stand-in for activity.',
+          'Blood flow in the right insula was lower than in healthy athletes in the first week after concussion and recovered by about a month. In athletes who took longer to recover, blood flow in the middle of the insula was still low at one month. From one study of 44 players, 17 of them scanned three times. The dimming shows lower blood flow, not measured activity.',
         confidence: 'mixed',
         citations: [meierRecovery, meierSlow, meierAnimal],
         keyframes: kf(0, 0, 0.34, 0, 0.42, -0.5, 0.66, -0.45, 0.92, -0.05, 1, 0),
@@ -108,7 +108,7 @@ const score = {
       {
         region: 'lateral-temporal-r',
         explanation:
-          'Blood flow in the right superior temporal cortex was lower in the first week after concussion and recovered by about a month. The whole lateral temporal cortex is drawn; the finding is for its upper part. From one study of 44 players, 17 of them scanned three times.',
+          'Blood flow in the right superior temporal cortex was lower in the first week after concussion and recovered by about a month. The whole lateral temporal cortex is drawn; the finding is for its upper part. From one study of 44 players, 17 of them scanned three times. The dimming shows lower blood flow, not measured activity.',
         confidence: 'mixed',
         citations: [meierRecovery],
         keyframes: kf(0, 0, 0.34, 0, 0.42, -0.4, 0.66, -0.35, 0.92, 0, 1, 0),

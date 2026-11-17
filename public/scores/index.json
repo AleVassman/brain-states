@@ -100,27 +100,31 @@
   "title": "Parkinson's disease",
   "file": "parkinsons.json",
   "category": "physical",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "stroke",
   "title": "Stroke",
   "file": "stroke.json",
   "category": "physical",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "chronicpain",
   "title": "Chronic pain",
   "file": "chronicpain.json",
   "category": "physical",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "concussion",
   "title": "Concussion",
   "file": "concussion.json",
   "category": "physical",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  }
 ]

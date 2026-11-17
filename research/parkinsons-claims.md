@@ -1,6 +1,6 @@
 # Parkinson's disease: stages over years — claims and sources
 
-Review: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/parkinsons.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
@@ -14,16 +14,16 @@ The stages are assembled from separate kinds of evidence: post-mortem studies of
 - This state uses the episode player for stages over years; the timeline says so.
 - The substantia nigra, putamen and caudate are dimmed to show the loss of dopamine cells and nerve endings, measured with tracer scans, not activity. The description and each explanation say this.
 - The earliest stage (Braak et al. 2003: "lesions initially occur in the dorsal motor nucleus of the glossopharyngeal and vagal nerves and anterior olfactory nucleus") and the later spread to the cortex are described in captions, not drawn: they are protein deposits found after death.
-- The resting-activity pooled analysis (Gu et al. 2022, abstract) also reports reduced activity in the right "lentiform nucleus" (which includes the putamen) and in several cortical areas, and increases in others. Only the thalamus is drawn from it, to avoid mixing activity with the dopamine-loss dimming already shown on the putamen.
+- The resting-activity pooled analysis (Gu et al. 2022, abstract) also reports reduced activity in the right "lentiform nucleus" (which includes the putamen) and in several cortical areas, and increases in others. Only the left thalamus is drawn from it (its regional homogeneity finding), to avoid mixing activity with the dopamine-loss dimming already shown on the putamen.
 - The cerebellum is not drawn. Li et al. 2023 (abstract) report a link with the disease without a direction of change.
-- The classic model (Albin et al. 1989) predicts "an increase in basal ganglia output"; that is a model of circuit activity from animal and post-mortem data, cited as contrary context for the thalamus.
+- The classic model of basal ganglia circuits (Albin et al. 1989) predicts "an increase in basal ganglia output" in Parkinson's disease; it is a model from animal and post-mortem data and is not used for any track.
 - Read in full: Kong 2020. Read as abstracts only: Poewe 2017, Braak 2003, Gu 2022, Albin 1989, Li 2023.
 
 ## Order of events
 
 1. **Before movement symptoms** (years) — start of the episode.
 2. **Dopamine cells are lost** (years) — order **reconstructed**: The post-mortem staging places the midbrain after the lower brainstem. That this precedes the movement symptoms in each person is not measured in the sources read; the order follows the staging.
-3. **Movement circuits change** (years) — order **reconstructed**: The resting-state findings come from people at varied stages and are compared with healthy people, not followed over time. Placing them after the dopamine loss is an inference from the dopamine loss being the cause.
+3. **Movement circuits change** (years) — order **reconstructed**: The resting-state findings come from people at varied stages and are compared with healthy people, not followed over time. Placing them after the dopamine loss is an inference.
 4. **Changes widen** (years) — order **reconstructed**: From post-mortem staging of protein deposits, not from activity measured over time.
 
 ## The condition
@@ -61,9 +61,9 @@ On screen: peaks below baseline (-0.45), ends below baseline (-0.45).
 - Kong Y, Zhang C, Liu K, Wagle Shukla A, Sun B, Guan Y (2020). Imaging of dopamine transporters in Parkinson disease: a meta-analysis of 18F/123I-FP-CIT studies. doi:10.1002/acn3.51122 — meta-analysis, full-text
   > "In PET studies, the posterior putamen is the most severely affected region in the striatum while the caudate nucleus is relatively spared."
 
-### **thalamus** — Mixed evidence
+### **thalamus-l** — Mixed evidence
 
-Claim: In a pooled analysis of brain scans at rest, the left thalamus showed less coordinated local activity than in people without the disease. That analysis notes that earlier studies were inconsistent, and the classic model predicts the opposite kind of change in the circuit's output. Drawn as a modest dimming of activity.
+Claim: In a pooled analysis of brain scans at rest, the left thalamus showed less coordinated local activity than in people without the disease. That analysis notes that earlier studies were inconsistent. The dimming here stands for reduced local coordination, a different measure from the amount of activity.
 
 On screen: peaks below baseline (-0.3), ends below baseline (-0.3).
 
@@ -71,8 +71,6 @@ On screen: peaks below baseline (-0.3), ends below baseline (-0.3).
   > "PD patients showed reduced regional homogeneity (ReHo) in the right declive, the right MFG, the left culmen, and the left thalamus, compared to HC."
 - Gu L, Shu H, Xu H, Wang Y (2022). Functional brain changes in Parkinson's disease: a whole brain ALE study. doi:10.1007/s10072-022-06272-9 — meta-analysis, abstract-only
   > "prior rs-fMRI studies reported inconsistent results for comparison between Parkinson's disease (PD) and healthy controls (HC)"
-- Albin RL, Young AB, Penney JB (1989). The functional anatomy of basal ganglia disorders. doi:10.1016/0166-2236(89)90074-x — review, abstract-only
-  > "Hypokinetic disorders, such as Parkinson's disease, are hypothesized to result from a complex series of changes in the activity of striatal projection neuron subpopulations resulting in an increase in basal ganglia output."
 
 ## The typical response
 

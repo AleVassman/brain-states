@@ -10,6 +10,8 @@ const saverTypical = cite(
   'saver2006',
   'The typical final volume of large vessel, supratentorial ischemic stroke is 54 mL (varied in sensitivity analysis from 19 to 100 mL).',
 );
+const saverAverage = cite('saver2006', 'The typical patient loses 1.9 million neurons each minute in which stroke is untreated.');
+const wardSpared = cite('ward2003cross', 'None of our patients had infarcts involving the hand region of the primary motor cortex.');
 const carreraDistant = cite(
   'carrera2014',
   'the term \'diaschisis\' was coined by von Monakow in 1914 to describe the neurophysiological changes that occur distant to a focal brain lesion',
@@ -55,9 +57,9 @@ const score = {
   id: 'stroke',
   title: 'Stroke: damage and the recovery of movement',
   description:
-    'In an ischaemic stroke an artery is blocked and part of the brain loses its blood supply. Where that happens varies from person to person, so the damaged area itself is not drawn. The episode follows one common situation: a stroke in the left half of the brain that weakens the right hand. What is drawn is how the movement system works when the person tries to move that hand, compared with a healthy person moving theirs, from the first weeks through recovery over months.',
+    'In an ischaemic stroke an artery is blocked and part of the brain loses its blood supply. Where that happens varies from person to person, so the damaged area itself is not drawn. The episode follows one common situation: a stroke that weakens one hand. The studies pooled strokes on either side; it is drawn in the left half of the brain, weakening the right hand, for illustration. What is drawn is how the movement system works when the person tries to move that hand, compared with a healthy person moving theirs, from the first weeks through recovery over months.',
   caveat:
-    'Brightness here is activity while the weakened hand moves, compared with healthy people moving their hand; it is not activity at rest. The pooled analysis behind it combines many small studies with different tasks and degrees of weakness. Most studies looked at people whose primary movement area was not itself damaged. The first two phases draw nothing, because where the damage falls varies and the distant effects of a stroke on connected areas are described in the sources without a direction that could be shown. Recovery differs a great deal between people, and the pattern shown is for recovery that goes well.',
+    'Brightness here is activity while the weakened hand moves, compared with healthy people moving their hand; it is not activity at rest. The pooled analysis behind it combines many small studies with different tasks and degrees of weakness. The two studies that followed recovery included only people whose primary movement area was spared. The first two phases draw nothing, because where the damage falls varies and the distant effects of a stroke on connected areas are described in the sources without a direction that could be shown. Recovery differs a great deal between people, and the pattern shown is for recovery that goes well.',
   durationSeconds: 40,
   phases: [
     {
@@ -67,16 +69,16 @@ const score = {
       start: 0,
       end: 0.16,
       caption:
-        'An artery is blocked and part of the brain loses its blood supply. In a typical large stroke, an estimated 1.9 million nerve cells are lost for every minute it goes untreated, which is why stroke is an emergency. Where the damage falls varies, so it is not drawn.',
+        'An artery is blocked and part of the brain loses its blood supply. For a large stroke that goes untreated, researchers estimate an average loss of about 1.9 million nerve cells a minute, which is why stroke is treated as an emergency. Where the damage falls varies, so it is not drawn.',
     },
     {
       id: 'distant',
       name: 'Effects at a distance',
-      timescale: 'days',
+      timescale: 'after the damage (timing not studied here)',
       start: 0.16,
       end: 0.32,
       caption:
-        'Areas far from the damage can also stop working normally, because they lose input from the damaged part. This is called diaschisis. The sources describe it without a direction that could be drawn.',
+        'Areas far from the damage can also change how they work and how they connect with each other. This is called diaschisis. The sources describe it without a direction that could be drawn.',
       order: {
         kind: 'reconstructed',
         rationale:
@@ -116,7 +118,7 @@ const score = {
       {
         region: 'motor-cortex-r',
         explanation:
-          'The movement cortex on the undamaged side. It is more active than in healthy people when the weakened hand moves, a highly consistent finding across studies, and this extra activity decreases as movement recovers. Good recovery goes with relying less on this side. The finding also covers the premotor cortex, which lies just in front of the area drawn.',
+          'The movement cortex on the undamaged side. It is more active than in healthy people when the weakened hand moves, a highly consistent finding across studies. That this extra activity decreases as movement recovers comes from one study that followed eight patients, which reports it for the primary motor cortex without naming the side. Good recovery goes with relying less on this side. The finding also covers the premotor cortex, which lies just in front of the area drawn.',
         confidence: 'established',
         citations: [rehmeHigher, rehmeConsistent, rehmeOutcome, wardLongitudinal],
         keyframes: kf(0, 0, 0.32, 0, 0.46, 0.65, 0.66, 0.6, 0.9, 0.15, 1, 0.1),
@@ -132,10 +134,10 @@ const score = {
       {
         region: 'cerebellum',
         explanation:
-          'Extra activity in the cerebellum goes with poorer recovery in one study, and decreases as movement recovers. A pooled analysis, however, links better movement to activity in the cerebellum on one side. The evidence points both ways, so it is drawn only modestly.',
+          'Drawn at the healthy level. Studies link the cerebellum to recovery in opposite ways: in one, people with poorer recovery showed more activity here; a pooled analysis links better movement to activity in the cerebellum. Neither finds it raised on average, and well-recovered patients show a normal pattern.',
         confidence: 'mixed',
-        citations: [wardNegative, wardLongitudinal, rehmeBetter],
-        keyframes: kf(0, 0, 0.32, 0, 0.46, 0.3, 0.66, 0.3, 0.9, 0.05, 1, 0),
+        citations: [wardNegative, wardCross, rehmeBetter],
+        keyframes: kf(0, 0, 1, 0),
       },
     ],
     connections: [],
@@ -144,10 +146,11 @@ const score = {
 };
 
 void saverMinute;
+void saverAverage;
+void wardSpared;
 void saverTypical;
 void carreraDistant;
 void carreraNormalise;
-void wardCross;
 void rehmeOverTime;
 
 writeScore(score, {
@@ -160,6 +163,7 @@ writeScore(score, {
     'Diaschisis (Carrera & Tononi 2014) is described, not drawn: the review says connectivity changes distant from the damage and that "normalization of remote connectivity changes in these networks relates to a better recovery", without a direction for a specific region.',
     'The premotor cortex is not a separate region in the brain model; findings about it are mentioned in the movement cortex text.',
     'The recovery phase is marked timed: Ward et al. 2003 scanned the same patients repeatedly and found activity falling as each recovered.',
-    'Read as abstracts only: all sources (the full texts could not be downloaded).',
+    'The 1.9-million figure: Saver 2006 (abstract), "The typical patient loses 1.9 million neurons each minute in which stroke is untreated." It is an estimated average for a large untreated stroke.',
+    'Read in full: Ward et al. 2003 (cross-sectional). Read as abstracts only: all other sources.'
   ],
 });

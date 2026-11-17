@@ -1,13 +1,13 @@
 # Concussion: a blow to the head and recovery — claims and sources
 
-Review: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/concussion.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
 
 ## What is reconstruction in this episode
 
-The first two phases, the chemical surge and the energy crisis, are known mainly from animal studies, and no brain region is drawn for them because the injury affects the brain broadly. The blood-flow findings come from one study of 44 college football players, 17 of whom were scanned three times, and the activity finding from a pooled analysis of seven small studies. Blood flow is used here as a stand-in for activity. Most people recover within weeks; some take longer. Whether concussions can have lasting effects is an area of active research and is not shown here.
+The first two phases, the chemical surge and the energy crisis, are known mainly from animal studies, and no brain region is drawn for them because the injury affects the brain broadly. The blood-flow findings come from one study of 44 college football players, 17 of whom were scanned three times, and the activity finding from a pooled analysis of seven small studies. In the blood-flow regions, the dimming shows lower blood flow, not measured activity. In this study, symptoms eased within a week to a month, and some athletes were slower to recover. Reduced blood flow was already found about a day after injury, earlier than the regions are drawn changing. Whether concussions can have lasting effects is an area of active research and is not shown here.
 
 ## Notes from the research pass
 
@@ -31,7 +31,7 @@ The first two phases, the chemical surge and the energy crisis, are known mainly
 
 ### **insula-r** — Mixed evidence
 
-Claim: Blood flow in the right insula was lower than in healthy athletes in the first week after concussion and recovered by about a month. In athletes who took longer to recover, blood flow in the middle of the insula was still low at one month. From one study of 44 players, 17 of them scanned three times; blood flow is used as a stand-in for activity.
+Claim: Blood flow in the right insula was lower than in healthy athletes in the first week after concussion and recovered by about a month. In athletes who took longer to recover, blood flow in the middle of the insula was still low at one month. From one study of 44 players, 17 of them scanned three times. The dimming shows lower blood flow, not measured activity.
 
 On screen: peaks below baseline (-0.5), ends at baseline (0).
 
@@ -44,7 +44,7 @@ On screen: peaks below baseline (-0.5), ends at baseline (0).
 
 ### **lateral-temporal-r** — Mixed evidence
 
-Claim: Blood flow in the right superior temporal cortex was lower in the first week after concussion and recovered by about a month. The whole lateral temporal cortex is drawn; the finding is for its upper part. From one study of 44 players, 17 of them scanned three times.
+Claim: Blood flow in the right superior temporal cortex was lower in the first week after concussion and recovered by about a month. The whole lateral temporal cortex is drawn; the finding is for its upper part. From one study of 44 players, 17 of them scanned three times. The dimming shows lower blood flow, not measured activity.
 
 On screen: peaks below baseline (-0.4), ends at baseline (0).
 

@@ -1,10 +1,10 @@
 # Brain States
 
-An interactive 3D brain that plays researched "episodes" of twelve states in
+An interactive 3D brain that plays researched "episodes" of sixteen states in
 two groups — psychological states (depression, anxiety, panic, acute stress,
 anger, borderline personality disorder, dissociation, joy and reward) and
 physical illnesses (migraine, epileptic seizure, infection, Alzheimer's
-disease) — and shows
+disease, Parkinson's disease, stroke, chronic pain, concussion) — and shows
 which regions and connections change, with the studies behind every claim.
 
 It is a personal hobby project. It is a reconstruction from published
@@ -80,7 +80,7 @@ To list a state under "Physical illnesses", pass `category: 'physical'` to
 
 A state shows "awaiting review" in the app until its entry in
 `public/scores/index.json` has `"reviewed": true`. Set that only after its
-claims have been checked against the papers. All twelve current states were
+claims have been checked against the papers. All sixteen current states were
 checked on 2026-11-17.
 
 ## Rebuild the brain geometry

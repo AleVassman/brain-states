@@ -746,6 +746,7 @@ export const SOURCES = {
     doi: '10.1093/brain/awg145',
     kind: 'study',
     pmid: '12764063',
+    pmcid: 'PMC3717456',
   },
 
   // ---- chronic pain ---------------------------------------------------------------------------
@@ -789,6 +790,7 @@ export const SOURCES = {
     doi: '10.1038/nn.3153',
     kind: 'study',
     pmid: '22751038',
+    pmcid: 'PMC3411898',
   },
   baliki2011: {
     authors: 'Baliki MN, Schnitzer TJ, Bauer WR, Apkarian AV',
