@@ -1,8 +1,8 @@
 {
  "id": "ocd",
  "title": "Obsessive-compulsive: the urge and the effort to resist",
- "description": "In obsessive-compulsive disorder, a trigger, such as touching something that might be dirty, brings an intrusive thought and a strong urge to do something about it, such as washing or checking. The episode follows that moment, as studied by showing people with OCD things that bring on their symptoms. Many people have occasional intrusive thoughts; in OCD they are frequent, distressing and hard to set aside.",
- "caveat": "The findings come from a pooled analysis of studies that deliberately provoked symptoms in a scanner, and a second pooled analysis that found consistent differences in the same circuits without, in the part read, giving a direction. The order of events is reconstructed: the scans average over the provocation period. That the frontal and parietal activity reflects effort to resist the urge is the authors' suggestion, not something measured. OCD takes different forms in different people, and researchers link those forms to partly different circuits.",
+ "description": "In obsessive-compulsive disorder, a trigger, such as touching something that might be dirty, brings an intrusive thought and a strong urge to do something about it, such as washing or checking. The episode follows that moment, as studied by showing people with OCD things that bring on their symptoms.",
+ "caveat": "The findings come from a pooled analysis of studies that deliberately provoked symptoms in a scanner, comparing provocation with neutral periods within people with OCD rather than comparing them with people without OCD, and a second pooled analysis that found consistent differences in the same circuits without, in the part read, giving a direction. The order of events is reconstructed: the scans average over the provocation period. That the frontal and parietal activity reflects effort to resist the urge is the authors' suggestion, not something measured. OCD takes different forms in different people, and researchers link those forms to partly different circuits.",
  "durationSeconds": 36,
  "phases": [
   {
@@ -54,8 +54,8 @@
   "regions": [
    {
     "region": "ofc",
-    "explanation": "Part of the circuit most consistently active when OCD symptoms are provoked, in a pooled analysis. A second pooled analysis found consistent differences in the circuit linking the orbitofrontal cortex and the striatum.",
-    "confidence": "established",
+    "explanation": "Part of the circuit most consistently active when OCD symptoms are provoked, in a pooled analysis. A second pooled analysis found consistent differences in the circuit linking the orbitofrontal cortex and the striatum, without a direction in the abstract, and notes that results have not been entirely consistent.",
+    "confidence": "mixed",
     "citations": [
      {
       "authors": "Rotge JY, Guehl D, Dilharreguy B, Cuny E, Tignol J, Bioulac B, Allard M, et al.",
@@ -76,6 +76,16 @@
       "kind": "meta-analysis",
       "access": "abstract-only",
       "quote": "we performed a quantitative, voxel-level meta-analysis of functional MRI findings, which revealed consistent abnormalities in orbitofronto-striatal and other additional areas in OCD"
+     },
+     {
+      "authors": "Menzies L, Chamberlain SR, Laird AR, Thelen SM, Sahakian BJ, Bullmore ET",
+      "year": 2008,
+      "title": "Integrating evidence from neuroimaging and neuropsychological studies of obsessive-compulsive disorder: the orbitofronto-striatal model revisited.",
+      "doi": "10.1016/j.neubiorev.2007.09.005",
+      "pmid": "18061263",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "results from these studies have not been entirely congruent with each other"
      }
     ],
     "keyframes": [
@@ -89,7 +99,7 @@
      },
      {
       "t": 0.34,
-      "v": 0.75
+      "v": 0.65
      },
      {
       "t": 0.8,
@@ -103,7 +113,7 @@
    },
    {
     "region": "dacc",
-    "explanation": "Part of the circuit most consistently active when OCD symptoms are provoked, in a pooled analysis.",
+    "explanation": "Part of the circuit most consistently active when OCD symptoms are provoked, in a pooled analysis. The source says anterior cingulate; it is drawn on the dorsal anterior cingulate.",
     "confidence": "mixed",
     "citations": [
      {
@@ -239,8 +249,8 @@
     ]
    },
    {
-    "region": "pcc-precuneus",
-    "explanation": "The precuneus, on the left, was active during symptom provocation, as part of the same network as the dorsolateral prefrontal cortex. The posterior cingulate and precuneus are drawn together on both sides; the finding is for the left precuneus.",
+    "region": "pcc-precuneus-l",
+    "explanation": "The precuneus, on the left, was active during symptom provocation, as part of the same network as the dorsolateral prefrontal cortex. The posterior cingulate and precuneus are drawn together, on the left only; the finding is for the left precuneus.",
     "confidence": "mixed",
     "citations": [
      {

@@ -886,6 +886,7 @@ export const SOURCES = {
     doi: '10.1038/s41380-020-01007-8',
     kind: 'review',
     pmid: '33414496',
+    pmcid: 'PMC8260628',
   },
   jardri2011: {
     authors: 'Jardri R, Pouchet A, Pins D, Thomas P',
@@ -910,6 +911,7 @@ export const SOURCES = {
     doi: '10.1093/schbul/sbp006',
     kind: 'review',
     pmid: '19325164',
+    pmcid: 'PMC2669582',
   },
   kapur2003: {
     authors: 'Kapur S',
@@ -935,6 +937,7 @@ export const SOURCES = {
     doi: '10.1016/j.biopsych.2011.05.025',
     kind: 'meta-analysis',
     pmid: '21757184',
+    pmcid: 'PMC4827617',
   },
   kuhn2011: {
     authors: 'Kühn S, Gallinat J',

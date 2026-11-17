@@ -8,7 +8,7 @@ const entry = (id: string, category?: 'psychological' | 'physical'): ScoreIndexE
 describe('groupEntries', () => {
   it('puts psychological states first and physical illnesses second, each with a heading', () => {
     const groups = groupEntries([entry('migraine', 'physical'), entry('anxiety', 'psychological')]);
-    expect(groups.map((g) => g.heading)).toEqual(['Psychological states', 'Physical illnesses']);
+    expect(groups.map((g) => g.heading)).toEqual(['Psychological states', 'Physical conditions']);
     expect(groups[0].entries.map((e) => e.id)).toEqual(['anxiety']);
     expect(groups[1].entries.map((e) => e.id)).toEqual(['migraine']);
   });

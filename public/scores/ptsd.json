@@ -1,8 +1,8 @@
 {
  "id": "ptsd",
  "title": "PTSD: a reminder and the re-living",
- "description": "In post-traumatic stress disorder, a reminder of a past trauma can bring it back as if it were happening now. The episode follows that re-living response: alarm regions respond more than usual, and frontal regions that help put a memory in context respond less. Some people respond to reminders in a different way, by detaching; that pattern is shown in the Dissociation state.",
- "caveat": "The findings come from pooled analyses of brain scans of people with PTSD listening to or seeing reminders of their trauma, or doing emotional tasks, compared with people without PTSD. These were averaged over minutes, not followed moment by moment, so the order shown is reconstructed. The two pooled analyses read do not fully agree: one finds the cingulate more active in PTSD, the other less active. The role of the hippocampus comes from a proposed model built partly on animal fear learning, and is described rather than drawn. Trauma reactions differ greatly from person to person.",
+ "description": "In post-traumatic stress disorder, a reminder of a past trauma can bring it back as if it were happening now. The episode follows that re-living response: alarm regions respond more than usual, and frontal regions that help regulate emotion respond less. Some people respond to reminders in a different way, by detaching; that pattern is shown in the Dissociation state.",
+ "caveat": "The findings come from pooled analyses of brain scans of people with PTSD listening to or seeing reminders of their trauma, or doing emotional tasks, compared with people without PTSD. These were averaged over minutes, not followed moment by moment, so the order shown is reconstructed. The two pooled analyses read do not fully agree about the cingulate: one finds it more active in PTSD, the other found parts of it both more and less active. The role of the hippocampus comes from a proposed model built partly on animal fear learning, and is described rather than drawn. Trauma reactions differ greatly from person to person.",
  "durationSeconds": 36,
  "phases": [
   {
@@ -27,11 +27,11 @@
   },
   {
    "id": "context",
-   "name": "Losing the present",
+   "name": "Regulation weakens",
    "timescale": "seconds to minutes",
    "start": 0.52,
    "end": 0.8,
-   "caption": "The ventromedial prefrontal cortex and inferior frontal gyrus, which help regulate emotion and place a memory in the present, respond less. The less active the ventromedial prefrontal cortex, the more active the amygdala.",
+   "caption": "The ventromedial prefrontal cortex and inferior frontal gyrus, which help regulate emotion, respond less. The less active the ventromedial prefrontal cortex, the more active the amygdala.",
    "order": {
     "kind": "reconstructed",
     "rationale": "The lower frontal activity is measured over the same periods as the higher alarm activity. Showing it as a later step is a way of presenting the regulation side of the finding."
@@ -99,11 +99,11 @@
      },
      {
       "t": 0.34,
-      "v": 0.75
+      "v": 0.6
      },
      {
       "t": 0.8,
-      "v": 0.65
+      "v": 0.55
      },
      {
       "t": 1,
@@ -113,7 +113,7 @@
    },
    {
     "region": "dacc",
-    "explanation": "The middle and dorsal cingulate were the regions most consistently more active in PTSD in one pooled analysis. An earlier pooled analysis found the dorsal and front cingulate less active in PTSD. The direction is disputed. Drawn on the dorsal anterior cingulate; the finding also covers the middle cingulate just behind it.",
+    "explanation": "The middle and dorsal cingulate were the regions most consistently more active in PTSD in one pooled analysis. An earlier pooled analysis found the middle cingulate more active but the dorsal and front cingulate less active; when it looked only at studies that used trauma reminders, the lower activity held for the front cingulate but not the dorsal. The direction is disputed. Drawn on the dorsal anterior cingulate; the finding also covers the middle cingulate just behind it.",
     "confidence": "debated",
     "citations": [
      {
@@ -135,6 +135,26 @@
       "kind": "meta-analysis",
       "access": "full-text",
       "quote": "only patients with PTSD showed hypoactivation in the dorsal and rostral anterior cingulate cortices and the ventromedial prefrontal cortex-structures linked to the experience and regulation of emotion"
+     },
+     {
+      "authors": "Etkin A, Wager TD",
+      "year": 2007,
+      "title": "Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia.",
+      "doi": "10.1176/appi.ajp.2007.07030504",
+      "pmid": "17898336",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Patients with PTSD showed hyperactivity during emotional processing in the amygdalae, parahippocampal gyrus, insula, inferior parietal lobule, mid-cingulate, and precuneus"
+     },
+     {
+      "authors": "Etkin A, Wager TD",
+      "year": 2007,
+      "title": "Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia.",
+      "doi": "10.1176/appi.ajp.2007.07030504",
+      "pmid": "17898336",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Restricting our meta-analysis to symptom-provocation studies, however, largely confirmed our previous findings: hypoactivation was more frequent in PTSD than in social anxiety disorder or specific phobia in the ventromedial prefrontal cortex, rostral anterior cingulate cortex, and thalamus"
      }
     ],
     "keyframes": [
@@ -144,15 +164,15 @@
      },
      {
       "t": 0.16,
-      "v": 0.1
+      "v": 0.2
      },
      {
-      "t": 0.36,
-      "v": 0.55
+      "t": 0.34,
+      "v": 0.6
      },
      {
       "t": 0.8,
-      "v": 0.45
+      "v": 0.55
      },
      {
       "t": 1,

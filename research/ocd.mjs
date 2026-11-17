@@ -35,9 +35,9 @@ const score = {
   id: 'ocd',
   title: 'Obsessive-compulsive: the urge and the effort to resist',
   description:
-    'In obsessive-compulsive disorder, a trigger, such as touching something that might be dirty, brings an intrusive thought and a strong urge to do something about it, such as washing or checking. The episode follows that moment, as studied by showing people with OCD things that bring on their symptoms. Many people have occasional intrusive thoughts; in OCD they are frequent, distressing and hard to set aside.',
+    'In obsessive-compulsive disorder, a trigger, such as touching something that might be dirty, brings an intrusive thought and a strong urge to do something about it, such as washing or checking. The episode follows that moment, as studied by showing people with OCD things that bring on their symptoms.',
   caveat:
-    'The findings come from a pooled analysis of studies that deliberately provoked symptoms in a scanner, and a second pooled analysis that found consistent differences in the same circuits without, in the part read, giving a direction. The order of events is reconstructed: the scans average over the provocation period. That the frontal and parietal activity reflects effort to resist the urge is the authors\' suggestion, not something measured. OCD takes different forms in different people, and researchers link those forms to partly different circuits.',
+    'The findings come from a pooled analysis of studies that deliberately provoked symptoms in a scanner, comparing provocation with neutral periods within people with OCD rather than comparing them with people without OCD, and a second pooled analysis that found consistent differences in the same circuits without, in the part read, giving a direction. The order of events is reconstructed: the scans average over the provocation period. That the frontal and parietal activity reflects effort to resist the urge is the authors\' suggestion, not something measured. OCD takes different forms in different people, and researchers link those forms to partly different circuits.',
   durationSeconds: 36,
   phases: [
     {
@@ -90,14 +90,14 @@ const score = {
       {
         region: 'ofc',
         explanation:
-          'Part of the circuit most consistently active when OCD symptoms are provoked, in a pooled analysis. A second pooled analysis found consistent differences in the circuit linking the orbitofrontal cortex and the striatum.',
-        confidence: 'established',
-        citations: [rotgeLoops, menziesCircuits],
-        keyframes: kf(0, 0, 0.16, 0.15, 0.34, 0.75, 0.8, 0.65, 1, 0),
+          'Part of the circuit most consistently active when OCD symptoms are provoked, in a pooled analysis. A second pooled analysis found consistent differences in the circuit linking the orbitofrontal cortex and the striatum, without a direction in the abstract, and notes that results have not been entirely consistent.',
+        confidence: 'mixed',
+        citations: [rotgeLoops, menziesCircuits, menziesNotCongruent],
+        keyframes: kf(0, 0, 0.16, 0.15, 0.34, 0.65, 0.8, 0.65, 1, 0),
       },
       {
         region: 'dacc',
-        explanation: 'Part of the circuit most consistently active when OCD symptoms are provoked, in a pooled analysis.',
+        explanation: 'Part of the circuit most consistently active when OCD symptoms are provoked, in a pooled analysis. The source says anterior cingulate; it is drawn on the dorsal anterior cingulate.',
         confidence: 'mixed',
         citations: [rotgeLoops],
         keyframes: kf(0, 0, 0.16, 0.15, 0.34, 0.65, 0.8, 0.55, 1, 0),
@@ -119,9 +119,9 @@ const score = {
         keyframes: kf(0, 0, 0.5, 0, 0.62, 0.55, 0.8, 0.5, 1, 0),
       },
       {
-        region: 'pcc-precuneus',
+        region: 'pcc-precuneus-l',
         explanation:
-          'The precuneus, on the left, was active during symptom provocation, as part of the same network as the dorsolateral prefrontal cortex. The posterior cingulate and precuneus are drawn together on both sides; the finding is for the left precuneus.',
+          'The precuneus, on the left, was active during symptom provocation, as part of the same network as the dorsolateral prefrontal cortex. The posterior cingulate and precuneus are drawn together, on the left only; the finding is for the left precuneus.',
         confidence: 'mixed',
         citations: [rotgeDorsal, rotgeResist],
         keyframes: kf(0, 0, 0.5, 0, 0.62, 0.4, 0.8, 0.35, 1, 0),
@@ -133,7 +133,6 @@ const score = {
 };
 
 void rotgeInconsistent;
-void menziesNotCongruent;
 void shephardProfiles;
 
 writeScore(score, {
@@ -144,6 +143,6 @@ writeScore(score, {
     'Menzies et al. 2008 (abstract) find "consistent abnormalities in orbitofronto-striatal and other additional areas" and note results "have not been entirely congruent with each other"; no direction is given in the abstract.',
     'Shephard et al. 2021 (abstract) link different clinical profiles to different circuit dysfunctions; reflected in the caveat.',
     'No typical-response comparison is drawn; the provocation findings are within people with OCD.',
-    'Read as abstracts only: all sources.',
+    'Read in full: Shephard et al. 2021. Read as abstracts only: Rotge et al. 2008, Menzies et al. 2008.',
   ],
 });

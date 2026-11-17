@@ -108,3 +108,10 @@ describe('citation links', () => {
     expect(citationHref({ ...citation(), doi: '', pmid: '18787662' })).toBe('https://pubmed.ncbi.nlm.nih.gov/18787662/');
   });
 });
+
+describe('citation links with an unusual doi', () => {
+  it('treats a doi of only spaces as missing and links to PubMed', async () => {
+    const { citationHref } = await import('../../src/ui/panelContent');
+    expect(citationHref({ ...citation(), doi: '  ', pmid: '18787662' })).toBe('https://pubmed.ncbi.nlm.nih.gov/18787662/');
+  });
+});

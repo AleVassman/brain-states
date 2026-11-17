@@ -1,7 +1,7 @@
 {
  "id": "psychosis",
  "title": "Psychosis: dopamine and hearing a voice",
- "description": "Psychosis is a state in which a person's experience loses touch with shared reality, for example hearing a voice that others do not hear. It is a core feature of schizophrenia and can also happen in other conditions. The episode follows two of the best-studied findings: a raised capacity to produce dopamine in the striatum, which is already present before psychosis begins, and the brain network that is active while a voice is heard. In the striatum, brightness stands for dopamine production measured with tracer scans, not for activity.",
+ "description": "Psychosis is a state in which a person's experience loses touch with shared reality, for example hearing a voice that others do not hear. It is a core feature of schizophrenia and can also happen in other conditions. The episode follows two of the best-studied findings: a raised capacity to produce dopamine in the striatum, which in one small study was already raised in people with early warning signs, and the brain network that is active while a voice is heard. In the striatum, brightness stands for dopamine production measured with tracer scans, not for activity.",
  "caveat": "The dopamine findings come from tracer scans comparing groups of people with and without psychosis, and from one small study of people with early warning signs. The voice findings come from a pooled analysis of ten studies, 68 people in all, who heard voices during scanning. These were never one experiment, and the stages are built from different groups of people, not by following individuals. The idea that too much dopamine makes ordinary things feel strangely significant is a proposed framework. People's experiences of psychosis vary widely.",
  "durationSeconds": 40,
  "phases": [
@@ -19,7 +19,7 @@
    "timescale": "weeks to months",
    "start": 0.25,
    "end": 0.5,
-   "caption": "In psychosis, dopamine production in the striatum is raised, one of the most consistent findings in this field. A proposed explanation is that too much dopamine gives ordinary experiences and thoughts a feeling of special significance.",
+   "caption": "In schizophrenia, dopamine production in the striatum is raised, with a large effect in a pooled analysis. A proposed explanation is that too much dopamine gives ordinary experiences and thoughts a feeling of special significance.",
    "order": {
     "kind": "reconstructed",
     "rationale": "The early-sign and psychosis findings come from different groups of people compared at one time point, not from following the same people."
@@ -54,7 +54,7 @@
   "regions": [
    {
     "region": "caudate",
-    "explanation": "The capacity to produce and release dopamine in the striatum is raised in schizophrenia, with a large effect, in a pooled analysis of 44 studies; dopamine transporters are not changed. In people with early warning signs it is already raised, to an intermediate degree, mainly in the associative striatum. The associative striatum is mostly the caudate, which is drawn; it also includes the front of the putamen. Brightness here stands for dopamine production, not activity.",
+    "explanation": "The capacity to produce and release dopamine in the striatum is raised in schizophrenia, with a large effect, in a pooled analysis of dopamine studies; there was no evidence of a change in dopamine transporters. In one small study of people with early warning signs it was already raised, to an intermediate degree, mainly in the associative striatum; the levels drawn for the two stages are illustrative. The associative striatum is mostly the caudate, which is drawn; it also includes the front of the putamen. Brightness here stands for dopamine production, not activity.",
     "confidence": "established",
     "citations": [
      {
@@ -104,7 +104,7 @@
       "doi": "10.1093/schbul/sbp006",
       "pmid": "19325164",
       "kind": "review",
-      "access": "abstract-only",
+      "access": "full-text",
       "quote": "This hypothesis seeks to be comprehensive in providing a framework that links risk factors, including pregnancy and obstetric complications, stress and trauma, drug use, and genes, to increased presynaptic striatal dopaminergic function."
      }
     ],
@@ -115,7 +115,7 @@
      },
      {
       "t": 0.08,
-      "v": 0.3
+      "v": 0.35
      },
      {
       "t": 0.25,
@@ -178,11 +178,11 @@
      },
      {
       "t": 0.6,
-      "v": 0.6
+      "v": 0.55
      },
      {
       "t": 0.8,
-      "v": 0.6
+      "v": 0.55
      },
      {
       "t": 0.86,
@@ -231,11 +231,11 @@
      },
      {
       "t": 0.6,
-      "v": 0.65
+      "v": 0.55
      },
      {
       "t": 0.8,
-      "v": 0.65
+      "v": 0.55
      },
      {
       "t": 0.86,
@@ -274,11 +274,11 @@
      },
      {
       "t": 0.6,
-      "v": 0.5
+      "v": 0.55
      },
      {
       "t": 0.8,
-      "v": 0.5
+      "v": 0.55
      },
      {
       "t": 0.86,
@@ -317,11 +317,11 @@
      },
      {
       "t": 0.6,
-      "v": 0.45
+      "v": 0.55
      },
      {
       "t": 0.8,
-      "v": 0.45
+      "v": 0.55
      },
      {
       "t": 0.86,
@@ -370,11 +370,11 @@
      },
      {
       "t": 0.6,
-      "v": 0.5
+      "v": 0.55
      },
      {
       "t": 0.8,
-      "v": 0.5
+      "v": 0.55
      },
      {
       "t": 0.86,
@@ -413,11 +413,11 @@
      },
      {
       "t": 0.6,
-      "v": 0.4
+      "v": 0.55
      },
      {
       "t": 0.8,
-      "v": 0.4
+      "v": 0.55
      },
      {
       "t": 0.86,

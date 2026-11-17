@@ -1,6 +1,6 @@
 # Psychosis: dopamine and hearing a voice — claims and sources
 
-Review: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/psychosis.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
@@ -16,7 +16,7 @@ The dopamine findings come from tracer scans comparing groups of people with and
 - The early-sign dopamine level is drawn below the psychosis level because Howes et al. 2009 found it elevated "to an intermediate degree"; the exact values are illustrative.
 - The voice network is drawn on both sides: Jardri et al. 2011 report "a bilateral neural network".
 - No typical-response comparison is drawn; every finding is already a comparison with people without psychosis or with periods without voices.
-- Read as abstracts only: all sources (full texts could not be downloaded).
+- Read in full: Howes & Kapur 2009. Read as abstracts only: Howes et al. 2012, Howes et al. 2009, Kapur 2003, Jardri et al. 2011.
 
 ## Order of events
 
@@ -29,7 +29,7 @@ The dopamine findings come from tracer scans comparing groups of people with and
 
 ### **caudate** — Well established
 
-Claim: The capacity to produce and release dopamine in the striatum is raised in schizophrenia, with a large effect, in a pooled analysis of 44 studies; dopamine transporters are not changed. In people with early warning signs it is already raised, to an intermediate degree, mainly in the associative striatum. The associative striatum is mostly the caudate, which is drawn; it also includes the front of the putamen. Brightness here stands for dopamine production, not activity.
+Claim: The capacity to produce and release dopamine in the striatum is raised in schizophrenia, with a large effect, in a pooled analysis of dopamine studies; there was no evidence of a change in dopamine transporters. In one small study of people with early warning signs it was already raised, to an intermediate degree, mainly in the associative striatum; the levels drawn for the two stages are illustrative. The associative striatum is mostly the caudate, which is drawn; it also includes the front of the putamen. Brightness here stands for dopamine production, not activity.
 
 On screen: peaks above baseline (0.6), ends above baseline (0.6).
 
@@ -41,14 +41,14 @@ On screen: peaks above baseline (0.6), ends above baseline (0.6).
   > "Striatal (18)F-dopa uptake was elevated in patients with prodromal symptoms of schizophrenia (effect size, 0.75) to an intermediate degree compared with that in patients with schizophrenia (effect size, 1.25). The elevation was localized in the associative striatum in both groups."
 - Howes OD, Montgomery AJ, Asselin MC, Murray RM, Valli I, Tabraham P, Bramon-Bosch E, et al. (2009). Elevated striatal dopamine function linked to prodromal signs of schizophrenia. doi:10.1001/archgenpsychiatry.2008.514 — study, abstract-only
   > "dopamine overactivity predates the onset of schizophrenia in individuals with prodromal psychotic symptoms, is predominantly localized in the associative striatum"
-- Howes OD, Kapur S (2009). The dopamine hypothesis of schizophrenia: version III--the final common pathway. doi:10.1093/schbul/sbp006 — review, abstract-only
+- Howes OD, Kapur S (2009). The dopamine hypothesis of schizophrenia: version III--the final common pathway. doi:10.1093/schbul/sbp006 — review, full-text
   > "This hypothesis seeks to be comprehensive in providing a framework that links risk factors, including pregnancy and obstetric complications, stress and trauma, drug use, and genes, to increased presynaptic striatal dopaminergic function."
 
 ### **vlpfc** — Mixed evidence
 
 Claim: Broca's area and the frontal operculum, which produce speech, are active while a voice is heard, on both sides. They lie in the inferior frontal gyrus, which is drawn.
 
-On screen: peaks above baseline (0.6), ends at baseline (0).
+On screen: peaks above baseline (0.55), ends at baseline (0).
 
 - Jardri R, Pouchet A, Pins D, Thomas P (2011). Cortical activations during auditory verbal hallucinations in schizophrenia: a coordinate-based meta-analysis. doi:10.1176/appi.ajp.2010.09101522 — meta-analysis, abstract-only
   > "Patients experiencing AVHs demonstrated significantly increased activation likelihoods in a bilateral neural network, including the Broca's area (activation likelihood estimation=1.84×10⁻³), anterior insula (1.78×10⁻³), precentral gyrus (1.46×10⁻³), frontal operculum (1.29×10⁻³), middle and superior temporal gyri (1.59×10⁻³), inferior parietal lobule (1.33×10⁻³), and hippocampus/parahippocampal region (1.90×10⁻³)."
@@ -61,7 +61,7 @@ On screen: peaks above baseline (0.6), ends at baseline (0).
 
 Claim: The middle and upper temporal cortex, which perceive speech, are active while a voice is heard. The whole lateral temporal cortex is drawn.
 
-On screen: peaks above baseline (0.65), ends at baseline (0).
+On screen: peaks above baseline (0.55), ends at baseline (0).
 
 - Jardri R, Pouchet A, Pins D, Thomas P (2011). Cortical activations during auditory verbal hallucinations in schizophrenia: a coordinate-based meta-analysis. doi:10.1176/appi.ajp.2010.09101522 — meta-analysis, abstract-only
   > "Patients experiencing AVHs demonstrated significantly increased activation likelihoods in a bilateral neural network, including the Broca's area (activation likelihood estimation=1.84×10⁻³), anterior insula (1.78×10⁻³), precentral gyrus (1.46×10⁻³), frontal operculum (1.29×10⁻³), middle and superior temporal gyri (1.59×10⁻³), inferior parietal lobule (1.33×10⁻³), and hippocampus/parahippocampal region (1.90×10⁻³)."
@@ -72,7 +72,7 @@ On screen: peaks above baseline (0.65), ends at baseline (0).
 
 Claim: The front of the insula is active while a voice is heard. The whole insula is drawn.
 
-On screen: peaks above baseline (0.5), ends at baseline (0).
+On screen: peaks above baseline (0.55), ends at baseline (0).
 
 - Jardri R, Pouchet A, Pins D, Thomas P (2011). Cortical activations during auditory verbal hallucinations in schizophrenia: a coordinate-based meta-analysis. doi:10.1176/appi.ajp.2010.09101522 — meta-analysis, abstract-only
   > "Patients experiencing AVHs demonstrated significantly increased activation likelihoods in a bilateral neural network, including the Broca's area (activation likelihood estimation=1.84×10⁻³), anterior insula (1.78×10⁻³), precentral gyrus (1.46×10⁻³), frontal operculum (1.29×10⁻³), middle and superior temporal gyri (1.59×10⁻³), inferior parietal lobule (1.33×10⁻³), and hippocampus/parahippocampal region (1.90×10⁻³)."
@@ -81,7 +81,7 @@ On screen: peaks above baseline (0.5), ends at baseline (0).
 
 Claim: The inferior parietal lobule is active while a voice is heard.
 
-On screen: peaks above baseline (0.45), ends at baseline (0).
+On screen: peaks above baseline (0.55), ends at baseline (0).
 
 - Jardri R, Pouchet A, Pins D, Thomas P (2011). Cortical activations during auditory verbal hallucinations in schizophrenia: a coordinate-based meta-analysis. doi:10.1176/appi.ajp.2010.09101522 — meta-analysis, abstract-only
   > "Patients experiencing AVHs demonstrated significantly increased activation likelihoods in a bilateral neural network, including the Broca's area (activation likelihood estimation=1.84×10⁻³), anterior insula (1.78×10⁻³), precentral gyrus (1.46×10⁻³), frontal operculum (1.29×10⁻³), middle and superior temporal gyri (1.59×10⁻³), inferior parietal lobule (1.33×10⁻³), and hippocampus/parahippocampal region (1.90×10⁻³)."
@@ -90,7 +90,7 @@ On screen: peaks above baseline (0.45), ends at baseline (0).
 
 Claim: The hippocampus and the cortex around it, involved in verbal memory, are active while a voice is heard.
 
-On screen: peaks above baseline (0.5), ends at baseline (0).
+On screen: peaks above baseline (0.55), ends at baseline (0).
 
 - Jardri R, Pouchet A, Pins D, Thomas P (2011). Cortical activations during auditory verbal hallucinations in schizophrenia: a coordinate-based meta-analysis. doi:10.1176/appi.ajp.2010.09101522 — meta-analysis, abstract-only
   > "Patients experiencing AVHs demonstrated significantly increased activation likelihoods in a bilateral neural network, including the Broca's area (activation likelihood estimation=1.84×10⁻³), anterior insula (1.78×10⁻³), precentral gyrus (1.46×10⁻³), frontal operculum (1.29×10⁻³), middle and superior temporal gyri (1.59×10⁻³), inferior parietal lobule (1.33×10⁻³), and hippocampus/parahippocampal region (1.90×10⁻³)."
@@ -101,7 +101,7 @@ On screen: peaks above baseline (0.5), ends at baseline (0).
 
 Claim: The precentral gyrus is active while a voice is heard.
 
-On screen: peaks above baseline (0.4), ends at baseline (0).
+On screen: peaks above baseline (0.55), ends at baseline (0).
 
 - Jardri R, Pouchet A, Pins D, Thomas P (2011). Cortical activations during auditory verbal hallucinations in schizophrenia: a coordinate-based meta-analysis. doi:10.1176/appi.ajp.2010.09101522 — meta-analysis, abstract-only
   > "Patients experiencing AVHs demonstrated significantly increased activation likelihoods in a bilateral neural network, including the Broca's area (activation likelihood estimation=1.84×10⁻³), anterior insula (1.78×10⁻³), precentral gyrus (1.46×10⁻³), frontal operculum (1.29×10⁻³), middle and superior temporal gyri (1.59×10⁻³), inferior parietal lobule (1.33×10⁻³), and hippocampus/parahippocampal region (1.90×10⁻³)."

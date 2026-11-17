@@ -1,6 +1,6 @@
 # Sleep deprivation: a night without sleep — claims and sources
 
-Review: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/sleep.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
@@ -11,7 +11,7 @@ The attention findings come from a pooled analysis of 11 studies, 185 people in 
 
 ## Notes from the research pass
 
-- Listed with the physical illnesses for convenience; sleep deprivation is a body state, not an illness, and the description says so.
+- Listed under "Physical conditions"; sleep deprivation is a body state, not an illness, and the description says so.
 - All findings compare the same kind of task after a night without sleep and after rested wakefulness.
 - The emotional effects of sleep loss (a more reactive amygdala) were not used: the study looked up had no abstract available to read.
 - Read in full: none. Read as abstracts only: Ma et al. 2015, Yoo et al. 2007.

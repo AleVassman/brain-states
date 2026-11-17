@@ -40,7 +40,7 @@ const score = {
   id: 'huntingtons',
   title: "Huntington's disease: stages over decades",
   description:
-    "Huntington's disease is inherited and caused by a change in a single gene. It develops over decades, so this timeline is in stages, not minutes. The striatum, made up of the caudate and putamen, is where loss is tracked most closely on brain scans. In this state the dimming stands for loss of brain tissue, measured as a smaller volume, not for lower activity.",
+    "Huntington's disease is inherited and caused by a change in a single gene. It develops over decades, so this timeline is in stages, not minutes. Structural MRI is the most sensitive imaging marker of how it progresses, and the striatum, made up of the caudate and putamen, shrinks over the years. In this state the dimming stands for loss of brain tissue, measured as a smaller volume, not for lower activity.",
   caveat:
     'The stages are built from people at different points before and after symptoms begin, compared with people without the gene change; they are not one person followed through the whole disease. The far-from-onset finding comes from one study of 64 young adults with the gene change, who on average were about 24 years from expected symptoms and whose thinking and mood were normal. How much tissue is lost at each stage is not given in the sources read, so the levels drawn are illustrative. The caudate is drawn on the basis of a review that speaks of the striatum as a whole.',
   durationSeconds: 40,
@@ -71,7 +71,7 @@ const score = {
       start: 0.6,
       end: 0.85,
       caption:
-        'Movement, thinking and behaviour change. Nerve cells in the striatum stop working properly and die; structural scans of the striatum are the most sensitive way to track this.',
+        'Movement, thinking and behaviour change. Nerve cells stop working properly and die; structural MRI is the most sensitive imaging marker of this progression.',
       order: { kind: 'reconstructed', rationale: 'From group comparisons and a review of how the disease is tracked, not from following one person.' },
     },
     {
@@ -97,10 +97,10 @@ const score = {
       {
         region: 'caudate',
         explanation:
-          'Part of the striatum, which shrinks over the years. The sources read speak of the striatum as a whole and do not single out the caudate. Unlike the putamen, it was not found smaller far from onset, so it is drawn starting to dim later. The dimming stands for smaller volume, not lower activity.',
+          'Part of the striatum, which shrinks over the years. The sources read speak of the striatum as a whole and do not single out the caudate. Far from onset, no imaging difference other than the smaller putamen was found, so it is drawn dimming together with the rest of the striatum from the next stage. The dimming stands for smaller volume, not lower activity.',
         confidence: 'mixed',
         citations: [broomStriatal, broomMri, batesDeath],
-        keyframes: kf(0, 0, 0.35, 0, 0.55, -0.3, 0.8, -0.5, 1, -0.55),
+        keyframes: kf(0, 0, 0.3, 0, 0.55, -0.35, 0.8, -0.55, 1, -0.6),
       },
     ],
     connections: [],

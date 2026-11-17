@@ -53,7 +53,7 @@ export function validateScore(raw: unknown, regionNames: Set<string>): Validatio
         return;
       }
       const missing = ['authors', 'title', 'quote'].filter((k) => !isText(c[k]));
-      if (!isText(c.doi) && !isText(c.pmid)) missing.push('doi or pmid');
+      if (!isText(c.doi) && !(typeof c.pmid === 'string' && /^\d+$/.test(c.pmid))) missing.push('doi or a numeric pmid');
       if (missing.length > 0) err(p, `citation is missing ${missing.join(', ')}`);
       if (!isNum(c.year)) err(p, 'citation is missing year');
       if (!CITATION_KINDS.includes(c.kind as string)) err(p, 'citation has an unknown kind');

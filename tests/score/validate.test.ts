@@ -110,3 +110,13 @@ describe('validateScore', () => {
     expect(errors[0].startsWith('condition.regions[0]')).toBe(true);
   });
 });
+
+describe('validateScore pmid', () => {
+  it('rejects a pmid that is not a number when there is no doi', () => {
+    const s = validScore();
+    s.condition.regions[0].citations[0].doi = '';
+    s.condition.regions[0].citations[0].pmid = 'abc';
+    const r = validateScore(s, REGION_NAMES);
+    expect(r.ok).toBe(false);
+  });
+});

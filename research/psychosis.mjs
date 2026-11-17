@@ -40,7 +40,8 @@ const jardriSample = cite(
   'A total of 68 patients with schizophrenia spectrum disorders experiencing AVHs during scanning were included.',
 );
 
-const voice = (region, explanation, citations, peak = 0.6) => ({
+// All voice regions are drawn at the same level: the pooled analysis reports how consistently each is active, not how strongly.
+const voice = (region, explanation, citations, peak = 0.55) => ({
   region,
   explanation,
   confidence: 'mixed',
@@ -52,7 +53,7 @@ const score = {
   id: 'psychosis',
   title: 'Psychosis: dopamine and hearing a voice',
   description:
-    'Psychosis is a state in which a person\'s experience loses touch with shared reality, for example hearing a voice that others do not hear. It is a core feature of schizophrenia and can also happen in other conditions. The episode follows two of the best-studied findings: a raised capacity to produce dopamine in the striatum, which is already present before psychosis begins, and the brain network that is active while a voice is heard. In the striatum, brightness stands for dopamine production measured with tracer scans, not for activity.',
+    'Psychosis is a state in which a person\'s experience loses touch with shared reality, for example hearing a voice that others do not hear. It is a core feature of schizophrenia and can also happen in other conditions. The episode follows two of the best-studied findings: a raised capacity to produce dopamine in the striatum, which in one small study was already raised in people with early warning signs, and the brain network that is active while a voice is heard. In the striatum, brightness stands for dopamine production measured with tracer scans, not for activity.',
   caveat:
     'The dopamine findings come from tracer scans comparing groups of people with and without psychosis, and from one small study of people with early warning signs. The voice findings come from a pooled analysis of ten studies, 68 people in all, who heard voices during scanning. These were never one experiment, and the stages are built from different groups of people, not by following individuals. The idea that too much dopamine makes ordinary things feel strangely significant is a proposed framework. People\'s experiences of psychosis vary widely.',
   durationSeconds: 40,
@@ -73,7 +74,7 @@ const score = {
       start: 0.25,
       end: 0.5,
       caption:
-        'In psychosis, dopamine production in the striatum is raised, one of the most consistent findings in this field. A proposed explanation is that too much dopamine gives ordinary experiences and thoughts a feeling of special significance.',
+        'In schizophrenia, dopamine production in the striatum is raised, with a large effect in a pooled analysis. A proposed explanation is that too much dopamine gives ordinary experiences and thoughts a feeling of special significance.',
       order: {
         kind: 'reconstructed',
         rationale: 'The early-sign and psychosis findings come from different groups of people compared at one time point, not from following the same people.',
@@ -107,17 +108,17 @@ const score = {
       {
         region: 'caudate',
         explanation:
-          'The capacity to produce and release dopamine in the striatum is raised in schizophrenia, with a large effect, in a pooled analysis of 44 studies; dopamine transporters are not changed. In people with early warning signs it is already raised, to an intermediate degree, mainly in the associative striatum. The associative striatum is mostly the caudate, which is drawn; it also includes the front of the putamen. Brightness here stands for dopamine production, not activity.',
+          'The capacity to produce and release dopamine in the striatum is raised in schizophrenia, with a large effect, in a pooled analysis of dopamine studies; there was no evidence of a change in dopamine transporters. In one small study of people with early warning signs it was already raised, to an intermediate degree, mainly in the associative striatum; the levels drawn for the two stages are illustrative. The associative striatum is mostly the caudate, which is drawn; it also includes the front of the putamen. Brightness here stands for dopamine production, not activity.',
         confidence: 'established',
         citations: [howesMeta, howesNoTransporter, howesProdrome, howesPredates, howesV3],
-        keyframes: kf(0, 0, 0.08, 0.3, 0.25, 0.35, 0.36, 0.6, 1, 0.6),
+        keyframes: kf(0, 0, 0.08, 0.35, 0.25, 0.35, 0.36, 0.6, 1, 0.6),
       },
       voice('vlpfc', "Broca's area and the frontal operculum, which produce speech, are active while a voice is heard, on both sides. They lie in the inferior frontal gyrus, which is drawn.", [jardriNetwork, jardriSpeech, jardriSample]),
-      voice('lateral-temporal', 'The middle and upper temporal cortex, which perceive speech, are active while a voice is heard. The whole lateral temporal cortex is drawn.', [jardriNetwork, jardriSpeech], 0.65),
-      voice('insula', 'The front of the insula is active while a voice is heard. The whole insula is drawn.', [jardriNetwork], 0.5),
-      voice('inferior-parietal', 'The inferior parietal lobule is active while a voice is heard.', [jardriNetwork], 0.45),
-      voice('hippocampus', 'The hippocampus and the cortex around it, involved in verbal memory, are active while a voice is heard.', [jardriNetwork, jardriSpeech], 0.5),
-      voice('motor-cortex', 'The precentral gyrus is active while a voice is heard.', [jardriNetwork], 0.4),
+      voice('lateral-temporal', 'The middle and upper temporal cortex, which perceive speech, are active while a voice is heard. The whole lateral temporal cortex is drawn.', [jardriNetwork, jardriSpeech]),
+      voice('insula', 'The front of the insula is active while a voice is heard. The whole insula is drawn.', [jardriNetwork]),
+      voice('inferior-parietal', 'The inferior parietal lobule is active while a voice is heard.', [jardriNetwork]),
+      voice('hippocampus', 'The hippocampus and the cortex around it, involved in verbal memory, are active while a voice is heard.', [jardriNetwork, jardriSpeech]),
+      voice('motor-cortex', 'The precentral gyrus is active while a voice is heard.', [jardriNetwork]),
     ],
     connections: [],
   },
@@ -135,6 +136,6 @@ writeScore(score, {
     'The early-sign dopamine level is drawn below the psychosis level because Howes et al. 2009 found it elevated "to an intermediate degree"; the exact values are illustrative.',
     'The voice network is drawn on both sides: Jardri et al. 2011 report "a bilateral neural network".',
     'No typical-response comparison is drawn; every finding is already a comparison with people without psychosis or with periods without voices.',
-    'Read as abstracts only: all sources (full texts could not be downloaded).',
+    'Read in full: Howes & Kapur 2009. Read as abstracts only: Howes et al. 2012, Howes et al. 2009, Kapur 2003, Jardri et al. 2011.',
   ],
 });

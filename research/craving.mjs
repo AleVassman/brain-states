@@ -29,9 +29,9 @@ const score = {
   id: 'craving',
   title: 'Addiction: a reminder and the craving it brings',
   description:
-    'In addiction, things linked to a substance, such as seeing a lighter, a bottle or a place, can set off a strong craving. The episode follows that moment, as studied by showing people who use nicotine, alcohol or cocaine pictures related to it. The same core regions respond across these different substances.',
+    'In addiction, things linked to a substance, such as seeing a lighter, a bottle or a place, can set off a strong craving. The episode follows that moment, as studied by showing people who use nicotine, alcohol or cocaine pictures related to it. The ventral striatum responds across these different substances.',
   caveat:
-    'The findings come from two pooled analyses of studies in which people were shown cues related to the substance they use, compared with neutral cues. They average over the viewing period, so the order of events is reconstructed. Which regions respond depends partly on whether people were seeking treatment. The effort to resist a craving involves frontal control regions in the leading model of addiction, but the sources read give no direction for them during a craving, so they are described rather than drawn. People\'s experiences differ.',
+    'The findings come from two pooled analyses of studies in which people were shown cues related to the substance they use, compared with neutral cues. They average over the viewing period, so the order of events is reconstructed. Which regions respond depends partly on whether people were seeking treatment. A model of addiction places frontal control regions in disrupted inhibitory control, but the sources read give no direction for them during a craving, so they are described rather than drawn. People\'s experiences differ.',
   durationSeconds: 34,
   phases: [
     {
@@ -59,7 +59,7 @@ const score = {
       start: 0.5,
       end: 0.8,
       caption:
-        'The urge to use. The anterior cingulate and the ventral striatum respond both to reminders and in step with how strong the craving feels. In the leading model, frontal control regions help or fail to hold the urge back; the sources read give no direction for them here.',
+        'The urge to use. The anterior cingulate and the ventral striatum respond both to reminders and in step with how strong the craving feels. A model of addiction places frontal control regions in disrupted inhibitory control; the sources read give no direction for them here.',
       order: { kind: 'reconstructed', rationale: 'Craving was rated by participants during or after the same viewing periods. Showing it as a later step is a way of presenting it.' },
     },
     {
@@ -100,7 +100,7 @@ const score = {
       {
         region: 'dacc',
         explanation:
-          'The anterior cingulate responded to reminders of nicotine and cocaine, and in alcohol and nicotine studies its response also rose with craving, in one pooled analysis.',
+          'The anterior cingulate responded to reminders of nicotine and cocaine, and in alcohol and nicotine studies its response also rose with craving, in one pooled analysis. The source says anterior cingulate; it is drawn on the dorsal anterior cingulate.',
         confidence: 'mixed',
         citations: [kuhnAcc, kuhnCore],
         keyframes: kf(0, 0, 0.2, 0.15, 0.4, 0.5, 0.8, 0.5, 1, 0),
@@ -122,6 +122,6 @@ writeScore(score, {
     'Frontal control regions are described, not drawn: Koob & Volkow 2010 place "the cingulate gyrus, dorsolateral prefrontal, and inferior frontal cortices in disrupted inhibitory control" but give no direction for a craving episode.',
     'The right pallidum (Kühn & Gallinat 2011, alcohol) is not in the brain model.',
     'No typical-response comparison is drawn: the studies compare reminders with neutral pictures in people who use the substance.',
-    'Read as abstracts only: all sources.',
+    'Read in full: Chase et al. 2011. Read as abstracts only: Kühn & Gallinat 2011, Koob & Volkow 2010.',
   ],
 });

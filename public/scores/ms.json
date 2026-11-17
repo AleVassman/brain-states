@@ -1,8 +1,8 @@
 {
  "id": "ms",
  "title": "Multiple sclerosis: damaged wiring, extra work",
- "description": "In multiple sclerosis the immune system damages the insulation of nerve fibres, and over time the fibres and grey matter themselves. The episode follows what is seen when a person with MS moves a hand: more of the cortex is active than in someone without MS, and the more damage there is, the more widespread that activity. Researchers think this extra activity may help limit the effect of the damage.",
- "caveat": "The damage itself, in the white matter and grey matter, is spread through the brain and is described, not drawn. The activity findings come from one study of 30 people with the primary progressive form of MS, which is less common than the relapsing form, so they may not apply to everyone with MS. That the extra activity is helpful is the researchers' suggestion. A large pooled analysis of brain activity at rest found both stronger and weaker links in these same areas, so the picture depends on what is measured.",
+ "description": "In multiple sclerosis, patches of inflammation and more subtle, widespread damage affect the white and grey matter of the brain, from the earliest stages. The episode follows what is seen when a person with MS makes simple movements: more of the cortex is active than in someone without MS, and the more damage there is, the more widespread that activity. Researchers think this extra activity may help limit the effect of the damage.",
+ "caveat": "The damage itself, in the white matter and grey matter, is spread through the brain and is described, not drawn. The activity findings come from one study of 30 people with the primary progressive form of MS, so they may not apply to everyone with MS. That the extra activity is helpful is the researchers' suggestion. A large pooled analysis of the brain at rest found weaker links in the right supplementary motor area and right insula, and stronger links elsewhere, so the picture depends on what is measured.",
  "durationSeconds": 34,
  "phases": [
   {
@@ -11,15 +11,15 @@
    "timescale": "years",
    "start": 0,
    "end": 0.3,
-   "caption": "Patches of inflammation damage the insulation of nerve fibres, and more subtle damage spreads through the white and grey matter. This is spread widely, so it is described, not drawn."
+   "caption": "Patches of inflammation, and more subtle damage throughout the white and grey matter, are present from the earliest stages. This is spread widely, so it is described, not drawn."
   },
   {
    "id": "moving",
-   "name": "Moving a hand",
+   "name": "Making simple movements",
    "timescale": "seconds",
    "start": 0.3,
    "end": 0.7,
-   "caption": "When the person moves their hand, more of the brain is active than in someone without MS: the supplementary motor area, the insula, and areas in the temporal, parietal and occipital lobes that combine information from different senses.",
+   "caption": "During simple movements, more of the brain is active than in someone without MS: the supplementary motor area, the insula, and areas in the temporal, parietal and occipital lobes that combine information from different senses. The temporal and parietal ones are drawn.",
    "order": {
     "kind": "reconstructed",
     "rationale": "The movement findings compare people with MS and healthy people at one time point. Placing them after the damage is an inference from the activity being related to the amount of damage."
@@ -31,7 +31,7 @@
    "timescale": "across people",
    "start": 0.7,
    "end": 0.9,
-   "caption": "The more damage visible on scans, the more widespread this extra activity. Researchers suggest the brain may be recruiting extra areas to limit the effect of the damage.",
+   "caption": "Across people, the more damage visible on scans, the more widespread this extra activity. That is a relationship between people, so nothing new is drawn. Researchers suggest the brain may be recruiting extra areas to limit the effect of the damage.",
    "order": {
     "kind": "reconstructed",
     "rationale": "This is a relationship across people with different amounts of damage, not a change over time in one person."
@@ -43,7 +43,7 @@
    "timescale": "seconds",
    "start": 0.9,
    "end": 1,
-   "caption": "The hand is still and the extra activity is no longer drawn.",
+   "caption": "The movement stops and the extra activity is no longer drawn.",
    "order": {
     "kind": "reconstructed",
     "rationale": "The movement findings apply while moving; returning to rest follows from that."
@@ -54,7 +54,7 @@
   "regions": [
    {
     "region": "sma",
-    "explanation": "More active than in people without MS while moving a hand, in one study of 30 people with primary progressive MS. A pooled analysis of the brain at rest found the right supplementary motor area less connected, so findings differ between activity during movement and connections at rest.",
+    "explanation": "More active than in people without MS during simple movements, in one study of 30 people with primary progressive MS. A pooled analysis of the brain at rest found the right supplementary motor area less connected, so findings differ between activity during movement and connections at rest.",
     "confidence": "mixed",
     "citations": [
      {
@@ -99,11 +99,11 @@
      },
      {
       "t": 0.42,
-      "v": 0.6
+      "v": 0.45
      },
      {
       "t": 0.9,
-      "v": 0.6
+      "v": 0.45
      },
      {
       "t": 0.96,
@@ -117,7 +117,7 @@
    },
    {
     "region": "insula",
-    "explanation": "More active than in people without MS while moving a hand, in one study of 30 people with primary progressive MS. A pooled analysis of the brain at rest found the right insula less connected.",
+    "explanation": "More active than in people without MS during simple movements, in one study of 30 people with primary progressive MS. A pooled analysis of the brain at rest found the right insula less connected.",
     "confidence": "mixed",
     "citations": [
      {
@@ -161,7 +161,7 @@
       "v": 0
      },
      {
-      "t": 0.44,
+      "t": 0.42,
       "v": 0.45
      },
      {
@@ -180,7 +180,7 @@
    },
    {
     "region": "lateral-temporal",
-    "explanation": "Areas in the temporal lobe that combine information from different senses were more active while moving a hand, in one study. The abstract does not name the exact areas; the lateral temporal cortex is drawn. Shown only modestly.",
+    "explanation": "Areas in the temporal lobe that combine information from different senses were more active during simple movements, in one study. The abstract does not name the exact areas; the lateral temporal cortex is drawn.",
     "confidence": "mixed",
     "citations": [
      {
@@ -204,15 +204,7 @@
       "v": 0
      },
      {
-      "t": 0.46,
-      "v": 0.3
-     },
-     {
-      "t": 0.7,
-      "v": 0.3
-     },
-     {
-      "t": 0.8,
+      "t": 0.42,
       "v": 0.45
      },
      {
@@ -231,7 +223,7 @@
    },
    {
     "region": "inferior-parietal",
-    "explanation": "Areas in the parietal lobe that combine information from different senses were more active while moving a hand, in one study. The abstract does not name the exact areas; the inferior parietal cortex is drawn. The more damage, the more widespread the activity.",
+    "explanation": "Areas in the parietal lobe that combine information from different senses were more active during simple movements, in one study. The abstract does not name the exact areas; the inferior parietal cortex is drawn.",
     "confidence": "mixed",
     "citations": [
      {
@@ -243,16 +235,6 @@
       "kind": "study",
       "access": "abstract-only",
       "quote": "Compared with control subjects, patients with MS showed increased activation of brain regions within both traditional motor planning and execution regions (including the supplementary motor area and the cingulate motor area), the insula (a region implicated in sensory processing), and several multimodal cortical regions in the temporal, parietal, and occipital lobes."
-     },
-     {
-      "authors": "Rocca MA, Matthews PM, Caputo D, Ghezzi A, Falini A, Scotti G, Comi G, Filippi M",
-      "year": 2002,
-      "title": "Evidence for widespread movement-associated functional MRI changes in patients with PPMS.",
-      "doi": "10.1212/wnl.58.6.866",
-      "pmid": "11914400",
-      "kind": "study",
-      "access": "abstract-only",
-      "quote": "In patients, the extent of the fMRI activations was strongly correlated with MR lesion burden (r ranging from 0.70 to 0.86, p < 0.001)."
      }
     ],
     "keyframes": [
@@ -265,15 +247,7 @@
       "v": 0
      },
      {
-      "t": 0.46,
-      "v": 0.3
-     },
-     {
-      "t": 0.7,
-      "v": 0.3
-     },
-     {
-      "t": 0.8,
+      "t": 0.42,
       "v": 0.45
      },
      {

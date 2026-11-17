@@ -1,13 +1,13 @@
 # PTSD: a reminder and the re-living — claims and sources
 
-Review: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/ptsd.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
 
 ## What is reconstruction in this episode
 
-The findings come from pooled analyses of brain scans of people with PTSD listening to or seeing reminders of their trauma, or doing emotional tasks, compared with people without PTSD. These were averaged over minutes, not followed moment by moment, so the order shown is reconstructed. The two pooled analyses read do not fully agree: one finds the cingulate more active in PTSD, the other less active. The role of the hippocampus comes from a proposed model built partly on animal fear learning, and is described rather than drawn. Trauma reactions differ greatly from person to person.
+The findings come from pooled analyses of brain scans of people with PTSD listening to or seeing reminders of their trauma, or doing emotional tasks, compared with people without PTSD. These were averaged over minutes, not followed moment by moment, so the order shown is reconstructed. The two pooled analyses read do not fully agree about the cingulate: one finds it more active in PTSD, the other found parts of it both more and less active. The role of the hippocampus comes from a proposed model built partly on animal fear learning, and is described rather than drawn. Trauma reactions differ greatly from person to person.
 
 ## Notes from the research pass
 
@@ -21,7 +21,7 @@ The findings come from pooled analyses of brain scans of people with PTSD listen
 
 1. **A reminder** (seconds) — start of the episode.
 2. **Re-living** (seconds to minutes) — order **reconstructed**: The studies compare whole periods of hearing a trauma reminder with neutral periods. That the alarm rises after the reminder is how the task is built, not a timed measurement.
-3. **Losing the present** (seconds to minutes) — order **reconstructed**: The lower frontal activity is measured over the same periods as the higher alarm activity. Showing it as a later step is a way of presenting the regulation side of the finding.
+3. **Regulation weakens** (seconds to minutes) — order **reconstructed**: The lower frontal activity is measured over the same periods as the higher alarm activity. Showing it as a later step is a way of presenting the regulation side of the finding.
 4. **Afterwards** (minutes to hours) — order **reconstructed**: No source read followed the end of a re-living episode. The return to rest is assumed.
 
 ## The condition
@@ -30,7 +30,7 @@ The findings come from pooled analyses of brain scans of people with PTSD listen
 
 Claim: More active in PTSD, on both sides, in a pooled analysis when studies that measured it directly were included. Another pooled analysis found greater amygdala activity across PTSD, social anxiety and phobia, but less often in PTSD than in the other two.
 
-On screen: peaks above baseline (0.75), ends at baseline (0).
+On screen: peaks above baseline (0.6), ends at baseline (0).
 
 - Hayes JP, Hayes SM, Mikedis AM (2012). Quantitative meta-analysis of neural activity in posttraumatic stress disorder. doi:10.1186/2045-5380-2-9 — meta-analysis, abstract-only
   > "the regions most consistently hyperactivated in PTSD patients included mid- and dorsal anterior cingulate cortex, and when ROI studies were included, bilateral amygdala"
@@ -41,14 +41,18 @@ On screen: peaks above baseline (0.75), ends at baseline (0).
 
 ### **dacc** — Still debated
 
-Claim: The middle and dorsal cingulate were the regions most consistently more active in PTSD in one pooled analysis. An earlier pooled analysis found the dorsal and front cingulate less active in PTSD. The direction is disputed. Drawn on the dorsal anterior cingulate; the finding also covers the middle cingulate just behind it.
+Claim: The middle and dorsal cingulate were the regions most consistently more active in PTSD in one pooled analysis. An earlier pooled analysis found the middle cingulate more active but the dorsal and front cingulate less active; when it looked only at studies that used trauma reminders, the lower activity held for the front cingulate but not the dorsal. The direction is disputed. Drawn on the dorsal anterior cingulate; the finding also covers the middle cingulate just behind it.
 
-On screen: peaks above baseline (0.55), ends at baseline (0).
+On screen: peaks above baseline (0.6), ends at baseline (0).
 
 - Hayes JP, Hayes SM, Mikedis AM (2012). Quantitative meta-analysis of neural activity in posttraumatic stress disorder. doi:10.1186/2045-5380-2-9 — meta-analysis, abstract-only
   > "the regions most consistently hyperactivated in PTSD patients included mid- and dorsal anterior cingulate cortex, and when ROI studies were included, bilateral amygdala"
 - Etkin A, Wager TD (2007). Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia. doi:10.1176/appi.ajp.2007.07030504 — meta-analysis, full-text
   > "only patients with PTSD showed hypoactivation in the dorsal and rostral anterior cingulate cortices and the ventromedial prefrontal cortex-structures linked to the experience and regulation of emotion"
+- Etkin A, Wager TD (2007). Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia. doi:10.1176/appi.ajp.2007.07030504 — meta-analysis, full-text
+  > "Patients with PTSD showed hyperactivity during emotional processing in the amygdalae, parahippocampal gyrus, insula, inferior parietal lobule, mid-cingulate, and precuneus"
+- Etkin A, Wager TD (2007). Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia. doi:10.1176/appi.ajp.2007.07030504 — meta-analysis, full-text
+  > "Restricting our meta-analysis to symptom-provocation studies, however, largely confirmed our previous findings: hypoactivation was more frequent in PTSD than in social anxiety disorder or specific phobia in the ventromedial prefrontal cortex, rostral anterior cingulate cortex, and thalamus"
 
 ### **vmpfc** — Well established
 

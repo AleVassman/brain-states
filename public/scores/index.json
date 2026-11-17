@@ -60,28 +60,32 @@
   "title": "PTSD flashback",
   "file": "ptsd.json",
   "category": "psychological",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "ocd",
   "title": "Obsessive-compulsive",
   "file": "ocd.json",
   "category": "psychological",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "psychosis",
   "title": "Psychosis",
   "file": "psychosis.json",
   "category": "psychological",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "craving",
   "title": "Addiction and craving",
   "file": "craving.json",
   "category": "psychological",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "reward",
@@ -160,27 +164,31 @@
   "title": "Multiple sclerosis",
   "file": "ms.json",
   "category": "physical",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "huntingtons",
   "title": "Huntington's disease",
   "file": "huntingtons.json",
   "category": "physical",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "hypoglycemia",
   "title": "Low blood sugar",
   "file": "hypoglycemia.json",
   "category": "physical",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
   "id": "sleep",
   "title": "Sleep deprivation",
   "file": "sleep.json",
   "category": "physical",
-  "reviewed": false
+  "reviewed": true,
+  "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  }
 ]

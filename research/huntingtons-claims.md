@@ -1,6 +1,6 @@
 # Huntington's disease: stages over decades — claims and sources
 
-Review: **not yet reviewed**
+Review: **reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/huntingtons.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
@@ -44,9 +44,9 @@ On screen: peaks below baseline (-0.6), ends below baseline (-0.6).
 
 ### **caudate** — Mixed evidence
 
-Claim: Part of the striatum, which shrinks over the years. The sources read speak of the striatum as a whole and do not single out the caudate. Unlike the putamen, it was not found smaller far from onset, so it is drawn starting to dim later. The dimming stands for smaller volume, not lower activity.
+Claim: Part of the striatum, which shrinks over the years. The sources read speak of the striatum as a whole and do not single out the caudate. Far from onset, no imaging difference other than the smaller putamen was found, so it is drawn dimming together with the rest of the striatum from the next stage. The dimming stands for smaller volume, not lower activity.
 
-On screen: peaks below baseline (-0.55), ends below baseline (-0.55).
+On screen: peaks below baseline (-0.6), ends below baseline (-0.6).
 
 - Broom EL, Hanson-Baiden J, Byrne LM (2026). Fluid and Imaging Biomarkers in Huntington's Disease. doi:10.1007/s11910-026-01522-1 — review, abstract-only
   > "HD-YAS showed SER predicts striatal atrophy over multi-year intervals, but its short-term sensitivity remains uncertain."
