@@ -1,0 +1,275 @@
+{
+ "id": "ptsd",
+ "title": "PTSD: a reminder and the re-living",
+ "description": "In post-traumatic stress disorder, a reminder of a past trauma can bring it back as if it were happening now. The episode follows that re-living response: alarm regions respond more than usual, and frontal regions that help put a memory in context respond less. Some people respond to reminders in a different way, by detaching; that pattern is shown in the Dissociation state.",
+ "caveat": "The findings come from pooled analyses of brain scans of people with PTSD listening to or seeing reminders of their trauma, or doing emotional tasks, compared with people without PTSD. These were averaged over minutes, not followed moment by moment, so the order shown is reconstructed. The two pooled analyses read do not fully agree: one finds the cingulate more active in PTSD, the other less active. The role of the hippocampus comes from a proposed model built partly on animal fear learning, and is described rather than drawn. Trauma reactions differ greatly from person to person.",
+ "durationSeconds": 36,
+ "phases": [
+  {
+   "id": "reminder",
+   "name": "A reminder",
+   "timescale": "seconds",
+   "start": 0,
+   "end": 0.16,
+   "caption": "Something brings the trauma to mind: a sound, a place, a smell, or a thought."
+  },
+  {
+   "id": "reliving",
+   "name": "Re-living",
+   "timescale": "seconds to minutes",
+   "start": 0.16,
+   "end": 0.52,
+   "caption": "The memory comes back with the force of the original event. The amygdala and the middle and dorsal cingulate respond more than in people without PTSD.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "The studies compare whole periods of hearing a trauma reminder with neutral periods. That the alarm rises after the reminder is how the task is built, not a timed measurement."
+   }
+  },
+  {
+   "id": "context",
+   "name": "Losing the present",
+   "timescale": "seconds to minutes",
+   "start": 0.52,
+   "end": 0.8,
+   "caption": "The ventromedial prefrontal cortex and inferior frontal gyrus, which help regulate emotion and place a memory in the present, respond less. The less active the ventromedial prefrontal cortex, the more active the amygdala.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "The lower frontal activity is measured over the same periods as the higher alarm activity. Showing it as a later step is a way of presenting the regulation side of the finding."
+   }
+  },
+  {
+   "id": "after",
+   "name": "Afterwards",
+   "timescale": "minutes to hours",
+   "start": 0.8,
+   "end": 1,
+   "caption": "The re-living fades. How the brain returns to rest after a flashback was not studied in the sources read; this last part is an assumption.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "No source read followed the end of a re-living episode. The return to rest is assumed."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "amygdala",
+    "explanation": "More active in PTSD, on both sides, in a pooled analysis when studies that measured it directly were included. Another pooled analysis found greater amygdala activity across PTSD, social anxiety and phobia, but less often in PTSD than in the other two.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Hayes JP, Hayes SM, Mikedis AM",
+      "year": 2012,
+      "title": "Quantitative meta-analysis of neural activity in posttraumatic stress disorder.",
+      "doi": "10.1186/2045-5380-2-9",
+      "pmid": "22738125",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "the regions most consistently hyperactivated in PTSD patients included mid- and dorsal anterior cingulate cortex, and when ROI studies were included, bilateral amygdala"
+     },
+     {
+      "authors": "Etkin A, Wager TD",
+      "year": 2007,
+      "title": "Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia.",
+      "doi": "10.1176/appi.ajp.2007.07030504",
+      "pmid": "17898336",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Patients with any of the three disorders consistently showed greater activity than matched comparison subjects in the amygdala and insula"
+     },
+     {
+      "authors": "Etkin A, Wager TD",
+      "year": 2007,
+      "title": "Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia.",
+      "doi": "10.1176/appi.ajp.2007.07030504",
+      "pmid": "17898336",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Hyperactivation in the amygdala and insula were, of interest, more frequently observed in social anxiety disorder and specific phobia than in PTSD."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.16,
+      "v": 0.2
+     },
+     {
+      "t": 0.34,
+      "v": 0.75
+     },
+     {
+      "t": 0.8,
+      "v": 0.65
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "dacc",
+    "explanation": "The middle and dorsal cingulate were the regions most consistently more active in PTSD in one pooled analysis. An earlier pooled analysis found the dorsal and front cingulate less active in PTSD. The direction is disputed. Drawn on the dorsal anterior cingulate; the finding also covers the middle cingulate just behind it.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Hayes JP, Hayes SM, Mikedis AM",
+      "year": 2012,
+      "title": "Quantitative meta-analysis of neural activity in posttraumatic stress disorder.",
+      "doi": "10.1186/2045-5380-2-9",
+      "pmid": "22738125",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "the regions most consistently hyperactivated in PTSD patients included mid- and dorsal anterior cingulate cortex, and when ROI studies were included, bilateral amygdala"
+     },
+     {
+      "authors": "Etkin A, Wager TD",
+      "year": 2007,
+      "title": "Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia.",
+      "doi": "10.1176/appi.ajp.2007.07030504",
+      "pmid": "17898336",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "only patients with PTSD showed hypoactivation in the dorsal and rostral anterior cingulate cortices and the ventromedial prefrontal cortex-structures linked to the experience and regulation of emotion"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.16,
+      "v": 0.1
+     },
+     {
+      "t": 0.36,
+      "v": 0.55
+     },
+     {
+      "t": 0.8,
+      "v": 0.45
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "vmpfc",
+    "explanation": "Less active in PTSD in two separate pooled analyses. This region helps regulate emotion, and lower activity here went with higher amygdala activity.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "Hayes JP, Hayes SM, Mikedis AM",
+      "year": 2012,
+      "title": "Quantitative meta-analysis of neural activity in posttraumatic stress disorder.",
+      "doi": "10.1186/2045-5380-2-9",
+      "pmid": "22738125",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "widespread hypoactivity was observed in PTSD including the ventromedial prefrontal cortex and the inferior frontal gyrus"
+     },
+     {
+      "authors": "Etkin A, Wager TD",
+      "year": 2007,
+      "title": "Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia.",
+      "doi": "10.1176/appi.ajp.2007.07030504",
+      "pmid": "17898336",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "only patients with PTSD showed hypoactivation in the dorsal and rostral anterior cingulate cortices and the ventromedial prefrontal cortex-structures linked to the experience and regulation of emotion"
+     },
+     {
+      "authors": "Hayes JP, Hayes SM, Mikedis AM",
+      "year": 2012,
+      "title": "Quantitative meta-analysis of neural activity in posttraumatic stress disorder.",
+      "doi": "10.1186/2045-5380-2-9",
+      "pmid": "22738125",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "decreased ventromedial prefrontal cortex activity was associated with increased amygdala activity"
+     },
+     {
+      "authors": "Lanius RA, Vermetten E, Loewenstein RJ, Brand B, Schmahl C, Bremner JD, Spiegel D",
+      "year": 2010,
+      "title": "Emotion modulation in PTSD: Clinical and neurobiological evidence for a dissociative subtype.",
+      "doi": "10.1176/appi.ajp.2009.09081168",
+      "pmid": "20360318",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "Patients with reexperiencing/hyperaroused PTSD exhibit abnormally low activation in medial anterior brain regions that are implicated in arousal modulation and emotion regulation more generally"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.6,
+      "v": -0.6
+     },
+     {
+      "t": 0.8,
+      "v": -0.55
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "vlpfc",
+    "explanation": "The inferior frontal gyrus was less active in PTSD in a pooled analysis.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Hayes JP, Hayes SM, Mikedis AM",
+      "year": 2012,
+      "title": "Quantitative meta-analysis of neural activity in posttraumatic stress disorder.",
+      "doi": "10.1186/2045-5380-2-9",
+      "pmid": "22738125",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "widespread hypoactivity was observed in PTSD including the ventromedial prefrontal cortex and the inferior frontal gyrus"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.6,
+      "v": -0.45
+     },
+     {
+      "t": 0.8,
+      "v": -0.4
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

@@ -1,0 +1,265 @@
+{
+ "id": "craving",
+ "title": "Addiction: a reminder and the craving it brings",
+ "description": "In addiction, things linked to a substance, such as seeing a lighter, a bottle or a place, can set off a strong craving. The episode follows that moment, as studied by showing people who use nicotine, alcohol or cocaine pictures related to it. The same core regions respond across these different substances.",
+ "caveat": "The findings come from two pooled analyses of studies in which people were shown cues related to the substance they use, compared with neutral cues. They average over the viewing period, so the order of events is reconstructed. Which regions respond depends partly on whether people were seeking treatment. The effort to resist a craving involves frontal control regions in the leading model of addiction, but the sources read give no direction for them during a craving, so they are described rather than drawn. People's experiences differ.",
+ "durationSeconds": 34,
+ "phases": [
+  {
+   "id": "cue",
+   "name": "A reminder",
+   "timescale": "seconds",
+   "start": 0,
+   "end": 0.18,
+   "caption": "Something linked to the substance comes into view: a picture, an object, a place."
+  },
+  {
+   "id": "reactivity",
+   "name": "The brain responds",
+   "timescale": "seconds",
+   "start": 0.18,
+   "end": 0.5,
+   "caption": "The ventral striatum, part of the reward system, responds to the reminder, and does so across nicotine, alcohol and cocaine. The amygdala, the orbitofrontal cortex and the anterior cingulate respond too.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "The studies compare viewing reminders with viewing neutral pictures. That the response follows the reminder is how the task is built."
+   }
+  },
+  {
+   "id": "craving",
+   "name": "Craving",
+   "timescale": "seconds to minutes",
+   "start": 0.5,
+   "end": 0.8,
+   "caption": "The urge to use. The anterior cingulate and the ventral striatum respond both to reminders and in step with how strong the craving feels. In the leading model, frontal control regions help or fail to hold the urge back; the sources read give no direction for them here.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "Craving was rated by participants during or after the same viewing periods. Showing it as a later step is a way of presenting it."
+   }
+  },
+  {
+   "id": "after",
+   "name": "Afterwards",
+   "timescale": "minutes",
+   "start": 0.8,
+   "end": 1,
+   "caption": "The reminder goes and the craving eases. What the brain does at this point was not studied in the sources read; this last part is an assumption.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "No source read followed the end of a craving episode. The return to rest is assumed."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "nucleus-accumbens",
+    "explanation": "The ventral striatum responds to reminders of the substance, across nicotine, alcohol and cocaine, in two pooled analyses, and its response also rises with how strong the craving feels. Drawn on the nucleus accumbens, the main part of the ventral striatum.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "Chase HW, Eickhoff SB, Laird AR, Hogarth L",
+      "year": 2011,
+      "title": "The neural basis of drug stimulus processing and craving: an activation likelihood estimation meta-analysis.",
+      "doi": "10.1016/j.biopsych.2011.05.025",
+      "pmid": "21757184",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Cue-related activation was observed in the ventral striatum (across both subgroups), amygdala (in the treatment-seeking subgroup and overall), and orbitofrontal cortex (in the nontreatment-seeking subgroup and overall) but not insula cortex."
+     },
+     {
+      "authors": "Kühn S, Gallinat J",
+      "year": 2011,
+      "title": "Common biology of craving across legal and illegal drugs - a quantitative meta-analysis of cue-reactivity brain response.",
+      "doi": "10.1111/j.1460-9568.2010.07590.x",
+      "pmid": "21261758",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "We found direct overlap between nicotine, alcohol and cocaine cue reactivity in the ventral striatum."
+     },
+     {
+      "authors": "Kühn S, Gallinat J",
+      "year": 2011,
+      "title": "Common biology of craving across legal and illegal drugs - a quantitative meta-analysis of cue-reactivity brain response.",
+      "doi": "10.1111/j.1460-9568.2010.07590.x",
+      "pmid": "21261758",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "The ACC, right pallidum and ventral striatum were related to drug cue reactivity as well as self-reported craving, suggesting that this set of brain regions constitutes the core circuit of drug craving in nicotine and alcohol addiction."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.18,
+      "v": 0.2
+     },
+     {
+      "t": 0.36,
+      "v": 0.75
+     },
+     {
+      "t": 0.8,
+      "v": 0.7
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "amygdala",
+    "explanation": "Responds to reminders of the substance in two pooled analyses. In one, activity in the right amygdala also rose with how strong the craving felt.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "Chase HW, Eickhoff SB, Laird AR, Hogarth L",
+      "year": 2011,
+      "title": "The neural basis of drug stimulus processing and craving: an activation likelihood estimation meta-analysis.",
+      "doi": "10.1016/j.biopsych.2011.05.025",
+      "pmid": "21757184",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Cue-related activation was observed in the ventral striatum (across both subgroups), amygdala (in the treatment-seeking subgroup and overall), and orbitofrontal cortex (in the nontreatment-seeking subgroup and overall) but not insula cortex."
+     },
+     {
+      "authors": "Kühn S, Gallinat J",
+      "year": 2011,
+      "title": "Common biology of craving across legal and illegal drugs - a quantitative meta-analysis of cue-reactivity brain response.",
+      "doi": "10.1111/j.1460-9568.2010.07590.x",
+      "pmid": "21261758",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "In addition, regions of close proximity were observed in the anterior cingulate cortex (ACC; nicotine and cocaine) and amygdala (alcohol, nicotine and cocaine)."
+     },
+     {
+      "authors": "Chase HW, Eickhoff SB, Laird AR, Hogarth L",
+      "year": 2011,
+      "title": "The neural basis of drug stimulus processing and craving: an activation likelihood estimation meta-analysis.",
+      "doi": "10.1016/j.biopsych.2011.05.025",
+      "pmid": "21757184",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "right amygdala and left middle frontal gyrus activity were positively associated with craving"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.18,
+      "v": 0.2
+     },
+     {
+      "t": 0.36,
+      "v": 0.6
+     },
+     {
+      "t": 0.8,
+      "v": 0.55
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "ofc",
+    "explanation": "Responds to reminders of the substance in one pooled analysis, overall and in people not seeking treatment.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Chase HW, Eickhoff SB, Laird AR, Hogarth L",
+      "year": 2011,
+      "title": "The neural basis of drug stimulus processing and craving: an activation likelihood estimation meta-analysis.",
+      "doi": "10.1016/j.biopsych.2011.05.025",
+      "pmid": "21757184",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Cue-related activation was observed in the ventral striatum (across both subgroups), amygdala (in the treatment-seeking subgroup and overall), and orbitofrontal cortex (in the nontreatment-seeking subgroup and overall) but not insula cortex."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.2,
+      "v": 0.15
+     },
+     {
+      "t": 0.38,
+      "v": 0.5
+     },
+     {
+      "t": 0.8,
+      "v": 0.45
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "dacc",
+    "explanation": "The anterior cingulate responded to reminders of nicotine and cocaine, and in alcohol and nicotine studies its response also rose with craving, in one pooled analysis.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Kühn S, Gallinat J",
+      "year": 2011,
+      "title": "Common biology of craving across legal and illegal drugs - a quantitative meta-analysis of cue-reactivity brain response.",
+      "doi": "10.1111/j.1460-9568.2010.07590.x",
+      "pmid": "21261758",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "In addition, regions of close proximity were observed in the anterior cingulate cortex (ACC; nicotine and cocaine) and amygdala (alcohol, nicotine and cocaine)."
+     },
+     {
+      "authors": "Kühn S, Gallinat J",
+      "year": 2011,
+      "title": "Common biology of craving across legal and illegal drugs - a quantitative meta-analysis of cue-reactivity brain response.",
+      "doi": "10.1111/j.1460-9568.2010.07590.x",
+      "pmid": "21261758",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "The ACC, right pallidum and ventral striatum were related to drug cue reactivity as well as self-reported craving, suggesting that this set of brain regions constitutes the core circuit of drug craving in nicotine and alcohol addiction."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.2,
+      "v": 0.15
+     },
+     {
+      "t": 0.4,
+      "v": 0.5
+     },
+     {
+      "t": 0.8,
+      "v": 0.5
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

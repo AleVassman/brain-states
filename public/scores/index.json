@@ -56,6 +56,34 @@
   "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
  },
  {
+  "id": "ptsd",
+  "title": "PTSD flashback",
+  "file": "ptsd.json",
+  "category": "psychological",
+  "reviewed": false
+ },
+ {
+  "id": "ocd",
+  "title": "Obsessive-compulsive",
+  "file": "ocd.json",
+  "category": "psychological",
+  "reviewed": false
+ },
+ {
+  "id": "psychosis",
+  "title": "Psychosis",
+  "file": "psychosis.json",
+  "category": "psychological",
+  "reviewed": false
+ },
+ {
+  "id": "craving",
+  "title": "Addiction and craving",
+  "file": "craving.json",
+  "category": "psychological",
+  "reviewed": false
+ },
+ {
   "id": "reward",
   "title": "Joy and reward",
   "file": "reward.json",
@@ -126,5 +154,33 @@
   "category": "physical",
   "reviewed": true,
   "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
+ },
+ {
+  "id": "ms",
+  "title": "Multiple sclerosis",
+  "file": "ms.json",
+  "category": "physical",
+  "reviewed": false
+ },
+ {
+  "id": "huntingtons",
+  "title": "Huntington's disease",
+  "file": "huntingtons.json",
+  "category": "physical",
+  "reviewed": false
+ },
+ {
+  "id": "hypoglycemia",
+  "title": "Low blood sugar",
+  "file": "hypoglycemia.json",
+  "category": "physical",
+  "reviewed": false
+ },
+ {
+  "id": "sleep",
+  "title": "Sleep deprivation",
+  "file": "sleep.json",
+  "category": "physical",
+  "reviewed": false
  }
 ]

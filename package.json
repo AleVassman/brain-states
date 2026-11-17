@@ -8,7 +8,7 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "scores": "node research/depression.mjs && node research/anxiety.mjs && node research/panic.mjs && node research/stress.mjs && node research/anger.mjs && node research/borderline.mjs && node research/dissociation.mjs && node research/reward.mjs && node research/migraine.mjs && node research/seizure.mjs && node research/infection.mjs && node research/alzheimers.mjs && node research/parkinsons.mjs && node research/stroke.mjs && node research/chronicpain.mjs && node research/concussion.mjs",
+    "scores": "node research/depression.mjs && node research/anxiety.mjs && node research/panic.mjs && node research/stress.mjs && node research/anger.mjs && node research/borderline.mjs && node research/dissociation.mjs && node research/ptsd.mjs && node research/ocd.mjs && node research/psychosis.mjs && node research/craving.mjs && node research/reward.mjs && node research/migraine.mjs && node research/seizure.mjs && node research/infection.mjs && node research/alzheimers.mjs && node research/parkinsons.mjs && node research/stroke.mjs && node research/chronicpain.mjs && node research/concussion.mjs && node research/ms.mjs && node research/huntingtons.mjs && node research/hypoglycemia.mjs && node research/sleep.mjs",
     "verify:quotes": "node tools/research/verify_quotes.mjs",
     "atlas": "node tools/build_atlas.mjs"
   },
