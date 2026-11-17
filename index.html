@@ -8,6 +8,8 @@
   <body>
     <canvas id="stage" aria-label="3D brain. Drag to rotate, scroll to zoom, click a region to read about it."></canvas>
 
+    <div id="labels" aria-hidden="true"></div>
+
     <div id="ui">
       <header class="top">
         <h1>Brain States</h1>
@@ -21,6 +23,10 @@
           <span>Typical response</span>
         </label>
         <p class="hint" id="typical-note"></p>
+        <label class="toggle">
+          <input type="checkbox" id="labels-toggle" checked />
+          <span>Name tags on the brain</span>
+        </label>
       </aside>
 
       <aside class="panel right" id="side-panel" aria-live="polite"></aside>
@@ -29,6 +35,12 @@
         <p id="banner" hidden></p>
         <p id="caption" aria-live="polite"></p>
         <div id="timeline"></div>
+        <div class="legend">
+          <span><span class="swatch up"></span>▲ more active than at rest</span>
+          <span><span class="swatch down"></span>▼ less active (violet edge)</span>
+          <span><span class="swatch hatch"></span>striped: evidence mixed or debated</span>
+          <span><span class="swatch line"></span>pulsing line: working together more; dashed: less</span>
+        </div>
       </footer>
     </div>
 

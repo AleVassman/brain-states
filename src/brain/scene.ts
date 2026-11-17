@@ -12,6 +12,8 @@ export interface Stage {
   /** Advance camera easing and draw one frame. */
   render(dt: number): void;
   resize(): void;
+  /** Where a point in the scene lands on the page, in CSS pixels relative to the canvas. */
+  project(point: [number, number, number]): { x: number; y: number; depth: number; behind: boolean };
   /** Render at a fraction of full sharpness (1 = full). Used to keep slow graphics chips smooth. */
   setQuality(scale: number): void;
   dispose(): void;
@@ -83,6 +85,7 @@ export function createStage(canvas: HTMLCanvasElement): Stage | { error: string 
   };
   resize();
 
+  const projected = new THREE.Vector3();
   const lostCallbacks: (() => void)[] = [];
   const onLost = (event: Event) => {
     event.preventDefault();
@@ -99,6 +102,17 @@ export function createStage(canvas: HTMLCanvasElement): Stage | { error: string 
       composer.render();
     },
     resize,
+    project(point) {
+      projected.set(point[0], point[1], point[2]);
+      const depth = projected.distanceTo(camera.position);
+      projected.project(camera);
+      return {
+        x: ((projected.x + 1) / 2) * canvas.clientWidth,
+        y: ((1 - projected.y) / 2) * canvas.clientHeight,
+        depth,
+        behind: projected.z > 1,
+      };
+    },
     setQuality(scale) {
       renderer.setPixelRatio(fullPixelRatio * scale);
       composer.setPixelRatio(fullPixelRatio * scale);

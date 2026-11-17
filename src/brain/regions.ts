@@ -31,6 +31,9 @@ export class RegionLayer {
   private pickGroup = new THREE.Group();
   private raycaster = new THREE.Raycaster();
   private time = 0;
+  /** 0 = no state loaded; 1 = a state is showing and the surroundings are dimmed to let it stand out. */
+  private focus = 0;
+  private focusTarget = 0;
 
   constructor(private readonly stage: Stage, atlas: Atlas) {
     const group = new THREE.Group();
@@ -97,6 +100,11 @@ export class RegionLayer {
     }
   }
 
+  /** Dim the context-only outlines while a state is showing, so the regions that change stand out. */
+  setFocus(on: boolean): void {
+    this.focusTarget = on ? 1 : 0;
+  }
+
   /** Mark regions whose evidence is mixed or debated; they are drawn hatched. */
   setUncertain(ids: Set<string>): void {
     for (const [id, visual] of this.visuals) {
@@ -108,11 +116,18 @@ export class RegionLayer {
     this.time += dt;
     const follow = 1 - Math.exp(-FOLLOW_RATE * dt);
     const pointScale = this.stage.canvas.clientHeight || 800;
+    this.focus += (this.focusTarget - this.focus) * (1 - Math.exp(-3 * dt));
     for (const visual of this.visuals.values()) {
       visual.current += (visual.target - visual.current) * follow;
       const look = activityToAppearance(visual.current);
       const shimmer = 1 + SHIMMER_DEPTH * Math.sin(this.time * SHIMMER_SPEED + visual.phase);
-      const intensity = look.intensity * shimmer * visual.gain;
+      const isContext = visual.pickMesh === null;
+      // Context dims to 45% and untouched regions to 70% while a state shows; regions that change keep full strength.
+      const quiet = Math.abs(visual.current) < 0.05;
+      const focusDim = isContext ? 1 - 0.55 * this.focus : quiet ? 1 - 0.3 * this.focus : 1;
+      const intensity = look.intensity * shimmer * visual.gain * focusDim;
+      visual.surface.uniforms.uFill.value = Math.max(0, visual.current) * 0.035;
+      visual.surface.uniforms.uOutline.value = Math.max(0, -visual.current) * 0.55;
       (visual.surface.uniforms.uColor.value as THREE.Color).setRGB(look.color[0], look.color[1], look.color[2]);
       visual.surface.uniforms.uIntensity.value = intensity;
       if (visual.points) {

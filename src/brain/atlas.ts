@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { CONTEXT_GROUPS_LIST } from '../score/contextGroups';
 import type { RegionInfo } from '../score/types';
 
 export interface Atlas {
@@ -10,7 +11,7 @@ export interface Atlas {
 }
 
 /** Groups that are only there for context and can never be the target of a score. */
-export const CONTEXT_GROUPS = ['cortex', 'context'];
+export const CONTEXT_GROUPS = CONTEXT_GROUPS_LIST;
 
 /** Every name a score may use: region ids and groups, minus the context-only ones. */
 export function scoreRegionNames(regions: RegionInfo[]): Set<string> {

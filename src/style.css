@@ -300,6 +300,102 @@ a:focus-visible {
   margin-bottom: 4px;
 }
 
+#labels {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.label-dot,
+.label-tag,
+.label-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  will-change: transform;
+}
+
+.label-dot {
+  width: 9px;
+  height: 9px;
+  margin: -4.5px 0 0 -4.5px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  background: rgba(5, 7, 13, 0.6);
+}
+
+.label-line {
+  height: 1px;
+  transform-origin: 0 0;
+  background: currentColor;
+  opacity: 0.55;
+}
+
+.label-tag {
+  margin-top: -10px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  background: rgba(5, 7, 13, 0.78);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.label-dot.up,
+.label-tag.up,
+.label-line.up {
+  color: #ff9a6b;
+}
+
+.label-dot.down,
+.label-tag.down,
+.label-line.down {
+  color: #b79cff;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.legend > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.swatch {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.swatch.up {
+  background: radial-gradient(circle, #ffd2b8 0%, #ff6a3d 60%, transparent 75%);
+}
+
+.swatch.down {
+  border: 2px solid #9a7bd8;
+  background: rgba(59, 31, 107, 0.5);
+}
+
+.swatch.hatch {
+  background: repeating-linear-gradient(45deg, #3fa9ff 0 2px, transparent 2px 5px);
+}
+
+.swatch.line {
+  height: 2px;
+  border-radius: 0;
+  background: linear-gradient(90deg, #ff6a3d 0 40%, transparent 40% 60%, #ff6a3d 60%);
+}
+
 .bottom {
   grid-area: bottom;
   max-width: 1100px;

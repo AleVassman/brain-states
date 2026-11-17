@@ -9,6 +9,8 @@ import { Player } from './player/player';
 import { loadScore, loadScoreIndex, type ScoreIndexEntry } from './score/load';
 import type { RegionInfo, Score, VariantName } from './score/types';
 import { setupAbout } from './ui/about';
+import { activityLabels } from './ui/activityLabels';
+import { createLabelLayer } from './ui/labelLayer';
 import { updateCaption } from './ui/caption';
 import { renderSidePanel, type PanelView } from './ui/sidePanel';
 import { createStatePicker } from './ui/statePicker';
@@ -59,6 +61,12 @@ async function start() {
   const typicalToggle = byId<HTMLInputElement>('typical-toggle');
   const typicalNote = byId('typical-note');
   const timeline = createTimeline(byId('timeline'), player);
+  const labelLayer = createLabelLayer(byId('labels'), stage, atlas.regions);
+  const labelsToggle = byId<HTMLInputElement>('labels-toggle');
+  labelsToggle.addEventListener('change', () => {
+    labelLayer.setEnabled(labelsToggle.checked);
+    labelsToggle.blur();
+  });
   setupAbout(byId<HTMLDialogElement>('about'), byId('about-open'), credits);
 
   let selectedRegion: RegionInfo | null = null;
@@ -85,6 +93,7 @@ async function start() {
       shownScore = player.score;
       shownVariant = player.variant;
       regions.setUncertain(uncertainIds(player.score, player.variant, atlas.regions));
+      regions.setFocus(player.score !== null);
     }
 
     timeline.update();
@@ -189,6 +198,7 @@ async function start() {
     connections.update(dt);
     backdrop.update(dt);
     stage.render(dt);
+    labelLayer.update(activityLabels(player.frame(), atlas.regions));
     requestAnimationFrame(loop);
   };
   requestAnimationFrame(loop);
