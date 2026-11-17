@@ -18,6 +18,11 @@ export const CONNECTION_ONLY =
   'No change in activity is documented for this region in this state, but a connection shown here ends at it.';
 export const NO_STATE = 'Pick a state to see what this region does in it.';
 
+/** Where a citation links to: its DOI, or its PubMed page when it has no DOI. */
+export function citationHref(c: Citation): string {
+  return c.doi ? `https://doi.org/${c.doi}` : `https://pubmed.ncbi.nlm.nih.gov/${c.pmid}/`;
+}
+
 /** The track that drives a region: one on the region itself wins over one on its group. */
 export function trackFor(region: RegionInfo, score: Score | null, variant: VariantName): RegionTrack | null {
   const tracks = (variant === 'typical' ? score?.typical : score?.condition)?.regions ?? [];

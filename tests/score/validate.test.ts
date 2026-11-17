@@ -73,8 +73,14 @@ describe('validateScore', () => {
     delete s.phases[1].typicalCaption;
     expect(validateScore(s, REGION_NAMES).ok).toBe(true);
   });
-  it('rejects a citation with an empty doi', () => {
+  it('rejects a citation with neither a doi nor a pmid', () => {
     expectError((s) => { s.condition.regions[0].citations[0].doi = ''; }, 'citation');
+  });
+  it('accepts a citation with a pmid and no doi', () => {
+    const s = validScore();
+    s.condition.regions[0].citations[0].doi = '';
+    s.condition.regions[0].citations[0].pmid = '18787662';
+    expect(validateScore(s, REGION_NAMES).ok).toBe(true);
   });
   it('rejects a citation with an empty quote', () => {
     expectError((s) => { s.condition.regions[0].citations[0].quote = ''; }, 'citation');

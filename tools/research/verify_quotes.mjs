@@ -17,7 +17,7 @@ const normalise = (s) =>
     .trim()
     .toLowerCase();
 
-const byDoi = new Map(Object.values(SOURCES).map((s) => [s.doi, s]));
+const byKey = new Map(Object.values(SOURCES).map((s) => [s.doi || `pmid:${s.pmid}`, s]));
 const index = JSON.parse(readFileSync('public/scores/index.json', 'utf8'));
 let checked = 0;
 const problems = [];
@@ -38,9 +38,9 @@ for (const entry of index) {
 
   for (const [where, c] of citations) {
     checked++;
-    const source = byDoi.get(c.doi);
+    const source = byKey.get(c.doi || `pmid:${c.pmid}`);
     if (!source) {
-      problems.push(`${score.id} / ${where}: doi ${c.doi} is not in research/sources.mjs`);
+      problems.push(`${score.id} / ${where}: ${c.doi || 'pmid ' + c.pmid} is not in research/sources.mjs`);
       continue;
     }
     const file = `tools/cache/papers/${source.pmcid ?? 'PMID' + source.pmid}.txt`;

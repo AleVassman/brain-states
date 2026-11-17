@@ -62,6 +62,7 @@
       "year": 2014,
       "title": "Brain activations in the premonitory phase of nitroglycerin-triggered migraine attacks.",
       "doi": "10.1093/brain/awt320",
+      "pmid": "24277718",
       "kind": "study",
       "access": "abstract-only",
       "quote": "We found activations in the posterolateral hypothalamus, midbrain tegmental area, periaqueductal grey, dorsal pons and various cortical areas including occipital, temporal and prefrontal cortex."
@@ -71,6 +72,7 @@
       "year": 2016,
       "title": "The migraine generator revisited: continuous scanning of the migraine cycle over 30 days and three spontaneous attacks.",
       "doi": "10.1093/brain/aww097",
+      "pmid": "27190019",
       "kind": "study",
       "access": "abstract-only",
       "quote": "hypothalamic activity as a response to trigeminal nociceptive stimulation is altered during the 24 h prior to pain onset, i.e. increases towards the next migraine attack"
@@ -80,6 +82,7 @@
       "year": 2016,
       "title": "The migraine generator revisited: continuous scanning of the migraine cycle over 30 days and three spontaneous attacks.",
       "doi": "10.1093/brain/aww097",
+      "pmid": "27190019",
       "kind": "study",
       "access": "abstract-only",
       "quote": "the hypothalamus shows altered functional coupling with the spinal trigeminal nuclei and the region of the migraine generator, i.e. the dorsal rostral pons during the preictal day and the pain phase of native human migraine attacks"
@@ -89,6 +92,7 @@
       "year": 2018,
       "title": "A Phase-by-Phase Review of Migraine Pathophysiology.",
       "doi": "10.1111/head.13300",
+      "pmid": "29697154",
       "kind": "review",
       "access": "abstract-only",
       "quote": "The premonitory phase begins as early as 3 days before the headache phase, and involves a complex interplay between various cortical and subcortical brain regions, including the hypothalamus and brainstem nuclei that modulate nociceptive signaling."
@@ -127,6 +131,7 @@
       "year": 2014,
       "title": "Brain activations in the premonitory phase of nitroglycerin-triggered migraine attacks.",
       "doi": "10.1093/brain/awt320",
+      "pmid": "24277718",
       "kind": "study",
       "access": "abstract-only",
       "quote": "We found activations in the posterolateral hypothalamus, midbrain tegmental area, periaqueductal grey, dorsal pons and various cortical areas including occipital, temporal and prefrontal cortex."
@@ -136,6 +141,7 @@
       "year": 1995,
       "title": "Brain stem activation in spontaneous human migraine attacks.",
       "doi": "10.1038/nm0795-658",
+      "pmid": "7585147",
       "kind": "study",
       "access": "abstract-only",
       "quote": "During the attacks, increased blood flow was found in the cerebral hemispheres in cingulate, auditory and visual association cortices and in the brain stem."
@@ -145,6 +151,7 @@
       "year": 1995,
       "title": "Brain stem activation in spontaneous human migraine attacks.",
       "doi": "10.1038/nm0795-658",
+      "pmid": "7585147",
       "kind": "study",
       "access": "abstract-only",
       "quote": "only the brain stem activation persisted after the injection of sumatriptan had induced complete relief from headache and phono- and photophobia"
@@ -154,6 +161,7 @@
       "year": 2016,
       "title": "The migraine generator revisited: continuous scanning of the migraine cycle over 30 days and three spontaneous attacks.",
       "doi": "10.1093/brain/aww097",
+      "pmid": "27190019",
       "kind": "study",
       "access": "abstract-only",
       "quote": "the hypothalamus shows altered functional coupling with the spinal trigeminal nuclei and the region of the migraine generator, i.e. the dorsal rostral pons during the preictal day and the pain phase of native human migraine attacks"
@@ -208,6 +216,7 @@
       "year": 2014,
       "title": "Brain activations in the premonitory phase of nitroglycerin-triggered migraine attacks.",
       "doi": "10.1093/brain/awt320",
+      "pmid": "24277718",
       "kind": "study",
       "access": "abstract-only",
       "quote": "We found activations in the posterolateral hypothalamus, midbrain tegmental area, periaqueductal grey, dorsal pons and various cortical areas including occipital, temporal and prefrontal cortex."
@@ -217,6 +226,7 @@
       "year": 2001,
       "title": "Mechanisms of migraine aura revealed by functional MRI in human visual cortex.",
       "doi": "10.1073/pnas.071582498",
+      "pmid": "11287655",
       "kind": "study",
       "access": "abstract-only",
       "quote": "Initially, a focal increase in BOLD signal (possibly reflecting vasodilation), developed within extrastriate cortex (area V3A). This BOLD change progressed contiguously and slowly (3.5 +/- 1.1 mm/min) over occipital cortex, congruent with the retinotopy of the visual percept."
@@ -226,6 +236,7 @@
       "year": 2001,
       "title": "Mechanisms of migraine aura revealed by functional MRI in human visual cortex.",
       "doi": "10.1073/pnas.071582498",
+      "pmid": "11287655",
       "kind": "study",
       "access": "abstract-only",
       "quote": "Following the same retinotopic progression, the BOLD signal then diminished (possibly reflecting vasoconstriction after the initial vasodilation), as did the BOLD response to visual activation."
@@ -235,6 +246,7 @@
       "year": 2018,
       "title": "A Phase-by-Phase Review of Migraine Pathophysiology.",
       "doi": "10.1111/head.13300",
+      "pmid": "29697154",
       "kind": "review",
       "access": "abstract-only",
       "quote": "In one-third of patients, an aura phase may occur during some attacks and likely correlates with a cortical spreading depression-like event"
@@ -244,6 +256,7 @@
       "year": 1995,
       "title": "Brain stem activation in spontaneous human migraine attacks.",
       "doi": "10.1038/nm0795-658",
+      "pmid": "7585147",
       "kind": "study",
       "access": "abstract-only",
       "quote": "During the attacks, increased blood flow was found in the cerebral hemispheres in cingulate, auditory and visual association cortices and in the brain stem."

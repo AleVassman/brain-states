@@ -62,6 +62,7 @@
       "year": 2014,
       "title": "Brainstem response to hypercapnia: a symptom provocation study into the pathophysiology of panic disorder.",
       "doi": "10.1177/0269881114527363",
+      "pmid": "24646808",
       "kind": "study",
       "access": "abstract-only",
       "quote": "Patients show increased brainstem activation in response to hypercapnia compared to controls and divers."
@@ -71,6 +72,7 @@
       "year": 2017,
       "title": "Functional neuroanatomy in panic disorder: Status quo of the research.",
       "doi": "10.5498/wjp.v7.i1.12",
+      "pmid": "28401046",
       "kind": "review",
       "access": "abstract-only",
       "quote": "recent functional studies suggest abnormal activation mainly in an extended fear network comprising brainstem, anterior and midcingulate cortex (ACC and MCC), insula, and lateral as well as medial parts of the prefrontal cortex"
@@ -80,6 +82,7 @@
       "year": 2007,
       "title": "When fear is near: threat imminence elicits prefrontal-periaqueductal gray shifts in humans.",
       "doi": "10.1126/science.1144298",
+      "pmid": "17717184",
       "kind": "study",
       "access": "full-text",
       "quote": "as the virtual predator grew closer, brain activity shifted from the ventromedial prefrontal cortex to the periaqueductal gray"
@@ -89,6 +92,7 @@
       "year": 2007,
       "title": "When fear is near: threat imminence elicits prefrontal-periaqueductal gray shifts in humans.",
       "doi": "10.1126/science.1144298",
+      "pmid": "17717184",
       "kind": "study",
       "access": "full-text",
       "quote": "imminence-driven periaqueductal gray activity correlated with increased subjective degree of dread and decreased confidence of escape"
@@ -127,6 +131,7 @@
       "year": 2014,
       "title": "Brainstem response to hypercapnia: a symptom provocation study into the pathophysiology of panic disorder.",
       "doi": "10.1177/0269881114527363",
+      "pmid": "24646808",
       "kind": "study",
       "access": "abstract-only",
       "quote": "Subjective feelings of breathing discomfort were positively correlated with brain activation in the anterior insula in all groups."
@@ -136,6 +141,7 @@
       "year": 2017,
       "title": "Functional neuroanatomy in panic disorder: Status quo of the research.",
       "doi": "10.5498/wjp.v7.i1.12",
+      "pmid": "28401046",
       "kind": "review",
       "access": "abstract-only",
       "quote": "recent functional studies suggest abnormal activation mainly in an extended fear network comprising brainstem, anterior and midcingulate cortex (ACC and MCC), insula, and lateral as well as medial parts of the prefrontal cortex"
@@ -145,6 +151,7 @@
       "year": 2013,
       "title": "Revise the revised? New dimensions of the neuroanatomical hypothesis of panic disorder.",
       "doi": "10.1007/s00702-012-0811-1",
+      "pmid": "22692647",
       "kind": "review",
       "access": "abstract-only",
       "quote": "The assumption of a generally hyperactive amygdala in PD seems to apply more to state than trait characteristics of PD, and involvement of further areas in the fear circuit, such as anterior cingulate and insula, is suggested."
@@ -183,6 +190,7 @@
       "year": 2000,
       "title": "Neuroanatomical hypothesis of panic disorder, revised.",
       "doi": "10.1176/appi.ajp.157.4.493",
+      "pmid": "10739407",
       "kind": "review",
       "access": "abstract-only",
       "quote": "It is speculated that a similar network is involved in panic disorder."
@@ -192,6 +200,7 @@
       "year": 2017,
       "title": "Functional neuroanatomy in panic disorder: Status quo of the research.",
       "doi": "10.5498/wjp.v7.i1.12",
+      "pmid": "28401046",
       "kind": "review",
       "access": "abstract-only",
       "quote": "differences in the amygdala activation were not as consistently reported as one would predict from the hypothesis of Gorman et al (2000)"
@@ -201,6 +210,7 @@
       "year": 2013,
       "title": "Revise the revised? New dimensions of the neuroanatomical hypothesis of panic disorder.",
       "doi": "10.1007/s00702-012-0811-1",
+      "pmid": "22692647",
       "kind": "review",
       "access": "abstract-only",
       "quote": "The assumption of a generally hyperactive amygdala in PD seems to apply more to state than trait characteristics of PD, and involvement of further areas in the fear circuit, such as anterior cingulate and insula, is suggested."
@@ -210,6 +220,7 @@
       "year": 2013,
       "title": "Fear and panic in humans with bilateral amygdala damage.",
       "doi": "10.1038/nn.3323",
+      "pmid": "23377128",
       "kind": "study",
       "access": "full-text",
       "quote": "these results indicate that the amygdala is not required for fear and panic evoked by CO2 inhalation"
@@ -219,6 +230,7 @@
       "year": 2013,
       "title": "Fear and panic in humans with bilateral amygdala damage.",
       "doi": "10.1038/nn.3323",
+      "pmid": "23377128",
       "kind": "study",
       "access": "full-text",
       "quote": "the higher rate of panic attacks in the amygdala-lesion patients suggests that an intact amygdala may normally inhibit panic"
@@ -245,6 +257,7 @@
       "year": 2000,
       "title": "Neuroanatomical hypothesis of panic disorder, revised.",
       "doi": "10.1176/appi.ajp.157.4.493",
+      "pmid": "10739407",
       "kind": "review",
       "access": "abstract-only",
       "quote": "Projections from the amygdala to hypothalamic and brainstem sites explain many of the observed signs of conditioned fear responses."
@@ -254,6 +267,7 @@
       "year": 2000,
       "title": "Neuroanatomical hypothesis of panic disorder, revised.",
       "doi": "10.1176/appi.ajp.157.4.493",
+      "pmid": "10739407",
       "kind": "review",
       "access": "abstract-only",
       "quote": "It is speculated that a similar network is involved in panic disorder."

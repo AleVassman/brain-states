@@ -1,6 +1,6 @@
 import type { Citation, Confidence, ConnectionTrack, RegionInfo, Score, VariantName } from '../score/types';
 import { el } from './dom';
-import { connectionsTouching, regionLabel, regionPanelContent } from './panelContent';
+import { citationHref, connectionsTouching, regionLabel, regionPanelContent } from './panelContent';
 
 export const CONFIDENCE_LABEL: Record<Confidence, string> = {
   established: 'Well established',
@@ -26,7 +26,7 @@ export function citationNode(c: Citation): HTMLElement {
     el('div', { class: 'citation-meta', text: `${c.authors} (${c.year}) · ${KIND_LABEL[c.kind]}` }),
     el('blockquote', { text: `“${c.quote}”` }),
     el('div', { class: 'citation-links' }, [
-      el('a', { text: `doi:${c.doi}`, attrs: { href: `https://doi.org/${c.doi}`, target: '_blank', rel: 'noopener noreferrer' } }),
+      el('a', { text: c.doi ? `doi:${c.doi}` : `PubMed ${c.pmid}`, attrs: { href: citationHref(c), target: '_blank', rel: 'noopener noreferrer' } }),
       c.access === 'abstract-only' ? el('span', { class: 'badge', text: 'abstract only' }) : null,
     ]),
   ]);

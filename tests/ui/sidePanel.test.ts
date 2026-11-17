@@ -100,3 +100,11 @@ describe('connections in the side panel', () => {
     expect(regionPanelContent(amygdalaL, validScore(), 'condition').extentNote).toBeNull();
   });
 });
+
+describe('citation links', () => {
+  it('links to the DOI when there is one, and to PubMed otherwise', async () => {
+    const { citationHref } = await import('../../src/ui/panelContent');
+    expect(citationHref({ ...citation(), doi: '10.1000/x', pmid: '1' })).toBe('https://doi.org/10.1000/x');
+    expect(citationHref({ ...citation(), doi: '', pmid: '18787662' })).toBe('https://pubmed.ncbi.nlm.nih.gov/18787662/');
+  });
+});

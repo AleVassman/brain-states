@@ -53,7 +53,10 @@ describe('shipped scores', () => {
 
       it('cites only well-formed DOIs', () => {
         const score = JSON.parse(readFileSync(path, 'utf8')) as Score;
-        for (const c of allCitations(score)) expect(c.doi).toMatch(/^10\.\d{4,9}\/\S+$/);
+        for (const c of allCitations(score)) {
+          if (c.doi) expect(c.doi).toMatch(/^10\.\d{4,9}\/\S+$/);
+          else expect(c.pmid).toMatch(/^\d+$/);
+        }
       });
 
       it('contains no placeholder sources unless it is marked as a placeholder', () => {

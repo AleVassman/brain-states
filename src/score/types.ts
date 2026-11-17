@@ -5,7 +5,10 @@ export interface Citation {
   authors: string;
   year: number;
   title: string;
+  /** Empty when the paper has no DOI; then `pmid` is required. */
   doi: string;
+  /** PubMed id, used for the link when there is no DOI. */
+  pmid?: string;
   kind: 'meta-analysis' | 'review' | 'study';
   access: 'full-text' | 'abstract-only';
   /** The sentence in the source that supports the claim. */

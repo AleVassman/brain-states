@@ -17,7 +17,8 @@ export function cite(key, quote) {
     authors: s.authors,
     year: s.year,
     title: s.title,
-    doi: s.doi,
+    doi: s.doi ?? '',
+    pmid: s.pmid,
     kind: s.kind,
     access: s.pmcid ? 'full-text' : 'abstract-only',
     quote,
@@ -47,7 +48,7 @@ function claimRows(lines, tracks, label) {
     lines.push(`### ${what} — ${CONFIDENCE[t.confidence]}`, '', `${label}: ${t.explanation}`, '', `On screen: ${describe(t.keyframes)}.`, '');
     for (const c of t.citations) {
       lines.push(
-        `- ${c.authors} (${c.year}). ${c.title} doi:${c.doi} — ${c.kind}, ${c.access}`,
+        `- ${c.authors} (${c.year}). ${c.title} ${c.doi ? 'doi:' + c.doi : 'PMID:' + c.pmid} — ${c.kind}, ${c.access}`,
         `  > "${c.quote}"`,
       );
     }
@@ -81,7 +82,7 @@ function claimsSheet(score, notes, review) {
     } else if (p.order.kind === 'timed') {
       lines.push(`${i + 1}. **${p.name}** (${p.timescale}) — order **timed**:`);
       for (const c of p.order.citations) {
-        lines.push(`   - ${c.authors} (${c.year}). ${c.title} doi:${c.doi} — ${c.kind}, ${c.access}`, `     > "${c.quote}"`);
+        lines.push(`   - ${c.authors} (${c.year}). ${c.title} ${c.doi ? 'doi:' + c.doi : 'PMID:' + c.pmid} — ${c.kind}, ${c.access}`, `     > "${c.quote}"`);
       }
     } else {
       lines.push(`${i + 1}. **${p.name}** (${p.timescale}) — order **reconstructed**: ${p.order.rationale}`);
