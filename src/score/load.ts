@@ -1,7 +1,7 @@
 import { validateScore, type ValidationResult } from './validate';
 
 /** Which group a state is listed under. */
-export type ScoreCategory = 'psychological' | 'physical';
+export type ScoreCategory = 'psychological' | 'physical' | 'treatment';
 
 export interface ScoreIndexEntry {
   id: string;
@@ -9,6 +9,8 @@ export interface ScoreIndexEntry {
   file: string;
   /** Missing on older lists; treated as psychological. */
   category?: ScoreCategory;
+  /** For a treatment: the id of the condition it treats. */
+  treats?: string;
   /** False until the state's claims have been checked against its sources. */
   reviewed: boolean;
   /** How and when it was checked; shown in the claims sheet. */

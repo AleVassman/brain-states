@@ -10,6 +10,7 @@ export interface EntryGroup {
 const GROUPS: { category: ScoreCategory; heading: string }[] = [
   { category: 'psychological', heading: 'Psychological states' },
   { category: 'physical', heading: 'Physical conditions' },
+  { category: 'treatment', heading: 'What helps' },
 ];
 
 /** A missing or unrecognised category counts as psychological, so no state can vanish from the list. */

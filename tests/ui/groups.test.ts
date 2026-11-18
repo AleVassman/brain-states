@@ -2,10 +2,16 @@ import { describe, expect, it } from 'vitest';
 import type { ScoreIndexEntry } from '../../src/score/load';
 import { groupEntries } from '../../src/ui/groups';
 
-const entry = (id: string, category?: 'psychological' | 'physical'): ScoreIndexEntry =>
+const entry = (id: string, category?: 'psychological' | 'physical' | 'treatment'): ScoreIndexEntry =>
   ({ id, title: id, file: `${id}.json`, reviewed: false, ...(category ? { category } : {}) }) as ScoreIndexEntry;
 
 describe('groupEntries', () => {
+  it('lists What helps last, after the two condition groups', () => {
+    const groups = groupEntries([entry('help-dbt', 'treatment'), entry('migraine', 'physical'), entry('anxiety', 'psychological')]);
+    expect(groups.map((g) => g.heading)).toEqual(['Psychological states', 'Physical conditions', 'What helps']);
+    expect(groups[2].entries.map((e) => e.id)).toEqual(['help-dbt']);
+  });
+
   it('puts psychological states first and physical illnesses second, each with a heading', () => {
     const groups = groupEntries([entry('migraine', 'physical'), entry('anxiety', 'psychological')]);
     expect(groups.map((g) => g.heading)).toEqual(['Psychological states', 'Physical conditions']);
