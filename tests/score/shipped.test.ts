@@ -51,6 +51,11 @@ describe('shipped scores', () => {
         expect(['psychological', 'physical', 'treatment']).toContain(entry.category);
       });
 
+      it('is a treatment exactly when it has a help- id and a treats value', () => {
+        expect(entry.category === 'treatment').toBe(entry.id.startsWith('help-'));
+        expect(Boolean(entry.treats)).toBe(entry.category === 'treatment');
+      });
+
       if (entry.category === 'treatment') {
         it('is a treatment linked to a listed condition, with the shared note', () => {
           expect(entry.id.startsWith('help-')).toBe(true);

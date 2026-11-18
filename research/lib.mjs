@@ -105,6 +105,7 @@ function claimsSheet(score, notes, review) {
 /** `category` is the group the state is listed under: 'psychological' (default) or 'physical'. */
 export function writeScore(score, { indexTitle, notes, category = 'psychological', treats } = {}) {
   if (category === 'treatment' && !treats) throw new Error(`${score.id}: a treatment needs "treats"`);
+  if (treats && category !== 'treatment') throw new Error(`${score.id}: "treats" is only for category 'treatment'`);
   if (category === 'treatment' && !score.caveat.endsWith(TREATMENT_NOTE)) throw new Error(`${score.id}: caveat must end with TREATMENT_NOTE`);
   writeFileSync(`public/scores/${score.id}.json`, JSON.stringify(score, null, 1) + '\n');
 
