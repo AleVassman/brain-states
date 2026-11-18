@@ -170,7 +170,94 @@ a:focus-visible {
 
 #state-list {
   margin-bottom: 14px;
-  gap: 14px;
+  gap: 8px;
+}
+
+.list-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.list-tab {
+  padding: 5px 8px;
+  font-size: 13px;
+  color: var(--ink-dim);
+  background: transparent;
+}
+
+.list-tab.active {
+  color: var(--ink);
+  border-color: var(--cool);
+  background: rgba(63, 169, 255, 0.2);
+}
+
+.list-search-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.list-search {
+  width: 100%;
+  font: inherit;
+  font-size: 13px;
+  color: var(--ink);
+  background: rgba(5, 7, 13, 0.6);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 5px 8px;
+}
+
+.list-search:focus-visible {
+  outline: 2px solid var(--cool);
+  outline-offset: 1px;
+}
+
+.state-row {
+  display: flex;
+  gap: 4px;
+  align-items: stretch;
+}
+
+.state-row .state {
+  flex: 1;
+  min-width: 0;
+}
+
+.helps-count {
+  flex: none;
+  padding: 2px 7px;
+  font-size: 11px;
+  color: #8fe3b0;
+  border-color: rgba(143, 227, 176, 0.35);
+  background: rgba(143, 227, 176, 0.06);
+}
+
+.helps-count:hover:not(:disabled) {
+  background: rgba(143, 227, 176, 0.16);
+}
+
+.treatment-list {
+  list-style: none;
+  margin: 4px 0 2px 10px;
+  padding: 0 0 0 8px;
+  border-left: 1px solid rgba(143, 227, 176, 0.35);
+  display: grid;
+  gap: 4px;
+}
+
+.treatment-list .state {
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.state-place {
+  font-size: 11px;
+  color: var(--ink-dim);
 }
 
 .group-heading {

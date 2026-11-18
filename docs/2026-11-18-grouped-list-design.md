@@ -26,7 +26,7 @@ There are 47 episodes: 12 psychological states, 12 physical conditions and 23 tr
 - **Accessibility.**
   - Tabs use `role="tablist"`/`tab`/`tabpanel` with `aria-selected`.
   - Count buttons use `aria-expanded` and say "Show 4 treatments for Depression".
-  - The search box has a visible label.
+  - The search box has a label for screen readers (visually hidden, to save room in the narrow panel) and a placeholder.
   - The "awaiting review" badge stays as it is.
 - **Scope.** Only the left list changes. Episode files, the side panel and the 3D view are untouched.
 
