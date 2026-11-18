@@ -25,7 +25,7 @@ There are 47 episodes: 12 psychological states, 12 physical conditions and 23 tr
 - **Orphan treatments.** A treatment whose `treats` names no listed condition still appears, as a plain row at the end of the Mind tab, so nothing can vanish. The shipped tests already prevent this in practice.
 - **Accessibility.**
   - Tabs use `role="tablist"`/`tab`/`tabpanel` with `aria-selected`.
-  - Count buttons use `aria-expanded` and say "Show 4 treatments for Depression".
+  - Count buttons use `aria-expanded` and are named "4 treatments for Depression".
   - The search box has a label for screen readers (visually hidden, to save room in the narrow panel) and a placeholder.
   - The "awaiting review" badge stays as it is.
 - **Scope.** Only the left list changes. Episode files, the side panel and the 3D view are untouched.

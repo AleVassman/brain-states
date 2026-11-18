@@ -54,7 +54,7 @@ export function createStatePicker(
   const search = el('input', { class: 'list-search', attrs: { type: 'search', id: 'list-search', placeholder: 'Search all episodes', autocomplete: 'off' } });
   search.addEventListener('input', () => {
     query = search.value;
-    renderPanel();
+    render();
   });
   const searchLabel = el('label', { class: 'list-search-label', text: 'Search', attrs: { for: 'list-search' } });
 
@@ -101,15 +101,15 @@ export function createStatePicker(
           attrs: {
             type: 'button',
             'aria-expanded': String(isOpen),
-            'aria-label': `${isOpen ? 'Hide' : 'Show'} ${n} ${n === 1 ? 'treatment' : 'treatments'} for ${row.entry.title}`,
-            title: `What helps: ${n} ${n === 1 ? 'treatment' : 'treatments'}`,
+            'aria-label': `${n} ${n === 1 ? 'treatment' : 'treatments'} for ${row.entry.title}`,
+            'data-toggle-for': row.entry.id,
           },
         });
         toggle.addEventListener('click', () => {
           if (open.has(row.entry.id)) open.delete(row.entry.id);
           else open.add(row.entry.id);
           renderPanel();
-          panel.querySelector<HTMLButtonElement>(`.state-row:has([data-id="${CSS.escape(row.entry.id)}"]) .helps-count`)?.focus();
+          panel.querySelector<HTMLButtonElement>(`[data-toggle-for="${CSS.escape(row.entry.id)}"]`)?.focus();
         });
         line.append(toggle);
       }
@@ -125,7 +125,7 @@ export function createStatePicker(
   function render(): void {
     for (const [t, button] of tabButtons) {
       const active = t === tab && !query.trim();
-      button.setAttribute('aria-selected', String(t === tab));
+      button.setAttribute('aria-selected', String(active));
       button.tabIndex = t === tab ? 0 : -1;
       button.classList.toggle('active', active);
     }
