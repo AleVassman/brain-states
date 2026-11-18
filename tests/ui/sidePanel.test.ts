@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { regionPanelContent } from '../../src/ui/panelContent';
+import { regionPanelContent, relatedSections } from '../../src/ui/panelContent';
+import type { ScoreIndexEntry } from '../../src/score/load';
 import type { RegionInfo } from '../../src/score/types';
 import { citation, REGIONS, validScore } from '../fixtures/validScore';
 
@@ -113,5 +114,25 @@ describe('citation links with an unusual doi', () => {
   it('treats a doi of only spaces as missing and links to PubMed', async () => {
     const { citationHref } = await import('../../src/ui/panelContent');
     expect(citationHref({ ...citation(), doi: '  ', pmid: '18787662' })).toBe('https://pubmed.ncbi.nlm.nih.gov/18787662/');
+  });
+});
+
+describe('links between conditions and treatments', () => {
+  const entry = (id: string, title: string) => ({ id, title, file: `${id}.json`, reviewed: true }) as ScoreIndexEntry;
+  const depression = entry('depression', 'Depression');
+  const cbt = entry('help-cbt', 'CBT for depression');
+
+  it('offers each treatment under "What helps"', () => {
+    const sections = relatedSections({ treatments: [cbt], condition: null });
+    expect(sections).toEqual([{ heading: 'What helps', links: [{ entry: cbt, label: 'CBT for depression →' }] }]);
+  });
+
+  it('links a treatment back to its condition', () => {
+    const sections = relatedSections({ treatments: [], condition: depression });
+    expect(sections).toEqual([{ heading: 'What this treatment is for', links: [{ entry: depression, label: '← Depression' }] }]);
+  });
+
+  it('shows no section when there is nothing to link', () => {
+    expect(relatedSections({ treatments: [], condition: null })).toEqual([]);
   });
 });

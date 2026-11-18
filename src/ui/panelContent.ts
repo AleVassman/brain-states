@@ -1,3 +1,5 @@
+import type { ScoreIndexEntry } from '../score/load';
+import type { RelatedEntries } from './related';
 import type { Citation, Confidence, ConnectionTrack, RegionInfo, RegionTrack, Score, VariantName } from '../score/types';
 
 export interface RegionPanelContent {
@@ -62,4 +64,21 @@ export function regionPanelContent(region: RegionInfo, score: Score | null, vari
     return { ...common, body, confidence: null, citations: [] };
   }
   return { ...common, body: track.explanation, confidence: track.confidence, citations: track.citations };
+}
+
+export interface RelatedSection {
+  heading: string;
+  links: { entry: ScoreIndexEntry; label: string }[];
+}
+
+/** The link sections shown under a state's description: its treatments, or the condition a treatment is for. */
+export function relatedSections(related: RelatedEntries): RelatedSection[] {
+  const sections: RelatedSection[] = [];
+  if (related.treatments.length > 0) {
+    sections.push({ heading: 'What helps', links: related.treatments.map((entry) => ({ entry, label: `${entry.title} →` })) });
+  }
+  if (related.condition) {
+    sections.push({ heading: 'What this treatment is for', links: [{ entry: related.condition, label: `← ${related.condition.title}` }] });
+  }
+  return sections;
 }

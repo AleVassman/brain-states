@@ -1,6 +1,8 @@
 import type { Citation, Confidence, ConnectionTrack, RegionInfo, Score, VariantName } from '../score/types';
 import { el } from './dom';
-import { citationHref, connectionsTouching, regionLabel, regionPanelContent } from './panelContent';
+import type { ScoreIndexEntry } from '../score/load';
+import { citationHref, connectionsTouching, regionLabel, regionPanelContent, relatedSections } from './panelContent';
+import type { RelatedEntries } from './related';
 
 export const CONFIDENCE_LABEL: Record<Confidence, string> = {
   established: 'Well established',
@@ -17,7 +19,7 @@ const KIND_LABEL: Record<Citation['kind'], string> = {
 export type PanelView =
   | { kind: 'empty' }
   | { kind: 'errors'; title: string; errors: string[] }
-  | { kind: 'state'; score: Score; variant: VariantName; regions: RegionInfo[] }
+  | { kind: 'state'; score: Score; variant: VariantName; regions: RegionInfo[]; related: RelatedEntries }
   | { kind: 'region'; region: RegionInfo; score: Score | null; variant: VariantName; regions: RegionInfo[] };
 
 export function citationNode(c: Citation): HTMLElement {
@@ -67,7 +69,7 @@ function orderNodes(score: Score): HTMLElement[] {
 }
 
 /** Replaces the side panel's contents with one of its four views. */
-export function renderSidePanel(root: HTMLElement, view: PanelView): void {
+export function renderSidePanel(root: HTMLElement, view: PanelView, onPickEntry?: (entry: ScoreIndexEntry) => void): void {
   root.replaceChildren();
   root.scrollTop = 0;
   if (view.kind === 'empty') {
@@ -90,6 +92,18 @@ export function renderSidePanel(root: HTMLElement, view: PanelView): void {
     root.append(
       el('h2', { text: view.score.title }),
       el('p', { text: view.score.description }),
+    );
+    for (const section of relatedSections(view.related)) {
+      root.append(
+        el('h3', { text: section.heading }),
+        ...section.links.map(({ entry, label }) => {
+          const button = el('button', { class: 'related-link', text: label, attrs: { type: 'button' } });
+          button.addEventListener('click', () => onPickEntry?.(entry));
+          return button;
+        }),
+      );
+    }
+    root.append(
       el('h3', { text: 'What is reconstruction here' }),
       el('p', { class: 'caveat', text: view.score.caveat }),
       el('p', { class: 'hint', text: 'Click a glowing region to see what it is doing and the studies behind it.' }),

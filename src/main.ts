@@ -14,6 +14,7 @@ import { createLabelLayer } from './ui/labelLayer';
 import { updateCaption } from './ui/caption';
 import { renderSidePanel, type PanelView } from './ui/sidePanel';
 import { createStatePicker } from './ui/statePicker';
+import { relatedEntries } from './ui/related';
 import { createTimeline } from './ui/timeline';
 
 const NO_TYPICAL = 'No comparison: the research does not support one for this state.';
@@ -78,7 +79,9 @@ async function start() {
       return { kind: 'region', region: selectedRegion, score: player.score, variant: player.variant, regions: atlas.regions };
     }
     if (loadError) return { kind: 'errors', ...loadError };
-    if (player.score) return { kind: 'state', score: player.score, variant: player.variant, regions: atlas.regions };
+    if (player.score) {
+      return { kind: 'state', score: player.score, variant: player.variant, regions: atlas.regions, related: relatedEntries(player.score.id, entries) };
+    }
     return { kind: 'empty' };
   };
 
@@ -110,7 +113,7 @@ async function start() {
     const key = [selectedRegion?.id, player.score?.id, player.variant, loadError?.title, loadError?.errors.length].join('|');
     if (key !== panelKey) {
       panelKey = key;
-      renderSidePanel(sidePanel, panelView());
+      renderSidePanel(sidePanel, panelView(), (entry) => void pickEntry(entry));
     }
   };
   player.onChange(refresh);
@@ -128,7 +131,7 @@ async function start() {
     loadError = { title: 'States', errors: ['The list of states could not be loaded.'] };
   }
   let request = 0;
-  const picker = createStatePicker(byId('state-list'), entries, async (entry) => {
+  const pickEntry = async (entry: ScoreIndexEntry) => {
     const mine = ++request;
     picker.setSelected(entry.id);
     // Hand the keyboard back to the page, so the space bar plays instead of pressing this button again.
@@ -143,7 +146,8 @@ async function start() {
       loadError = { title: entry.title, errors: result.errors };
       player.load(null);
     }
-  });
+  };
+  const picker = createStatePicker(byId('state-list'), entries, (entry) => void pickEntry(entry));
 
   // ---- Clicking a region (a click, not the end of a drag) -------------------------------------
   let down: { x: number; y: number } | null = null;

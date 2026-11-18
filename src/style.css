@@ -541,3 +541,21 @@ dialog .close {
     transition: none !important;
   }
 }
+
+.related-link {
+  display: block;
+  width: 100%;
+  margin: 4px 0;
+  text-align: left;
+  color: var(--cool);
+}
+
+.help-link {
+  margin-left: auto;
+  color: var(--ink-dim);
+  font-size: 12px;
+}
+
+.help-link:hover {
+  color: var(--ink);
+}

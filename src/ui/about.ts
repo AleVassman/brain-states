@@ -2,6 +2,12 @@ import { el } from './dom';
 
 const SECTIONS: { heading: string; paragraphs: string[] }[] = [
   {
+    heading: 'Why this exists',
+    paragraphs: [
+      'To help people who live with these conditions, and the people close to them, understand what happens in the brain: what is felt has a physical basis, it is studied, and it is not a character flaw. The "What helps" episodes show how the brain can change with treatment.',
+    ],
+  },
+  {
     heading: 'A reconstruction, not a recording',
     paragraphs: [
       'Almost none of these episodes has been recorded from start to finish inside a living brain; seizures, recorded with electrodes, come closest. Each episode here is assembled from published studies: which regions tend to be more or less active, and which connections tend to be stronger or weaker.',
@@ -45,7 +51,7 @@ const SECTIONS: { heading: string; paragraphs: string[] }[] = [
   {
     heading: 'Not a diagnostic tool or medical advice',
     paragraphs: [
-      'This is a visualisation of research made out of curiosity. It cannot tell you anything about your own brain, it is not a way to assess yourself or anyone else, and it does not recommend any treatment.',
+      'This is a visualisation of research made out of curiosity. It cannot tell you anything about your own brain, it is not a way to assess yourself or anyone else, and it does not recommend any treatment; the "What helps" episodes show what studies found, not what anyone should choose.',
     ],
   },
 ];
