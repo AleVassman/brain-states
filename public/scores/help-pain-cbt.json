@@ -1,0 +1,412 @@
+{
+ "id": "help-pain-cbt",
+ "title": "Talking therapy (CBT) for chronic pain",
+ "description": "CBT for chronic pain does not aim to remove the pain itself. It teaches ways of coping: pacing activity, changing unhelpful thoughts about pain and reducing fear of it. In one study, after 11 weeks of CBT, grey matter grew in areas at the front and side of the brain linked to controlling attention and re-thinking pain, and in areas that process body sensations. In this episode brightness stands for grey matter volume, not activity, and shows the change since before treatment: warmer means more than before, violet means less.",
+ "caveat": "All findings come from one study of 13 people with different types of chronic pain, with no control group receiving another treatment, so the authors say more studies are needed to tell which changes are due to CBT. Before treatment their grey matter did not differ from people without pain, so the first part is drawn at rest. \"Posterior parietal\" is drawn on the inferior parietal cortex, and \"subgenual anterior cingulate/orbitofrontal\" on the subgenual cingulate; both are approximations. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 32,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before treatment",
+   "timescale": "before treatment",
+   "start": 0,
+   "end": 0.25,
+   "caption": "Before treatment. In this study, grey matter did not differ from people without chronic pain anywhere in the brain, so the brain is drawn at rest."
+  },
+  {
+   "id": "during",
+   "name": "11 weeks of CBT",
+   "timescale": "weeks",
+   "start": 0.25,
+   "end": 0.4,
+   "caption": "Weekly sessions of learning ways to cope with pain. People were not scanned during this time.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Seminowicz DA, Shpaner M, Keaser ML, Krauthamer GM, Mantegna J, Dumas JA, Newhouse PA, et al.",
+      "year": 2013,
+      "title": "Cognitive-behavioral therapy increases prefrontal cortex gray matter in patients with chronic pain.",
+      "doi": "10.1016/j.jpain.2013.07.020",
+      "pmid": "24135432",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "We used voxel based morphometry (VBM) to compare anatomical MRI scans of 13 patients with mixed chronic pain types before and after an 11-week CBT treatment and to 13 healthy control participants."
+     }
+    ]
+   }
+  },
+  {
+   "id": "after",
+   "name": "What changed",
+   "timescale": "after treatment",
+   "start": 0.4,
+   "end": 0.8,
+   "caption": "After CBT, grey matter is greater than before in the dorsolateral prefrontal cortex on both sides, the posterior parietal cortex, the subgenual cingulate, the areas that sense and move the body, and the hippocampus. It is smaller in the supplementary motor area. People who worried less about their pain showed more growth in several of these areas.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Seminowicz DA, Shpaner M, Keaser ML, Krauthamer GM, Mantegna J, Dumas JA, Newhouse PA, et al.",
+      "year": 2013,
+      "title": "Cognitive-behavioral therapy increases prefrontal cortex gray matter in patients with chronic pain.",
+      "doi": "10.1016/j.jpain.2013.07.020",
+      "pmid": "24135432",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "We used voxel based morphometry (VBM) to compare anatomical MRI scans of 13 patients with mixed chronic pain types before and after an 11-week CBT treatment and to 13 healthy control participants."
+     }
+    ]
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.8,
+   "end": 1,
+   "caption": "This is one small study with no comparison treatment. The authors suggest the frontal and parietal growth reflects more control over pain, but that is their interpretation.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "dlpfc",
+    "explanation": "More grey matter after 11 weeks of CBT, on both sides, in one study of 13 people. On the left, more growth went with less catastrophising about pain. Brightness stands for volume, not activity.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Seminowicz DA, Shpaner M, Keaser ML, Krauthamer GM, Mantegna J, Dumas JA, Newhouse PA, et al.",
+      "year": 2013,
+      "title": "Cognitive-behavioral therapy increases prefrontal cortex gray matter in patients with chronic pain.",
+      "doi": "10.1016/j.jpain.2013.07.020",
+      "pmid": "24135432",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "After treatment, patients had increased GM in bilateral dorsolateral prefrontal (DLPFC), posterior parietal (PPC), subgenual anterior cingulate (ACC)/orbitofrontal, and sensorimotor cortices, as well as hippocampus, and reduced GM in supplementary motor area."
+     },
+     {
+      "authors": "Seminowicz DA, Shpaner M, Keaser ML, Krauthamer GM, Mantegna J, Dumas JA, Newhouse PA, et al.",
+      "year": 2013,
+      "title": "Cognitive-behavioral therapy increases prefrontal cortex gray matter in patients with chronic pain.",
+      "doi": "10.1016/j.jpain.2013.07.020",
+      "pmid": "24135432",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Decreased pain catastrophizing was associated with increased GM in left DLPFC and ventrolateral prefrontal (VLPFC), right PPC, somatosensory cortex, and pregenual ACC."
+     },
+     {
+      "authors": "Seminowicz DA, Shpaner M, Keaser ML, Krauthamer GM, Mantegna J, Dumas JA, Newhouse PA, et al.",
+      "year": 2013,
+      "title": "Cognitive-behavioral therapy increases prefrontal cortex gray matter in patients with chronic pain.",
+      "doi": "10.1016/j.jpain.2013.07.020",
+      "pmid": "24135432",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "We used voxel based morphometry (VBM) to compare anatomical MRI scans of 13 patients with mixed chronic pain types before and after an 11-week CBT treatment and to 13 healthy control participants."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.5
+     },
+     {
+      "t": 0.8,
+      "v": 0.5
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "inferior-parietal",
+    "explanation": "The posterior parietal cortex had more grey matter after CBT, in one study. It is drawn on the inferior parietal cortex, an approximation.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Seminowicz DA, Shpaner M, Keaser ML, Krauthamer GM, Mantegna J, Dumas JA, Newhouse PA, et al.",
+      "year": 2013,
+      "title": "Cognitive-behavioral therapy increases prefrontal cortex gray matter in patients with chronic pain.",
+      "doi": "10.1016/j.jpain.2013.07.020",
+      "pmid": "24135432",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "After treatment, patients had increased GM in bilateral dorsolateral prefrontal (DLPFC), posterior parietal (PPC), subgenual anterior cingulate (ACC)/orbitofrontal, and sensorimotor cortices, as well as hippocampus, and reduced GM in supplementary motor area."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.4
+     },
+     {
+      "t": 0.8,
+      "v": 0.4
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "sgacc",
+    "explanation": "The subgenual anterior cingulate and nearby orbitofrontal cortex had more grey matter after CBT, in one study.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Seminowicz DA, Shpaner M, Keaser ML, Krauthamer GM, Mantegna J, Dumas JA, Newhouse PA, et al.",
+      "year": 2013,
+      "title": "Cognitive-behavioral therapy increases prefrontal cortex gray matter in patients with chronic pain.",
+      "doi": "10.1016/j.jpain.2013.07.020",
+      "pmid": "24135432",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "After treatment, patients had increased GM in bilateral dorsolateral prefrontal (DLPFC), posterior parietal (PPC), subgenual anterior cingulate (ACC)/orbitofrontal, and sensorimotor cortices, as well as hippocampus, and reduced GM in supplementary motor area."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.4
+     },
+     {
+      "t": 0.8,
+      "v": 0.4
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "somatosensory",
+    "explanation": "The sensorimotor cortex had more grey matter after CBT, in one study.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Seminowicz DA, Shpaner M, Keaser ML, Krauthamer GM, Mantegna J, Dumas JA, Newhouse PA, et al.",
+      "year": 2013,
+      "title": "Cognitive-behavioral therapy increases prefrontal cortex gray matter in patients with chronic pain.",
+      "doi": "10.1016/j.jpain.2013.07.020",
+      "pmid": "24135432",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "After treatment, patients had increased GM in bilateral dorsolateral prefrontal (DLPFC), posterior parietal (PPC), subgenual anterior cingulate (ACC)/orbitofrontal, and sensorimotor cortices, as well as hippocampus, and reduced GM in supplementary motor area."
+     },
+     {
+      "authors": "Seminowicz DA, Shpaner M, Keaser ML, Krauthamer GM, Mantegna J, Dumas JA, Newhouse PA, et al.",
+      "year": 2013,
+      "title": "Cognitive-behavioral therapy increases prefrontal cortex gray matter in patients with chronic pain.",
+      "doi": "10.1016/j.jpain.2013.07.020",
+      "pmid": "24135432",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Decreased pain catastrophizing was associated with increased GM in left DLPFC and ventrolateral prefrontal (VLPFC), right PPC, somatosensory cortex, and pregenual ACC."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.35
+     },
+     {
+      "t": 0.8,
+      "v": 0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "motor-cortex",
+    "explanation": "The sensorimotor cortex had more grey matter after CBT, in one study; it spans the areas that sense and move the body.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Seminowicz DA, Shpaner M, Keaser ML, Krauthamer GM, Mantegna J, Dumas JA, Newhouse PA, et al.",
+      "year": 2013,
+      "title": "Cognitive-behavioral therapy increases prefrontal cortex gray matter in patients with chronic pain.",
+      "doi": "10.1016/j.jpain.2013.07.020",
+      "pmid": "24135432",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "After treatment, patients had increased GM in bilateral dorsolateral prefrontal (DLPFC), posterior parietal (PPC), subgenual anterior cingulate (ACC)/orbitofrontal, and sensorimotor cortices, as well as hippocampus, and reduced GM in supplementary motor area."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.3
+     },
+     {
+      "t": 0.8,
+      "v": 0.3
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "hippocampus",
+    "explanation": "More grey matter after CBT, in one study.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Seminowicz DA, Shpaner M, Keaser ML, Krauthamer GM, Mantegna J, Dumas JA, Newhouse PA, et al.",
+      "year": 2013,
+      "title": "Cognitive-behavioral therapy increases prefrontal cortex gray matter in patients with chronic pain.",
+      "doi": "10.1016/j.jpain.2013.07.020",
+      "pmid": "24135432",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "After treatment, patients had increased GM in bilateral dorsolateral prefrontal (DLPFC), posterior parietal (PPC), subgenual anterior cingulate (ACC)/orbitofrontal, and sensorimotor cortices, as well as hippocampus, and reduced GM in supplementary motor area."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.35
+     },
+     {
+      "t": 0.8,
+      "v": 0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "sma",
+    "explanation": "Less grey matter after CBT, in one study.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Seminowicz DA, Shpaner M, Keaser ML, Krauthamer GM, Mantegna J, Dumas JA, Newhouse PA, et al.",
+      "year": 2013,
+      "title": "Cognitive-behavioral therapy increases prefrontal cortex gray matter in patients with chronic pain.",
+      "doi": "10.1016/j.jpain.2013.07.020",
+      "pmid": "24135432",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "After treatment, patients had increased GM in bilateral dorsolateral prefrontal (DLPFC), posterior parietal (PPC), subgenual anterior cingulate (ACC)/orbitofrontal, and sensorimotor cortices, as well as hippocampus, and reduced GM in supplementary motor area."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.35
+     },
+     {
+      "t": 0.8,
+      "v": -0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

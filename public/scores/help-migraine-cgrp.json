@@ -1,0 +1,144 @@
+{
+ "id": "help-migraine-cgrp",
+ "title": "Preventing migraine: a CGRP antibody",
+ "description": "CGRP is a signalling molecule released during migraine attacks. Antibodies against it, given as a monthly injection, are a newer way of preventing attacks. One study scanned people with migraine while a painful stimulus was applied to the face, before and two to three weeks after an injection of galcanezumab. Afterwards, the hypothalamus, which is active in the early stages of an attack, responded less, more so in people whose migraines improved. In this episode brightness shows the change since before treatment: violet means less than before.",
+ "caveat": "All findings come from one study of 26 people with migraine, scanned between attacks during a test with a painful stimulus to the face, not during a migraine attack. A related antibody that blocks the CGRP receptor instead (erenumab) produced a different pattern in an earlier study, so the brain effect depends on the antibody. The source reports no difference from people without migraine, so the first part is drawn at rest. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 30,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before treatment",
+   "timescale": "before treatment",
+   "start": 0,
+   "end": 0.25,
+   "caption": "Before the injection, between attacks. The comparison here starts from each person's own level, so the brain is drawn at rest."
+  },
+  {
+   "id": "during",
+   "name": "One injection",
+   "timescale": "weeks",
+   "start": 0.25,
+   "end": 0.4,
+   "caption": "A single injection of the antibody, then two to three weeks before the second scan. The brain is drawn at rest here.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Basedau H, Sturm LM, Mehnert J, Peng KP, Schellong M, May A",
+      "year": 2022,
+      "title": "Migraine monoclonal antibodies against CGRP change brain activity depending on ligand or receptor target - an fMRI study.",
+      "doi": "10.7554/elife.77146",
+      "pmid": "35604755",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Using an established trigeminal nociceptive functional magnetic imaging paradigm, 26 migraine patients were subsequently scanned twice: before and 2–3 weeks after administration of galcanezumab."
+     }
+    ]
+   }
+  },
+  {
+   "id": "after",
+   "name": "What changed",
+   "timescale": "after treatment",
+   "start": 0.4,
+   "end": 0.8,
+   "caption": "During the same painful test, the hypothalamus responds less than before the injection, in everyone, and more so in people whose migraines improved.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Basedau H, Sturm LM, Mehnert J, Peng KP, Schellong M, May A",
+      "year": 2022,
+      "title": "Migraine monoclonal antibodies against CGRP change brain activity depending on ligand or receptor target - an fMRI study.",
+      "doi": "10.7554/elife.77146",
+      "pmid": "35604755",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Using an established trigeminal nociceptive functional magnetic imaging paradigm, 26 migraine patients were subsequently scanned twice: before and 2–3 weeks after administration of galcanezumab."
+     }
+    ]
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.8,
+   "end": 1,
+   "caption": "A related antibody that blocks the CGRP receptor instead acted on a different network. This study looked at a pain test between attacks, not at the attacks themselves.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "hypothalamus",
+    "explanation": "Less active during a painful stimulus to the face two to three weeks after a galcanezumab injection than before it, in all 26 people in one study; the reduction was larger in those whose migraines improved.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Basedau H, Sturm LM, Mehnert J, Peng KP, Schellong M, May A",
+      "year": 2022,
+      "title": "Migraine monoclonal antibodies against CGRP change brain activity depending on ligand or receptor target - an fMRI study.",
+      "doi": "10.7554/elife.77146",
+      "pmid": "35604755",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "We found that galcanezumab decreases hypothalamic activation in all patients and that the reduction was stronger in responders than in non-responders."
+     },
+     {
+      "authors": "Basedau H, Sturm LM, Mehnert J, Peng KP, Schellong M, May A",
+      "year": 2022,
+      "title": "Migraine monoclonal antibodies against CGRP change brain activity depending on ligand or receptor target - an fMRI study.",
+      "doi": "10.7554/elife.77146",
+      "pmid": "35604755",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Using an established trigeminal nociceptive functional magnetic imaging paradigm, 26 migraine patients were subsequently scanned twice: before and 2–3 weeks after administration of galcanezumab."
+     },
+     {
+      "authors": "Basedau H, Sturm LM, Mehnert J, Peng KP, Schellong M, May A",
+      "year": 2022,
+      "title": "Migraine monoclonal antibodies against CGRP change brain activity depending on ligand or receptor target - an fMRI study.",
+      "doi": "10.7554/elife.77146",
+      "pmid": "35604755",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Contrasting erenumab and galcanezumab showed that both antibodies activate a distinct network."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.5
+     },
+     {
+      "t": 0.8,
+      "v": -0.5
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

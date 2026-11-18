@@ -1,0 +1,209 @@
+{
+ "id": "help-dbs",
+ "title": "Deep brain stimulation for Parkinson's",
+ "description": "In deep brain stimulation, thin electrodes are placed in a small structure deep in the brain, the subthalamic nucleus, and connected to a device like a pacemaker. It is used for Parkinson's when medication no longer controls movement well. One study measured blood flow with the stimulator switched off and on in the same people. With it on, movement was faster, a motor planning area became more active during movement, and the motor cortex became quieter at rest. In this episode brightness stands for blood flow, used as a sign of activity, and shows the change between stimulator off and on.",
+ "caveat": "All findings come from one study of 8 people who already had the electrodes, scanned with the stimulator off and on, so \"before\" here means switched off, not before surgery. The premotor cortex, also more active, is not a separate area in the brain model. The supplementary motor area finding is on the same side as the stimulation, during movement of the hand on the other side. The subthalamic nucleus itself is not drawn. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 34,
+ "phases": [
+  {
+   "id": "off",
+   "name": "Stimulator off",
+   "timescale": "minutes",
+   "start": 0,
+   "end": 0.2,
+   "caption": "With the stimulator switched off. This is the comparison point, so the brain is drawn at rest."
+  },
+  {
+   "id": "on",
+   "name": "Stimulator on",
+   "timescale": "minutes",
+   "start": 0.2,
+   "end": 0.32,
+   "caption": "The stimulator is switched on. Reaction and movement times improved in every person.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Ceballos-Baumann AO, Boecker H, Bartenstein P, von Falkenhayn I, Riescher H, Conrad B, Moringlane JR, Alesch F",
+      "year": 1999,
+      "title": "A positron emission tomographic study of subthalamic nucleus stimulation in Parkinson disease: enhanced movement-related activity of motor-association cortex and decreased motor cortex resting activity.",
+      "doi": "10.1001/archneur.56.8.997",
+      "pmid": "10448806",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Eight patients with Parkinson disease who had electrodes implanted in the STN underwent 12 measurements of regional cerebral blood flow with water O 15 positron emission tomography at rest and during performance of paced freely selected joystick movements, both with and without STN stimulation (3 scans per experimental condition)."
+     }
+    ]
+   }
+  },
+  {
+   "id": "moving",
+   "name": "Moving, stimulator on",
+   "timescale": "seconds",
+   "start": 0.32,
+   "end": 0.56,
+   "caption": "During movement, the front part of the supplementary motor area is more active with the stimulator on than off, along with the premotor cortex.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Ceballos-Baumann AO, Boecker H, Bartenstein P, von Falkenhayn I, Riescher H, Conrad B, Moringlane JR, Alesch F",
+      "year": 1999,
+      "title": "A positron emission tomographic study of subthalamic nucleus stimulation in Parkinson disease: enhanced movement-related activity of motor-association cortex and decreased motor cortex resting activity.",
+      "doi": "10.1001/archneur.56.8.997",
+      "pmid": "10448806",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Eight patients with Parkinson disease who had electrodes implanted in the STN underwent 12 measurements of regional cerebral blood flow with water O 15 positron emission tomography at rest and during performance of paced freely selected joystick movements, both with and without STN stimulation (3 scans per experimental condition)."
+     }
+    ]
+   }
+  },
+  {
+   "id": "rest",
+   "name": "At rest, stimulator on",
+   "timescale": "seconds",
+   "start": 0.56,
+   "end": 0.82,
+   "caption": "At rest, the primary motor cortex is quieter with the stimulator on than off. The authors describe its resting activity without stimulation as inappropriate.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "Rest and movement scans were interleaved in the study; showing movement first is only a way of presenting them one at a time."
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.82,
+   "end": 1,
+   "caption": "Stimulation eases movement symptoms but does not stop Parkinson's from progressing; that was not part of this study. This is one small study.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "sma",
+    "explanation": "The rostral supplementary motor area was more active during movement with the stimulator on than off, on the side of the stimulation, in one study of 8 people. The authors read this as stimulation reducing an impairment of motor planning areas. Brightness stands for blood flow.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Ceballos-Baumann AO, Boecker H, Bartenstein P, von Falkenhayn I, Riescher H, Conrad B, Moringlane JR, Alesch F",
+      "year": 1999,
+      "title": "A positron emission tomographic study of subthalamic nucleus stimulation in Parkinson disease: enhanced movement-related activity of motor-association cortex and decreased motor cortex resting activity.",
+      "doi": "10.1001/archneur.56.8.997",
+      "pmid": "10448806",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "As predicted, increases in activation of rostral supplementary motor area and premotor cortex ipsilateral to stimulation were observed when stimulation was on during contralateral movement (P<.001)."
+     },
+     {
+      "authors": "Ceballos-Baumann AO, Boecker H, Bartenstein P, von Falkenhayn I, Riescher H, Conrad B, Moringlane JR, Alesch F",
+      "year": 1999,
+      "title": "A positron emission tomographic study of subthalamic nucleus stimulation in Parkinson disease: enhanced movement-related activity of motor-association cortex and decreased motor cortex resting activity.",
+      "doi": "10.1001/archneur.56.8.997",
+      "pmid": "10448806",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Stimulation of the STN reduces the movement-related impairment of frontal motor association areas and the inappropriate motor cortex resting activity in Parkinson disease."
+     },
+     {
+      "authors": "Ceballos-Baumann AO, Boecker H, Bartenstein P, von Falkenhayn I, Riescher H, Conrad B, Moringlane JR, Alesch F",
+      "year": 1999,
+      "title": "A positron emission tomographic study of subthalamic nucleus stimulation in Parkinson disease: enhanced movement-related activity of motor-association cortex and decreased motor cortex resting activity.",
+      "doi": "10.1001/archneur.56.8.997",
+      "pmid": "10448806",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "All patients showed improvement in reaction and movement times during scans with the stimulator on."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.32,
+      "v": 0
+     },
+     {
+      "t": 0.36,
+      "v": 0.5
+     },
+     {
+      "t": 0.54,
+      "v": 0.5
+     },
+     {
+      "t": 0.5800000000000001,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "motor-cortex",
+    "explanation": "The primary motor cortex had less blood flow at rest with the stimulator on than off, in one study of 8 people. This was not what the researchers had predicted.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Ceballos-Baumann AO, Boecker H, Bartenstein P, von Falkenhayn I, Riescher H, Conrad B, Moringlane JR, Alesch F",
+      "year": 1999,
+      "title": "A positron emission tomographic study of subthalamic nucleus stimulation in Parkinson disease: enhanced movement-related activity of motor-association cortex and decreased motor cortex resting activity.",
+      "doi": "10.1001/archneur.56.8.997",
+      "pmid": "10448806",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Unpredicted observations included decreases in regional cerebral blood flow in primary motor cortex at rest induced by STN stimulation."
+     },
+     {
+      "authors": "Ceballos-Baumann AO, Boecker H, Bartenstein P, von Falkenhayn I, Riescher H, Conrad B, Moringlane JR, Alesch F",
+      "year": 1999,
+      "title": "A positron emission tomographic study of subthalamic nucleus stimulation in Parkinson disease: enhanced movement-related activity of motor-association cortex and decreased motor cortex resting activity.",
+      "doi": "10.1001/archneur.56.8.997",
+      "pmid": "10448806",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Stimulation of the STN reduces the movement-related impairment of frontal motor association areas and the inappropriate motor cortex resting activity in Parkinson disease."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.56,
+      "v": 0
+     },
+     {
+      "t": 0.6000000000000001,
+      "v": -0.45
+     },
+     {
+      "t": 0.7999999999999999,
+      "v": -0.45
+     },
+     {
+      "t": 0.84,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

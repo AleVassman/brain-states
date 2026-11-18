@@ -1,0 +1,231 @@
+{
+ "id": "help-exercise-memory",
+ "title": "Exercise for early memory problems",
+ "description": "Mild cognitive impairment means memory or thinking problems that are noticeable but do not yet interfere much with daily life; it raises the risk of Alzheimer's disease, but not everyone with it goes on to develop dementia. Two trials looked at regular aerobic exercise, such as brisk walking. In one, the hippocampus grew slightly in volume. In the other, blood flow in the left insula, raised in people with memory problems, came back in line with people without them. Brightness stands for volume in one part and blood flow in the other, as each phase says.",
+ "caveat": "These are studies of mild cognitive impairment, not of Alzheimer's disease itself, and they do not show that exercise prevents or slows Alzheimer's. The volume finding comes from a trial of 86 women aged 70 to 80, of whom only 29 had brain scans both before and after, compared with balance and toning exercises; in that trial a larger increase in the left hippocampus went, unexpectedly, with worse performance on one memory measure. The blood-flow finding comes from a study of 17 people with mild cognitive impairment and 18 without. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 36,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before exercise",
+   "timescale": "before",
+   "start": 0,
+   "end": 0.2,
+   "caption": "Before the programme, people with mild cognitive impairment had more blood flow in the left insula than people without memory problems. Brightness here is blood flow compared with people without memory problems."
+  },
+  {
+   "id": "during",
+   "name": "Months of exercise",
+   "timescale": "months",
+   "start": 0.2,
+   "end": 0.32,
+   "caption": "Twice-weekly aerobic training for six months in one trial; twelve weeks in the other. People were not scanned during this time.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Alfini AJ, Weiss LR, Nielson KA, Verber MD, Smith JC",
+      "year": 2019,
+      "title": "Resting Cerebral Blood Flow After Exercise Training in Mild Cognitive Impairment.",
+      "doi": "10.3233/jad-180728",
+      "pmid": "30636734",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Before and after a 12-week exercise intervention, 18 CN and 17 MCI participants (aged 61–88) underwent aerobic fitness testing, neuropsychological assessment, and an MRI scan."
+     }
+    ]
+   }
+  },
+  {
+   "id": "volume",
+   "name": "Hippocampus volume",
+   "timescale": "after training",
+   "start": 0.32,
+   "end": 0.56,
+   "caption": "After six months of aerobic training, the hippocampus on both sides was larger than after balance and toning exercises. Brightness here is volume.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Alfini AJ, Weiss LR, Nielson KA, Verber MD, Smith JC",
+      "year": 2019,
+      "title": "Resting Cerebral Blood Flow After Exercise Training in Mild Cognitive Impairment.",
+      "doi": "10.3233/jad-180728",
+      "pmid": "30636734",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Before and after a 12-week exercise intervention, 18 CN and 17 MCI participants (aged 61–88) underwent aerobic fitness testing, neuropsychological assessment, and an MRI scan."
+     }
+    ]
+   }
+  },
+  {
+   "id": "flow",
+   "name": "Blood flow",
+   "timescale": "after training",
+   "start": 0.56,
+   "end": 0.82,
+   "caption": "After twelve weeks of aerobic exercise, blood flow in the left insula had come back in line with people without memory problems. Brightness here is the change in blood flow since before exercise.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "The volume and blood-flow findings come from two separate trials; they are shown one after the other only to present them one at a time."
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.82,
+   "end": 1,
+   "caption": "A bigger hippocampus did not mean better memory in the volume trial. Neither study shows that exercise prevents Alzheimer's disease.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "hippocampus",
+    "explanation": "Larger on both sides after six months of aerobic training than after balance and toning exercises, in a trial of older women with mild cognitive impairment. A larger increase on the left went with worse performance on one memory measure. Brightness stands for volume.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "ten Brinke LF, Bolandzadeh N, Nagamatsu LS, Hsu CL, Davis JC, Miran-Khan K, Liu-Ambrose T",
+      "year": 2015,
+      "title": "Aerobic exercise increases hippocampal volume in older women with probable mild cognitive impairment: a 6-month randomised controlled trial.",
+      "doi": "10.1136/bjsports-2013-093184",
+      "pmid": "24711660",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Compared with the BAT group, AT significantly improved left, right, and total hippocampal volumes"
+     },
+     {
+      "authors": "ten Brinke LF, Bolandzadeh N, Nagamatsu LS, Hsu CL, Davis JC, Miran-Khan K, Liu-Ambrose T",
+      "year": 2015,
+      "title": "Aerobic exercise increases hippocampal volume in older women with probable mild cognitive impairment: a 6-month randomised controlled trial.",
+      "doi": "10.1136/bjsports-2013-093184",
+      "pmid": "24711660",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "After accounting for baseline cognitive function and experimental group, increased left hippocampal volume was independently associated with reduced verbal memory and learning performance as indexed by loss after interference"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.32,
+      "v": 0
+     },
+     {
+      "t": 0.36,
+      "v": 0.45
+     },
+     {
+      "t": 0.54,
+      "v": 0.45
+     },
+     {
+      "t": 0.5800000000000001,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "insula-l",
+    "explanation": "Blood flow was higher than in people without memory problems before exercise, and came back in line after twelve weeks of aerobic exercise, in one study. Brightness stands for blood flow.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Alfini AJ, Weiss LR, Nielson KA, Verber MD, Smith JC",
+      "year": 2019,
+      "title": "Resting Cerebral Blood Flow After Exercise Training in Mild Cognitive Impairment.",
+      "doi": "10.3233/jad-180728",
+      "pmid": "30636734",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "exhibited significantly elevated perfusion in the left insula."
+     },
+     {
+      "authors": "Alfini AJ, Weiss LR, Nielson KA, Verber MD, Smith JC",
+      "year": 2019,
+      "title": "Resting Cerebral Blood Flow After Exercise Training in Mild Cognitive Impairment.",
+      "doi": "10.3233/jad-180728",
+      "pmid": "30636734",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Twelve weeks of aerobic exercise reversed this discrepancy."
+     },
+     {
+      "authors": "Alfini AJ, Weiss LR, Nielson KA, Verber MD, Smith JC",
+      "year": 2019,
+      "title": "Resting Cerebral Blood Flow After Exercise Training in Mild Cognitive Impairment.",
+      "doi": "10.3233/jad-180728",
+      "pmid": "30636734",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Among those with MCI, decreased CBF in the left insula and anterior cingulate cortex was associated with improved verbal fluency."
+     },
+     {
+      "authors": "Alfini AJ, Weiss LR, Nielson KA, Verber MD, Smith JC",
+      "year": 2019,
+      "title": "Resting Cerebral Blood Flow After Exercise Training in Mild Cognitive Impairment.",
+      "doi": "10.3233/jad-180728",
+      "pmid": "30636734",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Before and after a 12-week exercise intervention, 18 CN and 17 MCI participants (aged 61–88) underwent aerobic fitness testing, neuropsychological assessment, and an MRI scan."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.04,
+      "v": 0.4
+     },
+     {
+      "t": 0.18,
+      "v": 0.4
+     },
+     {
+      "t": 0.21,
+      "v": 0
+     },
+     {
+      "t": 0.56,
+      "v": 0
+     },
+     {
+      "t": 0.6,
+      "v": -0.4
+     },
+     {
+      "t": 0.8,
+      "v": -0.4
+     },
+     {
+      "t": 0.84,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

@@ -1,0 +1,333 @@
+{
+ "id": "help-cimt",
+ "title": "Rehabilitation after stroke: constraint-induced therapy",
+ "description": "Constraint-induced movement therapy is an intensive rehabilitation method for an arm weakened by stroke: the stronger arm is restrained for much of the day, so the weaker one has to be used, with hours of practice. In a randomised trial of people months or years after a stroke, those who had this therapy used their weaker arm much more in daily life, and grey matter increased in the hand and arm areas for movement and sensation on both sides of the brain, and in the hippocampus. In this episode brightness stands for grey matter volume, not activity, and shows the change since before therapy.",
+ "caveat": "The findings come from one randomised trial: 16 people received constraint-induced therapy and 20 a comparison therapy, which showed no grey matter increases. The people had had their stroke months or years earlier. The grey matter increases covered the hand and arm regions of the motor and sensory cortex, the front of the supplementary motor area and part of the premotor area; the whole motor and sensory strips are drawn, which is larger than the areas that changed. A pooled analysis of 22 studies of recovery after stroke found that activity during movement shifts back towards the damaged side as people recover; that is a different measure, described but not drawn, because the damaged side differs between people. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 32,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before treatment",
+   "timescale": "before treatment",
+   "start": 0,
+   "end": 0.25,
+   "caption": "Before therapy, months or years after the stroke. The comparison here starts from each person's own level, so the brain is drawn at rest."
+  },
+  {
+   "id": "during",
+   "name": "Intensive therapy",
+   "timescale": "weeks",
+   "start": 0.25,
+   "end": 0.4,
+   "caption": "Intensive daily practice with the weaker arm while the stronger one is restrained. People were not scanned during this time.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Chronic stroke patients were randomly assigned to receive either constraint-induced movement therapy (n=16) or a comparison therapy (n=20)."
+     }
+    ]
+   }
+  },
+  {
+   "id": "after",
+   "name": "What changed",
+   "timescale": "after treatment",
+   "start": 0.4,
+   "end": 0.8,
+   "caption": "After therapy, grey matter is greater than before in movement and sensation areas on both sides of the brain, and in the hippocampus on both sides. The more grey matter increased, the more people used their weaker arm in daily life.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Chronic stroke patients were randomly assigned to receive either constraint-induced movement therapy (n=16) or a comparison therapy (n=20)."
+     }
+    ]
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.8,
+   "end": 1,
+   "caption": "People who received the comparison therapy showed no grey matter increases. The stroke damage itself does not go away; the change is in the surrounding brain.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "motor-cortex",
+    "explanation": "Grey matter increased in motor areas on both sides after constraint-induced therapy, in a randomised trial; the comparison therapy showed no increase. Brightness stands for volume, not activity.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "There were profuse increases in gray matter in sensory and motor areas both contralateral and ipsilateral to the affected arm that were bilaterally symmetrical, as well as bilaterally in the hippocampus."
+     },
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "The large clusters of voxels showing gray matter increases in sensory and motor areas were bilaterally symmetrical and, when cross-referenced with standard brain atlases, encompassed the hand/arm regions of primary sensory and motor cortices as well as the anterior supplementary motor area and portions of the premotor area."
+     },
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "In contrast, the comparison therapy group failed to show gray matter increases."
+     },
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Importantly, the magnitude of the observed gray matter increases was significantly correlated with amount of improvement in real-world arm use."
+     },
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Chronic stroke patients were randomly assigned to receive either constraint-induced movement therapy (n=16) or a comparison therapy (n=20)."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.5
+     },
+     {
+      "t": 0.8,
+      "v": 0.5
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "somatosensory",
+    "explanation": "Grey matter increased in sensory areas on both sides after constraint-induced therapy, in a randomised trial.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "There were profuse increases in gray matter in sensory and motor areas both contralateral and ipsilateral to the affected arm that were bilaterally symmetrical, as well as bilaterally in the hippocampus."
+     },
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "The large clusters of voxels showing gray matter increases in sensory and motor areas were bilaterally symmetrical and, when cross-referenced with standard brain atlases, encompassed the hand/arm regions of primary sensory and motor cortices as well as the anterior supplementary motor area and portions of the premotor area."
+     },
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "In contrast, the comparison therapy group failed to show gray matter increases."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.45
+     },
+     {
+      "t": 0.8,
+      "v": 0.45
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "sma",
+    "explanation": "Grey matter increased in the front part of the supplementary motor area after constraint-induced therapy, in a randomised trial.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "The large clusters of voxels showing gray matter increases in sensory and motor areas were bilaterally symmetrical and, when cross-referenced with standard brain atlases, encompassed the hand/arm regions of primary sensory and motor cortices as well as the anterior supplementary motor area and portions of the premotor area."
+     },
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "In contrast, the comparison therapy group failed to show gray matter increases."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.35
+     },
+     {
+      "t": 0.8,
+      "v": 0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "hippocampus",
+    "explanation": "Grey matter increased in the hippocampus on both sides after constraint-induced therapy, in a randomised trial.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "There were profuse increases in gray matter in sensory and motor areas both contralateral and ipsilateral to the affected arm that were bilaterally symmetrical, as well as bilaterally in the hippocampus."
+     },
+     {
+      "authors": "Gauthier LV, Taub E, Perkins C, Ortmann M, Mark VW, Uswatte G",
+      "year": 2008,
+      "title": "Remodeling the brain: plastic structural brain changes produced by different motor therapies after stroke.",
+      "doi": "10.1161/strokeaha.107.502229",
+      "pmid": "18323492",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "In contrast, the comparison therapy group failed to show gray matter increases."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.35
+     },
+     {
+      "t": 0.8,
+      "v": 0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

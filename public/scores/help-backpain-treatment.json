@@ -1,0 +1,166 @@
+{
+ "id": "help-backpain-treatment",
+ "title": "Treating chronic back pain: the brain recovers",
+ "description": "Long-lasting pain is linked with thinner grey matter in parts of the brain. This study asked whether that reverses when the pain is treated. People with chronic low back pain were scanned before and six months after spine surgery or joint injections. After treatment, the left dorsolateral prefrontal cortex, which was thinner than in people without pain, had become thicker, and its activity during an attention task had returned to normal. In this episode brightness stands for cortical thickness, not activity. In the first part it shows the difference from people without pain; in \"What changed\" it shows the change since before treatment.",
+ "caveat": "This is one study of 14 people treated with spine surgery or facet joint injections, so it shows what happens when pain is relieved, not the effect of one particular treatment. More thickening went with more pain relief, which is a relationship across people. Other areas, the primary motor cortex and the right anterior insula, thickened more in people whose disability or pain improved more; those are described, not drawn as group changes. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 32,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before treatment",
+   "timescale": "before treatment",
+   "start": 0,
+   "end": 0.25,
+   "caption": "Before treatment, the left dorsolateral prefrontal cortex was thinner than in people without pain, and its activity during an attention task was abnormal."
+  },
+  {
+   "id": "during",
+   "name": "Treatment and six months",
+   "timescale": "months",
+   "start": 0.25,
+   "end": 0.4,
+   "caption": "Spine surgery or facet joint injections, then six months before the second scan. The brain is drawn at rest here.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Seminowicz DA, Wideman TH, Naso L, Hatami-Khoroushahi Z, Fallatah S, Ware MA, Jarzem P, et al.",
+      "year": 2011,
+      "title": "Effective treatment of chronic low back pain in humans reverses abnormal brain anatomy and function.",
+      "doi": "10.1523/jneurosci.5280-10.2011",
+      "pmid": "21593339",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "We acquired MRI scans from chronic low back pain (CLBP) patients before (n = 18) and 6 months after (spine surgery or facet joint injections; n = 14) treatment."
+     }
+    ]
+   }
+  },
+  {
+   "id": "after",
+   "name": "What changed",
+   "timescale": "after treatment",
+   "start": 0.4,
+   "end": 0.8,
+   "caption": "Six months later, the left dorsolateral prefrontal cortex is thicker than before, and its activity during the attention task has returned to normal. The more it thickened, the more pain and disability improved.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Seminowicz DA, Wideman TH, Naso L, Hatami-Khoroushahi Z, Fallatah S, Ware MA, Jarzem P, et al.",
+      "year": 2011,
+      "title": "Effective treatment of chronic low back pain in humans reverses abnormal brain anatomy and function.",
+      "doi": "10.1523/jneurosci.5280-10.2011",
+      "pmid": "21593339",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "We acquired MRI scans from chronic low back pain (CLBP) patients before (n = 18) and 6 months after (spine surgery or facet joint injections; n = 14) treatment."
+     }
+    ]
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.8,
+   "end": 1,
+   "caption": "The findings are about pain being relieved, by different procedures, in a small group. They suggest these brain changes can reverse, not that they always do.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "dlpfc-l",
+    "explanation": "Thinner than in people without pain before treatment, and thicker six months after effective treatment, in one study of 14 people. Its activity during an attention task, abnormal before, was normal after. Brightness stands for cortical thickness, not activity.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Seminowicz DA, Wideman TH, Naso L, Hatami-Khoroushahi Z, Fallatah S, Ware MA, Jarzem P, et al.",
+      "year": 2011,
+      "title": "Effective treatment of chronic low back pain in humans reverses abnormal brain anatomy and function.",
+      "doi": "10.1523/jneurosci.5280-10.2011",
+      "pmid": "21593339",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "After treatment, patients had increased cortical thickness in the left dorsolateral prefrontal cortex (DLPFC), which was thinner before treatment compared with controls."
+     },
+     {
+      "authors": "Seminowicz DA, Wideman TH, Naso L, Hatami-Khoroushahi Z, Fallatah S, Ware MA, Jarzem P, et al.",
+      "year": 2011,
+      "title": "Effective treatment of chronic low back pain in humans reverses abnormal brain anatomy and function.",
+      "doi": "10.1523/jneurosci.5280-10.2011",
+      "pmid": "21593339",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Increased DLPFC thickness correlated with the reduction of both pain and physical disability."
+     },
+     {
+      "authors": "Seminowicz DA, Wideman TH, Naso L, Hatami-Khoroushahi Z, Fallatah S, Ware MA, Jarzem P, et al.",
+      "year": 2011,
+      "title": "Effective treatment of chronic low back pain in humans reverses abnormal brain anatomy and function.",
+      "doi": "10.1523/jneurosci.5280-10.2011",
+      "pmid": "21593339",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Left DLPFC activity during an attention-demanding cognitive task was abnormal before treatment, but normalized following treatment."
+     },
+     {
+      "authors": "Seminowicz DA, Wideman TH, Naso L, Hatami-Khoroushahi Z, Fallatah S, Ware MA, Jarzem P, et al.",
+      "year": 2011,
+      "title": "Effective treatment of chronic low back pain in humans reverses abnormal brain anatomy and function.",
+      "doi": "10.1523/jneurosci.5280-10.2011",
+      "pmid": "21593339",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "We acquired MRI scans from chronic low back pain (CLBP) patients before (n = 18) and 6 months after (spine surgery or facet joint injections; n = 14) treatment."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.05,
+      "v": -0.4
+     },
+     {
+      "t": 0.22,
+      "v": -0.4
+     },
+     {
+      "t": 0.26,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.5
+     },
+     {
+      "t": 0.8,
+      "v": 0.5
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

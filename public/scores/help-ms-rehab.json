@@ -1,0 +1,134 @@
+{
+ "id": "help-ms-rehab",
+ "title": "Attention training in multiple sclerosis",
+ "description": "Many people with multiple sclerosis have problems with attention and concentration. Cognitive rehabilitation trains these skills with structured exercises. In one small randomised trial, people who did intensive computer-based attention training improved on an attention test, and the back of the cerebellum and an area at the top of the parietal lobe became more active during an attention task. In this episode brightness shows the change since before training, compared with people who did a placebo programme.",
+ "caveat": "All findings come from one trial of 23 people with multiple sclerosis and attention problems: 12 did the training and 11 a placebo programme. The superior parietal lobule is not a separate area in the brain model and is not drawn. The training does not change the multiple sclerosis itself. The first part is drawn at rest because the comparison starts from each person's own level. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 30,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before treatment",
+   "timescale": "before treatment",
+   "start": 0,
+   "end": 0.25,
+   "caption": "Before training. The comparison here starts from each person's own level, so the brain is drawn at rest."
+  },
+  {
+   "id": "during",
+   "name": "Attention training",
+   "timescale": "weeks",
+   "start": 0.25,
+   "end": 0.4,
+   "caption": "Intensive computer-based attention exercises. People were not scanned during this time.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Cerasa A, Gioia MC, Valentino P, Nisticò R, Chiriaco C, Pirritano D, Tomaiuolo F, et al.",
+      "year": 2013,
+      "title": "Computer-assisted cognitive rehabilitation of attention deficits for multiple sclerosis: a randomized trial with fMRI correlates.",
+      "doi": "10.1177/1545968312465194",
+      "pmid": "23192417",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Using a double-blind randomized controlled study, we enrolled 12 MS patients, who underwent a CR program (experimental group), and 11 age-gender-matched MS patients, who underwent a placebo intervention (control group)."
+     }
+    ]
+   }
+  },
+  {
+   "id": "after",
+   "name": "What changed",
+   "timescale": "after treatment",
+   "start": 0.4,
+   "end": 0.8,
+   "caption": "After training, attention improved compared with the placebo group, and the back of the cerebellum, along with the superior parietal lobule, was more active during an attention task.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Cerasa A, Gioia MC, Valentino P, Nisticò R, Chiriaco C, Pirritano D, Tomaiuolo F, et al.",
+      "year": 2013,
+      "title": "Computer-assisted cognitive rehabilitation of attention deficits for multiple sclerosis: a randomized trial with fMRI correlates.",
+      "doi": "10.1177/1545968312465194",
+      "pmid": "23192417",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Using a double-blind randomized controlled study, we enrolled 12 MS patients, who underwent a CR program (experimental group), and 11 age-gender-matched MS patients, who underwent a placebo intervention (control group)."
+     }
+    ]
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.8,
+   "end": 1,
+   "caption": "Only some aspects of attention improved. This is one small trial, and the damage caused by multiple sclerosis is not changed by training.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "cerebellum-mid",
+    "explanation": "The posterior cerebellar lobule was more active during an attention task after intensive attention training than after a placebo programme, in one trial of 23 people with multiple sclerosis.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Cerasa A, Gioia MC, Valentino P, Nisticò R, Chiriaco C, Pirritano D, Tomaiuolo F, et al.",
+      "year": 2013,
+      "title": "Computer-assisted cognitive rehabilitation of attention deficits for multiple sclerosis: a randomized trial with fMRI correlates.",
+      "doi": "10.1177/1545968312465194",
+      "pmid": "23192417",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "After CR, the experimental group, in comparison with the control group, showed a specific enhanced performance in attention abilities as assessed by the Stroop task with an effect size of 0.88, which was associated with increased activity in the posterior cerebellar lobule and in the superior parietal lobule."
+     },
+     {
+      "authors": "Cerasa A, Gioia MC, Valentino P, Nisticò R, Chiriaco C, Pirritano D, Tomaiuolo F, et al.",
+      "year": 2013,
+      "title": "Computer-assisted cognitive rehabilitation of attention deficits for multiple sclerosis: a randomized trial with fMRI correlates.",
+      "doi": "10.1177/1545968312465194",
+      "pmid": "23192417",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Using a double-blind randomized controlled study, we enrolled 12 MS patients, who underwent a CR program (experimental group), and 11 age-gender-matched MS patients, who underwent a placebo intervention (control group)."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.45
+     },
+     {
+      "t": 0.8,
+      "v": 0.45
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

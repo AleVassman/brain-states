@@ -286,5 +286,85 @@
   "category": "treatment",
   "treats": "craving",
   "reviewed": false
+ },
+ {
+  "id": "help-pain-cbt",
+  "title": "Talking therapy (CBT) for chronic pain",
+  "file": "help-pain-cbt.json",
+  "category": "treatment",
+  "treats": "chronicpain",
+  "reviewed": false
+ },
+ {
+  "id": "help-backpain-treatment",
+  "title": "Treating chronic back pain",
+  "file": "help-backpain-treatment.json",
+  "category": "treatment",
+  "treats": "chronicpain",
+  "reviewed": false
+ },
+ {
+  "id": "help-levodopa",
+  "title": "Levodopa",
+  "file": "help-levodopa.json",
+  "category": "treatment",
+  "treats": "parkinsons",
+  "reviewed": false
+ },
+ {
+  "id": "help-dbs",
+  "title": "Deep brain stimulation",
+  "file": "help-dbs.json",
+  "category": "treatment",
+  "treats": "parkinsons",
+  "reviewed": false
+ },
+ {
+  "id": "help-cimt",
+  "title": "Rehabilitation after stroke",
+  "file": "help-cimt.json",
+  "category": "treatment",
+  "treats": "stroke",
+  "reviewed": false
+ },
+ {
+  "id": "help-migraine-cgrp",
+  "title": "Preventing migraine (CGRP antibody)",
+  "file": "help-migraine-cgrp.json",
+  "category": "treatment",
+  "treats": "migraine",
+  "reviewed": false
+ },
+ {
+  "id": "help-recovery-sleep",
+  "title": "Recovery sleep",
+  "file": "help-recovery-sleep.json",
+  "category": "treatment",
+  "treats": "sleep",
+  "reviewed": false
+ },
+ {
+  "id": "help-epilepsy-surgery",
+  "title": "Epilepsy surgery",
+  "file": "help-epilepsy-surgery.json",
+  "category": "treatment",
+  "treats": "seizure",
+  "reviewed": false
+ },
+ {
+  "id": "help-exercise-memory",
+  "title": "Exercise for early memory problems",
+  "file": "help-exercise-memory.json",
+  "category": "treatment",
+  "treats": "alzheimers",
+  "reviewed": false
+ },
+ {
+  "id": "help-ms-rehab",
+  "title": "Attention training in MS",
+  "file": "help-ms-rehab.json",
+  "category": "treatment",
+  "treats": "ms",
+  "reviewed": false
  }
 ]
