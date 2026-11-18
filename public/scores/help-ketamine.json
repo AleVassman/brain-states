@@ -1,0 +1,395 @@
+{
+ "id": "help-ketamine",
+ "title": "Ketamine for depression",
+ "description": "Ketamine, given as a single slow infusion under medical supervision, can lift depression within hours, unlike most treatments that take weeks. One study scanned people at rest before an infusion and again a day later. In this episode brightness stands for how strongly an area is in step with the rest of the brain (its \"global connectivity\"), not for activity. In the first part it shows the difference from people without depression; in \"What changed\" it shows the change since before the infusion.",
+ "caveat": "All findings come from one study: people with depression who were not taking other medication received one infusion, and were scanned a day later. The study measures how much each area moves in step with the rest of the brain at rest, which is not the same as activity. The source names the prefrontal cortex without saying which part for the main finding; it is drawn on the dorsolateral prefrontal cortex, which is an assumption. How long these changes last was not measured here. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 32,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before treatment",
+   "timescale": "before treatment",
+   "start": 0,
+   "end": 0.25,
+   "caption": "Before the infusion, the prefrontal cortex was less in step with the rest of the brain than in people without depression, while the posterior cingulate and precuneus, part of the visual cortex and the cerebellum were more in step."
+  },
+  {
+   "id": "during",
+   "name": "One infusion",
+   "timescale": "hours",
+   "start": 0.25,
+   "end": 0.4,
+   "caption": "A single infusion, then about a day before the next scan. The brain is drawn at rest here.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Abdallah CG, Averill LA, Collins KA, Geha P, Schwartz J, Averill C, DeWilde KE, et al.",
+      "year": 2017,
+      "title": "Ketamine Treatment and Global Brain Connectivity in Major Depression.",
+      "doi": "10.1038/npp.2016.186",
+      "pmid": "27604566",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "MDD patients received a single infusion of ketamine and underwent repeated rs-fcMRI at 24 h posttreatment."
+     }
+    ]
+   }
+  },
+  {
+   "id": "after",
+   "name": "What changed",
+   "timescale": "after treatment",
+   "start": 0.4,
+   "end": 0.8,
+   "caption": "A day later, the prefrontal cortex is more in step with the rest of the brain than before, and the cerebellum less. People who responded also showed increases in the lateral prefrontal cortex, the caudate and the insula.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Abdallah CG, Averill LA, Collins KA, Geha P, Schwartz J, Averill C, DeWilde KE, et al.",
+      "year": 2017,
+      "title": "Ketamine Treatment and Global Brain Connectivity in Major Depression.",
+      "doi": "10.1038/npp.2016.186",
+      "pmid": "27604566",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "MDD patients received a single infusion of ketamine and underwent repeated rs-fcMRI at 24 h posttreatment."
+     }
+    ]
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.8,
+   "end": 1,
+   "caption": "Many of the differences from people without depression were gone a day later, but some remained. How long the change lasts, and whether it explains the improvement, was not shown.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "dlpfc",
+    "explanation": "Less in step with the rest of the brain than in people without depression before the infusion, and more in step a day after it, in one study. The source names the prefrontal cortex; it is drawn on the dorsolateral prefrontal cortex, which is an assumption. Responders showed the increase in the lateral prefrontal cortex. Brightness stands for global connectivity, not activity.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Abdallah CG, Averill LA, Collins KA, Geha P, Schwartz J, Averill C, DeWilde KE, et al.",
+      "year": 2017,
+      "title": "Ketamine Treatment and Global Brain Connectivity in Major Depression.",
+      "doi": "10.1038/npp.2016.186",
+      "pmid": "27604566",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "MDD group showed reduced GBCr in the prefrontal cortex (PFC) but increased GBCr in the posterior cingulate, precuneus, lingual gyrus, and cerebellum."
+     },
+     {
+      "authors": "Abdallah CG, Averill LA, Collins KA, Geha P, Schwartz J, Averill C, DeWilde KE, et al.",
+      "year": 2017,
+      "title": "Ketamine Treatment and Global Brain Connectivity in Major Depression.",
+      "doi": "10.1038/npp.2016.186",
+      "pmid": "27604566",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Ketamine significantly increased GBCr in the PFC and reduced GBCr in the cerebellum."
+     },
+     {
+      "authors": "Abdallah CG, Averill LA, Collins KA, Geha P, Schwartz J, Averill C, DeWilde KE, et al.",
+      "year": 2017,
+      "title": "Ketamine Treatment and Global Brain Connectivity in Major Depression.",
+      "doi": "10.1038/npp.2016.186",
+      "pmid": "27604566",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Responders to ketamine showed increased GBCr in the lateral PFC, caudate, and insula."
+     },
+     {
+      "authors": "Abdallah CG, Averill LA, Collins KA, Geha P, Schwartz J, Averill C, DeWilde KE, et al.",
+      "year": 2017,
+      "title": "Ketamine Treatment and Global Brain Connectivity in Major Depression.",
+      "doi": "10.1038/npp.2016.186",
+      "pmid": "27604566",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Global brain connectivity with global signal regression (GBCr) values were computed as the average of correlations of each voxel with all other gray matter voxels in the brain."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.05,
+      "v": -0.4
+     },
+     {
+      "t": 0.22,
+      "v": -0.4
+     },
+     {
+      "t": 0.26,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.45
+     },
+     {
+      "t": 0.8,
+      "v": 0.45
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "cerebellum-mid",
+    "explanation": "More in step with the rest of the brain than in people without depression before the infusion, and less a day after it, in one study. Brightness stands for global connectivity, not activity.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Abdallah CG, Averill LA, Collins KA, Geha P, Schwartz J, Averill C, DeWilde KE, et al.",
+      "year": 2017,
+      "title": "Ketamine Treatment and Global Brain Connectivity in Major Depression.",
+      "doi": "10.1038/npp.2016.186",
+      "pmid": "27604566",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "MDD group showed reduced GBCr in the prefrontal cortex (PFC) but increased GBCr in the posterior cingulate, precuneus, lingual gyrus, and cerebellum."
+     },
+     {
+      "authors": "Abdallah CG, Averill LA, Collins KA, Geha P, Schwartz J, Averill C, DeWilde KE, et al.",
+      "year": 2017,
+      "title": "Ketamine Treatment and Global Brain Connectivity in Major Depression.",
+      "doi": "10.1038/npp.2016.186",
+      "pmid": "27604566",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Ketamine significantly increased GBCr in the PFC and reduced GBCr in the cerebellum."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.05,
+      "v": 0.35
+     },
+     {
+      "t": 0.22,
+      "v": 0.35
+     },
+     {
+      "t": 0.26,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.4
+     },
+     {
+      "t": 0.8,
+      "v": -0.4
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "pcc-precuneus",
+    "explanation": "More in step with the rest of the brain than in people without depression before the infusion, in one study. The source does not report a change here after the infusion.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Abdallah CG, Averill LA, Collins KA, Geha P, Schwartz J, Averill C, DeWilde KE, et al.",
+      "year": 2017,
+      "title": "Ketamine Treatment and Global Brain Connectivity in Major Depression.",
+      "doi": "10.1038/npp.2016.186",
+      "pmid": "27604566",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "MDD group showed reduced GBCr in the prefrontal cortex (PFC) but increased GBCr in the posterior cingulate, precuneus, lingual gyrus, and cerebellum."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.05,
+      "v": 0.35
+     },
+     {
+      "t": 0.22,
+      "v": 0.35
+     },
+     {
+      "t": 0.26,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "visual-cortex",
+    "explanation": "The lingual gyrus, part of the visual cortex, was more in step with the rest of the brain than in people without depression before the infusion, in one study. The source does not report a change here after the infusion.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Abdallah CG, Averill LA, Collins KA, Geha P, Schwartz J, Averill C, DeWilde KE, et al.",
+      "year": 2017,
+      "title": "Ketamine Treatment and Global Brain Connectivity in Major Depression.",
+      "doi": "10.1038/npp.2016.186",
+      "pmid": "27604566",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "MDD group showed reduced GBCr in the prefrontal cortex (PFC) but increased GBCr in the posterior cingulate, precuneus, lingual gyrus, and cerebellum."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.05,
+      "v": 0.3
+     },
+     {
+      "t": 0.22,
+      "v": 0.3
+     },
+     {
+      "t": 0.26,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "caudate",
+    "explanation": "More in step with the rest of the brain after the infusion in the people who responded, in one study.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Abdallah CG, Averill LA, Collins KA, Geha P, Schwartz J, Averill C, DeWilde KE, et al.",
+      "year": 2017,
+      "title": "Ketamine Treatment and Global Brain Connectivity in Major Depression.",
+      "doi": "10.1038/npp.2016.186",
+      "pmid": "27604566",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Responders to ketamine showed increased GBCr in the lateral PFC, caudate, and insula."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.3
+     },
+     {
+      "t": 0.8,
+      "v": 0.3
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "insula",
+    "explanation": "More in step with the rest of the brain after the infusion in the people who responded, in one study.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Abdallah CG, Averill LA, Collins KA, Geha P, Schwartz J, Averill C, DeWilde KE, et al.",
+      "year": 2017,
+      "title": "Ketamine Treatment and Global Brain Connectivity in Major Depression.",
+      "doi": "10.1038/npp.2016.186",
+      "pmid": "27604566",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Responders to ketamine showed increased GBCr in the lateral PFC, caudate, and insula."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.3
+     },
+     {
+      "t": 0.8,
+      "v": 0.3
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

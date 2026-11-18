@@ -190,5 +190,101 @@
   "category": "physical",
   "reviewed": true,
   "reviewNote": "**reviewed** on 2026-11-17. Checked against the saved papers by an independent reviewer, with full texts where they could be downloaded; corrections it required were applied and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation."
+ },
+ {
+  "id": "help-antidepressants",
+  "title": "Antidepressants",
+  "file": "help-antidepressants.json",
+  "category": "treatment",
+  "treats": "depression",
+  "reviewed": false
+ },
+ {
+  "id": "help-cbt-depression",
+  "title": "Talking therapy (CBT) for depression",
+  "file": "help-cbt-depression.json",
+  "category": "treatment",
+  "treats": "depression",
+  "reviewed": false
+ },
+ {
+  "id": "help-ect",
+  "title": "Electroconvulsive therapy (ECT)",
+  "file": "help-ect.json",
+  "category": "treatment",
+  "treats": "depression",
+  "reviewed": false
+ },
+ {
+  "id": "help-ketamine",
+  "title": "Ketamine",
+  "file": "help-ketamine.json",
+  "category": "treatment",
+  "treats": "depression",
+  "reviewed": false
+ },
+ {
+  "id": "help-dbt",
+  "title": "DBT for borderline",
+  "file": "help-dbt.json",
+  "category": "treatment",
+  "treats": "borderline",
+  "reviewed": false
+ },
+ {
+  "id": "help-cbt-panic",
+  "title": "Talking therapy (CBT) for panic",
+  "file": "help-cbt-panic.json",
+  "category": "treatment",
+  "treats": "panic",
+  "reviewed": false
+ },
+ {
+  "id": "help-cbt-anxiety",
+  "title": "Talking therapy (CBT) for anxiety",
+  "file": "help-cbt-anxiety.json",
+  "category": "treatment",
+  "treats": "anxiety",
+  "reviewed": false
+ },
+ {
+  "id": "help-ptsd-exposure",
+  "title": "Exposure therapy for PTSD",
+  "file": "help-ptsd-exposure.json",
+  "category": "treatment",
+  "treats": "ptsd",
+  "reviewed": false
+ },
+ {
+  "id": "help-ocd-therapy",
+  "title": "Exposure therapy for OCD",
+  "file": "help-ocd-therapy.json",
+  "category": "treatment",
+  "treats": "ocd",
+  "reviewed": false
+ },
+ {
+  "id": "help-antipsychotics",
+  "title": "Antipsychotic medication",
+  "file": "help-antipsychotics.json",
+  "category": "treatment",
+  "treats": "psychosis",
+  "reviewed": false
+ },
+ {
+  "id": "help-mindfulness",
+  "title": "Mindfulness training",
+  "file": "help-mindfulness.json",
+  "category": "treatment",
+  "treats": "stress",
+  "reviewed": false
+ },
+ {
+  "id": "help-abstinence",
+  "title": "Staying off methamphetamine",
+  "file": "help-abstinence.json",
+  "category": "treatment",
+  "treats": "craving",
+  "reviewed": false
  }
 ]

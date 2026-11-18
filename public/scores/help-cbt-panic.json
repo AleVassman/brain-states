@@ -1,0 +1,277 @@
+{
+ "id": "help-cbt-panic",
+ "title": "Talking therapy (CBT) for panic",
+ "description": "Cognitive behavioural therapy (CBT) for panic disorder helps people understand panic sensations and gradually face the situations they avoid. One trial scanned people with panic disorder and agoraphobia before and after 12 sessions, while they learned that a shape could predict something unpleasant. After therapy, a frontal area responded less, and it worked more closely with the brain's fear network. In the first part, brightness shows how the brain differed from people without the condition before treatment. In \"What changed\", brightness shows the change since before treatment: warmer means more than before, violet means less than before.",
+ "caveat": "All findings come from one trial of 42 people with panic disorder and agoraphobia who were not taking medication, compared with 42 people without the condition scanned at the same times. The task was a fear-learning task, not a panic attack. The study names the anterior cingulate without saying which part; it is drawn on the dorsal part, which is an assumption. The source reports no pre-treatment difference, so the first part is drawn at rest. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 32,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before treatment",
+   "timescale": "before treatment",
+   "start": 0,
+   "end": 0.25,
+   "caption": "Before therapy. The source does not report how these brains differed beforehand, so the brain is drawn at rest."
+  },
+  {
+   "id": "during",
+   "name": "12 sessions of CBT",
+   "timescale": "weeks",
+   "start": 0.25,
+   "end": 0.4,
+   "caption": "Twelve sessions of structured therapy, including facing feared sensations and situations. People were not scanned during this time.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Kircher T, Arolt V, Jansen A, Pyka M, Reinhardt I, Kellermann T, Konrad C, et al.",
+      "year": 2013,
+      "title": "Effect of cognitive-behavioral therapy on neural correlates of fear conditioning in panic disorder.",
+      "doi": "10.1016/j.biopsych.2012.07.026",
+      "pmid": "22921454",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "In a randomized, controlled, multicenter clinical trial in medication-free patients with PD/A who were treated with 12 sessions of manualized CBT, functional magnetic resonance imaging (fMRI) was used during fear conditioning before and after CBT."
+     }
+    ]
+   }
+  },
+  {
+   "id": "after",
+   "name": "What changed",
+   "timescale": "after treatment",
+   "start": 0.4,
+   "end": 0.8,
+   "caption": "After therapy, the left inferior frontal gyrus responds less to the warning shape, and the more it dropped, the more agoraphobia improved. It also works more closely with the amygdala, the insula and the anterior cingulate.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Kircher T, Arolt V, Jansen A, Pyka M, Reinhardt I, Kellermann T, Konrad C, et al.",
+      "year": 2013,
+      "title": "Effect of cognitive-behavioral therapy on neural correlates of fear conditioning in panic disorder.",
+      "doi": "10.1016/j.biopsych.2012.07.026",
+      "pmid": "22921454",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "In a randomized, controlled, multicenter clinical trial in medication-free patients with PD/A who were treated with 12 sessions of manualized CBT, functional magnetic resonance imaging (fMRI) was used during fear conditioning before and after CBT."
+     }
+    ]
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.8,
+   "end": 1,
+   "caption": "This is one trial, using a fear-learning task rather than real panic. It does not show what happens during a panic attack after therapy.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "vlpfc-l",
+    "explanation": "The left inferior frontal gyrus responded less to a learned warning signal after CBT, compared with people without panic disorder scanned at the same times, in one trial of 42 patients. The drop went with fewer agoraphobia symptoms.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Kircher T, Arolt V, Jansen A, Pyka M, Reinhardt I, Kellermann T, Konrad C, et al.",
+      "year": 2013,
+      "title": "Effect of cognitive-behavioral therapy on neural correlates of fear conditioning in panic disorder.",
+      "doi": "10.1016/j.biopsych.2012.07.026",
+      "pmid": "22921454",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "After CBT, patients compared to control subjects revealed reduced activation for the conditioned response (CS+ > CS-) in the left inferior frontal gyrus (IFG)."
+     },
+     {
+      "authors": "Kircher T, Arolt V, Jansen A, Pyka M, Reinhardt I, Kellermann T, Konrad C, et al.",
+      "year": 2013,
+      "title": "Effect of cognitive-behavioral therapy on neural correlates of fear conditioning in panic disorder.",
+      "doi": "10.1016/j.biopsych.2012.07.026",
+      "pmid": "22921454",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "This activation reduction was correlated with reduction in agoraphobic symptoms from t1 to t2."
+     },
+     {
+      "authors": "Kircher T, Arolt V, Jansen A, Pyka M, Reinhardt I, Kellermann T, Konrad C, et al.",
+      "year": 2013,
+      "title": "Effect of cognitive-behavioral therapy on neural correlates of fear conditioning in panic disorder.",
+      "doi": "10.1016/j.biopsych.2012.07.026",
+      "pmid": "22921454",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Quality-controlled fMRI data from 42 patients and 42 healthy subjects were obtained."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.45
+     },
+     {
+      "t": 0.8,
+      "v": -0.45
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "from": "vlpfc-l",
+    "to": "amygdala",
+    "explanation": "Worked together more closely after CBT than before, compared with people without panic disorder, in one trial.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Kircher T, Arolt V, Jansen A, Pyka M, Reinhardt I, Kellermann T, Konrad C, et al.",
+      "year": 2013,
+      "title": "Effect of cognitive-behavioral therapy on neural correlates of fear conditioning in panic disorder.",
+      "doi": "10.1016/j.biopsych.2012.07.026",
+      "pmid": "22921454",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Patients compared to control subjects also demonstrated increased connectivity between the IFG and regions of the \"fear network\" (amygdalae, insulae, anterior cingulate cortex) across time."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.45
+     },
+     {
+      "t": 0.8,
+      "v": 0.45
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "from": "vlpfc-l",
+    "to": "insula",
+    "explanation": "Worked together more closely after CBT than before, compared with people without panic disorder, in one trial.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Kircher T, Arolt V, Jansen A, Pyka M, Reinhardt I, Kellermann T, Konrad C, et al.",
+      "year": 2013,
+      "title": "Effect of cognitive-behavioral therapy on neural correlates of fear conditioning in panic disorder.",
+      "doi": "10.1016/j.biopsych.2012.07.026",
+      "pmid": "22921454",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Patients compared to control subjects also demonstrated increased connectivity between the IFG and regions of the \"fear network\" (amygdalae, insulae, anterior cingulate cortex) across time."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.4
+     },
+     {
+      "t": 0.8,
+      "v": 0.4
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "from": "vlpfc-l",
+    "to": "dacc",
+    "explanation": "Worked together more closely after CBT than before, compared with people without panic disorder, in one trial. The source says anterior cingulate; it is drawn to the dorsal anterior cingulate, which is an assumption.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Kircher T, Arolt V, Jansen A, Pyka M, Reinhardt I, Kellermann T, Konrad C, et al.",
+      "year": 2013,
+      "title": "Effect of cognitive-behavioral therapy on neural correlates of fear conditioning in panic disorder.",
+      "doi": "10.1016/j.biopsych.2012.07.026",
+      "pmid": "22921454",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Patients compared to control subjects also demonstrated increased connectivity between the IFG and regions of the \"fear network\" (amygdalae, insulae, anterior cingulate cortex) across time."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.4
+     },
+     {
+      "t": 0.8,
+      "v": 0.4
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ]
+ },
+ "typical": null
+}

@@ -1,0 +1,273 @@
+{
+ "id": "help-mindfulness",
+ "title": "Mindfulness training for stress",
+ "description": "Mindfulness training, such as the 8-week Mindfulness-Based Stress Reduction course, teaches people to pay attention to the present moment without judging it, through meditation and gentle movement. Trials compared it with other training of the same length. Afterwards, the amygdala reacted less to emotional pictures and worked more closely with a calming area at the front of the brain. Brightness and lines show the change since before training: violet means less than before, a pulsing line means working together more, a dashed line less.",
+ "caveat": "The findings come from two randomised trials, one of an 8-week course in mostly healthy adults and one of a 3-day intensive course in stressed unemployed adults, and a review of 26 brain-imaging studies. The amygdala reacted less to positive pictures, but not to negative ones, after the 8-week course. The review reports increases in \"activity, connectivity and volume\" in several areas together, without separating them, so those are described, not drawn. These are not studies of an illness, and the first part is drawn at rest. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 32,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before treatment",
+   "timescale": "before treatment",
+   "start": 0,
+   "end": 0.25,
+   "caption": "Before training. The comparison here starts from each person's own level, so the brain is drawn at rest."
+  },
+  {
+   "id": "during",
+   "name": "Mindfulness training",
+   "timescale": "days to weeks",
+   "start": 0.25,
+   "end": 0.4,
+   "caption": "An 8-week course in one trial, a 3-day intensive retreat in the other. People were not scanned during this time.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Kral TRA, Schuyler BS, Mumford JA, Rosenkranz MA, Lutz A, Davidson RJ",
+      "year": 2018,
+      "title": "Impact of short- and long-term mindfulness meditation training on amygdala reactivity to emotional stimuli.",
+      "doi": "10.1016/j.neuroimage.2018.07.013",
+      "pmid": "29990584",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Short-term training consisted of an 8-week Mindfulness-Based Stress Reduction course (N=32, 22 female), which was compared to an active control condition (N=35, 19 female) in a randomized controlled trial."
+     }
+    ]
+   }
+  },
+  {
+   "id": "after",
+   "name": "What changed",
+   "timescale": "after treatment",
+   "start": 0.4,
+   "end": 0.8,
+   "caption": "After training, the amygdala reacts less to emotional pictures and works more closely with the ventromedial prefrontal cortex, which helps regulate emotion. After a 3-day course, the right amygdala works less closely with the subgenual cingulate at rest, a link that is stronger in people under more stress.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Kral TRA, Schuyler BS, Mumford JA, Rosenkranz MA, Lutz A, Davidson RJ",
+      "year": 2018,
+      "title": "Impact of short- and long-term mindfulness meditation training on amygdala reactivity to emotional stimuli.",
+      "doi": "10.1016/j.neuroimage.2018.07.013",
+      "pmid": "29990584",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Short-term training consisted of an 8-week Mindfulness-Based Stress Reduction course (N=32, 22 female), which was compared to an active control condition (N=35, 19 female) in a randomized controlled trial."
+     }
+    ]
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.8,
+   "end": 1,
+   "caption": "After the 8-week course, reactions to negative pictures did not change; the authors suggest that may need more practice. The left amygdala's links did not change after the 3-day course.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "amygdala",
+    "explanation": "Reacted less to positive pictures after an 8-week mindfulness course than after a control course, in one trial; no difference for negative pictures. A review of mindfulness studies also describes decreased amygdala activity.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Kral TRA, Schuyler BS, Mumford JA, Rosenkranz MA, Lutz A, Davidson RJ",
+      "year": 2018,
+      "title": "Impact of short- and long-term mindfulness meditation training on amygdala reactivity to emotional stimuli.",
+      "doi": "10.1016/j.neuroimage.2018.07.013",
+      "pmid": "29990584",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Meditation training was associated with less amygdala reactivity to positive pictures relative to controls, but there were no group differences in response to negative pictures."
+     },
+     {
+      "authors": "Kral TRA, Schuyler BS, Mumford JA, Rosenkranz MA, Lutz A, Davidson RJ",
+      "year": 2018,
+      "title": "Impact of short- and long-term mindfulness meditation training on amygdala reactivity to emotional stimuli.",
+      "doi": "10.1016/j.neuroimage.2018.07.013",
+      "pmid": "29990584",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Short-term training consisted of an 8-week Mindfulness-Based Stress Reduction course (N=32, 22 female), which was compared to an active control condition (N=35, 19 female) in a randomized controlled trial."
+     },
+     {
+      "authors": "Gotink RA, Meijboom R, Vernooij MW, Smits M, Hunink MG",
+      "year": 2016,
+      "title": "8-week Mindfulness Based Stress Reduction induces brain changes similar to traditional long-term meditation practice - A systematic review.",
+      "doi": "10.1016/j.bandc.2016.07.001",
+      "pmid": "27429096",
+      "kind": "review",
+      "access": "abstract-only",
+      "quote": "Additionally, the amygdala showed decreased functional activity, improved functional connectivity with the prefrontal cortex, and earlier deactivation after exposure to emotional stimuli."
+     },
+     {
+      "authors": "Gotink RA, Meijboom R, Vernooij MW, Smits M, Hunink MG",
+      "year": 2016,
+      "title": "8-week Mindfulness Based Stress Reduction induces brain changes similar to traditional long-term meditation practice - A systematic review.",
+      "doi": "10.1016/j.bandc.2016.07.001",
+      "pmid": "27429096",
+      "kind": "review",
+      "access": "abstract-only",
+      "quote": "21 fMRI studies and seven MRI studies were included (two studies performed both)."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.35
+     },
+     {
+      "t": 0.8,
+      "v": -0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "from": "amygdala",
+    "to": "vmpfc",
+    "explanation": "Worked together more closely while viewing emotional pictures after an 8-week mindfulness course than after a control course, in one trial.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Kral TRA, Schuyler BS, Mumford JA, Rosenkranz MA, Lutz A, Davidson RJ",
+      "year": 2018,
+      "title": "Impact of short- and long-term mindfulness meditation training on amygdala reactivity to emotional stimuli.",
+      "doi": "10.1016/j.neuroimage.2018.07.013",
+      "pmid": "29990584",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Short-term training, compared to the control intervention, also led to increased functional connectivity between the amygdala and a region implicated in emotion regulation - ventromedial prefrontal cortex (VMPFC) - during affective pictures."
+     },
+     {
+      "authors": "Gotink RA, Meijboom R, Vernooij MW, Smits M, Hunink MG",
+      "year": 2016,
+      "title": "8-week Mindfulness Based Stress Reduction induces brain changes similar to traditional long-term meditation practice - A systematic review.",
+      "doi": "10.1016/j.bandc.2016.07.001",
+      "pmid": "27429096",
+      "kind": "review",
+      "access": "abstract-only",
+      "quote": "Additionally, the amygdala showed decreased functional activity, improved functional connectivity with the prefrontal cortex, and earlier deactivation after exposure to emotional stimuli."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.45
+     },
+     {
+      "t": 0.8,
+      "v": 0.45
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "from": "amygdala-r",
+    "to": "sgacc",
+    "explanation": "The right amygdala worked together less with the subgenual anterior cingulate at rest after a 3-day intensive mindfulness course than after relaxation training, in one trial of stressed adults. No change was found on the left.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Taren AA, Gianaros PJ, Greco CM, Lindsay EK, Fairgrieve A, Brown KW, Rosen RK, et al.",
+      "year": 2015,
+      "title": "Mindfulness meditation training alters stress-related amygdala resting state functional connectivity: a randomized controlled trial.",
+      "doi": "10.1093/scan/nsv066",
+      "pmid": "26048176",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Consistent with this prediction, a flexible factorial random effects analysis showed that a 3-day intensive mindfulness meditation training program reduced right amygdala-sgACC (MNI: 0, 18, −12) rsFC, compared with relaxation training without a mindfulness component (time × treatment interaction P < 0.05, k = 28, corrected for multiple comparisons) (Table 3, Figure 3)."
+     },
+     {
+      "authors": "Taren AA, Gianaros PJ, Greco CM, Lindsay EK, Fairgrieve A, Brown KW, Rosen RK, et al.",
+      "year": 2015,
+      "title": "Mindfulness meditation training alters stress-related amygdala resting state functional connectivity: a randomized controlled trial.",
+      "doi": "10.1093/scan/nsv066",
+      "pmid": "26048176",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "A parallel flexible factorial random effects analysis also tested for training related changes in left amygdala-ACC rsFC, but there were no significant differential decreases in left amygdala-ACC rsFC pre-post training (no significant time × treatment interaction)."
+     },
+     {
+      "authors": "Taren AA, Gianaros PJ, Greco CM, Lindsay EK, Fairgrieve A, Brown KW, Rosen RK, et al.",
+      "year": 2015,
+      "title": "Mindfulness meditation training alters stress-related amygdala resting state functional connectivity: a randomized controlled trial.",
+      "doi": "10.1093/scan/nsv066",
+      "pmid": "26048176",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "We show in an initial discovery study that higher perceived stress over the past month is associated with greater bilateral amygdala-subgenual anterior cingulate cortex (sgACC) rsFC in a sample of community adults (n = 130)."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.4
+     },
+     {
+      "t": 0.8,
+      "v": -0.4
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ]
+ },
+ "typical": null
+}

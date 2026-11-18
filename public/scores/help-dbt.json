@@ -1,0 +1,280 @@
+{
+ "id": "help-dbt",
+ "title": "Dialectical behaviour therapy (DBT) for borderline",
+ "description": "Dialectical behaviour therapy (DBT) is a therapy designed for borderline personality disorder. Over many months it teaches skills for handling intense emotions, tolerating distress and getting on with other people. After DBT, the amygdala, which flags emotional events, responds less to upsetting pictures, and people report handling their emotions better. In the first part, brightness shows how the brain differed from people without the condition before treatment. In \"What changed\", brightness shows the change since before treatment: warmer means more than before, violet means less than before.",
+ "caveat": "The main finding comes from one study of 11 people with borderline personality disorder and 11 without, before and after 12 months of DBT, and a review of the 9 studies that have looked at the brain after DBT. These are small studies, and the review notes that research on this is still scarce. The review names the anterior cingulate without saying which part; it is drawn on the dorsal part, which is an assumption. How the brain differed from people without the condition before treatment is not drawn, because the sources read report it only as background. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 34,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before treatment",
+   "timescale": "before treatment",
+   "start": 0,
+   "end": 0.25,
+   "caption": "Before therapy. The comparison here starts from each person's own level, so the brain is drawn at rest."
+  },
+  {
+   "id": "during",
+   "name": "A year of DBT",
+   "timescale": "months",
+   "start": 0.25,
+   "end": 0.4,
+   "caption": "Weekly individual therapy and skills groups, usually for about a year. People were not scanned during this time.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Goodman M, Carpenter D, Tang CY, Goldstein KE, Avedon J, Fernandez N, Mascitelli KA, et al.",
+      "year": 2014,
+      "title": "Dialectical behavior therapy alters emotion regulation and amygdala activity in patients with borderline personality disorder.",
+      "doi": "10.1016/j.jpsychires.2014.06.020",
+      "pmid": "25038629",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Event-related fMRI was obtained pre- and post-12-months of standard-DBT in unmedicated BPD patients."
+     }
+    ]
+   }
+  },
+  {
+   "id": "after",
+   "name": "What changed",
+   "timescale": "after treatment",
+   "start": 0.4,
+   "end": 0.8,
+   "caption": "After DBT, the amygdala responds less to emotional pictures than before, most clearly on the left and to pictures seen a second time. A review of studies also describes less activity in the anterior cingulate. People who settled faster to repeated upsetting pictures reported handling their emotions better.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Goodman M, Carpenter D, Tang CY, Goldstein KE, Avedon J, Fernandez N, Mascitelli KA, et al.",
+      "year": 2014,
+      "title": "Dialectical behavior therapy alters emotion regulation and amygdala activity in patients with borderline personality disorder.",
+      "doi": "10.1016/j.jpsychires.2014.06.020",
+      "pmid": "25038629",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Event-related fMRI was obtained pre- and post-12-months of standard-DBT in unmedicated BPD patients."
+     }
+    ]
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.8,
+   "end": 1,
+   "caption": "Only a few small studies have looked at the brain after DBT. The inferior frontal gyrus responded less to arousing pictures but more during tasks that need self-control, so it is not drawn as one change.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "amygdala-l",
+    "explanation": "Less active after 12 months of DBT, compared with the change over the same time in people without the condition, in one study of 11 patients; the reduction was most marked on the left. A review of 9 studies also describes reduced amygdala activity after DBT.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Goodman M, Carpenter D, Tang CY, Goldstein KE, Avedon J, Fernandez N, Mascitelli KA, et al.",
+      "year": 2014,
+      "title": "Dialectical behavior therapy alters emotion regulation and amygdala activity in patients with borderline personality disorder.",
+      "doi": "10.1016/j.jpsychires.2014.06.020",
+      "pmid": "25038629",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "fMRI results showed the predicted Group × Time interaction: compared with HCs, BPD patients exhibited decreased amygdala activation with treatment."
+     },
+     {
+      "authors": "Goodman M, Carpenter D, Tang CY, Goldstein KE, Avedon J, Fernandez N, Mascitelli KA, et al.",
+      "year": 2014,
+      "title": "Dialectical behavior therapy alters emotion regulation and amygdala activity in patients with borderline personality disorder.",
+      "doi": "10.1016/j.jpsychires.2014.06.020",
+      "pmid": "25038629",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "This post-treatment amygdala reduction in BPD was observed for all three pictures types, but particularly marked in the left hemisphere and during repeated-emotional pictures."
+     },
+     {
+      "authors": "Goodman M, Carpenter D, Tang CY, Goldstein KE, Avedon J, Fernandez N, Mascitelli KA, et al.",
+      "year": 2014,
+      "title": "Dialectical behavior therapy alters emotion regulation and amygdala activity in patients with borderline personality disorder.",
+      "doi": "10.1016/j.jpsychires.2014.06.020",
+      "pmid": "25038629",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Improved amygdala habituation to repeated-unpleasant pictures in patients was associated with improved overall emotional regulation measured by the DERS (total score and emotion regulation strategy use subscale)."
+     },
+     {
+      "authors": "Iskric A, Barkley-Levenson E",
+      "year": 2021,
+      "title": "Neural Changes in Borderline Personality Disorder After Dialectical Behavior Therapy-A Review.",
+      "doi": "10.3389/fpsyt.2021.772081",
+      "pmid": "34975574",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "Results indicated that there was significant deactivation of amygdala activity as well as the anterior cingulate cortex in patients with BPD after DBT treatment."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.55
+     },
+     {
+      "t": 0.8,
+      "v": -0.55
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "amygdala-r",
+    "explanation": "Less active after DBT, in one study of 11 patients and in a review of 9 studies; less marked than on the left.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Goodman M, Carpenter D, Tang CY, Goldstein KE, Avedon J, Fernandez N, Mascitelli KA, et al.",
+      "year": 2014,
+      "title": "Dialectical behavior therapy alters emotion regulation and amygdala activity in patients with borderline personality disorder.",
+      "doi": "10.1016/j.jpsychires.2014.06.020",
+      "pmid": "25038629",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "fMRI results showed the predicted Group × Time interaction: compared with HCs, BPD patients exhibited decreased amygdala activation with treatment."
+     },
+     {
+      "authors": "Goodman M, Carpenter D, Tang CY, Goldstein KE, Avedon J, Fernandez N, Mascitelli KA, et al.",
+      "year": 2014,
+      "title": "Dialectical behavior therapy alters emotion regulation and amygdala activity in patients with borderline personality disorder.",
+      "doi": "10.1016/j.jpsychires.2014.06.020",
+      "pmid": "25038629",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "This post-treatment amygdala reduction in BPD was observed for all three pictures types, but particularly marked in the left hemisphere and during repeated-emotional pictures."
+     },
+     {
+      "authors": "Iskric A, Barkley-Levenson E",
+      "year": 2021,
+      "title": "Neural Changes in Borderline Personality Disorder After Dialectical Behavior Therapy-A Review.",
+      "doi": "10.3389/fpsyt.2021.772081",
+      "pmid": "34975574",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "Results indicated that there was significant deactivation of amygdala activity as well as the anterior cingulate cortex in patients with BPD after DBT treatment."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.35
+     },
+     {
+      "t": 0.8,
+      "v": -0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "dacc",
+    "explanation": "A review of 9 studies describes less anterior cingulate activity after DBT. The review does not say which part; it is drawn on the dorsal anterior cingulate, which is an assumption. One study found that a link between the left amygdala and the dorsal anterior cingulate during pain became weaker after DBT.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Iskric A, Barkley-Levenson E",
+      "year": 2021,
+      "title": "Neural Changes in Borderline Personality Disorder After Dialectical Behavior Therapy-A Review.",
+      "doi": "10.3389/fpsyt.2021.772081",
+      "pmid": "34975574",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "Results indicated that there was significant deactivation of amygdala activity as well as the anterior cingulate cortex in patients with BPD after DBT treatment."
+     },
+     {
+      "authors": "Iskric A, Barkley-Levenson E",
+      "year": 2021,
+      "title": "Neural Changes in Borderline Personality Disorder After Dialectical Behavior Therapy-A Review.",
+      "doi": "10.3389/fpsyt.2021.772081",
+      "pmid": "34975574",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "Nine studies were identified that examined neurobiological changes in BPD after the completion of DBT."
+     },
+     {
+      "authors": "Niedtfeld I, Schmitt R, Winter D, Bohus M, Schmahl C, Herpertz SC",
+      "year": 2017,
+      "title": "Pain-mediated affect regulation is reduced after dialectical behavior therapy in borderline personality disorder: a longitudinal fMRI study.",
+      "doi": "10.1093/scan/nsw183",
+      "pmid": "28119507",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "At first measurement, patients with BPD showed amygdala deactivation in response to painful stimulation, as well as altered connectivity between left amygdala and dorsal anterior cingulate cortex. These effects were reduced after DBT, as compared with patients with treatment as usual."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.35
+     },
+     {
+      "t": 0.8,
+      "v": -0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

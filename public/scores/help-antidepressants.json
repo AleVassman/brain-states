@@ -1,0 +1,842 @@
+{
+ "id": "help-antidepressants",
+ "title": "Antidepressants for depression",
+ "description": "Antidepressant medication is one of the main treatments for depression and is usually taken for weeks before it helps. Studies scanned people with depression while they looked at emotional faces or pictures, before and after treatment. After treatment, emotional areas such as the amygdala responded less, and areas at the front of the brain that help control attention responded more. In the first part, brightness shows how the brain differed from people without the condition before treatment. In \"What changed\", brightness shows the change since before treatment: warmer means more than before, violet means less than before.",
+ "caveat": "The \"before\" difference comes from one study of 11 people with depression and 11 without. The changes come from a pooled analysis of 9 studies of emotional tasks. A larger and newer pooled analysis of 36 studies, which only counted findings from searches of the whole brain, found no area that changed consistently except the left dorsolateral prefrontal cortex, so most of the changes drawn here are still debated. Different medicines and tasks were pooled together. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 34,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before treatment",
+   "timescale": "before treatment",
+   "start": 0,
+   "end": 0.25,
+   "caption": "Before treatment, the left amygdala responded more than in people without depression, even to faces shown too briefly to be seen consciously."
+  },
+  {
+   "id": "during",
+   "name": "Taking the medication",
+   "timescale": "weeks",
+   "start": 0.25,
+   "end": 0.4,
+   "caption": "Weeks of daily medication. The studies did not scan people during this time, so the brain is drawn at rest.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Sheline YI, Barch DM, Donnelly JM, Ollinger JM, Snyder AZ, Mintun MA",
+      "year": 2001,
+      "title": "Increased amygdala response to masked emotional faces in depressed subjects resolves with antidepressant treatment: an fMRI study.",
+      "doi": "10.1016/s0006-3223(01)01263-x",
+      "pmid": "11704071",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "We applied the masked faces paradigm to patients with major depression (n = 11) and matched control subjects (n = 11) during fMRI to compare amygdala activation in response to masked emotional faces before and after antidepressant treatment."
+     }
+    ]
+   }
+  },
+  {
+   "id": "after",
+   "name": "What changed",
+   "timescale": "after treatment",
+   "start": 0.4,
+   "end": 0.8,
+   "caption": "Compared with before treatment, the amygdala, hippocampus and nearby areas, the insula and the orbitofrontal cortex respond less to emotional pictures, and the outer front of the brain responds more. Only the increase in the left dorsolateral prefrontal cortex was found again in the larger, newer analysis.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Sheline YI, Barch DM, Donnelly JM, Ollinger JM, Snyder AZ, Mintun MA",
+      "year": 2001,
+      "title": "Increased amygdala response to masked emotional faces in depressed subjects resolves with antidepressant treatment: an fMRI study.",
+      "doi": "10.1016/s0006-3223(01)01263-x",
+      "pmid": "11704071",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "We applied the masked faces paradigm to patients with major depression (n = 11) and matched control subjects (n = 11) during fMRI to compare amygdala activation in response to masked emotional faces before and after antidepressant treatment."
+     }
+    ]
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.8,
+   "end": 1,
+   "caption": "In the larger analysis, most areas did not change in the same way across studies. Medicines, tasks and people differed, and the studies do not show that these brain changes are what makes people feel better.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "amygdala-l",
+    "explanation": "Before treatment, the left amygdala responded more than in people without depression, in one study of 11 people. After treatment it responded less, on both sides, in that study and in a pooled analysis of 9 studies. A newer pooled analysis of 36 studies did not find a consistent change here.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Sheline YI, Barch DM, Donnelly JM, Ollinger JM, Snyder AZ, Mintun MA",
+      "year": 2001,
+      "title": "Increased amygdala response to masked emotional faces in depressed subjects resolves with antidepressant treatment: an fMRI study.",
+      "doi": "10.1016/s0006-3223(01)01263-x",
+      "pmid": "11704071",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Depressed patients had exaggerated left amygdala activation to all faces, greater for fearful faces."
+     },
+     {
+      "authors": "Sheline YI, Barch DM, Donnelly JM, Ollinger JM, Snyder AZ, Mintun MA",
+      "year": 2001,
+      "title": "Increased amygdala response to masked emotional faces in depressed subjects resolves with antidepressant treatment: an fMRI study.",
+      "doi": "10.1016/s0006-3223(01)01263-x",
+      "pmid": "11704071",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Following treatment, patients had bilateral reduced amygdala activation to masked fearful faces and bilateral reduced amygdala activation to all faces."
+     },
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.05,
+      "v": 0.45
+     },
+     {
+      "t": 0.22,
+      "v": 0.45
+     },
+     {
+      "t": 0.26,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.45
+     },
+     {
+      "t": 0.8,
+      "v": -0.45
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "amygdala-r",
+    "explanation": "Did not differ from people without depression before treatment, in one study, but responded less after treatment, in that study and in a pooled analysis of 9 studies. A newer pooled analysis of 36 studies did not find a consistent change here.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Sheline YI, Barch DM, Donnelly JM, Ollinger JM, Snyder AZ, Mintun MA",
+      "year": 2001,
+      "title": "Increased amygdala response to masked emotional faces in depressed subjects resolves with antidepressant treatment: an fMRI study.",
+      "doi": "10.1016/s0006-3223(01)01263-x",
+      "pmid": "11704071",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Depressed patients had exaggerated left amygdala activation to all faces, greater for fearful faces."
+     },
+     {
+      "authors": "Sheline YI, Barch DM, Donnelly JM, Ollinger JM, Snyder AZ, Mintun MA",
+      "year": 2001,
+      "title": "Increased amygdala response to masked emotional faces in depressed subjects resolves with antidepressant treatment: an fMRI study.",
+      "doi": "10.1016/s0006-3223(01)01263-x",
+      "pmid": "11704071",
+      "kind": "study",
+      "access": "abstract-only",
+      "quote": "Following treatment, patients had bilateral reduced amygdala activation to masked fearful faces and bilateral reduced amygdala activation to all faces."
+     },
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.45
+     },
+     {
+      "t": 0.8,
+      "v": -0.45
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "dlpfc-l",
+    "explanation": "More active after treatment. This is the one change found in both a pooled analysis of 9 studies and a newer pooled analysis of 36 studies, where it was on the left. It is linked with working memory and attention.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Subgroup analysis in the Treated > Untreated contrast revealed a convergent cluster in the left dorsolateral prefrontal cortex, which was associated with working memory and attention behavioral domains."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.5
+     },
+     {
+      "t": 0.8,
+      "v": 0.5
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "dlpfc-r",
+    "explanation": "More active after treatment in a pooled analysis of 9 studies. The newer pooled analysis found this only on the left.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Subgroup analysis in the Treated > Untreated contrast revealed a convergent cluster in the left dorsolateral prefrontal cortex, which was associated with working memory and attention behavioral domains."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.35
+     },
+     {
+      "t": 0.8,
+      "v": 0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "mpfc",
+    "explanation": "The dorsomedial prefrontal cortex was more active after treatment, in a pooled analysis of 9 studies. Not found in the newer pooled analysis.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.35
+     },
+     {
+      "t": 0.8,
+      "v": 0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "vlpfc",
+    "explanation": "More active after treatment, in a pooled analysis of 9 studies. Not found in the newer pooled analysis.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.35
+     },
+     {
+      "t": 0.8,
+      "v": 0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "hippocampus",
+    "explanation": "Less active after treatment, in a pooled analysis of 9 studies. Not found in the newer pooled analysis.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.35
+     },
+     {
+      "t": 0.8,
+      "v": -0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "parahippocampal",
+    "explanation": "Less active after treatment, in a pooled analysis of 9 studies. Not found in the newer pooled analysis.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.35
+     },
+     {
+      "t": 0.8,
+      "v": -0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "pgacc",
+    "explanation": "The ventral anterior cingulate was less active after treatment, in a pooled analysis of 9 studies; it is drawn on the pregenual anterior cingulate. Not found in the newer pooled analysis.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
+     },
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Additionally, there was a decreased activation in the anterior (BA 32) and posterior cingulate cortices, as well as in the precuneus and inferior parietal lobule, which could reflect a restored deactivation of the default mode network."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.35
+     },
+     {
+      "t": 0.8,
+      "v": -0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "ofc",
+    "explanation": "Less active after treatment, in a pooled analysis of 9 studies. Not found in the newer pooled analysis.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.35
+     },
+     {
+      "t": 0.8,
+      "v": -0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "insula",
+    "explanation": "Less active after treatment, in a pooled analysis of 9 studies. Not found in the newer pooled analysis.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.35
+     },
+     {
+      "t": 0.8,
+      "v": -0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "pcc-precuneus",
+    "explanation": "Less active after treatment during emotional tasks, in a pooled analysis of 9 studies. The authors suggest this could reflect the default mode network switching off again during a task, as it normally does. Not found in the newer pooled analysis.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Additionally, there was a decreased activation in the anterior (BA 32) and posterior cingulate cortices, as well as in the precuneus and inferior parietal lobule, which could reflect a restored deactivation of the default mode network."
+     },
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "A quantitative Activation Likelihood Estimation (ALE) meta-analysis was performed across 9 emotional activation fMRI and PET studies (126 patients) using the Activation Likelihood Estimation technique."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.3
+     },
+     {
+      "t": 0.8,
+      "v": -0.3
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "inferior-parietal",
+    "explanation": "Less active after treatment during emotional tasks, in a pooled analysis of 9 studies. Not found in the newer pooled analysis.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
+      "year": 2011,
+      "title": "Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies.",
+      "doi": "10.1016/j.jad.2010.09.032",
+      "pmid": "21030092",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Additionally, there was a decreased activation in the anterior (BA 32) and posterior cingulate cortices, as well as in the precuneus and inferior parietal lobule, which could reflect a restored deactivation of the default mode network."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": -0.3
+     },
+     {
+      "t": 0.8,
+      "v": -0.3
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

@@ -1,0 +1,619 @@
+{
+ "id": "help-cbt-anxiety",
+ "title": "Talking therapy (CBT) for anxiety",
+ "description": "Cognitive behavioural therapy (CBT) is the most studied talking therapy for anxiety disorders. It helps people test anxious predictions and face what they fear step by step. The episode shows three views of the change: pooled across anxiety disorders, while facing a social threat, and while deliberately rethinking a negative thought. In the first part, brightness shows how the brain differed from people without anxiety before treatment. After that, brightness shows the change since before treatment: warmer means more than before, violet means less than before.",
+ "caveat": "The pooled findings come from an analysis of 22 studies of CBT for depression and anxiety disorders; the anxiety studies cover several different disorders. The two other parts come from single studies of social anxiety disorder, one of 14 people and one of 75, using different tasks, which is why the medial prefrontal cortex goes down in one and up in the other. The pooled analysis names the superior frontal gyrus, which is not drawn as its own area. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 40,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before treatment",
+   "timescale": "before treatment",
+   "start": 0,
+   "end": 0.2,
+   "caption": "Before treatment, people with social anxiety showed more activity than people without it in the medial prefrontal cortex and insula when looking at threatening faces."
+  },
+  {
+   "id": "during",
+   "name": "A course of CBT",
+   "timescale": "weeks",
+   "start": 0.2,
+   "end": 0.3,
+   "caption": "Twelve to sixteen weekly sessions. People were not scanned during this time.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Klumpp H, Fitzgerald DA, Phan KL",
+      "year": 2013,
+      "title": "Neural predictors and mechanisms of cognitive behavioral therapy on threat processing in social anxiety disorder.",
+      "doi": "10.1016/j.pnpbp.2013.05.004",
+      "pmid": "23665375",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Functional magnetic resonance imaging (fMRI) was conducted during responses to social signals of threat (fearful/angry faces) against positive signals (happy faces) in 14 patients with SAD before and after 12 weeks of CBT."
+     }
+    ]
+   }
+  },
+  {
+   "id": "pooled",
+   "name": "Across anxiety disorders",
+   "timescale": "after treatment",
+   "start": 0.3,
+   "end": 0.5,
+   "caption": "Pooled across studies, after CBT the caudate and part of the putamen were less active, and areas including the right dorsal anterior cingulate, the right orbitofrontal cortex and the right parahippocampal gyrus were more active during tasks.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Klumpp H, Fitzgerald DA, Phan KL",
+      "year": 2013,
+      "title": "Neural predictors and mechanisms of cognitive behavioral therapy on threat processing in social anxiety disorder.",
+      "doi": "10.1016/j.pnpbp.2013.05.004",
+      "pmid": "23665375",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Functional magnetic resonance imaging (fMRI) was conducted during responses to social signals of threat (fearful/angry faces) against positive signals (happy faces) in 14 patients with SAD before and after 12 weeks of CBT."
+     }
+    ]
+   }
+  },
+  {
+   "id": "threat",
+   "name": "Facing a social threat",
+   "timescale": "after treatment",
+   "start": 0.5,
+   "end": 0.67,
+   "caption": "In one study of social anxiety, the extra activity to threatening faces in the medial prefrontal cortex and insula was reduced after CBT, as was activity in visual areas.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Klumpp H, Fitzgerald DA, Phan KL",
+      "year": 2013,
+      "title": "Neural predictors and mechanisms of cognitive behavioral therapy on threat processing in social anxiety disorder.",
+      "doi": "10.1016/j.pnpbp.2013.05.004",
+      "pmid": "23665375",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Functional magnetic resonance imaging (fMRI) was conducted during responses to social signals of threat (fearful/angry faces) against positive signals (happy faces) in 14 patients with SAD before and after 12 weeks of CBT."
+     }
+    ]
+   }
+  },
+  {
+   "id": "rethink",
+   "name": "Rethinking a negative thought",
+   "timescale": "after treatment",
+   "start": 0.67,
+   "end": 0.84,
+   "caption": "In another study, while deliberately rethinking a negative belief about themselves, people who had CBT used the dorsolateral and dorsomedial prefrontal cortex more than people still waiting for therapy, and felt less negative.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This is a separate study with a different task, compared with people on a waiting list. It is placed after the other findings only to show them one at a time."
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.84,
+   "end": 1,
+   "caption": "The direction of change depends on the task: the medial prefrontal cortex went down while facing threat but up while rethinking. Some of the people in these studies did not improve.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "mpfc",
+    "explanation": "More active than in people without social anxiety while viewing threatening faces before treatment, and less active after CBT, in one study of 14 people. In another study of 75 people, it was more active after CBT while reacting to and rethinking negative beliefs about themselves. The direction depends on the task.",
+    "confidence": "debated",
+    "citations": [
+     {
+      "authors": "Klumpp H, Fitzgerald DA, Phan KL",
+      "year": 2013,
+      "title": "Neural predictors and mechanisms of cognitive behavioral therapy on threat processing in social anxiety disorder.",
+      "doi": "10.1016/j.pnpbp.2013.05.004",
+      "pmid": "23665375",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "The interaction was driven by relatively greater activity during threat processing in SAD, which significantly reduced after CBT but did not significantly predict response to CBT."
+     },
+     {
+      "authors": "Klumpp H, Fitzgerald DA, Phan KL",
+      "year": 2013,
+      "title": "Neural predictors and mechanisms of cognitive behavioral therapy on threat processing in social anxiety disorder.",
+      "doi": "10.1016/j.pnpbp.2013.05.004",
+      "pmid": "23665375",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Moreover, a group by time interaction was revealed in prefrontal regions (dorsomedial, medial gyrus) and insula."
+     },
+     {
+      "authors": "Goldin PR, Ziv M, Jazaieri H, Hahn K, Heimberg R, Gross JJ",
+      "year": 2013,
+      "title": "Impact of cognitive behavioral therapy for social anxiety disorder on the neural dynamics of cognitive reappraisal of negative self-beliefs: randomized clinical trial.",
+      "doi": "10.1001/jamapsychiatry.2013.234",
+      "pmid": "23945981",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "During reactivity trials, compared to waitlist, Cognitive-Behavioral Therapy produced (a) greater reduction in negative emotion ratings and (b) greater blood oxygen-level dependent signal magnitude in medial prefrontal cortex."
+     },
+     {
+      "authors": "Goldin PR, Ziv M, Jazaieri H, Hahn K, Heimberg R, Gross JJ",
+      "year": 2013,
+      "title": "Impact of cognitive behavioral therapy for social anxiety disorder on the neural dynamics of cognitive reappraisal of negative self-beliefs: randomized clinical trial.",
+      "doi": "10.1001/jamapsychiatry.2013.234",
+      "pmid": "23945981",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "During cognitive reappraisal trials, compared to waitlist, Cognitive-Behavioral Therapy produced (c) greater reduction in negative emotion ratings, (d) greater blood oxygen-level dependent signal magnitude in dorsolateral and dorsomedial prefrontal cortex"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.04,
+      "v": 0.4
+     },
+     {
+      "t": 0.18,
+      "v": 0.4
+     },
+     {
+      "t": 0.21,
+      "v": 0
+     },
+     {
+      "t": 0.5,
+      "v": 0
+     },
+     {
+      "t": 0.54,
+      "v": -0.4
+     },
+     {
+      "t": 0.65,
+      "v": -0.4
+     },
+     {
+      "t": 0.69,
+      "v": 0
+     },
+     {
+      "t": 0.71,
+      "v": 0.4
+     },
+     {
+      "t": 0.82,
+      "v": 0.4
+     },
+     {
+      "t": 0.86,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "insula",
+    "explanation": "More active than in people without social anxiety while viewing threatening faces before treatment, and less active after CBT, in one study of 14 people.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Klumpp H, Fitzgerald DA, Phan KL",
+      "year": 2013,
+      "title": "Neural predictors and mechanisms of cognitive behavioral therapy on threat processing in social anxiety disorder.",
+      "doi": "10.1016/j.pnpbp.2013.05.004",
+      "pmid": "23665375",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "The interaction was driven by relatively greater activity during threat processing in SAD, which significantly reduced after CBT but did not significantly predict response to CBT."
+     },
+     {
+      "authors": "Klumpp H, Fitzgerald DA, Phan KL",
+      "year": 2013,
+      "title": "Neural predictors and mechanisms of cognitive behavioral therapy on threat processing in social anxiety disorder.",
+      "doi": "10.1016/j.pnpbp.2013.05.004",
+      "pmid": "23665375",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Moreover, a group by time interaction was revealed in prefrontal regions (dorsomedial, medial gyrus) and insula."
+     },
+     {
+      "authors": "Klumpp H, Fitzgerald DA, Phan KL",
+      "year": 2013,
+      "title": "Neural predictors and mechanisms of cognitive behavioral therapy on threat processing in social anxiety disorder.",
+      "doi": "10.1016/j.pnpbp.2013.05.004",
+      "pmid": "23665375",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Collectively, CBT-related brain changes involved a reduction in activity in insula, prefrontal, and extrastriate regions."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.04,
+      "v": 0.4
+     },
+     {
+      "t": 0.18,
+      "v": 0.4
+     },
+     {
+      "t": 0.21,
+      "v": 0
+     },
+     {
+      "t": 0.5,
+      "v": 0
+     },
+     {
+      "t": 0.54,
+      "v": -0.4
+     },
+     {
+      "t": 0.65,
+      "v": -0.4
+     },
+     {
+      "t": 0.69,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "visual-cortex",
+    "explanation": "Extrastriate visual areas were less active while viewing threatening faces after CBT, in one study of social anxiety.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Klumpp H, Fitzgerald DA, Phan KL",
+      "year": 2013,
+      "title": "Neural predictors and mechanisms of cognitive behavioral therapy on threat processing in social anxiety disorder.",
+      "doi": "10.1016/j.pnpbp.2013.05.004",
+      "pmid": "23665375",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Collectively, CBT-related brain changes involved a reduction in activity in insula, prefrontal, and extrastriate regions."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.5,
+      "v": 0
+     },
+     {
+      "t": 0.54,
+      "v": -0.3
+     },
+     {
+      "t": 0.65,
+      "v": -0.3
+     },
+     {
+      "t": 0.6900000000000001,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "dlpfc",
+    "explanation": "More active while rethinking a negative belief about oneself after CBT, compared with people still waiting for therapy, in one study of 75 people with social anxiety.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Goldin PR, Ziv M, Jazaieri H, Hahn K, Heimberg R, Gross JJ",
+      "year": 2013,
+      "title": "Impact of cognitive behavioral therapy for social anxiety disorder on the neural dynamics of cognitive reappraisal of negative self-beliefs: randomized clinical trial.",
+      "doi": "10.1001/jamapsychiatry.2013.234",
+      "pmid": "23945981",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "During cognitive reappraisal trials, compared to waitlist, Cognitive-Behavioral Therapy produced (c) greater reduction in negative emotion ratings, (d) greater blood oxygen-level dependent signal magnitude in dorsolateral and dorsomedial prefrontal cortex"
+     },
+     {
+      "authors": "Goldin PR, Ziv M, Jazaieri H, Hahn K, Heimberg R, Gross JJ",
+      "year": 2013,
+      "title": "Impact of cognitive behavioral therapy for social anxiety disorder on the neural dynamics of cognitive reappraisal of negative self-beliefs: randomized clinical trial.",
+      "doi": "10.1001/jamapsychiatry.2013.234",
+      "pmid": "23945981",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Seventy-five patients with generalized social anxiety disorder randomly assigned to Cognitive-Behavioral Therapy or waitlist."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.67,
+      "v": 0
+     },
+     {
+      "t": 0.7100000000000001,
+      "v": 0.45
+     },
+     {
+      "t": 0.82,
+      "v": 0.45
+     },
+     {
+      "t": 0.86,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "caudate",
+    "explanation": "Less active after CBT for anxiety disorders, at rest and (on the right) during tasks, in a pooled analysis.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
+      "year": 2025,
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "whereas patients with anxiety disorders had increased activation of the right and left superior frontal gyrus (SFG) and decreased activation of the caudate after treatment"
+     },
+     {
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
+      "year": 2025,
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "In the task state, increased activation of the right PG, right orbital frontal lobe, and right dorsal anterior cingulate cortex (dACC) was mainly observed after treatment in patients with anxiety disorders, and the left lentiform nucleus (LN), left dorsal entorhinal cortex, and right caudate activation were decreased."
+     },
+     {
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
+      "year": 2025,
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "A total of 22 articles, encompassing 443 patients, were included in the meta-analysis."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.3,
+      "v": 0
+     },
+     {
+      "t": 0.33999999999999997,
+      "v": -0.4
+     },
+     {
+      "t": 0.48,
+      "v": -0.4
+     },
+     {
+      "t": 0.52,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "putamen-l",
+    "explanation": "The left lentiform nucleus, which includes the putamen, was less active during tasks after CBT for anxiety disorders, in a pooled analysis.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
+      "year": 2025,
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "In the task state, increased activation of the right PG, right orbital frontal lobe, and right dorsal anterior cingulate cortex (dACC) was mainly observed after treatment in patients with anxiety disorders, and the left lentiform nucleus (LN), left dorsal entorhinal cortex, and right caudate activation were decreased."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.3,
+      "v": 0
+     },
+     {
+      "t": 0.33999999999999997,
+      "v": -0.3
+     },
+     {
+      "t": 0.48,
+      "v": -0.3
+     },
+     {
+      "t": 0.52,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "dacc-r",
+    "explanation": "More active during tasks after CBT for anxiety disorders, in a pooled analysis.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
+      "year": 2025,
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "In the task state, increased activation of the right PG, right orbital frontal lobe, and right dorsal anterior cingulate cortex (dACC) was mainly observed after treatment in patients with anxiety disorders, and the left lentiform nucleus (LN), left dorsal entorhinal cortex, and right caudate activation were decreased."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.3,
+      "v": 0
+     },
+     {
+      "t": 0.33999999999999997,
+      "v": 0.35
+     },
+     {
+      "t": 0.48,
+      "v": 0.35
+     },
+     {
+      "t": 0.52,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "ofc-r",
+    "explanation": "More active during tasks after CBT for anxiety disorders, in a pooled analysis.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
+      "year": 2025,
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "In the task state, increased activation of the right PG, right orbital frontal lobe, and right dorsal anterior cingulate cortex (dACC) was mainly observed after treatment in patients with anxiety disorders, and the left lentiform nucleus (LN), left dorsal entorhinal cortex, and right caudate activation were decreased."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.3,
+      "v": 0
+     },
+     {
+      "t": 0.33999999999999997,
+      "v": 0.35
+     },
+     {
+      "t": 0.48,
+      "v": 0.35
+     },
+     {
+      "t": 0.52,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "parahippocampal-r",
+    "explanation": "More active during tasks after CBT for anxiety disorders, in a pooled analysis.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
+      "year": 2025,
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "In the task state, increased activation of the right PG, right orbital frontal lobe, and right dorsal anterior cingulate cortex (dACC) was mainly observed after treatment in patients with anxiety disorders, and the left lentiform nucleus (LN), left dorsal entorhinal cortex, and right caudate activation were decreased."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.3,
+      "v": 0
+     },
+     {
+      "t": 0.33999999999999997,
+      "v": 0.3
+     },
+     {
+      "t": 0.48,
+      "v": 0.3
+     },
+     {
+      "t": 0.52,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

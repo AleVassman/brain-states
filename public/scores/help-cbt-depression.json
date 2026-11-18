@@ -1,0 +1,263 @@
+{
+ "id": "help-cbt-depression",
+ "title": "Talking therapy (CBT) for depression",
+ "description": "Cognitive behavioural therapy (CBT) is a talking therapy that helps people notice and change patterns of thinking and behaviour that keep depression going. Studies scanned people with depression before and after a course of CBT. At rest, the front of the cingulate cortex, which helps regulate emotion, was more active after therapy. In the first part, brightness shows how the brain differed from people without the condition before treatment. In \"What changed\", brightness shows the change since before treatment: warmer means more than before, violet means less than before.",
+ "caveat": "The resting-state changes come from a pooled analysis of 22 studies of CBT for depression and anxiety; for depression during tasks, it found no consistent pattern. A review of 14 task studies describes calmer emotional areas after CBT, but with mixed results across studies, so those are described, not drawn. The sources read do not report how the brain differed before treatment, so the first part is drawn at rest. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 34,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before treatment",
+   "timescale": "before treatment",
+   "start": 0,
+   "end": 0.25,
+   "caption": "Before therapy. The sources read do not describe how these brains differed from people without depression, so the brain is drawn at rest and the comparison starts from each person's own level."
+  },
+  {
+   "id": "during",
+   "name": "A course of therapy",
+   "timescale": "weeks to months",
+   "start": 0.25,
+   "end": 0.4,
+   "caption": "Weekly sessions over several weeks or months. People were not scanned during this time, so the brain is drawn at rest.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "König P, Zwiky E, Küttner A, Uhlig M, Redlich R",
+      "year": 2025,
+      "title": "Brain functional effects of cognitive behavioral therapy for depression: A systematic review of task-based fMRI studies.",
+      "doi": "10.1016/j.jad.2024.09.084",
+      "pmid": "39299583",
+      "kind": "review",
+      "access": "abstract-only",
+      "quote": "Out of 2149 results of the literature search, N = 14 studies met the inclusion criteria (e.g., diagnosis of a current depressive disorder, assessment of longitudinal task-based fMRI, and the analysis of functional changes before and after CBT)."
+     }
+    ]
+   }
+  },
+  {
+   "id": "after",
+   "name": "What changed",
+   "timescale": "after treatment",
+   "start": 0.4,
+   "end": 0.8,
+   "caption": "At rest, the ventral anterior cingulate on both sides was more active than before therapy, along with the left parahippocampal gyrus, the left inferior temporal gyrus and part of the right visual cortex. During tasks, a review describes calmer emotional areas, but results differ between studies.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "König P, Zwiky E, Küttner A, Uhlig M, Redlich R",
+      "year": 2025,
+      "title": "Brain functional effects of cognitive behavioral therapy for depression: A systematic review of task-based fMRI studies.",
+      "doi": "10.1016/j.jad.2024.09.084",
+      "pmid": "39299583",
+      "kind": "review",
+      "access": "abstract-only",
+      "quote": "Out of 2149 results of the literature search, N = 14 studies met the inclusion criteria (e.g., diagnosis of a current depressive disorder, assessment of longitudinal task-based fMRI, and the analysis of functional changes before and after CBT)."
+     }
+    ]
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.8,
+   "end": 1,
+   "caption": "During tasks, the pooled analysis found no consistent pattern of change in depression. Studies used different tasks and different forms of CBT.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "pgacc",
+    "explanation": "The ventral anterior cingulate, on both sides, was more active at rest after CBT for depression, in a pooled analysis. It is drawn on the pregenual anterior cingulate. The authors see it as shared by CBT for depression and for anxiety, and linked to emotion regulation.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
+      "year": 2025,
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Our results show that in the resting state, patients with depression treated with CBT resulted in increased activation of the right and left ventral anterior cingulate cortex (vACC), left parahippocampal gyrus (PG), right subgyral, left inferior temporal gyrus (ITG), and right inferior occipital gyrus (IOG)"
+     },
+     {
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
+      "year": 2025,
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "A total of 22 articles, encompassing 443 patients, were included in the meta-analysis."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.5
+     },
+     {
+      "t": 0.8,
+      "v": 0.5
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "parahippocampal-l",
+    "explanation": "More active at rest after CBT for depression, in a pooled analysis.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
+      "year": 2025,
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Our results show that in the resting state, patients with depression treated with CBT resulted in increased activation of the right and left ventral anterior cingulate cortex (vACC), left parahippocampal gyrus (PG), right subgyral, left inferior temporal gyrus (ITG), and right inferior occipital gyrus (IOG)"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.4
+     },
+     {
+      "t": 0.8,
+      "v": 0.4
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "lateral-temporal-l",
+    "explanation": "The left inferior temporal gyrus was more active at rest after CBT for depression, in a pooled analysis. It lies at the lower edge of the lateral temporal cortex, which is drawn.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
+      "year": 2025,
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Our results show that in the resting state, patients with depression treated with CBT resulted in increased activation of the right and left ventral anterior cingulate cortex (vACC), left parahippocampal gyrus (PG), right subgyral, left inferior temporal gyrus (ITG), and right inferior occipital gyrus (IOG)"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.35
+     },
+     {
+      "t": 0.8,
+      "v": 0.35
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "visual-cortex-r",
+    "explanation": "The right inferior occipital gyrus was more active at rest after CBT for depression, in a pooled analysis. It is part of the visual cortex, which is drawn.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
+      "year": 2025,
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "Our results show that in the resting state, patients with depression treated with CBT resulted in increased activation of the right and left ventral anterior cingulate cortex (vACC), left parahippocampal gyrus (PG), right subgyral, left inferior temporal gyrus (ITG), and right inferior occipital gyrus (IOG)"
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.3
+     },
+     {
+      "t": 0.8,
+      "v": 0.3
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}

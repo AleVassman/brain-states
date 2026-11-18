@@ -1,0 +1,259 @@
+{
+ "id": "help-ect",
+ "title": "Electroconvulsive therapy (ECT) for severe depression",
+ "description": "Electroconvulsive therapy (ECT) is given under general anaesthesia, usually two or three times a week, and is used mainly for severe depression that has not improved with other treatments. Scans before and after a course of ECT show the hippocampus and amygdala growing slightly in volume. In this episode brightness stands for tissue volume, not activity. In the first part it shows how volume differed from people without depression before treatment; in \"What changed\" it shows the change since before treatment.",
+ "caveat": "The volume increase comes from a combined analysis of 281 patients at 10 sites and from a study of 43 patients. The increase is small, a few percent, and grows with the number of sessions. The larger analysis found that a bigger increase did not go with a better outcome, so the growth does not explain why ECT works. Only the hippocampus and amygdala were measured in these studies. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "durationSeconds": 32,
+ "phases": [
+  {
+   "id": "before",
+   "name": "Before treatment",
+   "timescale": "before treatment",
+   "start": 0,
+   "end": 0.25,
+   "caption": "Before treatment, the hippocampus was slightly smaller than in people without depression, in one study."
+  },
+  {
+   "id": "during",
+   "name": "A course of ECT",
+   "timescale": "weeks",
+   "start": 0.25,
+   "end": 0.4,
+   "caption": "A series of treatments over a few weeks, under general anaesthesia. The brain is drawn at rest here.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Joshi SH, Espinoza RT, Pirnia T, Shi J, Wang Y, Ayers B, Leaver A, et al.",
+      "year": 2016,
+      "title": "Structural Plasticity of the Hippocampus and Amygdala Induced by Electroconvulsive Therapy in Major Depression.",
+      "doi": "10.1016/j.biopsych.2015.02.029",
+      "pmid": "25842202",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Longitudinal changes in hippocampal and amygdala structure were examined in patients with major depression (N= 43, scanned thrice; prior to ECT, after the 2 ECT session, and within one week of completing the ECT treatment series) referred for ECT as part of their standard clinical care"
+     },
+     {
+      "authors": "Oltedal L, Narr KL, Abbott C, Anand A, Argyelan M, Bartsch H, Dannlowski U, et al.",
+      "year": 2018,
+      "title": "Volume of the Human Hippocampus and Clinical Response Following Electroconvulsive Therapy.",
+      "doi": "10.1016/j.biopsych.2018.05.017",
+      "pmid": "30006199",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Hippocampal volumes were extracted from structural MR images, acquired before and after patients (N=281) experiencing a major depressive episode completed an ECT treatment series using right unilateral (RUL) and bilateral (BL) stimulation."
+     }
+    ]
+   }
+  },
+  {
+   "id": "after",
+   "name": "What changed",
+   "timescale": "after treatment",
+   "start": 0.4,
+   "end": 0.8,
+   "caption": "After the course, the hippocampus and the amygdala are slightly larger than before, by a few percent. Volume rose with each session.",
+   "order": {
+    "kind": "timed",
+    "citations": [
+     {
+      "authors": "Joshi SH, Espinoza RT, Pirnia T, Shi J, Wang Y, Ayers B, Leaver A, et al.",
+      "year": 2016,
+      "title": "Structural Plasticity of the Hippocampus and Amygdala Induced by Electroconvulsive Therapy in Major Depression.",
+      "doi": "10.1016/j.biopsych.2015.02.029",
+      "pmid": "25842202",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Longitudinal changes in hippocampal and amygdala structure were examined in patients with major depression (N= 43, scanned thrice; prior to ECT, after the 2 ECT session, and within one week of completing the ECT treatment series) referred for ECT as part of their standard clinical care"
+     },
+     {
+      "authors": "Oltedal L, Narr KL, Abbott C, Anand A, Argyelan M, Bartsch H, Dannlowski U, et al.",
+      "year": 2018,
+      "title": "Volume of the Human Hippocampus and Clinical Response Following Electroconvulsive Therapy.",
+      "doi": "10.1016/j.biopsych.2018.05.017",
+      "pmid": "30006199",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Hippocampal volumes were extracted from structural MR images, acquired before and after patients (N=281) experiencing a major depressive episode completed an ECT treatment series using right unilateral (RUL) and bilateral (BL) stimulation."
+     }
+    ]
+   }
+  },
+  {
+   "id": "same",
+   "name": "What stayed the same",
+   "timescale": "summary",
+   "start": 0.8,
+   "end": 1,
+   "caption": "A larger increase in the hippocampus did not go with a better outcome in the largest analysis, so the change in size does not explain the benefit. In people without depression scanned twice, the measurements stayed the same.",
+   "order": {
+    "kind": "reconstructed",
+    "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
+   }
+  }
+ ],
+ "condition": {
+  "regions": [
+   {
+    "region": "hippocampus",
+    "explanation": "Smaller than in people without depression before treatment, in one study. Larger after a course of ECT, in that study and in a combined analysis of 281 patients, by about 0.28% per session. The larger increase did not go with a better outcome. Brightness stands for volume, not activity.",
+    "confidence": "established",
+    "citations": [
+     {
+      "authors": "Joshi SH, Espinoza RT, Pirnia T, Shi J, Wang Y, Ayers B, Leaver A, et al.",
+      "year": 2016,
+      "title": "Structural Plasticity of the Hippocampus and Amygdala Induced by Electroconvulsive Therapy in Major Depression.",
+      "doi": "10.1016/j.biopsych.2015.02.029",
+      "pmid": "25842202",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Patients showed smaller hippocampal volumes compared to controls at baseline (p<.04)."
+     },
+     {
+      "authors": "Joshi SH, Espinoza RT, Pirnia T, Shi J, Wang Y, Ayers B, Leaver A, et al.",
+      "year": 2016,
+      "title": "Structural Plasticity of the Hippocampus and Amygdala Induced by Electroconvulsive Therapy in Major Depression.",
+      "doi": "10.1016/j.biopsych.2015.02.029",
+      "pmid": "25842202",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Both hippocampal and amygdalar volumes increased with ECT (p<.001) and in relation to symptom improvement (p<.01)."
+     },
+     {
+      "authors": "Oltedal L, Narr KL, Abbott C, Anand A, Argyelan M, Bartsch H, Dannlowski U, et al.",
+      "year": 2018,
+      "title": "Volume of the Human Hippocampus and Clinical Response Following Electroconvulsive Therapy.",
+      "doi": "10.1016/j.biopsych.2018.05.017",
+      "pmid": "30006199",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "The linear component of hippocampal volume change was 0.28%, 0.08 SE, per ECT session, p<0.001."
+     },
+     {
+      "authors": "Oltedal L, Narr KL, Abbott C, Anand A, Argyelan M, Bartsch H, Dannlowski U, et al.",
+      "year": 2018,
+      "title": "Volume of the Human Hippocampus and Clinical Response Following Electroconvulsive Therapy.",
+      "doi": "10.1016/j.biopsych.2018.05.017",
+      "pmid": "30006199",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Hippocampal volumes were extracted from structural MR images, acquired before and after patients (N=281) experiencing a major depressive episode completed an ECT treatment series using right unilateral (RUL) and bilateral (BL) stimulation."
+     },
+     {
+      "authors": "Oltedal L, Narr KL, Abbott C, Anand A, Argyelan M, Bartsch H, Dannlowski U, et al.",
+      "year": 2018,
+      "title": "Volume of the Human Hippocampus and Clinical Response Following Electroconvulsive Therapy.",
+      "doi": "10.1016/j.biopsych.2018.05.017",
+      "pmid": "30006199",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "the high efficacy of ECT is not explained by hippocampal enlargement, which alone, might not serve as a viable biomarker for treatment outcome."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.05,
+      "v": -0.3
+     },
+     {
+      "t": 0.22,
+      "v": -0.3
+     },
+     {
+      "t": 0.26,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.55
+     },
+     {
+      "t": 0.8,
+      "v": 0.55
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   },
+   {
+    "region": "amygdala",
+    "explanation": "Larger after a course of ECT, in one study of 43 patients, and the increase went with symptom improvement in that study. Brightness stands for volume, not activity.",
+    "confidence": "mixed",
+    "citations": [
+     {
+      "authors": "Joshi SH, Espinoza RT, Pirnia T, Shi J, Wang Y, Ayers B, Leaver A, et al.",
+      "year": 2016,
+      "title": "Structural Plasticity of the Hippocampus and Amygdala Induced by Electroconvulsive Therapy in Major Depression.",
+      "doi": "10.1016/j.biopsych.2015.02.029",
+      "pmid": "25842202",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Both hippocampal and amygdalar volumes increased with ECT (p<.001) and in relation to symptom improvement (p<.01)."
+     },
+     {
+      "authors": "Joshi SH, Espinoza RT, Pirnia T, Shi J, Wang Y, Ayers B, Leaver A, et al.",
+      "year": 2016,
+      "title": "Structural Plasticity of the Hippocampus and Amygdala Induced by Electroconvulsive Therapy in Major Depression.",
+      "doi": "10.1016/j.biopsych.2015.02.029",
+      "pmid": "25842202",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Longitudinal changes in hippocampal and amygdala structure were examined in patients with major depression (N= 43, scanned thrice; prior to ECT, after the 2 ECT session, and within one week of completing the ECT treatment series) referred for ECT as part of their standard clinical care"
+     },
+     {
+      "authors": "Joshi SH, Espinoza RT, Pirnia T, Shi J, Wang Y, Ayers B, Leaver A, et al.",
+      "year": 2016,
+      "title": "Structural Plasticity of the Hippocampus and Amygdala Induced by Electroconvulsive Therapy in Major Depression.",
+      "doi": "10.1016/j.biopsych.2015.02.029",
+      "pmid": "25842202",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "All structural measures remained stable across time in controls."
+     }
+    ],
+    "keyframes": [
+     {
+      "t": 0,
+      "v": 0
+     },
+     {
+      "t": 0.4,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0.4
+     },
+     {
+      "t": 0.8,
+      "v": 0.4
+     },
+     {
+      "t": 0.85,
+      "v": 0
+     },
+     {
+      "t": 1,
+      "v": 0
+     }
+    ]
+   }
+  ],
+  "connections": []
+ },
+ "typical": null
+}
