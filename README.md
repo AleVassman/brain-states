@@ -10,13 +10,13 @@ multiple sclerosis, Huntington's disease, low blood sugar, sleep deprivation)
 — and shows
 which regions and connections change, with the studies behind every claim.
 
-A third group, **What helps**, has twenty-two treatment episodes showing how
+A third group, **What helps**, has twenty-three treatment episodes showing how
 the brain changes with treatment: antidepressants, talking therapy (CBT) for
 depression, anxiety, panic and chronic pain, ECT, ketamine, DBT, exposure
 therapy for PTSD and OCD, antipsychotics, mindfulness, staying off
 methamphetamine, treating back pain, levodopa, deep brain stimulation, stroke
 rehabilitation, a CGRP antibody for migraine, epilepsy surgery, recovery
-sleep, exercise for early memory problems, and attention training in MS. Each
+sleep, donepezil and exercise for early memory problems, and attention training in MS. Each
 links to the condition it treats and back. Treatments that were looked at but
 did not meet the bar are listed with reasons in `research/what-helps-excluded.md`.
 
@@ -99,7 +99,7 @@ with `TREATMENT_NOTE`, and usually builds its phases with `research/helps.mjs`.
 
 A state shows "awaiting review" in the app until its entry in
 `public/scores/index.json` has `"reviewed": true`. Set that only after its
-claims have been checked against the papers. All twenty-four current states were
+claims have been checked against the papers. All forty-seven current episodes were
 checked against their sources.
 
 ## Rebuild the brain geometry

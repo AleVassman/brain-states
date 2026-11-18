@@ -73,7 +73,7 @@ const score = {
       {
         region: 'mpfc-r',
         explanation:
-          'The right dorsomedial prefrontal cortex was more active than in people without social anxiety while viewing angry faces before treatment, and less active after CBT, in one study of 14 people. In a randomised trial (about 60 people scanned), the dorsomedial prefrontal cortex it was more active after CBT while reacting to and rethinking negative beliefs about themselves. The direction depends on the task.',
+          'The right dorsomedial prefrontal cortex was more active than in people without social anxiety while viewing angry faces before treatment, and less active after CBT, in one study of 14 people. In a randomised trial (about 60 people scanned), the dorsomedial prefrontal cortex was more active after CBT while reacting to and rethinking negative beliefs about themselves. The direction depends on the task.',
         confidence: 'debated',
         citations: [klumppGreater, klumppRight, klumppRegions, goldinReactivity, goldinReappraisal, goldinRoi],
         keyframes: kf(0, 0, 0.04, 0.4, 0.18, 0.4, 0.21, 0, 0.5, 0, 0.54, -0.4, 0.65, -0.4, 0.69, 0, 0.71, 0.4, 0.82, 0.4, 0.86, 0, 1, 0),

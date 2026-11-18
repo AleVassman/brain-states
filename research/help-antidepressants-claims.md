@@ -1,6 +1,6 @@
 # Antidepressants for depression — claims and sources
 
-Review: **not yet reviewed**
+Review: **reviewed** on 2026-11-18. Checked against the saved papers by independent reviewers, with full texts where they could be downloaded; every correction they required was applied, the fixes were checked again, and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/help-antidepressants.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.

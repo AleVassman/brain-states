@@ -1,6 +1,6 @@
 # Talking therapy (CBT) for anxiety — claims and sources
 
-Review: **not yet reviewed**
+Review: **reviewed** on 2026-11-18. Checked against the saved papers by independent reviewers, with full texts where they could be downloaded; every correction they required was applied, the fixes were checked again, and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/help-cbt-anxiety.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
@@ -34,7 +34,7 @@ The pooled findings come from an analysis of 22 studies of CBT for depression an
 
 ### **mpfc-r** — Still debated
 
-Claim: The right dorsomedial prefrontal cortex was more active than in people without social anxiety while viewing angry faces before treatment, and less active after CBT, in one study of 14 people. In a randomised trial (about 60 people scanned), the dorsomedial prefrontal cortex it was more active after CBT while reacting to and rethinking negative beliefs about themselves. The direction depends on the task.
+Claim: The right dorsomedial prefrontal cortex was more active than in people without social anxiety while viewing angry faces before treatment, and less active after CBT, in one study of 14 people. In a randomised trial (about 60 people scanned), the dorsomedial prefrontal cortex was more active after CBT while reacting to and rethinking negative beliefs about themselves. The direction depends on the task.
 
 On screen: peaks above baseline (0.4), ends at baseline (0).
 

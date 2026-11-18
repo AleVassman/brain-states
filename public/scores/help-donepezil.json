@@ -1,8 +1,8 @@
 {
  "id": "help-donepezil",
  "title": "Donepezil in very early Alzheimer's",
- "description": "Donepezil is a medicine that boosts the brain's acetylcholine, a chemical messenger used in memory. In a randomised trial of people with suspected very early (prodromal) Alzheimer's disease, half took donepezil and half a placebo for a year. The hippocampus shrank in both groups, but almost half as fast with donepezil. In this episode brightness stands for how much the hippocampus shrank over the year (its volume), not activity: violet means smaller than a year before.",
- "caveat": "This is one randomised trial of 216 people, with 174 analysed as planned, at 28 sites in France. The hippocampus still shrank with donepezil, only more slowly. Memory and thinking tests did not differ between the groups after a year, so slower shrinkage did not show up as better memory within the trial. A second report from the same trial found slower shrinkage of the basal forebrain, which is not a separate area in the brain model. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "description": "Donepezil belongs to a group of medicines (acetylcholinesterase inhibitors) used for Alzheimer's dementia. A randomised trial tested it earlier, in people with suspected very early (prodromal) Alzheimer's disease: some took donepezil and others a placebo for a year. The hippocampus shrank in both groups, but about 45% more slowly with donepezil. In this episode brightness stands for the yearly loss of hippocampal volume, not activity: violet means volume lost.",
+ "caveat": "This is one randomised trial: 216 people at 28 sites in France, with results reported for the 174 who kept to the trial protocol. The participants did not have dementia, and their diagnosis was suspected, not confirmed; the abstract does not say how it was established. The Alzheimer's episode shows activity, while this one shows tissue loss. The hippocampus still shrank with donepezil, only more slowly, and memory and thinking tests did not differ between the groups after a year. A second report by the same study group, apparently from the same trial, found slower shrinkage of the basal forebrain, which is not a separate area in the brain model. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
  "durationSeconds": 32,
  "phases": [
   {
@@ -19,7 +19,7 @@
    "timescale": "one year",
    "start": 0.18,
    "end": 0.46,
-   "caption": "With placebo, the hippocampus shrank by about 3.5% over the year.",
+   "caption": "In the placebo group, the hippocampus shrank by about 3.5% a year.",
    "order": {
     "kind": "timed",
     "citations": [
@@ -42,7 +42,7 @@
    "timescale": "one year",
    "start": 0.46,
    "end": 0.8,
-   "caption": "With donepezil, it shrank by about 1.9%: 45% slower than with placebo.",
+   "caption": "A different group, over the same year: with donepezil, the hippocampus shrank by about 1.9% a year, 45% more slowly than with placebo.",
    "order": {
     "kind": "reconstructed",
     "rationale": "The two groups were treated at the same time; showing placebo first is only a way of comparing them."
@@ -65,7 +65,7 @@
   "regions": [
    {
     "region": "hippocampus",
-    "explanation": "Shrank over a year in people with suspected very early Alzheimer's disease: by about 3.5% with placebo and about 1.9% with donepezil, in a randomised trial of 174 people analysed as planned. Memory and thinking tests did not differ. Brightness stands for volume lost over the year.",
+    "explanation": "Shrank in people with suspected very early Alzheimer's disease: by about 3.5% a year with placebo and about 1.9% a year with donepezil, in a randomised trial (174 people who kept to the protocol). Memory and thinking tests did not differ. Brightness stands for the yearly loss of volume.",
     "confidence": "mixed",
     "citations": [
      {
@@ -96,6 +96,16 @@
       "pmid": "25596420",
       "kind": "study",
       "access": "abstract-only",
+      "quote": "The primary efficacy outcome was the annualized percentage change (APC) of total hippocampal volume (left + right) measured by an automated segmentation method."
+     },
+     {
+      "authors": "Dubois B, Chupin M, Hampel H, Lista S, Cavedo E, Croisile B, Louis Tisserand G, et al.",
+      "year": 2015,
+      "title": "Donepezil decreases annual rate of hippocampal atrophy in suspected prodromal Alzheimer's disease.",
+      "doi": "10.1016/j.jalz.2014.10.003",
+      "pmid": "25596420",
+      "kind": "study",
+      "access": "abstract-only",
       "quote": "A double-blind, randomized, placebo-controlled parallel group design using donepezil (10 mg/day) in subjects with suspected prodromal AD."
      },
      {
@@ -107,16 +117,6 @@
       "kind": "study",
       "access": "abstract-only",
       "quote": "There was no significant difference in neuropsychological performance between treatment groups."
-     },
-     {
-      "authors": "Cavedo E, Grothe MJ, Colliot O, Lista S, Chupin M, Dormont D, Houot M, et al.",
-      "year": 2017,
-      "title": "Reduced basal forebrain atrophy progression in a randomized Donepezil trial in prodromal Alzheimer's disease.",
-      "doi": "10.1038/s41598-017-09780-3",
-      "pmid": "28916821",
-      "kind": "study",
-      "access": "abstract-only",
-      "quote": "Reduced annual BFCS rates of atrophy were found in the Donepezil group compared to the Placebo treated arm."
      }
     ],
     "keyframes": [
@@ -137,7 +137,15 @@
       "v": -0.6
      },
      {
-      "t": 0.5,
+      "t": 0.46,
+      "v": 0
+     },
+     {
+      "t": 0.48,
+      "v": 0
+     },
+     {
+      "t": 0.52,
       "v": -0.33
      },
      {

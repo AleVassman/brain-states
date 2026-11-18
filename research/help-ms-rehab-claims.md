@@ -1,13 +1,13 @@
 # Attention training in multiple sclerosis — claims and sources
 
-Review: **not yet reviewed**
+Review: **reviewed** on 2026-11-18. Checked against the saved papers by independent reviewers, with full texts where they could be downloaded; every correction they required was applied, the fixes were checked again, and every quote re-verified word for word. Sources read only as abstracts are flagged in each citation.
 
 Generated from `research/help-ms-rehab.mjs`. Every claim the episode makes is listed with the exact
 sentence that supports it. Activity values are qualitative: direction and rough relative size only.
 
 ## What is reconstruction in this episode
 
-All findings come from one trial of 23 people with multiple sclerosis and attention problems: 12 did the training and 11 a placebo programme. Only the abstract could be read; it compares the groups after training and does not say whether the brain was scanned before training as well, nor whether the activity was a group difference or a link with how much attention improved. The posterior cerebellar lobule is drawn on the cerebellum outline, an approximation, and the superior parietal lobule is not in the brain model. Lesions were not measured in this study. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
+All findings come from one trial of 23 people with multiple sclerosis and attention problems: 12 did the training and 11 a placebo programme. Only the abstract could be read; it compares the groups after training and does not say whether the brain was scanned before training as well, nor whether the activity was a group difference or a link with how much attention improved. The posterior cerebellar lobule is drawn on the cerebellum outline, an approximation, and the superior parietal lobule is not in the brain model. The abstract read does not report lesions. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
 
 ## Notes from the research pass
 
