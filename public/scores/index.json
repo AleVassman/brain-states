@@ -366,5 +366,13 @@
   "category": "treatment",
   "treats": "ms",
   "reviewed": false
+ },
+ {
+  "id": "help-donepezil",
+  "title": "Donepezil (very early Alzheimer's)",
+  "file": "help-donepezil.json",
+  "category": "treatment",
+  "treats": "alzheimers",
+  "reviewed": false
  }
 ]

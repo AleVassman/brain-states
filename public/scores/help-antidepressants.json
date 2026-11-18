@@ -2,7 +2,7 @@
  "id": "help-antidepressants",
  "title": "Antidepressants for depression",
  "description": "Antidepressant medication is one of the main treatments for depression and is usually taken for weeks before it helps. Studies scanned people with depression while they looked at emotional faces or pictures, before and after treatment. After treatment, emotional areas such as the amygdala responded less, and areas at the front of the brain that help control attention responded more. In the first part, brightness shows how the brain differed from people without the condition before treatment. In \"What changed\", brightness shows the change since before treatment: warmer means more than before, violet means less than before.",
- "caveat": "The \"before\" difference comes from one study of 11 people with depression and 11 without. The changes come from a pooled analysis of 9 studies of emotional tasks. A larger and newer pooled analysis of 36 studies, which only counted findings from searches of the whole brain, found no area that changed consistently except the left dorsolateral prefrontal cortex, so most of the changes drawn here are still debated. Different medicines and tasks were pooled together. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "caveat": "The \"before\" difference comes from one study of 11 people with depression and 11 without. The changes come from a pooled analysis of 9 studies of emotional tasks. A larger and newer pooled analysis of 36 studies, which only counted findings from searches of the whole brain, found no area that changed consistently across all studies; in subgroups it found the dorsolateral prefrontal cortex on both sides and the medial superior frontal gyrus. That analysis mixed resting and task scans, included ketamine, and included people who had not necessarily responded. Most of the other changes drawn here are still debated. Different medicines and tasks were pooled together. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
  "durationSeconds": 34,
  "phases": [
   {
@@ -42,7 +42,7 @@
    "timescale": "after treatment",
    "start": 0.4,
    "end": 0.8,
-   "caption": "Compared with before treatment, the amygdala, hippocampus and nearby areas, the insula and the orbitofrontal cortex respond less to emotional pictures, and the outer front of the brain responds more. Only the increase in the left dorsolateral prefrontal cortex was found again in the larger, newer analysis.",
+   "caption": "Compared with before treatment, the amygdala, hippocampus and nearby areas, the insula and the orbitofrontal cortex respond less to emotional pictures, and the outer front of the brain responds more. Only the increases in the dorsolateral prefrontal cortex, and in the medial prefrontal cortex after longer treatment, were found again in subgroups of the larger, newer analysis.",
    "order": {
     "kind": "timed",
     "citations": [
@@ -234,8 +234,8 @@
    },
    {
     "region": "dlpfc-l",
-    "explanation": "More active after treatment. This is the one change found in both a pooled analysis of 9 studies and a newer pooled analysis of 36 studies, where it was on the left. It is linked with working memory and attention.",
-    "confidence": "established",
+    "explanation": "More active after treatment, in a pooled analysis of 9 studies of emotional tasks. A newer pooled analysis of 36 studies, mostly of the brain at rest, found it in subgroups (treated versus untreated, and excluding ketamine), but not across all studies.",
+    "confidence": "mixed",
     "citations": [
      {
       "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
@@ -256,6 +256,36 @@
       "kind": "meta-analysis",
       "access": "full-text",
       "quote": "Subgroup analysis in the Treated > Untreated contrast revealed a convergent cluster in the left dorsolateral prefrontal cortex, which was associated with working memory and attention behavioral domains."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "To assess the convergence across classic antidepressants, we performed a subgroup analysis after excluding ketamine among 14 Tr+ experiments and found clusters of convergence in the left (MNI −38, 30, 30; 95 voxels) and right DLPFC (MNI 44, 26, 24; 106 voxels)"
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "Second, we studied the neuroimaging effects of antidepressant medications on patients with MDD who had received but not necessarily responded to the treatment"
      }
     ],
     "keyframes": [
@@ -287,8 +317,8 @@
    },
    {
     "region": "dlpfc-r",
-    "explanation": "More active after treatment in a pooled analysis of 9 studies. The newer pooled analysis found this only on the left.",
-    "confidence": "debated",
+    "explanation": "More active after treatment in a pooled analysis of 9 studies. The newer pooled analysis found the right side too when ketamine studies were left out, but not across all studies.",
+    "confidence": "mixed",
     "citations": [
      {
       "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
@@ -308,7 +338,17 @@
       "pmid": "39406999",
       "kind": "meta-analysis",
       "access": "full-text",
-      "quote": "Subgroup analysis in the Treated > Untreated contrast revealed a convergent cluster in the left dorsolateral prefrontal cortex, which was associated with working memory and attention behavioral domains."
+      "quote": "To assess the convergence across classic antidepressants, we performed a subgroup analysis after excluding ketamine among 14 Tr+ experiments and found clusters of convergence in the left (MNI −38, 30, 30; 95 voxels) and right DLPFC (MNI 44, 26, 24; 106 voxels)"
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
      }
     ],
     "keyframes": [
@@ -340,8 +380,8 @@
    },
    {
     "region": "mpfc",
-    "explanation": "The dorsomedial prefrontal cortex was more active after treatment, in a pooled analysis of 9 studies. Not found in the newer pooled analysis.",
-    "confidence": "debated",
+    "explanation": "The dorsomedial prefrontal cortex was more active after treatment, in a pooled analysis of 9 studies. The newer pooled analysis found the medial superior frontal gyrus only in studies with more than 4 weeks of treatment.",
+    "confidence": "mixed",
     "citations": [
      {
       "authors": "Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P",
@@ -352,6 +392,16 @@
       "kind": "meta-analysis",
       "access": "abstract-only",
       "quote": "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
+     },
+     {
+      "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
+      "year": 2025,
+      "title": "Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis.",
+      "doi": "10.1038/s41380-024-02780-6",
+      "pmid": "39406999",
+      "kind": "meta-analysis",
+      "access": "full-text",
+      "quote": "performed an ALE on Tr+ effects reported after more than 4 weeks of treatment (12 experiments) which revealed a convergent cluster in the medial superior frontal gyrus (MNI 8, 54, 30; 104 voxels)"
      },
      {
       "authors": "Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al.",
@@ -552,7 +602,7 @@
    },
    {
     "region": "pgacc",
-    "explanation": "The ventral anterior cingulate was less active after treatment, in a pooled analysis of 9 studies; it is drawn on the pregenual anterior cingulate. Not found in the newer pooled analysis.",
+    "explanation": "The ventral anterior cingulate was less active after treatment, in a pooled analysis of 9 studies; it is drawn on the pregenual anterior cingulate, an approximation. Not found in the newer pooled analysis.",
     "confidence": "debated",
     "citations": [
      {

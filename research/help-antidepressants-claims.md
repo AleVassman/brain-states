@@ -7,12 +7,12 @@ sentence that supports it. Activity values are qualitative: direction and rough 
 
 ## What is reconstruction in this episode
 
-The "before" difference comes from one study of 11 people with depression and 11 without. The changes come from a pooled analysis of 9 studies of emotional tasks. A larger and newer pooled analysis of 36 studies, which only counted findings from searches of the whole brain, found no area that changed consistently except the left dorsolateral prefrontal cortex, so most of the changes drawn here are still debated. Different medicines and tasks were pooled together. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
+The "before" difference comes from one study of 11 people with depression and 11 without. The changes come from a pooled analysis of 9 studies of emotional tasks. A larger and newer pooled analysis of 36 studies, which only counted findings from searches of the whole brain, found no area that changed consistently across all studies; in subgroups it found the dorsolateral prefrontal cortex on both sides and the medial superior frontal gyrus. That analysis mixed resting and task scans, included ketamine, and included people who had not necessarily responded. Most of the other changes drawn here are still debated. Different medicines and tasks were pooled together. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
 
 ## Notes from the research pass
 
-- The older pooled analysis (Delaveau et al. 2011, 9 studies) and the newer one (Saberi et al. 2025, 36 studies, whole-brain searches only) disagree; only the left dorsolateral prefrontal increase is in both, so only it is "established".
-- Saberi et al. 2025 found network-level convergence in a frontoparietal circuit; not drawn as a region.
+- The older pooled analysis (Delaveau et al. 2011, 9 studies) and the newer one (Saberi et al. 2025, 36 studies, whole-brain searches only) disagree; they agree only on the dorsolateral prefrontal cortex, and only in Saberi subgroups, so no region is marked established.
+- Saberi et al. 2025 found network-level convergence in a frontoparietal circuit; not drawn as a region. Its subgroup findings (both DLPFC, medial SFG) are cited on those regions.
 - Delaveau et al. 2011 list the anterior cingulate (BA 32) among decreases; drawn on the pregenual anterior cingulate together with the ventral anterior cingulate.
 - Read in full: Saberi et al. 2025. Read as abstracts only: Sheline et al. 2001, Delaveau et al. 2011.
 
@@ -59,9 +59,9 @@ On screen: peaks below baseline (-0.45), ends at baseline (0).
 - Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al. (2025). Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis. doi:10.1038/s41380-024-02780-6 — meta-analysis, full-text
   > "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
 
-### **dlpfc-l** — Well established
+### **dlpfc-l** — Mixed evidence
 
-Claim: More active after treatment. This is the one change found in both a pooled analysis of 9 studies and a newer pooled analysis of 36 studies, where it was on the left. It is linked with working memory and attention.
+Claim: More active after treatment, in a pooled analysis of 9 studies of emotional tasks. A newer pooled analysis of 36 studies, mostly of the brain at rest, found it in subgroups (treated versus untreated, and excluding ketamine), but not across all studies.
 
 On screen: peaks above baseline (0.5), ends at baseline (0).
 
@@ -69,26 +69,36 @@ On screen: peaks above baseline (0.5), ends at baseline (0).
   > "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
 - Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al. (2025). Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis. doi:10.1038/s41380-024-02780-6 — meta-analysis, full-text
   > "Subgroup analysis in the Treated > Untreated contrast revealed a convergent cluster in the left dorsolateral prefrontal cortex, which was associated with working memory and attention behavioral domains."
+- Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al. (2025). Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis. doi:10.1038/s41380-024-02780-6 — meta-analysis, full-text
+  > "To assess the convergence across classic antidepressants, we performed a subgroup analysis after excluding ketamine among 14 Tr+ experiments and found clusters of convergence in the left (MNI −38, 30, 30; 95 voxels) and right DLPFC (MNI 44, 26, 24; 106 voxels)"
+- Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al. (2025). Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis. doi:10.1038/s41380-024-02780-6 — meta-analysis, full-text
+  > "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
+- Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al. (2025). Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis. doi:10.1038/s41380-024-02780-6 — meta-analysis, full-text
+  > "Second, we studied the neuroimaging effects of antidepressant medications on patients with MDD who had received but not necessarily responded to the treatment"
 
-### **dlpfc-r** — Still debated
+### **dlpfc-r** — Mixed evidence
 
-Claim: More active after treatment in a pooled analysis of 9 studies. The newer pooled analysis found this only on the left.
+Claim: More active after treatment in a pooled analysis of 9 studies. The newer pooled analysis found the right side too when ketamine studies were left out, but not across all studies.
 
 On screen: peaks above baseline (0.35), ends at baseline (0).
 
 - Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P (2011). Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies. doi:10.1016/j.jad.2010.09.032 — meta-analysis, abstract-only
   > "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
 - Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al. (2025). Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis. doi:10.1038/s41380-024-02780-6 — meta-analysis, full-text
-  > "Subgroup analysis in the Treated > Untreated contrast revealed a convergent cluster in the left dorsolateral prefrontal cortex, which was associated with working memory and attention behavioral domains."
+  > "To assess the convergence across classic antidepressants, we performed a subgroup analysis after excluding ketamine among 14 Tr+ experiments and found clusters of convergence in the left (MNI −38, 30, 30; 95 voxels) and right DLPFC (MNI 44, 26, 24; 106 voxels)"
+- Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al. (2025). Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis. doi:10.1038/s41380-024-02780-6 — meta-analysis, full-text
+  > "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
 
-### **mpfc** — Still debated
+### **mpfc** — Mixed evidence
 
-Claim: The dorsomedial prefrontal cortex was more active after treatment, in a pooled analysis of 9 studies. Not found in the newer pooled analysis.
+Claim: The dorsomedial prefrontal cortex was more active after treatment, in a pooled analysis of 9 studies. The newer pooled analysis found the medial superior frontal gyrus only in studies with more than 4 weeks of treatment.
 
 On screen: peaks above baseline (0.35), ends at baseline (0).
 
 - Delaveau P, Jabourian M, Lemogne C, Guionnet S, Bergouignan L, Fossati P (2011). Brain effects of antidepressants in major depression: a meta-analysis of emotional processing studies. doi:10.1016/j.jad.2010.09.032 — meta-analysis, abstract-only
   > "Following the antidepressant drug treatment, the activation of dorsolateral, dorsomedial and ventrolateral prefrontal cortices was increased whereas the activation of the amygdala, hippocampus, parahippocampal region, ventral anterior cingulate cortex, orbitofrontal cortex, and insula was decreased."
+- Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al. (2025). Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis. doi:10.1038/s41380-024-02780-6 — meta-analysis, full-text
+  > "performed an ALE on Tr+ effects reported after more than 4 weeks of treatment (12 experiments) which revealed a convergent cluster in the medial superior frontal gyrus (MNI 8, 54, 30; 104 voxels)"
 - Saberi A, Ebneabbasi A, Rahimi S, Sarebannejad S, Sen ZD, Graf H, Walter M, et al. (2025). Convergent functional effects of antidepressants in major depressive disorder: a neuroimaging meta-analysis. doi:10.1038/s41380-024-02780-6 — meta-analysis, full-text
   > "No regional convergence was found across foci of treatment-associated alterations in functional imaging."
 
@@ -127,7 +137,7 @@ On screen: peaks below baseline (-0.35), ends at baseline (0).
 
 ### **pgacc** — Still debated
 
-Claim: The ventral anterior cingulate was less active after treatment, in a pooled analysis of 9 studies; it is drawn on the pregenual anterior cingulate. Not found in the newer pooled analysis.
+Claim: The ventral anterior cingulate was less active after treatment, in a pooled analysis of 9 studies; it is drawn on the pregenual anterior cingulate, an approximation. Not found in the newer pooled analysis.
 
 On screen: peaks below baseline (-0.35), ends at baseline (0).
 

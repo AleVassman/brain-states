@@ -1,8 +1,8 @@
 {
  "id": "help-abstinence",
  "title": "Staying off methamphetamine: recovery over a year",
- "description": "Heavy methamphetamine use reduces the dopamine transporters in the striatum, a marker of the dopamine nerve endings that carry reward signals. One study scanned people early in recovery and again after more than a year without the drug. The transporters had partly come back. In this episode brightness stands for the amount of dopamine transporter, not activity. In the first part it shows the loss compared with people who do not use drugs; in \"What changed\" it shows the change since early recovery.",
- "caveat": "This is one small study: five people, all in a court-supervised rehabilitation programme, who stayed off the drug for over a year, scanned twice with PET. The loss shown in the first part is the 24-30% loss the same group reported earlier. Recovery of the transporters did not bring equal recovery in memory and movement tests. It is about methamphetamine only, and about staying off it, not a specific treatment. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "description": "Heavy methamphetamine use goes with fewer dopamine transporters in the striatum, a marker of the dopamine nerve endings that carry reward signals. One study scanned people early in recovery and again after more than a year without the drug. The transporters had partly come back. In this episode brightness stands for the amount of dopamine transporter, not activity. In the first part it shows the loss compared with people who do not use drugs; in \"What changed\" it shows the change since early recovery.",
+ "caveat": "This is one small study: five people in a court-supervised rehabilitation programme who stayed off the drug for over a year, scanned twice with PET. They were the five of twelve who stayed drug-free, and those who dropped out had lower transporter levels early on, so the five may not be typical. The loss in the first part compares 12 people early in abstinence with 11 controls. The authors consider that the early loss may partly be a temporary adjustment rather than damage. Recovery of the transporters did not bring equal recovery in memory and movement tests. It is about methamphetamine only, and about staying off it, not a specific treatment. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
  "durationSeconds": 32,
  "phases": [
   {
@@ -11,7 +11,7 @@
    "timescale": "before treatment",
    "start": 0,
    "end": 0.25,
-   "caption": "In early recovery, the dopamine transporters in the striatum are about a quarter lower than in people who do not use drugs."
+   "caption": "In early recovery, the dopamine transporters are lower than in people who do not use drugs: by 26% in the caudate and 21% in the putamen."
   },
   {
    "id": "during",
@@ -65,7 +65,7 @@
    "timescale": "summary",
    "start": 0.8,
    "end": 1,
-   "caption": "Memory and movement tests did not improve to the same extent, so the recovery was not complete. The authors conclude that staying off the drug may reverse some of the changes, not all of them.",
+   "caption": "After more than a year, the transporters no longer differed significantly from people who do not use drugs (5% and 9% lower). Memory and movement tests improved only slightly, not significantly, so function did not fully recover. The authors conclude that staying off the drug may reverse some of the changes, not all of them.",
    "order": {
     "kind": "reconstructed",
     "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
@@ -76,9 +76,19 @@
   "regions": [
    {
     "region": "caudate",
-    "explanation": "Dopamine transporters were about a quarter lower than in people who do not use drugs early in recovery, and rose by 19% after more than a year without the drug, in one study of five people. Brightness stands for the amount of transporter, not activity.",
+    "explanation": "Dopamine transporters were 26% lower than in people who do not use drugs early in recovery, and rose by 19% after more than a year without the drug in the five people followed. Brightness stands for the amount of transporter, not activity.",
     "confidence": "mixed",
     "citations": [
+     {
+      "authors": "Volkow ND, Chang L, Wang GJ, Fowler JS, Franceschi D, Sedler M, Gatley SJ, et al.",
+      "year": 2001,
+      "title": "Loss of dopamine transporters in methamphetamine abusers recovers with protracted abstinence.",
+      "doi": "10.1523/jneurosci.21-23-09414.2001",
+      "pmid": "11717374",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Post hoc t tests showed that theBmax/Kdmeasures in METH abusers tested during short abstinence were significantly lower than those in controls (caudate, 26%; putamen, 21%;"
+     },
      {
       "authors": "Volkow ND, Chang L, Wang GJ, Fowler JS, Franceschi D, Sedler M, Gatley SJ, et al.",
       "year": 2001,
@@ -107,6 +117,16 @@
       "pmid": "11717374",
       "kind": "study",
       "access": "full-text",
+      "quote": "did not differ significantly from those in controls (caudate, 5%; putamen, 9%; NS)"
+     },
+     {
+      "authors": "Volkow ND, Chang L, Wang GJ, Fowler JS, Franceschi D, Sedler M, Gatley SJ, et al.",
+      "year": 2001,
+      "title": "Loss of dopamine transporters in methamphetamine abusers recovers with protracted abstinence.",
+      "doi": "10.1523/jneurosci.21-23-09414.2001",
+      "pmid": "11717374",
+      "kind": "study",
+      "access": "full-text",
       "quote": "Five METH abusers (three females, two males; 29 ± 3 years of age) were evaluated twice: during early (mean ± SD, 3 ± 1.6 months of abstinence) and then at least 9 months later during protracted abstinence (mean ± SD, 14 ± 2 months)."
      },
      {
@@ -118,6 +138,16 @@
       "kind": "study",
       "access": "full-text",
       "quote": "Because neuropsychological tests did not improve to the same extent, this suggests that the increase of the DA transporters was not sufficient for complete function recovery."
+     },
+     {
+      "authors": "Volkow ND, Chang L, Wang GJ, Fowler JS, Franceschi D, Sedler M, Gatley SJ, et al.",
+      "year": 2001,
+      "title": "Loss of dopamine transporters in methamphetamine abusers recovers with protracted abstinence.",
+      "doi": "10.1523/jneurosci.21-23-09414.2001",
+      "pmid": "11717374",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Comparison of striatal DAT availability showed that subjects who dropped out of the detoxification program (most likely relapsed) had significantly lower DAT levels during the short abstinence period than those who completed the detoxification"
      }
     ],
     "keyframes": [
@@ -161,7 +191,7 @@
    },
    {
     "region": "putamen",
-    "explanation": "Dopamine transporters were about a quarter lower than in people who do not use drugs early in recovery, and rose by 16% after more than a year without the drug, in one study of five people. Brightness stands for the amount of transporter, not activity.",
+    "explanation": "Dopamine transporters were 21% lower than in people who do not use drugs early in recovery, and rose by 16% after more than a year without the drug in the five people followed. Brightness stands for the amount of transporter, not activity.",
     "confidence": "mixed",
     "citations": [
      {
@@ -172,7 +202,7 @@
       "pmid": "11717374",
       "kind": "study",
       "access": "full-text",
-      "quote": "Although the DAT loss reported in METH abusers (24–30%) is smaller than that reported in Parkinson's disease (36 and 71%) (Frost et al., 1993; Innis et al., 1993), it is nonetheless associated with reduced motor speed and impaired verbal learning (Volkow et al., 2001)."
+      "quote": "Post hoc t tests showed that theBmax/Kdmeasures in METH abusers tested during short abstinence were significantly lower than those in controls (caudate, 26%; putamen, 21%;"
      },
      {
       "authors": "Volkow ND, Chang L, Wang GJ, Fowler JS, Franceschi D, Sedler M, Gatley SJ, et al.",
@@ -183,6 +213,16 @@
       "kind": "study",
       "access": "full-text",
       "quote": "Brain DA transporters in five methamphetamine abusers evaluated during short abstinence (<6 months) and then retested during protracted abstinence (12–17 months) showed significant increases with protracted abstinence (caudate, +19%; putamen, +16%)."
+     },
+     {
+      "authors": "Volkow ND, Chang L, Wang GJ, Fowler JS, Franceschi D, Sedler M, Gatley SJ, et al.",
+      "year": 2001,
+      "title": "Loss of dopamine transporters in methamphetamine abusers recovers with protracted abstinence.",
+      "doi": "10.1523/jneurosci.21-23-09414.2001",
+      "pmid": "11717374",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "did not differ significantly from those in controls (caudate, 5%; putamen, 9%; NS)"
      },
      {
       "authors": "Volkow ND, Chang L, Wang GJ, Fowler JS, Franceschi D, Sedler M, Gatley SJ, et al.",

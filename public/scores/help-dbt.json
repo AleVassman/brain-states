@@ -2,7 +2,7 @@
  "id": "help-dbt",
  "title": "Dialectical behaviour therapy (DBT) for borderline",
  "description": "Dialectical behaviour therapy (DBT) is a therapy designed for borderline personality disorder. Over many months it teaches skills for handling intense emotions, tolerating distress and getting on with other people. After DBT, the amygdala, which flags emotional events, responds less to upsetting pictures, and people report handling their emotions better. In the first part, brightness shows how the brain differed from people without the condition before treatment. In \"What changed\", brightness shows the change since before treatment: warmer means more than before, violet means less than before.",
- "caveat": "The main finding comes from one study of 11 people with borderline personality disorder and 11 without, before and after 12 months of DBT, and a review of the 9 studies that have looked at the brain after DBT. These are small studies, and the review notes that research on this is still scarce. The review names the anterior cingulate without saying which part; it is drawn on the dorsal part, which is an assumption. How the brain differed from people without the condition before treatment is not drawn, because the sources read report it only as background. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "caveat": "The main finding comes from one study of 11 people with borderline personality disorder and 11 without, before and after 12 months of DBT, and a review of the 9 studies that have looked at the brain after DBT. These are small studies, the review notes that research on this is still scarce, and the main study had no group of people with borderline personality disorder who did not have DBT, so changes over time cannot all be credited to DBT. Another study found that the drop in amygdala activity in response to pain was smaller after DBT, a different measure from the one drawn. The review names the anterior cingulate without saying which part; it is drawn on the dorsal part, which is an assumption. How the brain differed from people without the condition before treatment is not drawn, because the sources read report it only as background. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
  "durationSeconds": 34,
  "phases": [
   {
@@ -19,7 +19,7 @@
    "timescale": "months",
    "start": 0.25,
    "end": 0.4,
-   "caption": "Weekly individual therapy and skills groups, usually for about a year. People were not scanned during this time.",
+   "caption": "Weekly individual therapy and skills groups; a year in the main study, 12 weeks of inpatient DBT in another. People were not scanned during this time.",
    "order": {
     "kind": "timed",
     "citations": [
@@ -76,7 +76,7 @@
   "regions": [
    {
     "region": "amygdala-l",
-    "explanation": "Less active after 12 months of DBT, compared with the change over the same time in people without the condition, in one study of 11 patients; the reduction was most marked on the left. A review of 9 studies also describes reduced amygdala activity after DBT.",
+    "explanation": "Less active after 12 months of DBT, compared with the change over the same time in people without the condition, in one study of 11 patients; the reduction was most marked on the left. A review of 9 studies also describes reduced amygdala activity after DBT, but its amygdala evidence is two studies, one of them this one.",
     "confidence": "mixed",
     "citations": [
      {
@@ -118,6 +118,26 @@
       "kind": "review",
       "access": "full-text",
       "quote": "Results indicated that there was significant deactivation of amygdala activity as well as the anterior cingulate cortex in patients with BPD after DBT treatment."
+     },
+     {
+      "authors": "Iskric A, Barkley-Levenson E",
+      "year": 2021,
+      "title": "Neural Changes in Borderline Personality Disorder After Dialectical Behavior Therapy-A Review.",
+      "doi": "10.3389/fpsyt.2021.772081",
+      "pmid": "34975574",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "Firstly, two studies found a significant deactivation of amygdala activity after the completion of DBT treatment particularly among DBT treatment responders (11, 21)"
+     },
+     {
+      "authors": "Niedtfeld I, Schmitt R, Winter D, Bohus M, Schmahl C, Herpertz SC",
+      "year": 2017,
+      "title": "Pain-mediated affect regulation is reduced after dialectical behavior therapy in borderline personality disorder: a longitudinal fMRI study.",
+      "doi": "10.1093/scan/nsw183",
+      "pmid": "28119507",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "However, these studies did not use a BPD control group without DBT to differentiate between effects attributable to DBT itself from unspecific time effects"
      }
     ],
     "keyframes": [
@@ -212,7 +232,7 @@
    },
    {
     "region": "dacc",
-    "explanation": "A review of 9 studies describes less anterior cingulate activity after DBT. The review does not say which part; it is drawn on the dorsal anterior cingulate, which is an assumption. One study found that a link between the left amygdala and the dorsal anterior cingulate during pain became weaker after DBT.",
+    "explanation": "A review of 9 studies describes less anterior cingulate activity after DBT. The review does not say which part; it is drawn on the dorsal anterior cingulate, which is an assumption. One study also found that the link between the left amygdala and the dorsal anterior cingulate during pain changed after DBT, at trend level.",
     "confidence": "mixed",
     "citations": [
      {
@@ -244,6 +264,16 @@
       "kind": "study",
       "access": "full-text",
       "quote": "At first measurement, patients with BPD showed amygdala deactivation in response to painful stimulation, as well as altered connectivity between left amygdala and dorsal anterior cingulate cortex. These effects were reduced after DBT, as compared with patients with treatment as usual."
+     },
+     {
+      "authors": "Iskric A, Barkley-Levenson E",
+      "year": 2021,
+      "title": "Neural Changes in Borderline Personality Disorder After Dialectical Behavior Therapy-A Review.",
+      "doi": "10.3389/fpsyt.2021.772081",
+      "pmid": "34975574",
+      "kind": "review",
+      "access": "full-text",
+      "quote": "As well, several studies found after DBT treatment, BPD patients had a decreased activity in the inferior frontal gyrus in response to arousing stimuli and increased activity in response to inhibitory control."
      }
     ],
     "keyframes": [

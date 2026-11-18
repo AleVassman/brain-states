@@ -7,7 +7,7 @@ sentence that supports it. Activity values are qualitative: direction and rough 
 
 ## What is reconstruction in this episode
 
-All findings come from one trial of 42 people with panic disorder and agoraphobia who were not taking medication, compared with 42 people without the condition scanned at the same times. The task was a fear-learning task, not a panic attack. The study names the anterior cingulate without saying which part; it is drawn on the dorsal part, which is an assumption. The source reports no pre-treatment difference, so the first part is drawn at rest. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
+All findings come from one trial of 42 people with panic disorder and agoraphobia who were not taking medication, compared with 42 people without the condition scanned at the same times. The task was a fear-learning task, not a panic attack. The study names the anterior cingulate without saying which part; it is drawn on the dorsal part, which is an assumption. The changes are compared with people without panic disorder scanned at the same times, not with untreated patients, so they cannot be credited to CBT alone. The abstract read does not report a pre-treatment difference, so the first part is drawn at rest. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
 
 ## Notes from the research pass
 

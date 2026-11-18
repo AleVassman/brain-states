@@ -16,6 +16,8 @@ const elmDesign = cite(
   'elmenhorst2017',
   'F]CPFPX positron emission tomography was used to quantify A1AR availability in 15 healthy male adults after 52 h of sleep deprivation and following 14 h of recovery sleep.',
 );
+const elmIncluded = cite('elmenhorst2017', 'Fifteen healthy, male volunteers gave written informed consent of which 14 (mean age 27.7 ± 5.4 y) were included in the analyses');
+const elmHumans = cite('elmenhorst2017', 'However, so far it has not been shown in humans that adenosine levels increase with prolonged wake-time');
 const elmRange = cite(
   'elmenhorst2017',
   'Recovery from sleep deprivation was associated with a decrease in A1AR availability in several brain regions, ranging from 11% (insula) to 14% (striatum).',
@@ -25,9 +27,9 @@ const score = {
   id: 'help-recovery-sleep',
   title: 'Recovery sleep after sleep deprivation',
   description:
-    'Adenosine builds up in the brain the longer we stay awake and is one of the signals behind sleepiness; it acts through receptors such as the A1 adenosine receptor. One study measured how many of these receptors were available in men kept awake for 52 hours, and again after 14 hours of recovery sleep. Staying awake raised receptor availability; recovery sleep brought it back to the level of well-rested people. In this episode brightness stands for A1 receptor availability, not activity. In the first part it shows the difference from well-rested people; in "What changed" it shows the change after recovery sleep.',
+    'In animals, adenosine builds up in the brain the longer they stay awake and is one of the signals behind sleepiness; in humans this has not yet been shown directly. Adenosine acts through receptors such as the A1 adenosine receptor. One study measured how many of these receptors were available in men kept awake for 52 hours, and again after 14 hours of recovery sleep. Staying awake raised receptor availability; recovery sleep brought it back to the level of well-rested people. In this episode brightness stands for A1 receptor availability, not activity. In the first part it shows the difference from well-rested people; in "What changed" it shows the change after recovery sleep.',
   caveat: treatmentCaveat(
-    'All findings come from one PET study of 15 healthy young men after 52 hours awake, which is far longer than a usual night without sleep; the well-rested comparison came from a separate earlier group. "Frontal cortex" is drawn on the dorsolateral prefrontal cortex, "occipital" on the visual cortex and "parietal" on the inferior parietal cortex, which are approximations. The striatum is drawn as the caudate and putamen.',
+    'All findings come from one PET study of 14 healthy young men after 52 hours awake, which is far longer than a usual night without sleep; the well-rested comparison came from a separate earlier group. "Frontal cortex" is drawn on the dorsolateral prefrontal cortex, "occipital" on the visual cortex and "parietal" on the inferior parietal cortex, which are approximations. The anterior cingulate is drawn on its dorsal part and the temporal cortex on the lateral temporal cortex, also approximations. The striatum is drawn as the caudate and putamen.',
   ),
   durationSeconds: 32,
   phases: treatmentPhases({
@@ -39,7 +41,7 @@ const score = {
     afterCaption:
       'After recovery sleep, receptor availability is lower than it was after staying awake, in every region measured: most in the striatum and thalamus, by about 14%, and least in the insula and temporal cortex, by about 10 to 11%.',
     sameCaption:
-      'After recovery sleep, receptor availability no longer differed from well-rested people. People whose receptors rose more during sleep loss coped better with it, which the authors found surprising.',
+      'After recovery sleep, receptor availability no longer differed from well-rested people. People whose receptor availability fell more with recovery sleep had coped better with the sleep loss, which the authors found counterintuitive.',
     timedBy: [elmDesign],
   }),
   condition: {
@@ -48,7 +50,7 @@ const score = {
         region: 'caudate',
         explanation: 'Part of the striatum, where receptor availability fell most after recovery sleep, by about 14%, in one study.',
         confidence: 'mixed',
-        citations: [elmDecrease, elmRange, elmRestored],
+        citations: [elmDecrease, elmRange, elmRestored, elmIncluded, elmHumans],
         keyframes: after(-0.55),
       },
       {
@@ -97,7 +99,7 @@ const score = {
       },
       {
         region: 'dacc',
-        explanation: 'The anterior cingulate had lower receptor availability after recovery sleep, in one study. Drawn on the dorsal anterior cingulate.',
+        explanation: 'The anterior cingulate had lower receptor availability after recovery sleep, in one study. Drawn on the dorsal anterior cingulate, an approximation.',
         confidence: 'mixed',
         citations: [elmDecrease],
         keyframes: after(-0.35),
@@ -119,7 +121,7 @@ const score = {
       },
       {
         region: 'lateral-temporal',
-        explanation: 'The temporal cortex had the smallest decrease in receptor availability after recovery sleep, in one study.',
+        explanation: 'The temporal cortex had the smallest decrease in receptor availability after recovery sleep, in one study. Drawn on the lateral temporal cortex, an approximation.',
         confidence: 'mixed',
         citations: [elmDecrease],
         keyframes: after(-0.25),

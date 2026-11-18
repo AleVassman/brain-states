@@ -7,11 +7,12 @@ sentence that supports it. Activity values are qualitative: direction and rough 
 
 ## What is reconstruction in this episode
 
-All findings come from one study of 8 people with early Parkinson's affecting one side of the body, and 10 people without it. The effect of a single dose was measured over the following hour or so, not long-term treatment. The motor cortex finding is on the side opposite the affected hand; which side that is differed between people, so both sides are drawn. The authors note the supplementary motor area finding agrees with earlier studies, while the motor cortex finding has been controversial. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
+All findings come from one study of 8 people with early Parkinson's affecting one side of the body, and 10 people without it, scanned repeatedly every 20 minutes after a single dose. The motor cortex finding is on the side opposite the affected hand; the abstract does not say which side that was for each person, so drawing both sides is an assumption. The authors say earlier studies found the same reversal in the supplementary motor area, while the motor cortex finding has been controversial; those earlier studies were not read here. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
 
 ## Notes from the research pass
 
-- The supplementary motor area is "established" because the authors state its levodopa reversibility "has been established in previous studies"; those earlier studies were not read here.
+- The SMA is "mixed", not "established": the authors' statement about earlier studies could not be checked here.
+- The description's first sentence follows the abstract's model statement (buhModel).
 - Read as abstract only: Buhmann et al. 2003.
 
 ## Order of events
@@ -27,9 +28,9 @@ All findings come from one study of 8 people with early Parkinson's affecting on
 
 ## The condition
 
-### **sma** — Well established
+### **sma** — Mixed evidence
 
-Claim: Less active than in people without Parkinson's before the dose, and more active after it, mainly on the side opposite the affected hand, in one study of 8 people. The authors note that this reversal was already established by earlier studies.
+Claim: Less active than in people without Parkinson's before the dose, and more active after it, mainly on the side opposite the affected hand, in one study of 8 people. The authors say earlier studies found the same.
 
 On screen: peaks above baseline (0.5), ends at baseline (0).
 
@@ -41,10 +42,12 @@ On screen: peaks above baseline (0.5), ends at baseline (0).
   > "This functional cortical deafferentation and its reversibility by levodopa (L-dopa) treatment has been established in previous studies for SMA but remains controversial for M1."
 - Buhmann C, Glauche V, Stürenburg HJ, Oechsner M, Weiller C, Büchel C (2003). Pharmacologically modulated fMRI--cortical responsiveness to levodopa in drug-naive hemiparkinsonian patients. doi:10.1093/brain/awg033 — study, abstract-only
   > "Eight drug-naive patients with an akinetic idiopathic hemiparkinsonian syndrome (Hoehn and Yahr stage 1-1.5) and 10 healthy controls were studied."
+- Buhmann C, Glauche V, Stürenburg HJ, Oechsner M, Weiller C, Büchel C (2003). Pharmacologically modulated fMRI--cortical responsiveness to levodopa in drug-naive hemiparkinsonian patients. doi:10.1093/brain/awg033 — study, abstract-only
+  > "According to the basal ganglia-thalamocortical circuit model, dopamine depletion in the nigrostriatal system leads to hypoactivation in the supplementary motor area (SMA) and the primary motor cortex (M1) in Parkinson's disease."
 
 ### **motor-cortex** — Mixed evidence
 
-Claim: Less active than in people without Parkinson's before the dose, and more active after it, on the side opposite the affected hand, in one study of 8 people. Both sides are drawn because the affected side differed between people. The authors note this finding has been controversial.
+Claim: Less active than in people without Parkinson's before the dose, and more active after it, on the side opposite the affected hand, in one study of 8 people. Drawing both sides is an assumption. The authors note this finding has been controversial.
 
 On screen: peaks above baseline (0.45), ends at baseline (0).
 

@@ -34,7 +34,7 @@ const score = {
   description:
     'Exposure and response prevention is a behaviour therapy for obsessive-compulsive disorder: people gradually face what triggers their obsessions while resisting the urge to carry out the compulsion, until the anxiety fades on its own. Two studies by the same group measured the brain\'s energy use before and after treatment. In people who improved, the caudate, part of the striatum, used less energy afterwards. The same was found with the medicine fluoxetine. In this episode brightness stands for energy use (glucose metabolism) relative to the rest of the brain. It shows the change since before treatment: violet means less than before.',
   caveat: treatmentCaveat(
-    'These are two small, older studies by one research group, with 9 people in each behaviour therapy sample, using PET scans of glucose use rather than fMRI. The decrease was found in people who responded to treatment; in those who did not, and in people without OCD, it did not change. The sources read do not report how the brain differed from people without OCD before treatment, so the first part is drawn at rest.',
+    'These are two small, older studies by one research group, with 9 people in each behaviour therapy sample, using PET scans of glucose use rather than fMRI. The decrease was found in people who responded to treatment; in the first study it did not change in those who did not respond or in people without OCD, and in the second it was smaller in poor responders. The sources read do not report how the brain differed from people without OCD before treatment, so the first part is drawn at rest.',
   ),
   durationSeconds: 32,
   phases: treatmentPhases({
@@ -45,7 +45,7 @@ const score = {
     afterCaption:
       'In people who improved, the caudate uses less energy than before, on both sides in the second study. Before treatment, activity in the orbitofrontal cortex rose and fell together with the caudate and thalamus across people; after successful treatment, it did so much less.',
     sameCaption:
-      'In people who did not improve, and in people without OCD scanned twice, the caudate did not change. The same change was seen with the medicine fluoxetine, so it may reflect getting better rather than the therapy itself.',
+      'In the first study, the caudate did not change in people who did not improve or in people without OCD scanned twice. The same change was seen with the medicine fluoxetine; the authors suggest this circuit may carry the symptoms themselves.',
     timedBy: [baxterDesign, schwartzDesign],
   }),
   condition: {
@@ -53,9 +53,9 @@ const score = {
       {
         region: 'caudate',
         explanation:
-          'Used less energy after treatment in people who responded, on the right in one study and on both sides in a second study by the same group. In non-responders and people without OCD it did not change. Brightness stands for glucose use relative to the rest of the brain, not activity measured by fMRI.',
+          'Used less energy after treatment in people who responded, on the right in one study and on both sides in a second study by the same group. In the first study it did not change in non-responders or people without OCD; in the second it was smaller in poor responders. Brightness stands for glucose use relative to the rest of the brain, not activity measured by fMRI.',
         confidence: 'mixed',
-        citations: [baxterCaudate, baxterNonresponders, schwartzBilateral, schwartzDesign],
+        citations: [baxterCaudate, baxterNonresponders, schwartzBilateral, schwartzDesign, schwartzCircuit],
         keyframes: after(-0.5),
       },
     ],
@@ -64,7 +64,6 @@ const score = {
   typical: null,
 };
 
-void schwartzCircuit;
 
 writeScore(score, {
   indexTitle: 'Exposure therapy for OCD',

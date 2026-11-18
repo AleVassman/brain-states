@@ -1,8 +1,8 @@
 {
  "id": "help-ms-rehab",
  "title": "Attention training in multiple sclerosis",
- "description": "Many people with multiple sclerosis have problems with attention and concentration. Cognitive rehabilitation trains these skills with structured exercises. In one small randomised trial, people who did intensive computer-based attention training improved on an attention test, and the back of the cerebellum and an area at the top of the parietal lobe became more active during an attention task. In this episode brightness shows the change since before training, compared with people who did a placebo programme.",
- "caveat": "All findings come from one trial of 23 people with multiple sclerosis and attention problems: 12 did the training and 11 a placebo programme. The superior parietal lobule is not a separate area in the brain model and is not drawn. The training does not change the multiple sclerosis itself. The first part is drawn at rest because the comparison starts from each person's own level. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "description": "Many people with multiple sclerosis have problems with attention and concentration. Cognitive rehabilitation trains these skills with structured exercises. In one small randomised trial, people who did intensive computer-based attention training did better on an attention test than people who did a placebo programme, and this went with more activity at the back of the cerebellum and at the top of the parietal lobe. In this episode brightness shows more activity after training compared with the placebo group.",
+ "caveat": "All findings come from one trial of 23 people with multiple sclerosis and attention problems: 12 did the training and 11 a placebo programme. Only the abstract could be read; it compares the groups after training and does not say whether the brain was scanned before training as well, nor whether the activity was a group difference or a link with how much attention improved. The posterior cerebellar lobule is drawn on the cerebellum outline, an approximation, and the superior parietal lobule is not in the brain model. Lesions were not measured in this study. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
  "durationSeconds": 30,
  "phases": [
   {
@@ -11,7 +11,7 @@
    "timescale": "before treatment",
    "start": 0,
    "end": 0.25,
-   "caption": "Before training. The comparison here starts from each person's own level, so the brain is drawn at rest."
+   "caption": "Before training. The source does not describe the brain before training, so it is drawn at rest."
   },
   {
    "id": "during",
@@ -19,7 +19,7 @@
    "timescale": "weeks",
    "start": 0.25,
    "end": 0.4,
-   "caption": "Intensive computer-based attention exercises. People were not scanned during this time.",
+   "caption": "Intensive computer-based attention exercises, or a placebo programme. People were not scanned during this time.",
    "order": {
     "kind": "timed",
     "citations": [
@@ -42,7 +42,7 @@
    "timescale": "after treatment",
    "start": 0.4,
    "end": 0.8,
-   "caption": "After training, attention improved compared with the placebo group, and the back of the cerebellum, along with the superior parietal lobule, was more active during an attention task.",
+   "caption": "After training, attention was better than in the placebo group, and this went with more activity at the back of the cerebellum and in the superior parietal lobule during an attention task.",
    "order": {
     "kind": "timed",
     "citations": [
@@ -65,7 +65,7 @@
    "timescale": "summary",
    "start": 0.8,
    "end": 1,
-   "caption": "Only some aspects of attention improved. This is one small trial, and the damage caused by multiple sclerosis is not changed by training.",
+   "caption": "Only some aspects of attention improved. This is one small trial, read from its abstract only.",
    "order": {
     "kind": "reconstructed",
     "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
@@ -76,7 +76,7 @@
   "regions": [
    {
     "region": "cerebellum-mid",
-    "explanation": "The posterior cerebellar lobule was more active during an attention task after intensive attention training than after a placebo programme, in one trial of 23 people with multiple sclerosis.",
+    "explanation": "The posterior cerebellar lobule was more active during an attention task after intensive attention training, compared with a placebo programme, in one trial of 23 people with multiple sclerosis. The abstract does not make clear whether this is a group difference or a link with how much attention improved. Drawn on the cerebellum outline, an approximation.",
     "confidence": "mixed",
     "citations": [
      {
@@ -111,11 +111,11 @@
      },
      {
       "t": 0.48,
-      "v": 0.45
+      "v": 0.4
      },
      {
       "t": 0.8,
-      "v": 0.45
+      "v": 0.4
      },
      {
       "t": 0.85,

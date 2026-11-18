@@ -15,6 +15,8 @@ const oltedalSample = cite(
   'oltedal2018',
   'Hippocampal volumes were extracted from structural MR images, acquired before and after patients (N=281) experiencing a major depressive episode completed an ECT treatment series using right unilateral (RUL) and bilateral (BL) stimulation.',
 );
+const oltedalPoorer = cite('oltedal2018', 'Individuals with greater treatment-related volume increases had poorer outcomes');
+const joshiPredict = cite('joshi2016', 'Hippocampal volume at baseline predicted subsequent clinical response');
 const oltedalOutcome = cite(
   'oltedal2018',
   'the high efficacy of ECT is not explained by hippocampal enlargement, which alone, might not serve as a viable biomarker for treatment outcome.',
@@ -44,14 +46,14 @@ const score = {
       {
         region: 'hippocampus',
         explanation:
-          'Smaller than in people without depression before treatment, in one study. Larger after a course of ECT, in that study and in a combined analysis of 281 patients, by about 0.28% per session. The larger increase did not go with a better outcome. Brightness stands for volume, not activity.',
+          'Smaller than in people without depression before treatment, in one study. Larger after a course of ECT, in that study and in a combined analysis of 281 patients, by about 0.28% per session on the right. In the smaller study, the increase went with improvement and a smaller hippocampus beforehand predicted a better response; in the larger analysis, people with bigger increases had poorer outcomes, though not significantly once the number of sessions was taken into account. Brightness stands for volume, not activity.',
         confidence: 'established',
-        citations: [joshiBaseline, joshiIncrease, oltedalDose, oltedalSample, oltedalOutcome],
+        citations: [joshiBaseline, joshiIncrease, joshiPredict, oltedalDose, oltedalSample, oltedalPoorer, oltedalOutcome],
         keyframes: beforeAfter(-0.3, 0.55),
       },
       {
         region: 'amygdala',
-        explanation: 'Larger after a course of ECT, in one study of 43 patients, and the increase went with symptom improvement in that study. Brightness stands for volume, not activity.',
+        explanation: 'Larger after a course of ECT, in one study of 43 patients (including 7 with bipolar depression), and the increase went with symptom improvement on some ratings in that study. Brightness stands for volume, not activity.',
         confidence: 'mixed',
         citations: [joshiIncrease, joshiDesign, joshiControls],
         keyframes: after(0.4),

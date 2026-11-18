@@ -30,12 +30,22 @@ const saberiDlpfc = cite(
   'Subgroup analysis in the Treated > Untreated contrast revealed a convergent cluster in the left dorsolateral prefrontal cortex, which was associated with working memory and attention behavioral domains.',
 );
 
+const saberiBoth = cite(
+  'saberi2025',
+  'To assess the convergence across classic antidepressants, we performed a subgroup analysis after excluding ketamine among 14 Tr+ experiments and found clusters of convergence in the left (MNI −38, 30, 30; 95 voxels) and right DLPFC (MNI 44, 26, 24; 106 voxels)',
+);
+const saberiMsfg = cite(
+  'saberi2025',
+  'performed an ALE on Tr+ effects reported after more than 4 weeks of treatment (12 experiments) which revealed a convergent cluster in the medial superior frontal gyrus (MNI 8, 54, 30; 104 voxels)',
+);
+const saberiResponded = cite('saberi2025', 'Second, we studied the neuroimaging effects of antidepressant medications on patients with MDD who had received but not necessarily responded to the treatment');
+
 const score = {
   id: 'help-antidepressants',
   title: 'Antidepressants for depression',
   description: `Antidepressant medication is one of the main treatments for depression and is usually taken for weeks before it helps. Studies scanned people with depression while they looked at emotional faces or pictures, before and after treatment. After treatment, emotional areas such as the amygdala responded less, and areas at the front of the brain that help control attention responded more. ${BRIGHTNESS}`,
   caveat: treatmentCaveat(
-    'The "before" difference comes from one study of 11 people with depression and 11 without. The changes come from a pooled analysis of 9 studies of emotional tasks. A larger and newer pooled analysis of 36 studies, which only counted findings from searches of the whole brain, found no area that changed consistently except the left dorsolateral prefrontal cortex, so most of the changes drawn here are still debated. Different medicines and tasks were pooled together.',
+    'The "before" difference comes from one study of 11 people with depression and 11 without. The changes come from a pooled analysis of 9 studies of emotional tasks. A larger and newer pooled analysis of 36 studies, which only counted findings from searches of the whole brain, found no area that changed consistently across all studies; in subgroups it found the dorsolateral prefrontal cortex on both sides and the medial superior frontal gyrus. That analysis mixed resting and task scans, included ketamine, and included people who had not necessarily responded. Most of the other changes drawn here are still debated. Different medicines and tasks were pooled together.',
   ),
   durationSeconds: 34,
   phases: treatmentPhases({
@@ -44,7 +54,7 @@ const score = {
     duringTimescale: 'weeks',
     duringCaption: 'Weeks of daily medication. The studies did not scan people during this time, so the brain is drawn at rest.',
     afterCaption:
-      'Compared with before treatment, the amygdala, hippocampus and nearby areas, the insula and the orbitofrontal cortex respond less to emotional pictures, and the outer front of the brain responds more. Only the increase in the left dorsolateral prefrontal cortex was found again in the larger, newer analysis.',
+      'Compared with before treatment, the amygdala, hippocampus and nearby areas, the insula and the orbitofrontal cortex respond less to emotional pictures, and the outer front of the brain responds more. Only the increases in the dorsolateral prefrontal cortex, and in the medial prefrontal cortex after longer treatment, were found again in subgroups of the larger, newer analysis.',
     sameCaption:
       'In the larger analysis, most areas did not change in the same way across studies. Medicines, tasks and people differed, and the studies do not show that these brain changes are what makes people feel better.',
     timedBy: [shelineDesign],
@@ -70,23 +80,23 @@ const score = {
       {
         region: 'dlpfc-l',
         explanation:
-          'More active after treatment. This is the one change found in both a pooled analysis of 9 studies and a newer pooled analysis of 36 studies, where it was on the left. It is linked with working memory and attention.',
-        confidence: 'established',
-        citations: [delaveauChange, saberiDlpfc],
+          'More active after treatment, in a pooled analysis of 9 studies of emotional tasks. A newer pooled analysis of 36 studies, mostly of the brain at rest, found it in subgroups (treated versus untreated, and excluding ketamine), but not across all studies.',
+        confidence: 'mixed',
+        citations: [delaveauChange, saberiDlpfc, saberiBoth, saberiNone, saberiResponded],
         keyframes: after(0.5),
       },
       {
         region: 'dlpfc-r',
-        explanation: 'More active after treatment in a pooled analysis of 9 studies. The newer pooled analysis found this only on the left.',
-        confidence: 'debated',
-        citations: [delaveauChange, saberiDlpfc],
+        explanation: 'More active after treatment in a pooled analysis of 9 studies. The newer pooled analysis found the right side too when ketamine studies were left out, but not across all studies.',
+        confidence: 'mixed',
+        citations: [delaveauChange, saberiBoth, saberiNone],
         keyframes: after(0.35),
       },
       {
         region: 'mpfc',
-        explanation: 'The dorsomedial prefrontal cortex was more active after treatment, in a pooled analysis of 9 studies. Not found in the newer pooled analysis.',
-        confidence: 'debated',
-        citations: [delaveauChange, saberiNone],
+        explanation: 'The dorsomedial prefrontal cortex was more active after treatment, in a pooled analysis of 9 studies. The newer pooled analysis found the medial superior frontal gyrus only in studies with more than 4 weeks of treatment.',
+        confidence: 'mixed',
+        citations: [delaveauChange, saberiMsfg, saberiNone],
         keyframes: after(0.35),
       },
       {
@@ -113,7 +123,7 @@ const score = {
       {
         region: 'pgacc',
         explanation:
-          'The ventral anterior cingulate was less active after treatment, in a pooled analysis of 9 studies; it is drawn on the pregenual anterior cingulate. Not found in the newer pooled analysis.',
+          'The ventral anterior cingulate was less active after treatment, in a pooled analysis of 9 studies; it is drawn on the pregenual anterior cingulate, an approximation. Not found in the newer pooled analysis.',
         confidence: 'debated',
         citations: [delaveauChange, delaveauDmn, saberiNone],
         keyframes: after(-0.35),
@@ -158,8 +168,8 @@ writeScore(score, {
   category: 'treatment',
   treats: 'depression',
   notes: [
-    'The older pooled analysis (Delaveau et al. 2011, 9 studies) and the newer one (Saberi et al. 2025, 36 studies, whole-brain searches only) disagree; only the left dorsolateral prefrontal increase is in both, so only it is "established".',
-    'Saberi et al. 2025 found network-level convergence in a frontoparietal circuit; not drawn as a region.',
+    'The older pooled analysis (Delaveau et al. 2011, 9 studies) and the newer one (Saberi et al. 2025, 36 studies, whole-brain searches only) disagree; they agree only on the dorsolateral prefrontal cortex, and only in Saberi subgroups, so no region is marked established.',
+    'Saberi et al. 2025 found network-level convergence in a frontoparietal circuit; not drawn as a region. Its subgroup findings (both DLPFC, medial SFG) are cited on those regions.',
     'Delaveau et al. 2011 list the anterior cingulate (BA 32) among decreases; drawn on the pregenual anterior cingulate together with the ventral anterior cingulate.',
     'Read in full: Saberi et al. 2025. Read as abstracts only: Sheline et al. 2001, Delaveau et al. 2011.',
   ],

@@ -16,19 +16,19 @@ const score = {
   id: 'help-ms-rehab',
   title: 'Attention training in multiple sclerosis',
   description:
-    'Many people with multiple sclerosis have problems with attention and concentration. Cognitive rehabilitation trains these skills with structured exercises. In one small randomised trial, people who did intensive computer-based attention training improved on an attention test, and the back of the cerebellum and an area at the top of the parietal lobe became more active during an attention task. In this episode brightness shows the change since before training, compared with people who did a placebo programme.',
+    'Many people with multiple sclerosis have problems with attention and concentration. Cognitive rehabilitation trains these skills with structured exercises. In one small randomised trial, people who did intensive computer-based attention training did better on an attention test than people who did a placebo programme, and this went with more activity at the back of the cerebellum and at the top of the parietal lobe. In this episode brightness shows more activity after training compared with the placebo group.',
   caveat: treatmentCaveat(
-    'All findings come from one trial of 23 people with multiple sclerosis and attention problems: 12 did the training and 11 a placebo programme. The superior parietal lobule is not a separate area in the brain model and is not drawn. The training does not change the multiple sclerosis itself. The first part is drawn at rest because the comparison starts from each person\'s own level.',
+    'All findings come from one trial of 23 people with multiple sclerosis and attention problems: 12 did the training and 11 a placebo programme. Only the abstract could be read; it compares the groups after training and does not say whether the brain was scanned before training as well, nor whether the activity was a group difference or a link with how much attention improved. The posterior cerebellar lobule is drawn on the cerebellum outline, an approximation, and the superior parietal lobule is not in the brain model. Lesions were not measured in this study.',
   ),
   durationSeconds: 30,
   phases: treatmentPhases({
-    beforeCaption: 'Before training. The comparison here starts from each person\'s own level, so the brain is drawn at rest.',
+    beforeCaption: 'Before training. The source does not describe the brain before training, so it is drawn at rest.',
     duringName: 'Attention training',
     duringTimescale: 'weeks',
-    duringCaption: 'Intensive computer-based attention exercises. People were not scanned during this time.',
+    duringCaption: 'Intensive computer-based attention exercises, or a placebo programme. People were not scanned during this time.',
     afterCaption:
-      'After training, attention improved compared with the placebo group, and the back of the cerebellum, along with the superior parietal lobule, was more active during an attention task.',
-    sameCaption: 'Only some aspects of attention improved. This is one small trial, and the damage caused by multiple sclerosis is not changed by training.',
+      'After training, attention was better than in the placebo group, and this went with more activity at the back of the cerebellum and in the superior parietal lobule during an attention task.',
+    sameCaption: 'Only some aspects of attention improved. This is one small trial, read from its abstract only.',
     timedBy: [cerDesign],
   }),
   condition: {
@@ -36,10 +36,10 @@ const score = {
       {
         region: 'cerebellum-mid',
         explanation:
-          'The posterior cerebellar lobule was more active during an attention task after intensive attention training than after a placebo programme, in one trial of 23 people with multiple sclerosis.',
+          'The posterior cerebellar lobule was more active during an attention task after intensive attention training, compared with a placebo programme, in one trial of 23 people with multiple sclerosis. The abstract does not make clear whether this is a group difference or a link with how much attention improved. Drawn on the cerebellum outline, an approximation.',
         confidence: 'mixed',
         citations: [cerResult, cerDesign],
-        keyframes: after(0.45),
+        keyframes: after(0.4),
       },
     ],
     connections: [],
@@ -52,7 +52,7 @@ writeScore(score, {
   category: 'treatment',
   treats: 'ms',
   notes: [
-    'The superior parietal lobule is not a region in the brain model; the inferior parietal cortex was not used as a stand-in because they are different areas.',
+    'The abstract does not state that fMRI was done before training; the phase order is timed only by randomisation, and the caveat says the design is unclear from the abstract.',
     'Read as abstract only: Cerasa et al. 2013.',
   ],
 });

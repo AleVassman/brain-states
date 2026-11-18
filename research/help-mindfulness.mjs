@@ -27,6 +27,7 @@ const tarenStress = cite(
   'taren2015',
   'We show in an initial discovery study that higher perceived stress over the past month is associated with greater bilateral amygdala-subgenual anterior cingulate cortex (sgACC) rsFC in a sample of community adults (n = 130).',
 );
+const kralRight = cite('kral2018', 'since the group differences in amygdala reactivity were limited to the right side');
 const gotinkCount = cite('gotink2016', '21 fMRI studies and seven MRI studies were included (two studies performed both).');
 const gotinkSummary = cite(
   'gotink2016',
@@ -41,9 +42,9 @@ const score = {
   id: 'help-mindfulness',
   title: 'Mindfulness training for stress',
   description:
-    'Mindfulness training, such as the 8-week Mindfulness-Based Stress Reduction course, teaches people to pay attention to the present moment without judging it, through meditation and gentle movement. Trials compared it with other training of the same length. Afterwards, the amygdala reacted less to emotional pictures and worked more closely with a calming area at the front of the brain. Brightness and lines show the change since before training: violet means less than before, a pulsing line means working together more, a dashed line less.',
+    'Mindfulness training, such as the 8-week Mindfulness-Based Stress Reduction course, teaches people to pay attention to the present moment without judging it, through meditation and gentle movement. Trials compared it with other training of the same length. Afterwards, the right amygdala reacted less to positive pictures and worked more closely with an area at the front of the brain involved in regulating emotion. Brightness and lines show the change since before training: violet means less than before, a pulsing line means working together more, a dashed line less.',
   caveat: treatmentCaveat(
-    'The findings come from two randomised trials, one of an 8-week course in mostly healthy adults and one of a 3-day intensive course in stressed unemployed adults, and a review of 26 brain-imaging studies. The amygdala reacted less to positive pictures, but not to negative ones, after the 8-week course. The review reports increases in "activity, connectivity and volume" in several areas together, without separating them, so those are described, not drawn. These are not studies of an illness, and the first part is drawn at rest.',
+    'The findings come from two randomised trials, one of an 8-week course in healthy, non-clinical adults and one of a 3-day intensive course in stressed unemployed adults, and a review of 26 brain-imaging studies. The amygdala reacted less to positive pictures, but not to negative ones, after the 8-week course. The review reports increases in "activity, connectivity and volume" in several areas together, without separating them, so those are described, not drawn. These are not studies of an illness: it is linked to Acute stress, but the trials studied everyday or ongoing stress, not acute stress. The first part is drawn at rest.',
   ),
   durationSeconds: 32,
   phases: treatmentPhases({
@@ -52,29 +53,29 @@ const score = {
     duringTimescale: 'days to weeks',
     duringCaption: 'An 8-week course in one trial, a 3-day intensive retreat in the other. People were not scanned during this time.',
     afterCaption:
-      'After training, the amygdala reacts less to emotional pictures and works more closely with the ventromedial prefrontal cortex, which helps regulate emotion. After a 3-day course, the right amygdala works less closely with the subgenual cingulate at rest, a link that is stronger in people under more stress.',
+      'After training, the right amygdala reacts less to positive pictures and works more closely with the ventromedial prefrontal cortex, which helps regulate emotion. After a 3-day course, the right amygdala works less closely with the subgenual cingulate at rest, a link that is stronger in people under more stress.',
     sameCaption:
       'After the 8-week course, reactions to negative pictures did not change; the authors suggest that may need more practice. The left amygdala\'s links did not change after the 3-day course.',
-    timedBy: [kralDesign],
+    timedBy: [kralDesign, tarenSgacc],
   }),
   condition: {
     regions: [
       {
-        region: 'amygdala',
+        region: 'amygdala-r',
         explanation:
-          'Reacted less to positive pictures after an 8-week mindfulness course than after a control course, in one trial; no difference for negative pictures. A review of mindfulness studies also describes decreased amygdala activity.',
+          'The right amygdala reacted less to positive pictures after an 8-week mindfulness course than after a control course, in one trial; no difference for negative pictures. A review of mindfulness studies also describes decreased amygdala activity.',
         confidence: 'mixed',
-        citations: [kralPositive, kralDesign, gotinkSummary, gotinkCount],
+        citations: [kralPositive, kralRight, kralDesign, gotinkSummary, gotinkCount, gotinkOthers],
         keyframes: after(-0.35),
       },
     ],
     connections: [
       {
-        from: 'amygdala',
+        from: 'amygdala-r',
         to: 'vmpfc',
-        explanation: 'Worked together more closely while viewing emotional pictures after an 8-week mindfulness course than after a control course, in one trial.',
+        explanation: 'The right amygdala worked together more closely while viewing emotional pictures after an 8-week mindfulness course than after a control course, in one trial.',
         confidence: 'mixed',
-        citations: [kralVmpfc, gotinkSummary],
+        citations: [kralVmpfc, kralRight, gotinkSummary],
         keyframes: after(0.45),
       },
       {
@@ -91,7 +92,6 @@ const score = {
   typical: null,
 };
 
-void gotinkOthers;
 
 writeScore(score, {
   indexTitle: 'Mindfulness training',

@@ -1377,4 +1377,21 @@ export const SOURCES = {
     kind: 'study',
     pmid: '23192417',
   },
+  // ---- What helps: donepezil ----
+  dubois2015: {
+    authors: "Dubois B, Chupin M, Hampel H, Lista S, Cavedo E, Croisile B, Louis Tisserand G, et al.",
+    year: 2015,
+    title: "Donepezil decreases annual rate of hippocampal atrophy in suspected prodromal Alzheimer's disease.",
+    doi: '10.1016/j.jalz.2014.10.003',
+    kind: 'study',
+    pmid: '25596420',
+  },
+  cavedo2017: {
+    authors: "Cavedo E, Grothe MJ, Colliot O, Lista S, Chupin M, Dormont D, Houot M, et al.",
+    year: 2017,
+    title: "Reduced basal forebrain atrophy progression in a randomized Donepezil trial in prodromal Alzheimer's disease.",
+    doi: '10.1038/s41598-017-09780-3',
+    kind: 'study',
+    pmid: '28916821',
+  },
 };

@@ -28,9 +28,9 @@ const koenigDesign = cite(
 const score = {
   id: 'help-cbt-depression',
   title: 'Talking therapy (CBT) for depression',
-  description: `Cognitive behavioural therapy (CBT) is a talking therapy that helps people notice and change patterns of thinking and behaviour that keep depression going. Studies scanned people with depression before and after a course of CBT. At rest, the front of the cingulate cortex, which helps regulate emotion, was more active after therapy. ${BRIGHTNESS}`,
+  description: `Cognitive behavioural therapy (CBT) is a talking therapy that helps people notice and change patterns of thinking and behaviour that keep depression going. Studies scanned people with depression before and after a course of CBT. At rest, the front of the cingulate cortex, which helps regulate emotion, was more active after therapy, on a resting measure the abstract read does not name. ${BRIGHTNESS}`,
   caveat: treatmentCaveat(
-    'The resting-state changes come from a pooled analysis of 22 studies of CBT for depression and anxiety; for depression during tasks, it found no consistent pattern. A review of 14 task studies describes calmer emotional areas after CBT, but with mixed results across studies, so those are described, not drawn. The sources read do not report how the brain differed before treatment, so the first part is drawn at rest.',
+    'The resting-state changes come from a pooled analysis of 22 studies of CBT for depression and anxiety; for depression during tasks, it found no consistent pattern. A review of 14 task studies describes calmer emotional areas after CBT, but with mixed results across studies, so those are described, not drawn. The sources read do not report how the brain differed before treatment, so the first part is drawn at rest. The 22 studies cover depression and anxiety together; how many were resting-state studies of depression is not given in the abstract read.',
   ),
   durationSeconds: 34,
   phases: treatmentPhases({
@@ -41,16 +41,16 @@ const score = {
     afterCaption:
       'At rest, the ventral anterior cingulate on both sides was more active than before therapy, along with the left parahippocampal gyrus, the left inferior temporal gyrus and part of the right visual cortex. During tasks, a review describes calmer emotional areas, but results differ between studies.',
     sameCaption: 'During tasks, the pooled analysis found no consistent pattern of change in depression. Studies used different tasks and different forms of CBT.',
-    timedBy: [koenigDesign],
+    timedBy: [renRest],
   }),
   condition: {
     regions: [
       {
         region: 'pgacc',
         explanation:
-          'The ventral anterior cingulate, on both sides, was more active at rest after CBT for depression, in a pooled analysis. It is drawn on the pregenual anterior cingulate. The authors see it as shared by CBT for depression and for anxiety, and linked to emotion regulation.',
+          'The ventral anterior cingulate, on both sides, was more active at rest after CBT for depression, in a pooled analysis. It is drawn on the pregenual anterior cingulate, an approximation (it could also be the subgenual part). The authors see it as shared by CBT for depression and for anxiety, and linked to emotion regulation.',
         confidence: 'mixed',
-        citations: [renRest, renSample],
+        citations: [renRest, renSample, renTask, koenigFindings, koenigHeterogeneous, koenigDesign],
         keyframes: after(0.5),
       },
       {
@@ -69,7 +69,7 @@ const score = {
       },
       {
         region: 'visual-cortex-r',
-        explanation: 'The right inferior occipital gyrus was more active at rest after CBT for depression, in a pooled analysis. It is part of the visual cortex, which is drawn.',
+        explanation: 'The right inferior occipital gyrus was more active at rest after CBT for depression, in a pooled analysis. It is drawn on the visual cortex, an approximation: the visual cortex in the brain model does not include this gyrus.',
         confidence: 'mixed',
         citations: [renRest],
         keyframes: after(0.3),
@@ -80,9 +80,6 @@ const score = {
   typical: null,
 };
 
-void renTask;
-void koenigFindings;
-void koenigHeterogeneous;
 
 writeScore(score, {
   indexTitle: 'Talking therapy (CBT) for depression',

@@ -1,8 +1,8 @@
 {
  "id": "help-epilepsy-surgery",
  "title": "Epilepsy surgery for temporal lobe seizures",
- "description": "When temporal lobe seizures cannot be controlled with medicine, surgery to remove or disconnect the area where they start can stop them; about two thirds of people become seizure-free. One study scanned people before and, on average, more than three years after surgery. In those who became seizure-free, the brainstem's arousal centres, which keep the brain awake and alert, became more in step again with the cortex. Lines show how closely areas work together: in the first part compared with people without epilepsy (dashed means less); in \"What changed\" compared with before surgery (pulsing means more).",
- "caveat": "All findings come from one study of 15 people with temporal lobe epilepsy, 10 of whom became seizure-free after surgery, and 15 people without epilepsy. In the 5 who still had seizures, nothing changed. The surgery itself, removing part of the temporal lobe, is not drawn. The arousal centres studied are small nuclei in the upper brainstem and the ventral tegmental area; they are drawn as the brainstem outline, and \"frontal\" neocortex is drawn on the dorsolateral prefrontal cortex, which are approximations. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "description": "When temporal lobe seizures cannot be controlled with medicine, surgery to remove or destroy the area where they start (including by laser) can stop them; about two thirds of people become seizure-free. One study scanned people before and, on average, about three years after surgery. In those who became seizure-free, two of the brainstem's arousal centres, which keep the brain awake and alert, became more in step with the cortex, looking more like people without epilepsy. Lines show how closely areas work together: in the first part compared with people without epilepsy (dashed means less); in \"What changed\" compared with before surgery (pulsing means more).",
+ "caveat": "All findings come from one study of 15 people with temporal lobe epilepsy, 10 of whom became seizure-free, and 15 people without epilepsy; the authors call it a preliminary analysis. In the 5 who still had seizures no change was detected, but that group was very small. The weaker connections before surgery rest mainly on this group's earlier work. A third arousal centre, the ventral tegmental area, did not change. The arousal centres that changed are two small nuclei in the upper brainstem, drawn as the brainstem outline. The cortex areas are mapped approximately: the inferior frontal gyrus to the ventrolateral prefrontal cortex, the precentral gyrus to the motor cortex, the postcentral gyrus to the sensory cortex. The superior parietal lobule is not in the brain model. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
  "durationSeconds": 32,
  "phases": [
   {
@@ -11,7 +11,7 @@
    "timescale": "before treatment",
    "start": 0,
    "end": 0.25,
-   "caption": "Before surgery, the brainstem arousal centres are less in step with the cortex than in people without epilepsy."
+   "caption": "Before surgery, the brainstem arousal centres are less in step with the cortex than in people without epilepsy, as this group found in earlier work."
   },
   {
    "id": "during",
@@ -19,7 +19,7 @@
    "timescale": "years",
    "start": 0.25,
    "end": 0.4,
-   "caption": "Surgery, then at least a year (on average more than three) before the second scan. The brain is drawn at rest here.",
+   "caption": "Surgery, then at least a year, about three on average, before the second scan. The brain is drawn at rest here.",
    "order": {
     "kind": "timed",
     "citations": [
@@ -65,7 +65,7 @@
    "timescale": "summary",
    "start": 0.8,
    "end": 1,
-   "caption": "In people who still had seizures after surgery, these connections did not change. Structural (wiring) connections did not change either.",
+   "caption": "In the 5 people who still had seizures, no change was detected, though the group was very small. Structural (wiring) connections did not change. The ventral tegmental area did not change.",
    "order": {
     "kind": "reconstructed",
     "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
@@ -78,9 +78,19 @@
    {
     "from": "brainstem-mid",
     "to": "insula",
-    "explanation": "Less in step than in people without epilepsy before surgery; more in step after surgery in people who became seizure-free, in one study. The arousal centres studied are small nuclei in the upper brainstem and the ventral tegmental area; they are drawn as the brainstem outline, and \"frontal\" neocortex is drawn on the dorsolateral prefrontal cortex, which are approximations.",
+    "explanation": "Less in step than in people without epilepsy before surgery (from earlier work), and more in step after surgery in people who became seizure-free, in one study.",
     "confidence": "mixed",
     "citations": [
+     {
+      "authors": "González HFJ, Goodale SE, Jacobs ML, Haas KF, Landman BA, Morgan VL, Englot DJ",
+      "year": 2020,
+      "title": "Brainstem Functional Connectivity Disturbances in Epilepsy may Recover After Successful Surgery.",
+      "doi": "10.1093/neuros/nyz128",
+      "pmid": "31093673",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "As previous work demonstrated functional connectivity decreases between ARAS and fronto-parietal-insular neocortex in TLE"
+     },
      {
       "authors": "González HFJ, Goodale SE, Jacobs ML, Haas KF, Landman BA, Morgan VL, Englot DJ",
       "year": 2020,
@@ -119,7 +129,37 @@
       "pmid": "31093673",
       "kind": "study",
       "access": "full-text",
-      "quote": "No functional connectivity changes were detected in 5 patients with persistent seizures after surgery"
+      "quote": "inferior frontal gyrus pars opercularis and pars triangularis, precentral gyrus, postcentral gyrus, superior parietal lobule, and insula"
+     },
+     {
+      "authors": "González HFJ, Goodale SE, Jacobs ML, Haas KF, Landman BA, Morgan VL, Englot DJ",
+      "year": 2020,
+      "title": "Brainstem Functional Connectivity Disturbances in Epilepsy may Recover After Successful Surgery.",
+      "doi": "10.1093/neuros/nyz128",
+      "pmid": "31093673",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Examination of patients with continued postoperative seizures was limited by sample size (n = 5)"
+     },
+     {
+      "authors": "González HFJ, Goodale SE, Jacobs ML, Haas KF, Landman BA, Morgan VL, Englot DJ",
+      "year": 2020,
+      "title": "Brainstem Functional Connectivity Disturbances in Epilepsy may Recover After Successful Surgery.",
+      "doi": "10.1093/neuros/nyz128",
+      "pmid": "31093673",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "This work must be considered a preliminary analysis of postoperative ARAS connectivity changes because of the small sample size and heterogeneous patient population"
+     },
+     {
+      "authors": "González HFJ, Goodale SE, Jacobs ML, Haas KF, Landman BA, Morgan VL, Englot DJ",
+      "year": 2020,
+      "title": "Brainstem Functional Connectivity Disturbances in Epilepsy may Recover After Successful Surgery.",
+      "doi": "10.1093/neuros/nyz128",
+      "pmid": "31093673",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "In TLE, surgery leads to seizure freedom in approximately two thirds of patients."
      }
     ],
     "keyframes": [
@@ -163,8 +203,8 @@
    },
    {
     "from": "brainstem-mid",
-    "to": "inferior-parietal",
-    "explanation": "Parietal cortex: less in step before surgery, more in step after surgery in people who became seizure-free, in one study. Drawn on the inferior parietal cortex.",
+    "to": "vlpfc",
+    "explanation": "Inferior frontal gyrus: less in step before surgery, more in step after it in people who became seizure-free. Drawn on the ventrolateral prefrontal cortex, an approximation.",
     "confidence": "mixed",
     "citations": [
      {
@@ -175,7 +215,7 @@
       "pmid": "31093673",
       "kind": "study",
       "access": "full-text",
-      "quote": "ARAS functional connectivity disturbances are present in TLE but may recover after successful epilepsy surgery."
+      "quote": "As previous work demonstrated functional connectivity decreases between ARAS and fronto-parietal-insular neocortex in TLE"
      },
      {
       "authors": "González HFJ, Goodale SE, Jacobs ML, Haas KF, Landman BA, Morgan VL, Englot DJ",
@@ -195,7 +235,7 @@
       "pmid": "31093673",
       "kind": "study",
       "access": "full-text",
-      "quote": "with postoperative connectivity patterns resembling controls’ connectivity."
+      "quote": "inferior frontal gyrus pars opercularis and pars triangularis, precentral gyrus, postcentral gyrus, superior parietal lobule, and insula"
      }
     ],
     "keyframes": [
@@ -239,8 +279,8 @@
    },
    {
     "from": "brainstem-mid",
-    "to": "dlpfc",
-    "explanation": "Frontal cortex: less in step before surgery, more in step after surgery in people who became seizure-free, in one study. Drawn on the dorsolateral prefrontal cortex, an approximation.",
+    "to": "motor-cortex",
+    "explanation": "Precentral gyrus: less in step before surgery, more in step after it in people who became seizure-free. Drawn on the motor cortex, an approximation.",
     "confidence": "mixed",
     "citations": [
      {
@@ -251,7 +291,7 @@
       "pmid": "31093673",
       "kind": "study",
       "access": "full-text",
-      "quote": "ARAS functional connectivity disturbances are present in TLE but may recover after successful epilepsy surgery."
+      "quote": "As previous work demonstrated functional connectivity decreases between ARAS and fronto-parietal-insular neocortex in TLE"
      },
      {
       "authors": "González HFJ, Goodale SE, Jacobs ML, Haas KF, Landman BA, Morgan VL, Englot DJ",
@@ -271,7 +311,7 @@
       "pmid": "31093673",
       "kind": "study",
       "access": "full-text",
-      "quote": "with postoperative connectivity patterns resembling controls’ connectivity."
+      "quote": "inferior frontal gyrus pars opercularis and pars triangularis, precentral gyrus, postcentral gyrus, superior parietal lobule, and insula"
      }
     ],
     "keyframes": [
@@ -281,11 +321,11 @@
      },
      {
       "t": 0.05,
-      "v": -0.35
+      "v": -0.3
      },
      {
       "t": 0.22,
-      "v": -0.35
+      "v": -0.3
      },
      {
       "t": 0.26,
@@ -297,11 +337,11 @@
      },
      {
       "t": 0.48,
-      "v": 0.4
+      "v": 0.35
      },
      {
       "t": 0.8,
-      "v": 0.4
+      "v": 0.35
      },
      {
       "t": 0.85,
@@ -314,11 +354,21 @@
     ]
    },
    {
-    "from": "vta",
-    "to": "insula",
-    "explanation": "The ventral tegmental area is one of the arousal centres studied; it became more in step with the cortex after surgery in people who became seizure-free, in one study.",
+    "from": "brainstem-mid",
+    "to": "somatosensory",
+    "explanation": "Postcentral gyrus: less in step before surgery, more in step after it in people who became seizure-free. Drawn on the sensory cortex, an approximation.",
     "confidence": "mixed",
     "citations": [
+     {
+      "authors": "González HFJ, Goodale SE, Jacobs ML, Haas KF, Landman BA, Morgan VL, Englot DJ",
+      "year": 2020,
+      "title": "Brainstem Functional Connectivity Disturbances in Epilepsy may Recover After Successful Surgery.",
+      "doi": "10.1093/neuros/nyz128",
+      "pmid": "31093673",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "As previous work demonstrated functional connectivity decreases between ARAS and fronto-parietal-insular neocortex in TLE"
+     },
      {
       "authors": "González HFJ, Goodale SE, Jacobs ML, Haas KF, Landman BA, Morgan VL, Englot DJ",
       "year": 2020,
@@ -337,7 +387,17 @@
       "pmid": "31093673",
       "kind": "study",
       "access": "full-text",
-      "quote": "No functional connectivity changes were detected in 5 patients with persistent seizures after surgery"
+      "quote": "inferior frontal gyrus pars opercularis and pars triangularis, precentral gyrus, postcentral gyrus, superior parietal lobule, and insula"
+     },
+     {
+      "authors": "González HFJ, Goodale SE, Jacobs ML, Haas KF, Landman BA, Morgan VL, Englot DJ",
+      "year": 2020,
+      "title": "Brainstem Functional Connectivity Disturbances in Epilepsy may Recover After Successful Surgery.",
+      "doi": "10.1093/neuros/nyz128",
+      "pmid": "31093673",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Postoperative connectivity increases were observed for PPN and CSC, whereas no increase was observed for VTA"
      }
     ],
     "keyframes": [

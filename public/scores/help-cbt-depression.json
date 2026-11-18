@@ -1,8 +1,8 @@
 {
  "id": "help-cbt-depression",
  "title": "Talking therapy (CBT) for depression",
- "description": "Cognitive behavioural therapy (CBT) is a talking therapy that helps people notice and change patterns of thinking and behaviour that keep depression going. Studies scanned people with depression before and after a course of CBT. At rest, the front of the cingulate cortex, which helps regulate emotion, was more active after therapy. In the first part, brightness shows how the brain differed from people without the condition before treatment. In \"What changed\", brightness shows the change since before treatment: warmer means more than before, violet means less than before.",
- "caveat": "The resting-state changes come from a pooled analysis of 22 studies of CBT for depression and anxiety; for depression during tasks, it found no consistent pattern. A review of 14 task studies describes calmer emotional areas after CBT, but with mixed results across studies, so those are described, not drawn. The sources read do not report how the brain differed before treatment, so the first part is drawn at rest. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "description": "Cognitive behavioural therapy (CBT) is a talking therapy that helps people notice and change patterns of thinking and behaviour that keep depression going. Studies scanned people with depression before and after a course of CBT. At rest, the front of the cingulate cortex, which helps regulate emotion, was more active after therapy, on a resting measure the abstract read does not name. In the first part, brightness shows how the brain differed from people without the condition before treatment. In \"What changed\", brightness shows the change since before treatment: warmer means more than before, violet means less than before.",
+ "caveat": "The resting-state changes come from a pooled analysis of 22 studies of CBT for depression and anxiety; for depression during tasks, it found no consistent pattern. A review of 14 task studies describes calmer emotional areas after CBT, but with mixed results across studies, so those are described, not drawn. The sources read do not report how the brain differed before treatment, so the first part is drawn at rest. The 22 studies cover depression and anxiety together; how many were resting-state studies of depression is not given in the abstract read. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
  "durationSeconds": 34,
  "phases": [
   {
@@ -24,14 +24,14 @@
     "kind": "timed",
     "citations": [
      {
-      "authors": "König P, Zwiky E, Küttner A, Uhlig M, Redlich R",
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
       "year": 2025,
-      "title": "Brain functional effects of cognitive behavioral therapy for depression: A systematic review of task-based fMRI studies.",
-      "doi": "10.1016/j.jad.2024.09.084",
-      "pmid": "39299583",
-      "kind": "review",
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
       "access": "abstract-only",
-      "quote": "Out of 2149 results of the literature search, N = 14 studies met the inclusion criteria (e.g., diagnosis of a current depressive disorder, assessment of longitudinal task-based fMRI, and the analysis of functional changes before and after CBT)."
+      "quote": "Our results show that in the resting state, patients with depression treated with CBT resulted in increased activation of the right and left ventral anterior cingulate cortex (vACC), left parahippocampal gyrus (PG), right subgyral, left inferior temporal gyrus (ITG), and right inferior occipital gyrus (IOG)"
      }
     ]
    }
@@ -47,14 +47,14 @@
     "kind": "timed",
     "citations": [
      {
-      "authors": "König P, Zwiky E, Küttner A, Uhlig M, Redlich R",
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
       "year": 2025,
-      "title": "Brain functional effects of cognitive behavioral therapy for depression: A systematic review of task-based fMRI studies.",
-      "doi": "10.1016/j.jad.2024.09.084",
-      "pmid": "39299583",
-      "kind": "review",
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
       "access": "abstract-only",
-      "quote": "Out of 2149 results of the literature search, N = 14 studies met the inclusion criteria (e.g., diagnosis of a current depressive disorder, assessment of longitudinal task-based fMRI, and the analysis of functional changes before and after CBT)."
+      "quote": "Our results show that in the resting state, patients with depression treated with CBT resulted in increased activation of the right and left ventral anterior cingulate cortex (vACC), left parahippocampal gyrus (PG), right subgyral, left inferior temporal gyrus (ITG), and right inferior occipital gyrus (IOG)"
      }
     ]
    }
@@ -76,7 +76,7 @@
   "regions": [
    {
     "region": "pgacc",
-    "explanation": "The ventral anterior cingulate, on both sides, was more active at rest after CBT for depression, in a pooled analysis. It is drawn on the pregenual anterior cingulate. The authors see it as shared by CBT for depression and for anxiety, and linked to emotion regulation.",
+    "explanation": "The ventral anterior cingulate, on both sides, was more active at rest after CBT for depression, in a pooled analysis. It is drawn on the pregenual anterior cingulate, an approximation (it could also be the subgenual part). The authors see it as shared by CBT for depression and for anxiety, and linked to emotion regulation.",
     "confidence": "mixed",
     "citations": [
      {
@@ -98,6 +98,46 @@
       "kind": "meta-analysis",
       "access": "abstract-only",
       "quote": "A total of 22 articles, encompassing 443 patients, were included in the meta-analysis."
+     },
+     {
+      "authors": "Ren J, Ma L, Wu W, Qiu J, Zhang Z, Hong Y, Wang Z, et al.",
+      "year": 2025,
+      "title": "Activation Likelihood Estimation Meta-Analysis of the Effects of Cognitive Behavioral Therapy on Brain Activation in the Treatment of Depression and Anxiety Disorders.",
+      "doi": "10.1155/da/3557367",
+      "pmid": "40556954",
+      "kind": "meta-analysis",
+      "access": "abstract-only",
+      "quote": "For depressive disorders, no consistent activation patterns emerged in the task state, likely due to limited studies or heterogeneity in task paradigms across included studies."
+     },
+     {
+      "authors": "König P, Zwiky E, Küttner A, Uhlig M, Redlich R",
+      "year": 2025,
+      "title": "Brain functional effects of cognitive behavioral therapy for depression: A systematic review of task-based fMRI studies.",
+      "doi": "10.1016/j.jad.2024.09.084",
+      "pmid": "39299583",
+      "kind": "review",
+      "access": "abstract-only",
+      "quote": "The findings reveal (1) diminished limbic reactivity following CBT across various tasks, (2) increased striatal activity during reward processing, but decreased activity during affective processing and future thinking, and (3) alterations in cingulate and prefrontal cortex activity across tasks."
+     },
+     {
+      "authors": "König P, Zwiky E, Küttner A, Uhlig M, Redlich R",
+      "year": 2025,
+      "title": "Brain functional effects of cognitive behavioral therapy for depression: A systematic review of task-based fMRI studies.",
+      "doi": "10.1016/j.jad.2024.09.084",
+      "pmid": "39299583",
+      "kind": "review",
+      "access": "abstract-only",
+      "quote": "There are heterogenous results especially in cortical areas that might partially be due to methodological issues like differences across the studies in terms of task content, statistical evaluation, and interventions."
+     },
+     {
+      "authors": "König P, Zwiky E, Küttner A, Uhlig M, Redlich R",
+      "year": 2025,
+      "title": "Brain functional effects of cognitive behavioral therapy for depression: A systematic review of task-based fMRI studies.",
+      "doi": "10.1016/j.jad.2024.09.084",
+      "pmid": "39299583",
+      "kind": "review",
+      "access": "abstract-only",
+      "quote": "Out of 2149 results of the literature search, N = 14 studies met the inclusion criteria (e.g., diagnosis of a current depressive disorder, assessment of longitudinal task-based fMRI, and the analysis of functional changes before and after CBT)."
      }
     ],
     "keyframes": [
@@ -215,7 +255,7 @@
    },
    {
     "region": "visual-cortex-r",
-    "explanation": "The right inferior occipital gyrus was more active at rest after CBT for depression, in a pooled analysis. It is part of the visual cortex, which is drawn.",
+    "explanation": "The right inferior occipital gyrus was more active at rest after CBT for depression, in a pooled analysis. It is drawn on the visual cortex, an approximation: the visual cortex in the brain model does not include this gyrus.",
     "confidence": "mixed",
     "citations": [
      {

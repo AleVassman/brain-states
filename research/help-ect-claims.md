@@ -34,7 +34,7 @@ The volume increase comes from a combined analysis of 281 patients at 10 sites a
 
 ### **hippocampus** — Well established
 
-Claim: Smaller than in people without depression before treatment, in one study. Larger after a course of ECT, in that study and in a combined analysis of 281 patients, by about 0.28% per session. The larger increase did not go with a better outcome. Brightness stands for volume, not activity.
+Claim: Smaller than in people without depression before treatment, in one study. Larger after a course of ECT, in that study and in a combined analysis of 281 patients, by about 0.28% per session on the right. In the smaller study, the increase went with improvement and a smaller hippocampus beforehand predicted a better response; in the larger analysis, people with bigger increases had poorer outcomes, though not significantly once the number of sessions was taken into account. Brightness stands for volume, not activity.
 
 On screen: peaks above baseline (0.55), ends at baseline (0).
 
@@ -42,16 +42,20 @@ On screen: peaks above baseline (0.55), ends at baseline (0).
   > "Patients showed smaller hippocampal volumes compared to controls at baseline (p<.04)."
 - Joshi SH, Espinoza RT, Pirnia T, Shi J, Wang Y, Ayers B, Leaver A, et al. (2016). Structural Plasticity of the Hippocampus and Amygdala Induced by Electroconvulsive Therapy in Major Depression. doi:10.1016/j.biopsych.2015.02.029 — study, full-text
   > "Both hippocampal and amygdalar volumes increased with ECT (p<.001) and in relation to symptom improvement (p<.01)."
+- Joshi SH, Espinoza RT, Pirnia T, Shi J, Wang Y, Ayers B, Leaver A, et al. (2016). Structural Plasticity of the Hippocampus and Amygdala Induced by Electroconvulsive Therapy in Major Depression. doi:10.1016/j.biopsych.2015.02.029 — study, full-text
+  > "Hippocampal volume at baseline predicted subsequent clinical response"
 - Oltedal L, Narr KL, Abbott C, Anand A, Argyelan M, Bartsch H, Dannlowski U, et al. (2018). Volume of the Human Hippocampus and Clinical Response Following Electroconvulsive Therapy. doi:10.1016/j.biopsych.2018.05.017 — meta-analysis, full-text
   > "The linear component of hippocampal volume change was 0.28%, 0.08 SE, per ECT session, p<0.001."
 - Oltedal L, Narr KL, Abbott C, Anand A, Argyelan M, Bartsch H, Dannlowski U, et al. (2018). Volume of the Human Hippocampus and Clinical Response Following Electroconvulsive Therapy. doi:10.1016/j.biopsych.2018.05.017 — meta-analysis, full-text
   > "Hippocampal volumes were extracted from structural MR images, acquired before and after patients (N=281) experiencing a major depressive episode completed an ECT treatment series using right unilateral (RUL) and bilateral (BL) stimulation."
 - Oltedal L, Narr KL, Abbott C, Anand A, Argyelan M, Bartsch H, Dannlowski U, et al. (2018). Volume of the Human Hippocampus and Clinical Response Following Electroconvulsive Therapy. doi:10.1016/j.biopsych.2018.05.017 — meta-analysis, full-text
+  > "Individuals with greater treatment-related volume increases had poorer outcomes"
+- Oltedal L, Narr KL, Abbott C, Anand A, Argyelan M, Bartsch H, Dannlowski U, et al. (2018). Volume of the Human Hippocampus and Clinical Response Following Electroconvulsive Therapy. doi:10.1016/j.biopsych.2018.05.017 — meta-analysis, full-text
   > "the high efficacy of ECT is not explained by hippocampal enlargement, which alone, might not serve as a viable biomarker for treatment outcome."
 
 ### **amygdala** — Mixed evidence
 
-Claim: Larger after a course of ECT, in one study of 43 patients, and the increase went with symptom improvement in that study. Brightness stands for volume, not activity.
+Claim: Larger after a course of ECT, in one study of 43 patients (including 7 with bipolar depression), and the increase went with symptom improvement on some ratings in that study. Brightness stands for volume, not activity.
 
 On screen: peaks above baseline (0.4), ends at baseline (0).
 

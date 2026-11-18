@@ -7,7 +7,7 @@ sentence that supports it. Activity values are qualitative: direction and rough 
 
 ## What is reconstruction in this episode
 
-These are two small, older studies by one research group, with 9 people in each behaviour therapy sample, using PET scans of glucose use rather than fMRI. The decrease was found in people who responded to treatment; in those who did not, and in people without OCD, it did not change. The sources read do not report how the brain differed from people without OCD before treatment, so the first part is drawn at rest. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
+These are two small, older studies by one research group, with 9 people in each behaviour therapy sample, using PET scans of glucose use rather than fMRI. The decrease was found in people who responded to treatment; in the first study it did not change in those who did not respond or in people without OCD, and in the second it was smaller in poor responders. The sources read do not report how the brain differed from people without OCD before treatment, so the first part is drawn at rest. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
 
 ## Notes from the research pass
 
@@ -34,7 +34,7 @@ These are two small, older studies by one research group, with 9 people in each 
 
 ### **caudate** — Mixed evidence
 
-Claim: Used less energy after treatment in people who responded, on the right in one study and on both sides in a second study by the same group. In non-responders and people without OCD it did not change. Brightness stands for glucose use relative to the rest of the brain, not activity measured by fMRI.
+Claim: Used less energy after treatment in people who responded, on the right in one study and on both sides in a second study by the same group. In the first study it did not change in non-responders or people without OCD; in the second it was smaller in poor responders. Brightness stands for glucose use relative to the rest of the brain, not activity measured by fMRI.
 
 On screen: peaks below baseline (-0.5), ends at baseline (0).
 
@@ -46,6 +46,8 @@ On screen: peaks below baseline (-0.5), ends at baseline (0).
   > "Behavior therapy responders had significant (P < .05) bilateral decreases in caudate glucose metabolic rates that were greater than those seen in poor responders to treatment."
 - Schwartz JM, Stoessel PW, Baxter LR, Martin KM, Phelps ME (1996). Systematic changes in cerebral glucose metabolic rate after successful behavior modification treatment of obsessive-compulsive disorder. doi:10.1001/archpsyc.1996.01830020023004 — study, abstract-only
   > "Nine patients with obsessive-compulsive disorder were studied with positron emission tomography before and after 10 weeks of structured exposure and response prevention behavioral and cognitive treatment."
+- Schwartz JM, Stoessel PW, Baxter LR, Martin KM, Phelps ME (1996). Systematic changes in cerebral glucose metabolic rate after successful behavior modification treatment of obsessive-compulsive disorder. doi:10.1001/archpsyc.1996.01830020023004 — study, abstract-only
+  > "Before treatment, there were significant correlations of brain activity between the orbital gyri and the head of the caudate nucleus and the orbital gyri and the thalamus on the right. These correlations decreased significantly after effective treatment."
 
 ## The typical response
 

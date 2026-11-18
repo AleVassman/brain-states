@@ -7,7 +7,7 @@ sentence that supports it. Activity values are qualitative: direction and rough 
 
 ## What is reconstruction in this episode
 
-All findings come from one PET study of 15 healthy young men after 52 hours awake, which is far longer than a usual night without sleep; the well-rested comparison came from a separate earlier group. "Frontal cortex" is drawn on the dorsolateral prefrontal cortex, "occipital" on the visual cortex and "parietal" on the inferior parietal cortex, which are approximations. The striatum is drawn as the caudate and putamen. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
+All findings come from one PET study of 14 healthy young men after 52 hours awake, which is far longer than a usual night without sleep; the well-rested comparison came from a separate earlier group. "Frontal cortex" is drawn on the dorsolateral prefrontal cortex, "occipital" on the visual cortex and "parietal" on the inferior parietal cortex, which are approximations. The anterior cingulate is drawn on its dorsal part and the temporal cortex on the lateral temporal cortex, also approximations. The striatum is drawn as the caudate and putamen. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
 
 ## Notes from the research pass
 
@@ -41,6 +41,10 @@ On screen: peaks below baseline (-0.55), ends at baseline (0).
   > "Recovery from sleep deprivation was associated with a decrease in A1AR availability in several brain regions, ranging from 11% (insula) to 14% (striatum)."
 - Elmenhorst D, Elmenhorst EM, Hennecke E, Kroll T, Matusch A, Aeschbach D, Bauer A (2017). Recovery sleep after extended wakefulness restores elevated A<sub>1</sub> adenosine receptor availability in the human brain. doi:10.1073/pnas.1614677114 — study, full-text
   > "A1AR availabilities after recovery did not differ from baseline sleep in the control group."
+- Elmenhorst D, Elmenhorst EM, Hennecke E, Kroll T, Matusch A, Aeschbach D, Bauer A (2017). Recovery sleep after extended wakefulness restores elevated A<sub>1</sub> adenosine receptor availability in the human brain. doi:10.1073/pnas.1614677114 — study, full-text
+  > "Fifteen healthy, male volunteers gave written informed consent of which 14 (mean age 27.7 ± 5.4 y) were included in the analyses"
+- Elmenhorst D, Elmenhorst EM, Hennecke E, Kroll T, Matusch A, Aeschbach D, Bauer A (2017). Recovery sleep after extended wakefulness restores elevated A<sub>1</sub> adenosine receptor availability in the human brain. doi:10.1073/pnas.1614677114 — study, full-text
+  > "However, so far it has not been shown in humans that adenosine levels increase with prolonged wake-time"
 
 ### **putamen** — Mixed evidence
 
@@ -106,7 +110,7 @@ On screen: peaks above baseline (0.4), ends at baseline (0).
 
 ### **dacc** — Mixed evidence
 
-Claim: The anterior cingulate had lower receptor availability after recovery sleep, in one study. Drawn on the dorsal anterior cingulate.
+Claim: The anterior cingulate had lower receptor availability after recovery sleep, in one study. Drawn on the dorsal anterior cingulate, an approximation.
 
 On screen: peaks below baseline (-0.35), ends at baseline (0).
 
@@ -137,7 +141,7 @@ On screen: peaks above baseline (0.4), ends at baseline (0).
 
 ### **lateral-temporal** — Mixed evidence
 
-Claim: The temporal cortex had the smallest decrease in receptor availability after recovery sleep, in one study.
+Claim: The temporal cortex had the smallest decrease in receptor availability after recovery sleep, in one study. Drawn on the lateral temporal cortex, an approximation.
 
 On screen: peaks below baseline (-0.25), ends at baseline (0).
 

@@ -10,6 +10,20 @@ multiple sclerosis, Huntington's disease, low blood sugar, sleep deprivation)
 — and shows
 which regions and connections change, with the studies behind every claim.
 
+A third group, **What helps**, has twenty-two treatment episodes showing how
+the brain changes with treatment: antidepressants, talking therapy (CBT) for
+depression, anxiety, panic and chronic pain, ECT, ketamine, DBT, exposure
+therapy for PTSD and OCD, antipsychotics, mindfulness, staying off
+methamphetamine, treating back pain, levodopa, deep brain stimulation, stroke
+rehabilitation, a CGRP antibody for migraine, epilepsy surgery, recovery
+sleep, exercise for early memory problems, and attention training in MS. Each
+links to the condition it treats and back. Treatments that were looked at but
+did not meet the bar are listed with reasons in `research/what-helps-excluded.md`.
+
+The purpose: to help people who live with these conditions, and the people
+close to them, understand what happens in the brain, that it is studied, and
+that it is not a character flaw.
+
 It is a personal hobby project. It is a reconstruction from published
 group-level research, not a recording of any brain, and it is not a diagnostic
 tool or medical advice. The "About the science" button in the app explains what
@@ -78,8 +92,10 @@ npm run verify:quotes
 npm test
 ```
 
-To list a state under "Physical illnesses", pass `category: 'physical'` to
-`writeScore`; the default is the psychological group.
+To list a state under "Physical conditions", pass `category: 'physical'` to
+`writeScore`; the default is the psychological group. A treatment episode
+passes `category: 'treatment'` and `treats: '<condition id>'`, ends its caveat
+with `TREATMENT_NOTE`, and usually builds its phases with `research/helps.mjs`.
 
 A state shows "awaiting review" in the app until its entry in
 `public/scores/index.json` has `"reviewed": true`. Set that only after its

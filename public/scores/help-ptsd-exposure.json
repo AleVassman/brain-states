@@ -1,8 +1,8 @@
 {
  "id": "help-ptsd-exposure",
  "title": "Exposure therapy for PTSD",
- "description": "Prolonged exposure is a trauma-focused therapy: over about ten weeks, people revisit the memory of the trauma in a safe setting and gradually face reminders they have been avoiding, so that the fear can fade. Studies scanned people before and after therapy, while recalling that a signal had become safe, and at rest. Brightness and lines show the change since before treatment: warmer or a pulsing line means more than before, violet or a dashed line means less than before.",
- "caveat": "The findings come from three studies by two groups, with 16 to 66 people with PTSD; one compared therapy with a waiting list. Two measured how areas work together at rest, which is not the same as activity, and one measured activity while recalling that a signal had become safe. The left frontoparietal \"executive control\" areas are drawn on the left dorsolateral prefrontal cortex, which is an assumption. The sources read do not report how the brain differed before treatment, so the first part is drawn at rest. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
+ "description": "Prolonged exposure is a trauma-focused therapy: over about ten weeks, people revisit the memory of the trauma in a safe setting and gradually face reminders they have been avoiding, so that the fear can fade. Studies scanned people before and after therapy, while recalling that a signal had become safe, and at rest. In the first part, dashed lines show links that were weaker than in trauma-exposed people without PTSD. After that, brightness and lines show the change since before treatment: warmer or a pulsing line means more than before, violet or a dashed line means less.",
+ "caveat": "The findings come from two research groups. One group's two reports (16 and 24 people with PTSD) come from the same patients, compared with trauma-exposed people without PTSD but not with untreated patients. The other was a randomised trial against a waiting list, with about 50 people rescanned. Two reports measured how areas work together at rest, which is not the same as activity, and one measured activity while recalling that a signal had become safe. The rostral anterior cingulate is drawn on the pregenual cingulate, and the left frontoparietal \"executive control\" areas on the left dorsolateral prefrontal cortex; both are approximations. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.",
  "durationSeconds": 38,
  "phases": [
   {
@@ -11,7 +11,7 @@
    "timescale": "before treatment",
    "start": 0,
    "end": 0.2,
-   "caption": "Before therapy. The comparison here starts from each person's own level, so the brain is drawn at rest."
+   "caption": "Before therapy, the amygdala was less in step with the left orbitofrontal cortex, and the hippocampus with the ventromedial prefrontal cortex, than in trauma-exposed people without PTSD."
   },
   {
    "id": "during",
@@ -65,10 +65,10 @@
    "timescale": "after treatment",
    "start": 0.56,
    "end": 0.82,
-   "caption": "At rest, the amygdala works more closely with the orbitofrontal cortex and the insula, the hippocampus with the medial prefrontal cortex, and the amygdala less closely with left frontal \"control\" areas. Larger decreases in some of these links went with larger improvements.",
+   "caption": "At rest, the weaker links are back to the level of people without PTSD, and the amygdala works more closely with the insula and less closely with left frontal \"control\" areas. Larger decreases in amygdala-frontal links went with larger improvements.",
    "order": {
     "kind": "reconstructed",
-    "rationale": "These come from separate studies scanned at rest. They are shown after the task finding only to show one measurement at a time."
+    "rationale": "These come from scans at rest; they are shown after the task finding only to present one measurement at a time."
    }
   },
   {
@@ -77,7 +77,7 @@
    "timescale": "summary",
    "start": 0.82,
    "end": 1,
-   "caption": "In one study, the body's sweat response during recall did not change on average after therapy, though changes in it went with improvement. These are small studies and not everyone improved.",
+   "caption": "Most of these studies did not compare therapy with untreated patients, so changes over time cannot all be credited to the therapy. These are small studies and not everyone improved.",
    "order": {
     "kind": "reconstructed",
     "rationale": "This last part is a summary of what the studies did not find or did not measure, not a later point in time."
@@ -88,7 +88,7 @@
   "regions": [
    {
     "region": "pgacc",
-    "explanation": "The rostral anterior cingulate was less active while recalling that a signal had become safe, after prolonged exposure, in one study of 16 people with PTSD. It is drawn on the pregenual anterior cingulate.",
+    "explanation": "The rostral anterior cingulate was less active while recalling that a signal had become safe, after prolonged exposure, in one study of 16 people with PTSD. Drawn on the pregenual anterior cingulate, an approximation.",
     "confidence": "mixed",
     "citations": [
      {
@@ -200,16 +200,6 @@
       "kind": "study",
       "access": "abstract-only",
       "quote": "PTSD patients exhibited pre- to post-treatment reduction in rostral anterior cingulate cortex (rACC) activation during extinction recall, and increase in functional coherence between the rACC and the ventromedial prefrontal cortex (vmPFC) and subgenual anterior cingulate cortex (sgACC)."
-     },
-     {
-      "authors": "Helpman L, Marin MF, Papini S, Zhu X, Sullivan GM, Schneier F, Neria M, et al.",
-      "year": 2016,
-      "title": "Neural changes in extinction recall following prolonged exposure treatment for PTSD: A longitudinal fMRI study.",
-      "doi": "10.1016/j.nicl.2016.10.007",
-      "pmid": "27761402",
-      "kind": "study",
-      "access": "abstract-only",
-      "quote": "Reduced PTSD symptom severity from pre- to post-treatment was significantly associated with reduced subgenual ACC and parahippocampal activation during this task."
      }
     ],
     "keyframes": [
@@ -241,8 +231,8 @@
    },
    {
     "from": "amygdala",
-    "to": "ofc",
-    "explanation": "Worked together more closely at rest after therapy, in one study; this did not happen in people without PTSD scanned twice.",
+    "to": "ofc-l",
+    "explanation": "Less in step at rest than in trauma-exposed people without PTSD before therapy, and more in step after it, in one study of 24 people; the finding involved the left lateral orbitofrontal cortex.",
     "confidence": "mixed",
     "citations": [
      {
@@ -253,7 +243,47 @@
       "pmid": "30260530",
       "kind": "study",
       "access": "full-text",
+      "quote": "Additionally, to test the direction of the group effect, we conducted post hoc independent t-tests which revealed reduced rsFC in BLA-OFC"
+     },
+     {
+      "authors": "Zhu X, Suarez-Jimenez B, Lazarov A, Helpman L, Papini S, Lowell A, Durosky A, et al.",
+      "year": 2018,
+      "title": "Exposure-based therapy changes amygdala and hippocampus resting-state functional connectivity in patients with posttraumatic stress disorder.",
+      "doi": "10.1002/da.22816",
+      "pmid": "30260530",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Interestingly, our findings regarding amygdala-OFC pathways involved the left lateral OFC (lOFC), demonstrating robust amygdala connectivity with lOFC among TEHCs, and reduced connectivity in patients with PTSD at baseline, which increased following PE"
+     },
+     {
+      "authors": "Zhu X, Suarez-Jimenez B, Lazarov A, Helpman L, Papini S, Lowell A, Durosky A, et al.",
+      "year": 2018,
+      "title": "Exposure-based therapy changes amygdala and hippocampus resting-state functional connectivity in patients with posttraumatic stress disorder.",
+      "doi": "10.1002/da.22816",
+      "pmid": "30260530",
+      "kind": "study",
+      "access": "full-text",
       "quote": "Post- versus pre-treatment comparisons indicated increased rsFC of the BLA and CMA with the orbitofrontal cortex (OFC), and hippocampus-medial prefrontal cortex (mPFC) among patients with PTSD, but not among TEHC participants."
+     },
+     {
+      "authors": "Zhu X, Suarez-Jimenez B, Lazarov A, Helpman L, Papini S, Lowell A, Durosky A, et al.",
+      "year": 2018,
+      "title": "Exposure-based therapy changes amygdala and hippocampus resting-state functional connectivity in patients with posttraumatic stress disorder.",
+      "doi": "10.1002/da.22816",
+      "pmid": "30260530",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "We previously reported functional (Helpman, Marin, et al"
+     },
+     {
+      "authors": "Zhu X, Suarez-Jimenez B, Lazarov A, Helpman L, Papini S, Lowell A, Durosky A, et al.",
+      "year": 2018,
+      "title": "Exposure-based therapy changes amygdala and hippocampus resting-state functional connectivity in patients with posttraumatic stress disorder.",
+      "doi": "10.1002/da.22816",
+      "pmid": "30260530",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "Finally, we did not compare the PE group to a PTSD control group receiving a different type of treatment or in a waiting list"
      }
     ],
     "keyframes": [
@@ -262,15 +292,27 @@
       "v": 0
      },
      {
+      "t": 0.04,
+      "v": -0.35
+     },
+     {
+      "t": 0.18,
+      "v": -0.35
+     },
+     {
+      "t": 0.21,
+      "v": 0
+     },
+     {
       "t": 0.56,
       "v": 0
      },
      {
-      "t": 0.6000000000000001,
+      "t": 0.6,
       "v": 0.45
      },
      {
-      "t": 0.7999999999999999,
+      "t": 0.8,
       "v": 0.45
      },
      {
@@ -285,10 +327,20 @@
    },
    {
     "from": "hippocampus",
-    "to": "mpfc",
-    "explanation": "Worked together more closely at rest after therapy, in one study.",
+    "to": "vmpfc",
+    "explanation": "Less in step at rest than in trauma-exposed people without PTSD before therapy, and more in step after it, in one study of 24 people.",
     "confidence": "mixed",
     "citations": [
+     {
+      "authors": "Zhu X, Suarez-Jimenez B, Lazarov A, Helpman L, Papini S, Lowell A, Durosky A, et al.",
+      "year": 2018,
+      "title": "Exposure-based therapy changes amygdala and hippocampus resting-state functional connectivity in patients with posttraumatic stress disorder.",
+      "doi": "10.1002/da.22816",
+      "pmid": "30260530",
+      "kind": "study",
+      "access": "full-text",
+      "quote": "and for hippocampus connectivity with vmPFC"
+     },
      {
       "authors": "Zhu X, Suarez-Jimenez B, Lazarov A, Helpman L, Papini S, Lowell A, Durosky A, et al.",
       "year": 2018,
@@ -306,15 +358,27 @@
       "v": 0
      },
      {
+      "t": 0.04,
+      "v": -0.35
+     },
+     {
+      "t": 0.18,
+      "v": -0.35
+     },
+     {
+      "t": 0.21,
+      "v": 0
+     },
+     {
       "t": 0.56,
       "v": 0
      },
      {
-      "t": 0.6000000000000001,
+      "t": 0.6,
       "v": 0.4
      },
      {
-      "t": 0.7999999999999999,
+      "t": 0.8,
       "v": 0.4
      },
      {
@@ -330,7 +394,7 @@
    {
     "from": "amygdala",
     "to": "insula",
-    "explanation": "Worked together more closely at rest after therapy than in people on a waiting list, in one trial of 66 people.",
+    "explanation": "Worked together more closely at rest after therapy than in people on a waiting list, in a randomised trial.",
     "confidence": "mixed",
     "citations": [
      {
@@ -384,7 +448,7 @@
    {
     "from": "amygdala",
     "to": "dlpfc-l",
-    "explanation": "The amygdala worked together less with left frontoparietal \"executive control\" areas at rest after therapy, in one trial; larger decreases in amygdala-frontal links went with larger improvements. Drawn to the left dorsolateral prefrontal cortex, which is an assumption.",
+    "explanation": "The amygdala worked together less with left frontoparietal \"executive control\" areas at rest after therapy, in a randomised trial; larger decreases in amygdala-frontal links went with larger improvements. Drawn to the left dorsolateral prefrontal cortex, an approximation.",
     "confidence": "mixed",
     "citations": [
      {

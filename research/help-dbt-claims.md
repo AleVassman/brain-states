@@ -7,7 +7,7 @@ sentence that supports it. Activity values are qualitative: direction and rough 
 
 ## What is reconstruction in this episode
 
-The main finding comes from one study of 11 people with borderline personality disorder and 11 without, before and after 12 months of DBT, and a review of the 9 studies that have looked at the brain after DBT. These are small studies, and the review notes that research on this is still scarce. The review names the anterior cingulate without saying which part; it is drawn on the dorsal part, which is an assumption. How the brain differed from people without the condition before treatment is not drawn, because the sources read report it only as background. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
+The main finding comes from one study of 11 people with borderline personality disorder and 11 without, before and after 12 months of DBT, and a review of the 9 studies that have looked at the brain after DBT. These are small studies, the review notes that research on this is still scarce, and the main study had no group of people with borderline personality disorder who did not have DBT, so changes over time cannot all be credited to DBT. Another study found that the drop in amygdala activity in response to pain was smaller after DBT, a different measure from the one drawn. The review names the anterior cingulate without saying which part; it is drawn on the dorsal part, which is an assumption. How the brain differed from people without the condition before treatment is not drawn, because the sources read report it only as background. These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.
 
 ## Notes from the research pass
 
@@ -30,7 +30,7 @@ The main finding comes from one study of 11 people with borderline personality d
 
 ### **amygdala-l** — Mixed evidence
 
-Claim: Less active after 12 months of DBT, compared with the change over the same time in people without the condition, in one study of 11 patients; the reduction was most marked on the left. A review of 9 studies also describes reduced amygdala activity after DBT.
+Claim: Less active after 12 months of DBT, compared with the change over the same time in people without the condition, in one study of 11 patients; the reduction was most marked on the left. A review of 9 studies also describes reduced amygdala activity after DBT, but its amygdala evidence is two studies, one of them this one.
 
 On screen: peaks below baseline (-0.55), ends at baseline (0).
 
@@ -42,6 +42,10 @@ On screen: peaks below baseline (-0.55), ends at baseline (0).
   > "Improved amygdala habituation to repeated-unpleasant pictures in patients was associated with improved overall emotional regulation measured by the DERS (total score and emotion regulation strategy use subscale)."
 - Iskric A, Barkley-Levenson E (2021). Neural Changes in Borderline Personality Disorder After Dialectical Behavior Therapy-A Review. doi:10.3389/fpsyt.2021.772081 — review, full-text
   > "Results indicated that there was significant deactivation of amygdala activity as well as the anterior cingulate cortex in patients with BPD after DBT treatment."
+- Iskric A, Barkley-Levenson E (2021). Neural Changes in Borderline Personality Disorder After Dialectical Behavior Therapy-A Review. doi:10.3389/fpsyt.2021.772081 — review, full-text
+  > "Firstly, two studies found a significant deactivation of amygdala activity after the completion of DBT treatment particularly among DBT treatment responders (11, 21)"
+- Niedtfeld I, Schmitt R, Winter D, Bohus M, Schmahl C, Herpertz SC (2017). Pain-mediated affect regulation is reduced after dialectical behavior therapy in borderline personality disorder: a longitudinal fMRI study. doi:10.1093/scan/nsw183 — study, full-text
+  > "However, these studies did not use a BPD control group without DBT to differentiate between effects attributable to DBT itself from unspecific time effects"
 
 ### **amygdala-r** — Mixed evidence
 
@@ -58,7 +62,7 @@ On screen: peaks below baseline (-0.35), ends at baseline (0).
 
 ### **dacc** — Mixed evidence
 
-Claim: A review of 9 studies describes less anterior cingulate activity after DBT. The review does not say which part; it is drawn on the dorsal anterior cingulate, which is an assumption. One study found that a link between the left amygdala and the dorsal anterior cingulate during pain became weaker after DBT.
+Claim: A review of 9 studies describes less anterior cingulate activity after DBT. The review does not say which part; it is drawn on the dorsal anterior cingulate, which is an assumption. One study also found that the link between the left amygdala and the dorsal anterior cingulate during pain changed after DBT, at trend level.
 
 On screen: peaks below baseline (-0.35), ends at baseline (0).
 
@@ -68,6 +72,8 @@ On screen: peaks below baseline (-0.35), ends at baseline (0).
   > "Nine studies were identified that examined neurobiological changes in BPD after the completion of DBT."
 - Niedtfeld I, Schmitt R, Winter D, Bohus M, Schmahl C, Herpertz SC (2017). Pain-mediated affect regulation is reduced after dialectical behavior therapy in borderline personality disorder: a longitudinal fMRI study. doi:10.1093/scan/nsw183 — study, full-text
   > "At first measurement, patients with BPD showed amygdala deactivation in response to painful stimulation, as well as altered connectivity between left amygdala and dorsal anterior cingulate cortex. These effects were reduced after DBT, as compared with patients with treatment as usual."
+- Iskric A, Barkley-Levenson E (2021). Neural Changes in Borderline Personality Disorder After Dialectical Behavior Therapy-A Review. doi:10.3389/fpsyt.2021.772081 — review, full-text
+  > "As well, several studies found after DBT treatment, BPD patients had a decreased activity in the inferior frontal gyrus in response to arousing stimuli and increased activity in response to inhibitory control."
 
 ## The typical response
 
