@@ -4,6 +4,7 @@ import { scoreRegionNames } from '../../src/brain/atlas';
 import type { ScoreIndexEntry } from '../../src/score/load';
 import type { Citation, RegionInfo, Score } from '../../src/score/types';
 import { validateScore } from '../../src/score/validate';
+import { TREATMENT_NOTE } from '../../src/score/treatmentNote';
 
 const regions: RegionInfo[] = JSON.parse(readFileSync('public/atlas/regions.json', 'utf8'));
 const names = scoreRegionNames(regions);
@@ -22,6 +23,10 @@ function allCitations(score: Score): Citation[] {
 }
 
 describe('shipped scores', () => {
+  it('uses the same treatment note in the research scripts and the app', () => {
+    expect(readFileSync('research/lib.mjs', 'utf8')).toContain(JSON.stringify(TREATMENT_NOTE));
+  });
+
   it('lists at least one state', () => {
     expect(index.length).toBeGreaterThan(0);
   });
@@ -42,9 +47,20 @@ describe('shipped scores', () => {
         expect(result.ok ? [] : result.errors).toEqual([]);
       });
 
-      it('is listed under one of the two groups', () => {
-        expect(['psychological', 'physical']).toContain(entry.category);
+      it('is listed under one of the three groups', () => {
+        expect(['psychological', 'physical', 'treatment']).toContain(entry.category);
       });
+
+      if (entry.category === 'treatment') {
+        it('is a treatment linked to a listed condition, with the shared note', () => {
+          expect(entry.id.startsWith('help-')).toBe(true);
+          const condition = index.find((other) => other.id === entry.treats);
+          expect(condition, `treats "${entry.treats}"`).toBeDefined();
+          expect(condition?.category).not.toBe('treatment');
+          const score = JSON.parse(readFileSync(path, 'utf8')) as Score;
+          expect(score.caveat.endsWith(TREATMENT_NOTE)).toBe(true);
+        });
+      }
 
       it('has the id its index entry says', () => {
         const score = JSON.parse(readFileSync(path, 'utf8')) as Score;

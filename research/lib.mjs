@@ -10,6 +10,9 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { SOURCES } from './sources.mjs';
 
+/** Ends the caveat of every "What helps" episode. Must match src/score/treatmentNote.ts (a test checks). */
+export const TREATMENT_NOTE = "These are averages across groups of people, not a picture of any one person's brain. Treatments help many people, not everyone, and in different ways. This is not medical advice: talk to a doctor or therapist about what is right for you.";
+
 export function cite(key, quote) {
   const s = SOURCES[key];
   if (!s) throw new Error(`unknown source "${key}"`);
@@ -100,7 +103,9 @@ function claimsSheet(score, notes, review) {
 }
 
 /** `category` is the group the state is listed under: 'psychological' (default) or 'physical'. */
-export function writeScore(score, { indexTitle, notes, category = 'psychological' } = {}) {
+export function writeScore(score, { indexTitle, notes, category = 'psychological', treats } = {}) {
+  if (category === 'treatment' && !treats) throw new Error(`${score.id}: a treatment needs "treats"`);
+  if (category === 'treatment' && !score.caveat.endsWith(TREATMENT_NOTE)) throw new Error(`${score.id}: caveat must end with TREATMENT_NOTE`);
   writeFileSync(`public/scores/${score.id}.json`, JSON.stringify(score, null, 1) + '\n');
 
   const indexPath = 'public/scores/index.json';
@@ -112,8 +117,9 @@ export function writeScore(score, { indexTitle, notes, category = 'psychological
     existing.title = indexTitle ?? score.title;
     existing.category = category;
     existing.file = `${score.id}.json`;
+    if (treats) existing.treats = treats;
   } else {
-    index.push({ id: score.id, title: indexTitle ?? score.title, file: `${score.id}.json`, category, reviewed: false });
+    index.push({ id: score.id, title: indexTitle ?? score.title, file: `${score.id}.json`, category, ...(treats ? { treats } : {}), reviewed: false });
   }
   writeFileSync(indexPath, JSON.stringify(index, null, 1) + '\n');
   console.log(`wrote ${score.id}: ${score.condition.regions.length} region tracks, ${score.condition.connections.length} connections`);
