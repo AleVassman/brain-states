@@ -1,5 +1,7 @@
 # Brain States
 
+**Try it online: https://alevassman.github.io/brain-states/**
+
 An interactive 3D brain that plays researched "episodes" of twenty-four states
 in two groups — psychological states (depression, anxiety, panic, acute
 stress, anger, borderline personality disorder, dissociation, PTSD,
@@ -116,3 +118,8 @@ hand (details in `tools/ATLAS.md`).
 ## Credits
 
 See `CREDITS.md`.
+
+## Licence
+
+GNU General Public Licence v3.0 (see `LICENSE`). The brain meshes are derived from the
+AAL3 atlas, which is GPL; other assets keep their own licences, listed in `CREDITS.md`.
