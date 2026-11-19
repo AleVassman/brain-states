@@ -16,6 +16,7 @@ import { renderSidePanel, type PanelView } from './ui/sidePanel';
 import { createStatePicker } from './ui/statePicker';
 import { relatedEntries } from './ui/related';
 import { createTimeline } from './ui/timeline';
+import { REST_NOTE, showRestNote } from './ui/stepStatus';
 
 const NO_TYPICAL = 'No comparison: the research does not support one for this state.';
 
@@ -62,7 +63,12 @@ async function start() {
   const typicalToggle = byId<HTMLInputElement>('typical-toggle');
   const typicalNote = byId('typical-note');
   const timeline = createTimeline(byId('timeline'), player);
-  const labelLayer = createLabelLayer(byId('labels'), stage, atlas.regions);
+  // Tags stop short of the details panel when it sits beside the brain (on phones it sits below).
+  const labelLayer = createLabelLayer(byId('labels'), stage, atlas.regions, () => {
+    const panel = sidePanel.getBoundingClientRect();
+    const beside = panel.width > 0 && panel.top < canvas.clientHeight && panel.left > canvas.clientWidth / 2;
+    return (beside ? panel.left : canvas.clientWidth) - 8;
+  });
   const labelsToggle = byId<HTMLInputElement>('labels-toggle');
   labelsToggle.addEventListener('change', () => {
     labelLayer.setEnabled(labelsToggle.checked);
@@ -101,6 +107,9 @@ async function start() {
 
     timeline.update();
     updateCaption(byId('caption'), byId('banner'), player);
+    const stageNote = byId('stage-note');
+    stageNote.textContent = REST_NOTE;
+    stageNote.hidden = !showRestNote(player.score, player.variant, player.t, atlas.regions);
 
     const hasTypical = Boolean(player.score?.typical);
     typicalToggle.disabled = !hasTypical;
@@ -134,6 +143,8 @@ async function start() {
   const pickEntry = async (entry: ScoreIndexEntry) => {
     const mine = ++request;
     picker.setSelected(entry.id);
+    // On phones the list sits below the caption; go back up so the episode's text is in view.
+    if (window.matchMedia('(max-width: 760px)').matches) byId('ui').scrollTo({ top: 0, behavior: 'smooth' });
     // Hand the keyboard back to the page, so the space bar plays instead of pressing this button again.
     if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
     selectedRegion = null;

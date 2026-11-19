@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import type { Frame, RegionInfo } from '../score/types';
-import { activityToAppearance } from './appearance';
+import { displayLevel } from './appearance';
 import { connectionStyle, groupCentroid } from './connectionStyle';
 import type { Stage } from './scene';
 
@@ -33,7 +33,8 @@ const FRAGMENT = /* glsl */ `
     float p = fract(vAlong * 2.0 - uPhase);
     float pulse = exp(-pow(min(p, 1.0 - p) * 14.0, 2.0)) * uPulse;
     float dash = mix(1.0, step(0.55, fract(vAlong * 22.0)), uDashed);
-    float glow = uLine * uOpacity * dash * 0.6 + pulse * 0.8;
+    // A weakened line has no pulses; its dots are drawn in the dash pattern instead, so the 1-pixel line stays visible.
+    float glow = uLine * uOpacity * dash * 0.6 + (1.0 - uLine) * uDashed * uOpacity * dash + pulse * 0.8;
     gl_FragColor = vec4(uColor * glow, 1.0);
   }
 `;
@@ -70,10 +71,10 @@ export class ConnectionLayer {
     for (const [key, c] of wanted) {
       let link = this.links.get(key);
       if (!link) {
-        link = this.create(c.from, c.to, c.v);
+        link = this.create(c.from, c.to, displayLevel(c.v));
         this.links.set(key, link);
       }
-      link.target = c.v;
+      link.target = displayLevel(c.v);
     }
   }
 
@@ -82,8 +83,7 @@ export class ConnectionLayer {
     for (const link of this.links.values()) {
       link.current += (link.target - link.current) * follow;
       const style = connectionStyle(link.current);
-      const look = activityToAppearance(link.current);
-      (link.uniforms.uColor.value as THREE.Color).setRGB(look.color[0], look.color[1], look.color[2]);
+      (link.uniforms.uColor.value as THREE.Color).setRGB(style.color[0], style.color[1], style.color[2]);
       link.uniforms.uOpacity.value = style.opacity;
       link.uniforms.uDashed.value = style.dashed ? 1 : 0;
       link.uniforms.uPulse.value = Math.min(1, style.pulseRate);

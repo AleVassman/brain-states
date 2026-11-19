@@ -31,3 +31,19 @@ export function activityToAppearance(v: number): Appearance {
     intensity: mix(BASELINE.intensity, end.intensity),
   };
 }
+
+/** A change at least this large counts as drawn; anything smaller is shown as rest. */
+export const DRAWN = 0.05;
+
+/** The weakest a drawn change is ever shown, so a slight change is still clearly visible. */
+const FLOOR = 0.3;
+
+/**
+ * The level a change is shown at. A change too small to count as drawn passes through untouched;
+ * any drawn change is lifted to at least FLOOR, keeping its direction, and bigger changes stay brighter.
+ */
+export function displayLevel(v: number): number {
+  const k = Math.min(1, Math.abs(v));
+  if (k < DRAWN) return v;
+  return Math.sign(v) * (FLOOR + ((1 - FLOOR) * (k - DRAWN)) / (1 - DRAWN));
+}

@@ -38,7 +38,7 @@ const SECTIONS: { heading: string; paragraphs: string[] }[] = [
   {
     heading: 'Brightness shows direction, not a measurement',
     paragraphs: [
-      'Brighter and warmer means more active than a typical brain at rest; dimmer and more violet means less active. The amounts show direction and rough relative size only. They are not measured quantities.',
+      'Brighter and warmer means more active than a typical brain at rest; dimmer and more violet means less active. The amounts show direction and rough relative size only. They are not measured quantities. Even a slight change is drawn bright enough to see.',
       'A resting brain is never dark or still, which is why everything shimmers gently before an episode starts.',
     ],
   },

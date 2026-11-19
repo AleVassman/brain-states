@@ -9,6 +9,7 @@
     <canvas id="stage" aria-label="3D brain. Drag to rotate, scroll to zoom, click a region to read about it."></canvas>
 
     <div id="labels" aria-hidden="true"></div>
+    <p id="stage-note" role="status" hidden></p>
 
     <div id="ui">
       <header class="top">
@@ -39,7 +40,8 @@
           <span><span class="swatch up"></span>▲ more active than at rest</span>
           <span><span class="swatch down"></span>▼ less active (violet edge)</span>
           <span><span class="swatch hatch"></span>striped: evidence mixed or debated</span>
-          <span><span class="swatch line"></span>pulsing line: working together more; dashed: less</span>
+          <span><span class="swatch line"></span>pulsing line: working together more</span>
+          <span><span class="swatch line weaker"></span>dotted violet line: working together less</span>
           <a class="help-link" href="https://findahelpline.com" target="_blank" rel="noopener noreferrer">If you're struggling</a>
         </div>
       </footer>

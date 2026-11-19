@@ -9,7 +9,9 @@ export function createTimeline(root: HTMLElement, player: Player): { update(): v
   const handle = el('div', { class: 'handle' });
   const track = el('div', { class: 'track' }, [phases, handle]);
   const note = el('p', { class: 'timeline-note', text: 'Screen time is not real time. Dashed phases: order reconstructed, not measured.' });
-  root.replaceChildren(el('div', { class: 'timeline-row' }, [play, track]), note);
+  // On narrow screens the phase names in the bar are cut short, so the current one is also written out here.
+  const now = el('p', { class: 'step-now' });
+  root.replaceChildren(now, el('div', { class: 'timeline-row' }, [play, track]), note);
 
   play.addEventListener('click', () => (player.playing ? player.pause() : player.play()));
 
@@ -57,7 +59,10 @@ export function createTimeline(root: HTMLElement, player: Player): { update(): v
       play.textContent = player.playing ? '❚❚' : '▶';
       play.setAttribute('aria-label', player.playing ? 'Pause' : 'Play');
       handle.style.left = `${player.t * 100}%`;
-      const current = player.frame()?.phase.id;
+      const phase = player.frame()?.phase;
+      const current = phase?.id;
+      const sameWords = phase && phase.timescale.toLowerCase() === phase.name.toLowerCase();
+      now.textContent = !phase ? '' : sameWords ? phase.name : `${phase.name} · ${phase.timescale}`;
       for (const segment of phases.children) {
         segment.classList.toggle('current', (segment as HTMLElement).dataset.phase === current);
       }

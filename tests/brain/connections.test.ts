@@ -4,7 +4,8 @@ import { REGIONS } from '../fixtures/validScore';
 
 describe('connectionStyle', () => {
   it('draws a baseline connection as a faint, still, solid line', () => {
-    expect(connectionStyle(0)).toEqual({ opacity: 0.15, pulseRate: 0, dashed: false });
+    const s = connectionStyle(0);
+    expect(s).toMatchObject({ opacity: 0.15, pulseRate: 0, dashed: false });
   });
   it('draws a fully strengthened connection bright, with three pulses a second', () => {
     const s = connectionStyle(1);
@@ -17,16 +18,15 @@ describe('connectionStyle', () => {
     expect(s.opacity).toBeCloseTo(0.575);
     expect(s.pulseRate).toBeCloseTo(1.5);
   });
-  it('draws a weakened connection dimmer, dashed and without pulses', () => {
-    const s = connectionStyle(-0.5);
-    expect(s.opacity).toBeCloseTo(0.075);
+  it('draws a weakened connection as clearly visible violet dashes, without pulses', () => {
+    const s = connectionStyle(-0.3);
+    expect(s.opacity).toBeGreaterThanOrEqual(0.45);
     expect(s.pulseRate).toBe(0);
     expect(s.dashed).toBe(true);
+    expect(s.color).toEqual([0x9a / 255, 0x7b / 255, 0xd8 / 255]);
   });
-  it('never lets a weakened connection vanish completely', () => {
-    const s = connectionStyle(-1);
-    expect(s.opacity).toBeCloseTo(0.03);
-    expect(s.dashed).toBe(true);
+  it('draws a more weakened connection more visibly, so size of change still reads', () => {
+    expect(connectionStyle(-1).opacity).toBeGreaterThan(connectionStyle(-0.3).opacity);
   });
   it('treats values beyond the scale as the ends of the scale', () => {
     expect(connectionStyle(4)).toEqual(connectionStyle(1));

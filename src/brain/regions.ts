@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import type { Frame, RegionInfo } from '../score/types';
-import { activityToAppearance } from './appearance';
+import { activityToAppearance, displayLevel } from './appearance';
 import { CONTEXT_GROUPS, type Atlas } from './atlas';
 import { glowPointsMaterial, glowSurfaceMaterial } from './materials';
 import type { Stage } from './scene';
@@ -96,7 +96,7 @@ export class RegionLayer {
   /** Set where each region's activity should head. `null`, or a region missing from the frame, means baseline. */
   apply(frame: Frame | null): void {
     for (const [id, visual] of this.visuals) {
-      visual.target = frame?.regions.get(id) ?? 0;
+      visual.target = displayLevel(frame?.regions.get(id) ?? 0);
     }
   }
 

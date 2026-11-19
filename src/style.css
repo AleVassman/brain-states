@@ -483,6 +483,11 @@ a:focus-visible {
   background: linear-gradient(90deg, #ff6a3d 0 40%, transparent 40% 60%, #ff6a3d 60%);
 }
 
+.swatch.line.weaker {
+  height: 3px;
+  background: radial-gradient(circle, var(--violet) 0 1.5px, transparent 1.6px) 0 50% / 5px 3px repeat-x;
+}
+
 .bottom {
   grid-area: bottom;
   max-width: 1100px;
@@ -524,6 +529,7 @@ a:focus-visible {
 .track {
   position: relative;
   flex: 1;
+  min-width: 0;
   cursor: pointer;
   touch-action: none;
 }
@@ -645,4 +651,101 @@ dialog .close {
 
 .help-link:hover {
   color: var(--ink);
+}
+
+/* Over the brain while a step draws no change, so an unchanging brain never looks broken. */
+#stage-note {
+  position: fixed;
+  top: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(420px, calc(100vw - 32px));
+  margin: 0;
+  padding: 8px 14px;
+  font-size: 13px;
+  text-align: center;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+#stage-note[hidden],
+.step-now {
+  display: none;
+}
+
+/* Phones and narrow windows: the brain takes the top of the screen and the panels scroll underneath it,
+   instead of three columns that leave the brain no room. */
+@media (max-width: 760px) {
+  #stage {
+    height: 48vh;
+    height: 48svh;
+  }
+
+  #labels {
+    bottom: auto;
+    height: 48vh;
+    height: 48svh;
+  }
+
+  #ui {
+    top: 48vh;
+    top: 48svh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 12px 16px;
+    overflow-y: auto;
+    pointer-events: auto;
+    background: var(--bg);
+    border-top: 1px solid var(--line);
+  }
+
+  #ui > * {
+    flex: none;
+    align-self: stretch;
+  }
+
+  .top {
+    order: 0;
+  }
+
+  .bottom {
+    order: 1;
+    max-width: none;
+  }
+
+  .left {
+    order: 2;
+  }
+
+  .right {
+    order: 3;
+  }
+
+  .panel {
+    max-height: none;
+    overflow: visible;
+  }
+
+  #caption {
+    font-size: 14px;
+    min-height: 0;
+  }
+
+  #stage-note {
+    top: auto;
+    bottom: calc(52vh + 10px);
+    bottom: calc(52svh + 10px);
+  }
+
+  .step-now {
+    display: block;
+    margin: 0 0 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink-dim);
+  }
 }
