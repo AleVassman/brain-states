@@ -676,6 +676,86 @@ dialog .close {
   display: none;
 }
 
+/* ---- Guided tour ---- */
+.top-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* The empty middle of the layout, where the brain shows between the panels. Only the tour uses it. */
+#brain-area {
+  grid-area: 2 / 2;
+  pointer-events: none !important;
+}
+
+.tour {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+}
+
+.tour[hidden] {
+  display: none;
+}
+
+.tour-spot {
+  position: fixed;
+  border-radius: 10px;
+  outline: 2px solid var(--cool);
+  /* The huge shadow dims everything outside the lit part. */
+  box-shadow: 0 0 0 200vmax rgba(2, 4, 9, 0.68);
+  pointer-events: none;
+  transition: left 0.25s, top 0.25s, width 0.25s, height 0.25s;
+}
+
+.tour-card {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: min(340px, calc(100vw - 24px));
+  padding: 16px 18px 14px;
+  background: #0a1120;
+  border: 1px solid var(--cool);
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.tour-count {
+  margin: 0 0 4px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+.tour-title {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.tour-text {
+  margin: 0 0 14px;
+}
+
+.tour-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.tour-skip {
+  margin-right: auto;
+  border-color: transparent;
+  background: transparent;
+  color: var(--ink-dim);
+  padding-left: 0;
+}
+
+.tour-next {
+  border-color: var(--cool);
+  background: rgba(63, 169, 255, 0.25);
+}
+
 /* Phones and narrow windows: the brain takes the top of the screen and the panels scroll underneath it,
    instead of three columns that leave the brain no room. */
 @media (max-width: 760px) {
@@ -747,5 +827,26 @@ dialog .close {
     font-size: 12px;
     font-weight: 600;
     color: var(--ink-dim);
+  }
+
+  #brain-area {
+    display: none;
+  }
+
+  .top {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .top-buttons button {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .tour-card {
+    width: 100%;
+    border-radius: 14px 14px 0 0;
+    border-bottom: 0;
+    padding-bottom: calc(14px + env(safe-area-inset-bottom));
   }
 }

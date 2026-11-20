@@ -16,6 +16,8 @@ import { renderSidePanel, type PanelView } from './ui/sidePanel';
 import { createStatePicker } from './ui/statePicker';
 import { relatedEntries } from './ui/related';
 import { createTimeline } from './ui/timeline';
+import { createTour } from './ui/tour';
+import { markTourSeen, tourSeen } from './ui/tourModel';
 import { REST_NOTE, showRestNote } from './ui/stepStatus';
 
 const NO_TYPICAL = 'No comparison: the research does not support one for this state.';
@@ -182,6 +184,32 @@ async function start() {
     if (player.playing) player.pause();
     else player.play();
   });
+
+  // ---- Guided tour ------------------------------------------------------------------------
+  /** localStorage itself can throw on access when site data is blocked. */
+  const storage = (): Storage | null => {
+    try {
+      return window.localStorage;
+    } catch {
+      return null;
+    }
+  };
+  const tour = createTour({
+    // Show a real example: Depression, paused at a step where much is lit.
+    async prepare() {
+      player.pause();
+      const about = byId<HTMLDialogElement>('about');
+      if (about.open) about.close();
+      const example = entries.find((e) => e.id === 'depression');
+      if (!example) return;
+      await pickEntry(example);
+      const inward = player.score?.phases.find((p) => p.id === 'inward');
+      if (inward) player.seek((inward.start + inward.end) / 2);
+    },
+    onClose: () => markTourSeen(storage()),
+  });
+  byId('tour-open').addEventListener('click', () => void tour.open());
+  if (!tourSeen(storage())) void tour.open();
 
   if (import.meta.env.DEV) {
     // For poking at the scene from the browser console while developing.

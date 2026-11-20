@@ -14,6 +14,12 @@ describe('TOUR_STEPS', () => {
     expect(TOUR_STEPS[0]).toMatchObject({ id: 'welcome', target: null });
     expect(TOUR_STEPS[TOUR_STEPS.length - 1].id).toBe('about');
   });
+  it('lights the brain area beside the panels first, and the canvas where that area is not laid out (phones)', () => {
+    expect(TOUR_STEPS.find((s) => s.id === 'brain')?.target).toEqual(['#brain-area', '#stage']);
+  });
+  it('lights the two buttons at the top on the last step, not the whole header', () => {
+    expect(TOUR_STEPS[TOUR_STEPS.length - 1].target).toEqual(['.top-buttons']);
+  });
 });
 
 describe('placeCard', () => {

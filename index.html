@@ -14,7 +14,10 @@
     <div id="ui">
       <header class="top">
         <h1>Brain States</h1>
-        <button id="about-open" type="button">About the science</button>
+        <div class="top-buttons">
+          <button id="tour-open" type="button">How it works</button>
+          <button id="about-open" type="button">About the science</button>
+        </div>
       </header>
 
       <aside class="panel left">
@@ -24,12 +27,13 @@
           <span>Typical response</span>
         </label>
         <p class="hint" id="typical-note"></p>
-        <label class="toggle">
+        <label class="toggle" id="labels-label">
           <input type="checkbox" id="labels-toggle" checked />
           <span>Name tags on the brain</span>
         </label>
       </aside>
 
+      <div id="brain-area" aria-hidden="true"></div>
       <aside class="panel right" id="side-panel" aria-live="polite"></aside>
 
       <footer class="bottom">
