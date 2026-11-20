@@ -101,3 +101,19 @@ describe('tour copy matches what the page does', () => {
     expect(text('helps')).toMatch(/in studies/);
   });
 });
+
+import { readFileSync } from 'node:fs';
+import { TOUR_BUTTON_LABEL } from '../../src/ui/tourModel';
+
+describe('restarting the tour', () => {
+  const html = readFileSync('index.html', 'utf8');
+  it('has a launch button in the header and a floating one for phones, both with the same label', () => {
+    expect(TOUR_BUTTON_LABEL).toBe('Take the tour');
+    expect(html).toMatch(/id="tour-open"[^>]*>[\s\S]*?Take the tour/);
+    expect(html).toMatch(/id="tour-fab"[^>]*>[\s\S]*?Take the tour/);
+  });
+  it('tells people on the very first step how to restart it, so skipping never strands them', () => {
+    expect(TOUR_STEPS[0].text).toContain(TOUR_BUTTON_LABEL);
+    expect(TOUR_STEPS[TOUR_STEPS.length - 1].text).toContain(TOUR_BUTTON_LABEL);
+  });
+});

@@ -209,7 +209,7 @@ async function start() {
     onClose: () => markTourSeen(storage()),
   });
   // detail 0 means the button was pressed from the keyboard, not clicked or tapped.
-  byId('tour-open').addEventListener('click', (event) => void tour.open(event.detail === 0));
+  for (const id of ['tour-open', 'tour-fab']) byId(id).addEventListener('click', (event) => void tour.open(event.detail === 0));
   if (!tourSeen(storage())) void tour.open();
 
   if (import.meta.env.DEV) {

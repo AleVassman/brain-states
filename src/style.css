@@ -682,6 +682,39 @@ dialog .close {
   gap: 8px;
 }
 
+/* The buttons that start the tour stand out, so it is easy to find again after skipping it. */
+.tour-launch {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border-color: var(--cool);
+  background: rgba(63, 169, 255, 0.2);
+}
+
+.tour-launch-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--cool);
+  color: #05070d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* On phones the header scrolls away below the brain, so a copy floats over the brain instead. */
+#tour-fab {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 12px;
+  padding: 6px 12px 6px 8px;
+  font-size: 13px;
+  border-radius: 999px;
+  background: rgba(8, 13, 24, 0.85);
+}
+
 /* The empty middle of the layout, where the brain shows between the panels. Only the tour uses it. */
 #brain-area {
   grid-area: 2 / 2;
@@ -837,6 +870,10 @@ dialog .close {
 
   #brain-area {
     display: none;
+  }
+
+  #tour-fab {
+    display: inline-flex;
   }
 
   .top {

@@ -21,11 +21,14 @@ interface Size {
   height: number;
 }
 
+/** The words on the buttons that start the tour; the tour's own text refers to them by this name. */
+export const TOUR_BUTTON_LABEL = 'Take the tour';
+
 export const TOUR_STEPS: TourStep[] = [
   {
     id: 'welcome',
     title: 'Welcome to Brain States',
-    text: 'A 3D brain that plays short episodes of mental states, physical conditions and treatments, built from published research. This tour takes about a minute. Depression is loaded as an example.',
+    text: `A 3D brain that plays short episodes of mental states, physical conditions and treatments, built from published research. This tour takes about a minute. Depression is loaded as an example. You can restart it any time with ${TOUR_BUTTON_LABEL}.`,
     target: null,
   },
   {
@@ -85,7 +88,7 @@ export const TOUR_STEPS: TourStep[] = [
   {
     id: 'about',
     title: 'Learn more',
-    text: 'About the science explains how the episodes were built and their limits. Nothing here is medical advice. "If you\'re struggling", next to the colour key, links to helplines. Reopen this tour any time with How it works.',
+    text: `About the science explains how the episodes were built and their limits. Nothing here is medical advice. "If you're struggling", next to the colour key, links to helplines. Reopen this tour any time with ${TOUR_BUTTON_LABEL}.`,
     target: ['.top-buttons'],
   },
 ];

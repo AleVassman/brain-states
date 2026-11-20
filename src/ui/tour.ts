@@ -6,7 +6,7 @@ const NARROW = '(max-width: 760px)';
 /** Room left around the lit part. */
 const PAD = 6;
 /** Everything the tour sits over; made inert while it is open, so neither keyboard nor screen reader wanders off. */
-const PAGE = ['#stage', '#labels', '#stage-note', '#ui'];
+const PAGE = ['#stage', '#labels', '#stage-note', '#tour-fab', '#ui'];
 
 export interface Tour {
   /** `fromKeyboard`: focus goes back to whatever opened the tour when it closes. */
