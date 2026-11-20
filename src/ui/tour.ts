@@ -1,13 +1,16 @@
 import { el } from './dom';
-import { placeCard, TOUR_STEPS, type Rect } from './tourModel';
+import { phoneDock, placeCard, TOUR_STEPS, type Rect } from './tourModel';
 
 /** The same breakpoint as the phone layout in style.css. */
 const NARROW = '(max-width: 760px)';
 /** Room left around the lit part. */
 const PAD = 6;
+/** Everything the tour sits over; made inert while it is open, so neither keyboard nor screen reader wanders off. */
+const PAGE = ['#stage', '#labels', '#stage-note', '#ui'];
 
 export interface Tour {
-  open(): Promise<void>;
+  /** `fromKeyboard`: focus goes back to whatever opened the tour when it closes. */
+  open(fromKeyboard?: boolean): Promise<void>;
 }
 
 /**
@@ -24,14 +27,20 @@ export function createTour(options: { prepare: () => Promise<void>; onClose?: ()
   const skip = el('button', { class: 'tour-skip', text: 'Skip tour', attrs: { type: 'button' } });
   const card = el(
     'div',
-    { class: 'tour-card', attrs: { role: 'dialog', 'aria-modal': 'true', 'aria-labelledby': 'tour-title', 'aria-describedby': 'tour-text' } },
-    [count, title, text, el('div', { class: 'tour-buttons' }, [skip, back, next])],
+    {
+      class: 'tour-card',
+      // tabindex -1: a click on the card's text keeps focus in the card rather than dropping it to the page.
+      attrs: { role: 'dialog', 'aria-modal': 'true', 'aria-labelledby': 'tour-title', 'aria-describedby': 'tour-text', tabindex: '-1' },
+    },
+    // The live region makes screen readers read each new step.
+    [el('div', { attrs: { 'aria-live': 'polite' } }, [count, title, text]), el('div', { class: 'tour-buttons' }, [skip, back, next])],
   );
   const root = el('div', { class: 'tour', attrs: { hidden: '' } }, [spot, card]);
   document.body.append(root);
 
   let index = 0;
   let isOpen = false;
+  let opening = false;
   let frame = 0;
   let returnFocus: HTMLElement | null = null;
 
@@ -46,6 +55,7 @@ export function createTour(options: { prepare: () => Promise<void>; onClose?: ()
 
   /** Keeps the light and the card on the target as the page scrolls, resizes or animates. */
   const position = () => {
+    if (!isOpen) return;
     const narrow = window.matchMedia(NARROW).matches;
     const t = target();
     const r = t?.getBoundingClientRect();
@@ -57,10 +67,19 @@ export function createTour(options: { prepare: () => Promise<void>; onClose?: ()
       Object.assign(spot.style, { left: '50%', top: '50%', width: '0px', height: '0px' });
     }
     const view = { width: window.innerWidth, height: window.innerHeight };
-    const place = placeCard(rect, { width: card.offsetWidth, height: card.offsetHeight }, view, narrow);
-    card.style.transform = `translate(${Math.round(place.left)}px, ${Math.round(place.top)}px)`;
-    if (isOpen) frame = requestAnimationFrame(position);
+    if (narrow) {
+      // A sheet along one edge, placed by CSS so it follows the real screen edge on phones.
+      card.dataset.dock = phoneDock(rect, view);
+      card.style.transform = '';
+    } else {
+      delete card.dataset.dock;
+      const place = placeCard(rect, { width: card.offsetWidth, height: card.offsetHeight }, view, false);
+      card.style.transform = `translate(${Math.round(place.left)}px, ${Math.round(place.top)}px)`;
+    }
+    frame = requestAnimationFrame(position);
   };
+
+  const visibleButtons = () => [skip, back, next].filter((b) => !b.hidden && !b.disabled);
 
   const show = (i: number) => {
     index = i;
@@ -72,8 +91,15 @@ export function createTour(options: { prepare: () => Promise<void>; onClose?: ()
     back.disabled = i === 0;
     next.textContent = last ? 'Done' : 'Next';
     skip.hidden = last;
-    // On a phone the panels scroll beneath the brain; bring the lit part into view above the card.
-    target()?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    // A button that just became disabled or hidden would drop focus to the page.
+    if (!visibleButtons().includes(document.activeElement as HTMLButtonElement)) next.focus();
+    // Bring the lit part into view: on phones it may be down in the panels.
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    target()?.scrollIntoView({ block: 'start', behavior: reduced ? 'auto' : 'smooth' });
+  };
+
+  const setPageInert = (on: boolean) => {
+    for (const selector of PAGE) document.querySelector(selector)?.toggleAttribute('inert', on);
   };
 
   const close = () => {
@@ -81,21 +107,30 @@ export function createTour(options: { prepare: () => Promise<void>; onClose?: ()
     isOpen = false;
     cancelAnimationFrame(frame);
     root.hidden = true;
+    setPageInert(false);
     window.removeEventListener('keydown', onKey, true);
-    returnFocus?.focus();
+    // Only a keyboard user gets focus back; otherwise nothing keeps it, so the space bar plays and pauses.
+    if (returnFocus) returnFocus.focus();
+    else if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
     options.onClose?.();
   };
 
   const onKey = (event: KeyboardEvent) => {
+    if (event.altKey || event.ctrlKey || event.metaKey) return;
+    const onButton = event.target instanceof HTMLButtonElement && card.contains(event.target);
     if (event.key === 'Escape') close();
     else if (event.key === 'ArrowRight' && index < TOUR_STEPS.length - 1) show(index + 1);
     else if (event.key === 'ArrowLeft' && index > 0) show(index - 1);
     else if (event.key === 'Tab') {
       // Keep the keyboard inside the card while the tour is open.
-      const buttons = [skip, back, next].filter((b) => !b.hidden && !b.disabled);
+      const buttons = visibleButtons();
       const at = buttons.indexOf(document.activeElement as HTMLButtonElement);
       const to = event.shiftKey ? (at <= 0 ? buttons.length - 1 : at - 1) : (at + 1) % buttons.length;
       buttons[to].focus();
+    } else if ((event.key === ' ' || event.key === 'Enter') && onButton) {
+      return; // let the focused tour button press itself
+    } else if (event.key === ' ' || event.key === 'Enter') {
+      // Never let these reach the page underneath (the space bar would start the episode).
     } else return;
     event.preventDefault();
     event.stopPropagation();
@@ -106,12 +141,18 @@ export function createTour(options: { prepare: () => Promise<void>; onClose?: ()
   skip.addEventListener('click', close);
 
   return {
-    async open() {
-      if (isOpen) return;
-      returnFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
-      await options.prepare();
+    async open(fromKeyboard = false) {
+      if (isOpen || opening) return;
+      opening = true;
+      returnFocus = fromKeyboard && document.activeElement instanceof HTMLElement ? document.activeElement : null;
+      try {
+        await options.prepare();
+      } finally {
+        opening = false;
+      }
       isOpen = true;
       root.hidden = false;
+      setPageInert(true);
       window.addEventListener('keydown', onKey, true);
       show(0);
       next.focus();

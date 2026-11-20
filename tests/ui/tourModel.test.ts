@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { markTourSeen, placeCard, TOUR_STEPS, tourSeen } from '../../src/ui/tourModel';
+import { markTourSeen, phoneDock, placeCard, TOUR_STEPS, tourSeen } from '../../src/ui/tourModel';
 
 describe('TOUR_STEPS', () => {
   it('has eleven steps, each with a title, text and a unique id', () => {
@@ -73,5 +73,31 @@ describe('seen flag', () => {
     expect(tourSeen(broken)).toBe(false);
     expect(() => markTourSeen(broken)).not.toThrow();
     expect(() => markTourSeen(null)).not.toThrow();
+  });
+});
+
+describe('phoneDock', () => {
+  const view = { width: 375, height: 812 };
+  it('docks the card at the bottom when the lit part is in the top half (the brain)', () => {
+    expect(phoneDock({ left: 0, top: 0, width: 375, height: 390 }, view)).toBe('bottom');
+  });
+  it('docks the card at the top, over the brain, when the lit part is in the panels below', () => {
+    expect(phoneDock({ left: 12, top: 400, width: 350, height: 300 }, view)).toBe('top');
+  });
+  it('docks at the bottom when nothing is lit', () => {
+    expect(phoneDock(null, view)).toBe('bottom');
+  });
+});
+
+describe('tour copy matches what the page does', () => {
+  const text = (id: string) => TOUR_STEPS.find((s) => s.id === id)?.text ?? '';
+  it('says only the regions changing most get name tags', () => {
+    expect(text('tags')).toMatch(/changing most/);
+  });
+  it('places the helpline link by the colour key, where it is on every screen', () => {
+    expect(text('about')).toMatch(/next to the colour key/);
+  });
+  it('says the count opens a list of treatment episodes from studies', () => {
+    expect(text('helps')).toMatch(/in studies/);
   });
 });

@@ -705,7 +705,6 @@ dialog .close {
   /* The huge shadow dims everything outside the lit part. */
   box-shadow: 0 0 0 200vmax rgba(2, 4, 9, 0.68);
   pointer-events: none;
-  transition: left 0.25s, top 0.25s, width 0.25s, height 0.25s;
 }
 
 .tour-card {
@@ -718,6 +717,13 @@ dialog .close {
   border: 1px solid var(--cool);
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  /* A short window must never cut off the buttons. */
+  max-height: calc(100vh - 24px);
+  overflow-y: auto;
+}
+
+.tour-card:focus {
+  outline: none;
 }
 
 .tour-count {
@@ -845,8 +851,22 @@ dialog .close {
 
   .tour-card {
     width: 100%;
+    max-height: 46vh;
+    max-height: 46svh;
+  }
+
+  .tour-card[data-dock='bottom'] {
+    top: auto;
+    bottom: 0;
     border-radius: 14px 14px 0 0;
     border-bottom: 0;
     padding-bottom: calc(14px + env(safe-area-inset-bottom));
+  }
+
+  .tour-card[data-dock='top'] {
+    top: 0;
+    border-radius: 0 0 14px 14px;
+    border-top: 0;
+    padding-top: calc(14px + env(safe-area-inset-top));
   }
 }

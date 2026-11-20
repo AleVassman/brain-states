@@ -43,7 +43,7 @@ export const TOUR_STEPS: TourStep[] = [
   {
     id: 'tags',
     title: 'Name tags',
-    text: 'Tags on the brain name the regions that are changing, with ▲ for more active and ▼ for less. Switch them off here for a clearer view.',
+    text: 'Tags on the brain name the regions changing most, with ▲ for more active and ▼ for less. Switch them off here for a clearer view.',
     target: ['#labels-label'],
   },
   {
@@ -55,7 +55,7 @@ export const TOUR_STEPS: TourStep[] = [
   {
     id: 'helps',
     title: 'What helps',
-    text: 'The green number shows how many treatment episodes a condition has. Open it to see how the brain changes with treatment.',
+    text: 'The green number shows how many treatment episodes a condition has. Open it to list them; each shows how the brain changed with that treatment in studies.',
     target: ['.helps-count'],
   },
   {
@@ -85,7 +85,7 @@ export const TOUR_STEPS: TourStep[] = [
   {
     id: 'about',
     title: 'Learn more',
-    text: 'About the science explains how the episodes were built and their limits. Nothing here is medical advice. "If you\'re struggling", at the bottom, links to helplines. Reopen this tour any time with How it works.',
+    text: 'About the science explains how the episodes were built and their limits. Nothing here is medical advice. "If you\'re struggling", next to the colour key, links to helplines. Reopen this tour any time with How it works.',
     target: ['.top-buttons'],
   },
 ];
@@ -113,6 +113,15 @@ export function placeCard(target: Rect | null, card: Size, view: Size, narrow: b
   const right = target.left + target.width + GAP;
   const left = right <= maxLeft ? right : target.left - GAP - card.width;
   return { left: clamp(left, GAP, maxLeft), top: clamp(target.top, GAP, maxTop) };
+}
+
+/**
+ * Which edge of a phone screen the card docks to: the bottom while the lit part is in the top half
+ * (the brain), otherwise the top, over the brain, so the panels below stay in view.
+ */
+export function phoneDock(target: Rect | null, view: Size): 'top' | 'bottom' {
+  if (!target) return 'bottom';
+  return target.top + target.height / 2 < view.height / 2 ? 'bottom' : 'top';
 }
 
 const KEY = 'brain-states.tour-seen';
